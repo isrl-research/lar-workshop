@@ -1,0 +1,58 @@
+01. Amino Acids
+02. Arginine
+03. Biotin
+04. Calcium Salt
+05. Cholecalciferol
+06. Cyanocobalamin
+07. DL-Methionine
+08. Electrolytes
+09. Electrolytic Iron
+10. Ergocalciferol
+11. Ferrous Fumarate
+12. Ferrous Gluconate
+13. Ferrous Salt
+14. Folic Acid
+15. Fortified Wheat Flour + Niacin
+16. Fortified Wheat Flour + Thiamin
+17. Glutamine
+18. Iodate
+19. L-Arginine Hydrochloride
+20. L-HPC
+21. L-Lysine Hydrochloride
+22. Leucine
+23. Lysine
+24. Magnesium Aspartate
+25. Magnesium Carbonate
+26. Magnesium Gluconate
+27. Magnesium Hydroxide
+28. Magnesium Oxide
+29. Magnesium Sulphate
+30. Magnesium Threonate
+31. Manganese Citrate
+32. Methionine
+33. Niacin
+34. Nicotinamide
+35. Phenylalanine
+36. Potassium Chloride
+37. Pyridoxal-5-Phosphate
+38. Pyridoxine Hydrochloride
+39. Retinyl Acetate
+40. Retinyl Palmitate
+41. Riboflavin
+42. Riboflavin 5'-Phosphate Sodium
+43. Salts of Magnesium
+44. Sodium Iodate (provisional - label: sodium img)
+45. Taurine
+46. Thiamin
+47. Threonine
+48. Valine
+49. Vitamin A
+50. Vitamin B Complex
+51. Vitamin B12
+52. Vitamin B6
+53. Vitamin D
+54. Vitamin D2
+55. Vitamin D3
+56. Zinc Gluconate
+57. Zinc Sulphate
+58. Zinc Sulphate Monohydrate

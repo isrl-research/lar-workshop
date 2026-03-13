@@ -1,0 +1,597 @@
+{
+  "fortification_agents": {
+    "amino_acids": {
+      "canonical_name": "Amino Acids",
+      "nutrient_type": "group_declaration",
+      "regulatory_category": "unregulated",
+      "source_type": "UNSURE",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": true,
+      "notes": "Generic group declaration covering multiple amino acids; no single classification applicable"
+    },
+    "arginine": {
+      "canonical_name": "Arginine",
+      "nutrient_type": "amino_acid",
+      "regulatory_category": "fssai_hsnfsdu",
+      "source_type": "microbial",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "Also available as Arginine Hydrochloride"
+    },
+    "biotin": {
+      "canonical_name": "Biotin",
+      "nutrient_type": "vitamin_b_group",
+      "regulatory_category": "fssai_hsnfsdu",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "Also known as Vitamin B7 or Vitamin H"
+    },
+    "calcium_salt": {
+      "canonical_name": "Calcium Salt",
+      "nutrient_type": "mineral_salt",
+      "regulatory_category": "unregulated",
+      "source_type": "mineral",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": true,
+      "notes": "Generic term; specify exact salt form for precise classification"
+    },
+    "cholecalciferol": {
+      "canonical_name": "Cholecalciferol",
+      "nutrient_type": "vitamin_fat_soluble",
+      "regulatory_category": "fssai_mandatory_fortification",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [
+        "milk",
+        "edible oil"
+      ],
+      "is_group_declaration": false,
+      "notes": "Vitamin D3; can be synthetic or animal-derived (lanolin)"
+    },
+    "cyanocobalamin": {
+      "canonical_name": "Cyanocobalamin",
+      "nutrient_type": "vitamin_b_group",
+      "regulatory_category": "fssai_mandatory_fortification",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [
+        "wheat flour",
+        "rice",
+        "milk"
+      ],
+      "is_group_declaration": false,
+      "notes": "NONE"
+    },
+    "dl_methionine": {
+      "canonical_name": "DL-Methionine",
+      "nutrient_type": "amino_acid",
+      "regulatory_category": "fssai_hsnfsdu",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "DL form is synthetic; permitted in health supplements and nutraceuticals"
+    },
+    "electrolytes": {
+      "canonical_name": "Electrolytes",
+      "nutrient_type": "group_declaration",
+      "regulatory_category": "unregulated",
+      "source_type": "UNSURE",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": true,
+      "notes": "Generic group declaration; typically covers sodium, potassium, magnesium, calcium salts; no single canonical form"
+    },
+    "electrolytic_iron": {
+      "canonical_name": "Electrolytic Iron",
+      "nutrient_type": "mineral_salt",
+      "regulatory_category": "fssai_mandatory_fortification",
+      "source_type": "mineral",
+      "sources": [],
+      "fssai_mandate_food": [
+        "wheat flour",
+        "rice",
+        "salt"
+      ],
+      "is_group_declaration": false,
+      "notes": "Elemental iron powder produced by electrolysis; used as a food fortificant"
+    },
+    "ergocalciferol": {
+      "canonical_name": "Ergocalciferol",
+      "nutrient_type": "vitamin_fat_soluble",
+      "regulatory_category": "fssai_mandatory_fortification",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [
+        "edible oil",
+        "milk"
+      ],
+      "is_group_declaration": false,
+      "notes": "Vitamin D2; plant-derived form of Vitamin D"
+    },
+    "ferrous_fumarate": {
+      "canonical_name": "Ferrous Fumarate",
+      "nutrient_type": "mineral_salt",
+      "regulatory_category": "fssai_mandatory_fortification",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [
+        "wheat flour",
+        "rice"
+      ],
+      "is_group_declaration": false,
+      "notes": "Iron salt; fumarate anion; distinct from ferrous gluconate and ferrous sulphate in bioavailability"
+    },
+    "ferrous_gluconate": {
+      "canonical_name": "Ferrous Gluconate",
+      "nutrient_type": "mineral_salt",
+      "regulatory_category": "fssai_permitted_additive",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "Iron salt; gluconate anion; distinct from ferrous fumarate and ferrous sulphate in bioavailability"
+    },
+    "ferrous_salt": {
+      "canonical_name": "Ferrous Salt",
+      "nutrient_type": "mineral_salt",
+      "regulatory_category": "unregulated",
+      "source_type": "mineral",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": true,
+      "notes": "Generic term; could refer to ferrous sulfate, ferrous fumarate, ferrous gluconate, etc.; specify salt form for accurate classification"
+    },
+    "folic_acid": {
+      "canonical_name": "Folic Acid",
+      "nutrient_type": "vitamin_b_group",
+      "regulatory_category": "fssai_mandatory_fortification",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [
+        "wheat flour",
+        "rice",
+        "milk",
+        "salt"
+      ],
+      "is_group_declaration": false,
+      "notes": "Also known as Vitamin B9 or Folate"
+    },
+    "glutamine": {
+      "canonical_name": "Glutamine",
+      "nutrient_type": "amino_acid",
+      "regulatory_category": "fssai_hsnfsdu",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "Also used as a functional ingredient"
+    },
+    "iodate": {
+      "canonical_name": "Iodate",
+      "nutrient_type": "mineral_salt",
+      "regulatory_category": "fssai_mandatory_fortification",
+      "source_type": "mineral",
+      "sources": [],
+      "fssai_mandate_food": [
+        "salt"
+      ],
+      "is_group_declaration": false,
+      "notes": "Usually as Potassium Iodate or Sodium Iodate"
+    },
+    "l_arginine_hydrochloride": {
+      "canonical_name": "L-Arginine Hydrochloride",
+      "nutrient_type": "amino_acid",
+      "regulatory_category": "fssai_hsnfsdu",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "Amino acid in hydrochloride salt form; common in health supplements"
+    },
+    "hydroxypropyl_cellulose": {
+      "canonical_name": "Hydroxypropyl Cellulose",
+      "nutrient_type": "?pharmaceutical_excipient",
+      "regulatory_category": "fssai_permitted_additive",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "L-HPC = Low-substituted Hydroxypropyl Cellulose; pharmaceutical binder/excipient; likely misclassified as fortification agent on label; SME review required"
+    },
+    "l_lysine_hydrochloride": {
+      "canonical_name": "L-Lysine Hydrochloride",
+      "nutrient_type": "amino_acid",
+      "regulatory_category": "fssai_hsnfsdu",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "Amino acid in hydrochloride salt form"
+    },
+    "leucine": {
+      "canonical_name": "Leucine",
+      "nutrient_type": "amino_acid",
+      "regulatory_category": "fssai_hsnfsdu",
+      "source_type": "UNSURE",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "Essential amino acid; can be synthetic or microbial source depending on production method"
+    },
+    "lysine": {
+      "canonical_name": "Lysine",
+      "nutrient_type": "amino_acid",
+      "regulatory_category": "fssai_hsnfsdu",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "Can be L-Lysine or D-Lysine; typically refers to L-Lysine; also available as L-Lysine Hydrochloride"
+    },
+    "magnesium_aspartate": {
+      "canonical_name": "Magnesium Aspartate",
+      "nutrient_type": "mineral_salt",
+      "regulatory_category": "fssai_hsnfsdu",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "Magnesium salt of aspartic acid"
+    },
+    "magnesium_carbonate": {
+      "canonical_name": "Magnesium Carbonate",
+      "nutrient_type": "mineral_salt",
+      "regulatory_category": "unregulated",
+      "source_type": "mineral",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "Magnesium salt"
+    },
+    "magnesium_gluconate": {
+      "canonical_name": "Magnesium Gluconate",
+      "nutrient_type": "mineral_salt",
+      "regulatory_category": "fssai_hsnfsdu",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "Magnesium salt"
+    },
+    "magnesium_hydroxide": {
+      "canonical_name": "Magnesium Hydroxide",
+      "nutrient_type": "mineral_salt",
+      "regulatory_category": "fssai_permitted_additive",
+      "source_type": "mineral",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "Also used as a food additive (acidity regulator)"
+    },
+    "magnesium_oxide": {
+      "canonical_name": "Magnesium Oxide",
+      "nutrient_type": "mineral_salt",
+      "regulatory_category": "fssai_hsnfsdu",
+      "source_type": "mineral",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "Magnesium salt"
+    },
+    "magnesium_sulphate": {
+      "canonical_name": "Magnesium Sulphate",
+      "nutrient_type": "mineral_salt",
+      "regulatory_category": "unregulated",
+      "source_type": "mineral",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "NONE"
+    },
+    "magnesium_threonate": {
+      "canonical_name": "Magnesium Threonate",
+      "nutrient_type": "mineral_salt",
+      "regulatory_category": "fssai_hsnfsdu",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "Magnesium salt of threonic acid; bioavailability and nootropic claims common"
+    },
+    "manganese_citrate": {
+      "canonical_name": "Manganese Citrate",
+      "nutrient_type": "mineral_salt",
+      "regulatory_category": "unregulated",
+      "source_type": "mineral",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "Manganese salt"
+    },
+    "methionine": {
+      "canonical_name": "Methionine",
+      "nutrient_type": "amino_acid",
+      "regulatory_category": "fssai_hsnfsdu",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "Essential amino acid"
+    },
+    "niacin": {
+      "canonical_name": "Niacin",
+      "nutrient_type": "vitamin_b_group",
+      "regulatory_category": "fssai_mandatory_fortification",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [
+        "wheat flour"
+      ],
+      "is_group_declaration": false,
+      "notes": "Also known as nicotinic acid or vitamin B3"
+    },
+    "nicotinamide": {
+      "canonical_name": "Nicotinamide",
+      "nutrient_type": "vitamin_b_group",
+      "regulatory_category": "fssai_mandatory_fortification",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [
+        "wheat flour"
+      ],
+      "is_group_declaration": false,
+      "notes": "Also known as niacinamide; one form of vitamin B3"
+    },
+    "phenylalanine": {
+      "canonical_name": "Phenylalanine",
+      "nutrient_type": "amino_acid",
+      "regulatory_category": "fssai_hsnfsdu",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "Essential amino acid"
+    },
+    "potassium_chloride": {
+      "canonical_name": "Potassium Chloride",
+      "nutrient_type": "mineral_salt",
+      "regulatory_category": "unregulated",
+      "source_type": "mineral",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "Potassium salt"
+    },
+    "pyridoxal_5_phosphate": {
+      "canonical_name": "Pyridoxal-5-Phosphate",
+      "nutrient_type": "vitamin_b_group",
+      "regulatory_category": "fssai_hsnfsdu",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "Active form of Vitamin B6"
+    },
+    "pyridoxine_hydrochloride": {
+      "canonical_name": "Pyridoxine Hydrochloride",
+      "nutrient_type": "vitamin_b_group",
+      "regulatory_category": "fssai_hsnfsdu",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "Vitamin B6 in hydrochloride form"
+    },
+    "retinyl_acetate": {
+      "canonical_name": "Retinyl Acetate",
+      "nutrient_type": "vitamin_fat_soluble",
+      "regulatory_category": "fssai_mandatory_fortification",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [
+        "edible oil",
+        "milk"
+      ],
+      "is_group_declaration": false,
+      "notes": "Form of Vitamin A; other forms include retinol and retinyl palmitate"
+    },
+    "retinyl_palmitate": {
+      "canonical_name": "Retinyl Palmitate",
+      "nutrient_type": "vitamin_fat_soluble",
+      "regulatory_category": "fssai_mandatory_fortification",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [
+        "edible oil",
+        "milk"
+      ],
+      "is_group_declaration": false,
+      "notes": "Form of Vitamin A"
+    },
+    "riboflavin": {
+      "canonical_name": "Riboflavin",
+      "nutrient_type": "vitamin_b_group",
+      "regulatory_category": "fssai_mandatory_fortification",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [
+        "wheat flour",
+        "milk"
+      ],
+      "is_group_declaration": false,
+      "notes": "Also known as Vitamin B2"
+    },
+    "riboflavin_5_phosphate_sodium": {
+      "canonical_name": "Riboflavin 5'-Phosphate Sodium",
+      "nutrient_type": "vitamin_b_group",
+      "regulatory_category": "fssai_permitted_additive",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "Also known as flavin mononucleotide (FMN) sodium salt; more water-soluble form of riboflavin"
+    },
+    "salts_of_magnesium": {
+      "canonical_name": "Salts of Magnesium",
+      "nutrient_type": "mineral_salt",
+      "regulatory_category": "unregulated",
+      "source_type": "mineral",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": true,
+      "notes": "Generic term; includes magnesium chloride, magnesium sulfate, magnesium citrate, etc."
+    },
+    "sodium_iodate": {
+      "canonical_name": "Sodium Iodate",
+      "nutrient_type": "mineral_salt",
+      "regulatory_category": "fssai_mandatory_fortification",
+      "source_type": "mineral",
+      "sources": [],
+      "fssai_mandate_food": [
+        "salt"
+      ],
+      "is_group_declaration": false,
+      "notes": "Label text was \"sodium img\" \u2014 likely OCR artefact for sodium iodate; confirm before finalising resolution"
+    },
+    "taurine": {
+      "canonical_name": "Taurine",
+      "nutrient_type": "functional_ingredient",
+      "regulatory_category": "fssai_hsnfsdu",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "Conditionally essential amino acid; often used in energy drinks and supplements"
+    },
+    "thiamin": {
+      "canonical_name": "Thiamin",
+      "nutrient_type": "vitamin_b_group",
+      "regulatory_category": "fssai_mandatory_fortification",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [
+        "wheat flour",
+        "rice",
+        "edible oil",
+        "milk",
+        "salt"
+      ],
+      "is_group_declaration": false,
+      "notes": "Also known as Vitamin B1"
+    },
+    "threonine": {
+      "canonical_name": "Threonine",
+      "nutrient_type": "amino_acid",
+      "regulatory_category": "fssai_hsnfsdu",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "L-Threonine is a common isomer"
+    },
+    "valine": {
+      "canonical_name": "Valine",
+      "nutrient_type": "amino_acid",
+      "regulatory_category": "fssai_hsnfsdu",
+      "source_type": "UNSURE",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "Essential amino acid"
+    },
+    "vitamin_a": {
+      "canonical_name": "Vitamin A",
+      "nutrient_type": "vitamin_fat_soluble",
+      "regulatory_category": "fssai_mandatory_fortification",
+      "source_type": "UNSURE",
+      "sources": [],
+      "fssai_mandate_food": [
+        "edible oil",
+        "milk"
+      ],
+      "is_group_declaration": false,
+      "notes": "Can refer to retinol, retinyl esters like retinyl palmitate or retinyl acetate, or provitamin A carotenoids; specify form for accurate classification"
+    },
+    "vitamin_b_complex": {
+      "canonical_name": "Vitamin B Complex",
+      "nutrient_type": "group_declaration",
+      "regulatory_category": "unregulated",
+      "source_type": "UNSURE",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": true,
+      "notes": "Generic term covering multiple B vitamins; no single classification applicable"
+    },
+    "vitamin_b6": {
+      "canonical_name": "Vitamin B6",
+      "nutrient_type": "vitamin_b_group",
+      "regulatory_category": "fssai_hsnfsdu",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "Vitamin B6 refers to a group of related compounds including pyridoxine, pyridoxal, and pyridoxamine."
+    },
+    "vitamin_d": {
+      "canonical_name": "Vitamin D",
+      "nutrient_type": "vitamin_fat_soluble",
+      "regulatory_category": "fssai_mandatory_fortification",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [
+        "milk",
+        "edible oil"
+      ],
+      "is_group_declaration": false,
+      "notes": "Can refer to either Vitamin D2 (ergocalciferol) or Vitamin D3 (cholecalciferol); specify form for accurate classification"
+    },
+    "zinc_gluconate": {
+      "canonical_name": "Zinc Gluconate",
+      "nutrient_type": "mineral_salt",
+      "regulatory_category": "fssai_hsnfsdu",
+      "source_type": "synthetic",
+      "sources": [],
+      "fssai_mandate_food": [],
+      "is_group_declaration": false,
+      "notes": "Zinc salt"
+    },
+    "zinc_sulphate": {
+      "canonical_name": "Zinc Sulphate",
+      "nutrient_type": "mineral_salt",
+      "regulatory_category": "fssai_mandatory_fortification",
+      "source_type": "mineral",
+      "sources": [],
+      "fssai_mandate_food": [
+        "wheat flour",
+        "rice",
+        "edible oil",
+        "milk",
+        "salt"
+      ],
+      "is_group_declaration": false,
+      "notes": "NONE"
+    },
+    "zinc_sulphate_monohydrate": {
+      "canonical_name": "Zinc Sulphate Monohydrate",
+      "nutrient_type": "mineral_salt",
+      "regulatory_category": "fssai_mandatory_fortification",
+      "source_type": "mineral",
+      "sources": [],
+      "fssai_mandate_food": [
+        "wheat flour",
+        "rice",
+        "edible oil",
+        "milk",
+        "salt"
+      ],
+      "is_group_declaration": false,
+      "notes": "Zinc salt"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+variant,source,e_explicit,m_explicit,f_explicit,e_could_be,m_could_be,f_could_be,e_score,m_score,f_score,e_max,m_max,f_max,d_min,d_max,zone,uncertain,question_tags,ins_number,compound_name,nutrient_class,dairy_product_subtype,milling_grade,oil_fraction,protein_fraction,sugar_form,language_tag,f_revised
+l-hpc,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,amino_acid,,,,,,,fortification_agent
+biotin,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,vitamin_water_soluble,,,,,,,fortification_agent
+iodate,mineral,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,mineral_nutrient,,,,,,,fortification_agent
+niacin,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,vitamin_water_soluble,,,,,,,fortification_agent
+valine,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,amino_acid,,,,,,,fortification_agent
+lysine,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,amino_acid,,,,,,,fortification_agent
+taurine,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,amino_acid,,,,,,,fortification_agent
+thiamin,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,vitamin_water_soluble,,,,,,,fortification_agent
+leucine,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,amino_acid,,,,,,,fortification_agent
+d-biotin,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,vitamin_water_soluble,,,,,,,fortification_agent
+arginine,sugarcane,fermentation,crystalline chemical,NULL,NULL,NULL,NULL,0.56,0.98,0,0.56,0.98,0,0.462,0.462,2,False,False,,,amino_acid,,,,,,,fortification_agent
+l-lysine,sugarcane,fermentation,crystalline chemical,NULL,NULL,NULL,NULL,0.56,0.98,0,0.56,0.98,0,0.462,0.462,2,False,False,,,amino_acid,,,,,,,fortification_agent
+vitamin a,synthetic | fish liver oil,NULL,oil,NULL,NULL,crystalline chemical,NULL,0,0.7,0,0,0.98,0,0.21,0.294,1,False,False,,,vitamin_fat_soluble,,,,,,,fortification_agent
+vitamin d,lanolin | fish liver oil | synthetic,NULL,oil,NULL,NULL,crystalline chemical,NULL,0,0.7,0,0,0.98,0,0.21,0.294,1,False,False,,,vitamin_fat_soluble,,,,,,,fortification_agent
+glutamine,sugarcane,fermentation,crystalline chemical,base ingredient,NULL,NULL,NULL,0.56,0.98,0.12,0.56,0.98,0.12,0.51,0.51,2,False,False,,,amino_acid,,,,,,,fortification_agent
+threonine,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,amino_acid,,,,,,,fortification_agent
+riboflavin,synthetic | corn,fermentation,crystalline chemical,base ingredient,NULL,NULL,NULL,0.56,0.98,0.12,0.56,0.98,0.12,0.51,0.51,2,False,False,,,vitamin_water_soluble,,,,,,,fortification_agent
+vitamin b2,synthetic | corn,fermentation,crystalline chemical,base ingredient,NULL,NULL,NULL,0.56,0.98,0.12,0.56,0.98,0.12,0.51,0.51,2,False,False,,,vitamin_water_soluble,,,,,,,fortification_agent
+folic acid,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,vitamin_water_soluble,,,,,,,fortification_agent
+vitamins a,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,vitamin_fat_soluble,,,,,,,fortification_agent
+sodium img,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,mineral_nutrient,,,,,,,fortification_agent
+vitamin b6,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,vitamin_water_soluble,,,,,,,fortification_agent
+vitamins d,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,vitamin_fat_soluble,,,,,,,fortification_agent
+vitamin d2,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,vitamin_fat_soluble,,,,,,,fortification_agent
+vitamin d3,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,vitamin_fat_soluble,,,,,,,fortification_agent
+l-arginine,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,amino_acid,,,,,,,fortification_agent
+methionine,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,amino_acid,,,,,,,fortification_agent
+vitamin b12,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,vitamin_water_soluble,,,,,,,fortification_agent
+amino acids,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,amino_acid,,,,,,,fortification_agent
+l-glutamine,synthetic | corn,fermentation,crystalline chemical,base ingredient,NULL,NULL,NULL,0.56,0.98,0.12,0.56,0.98,0.12,0.51,0.51,2,False,False,,,amino_acid,,,,,,,fortification_agent
+electrolytes,mineral,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,mineral_nutrient,,,,,,,fortification_agent
+nicotinamide,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,vitamin_water_soluble,,,,,,,fortification_agent
+calcium salt,mineral,NULL,crystalline chemical,base ingredient,NULL,NULL,firming agent,0,0.98,0.12,0,0.98,0.45,0.342,0.474,2,False,False,,,,,,,,,,fortification_agent
+ferrous salt,mineral,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,,,,,,,,fortification_agent
+l-lysine hcl,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,amino_acid,,,,,,,fortification_agent
+zinc sulphate,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,mineral_nutrient,,,,,,,fortification_agent
+phenylalaline,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,amino_acid,,,,,,,fortification_agent
+dl methionine,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,amino_acid,,,,,,,fortification_agent
+dl-methionine,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,amino_acid,,,,,,,fortification_agent
+zinc gluconate,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,mineral_nutrient,,,,,,,fortification_agent
+cyanocobalamin,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,vitamin_water_soluble,,,,,,,fortification_agent
+ergocalciferol,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,vitamin_fat_soluble,,,,,,,fortification_agent
+l-arginine hcl,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,amino_acid,,,,,,,fortification_agent
+magnesium oxide,mineral,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,mineral_nutrient,,,,,,,fortification_agent
+cholecalciferol,fish liver oil | synthetic,NULL,oil,NULL,NULL,extract/oleoresin,NULL,0,0.7,0,0,0.86,0,0.21,0.258,1,False,False,,,vitamin_fat_soluble,,,,,,,fortification_agent
+ferrous fumarate,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
+vitamin a acetate,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,vitamin_fat_soluble,,,,,,,fortification_agent
+electrolytic iron,mineral,NULL,crystalline chemical,base ingredient,?electrolysis,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,True,,,mineral_nutrient,,,,,,,fortification_agent
+manganese citrate,mineral,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,mineral_nutrient,,,,,,,fortification_agent
+vitamin b complex,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,vitamin_water_soluble,,,,,,,fortification_agent
+ferrous gluconate,mineral,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,mineral_nutrient,,,,,,,fortification_agent
+salts of magnesium,mineral,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,mineral_nutrient,,,,,,,fortification_agent
+magnesium sulphate,mineral,NULL,crystalline chemical,base ingredient,NULL,NULL,firming agent,0,0.98,0.12,0,0.98,0.45,0.342,0.474,2,False,False,,,mineral_nutrient,,,,,,,fortification_agent
+potassium chloride,mineral,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,,,,,,,,fortification_agent
+vitamins vitamin b2,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,vitamin_water_soluble,,,,,,,fortification_agent
+magnesium aspartate,mineral,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,mineral_nutrient,,,,,,,fortification_agent
+magnesium carbonate,mineral,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,mineral_nutrient,,,,,,,fortification_agent
+magnesium gluconate,mineral,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,mineral_nutrient,,,,,,,fortification_agent
+magnesium hydroxide,mineral,NULL,crystalline chemical,base ingredient,NULL,NULL,acidity regulator,0,0.98,0.12,0,0.98,0.86,0.342,0.638,2,False,False,,,mineral_nutrient,,,,,,,fortification_agent
+magnesium threonate,mineral,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,mineral_nutrient,,,,,,,fortification_agent
+vitamin a palmitate,palm,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,0,0,0,0,1,False,False,,,vitamin_fat_soluble,,,,,,,fortification_agent
+pyridoxine hydrochloride,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,vitamin_water_soluble,,,,,,,fortification_agent
+zinc sulphate monohydrate,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,mineral_nutrient,,,,,,,fortification_agent
+vitamin d2 ergocalciferol,yeast,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,vitamin_fat_soluble,,,,,,,fortification_agent
+vitamin a retinyl palmitate,palm,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,0,0,0,0,1,False,False,,,vitamin_fat_soluble,,,,,,,fortification_agent
+fortified wheat flour niacin,wheat,milling,flour/fine powder,base ingredient,NULL,NULL,NULL,0.28,0.33,0.12,0.28,0.33,0.12,0.231,0.231,1,False,False,,,vitamin_water_soluble,,fortified,,,,,fortification_agent
+fortified wheat flour thiamin,wheat,milling,flour/fine powder,base ingredient,NULL,NULL,NULL,0.28,0.33,0.12,0.28,0.33,0.12,0.231,0.231,1,False,False,,,vitamin_water_soluble,,fortified,,,,,fortification_agent
+riboflavin 5'-phosphate sodium,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,vitamin_water_soluble,,,,,,,fortification_agent
+fortified wheat flour thiamine,wheat,milling,flour/fine powder,base ingredient,NULL,NULL,NULL,0.28,0.33,0.12,0.28,0.33,0.12,0.231,0.231,1,False,False,,,vitamin_water_soluble,,fortified,,,,,fortification_agent
+vitamin b6 pyridoxal-5-phosphate,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,vitamin_water_soluble,,,,,,,fortification_agent
+salt substitute potassium chloride,mineral,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,,,,,,,,fortification_agent
+vitamin b6 pyridox ine hydrochloride,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,vitamin_water_soluble,,,,,,,fortification_agent

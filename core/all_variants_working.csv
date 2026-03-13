@@ -411,7 +411,7 @@ date syrup,date,NULL,juice,sweetener,NULL,concentrate,base ingredient,0,0.5,0.62
 folic acid,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,vitamin_water_soluble,,,,,,,fortification_agent
 dry ginger,ginger,drying,whole/fresh pieces,taste profile / spice,NULL,cut/sliced pieces|powder,flavouring agent,0.42,0.05,0.18,0.42,0.42,0.675,0.213,0.522,1,True,False,,,,,,,,,,taste profile / spice
 corn syrup,corn,?hydrolysis,juice,sweetener,NULL,concentrate,bulking agent,0.6,0.5,0.625,0.6,0.5,0.625,0.58,0.58,2,False,True,,,,,,,,,,sweetener
-l-camitine,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,amino_acid,,,,,,,fortification_agent
+l-camitine,synthetic,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,amino_acid,,,,,,,health_supplement
 wheatflour,wheat,milling,flour/fine powder,base ingredient,NULL,NULL,NULL,0.28,0.33,0.12,0.28,0.33,0.12,0.231,0.231,1,False,False,,,,,,,,,,raw_agricultural_material
 mango bits,mango,cut/sliced pieces,cut/sliced pieces,sweetener,drying,NULL,base ingredient,0,0.1,0.625,0.42,0.1,0.625,0.28,0.406,1,True,False,,,,,,,,,,sweetener
 mango pulp,mango,pulp/puree,pulp/puree,base ingredient,NULL,NULL,NULL,0,0.25,0.12,0,0.25,0.12,0.123,0.123,1,False,False,,,,,,,,,,raw_agricultural_material
@@ -541,7 +541,7 @@ carrot bits,carrot,cut/sliced pieces,cut/sliced pieces,base ingredient,drying,NU
 cashew nuts,cashew,NULL,whole/fresh pieces,base ingredient,roasting,NULL,NULL,0,0.05,0.12,0.58,0.05,0.12,0.063,0.237,1,False,False,,,,,,,,,,raw_agricultural_material
 corn starch,corn,NULL,starch flour,base ingredient,NULL,modified starch powder,thickener,0,0.6,0.12,0,0.96,0.615,0.228,0.534,1,True,False,,,,,starch,,,,,processed_ingredient
 date powder,date,drying,powder,sweetener,NULL,NULL,base ingredient,0.42,0.42,0.625,0.42,0.42,0.625,0.502,0.502,2,False,False,,,,,,,,,,sweetener
-l-carnitine,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,amino_acid,,,,,,,fortification_agent
+l-carnitine,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,amino_acid,,,,,,,health_supplement
 wheat flour,wheat,milling,flour/fine powder,base ingredient,NULL,NULL,NULL,0.28,0.33,0.12,0.28,0.33,0.12,0.231,0.231,1,False,False,,,,,,,,,,raw_agricultural_material
 mango puree,mango,NULL,pulp/puree,base ingredient,NULL,juice,sweetener,0,0.25,0.12,0,0.5,0.625,0.123,0.4,1,True,False,,,,,,,,,,raw_agricultural_material
 dried mango,mango,drying,whole/fresh pieces,base ingredient,NULL,cut/sliced pieces,sweetener,0.42,0.05,0.12,0.42,0.1,0.625,0.189,0.406,1,True,False,,,,,,,,,,raw_agricultural_material
@@ -789,7 +789,7 @@ orange powder,orange,drying,powder,taste profile / spice,NULL,NULL,flavouring ag
 fennel powder,fennel,drying,powder,taste profile / spice,NULL,NULL,flavouring agent,0.42,0.42,0.18,0.42,0.42,0.675,0.324,0.522,2,False,False,,,,,,,,,,taste profile / spice
 yeast extract,yeast,solvent extraction,extract/oleoresin,flavouring agent,NULL,NULL,NULL,0.82,0.86,0.675,0.82,0.86,0.675,0.774,0.774,3,False,False,,,,,,,,,,flavouring agent
 whey proteins,milk,NULL,protein concentrate,base ingredient,NULL,whey powder,NULL,0,0.74,0.12,0,0.74,0.12,0.27,0.27,1,False,False,,,,,,,whey_concentrate,,,processed_ingredient
-whey peptides,milk,?hydrolysis,protein isolate,base ingredient,NULL,whey powder,NULL,0.6,0.78,0.12,0.6,0.78,0.12,0.462,0.462,2,False,True,,,amino_acid,,,,,,,fortification_agent
+whey peptides,milk,?hydrolysis,protein isolate,base ingredient,NULL,whey powder,NULL,0.6,0.78,0.12,0.6,0.78,0.12,0.462,0.462,2,False,True,,,amino_acid,,,,,,,health_supplement
 latic culture,lactobacillus,fermentation,NULL,antioxidant|preservative,NULL,NULL,NULL,0.56,0,0.885,0.56,0,0.885,0.522,0.522,2,False,False,,,,,,,,,,antioxidant|preservative
 ajwair powder,ajwain,drying,powder,taste profile / spice,NULL,NULL,flavouring agent,0.42,0.42,0.18,0.42,0.42,0.675,0.324,0.522,2,False,False,,,,,,,,,,taste profile / spice
 bishop's seed,ajwain,NULL,whole/fresh pieces,taste profile / spice,NULL,NULL,flavouring agent,0,0.05,0.18,0,0.05,0.675,0.087,0.285,1,False,False,,,,,,,,,,taste profile / spice
@@ -1288,7 +1288,7 @@ custard flavouring,synthetic,synthetic flavors,powder,flavouring agent,NULL,NULL
 khus roots extract,khus,solvent extraction,extract/oleoresin,flavouring agent,NULL,essential oil,taste profile / spice,0.82,0.86,0.675,0.82,0.9,0.675,0.774,0.786,3,False,False,,,,,,,,,,flavouring agent
 distillate of khas,khas,distillation,essential oil,flavouring agent,NULL,extract/oleoresin,taste profile / spice,0,0.9,0.675,0,0.9,0.675,0.54,0.54,2,False,False,,,,,,,,,,flavouring agent
 distillate of khus,khus,distillation,essential oil,flavouring agent,NULL,extract/oleoresin,taste profile / spice,0,0.9,0.675,0,0.9,0.675,0.54,0.54,2,False,False,,,,,,,,,,flavouring agent
-glutamine peptides,synthetic,NULL,protein concentrate,base ingredient,?hydrolysis,powder,NULL,0,0.74,0.12,0.6,0.74,0.12,0.27,0.45,1,True,True,,,amino_acid,,,,hydrolysate,,,fortification_agent
+glutamine peptides,synthetic,NULL,protein concentrate,base ingredient,?hydrolysis,powder,NULL,0,0.74,0.12,0.6,0.74,0.12,0.27,0.45,1,True,True,,,amino_acid,,,,hydrolysate,,,health_supplement
 munakka flavouring,munakka,NULL,extract/oleoresin,flavouring agent,NULL,NULL,taste profile / spice,0,0.86,0.675,0,0.86,0.675,0.528,0.528,2,False,False,,,,,,,,,,flavouring agent
 munakka distillate,munakka,distillation,essential oil,flavouring agent,NULL,extract/oleoresin,taste profile / spice,0,0.9,0.675,0,0.9,0.675,0.54,0.54,2,False,False,,,,,,,,,,flavouring agent
 tulsi leaf extract,tulsi,solvent extraction,extract/oleoresin,flavouring agent,NULL,essential oil,taste profile / spice,0.82,0.86,0.675,0.82,0.9,0.675,0.774,0.786,3,False,False,,,,,,,,,,flavouring agent
@@ -1739,7 +1739,7 @@ yoghurt milk bacterial cultures,milk,fermentation,dense block,base ingredient,NU
 edible vegetable oil cottonseed,cottonseed,NULL,oil,lipid base,cold pressing|refining|solvent extraction,NULL,NULL,0,0.7,0.22,0.82,0.7,0.22,0.298,0.544,1,True,False,,,,,,,,,,lipid base
 edible vegetable oil ground nut,groundnut,NULL,oil,lipid base,cold pressing|refining|solvent extraction,NULL,NULL,0,0.7,0.22,0.82,0.7,0.22,0.298,0.544,1,True,False,,,,,,,,,,lipid base
 emulsifying agent soya lecithin,soybean,NULL,emulsifier powder,emulsifier,solvent extraction,extract/oleoresin,antioxidant,0,0.89,0.825,0.82,0.89,0.875,0.597,0.863,2,True,False,,,,,,,,,,emulsifier
-creatine monohydrate micronized,synthetic,NULL,powder,base ingredient,NULL,granules,NULL,0,0.42,0.12,0,0.8,0.12,0.174,0.288,1,False,False,,,amino_acid,,,,,,,fortification_agent
+creatine monohydrate micronized,synthetic,NULL,powder,base ingredient,NULL,granules,NULL,0,0.42,0.12,0,0.8,0.12,0.174,0.288,1,False,False,,,amino_acid,,,,,,,health_supplement
 giloy tinospora cordifolia stem,giloy tinospora cordifolia stem,NULL,whole/fresh pieces,base ingredient,NULL,cut/sliced pieces,NULL,0,0.05,0.12,0,0.1,0.12,0.063,0.078,1,False,False,,,,,,,,,,raw_agricultural_material
 kakanasika martynia annua fruit,kakanasika martynia annua fruit,NULL,whole/fresh pieces,base ingredient,NULL,cut/sliced pieces,NULL,0,0.05,0.12,0,0.1,0.12,0.063,0.078,1,False,False,,,,,,,,,,raw_agricultural_material
 prishniparni uraria picta plant,prishniparni uraria picta plant,NULL,whole/fresh pieces,base ingredient,NULL,cut/sliced pieces,NULL,0,0.05,0.12,0,0.1,0.12,0.063,0.078,1,False,False,,,,,,,,,,raw_agricultural_material
@@ -1882,7 +1882,7 @@ arachidonic acid ara from mortierella alpina oil,mortierella alpina,solvent extr
 emulsifier propylene glycol esters of fatty acids,palm | soybean | sunflower,acetylation,fat fraction,emulsifier,NULL,NULL,stabiliser,0.94,0.72,0.825,0.94,0.72,0.825,0.828,0.828,3,False,False,,,,,,,,,,emulsifier
 emulsifiers mono- and diglycerides of fatty acids,palm | soybean | sunflower,interesterification,fat fraction,emulsifier|stabiliser,NULL,NULL,NULL,0.91,0.72,0.825,0.91,0.72,0.825,0.819,0.819,3,False,False,,,,,,,,,,emulsifier|stabiliser
 edible vegetable fat interesterified palm kernel oil,palm,interesterification,fat fraction,lipid base,refining,oil,NULL,0.91,0.72,0.22,0.91,0.72,0.22,0.577,0.577,2,False,False,,,,,,kernel,,,,lipid base
-calcium b-hydroxy-b-methylbutyrate monohydrate cahmb,synthetic,NULL,crystalline chemical,base ingredient,NULL,powder,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,mineral_nutrient,,,,,,,fortification_agent
+calcium b-hydroxy-b-methylbutyrate monohydrate cahmb,synthetic,NULL,crystalline chemical,base ingredient,NULL,powder,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,mineral_nutrient,,,,,,,health_supplement
 east india basil ocimum gratissimum vana variety leaf,ocimum gratissimum,NULL,whole/fresh pieces,taste profile / spice,NULL,cut/sliced pieces,flavouring agent,0,0.05,0.18,0,0.1,0.675,0.087,0.3,1,True,False,,,,,,,,,,taste profile / spice
 apple juice reconstituted from apple juice concentrate,apple,NULL,juice,flavouring agent,NULL,NULL,NULL,0,0.5,0.675,0,0.5,0.675,0.42,0.42,2,False,False,,,,,,,,,,flavouring agent
 active lactic cultures including ldelbrueki subsp bulgaricus,milk,fermentation,NULL,base ingredient,NULL,NULL,NULL,0.56,0,0.12,0.56,0,0.12,0.216,0.216,1,False,False,,,,,,,,,,fermentation_agent
