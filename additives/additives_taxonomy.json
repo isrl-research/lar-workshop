@@ -1,0 +1,2640 @@
+{
+  "additives": {
+    "631": {
+      "ins_number": "631",
+      "official_name": "Disodium 5'-ribonucleotides",
+      "functional_classes": [
+        "flavour enhancer"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Flavour enhancers"
+    },
+    "941": {
+      "ins_number": "941",
+      "official_name": "Dimethylpolysiloxane",
+      "functional_classes": [
+        "antifoaming agent",
+        "propellant"
+      ],
+      "source_type": "synthetic",
+      "sources": [
+        "air"
+      ],
+      "codex_category": "Gases, waxes and propellants"
+    },
+    "999": {
+      "ins_number": "999",
+      "official_name": "Quillaia extract",
+      "functional_classes": [
+        "foaming agent",
+        "flavour enhancer"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "Quillaia saponaria"
+      ],
+      "codex_category": "Sweeteners"
+    },
+    "420": {
+      "ins_number": "420",
+      "official_name": "Sorbitol",
+      "functional_classes": [
+        "humectant",
+        "sweetener",
+        "emulsifier",
+        "stabilizer",
+        "thickener"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "corn"
+      ],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "553b": {
+      "ins_number": "553b",
+      "official_name": "Talc",
+      "functional_classes": [
+        "anticaking agent"
+      ],
+      "source_type": "mineral",
+      "sources": [],
+      "codex_category": "pH adjusters, anti-caking and anti-foaming agents"
+    },
+    "102": {
+      "ins_number": "102",
+      "official_name": "Tartrazine",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Colours"
+    },
+    "110": {
+      "ins_number": "110",
+      "official_name": "Sunset yellow FCF, Orange yellow S",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Colours"
+    },
+    "100": {
+      "ins_number": "100",
+      "official_name": "Curcumin",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "turmeric"
+      ],
+      "codex_category": "Colours"
+    },
+    "162": {
+      "ins_number": "162",
+      "official_name": "Beetroot Red",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "beetroot"
+      ],
+      "codex_category": "Colours"
+    },
+    "163": {
+      "ins_number": "163",
+      "official_name": "Anthocyanins",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "grape skin",
+        "berries",
+        "red cabbage"
+      ],
+      "codex_category": "Colours"
+    },
+    "171": {
+      "ins_number": "171",
+      "official_name": "Titanium dioxide",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "mineral",
+      "sources": [],
+      "codex_category": "Colours"
+    },
+    "141": {
+      "ins_number": "141",
+      "official_name": "Copper complexes of chlorophylls",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "plant",
+      "sources": [],
+      "codex_category": "Colours"
+    },
+    "160a(i)": {
+      "ins_number": "160a(i)",
+      "official_name": "Beta-carotene, vegetable",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "carrot"
+      ],
+      "codex_category": "Colours"
+    },
+    "129": {
+      "ins_number": "129",
+      "official_name": "Allura Red AC",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Colours"
+    },
+    "133": {
+      "ins_number": "133",
+      "official_name": "Brilliant Blue FCF",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Colours"
+    },
+    "132": {
+      "ins_number": "132",
+      "official_name": "Indigotine, Indigo carmine",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Colours"
+    },
+    "127": {
+      "ins_number": "127",
+      "official_name": "Erythrosine",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Colours"
+    },
+    "124": {
+      "ins_number": "124",
+      "official_name": "Ponceau 4R",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Colours"
+    },
+    "122": {
+      "ins_number": "122",
+      "official_name": "Azorubine, Carmoisine",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Colours"
+    },
+    "101(i)": {
+      "ins_number": "101(i)",
+      "official_name": "Riboflavin",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Colours"
+    },
+    "150a": {
+      "ins_number": "150a",
+      "official_name": "Plain caramel",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "sugarcane",
+        "corn",
+        "wheat",
+        "potato",
+        "glucose syrup"
+      ],
+      "codex_category": "Colours"
+    },
+    "150c": {
+      "ins_number": "150c",
+      "official_name": "Ammonia caramel",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "sugarcane",
+        "corn",
+        "wheat",
+        "potato",
+        "glucose syrup"
+      ],
+      "codex_category": "Colours"
+    },
+    "150d": {
+      "ins_number": "150d",
+      "official_name": "Sulphite ammonia caramel",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "sugarcane",
+        "corn",
+        "wheat",
+        "potato",
+        "glucose syrup"
+      ],
+      "codex_category": "Colours"
+    },
+    "160b": {
+      "ins_number": "160b",
+      "official_name": "Annatto extracts",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "annatto seeds"
+      ],
+      "codex_category": "Colours"
+    },
+    "160c": {
+      "ins_number": "160c",
+      "official_name": "Paprika extract",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "paprika"
+      ],
+      "codex_category": "Colours"
+    },
+    "163c": {
+      "ins_number": "163c",
+      "official_name": "Grape skin extract",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "grape skin"
+      ],
+      "codex_category": "Colours"
+    },
+    "160a": {
+      "ins_number": "160a",
+      "official_name": "Carotenes, mixed",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "carrot",
+        "algae",
+        "tomato",
+        "pumpkin"
+      ],
+      "codex_category": "Colours"
+    },
+    "472e": {
+      "ins_number": "472e",
+      "official_name": "Diacetyltartaric and fatty acid esters of glycerol",
+      "functional_classes": [
+        "emulsifier"
+      ],
+      "source_type": "animal",
+      "sources": [
+        "palm",
+        "soybean",
+        "sunflower",
+        "rapeseed",
+        "lard",
+        "tallow"
+      ],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "161g": {
+      "ins_number": "161g",
+      "official_name": "Canthaxanthin",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "synthetic",
+      "sources": [
+        "algae"
+      ],
+      "codex_category": "Colours"
+    },
+    "1100": {
+      "ins_number": "1100",
+      "official_name": "alpha-Amylase",
+      "functional_classes": [
+        "flour treatment agent"
+      ],
+      "source_type": "synthetic",
+      "sources": [
+        "barley malt",
+        "animal pancreas",
+        "Bacillus subtilis"
+      ],
+      "codex_category": "Enzymes"
+    },
+    "224": {
+      "ins_number": "224",
+      "official_name": "Potassium metabisulphite",
+      "functional_classes": [
+        "preservative",
+        "antioxidant"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Preservatives"
+    },
+    "202": {
+      "ins_number": "202",
+      "official_name": "Potassium sorbate",
+      "functional_classes": [
+        "preservative"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Preservatives"
+    },
+    "428": {
+      "ins_number": "428",
+      "official_name": "Gelatine",
+      "functional_classes": [
+        "thickener",
+        "stabilizer",
+        "emulsifier"
+      ],
+      "source_type": "animal",
+      "sources": [
+        "fish"
+      ],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "1104": {
+      "ins_number": "1104",
+      "official_name": "Lipases",
+      "functional_classes": [
+        "flavour enhancer"
+      ],
+      "source_type": "synthetic",
+      "sources": [
+        "animal pancreas",
+        "fungi"
+      ],
+      "codex_category": "Enzymes"
+    },
+    "152": {
+      "ins_number": "152",
+      "official_name": "Polyethylene glycol",
+      "functional_classes": [
+        "carrier"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Colours"
+    },
+    "472": {
+      "ins_number": "472",
+      "official_name": "Esters of mono- and diglycerides of fatty acids",
+      "functional_classes": [
+        "emulsifier",
+        "stabilizer"
+      ],
+      "source_type": "animal",
+      "sources": [
+        "palm",
+        "soybean",
+        "sunflower",
+        "rapeseed",
+        "lard",
+        "tallow"
+      ],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "960": {
+      "ins_number": "960",
+      "official_name": "Steviol glycosides",
+      "functional_classes": [
+        "sweetener",
+        "flavour enhancer"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "stevia",
+        "Citrus aurantium"
+      ],
+      "codex_category": "Sweeteners"
+    },
+    "575": {
+      "ins_number": "575",
+      "official_name": "Glucono-delta-lactone",
+      "functional_classes": [
+        "acidity regulator",
+        "sequestrant",
+        "raising agent"
+      ],
+      "source_type": "synthetic",
+      "sources": [
+        "corn"
+      ],
+      "codex_category": "pH adjusters, anti-caking and anti-foaming agents"
+    },
+    "451": {
+      "ins_number": "451",
+      "official_name": "Triphosphates",
+      "functional_classes": [
+        "emulsifier",
+        "sequestrant",
+        "stabilizer"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "452": {
+      "ins_number": "452",
+      "official_name": "Polyphosphates",
+      "functional_classes": [
+        "emulsifier",
+        "sequestrant",
+        "stabilizer"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "415": {
+      "ins_number": "415",
+      "official_name": "Xanthan gum",
+      "functional_classes": [
+        "thickener",
+        "stabilizer",
+        "emulsifier"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "corn",
+        "fermented glucose"
+      ],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "950": {
+      "ins_number": "950",
+      "official_name": "Acesulfame potassium",
+      "functional_classes": [
+        "sweetener"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Sweeteners"
+    },
+    "466": {
+      "ins_number": "466",
+      "official_name": "Sodium carboxymethylcellulose",
+      "functional_classes": [
+        "thickener",
+        "stabilizer",
+        "emulsifier"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "wood pulp",
+        "cotton linter"
+      ],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "414": {
+      "ins_number": "414",
+      "official_name": "Gum arabic",
+      "functional_classes": [
+        "thickener",
+        "stabilizer",
+        "emulsifier"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "acacia gum"
+      ],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "470a": {
+      "ins_number": "470a",
+      "official_name": "Sodium, potassium and calcium salts of fatty acids",
+      "functional_classes": [
+        "emulsifier",
+        "stabilizer",
+        "anticaking agent"
+      ],
+      "source_type": "animal",
+      "sources": [
+        "palm",
+        "soybean",
+        "sunflower",
+        "rapeseed",
+        "lard",
+        "tallow"
+      ],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "508": {
+      "ins_number": "508",
+      "official_name": "Calcium chloride",
+      "functional_classes": [
+        "firming agent",
+        "flour treatment agent",
+        "flavour enhancer",
+        "stabilizer",
+        "thickener",
+        "gelling agent"
+      ],
+      "source_type": "mineral",
+      "sources": [
+        "sylvite"
+      ],
+      "codex_category": "pH adjusters, anti-caking and anti-foaming agents"
+    },
+    "1102": {
+      "ins_number": "1102",
+      "official_name": "Glucose oxidase",
+      "functional_classes": [
+        "antioxidant",
+        "flour treatment agent"
+      ],
+      "source_type": "synthetic",
+      "sources": [
+        "Aspergillus niger",
+        "Penicillium"
+      ],
+      "codex_category": "Enzymes"
+    },
+    "422": {
+      "ins_number": "422",
+      "official_name": "Glycerol",
+      "functional_classes": [
+        "humectant",
+        "sweetener"
+      ],
+      "source_type": "synthetic",
+      "sources": [
+        "palm",
+        "soybean",
+        "sunflower",
+        "rapeseed",
+        "lard",
+        "tallow",
+        "propylene",
+        "sugar fermentation"
+      ],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "412": {
+      "ins_number": "412",
+      "official_name": "Guar gum",
+      "functional_classes": [
+        "thickener",
+        "stabilizer",
+        "emulsifier"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "guar seed"
+      ],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "296": {
+      "ins_number": "296",
+      "official_name": "Malic acid, DL-",
+      "functional_classes": [
+        "acidity regulator"
+      ],
+      "source_type": "synthetic",
+      "sources": [
+        "apple",
+        "pear"
+      ],
+      "codex_category": "Unclassified"
+    },
+    "440": {
+      "ins_number": "440",
+      "official_name": "Pectins",
+      "functional_classes": [
+        "gelling agent",
+        "thickener",
+        "stabilizer",
+        "emulsifier"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "apple",
+        "citrus fruit"
+      ],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "955": {
+      "ins_number": "955",
+      "official_name": "Sucralose",
+      "functional_classes": [
+        "sweetener"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Sweeteners"
+    },
+    "1204": {
+      "ins_number": "1204",
+      "official_name": "Pullulan",
+      "functional_classes": [
+        "glazing agent",
+        "thickener",
+        "stabilizer",
+        "bulking agent"
+      ],
+      "source_type": "synthetic",
+      "sources": [
+        "starch hydrolysate from Aureobasidium pullulans"
+      ],
+      "codex_category": "Unclassified"
+    },
+    "957": {
+      "ins_number": "957",
+      "official_name": "Thaumatin",
+      "functional_classes": [
+        "flavour enhancer",
+        "sweetener"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "Thaumatococcus daniellii"
+      ],
+      "codex_category": "Sweeteners"
+    },
+    "1422": {
+      "ins_number": "1422",
+      "official_name": "Acetylated distarch adipate",
+      "functional_classes": [
+        "thickener",
+        "stabilizer"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "corn",
+        "wheat",
+        "tapioca",
+        "potato",
+        "rice"
+      ],
+      "codex_category": "Modified starches"
+    },
+    "1405": {
+      "ins_number": "1405",
+      "official_name": "Starch sodium octenylsuccinate",
+      "functional_classes": [
+        "emulsifier",
+        "stabilizer",
+        "thickener"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "corn",
+        "wheat",
+        "tapioca",
+        "potato",
+        "rice"
+      ],
+      "codex_category": "Modified starches"
+    },
+    "1412": {
+      "ins_number": "1412",
+      "official_name": "Distarch phosphate",
+      "functional_classes": [
+        "thickener",
+        "stabilizer"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "corn",
+        "wheat",
+        "tapioca",
+        "potato",
+        "rice"
+      ],
+      "codex_category": "Modified starches"
+    },
+    "1442": {
+      "ins_number": "1442",
+      "official_name": "Hydroxypropyl distarch phosphate",
+      "functional_classes": [
+        "thickener",
+        "stabilizer",
+        "emulsifier"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "corn",
+        "wheat",
+        "tapioca",
+        "potato",
+        "rice"
+      ],
+      "codex_category": "Modified starches"
+    },
+    "1401": {
+      "ins_number": "1401",
+      "official_name": "Acid-treated starch",
+      "functional_classes": [
+        "thickener",
+        "stabilizer"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "corn",
+        "wheat",
+        "tapioca",
+        "potato",
+        "rice"
+      ],
+      "codex_category": "Modified starches"
+    },
+    "1440": {
+      "ins_number": "1440",
+      "official_name": "Hydroxypropyl starch",
+      "functional_classes": [
+        "thickener",
+        "stabilizer",
+        "emulsifier"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "corn",
+        "wheat",
+        "tapioca",
+        "potato",
+        "rice"
+      ],
+      "codex_category": "Modified starches"
+    },
+    "960a": {
+      "ins_number": "960a",
+      "official_name": "Steviol glycosides",
+      "functional_classes": [
+        "sweetener"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "stevia"
+      ],
+      "codex_category": "Sweeteners"
+    },
+    "450": {
+      "ins_number": "450",
+      "official_name": "Diphosphates",
+      "functional_classes": [
+        "emulsifier",
+        "stabilizer",
+        "acidity regulator",
+        "raising agent",
+        "sequestrant",
+        "thickener"
+      ],
+      "source_type": "mineral",
+      "sources": [
+        "rock phosphate"
+      ],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "339": {
+      "ins_number": "339",
+      "official_name": "Sodium phosphates",
+      "functional_classes": [
+        "acidity regulator",
+        "emulsifier",
+        "sequestrant",
+        "stabilizer"
+      ],
+      "source_type": "mineral",
+      "sources": [],
+      "codex_category": "Antioxidants and acidity regulators"
+    },
+    "340": {
+      "ins_number": "340",
+      "official_name": "Potassium phosphates",
+      "functional_classes": [
+        "acidity regulator",
+        "emulsifier",
+        "sequestrant",
+        "stabilizer",
+        "humectant"
+      ],
+      "source_type": "mineral",
+      "sources": [],
+      "codex_category": "Antioxidants and acidity regulators"
+    },
+    "341": {
+      "ins_number": "341",
+      "official_name": "Monocalcium phosphate",
+      "functional_classes": [
+        "firming agent",
+        "raising agent",
+        "acidity regulator",
+        "flour treatment agent",
+        "anticaking agent",
+        "stabilizer",
+        "emulsifier",
+        "humectant"
+      ],
+      "source_type": "mineral",
+      "sources": [
+        "rock phosphate"
+      ],
+      "codex_category": "Antioxidants and acidity regulators"
+    },
+    "170": {
+      "ins_number": "170",
+      "official_name": "Calcium carbonate",
+      "functional_classes": [
+        "color",
+        "anticaking agent",
+        "stabilizer",
+        "acidity regulator"
+      ],
+      "source_type": "mineral",
+      "sources": [
+        "limestone",
+        "chalk",
+        "marble"
+      ],
+      "codex_category": "Colours"
+    },
+    "965": {
+      "ins_number": "965",
+      "official_name": "Maltitol",
+      "functional_classes": [
+        "humectant",
+        "sweetener",
+        "stabilizer"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "corn"
+      ],
+      "codex_category": "Sweeteners"
+    },
+    "442": {
+      "ins_number": "442",
+      "official_name": "Ammonium phosphatides",
+      "functional_classes": [
+        "emulsifier"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "460": {
+      "ins_number": "460",
+      "official_name": "Microcrystalline cellulose",
+      "functional_classes": [
+        "anticaking agent",
+        "emulsifier",
+        "stabilizer",
+        "thickener"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "wood pulp"
+      ],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "627": {
+      "ins_number": "627",
+      "official_name": "Disodium 5'-guanylate",
+      "functional_classes": [
+        "flavour enhancer"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Flavour enhancers"
+    },
+    "400": {
+      "ins_number": "400",
+      "official_name": "Alginic acid",
+      "functional_classes": [
+        "thickener",
+        "stabilizer",
+        "gelling agent",
+        "emulsifier"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "brown algae"
+      ],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "429": {
+      "ins_number": "429",
+      "official_name": "Phosphatidic acid",
+      "functional_classes": [
+        "emulsifier"
+      ],
+      "source_type": "animal",
+      "sources": [
+        "soybean",
+        "rapeseed",
+        "sunflower",
+        "egg yolk"
+      ],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "436": {
+      "ins_number": "436",
+      "official_name": "Polyoxyethylene (20) sorbitan tristearate",
+      "functional_classes": [
+        "emulsifier"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "478": {
+      "ins_number": "478",
+      "official_name": "Propylene glycol monostearate",
+      "functional_classes": [
+        "emulsifier"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "479": {
+      "ins_number": "479",
+      "official_name": "Thermally oxidized soybean oil interacted with mono- and diglycerides of fatty acids",
+      "functional_classes": [
+        "emulsifier"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "soybean"
+      ],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "481": {
+      "ins_number": "481",
+      "official_name": "Sodium stearoyl-2-lactylate",
+      "functional_classes": [
+        "emulsifier",
+        "stabilizer"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "491": {
+      "ins_number": "491",
+      "official_name": "Sorbitan monostearate",
+      "functional_classes": [
+        "emulsifier"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "433": {
+      "ins_number": "433",
+      "official_name": "Polyoxyethylene (20) sorbitan monooleate",
+      "functional_classes": [
+        "emulsifier"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "475": {
+      "ins_number": "475",
+      "official_name": "Polyglycerol esters of fatty acids",
+      "functional_classes": [
+        "emulsifier"
+      ],
+      "source_type": "animal",
+      "sources": [
+        "palm",
+        "soybean",
+        "sunflower",
+        "rapeseed",
+        "lard",
+        "tallow"
+      ],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "476": {
+      "ins_number": "476",
+      "official_name": "Polyglycerol polyricinoleate",
+      "functional_classes": [
+        "emulsifier"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "477": {
+      "ins_number": "477",
+      "official_name": "Propylene glycol esters of fatty acids",
+      "functional_classes": [
+        "emulsifier"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "492": {
+      "ins_number": "492",
+      "official_name": "Sorbitan tristearate",
+      "functional_classes": [
+        "emulsifier"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "516": {
+      "ins_number": "516",
+      "official_name": "Calcium sulfate",
+      "functional_classes": [
+        "firming agent",
+        "flour treatment agent",
+        "stabilizer",
+        "thickener"
+      ],
+      "source_type": "mineral",
+      "sources": [],
+      "codex_category": "pH adjusters, anti-caking and anti-foaming agents"
+    },
+    "445": {
+      "ins_number": "445",
+      "official_name": "Glycerol esters of wood rosins",
+      "functional_classes": [
+        "emulsifier",
+        "stabilizer"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "pine resin",
+        "pine tree stumps"
+      ],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "322": {
+      "ins_number": "322",
+      "official_name": "Lecithins",
+      "functional_classes": [
+        "antioxidant",
+        "emulsifier",
+        "stabilizer"
+      ],
+      "source_type": "animal",
+      "sources": [
+        "soybean",
+        "sunflower",
+        "rapeseed",
+        "egg yolk"
+      ],
+      "codex_category": "Antioxidants and acidity regulators"
+    },
+    "471": {
+      "ins_number": "471",
+      "official_name": "Mono- and diglycerides of fatty acids",
+      "functional_classes": [
+        "emulsifier",
+        "stabilizer"
+      ],
+      "source_type": "animal",
+      "sources": [
+        "palm",
+        "soybean",
+        "sunflower",
+        "rapeseed",
+        "lard",
+        "tallow"
+      ],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "435": {
+      "ins_number": "435",
+      "official_name": "Polyoxyethylene (20) sorbitan monostearate",
+      "functional_classes": [
+        "emulsifier"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "401": {
+      "ins_number": "401",
+      "official_name": "Sodium alginate",
+      "functional_classes": [
+        "thickener",
+        "stabilizer",
+        "gelling agent",
+        "emulsifier"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "brown algae"
+      ],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "331": {
+      "ins_number": "331",
+      "official_name": "Sodium citrates",
+      "functional_classes": [
+        "acidity regulator",
+        "emulsifier",
+        "sequestrant"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Antioxidants and acidity regulators"
+    },
+    "444": {
+      "ins_number": "444",
+      "official_name": "Sucrose acetate isobutyrate",
+      "functional_classes": [
+        "emulsifier",
+        "stabilizer"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "417": {
+      "ins_number": "417",
+      "official_name": "Tara gum",
+      "functional_classes": [
+        "thickener",
+        "stabilizer"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "tara tree seeds"
+      ],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "337": {
+      "ins_number": "337",
+      "official_name": "Potassium tartrate",
+      "functional_classes": [
+        "acidity regulator",
+        "antioxidant"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Antioxidants and acidity regulators"
+    },
+    "418": {
+      "ins_number": "418",
+      "official_name": "Gellan gum",
+      "functional_classes": [
+        "gelling agent",
+        "stabilizer",
+        "emulsifier",
+        "thickener"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "406": {
+      "ins_number": "406",
+      "official_name": "Agar",
+      "functional_classes": [
+        "thickener",
+        "stabilizer",
+        "gelling agent",
+        "emulsifier"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "red algae"
+      ],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "1450": {
+      "ins_number": "1450",
+      "official_name": "Starch sodium octenylsuccinate",
+      "functional_classes": [
+        "emulsifier",
+        "stabilizer"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "corn",
+        "wheat",
+        "tapioca",
+        "potato",
+        "rice"
+      ],
+      "codex_category": "Modified starches"
+    },
+    "1400": {
+      "ins_number": "1400",
+      "official_name": "Dextrin roasted starch",
+      "functional_classes": [
+        "stabilizer",
+        "thickener"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "corn",
+        "wheat",
+        "tapioca",
+        "potato",
+        "rice"
+      ],
+      "codex_category": "Modified starches"
+    },
+    "1404": {
+      "ins_number": "1404",
+      "official_name": "Oxidized starch",
+      "functional_classes": [
+        "emulsifier",
+        "thickener",
+        "stabilizer"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "corn",
+        "wheat",
+        "tapioca",
+        "potato",
+        "rice"
+      ],
+      "codex_category": "Modified starches"
+    },
+    "330": {
+      "ins_number": "330",
+      "official_name": "Citric acid",
+      "functional_classes": [
+        "antioxidant",
+        "acidity regulator",
+        "flavour enhancer",
+        "preservative",
+        "sequestrant"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "lemon",
+        "lime",
+        "citrus fruit",
+        "corn"
+      ],
+      "codex_category": "Antioxidants and acidity regulators"
+    },
+    "260": {
+      "ins_number": "260",
+      "official_name": "Acetic acid, glacial",
+      "functional_classes": [
+        "acidity regulator",
+        "preservative"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Preservatives"
+    },
+    "1202": {
+      "ins_number": "1202",
+      "official_name": "Polyvinylpolypyrrolidone",
+      "functional_classes": [
+        "stabilizer",
+        "clarifying agent"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Polyols"
+    },
+    "1201": {
+      "ins_number": "1201",
+      "official_name": "Polyvinylpyrrolidone",
+      "functional_classes": [
+        "stabilizer"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Polyols"
+    },
+    "385": {
+      "ins_number": "385",
+      "official_name": "Calcium disodium EDTA",
+      "functional_classes": [
+        "antioxidant",
+        "sequestrant"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Antioxidants and acidity regulators"
+    },
+    "386": {
+      "ins_number": "386",
+      "official_name": "Disodium EDTA",
+      "functional_classes": [
+        "preservative",
+        "sequestrant"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Antioxidants and acidity regulators"
+    },
+    "472b": {
+      "ins_number": "472b",
+      "official_name": "Lactic and fatty acid esters of glycerol",
+      "functional_classes": [
+        "emulsifier"
+      ],
+      "source_type": "animal",
+      "sources": [
+        "palm",
+        "soybean",
+        "sunflower",
+        "rapeseed",
+        "lard",
+        "tallow"
+      ],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "472c": {
+      "ins_number": "472c",
+      "official_name": "Citric and fatty acid esters of glycerol",
+      "functional_classes": [
+        "emulsifier"
+      ],
+      "source_type": "animal",
+      "sources": [
+        "palm",
+        "soybean",
+        "sunflower",
+        "rapeseed",
+        "lard",
+        "tallow"
+      ],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "1505": {
+      "ins_number": "1505",
+      "official_name": "Triethyl citrate",
+      "functional_classes": [
+        "stabilizer",
+        "carrier"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Modified starches"
+    },
+    "503": {
+      "ins_number": "503",
+      "official_name": "Ammonium carbonates",
+      "functional_classes": [
+        "acidity regulator",
+        "raising agent"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "pH adjusters, anti-caking and anti-foaming agents"
+    },
+    "212": {
+      "ins_number": "212",
+      "official_name": "Potassium benzoate",
+      "functional_classes": [
+        "preservative"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Preservatives"
+    },
+    "211": {
+      "ins_number": "211",
+      "official_name": "Sodium benzoate",
+      "functional_classes": [
+        "preservative"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Preservatives"
+    },
+    "200": {
+      "ins_number": "200",
+      "official_name": "Sorbic acid",
+      "functional_classes": [
+        "preservative"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Preservatives"
+    },
+    "500": {
+      "ins_number": "500",
+      "official_name": "Sodium carbonates",
+      "functional_classes": [
+        "acidity regulator",
+        "raising agent"
+      ],
+      "source_type": "mineral",
+      "sources": [
+        "nahcolite",
+        "trona"
+      ],
+      "codex_category": "pH adjusters, anti-caking and anti-foaming agents"
+    },
+    "903": {
+      "ins_number": "903",
+      "official_name": "Carnauba wax",
+      "functional_classes": [
+        "glazing agent"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "carnauba palm"
+      ],
+      "codex_category": "Gases, waxes and propellants"
+    },
+    "901": {
+      "ins_number": "901",
+      "official_name": "Beeswax, white and yellow",
+      "functional_classes": [
+        "glazing agent"
+      ],
+      "source_type": "animal",
+      "sources": [
+        "beeswax"
+      ],
+      "codex_category": "Gases, waxes and propellants"
+    },
+    "904": {
+      "ins_number": "904",
+      "official_name": "Shellac",
+      "functional_classes": [
+        "glazing agent"
+      ],
+      "source_type": "animal",
+      "sources": [
+        "lac beetle secretion"
+      ],
+      "codex_category": "Gases, waxes and propellants"
+    },
+    "262": {
+      "ins_number": "262",
+      "official_name": "Sodium acetates",
+      "functional_classes": [
+        "acidity regulator",
+        "preservative"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Preservatives"
+    },
+    "510": {
+      "ins_number": "510",
+      "official_name": "Magnesium chloride",
+      "functional_classes": [
+        "firming agent",
+        "flavour enhancer",
+        "flour treatment agent"
+      ],
+      "source_type": "synthetic",
+      "sources": [
+        "seawater",
+        "brine"
+      ],
+      "codex_category": "pH adjusters, anti-caking and anti-foaming agents"
+    },
+    "923": {
+      "ins_number": "923",
+      "official_name": "Propyl gallate",
+      "functional_classes": [
+        "antioxidant",
+        "flour treatment agent"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Gases, waxes and propellants"
+    },
+    "223": {
+      "ins_number": "223",
+      "official_name": "Sodium metabisulphite",
+      "functional_classes": [
+        "bleaching agent",
+        "preservative",
+        "antioxidant",
+        "flour treatment agent"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Preservatives"
+    },
+    "1420": {
+      "ins_number": "1420",
+      "official_name": "Acetylated starch",
+      "functional_classes": [
+        "thickener",
+        "stabilizer",
+        "emulsifier"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "corn",
+        "wheat",
+        "tapioca",
+        "potato",
+        "rice"
+      ],
+      "codex_category": "Modified starches"
+    },
+    "1101": {
+      "ins_number": "1101",
+      "official_name": "Protease",
+      "functional_classes": [
+        "flour treatment agent"
+      ],
+      "source_type": "synthetic",
+      "sources": [
+        "papaya latex",
+        "papaya"
+      ],
+      "codex_category": "Enzymes"
+    },
+    "470": {
+      "ins_number": "470",
+      "official_name": "Fatty acids",
+      "functional_classes": [
+        "emulsifier",
+        "stabilizer",
+        "anticaking agent",
+        "antifoaming agent",
+        "glazing agent"
+      ],
+      "source_type": "animal",
+      "sources": [
+        "palm",
+        "soybean",
+        "sunflower",
+        "rapeseed",
+        "lard",
+        "tallow"
+      ],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "504": {
+      "ins_number": "504",
+      "official_name": "Magnesium carbonate",
+      "functional_classes": [
+        "acidity regulator",
+        "anticaking agent"
+      ],
+      "source_type": "mineral",
+      "sources": [],
+      "codex_category": "pH adjusters, anti-caking and anti-foaming agents"
+    },
+    "551": {
+      "ins_number": "551",
+      "official_name": "Silicon dioxide, amorphous",
+      "functional_classes": [
+        "anticaking agent"
+      ],
+      "source_type": "mineral",
+      "sources": [],
+      "codex_category": "pH adjusters, anti-caking and anti-foaming agents"
+    },
+    "536": {
+      "ins_number": "536",
+      "official_name": "Potassium ferrocyanide",
+      "functional_classes": [
+        "anticaking agent"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "pH adjusters, anti-caking and anti-foaming agents"
+    },
+    "541": {
+      "ins_number": "541",
+      "official_name": "Sodium aluminium phosphate, acidic",
+      "functional_classes": [
+        "emulsifier",
+        "raising agent"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "pH adjusters, anti-caking and anti-foaming agents"
+    },
+    "553": {
+      "ins_number": "553",
+      "official_name": "Magnesium silicates",
+      "functional_classes": [
+        "anticaking agent"
+      ],
+      "source_type": "mineral",
+      "sources": [],
+      "codex_category": "pH adjusters, anti-caking and anti-foaming agents"
+    },
+    "635": {
+      "ins_number": "635",
+      "official_name": "Disodium 5'-ribonucleotides",
+      "functional_classes": [
+        "flavour enhancer"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Flavour enhancers"
+    },
+    "620": {
+      "ins_number": "620",
+      "official_name": "L-Glutamic acid",
+      "functional_classes": [
+        "flavour enhancer"
+      ],
+      "source_type": "synthetic",
+      "sources": [
+        "molasses",
+        "corn",
+        "wheat gluten"
+      ],
+      "codex_category": "Flavour enhancers"
+    },
+    "621": {
+      "ins_number": "621",
+      "official_name": "Monosodium L-glutamate",
+      "functional_classes": [
+        "flavour enhancer"
+      ],
+      "source_type": "synthetic",
+      "sources": [
+        "molasses",
+        "corn",
+        "wheat gluten"
+      ],
+      "codex_category": "Flavour enhancers"
+    },
+    "629": {
+      "ins_number": "629",
+      "official_name": "5'-Guanylic acid",
+      "functional_classes": [
+        "flavour enhancer"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Flavour enhancers"
+    },
+    "630": {
+      "ins_number": "630",
+      "official_name": "5'-Inosinic acid",
+      "functional_classes": [
+        "flavour enhancer"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Flavour enhancers"
+    },
+    "637": {
+      "ins_number": "637",
+      "official_name": "Ethyl maltol",
+      "functional_classes": [
+        "flavour enhancer"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Flavour enhancers"
+    },
+    "261": {
+      "ins_number": "261",
+      "official_name": "Potassium acetate",
+      "functional_classes": [
+        "preservative",
+        "acidity regulator"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Preservatives"
+    },
+    "290": {
+      "ins_number": "290",
+      "official_name": "Carbon dioxide",
+      "functional_classes": [
+        "propellant"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Preservatives"
+    },
+    "394": {
+      "ins_number": "394",
+      "official_name": "Tartaric acid, DL-",
+      "functional_classes": [
+        "acidity regulator"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Antioxidants and acidity regulators"
+    },
+    "524": {
+      "ins_number": "524",
+      "official_name": "Sodium hydroxide",
+      "functional_classes": [
+        "acidity regulator"
+      ],
+      "source_type": "mineral",
+      "sources": [],
+      "codex_category": "pH adjusters, anti-caking and anti-foaming agents"
+    },
+    "525": {
+      "ins_number": "525",
+      "official_name": "Potassium hydroxide",
+      "functional_classes": [
+        "acidity regulator"
+      ],
+      "source_type": "mineral",
+      "sources": [],
+      "codex_category": "pH adjusters, anti-caking and anti-foaming agents"
+    },
+    "300": {
+      "ins_number": "300",
+      "official_name": "Ascorbic acid, L-",
+      "functional_classes": [
+        "antioxidant"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "citrus fruit"
+      ],
+      "codex_category": "Antioxidants and acidity regulators"
+    },
+    "338": {
+      "ins_number": "338",
+      "official_name": "Phosphoric acid",
+      "functional_classes": [
+        "acidity regulator"
+      ],
+      "source_type": "mineral",
+      "sources": [],
+      "codex_category": "Antioxidants and acidity regulators"
+    },
+    "501": {
+      "ins_number": "501",
+      "official_name": "Potassium carbonates",
+      "functional_classes": [
+        "acidity regulator"
+      ],
+      "source_type": "mineral",
+      "sources": [],
+      "codex_category": "pH adjusters, anti-caking and anti-foaming agents"
+    },
+    "270": {
+      "ins_number": "270",
+      "official_name": "Lactic acid, L-, D- and DL-",
+      "functional_classes": [
+        "acidity regulator",
+        "preservative"
+      ],
+      "source_type": "synthetic",
+      "sources": [
+        "corn"
+      ],
+      "codex_category": "Preservatives"
+    },
+    "325": {
+      "ins_number": "325",
+      "official_name": "Sodium lactate",
+      "functional_classes": [
+        "acidity regulator",
+        "humectant"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Antioxidants and acidity regulators"
+    },
+    "334": {
+      "ins_number": "334",
+      "official_name": "Tartaric acid, L(+)",
+      "functional_classes": [
+        "acidity regulator",
+        "antioxidant"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "grapes"
+      ],
+      "codex_category": "Antioxidants and acidity regulators"
+    },
+    "518": {
+      "ins_number": "518",
+      "official_name": "Magnesium sulphate",
+      "functional_classes": [
+        "firming agent",
+        "flavour enhancer"
+      ],
+      "source_type": "mineral",
+      "sources": [],
+      "codex_category": "pH adjusters, anti-caking and anti-foaming agents"
+    },
+    "900": {
+      "ins_number": "900",
+      "official_name": "Dimethylpolysiloxane",
+      "functional_classes": [
+        "antifoaming agent"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Gases, waxes and propellants"
+    },
+    "350": {
+      "ins_number": "350",
+      "official_name": "Sodium malates",
+      "functional_classes": [
+        "acidity regulator"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Antioxidants and acidity regulators"
+    },
+    "468": {
+      "ins_number": "468",
+      "official_name": "Crosslinked sodium carboxymethylcellulose",
+      "functional_classes": [
+        "stabilizer",
+        "thickener"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "plant cellulose"
+      ],
+      "codex_category": "Thickeners, stabilisers, emulsifiers and gelling agents"
+    },
+    "521": {
+      "ins_number": "521",
+      "official_name": "Sodium aluminium sulphate",
+      "functional_classes": [
+        "firming agent"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "pH adjusters, anti-caking and anti-foaming agents"
+    },
+    "140": {
+      "ins_number": "140",
+      "official_name": "Chlorophylls",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "green leaves",
+        "spinach",
+        "grass",
+        "nettles",
+        "alfalfa"
+      ],
+      "codex_category": "Colours"
+    },
+    "150": {
+      "ins_number": "150",
+      "official_name": "Caramel",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "sugarcane",
+        "corn",
+        "wheat",
+        "potato",
+        "glucose syrup"
+      ],
+      "codex_category": "Colours"
+    },
+    "160d": {
+      "ins_number": "160d",
+      "official_name": "Lycopene",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "tomato"
+      ],
+      "codex_category": "Colours"
+    },
+    "161b": {
+      "ins_number": "161b",
+      "official_name": "Lutein",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "marigold"
+      ],
+      "codex_category": "Colours"
+    },
+    "174": {
+      "ins_number": "174",
+      "official_name": "Silver",
+      "functional_classes": [
+        "color"
+      ],
+      "source_type": "mineral",
+      "sources": [],
+      "codex_category": "Colours"
+    }
+  },
+  "by_category": {
+    "Flavour enhancers": [
+      "631",
+      "627",
+      "635",
+      "620",
+      "621",
+      "629",
+      "630",
+      "637"
+    ],
+    "Gases, waxes and propellants": [
+      "941",
+      "903",
+      "901",
+      "904",
+      "923",
+      "900"
+    ],
+    "Sweeteners": [
+      "999",
+      "960",
+      "950",
+      "955",
+      "957",
+      "960a",
+      "965"
+    ],
+    "Thickeners, stabilisers, emulsifiers and gelling agents": [
+      "420",
+      "472e",
+      "428",
+      "472",
+      "451",
+      "452",
+      "415",
+      "466",
+      "414",
+      "470a",
+      "422",
+      "412",
+      "440",
+      "450",
+      "442",
+      "460",
+      "400",
+      "429",
+      "436",
+      "478",
+      "479",
+      "481",
+      "491",
+      "433",
+      "475",
+      "476",
+      "477",
+      "492",
+      "445",
+      "471",
+      "435",
+      "401",
+      "444",
+      "417",
+      "418",
+      "406",
+      "472b",
+      "472c",
+      "470",
+      "468"
+    ],
+    "pH adjusters, anti-caking and anti-foaming agents": [
+      "553b",
+      "575",
+      "508",
+      "516",
+      "503",
+      "500",
+      "510",
+      "504",
+      "551",
+      "536",
+      "541",
+      "553",
+      "524",
+      "525",
+      "501",
+      "518",
+      "521"
+    ],
+    "Colours": [
+      "102",
+      "110",
+      "100",
+      "162",
+      "163",
+      "171",
+      "141",
+      "160a(i)",
+      "129",
+      "133",
+      "132",
+      "127",
+      "124",
+      "122",
+      "101(i)",
+      "150a",
+      "150c",
+      "150d",
+      "160b",
+      "160c",
+      "163c",
+      "160a",
+      "161g",
+      "152",
+      "170"
+    ],
+    "Enzymes": [
+      "1100",
+      "1104",
+      "1102",
+      "1101"
+    ],
+    "Preservatives": [
+      "224",
+      "202",
+      "260",
+      "212",
+      "211",
+      "200",
+      "262",
+      "223",
+      "261",
+      "290",
+      "270"
+    ],
+    "Unclassified": [
+      "296",
+      "1204"
+    ],
+    "Modified starches": [
+      "1422",
+      "1405",
+      "1412",
+      "1442",
+      "1401",
+      "1440",
+      "1450",
+      "1400",
+      "1404",
+      "1505",
+      "1420"
+    ],
+    "Antioxidants and acidity regulators": [
+      "339",
+      "340",
+      "341",
+      "322",
+      "331",
+      "337",
+      "330",
+      "385",
+      "386",
+      "394",
+      "300",
+      "338",
+      "325",
+      "334",
+      "350"
+    ],
+    "Polyols": [
+      "1202",
+      "1201"
+    ]
+  },
+  "by_function": {
+    "flavour enhancer": [
+      "631",
+      "999",
+      "1104",
+      "960",
+      "508",
+      "957",
+      "627",
+      "330",
+      "510",
+      "635",
+      "620",
+      "621",
+      "629",
+      "630",
+      "637",
+      "518"
+    ],
+    "antifoaming agent": [
+      "941",
+      "470",
+      "900"
+    ],
+    "propellant": [
+      "941",
+      "290"
+    ],
+    "foaming agent": [
+      "999"
+    ],
+    "humectant": [
+      "420",
+      "422",
+      "340",
+      "341",
+      "965",
+      "325"
+    ],
+    "sweetener": [
+      "420",
+      "960",
+      "950",
+      "422",
+      "955",
+      "957",
+      "960a",
+      "965"
+    ],
+    "emulsifier": [
+      "420",
+      "472e",
+      "428",
+      "472",
+      "451",
+      "452",
+      "415",
+      "466",
+      "414",
+      "470a",
+      "412",
+      "440",
+      "1405",
+      "1442",
+      "1440",
+      "450",
+      "339",
+      "340",
+      "341",
+      "442",
+      "460",
+      "400",
+      "429",
+      "436",
+      "478",
+      "479",
+      "481",
+      "491",
+      "433",
+      "475",
+      "476",
+      "477",
+      "492",
+      "445",
+      "322",
+      "471",
+      "435",
+      "401",
+      "331",
+      "444",
+      "418",
+      "406",
+      "1450",
+      "1404",
+      "472b",
+      "472c",
+      "1420",
+      "470",
+      "541"
+    ],
+    "stabilizer": [
+      "420",
+      "428",
+      "472",
+      "451",
+      "452",
+      "415",
+      "466",
+      "414",
+      "470a",
+      "508",
+      "412",
+      "440",
+      "1204",
+      "1422",
+      "1405",
+      "1412",
+      "1442",
+      "1401",
+      "1440",
+      "450",
+      "339",
+      "340",
+      "341",
+      "170",
+      "965",
+      "460",
+      "400",
+      "481",
+      "516",
+      "445",
+      "322",
+      "471",
+      "401",
+      "444",
+      "417",
+      "418",
+      "406",
+      "1450",
+      "1400",
+      "1404",
+      "1202",
+      "1201",
+      "1505",
+      "1420",
+      "470",
+      "468"
+    ],
+    "thickener": [
+      "420",
+      "428",
+      "415",
+      "466",
+      "414",
+      "508",
+      "412",
+      "440",
+      "1204",
+      "1422",
+      "1405",
+      "1412",
+      "1442",
+      "1401",
+      "1440",
+      "450",
+      "460",
+      "400",
+      "516",
+      "401",
+      "417",
+      "418",
+      "406",
+      "1400",
+      "1404",
+      "1420",
+      "468"
+    ],
+    "anticaking agent": [
+      "553b",
+      "470a",
+      "341",
+      "170",
+      "460",
+      "470",
+      "504",
+      "551",
+      "536",
+      "553"
+    ],
+    "color": [
+      "102",
+      "110",
+      "100",
+      "162",
+      "163",
+      "171",
+      "141",
+      "160a(i)",
+      "129",
+      "133",
+      "132",
+      "127",
+      "124",
+      "122",
+      "101(i)",
+      "150a",
+      "150c",
+      "150d",
+      "160b",
+      "160c",
+      "163c",
+      "160a",
+      "161g",
+      "170"
+    ],
+    "flour treatment agent": [
+      "1100",
+      "508",
+      "1102",
+      "341",
+      "516",
+      "510",
+      "923",
+      "223",
+      "1101"
+    ],
+    "preservative": [
+      "224",
+      "202",
+      "330",
+      "260",
+      "386",
+      "212",
+      "211",
+      "200",
+      "262",
+      "223",
+      "261",
+      "270"
+    ],
+    "antioxidant": [
+      "224",
+      "1102",
+      "322",
+      "337",
+      "330",
+      "385",
+      "923",
+      "223",
+      "300",
+      "334"
+    ],
+    "carrier": [
+      "152",
+      "1505"
+    ],
+    "acidity regulator": [
+      "575",
+      "296",
+      "450",
+      "339",
+      "340",
+      "341",
+      "170",
+      "331",
+      "337",
+      "330",
+      "260",
+      "503",
+      "500",
+      "262",
+      "504",
+      "261",
+      "394",
+      "524",
+      "525",
+      "338",
+      "501",
+      "270",
+      "325",
+      "334",
+      "350"
+    ],
+    "sequestrant": [
+      "575",
+      "451",
+      "452",
+      "450",
+      "339",
+      "340",
+      "331",
+      "330",
+      "385",
+      "386"
+    ],
+    "raising agent": [
+      "575",
+      "450",
+      "341",
+      "503",
+      "500",
+      "541"
+    ],
+    "firming agent": [
+      "508",
+      "341",
+      "516",
+      "510",
+      "518",
+      "521"
+    ],
+    "gelling agent": [
+      "508",
+      "440",
+      "400",
+      "401",
+      "418",
+      "406"
+    ],
+    "glazing agent": [
+      "1204",
+      "903",
+      "901",
+      "904",
+      "470"
+    ],
+    "bulking agent": [
+      "1204"
+    ],
+    "clarifying agent": [
+      "1202"
+    ],
+    "bleaching agent": [
+      "223"
+    ]
+  },
+  "by_source_type": {
+    "synthetic": [
+      "631",
+      "941",
+      "102",
+      "110",
+      "129",
+      "133",
+      "132",
+      "127",
+      "124",
+      "122",
+      "101(i)",
+      "161g",
+      "1100",
+      "224",
+      "202",
+      "1104",
+      "152",
+      "575",
+      "451",
+      "452",
+      "950",
+      "1102",
+      "422",
+      "296",
+      "955",
+      "1204",
+      "442",
+      "627",
+      "436",
+      "478",
+      "481",
+      "491",
+      "433",
+      "476",
+      "477",
+      "492",
+      "435",
+      "331",
+      "444",
+      "337",
+      "418",
+      "260",
+      "1202",
+      "1201",
+      "385",
+      "386",
+      "1505",
+      "503",
+      "212",
+      "211",
+      "200",
+      "262",
+      "510",
+      "923",
+      "223",
+      "1101",
+      "536",
+      "541",
+      "635",
+      "620",
+      "621",
+      "629",
+      "630",
+      "637",
+      "261",
+      "290",
+      "394",
+      "270",
+      "325",
+      "900",
+      "350",
+      "521"
+    ],
+    "plant": [
+      "999",
+      "420",
+      "100",
+      "162",
+      "163",
+      "141",
+      "160a(i)",
+      "150a",
+      "150c",
+      "150d",
+      "160b",
+      "160c",
+      "163c",
+      "160a",
+      "960",
+      "415",
+      "466",
+      "414",
+      "412",
+      "440",
+      "957",
+      "1422",
+      "1405",
+      "1412",
+      "1442",
+      "1401",
+      "1440",
+      "960a",
+      "965",
+      "460",
+      "400",
+      "479",
+      "445",
+      "401",
+      "417",
+      "406",
+      "1450",
+      "1400",
+      "1404",
+      "330",
+      "903",
+      "1420",
+      "300",
+      "334",
+      "468"
+    ],
+    "mineral": [
+      "553b",
+      "171",
+      "508",
+      "450",
+      "339",
+      "340",
+      "341",
+      "170",
+      "516",
+      "500",
+      "504",
+      "551",
+      "553",
+      "524",
+      "525",
+      "338",
+      "501",
+      "518"
+    ],
+    "animal": [
+      "472e",
+      "428",
+      "472",
+      "470a",
+      "429",
+      "475",
+      "322",
+      "471",
+      "472b",
+      "472c",
+      "901",
+      "904",
+      "470"
+    ]
+  }
+}

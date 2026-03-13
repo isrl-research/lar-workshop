@@ -1,0 +1,31 @@
+ins_number,official_name,source_type,sources,functional_classes,codex_category
+102,Tartrazine,synthetic,,color,Colours
+110,"Sunset yellow FCF, Orange yellow S",synthetic,,color,Colours
+100,Curcumin,plant,turmeric,color,Colours
+162,Beetroot Red,plant,beetroot,color,Colours
+163,Anthocyanins,plant,grape skin|berries|red cabbage,color,Colours
+171,Titanium dioxide,mineral,,color,Colours
+141,Copper complexes of chlorophylls,plant,,color,Colours
+160a(i),"Beta-carotene, vegetable",plant,carrot,color,Colours
+129,Allura Red AC,synthetic,,color,Colours
+133,Brilliant Blue FCF,synthetic,,color,Colours
+132,"Indigotine, Indigo carmine",synthetic,,color,Colours
+127,Erythrosine,synthetic,,color,Colours
+124,Ponceau 4R,synthetic,,color,Colours
+122,"Azorubine, Carmoisine",synthetic,,color,Colours
+101(i),Riboflavin,synthetic,,color,Colours
+150a,Plain caramel,plant,sugarcane|corn|wheat|potato|glucose syrup,color,Colours
+150c,Ammonia caramel,plant,sugarcane|corn|wheat|potato|glucose syrup,color,Colours
+150d,Sulphite ammonia caramel,plant,sugarcane|corn|wheat|potato|glucose syrup,color,Colours
+160b,Annatto extracts,plant,annatto seeds,color,Colours
+160c,Paprika extract,plant,paprika,color,Colours
+163c,Grape skin extract,plant,grape skin,color,Colours
+160a,"Carotenes, mixed",plant,carrot|algae|tomato|pumpkin,color,Colours
+161g,Canthaxanthin,synthetic,algae,color,Colours
+152,Polyethylene glycol,synthetic,,carrier,Colours
+170,Calcium carbonate,mineral,limestone|chalk|marble,color|anticaking agent|stabilizer|acidity regulator,Colours
+140,Chlorophylls,plant,green leaves|spinach|grass|nettles|alfalfa,color,Colours
+150,Caramel,plant,sugarcane|corn|wheat|potato|glucose syrup,color,Colours
+160d,Lycopene,plant,tomato,color,Colours
+161b,Lutein,plant,marigold,color,Colours
+174,Silver,mineral,,color,Colours

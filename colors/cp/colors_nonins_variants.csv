@@ -1,0 +1,8 @@
+variant,source,e_explicit,m_explicit,f_explicit,e_could_be,m_could_be,f_could_be,e_score,m_score,f_score,e_max,m_max,f_max,d_min,d_max,zone,uncertain,question_tags,ins_number,compound_name,nutrient_class,dairy_product_subtype,milling_grade,oil_fraction,protein_fraction,sugar_form,language_tag,f_revised
+kesar,saffron,drying,NULL,colour,NULL,powder,taste profile / spice,0.42,0,0.8,0.42,0.42,0.8,0.446,0.572,2,False,False,,,,,,,,,,colour
+safron,saffron,drying,NULL,colour,NULL,powder,taste profile / spice,0.42,0,0.8,0.42,0.42,0.8,0.446,0.572,2,False,False,,,,,,,,,,colour
+paprika,paprika,drying,powder,colour,NULL,NULL,taste profile / spice,0.42,0.42,0.8,0.42,0.42,0.8,0.572,0.572,2,False,False,,,,,,,,,,colour
+hibiscus,hibiscus,NULL,flower,colour,drying,whole/fresh pieces|cut/sliced pieces,flavouring agent,0,0,0.8,0.42,0.1,0.8,0.32,0.476,2,False,False,,,,,,,,,,colour
+carrot powder,carrot,drying,powder,colour,NULL,NULL,base ingredient,0.42,0.42,0.8,0.42,0.42,0.8,0.572,0.572,2,False,False,,,,,,,,,,colour
+carrot flakes,carrot,drying,flakes,colour,NULL,NULL,base ingredient,0.42,0.36,0.8,0.42,0.36,0.8,0.554,0.554,2,False,False,,,,,,,,,,colour
+pomegranate powder,pomegranate,drying,powder,colour,NULL,NULL,antioxidant,0.42,0.42,0.8,0.42,0.42,0.875,0.572,0.602,2,False,False,,,,,,,,,,colour
