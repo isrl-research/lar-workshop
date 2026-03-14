@@ -1,0 +1,15 @@
+variant,source,e_explicit,m_explicit,f_explicit,e_could_be,m_could_be,f_could_be,e_score,m_score,f_score,e_max,m_max,f_max,d_min,d_max,zone,uncertain,question_tags,ins_number,compound_name,nutrient_class,dairy_product_subtype,milling_grade,oil_fraction,protein_fraction,sugar_form,language_tag,f_revised
+trifala,amla | haritaki | bibhitaki,NULL,powder,NULL,drying,NULL,NULL,0,0.42,0,0.42,0.42,0,0.126,0.252,1,False,False,,,,,,,,,,health_supplement
+inositol,corn,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,health_supplement
+digezyme,aspergillus oryzae,fermentation,powder,NULL,NULL,NULL,NULL,0.56,0.42,0,0.56,0.42,0,0.294,0.294,1,False,False,,,,,,,,,,health_supplement
+aavarampoo,aavarampoo,NULL,whole/fresh pieces,NULL,drying,powder,NULL,0,0.05,0,0.42,0.42,0,0.015,0.252,1,False,False,,,,,,,,,,health_supplement
+l-theanine,tea,NULL,crystalline chemical,NULL,NULL,extract/oleoresin,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,health_supplement
+moringa extract,moringa,solvent extraction,extract/oleoresin,NULL,NULL,NULL,NULL,0.82,0.86,0,0.82,0.86,0,0.504,0.504,2,False,False,,,,,,,,,,health_supplement
+guduchi extract,guduchi,solvent extraction,extract/oleoresin,NULL,NULL,NULL,NULL,0.82,0.86,0,0.82,0.86,0,0.504,0.504,2,False,False,,,,,,,,,,health_supplement
+lactobilus casei,milk,fermentation,NULL,NULL,NULL,concentrate,?probiotic,0.56,0,0,0.56,0.4,0,0.168,0.288,1,False,True,,,,,,,,,,health_supplement
+glucuronolactone,synthetic | corn,NULL,crystalline chemical,NULL,fermentation,NULL,NULL,0,0.98,0,0.56,0.98,0,0.294,0.462,1,True,False,,,,,,,,,,health_supplement
+grape seed extract,grape,solvent extraction,extract/oleoresin,NULL,NULL,NULL,antioxidant,0.82,0.86,0,0.82,0.86,0.875,0.504,0.854,2,True,False,,,,,,,,,,health_supplement
+bacillus coagulans,synthetic,fermentation,spore,NULL,NULL,NULL,?probiotic,0.56,0,0,0.56,0,0,0.168,0.168,1,False,True,,,,,,,,,,health_supplement
+proabsor8 blend papain,papaya,NULL,NULL,NULL,NULL,extract/oleoresin,?digestive aid,0,0,0,0,0.86,0,0,0.258,1,False,True,,,,,,,,,,health_supplement
+bacillus coagulans snz 1969,bacillus coagulans,fermentation,powder,NULL,NULL,NULL,probiotic,0.56,0.42,0,0.56,0.42,0,0.294,0.294,1,False,False,,,,,,,,,,health_supplement
+neem azadirachta indica leaf,neem azadirachta indica,NULL,whole/fresh pieces,NULL,NULL,cut/sliced pieces|powder,NULL,0,0.05,0,0,0.42,0,0.015,0.126,1,False,False,,,,,,,,,,health_supplement

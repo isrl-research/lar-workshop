@@ -1,0 +1,60 @@
+--- RECORD 59 ---
+ID::59 | CANONICAL::Ergocalciferol | NUTRIENT_TYPE::vitamin_fat_soluble | REG_CATEGORY::fssai_mandatory_fortification | SOURCE_TYPE::synthetic | FSSAI_MANDATE::milk|edible oil | IS_GROUP::false | NOTES::Vitamin D; D2 form
+
+--- RECORD 60 ---
+ID::60 | CANONICAL::Chloride | NUTRIENT_TYPE::mineral_salt | REG_CATEGORY::unregulated | SOURCE_TYPE::mineral | FSSAI_MANDATE::NONE | IS_GROUP::false | NOTES::Chloride is an anion, typically paired with sodium, potassium, or other cations as a salt.
+
+--- RECORD 61 ---
+ID::61 | CANONICAL::Molybdenum | NUTRIENT_TYPE::mineral_salt | REG_CATEGORY::unregulated | SOURCE_TYPE::mineral | FSSAI_MANDATE::NONE | IS_GROUP::false | NOTES::NONE
+
+--- RECORD 62 ---
+ID::62 | CANONICAL::Phosphorus | NUTRIENT_TYPE::mineral_salt | REG_CATEGORY::unregulated | SOURCE_TYPE::mineral | FSSAI_MANDATE::NONE | IS_GROUP::false | NOTES::Usually present as phosphate salts; classification depends on the specific salt form
+
+--- RECORD 63 ---
+ID::63 | CANONICAL::Pantothenol | NUTRIENT_TYPE::vitamin_b_group | REG_CATEGORY::fssai_hsnfsdu | SOURCE_TYPE::synthetic | FSSAI_MANDATE::NONE | IS_GROUP::false | NOTES::Also known as dexpanthenol or provitamin B5; often used in cosmetics and supplements
+
+--- RECORD 64 ---
+ID::64 | CANONICAL::Sodium Selenite | NUTRIENT_TYPE::mineral_salt | REG_CATEGORY::fssai_hsnfsdu | SOURCE_TYPE::mineral | FSSAI_MANDATE::NONE | IS_GROUP::false | NOTES::Selenium salt
+
+--- RECORD 65 ---
+ID::65 | CANONICAL::Sodium Selenate | NUTRIENT_TYPE::mineral_salt | REG_CATEGORY::unregulated | SOURCE_TYPE::mineral | FSSAI_MANDATE::NONE | IS_GROUP::false | NOTES::Selenium salt
+
+--- RECORD 66 ---
+ID::66 | CANONICAL::Retinyl Acetate | NUTRIENT_TYPE::vitamin_fat_soluble | REG_CATEGORY::fssai_mandatory_fortification | SOURCE_TYPE::synthetic | FSSAI_MANDATE::edible oil|milk | IS_GROUP::false | NOTES::Form of Vitamin A
+
+--- RECORD 67 ---
+ID::67 | CANONICAL::Copper Sulphate | NUTRIENT_TYPE::mineral_salt | REG_CATEGORY::fssai_permitted_additive | SOURCE_TYPE::mineral | FSSAI_MANDATE::NONE | IS_GROUP::false | NOTES::Used as a micronutrient additive in animal feed and fertilizers; permitted as a food additive in some applications
+
+--- RECORD 68 ---
+ID::68 | CANONICAL::Cupric Sulphate | NUTRIENT_TYPE::mineral_salt | REG_CATEGORY::fssai_permitted_additive | SOURCE_TYPE::mineral | FSSAI_MANDATE::NONE | IS_GROUP::false | NOTES::Also known as copper(II) sulfate; used as a micronutrient additive
+
+--- RECORD 69 ---
+ID::69 | CANONICAL::Choline Chloride | NUTRIENT_TYPE::vitamin_b_group | REG_CATEGORY::fssai_hsnfsdu | SOURCE_TYPE::synthetic | FSSAI_MANDATE::NONE | IS_GROUP::false | NOTES::Choline is sometimes classified as a B vitamin, but is not universally recognised as such. It is permitted in Health Supplements.
+
+--- RECORD 70 ---
+ID::70 | CANONICAL::Pantothenic Acid | NUTRIENT_TYPE::vitamin_b_group | REG_CATEGORY::fssai_hsnfsdu | SOURCE_TYPE::synthetic | FSSAI_MANDATE::NONE | IS_GROUP::false | NOTES::Vitamin B5
+
+--- RECORD 71 ---
+ID::71 | CANONICAL::Retinyl Palmitate | NUTRIENT_TYPE::vitamin_fat_soluble | REG_CATEGORY::fssai_mandatory_fortification | SOURCE_TYPE::synthetic | FSSAI_MANDATE::edible oil|milk | IS_GROUP::false | NOTES::Form of Vitamin A
+
+--- RECORD 72 ---
+ID::72 | CANONICAL::Chromium Chloride | NUTRIENT_TYPE::mineral_salt | REG_CATEGORY::fssai_hsnfsdu | SOURCE_TYPE::mineral | FSSAI_MANDATE::NONE | IS_GROUP::false | NOTES::Often used in health supplements; form unspecified (CrCl2, CrCl3, CrCl3.6H2O possible)
+
+--- RECORD 73 ---
+ID::73 | CANONICAL::Manganese Sulphate | NUTRIENT_TYPE::mineral_salt | REG_CATEGORY::unregulated | SOURCE_TYPE::mineral | FSSAI_MANDATE::NONE | IS_GROUP::false | NOTES::NONE
+
+--- RECORD 74 ---
+ID::74 | CANONICAL::Magnesium Bisglycinate | NUTRIENT_TYPE::mineral_salt | REG_CATEGORY::fssai_hsnfsdu | SOURCE_TYPE::synthetic | FSSAI_MANDATE::NONE | IS_GROUP::false | NOTES::Magnesium salt of glycine; bioavailability and regulatory status may vary by jurisdiction
+
+--- RECORD 75 ---
+ID::75 | CANONICAL::Pteroylmonoglutamic Acid | NUTRIENT_TYPE::vitamin_b_group | REG_CATEGORY::fssai_mandatory_fortification | SOURCE_TYPE::synthetic | FSSAI_MANDATE::wheat flour|rice|salt | IS_GROUP::false | NOTES::Also known as Folic Acid or Folate
+
+--- RECORD 76 ---
+ID::76 | CANONICAL::Magnesium Phosphate Dibasic | NUTRIENT_TYPE::mineral_salt | REG_CATEGORY::unregulated | SOURCE_TYPE::mineral | FSSAI_MANDATE::NONE | IS_GROUP::false | NOTES::NONE
+
+--- RECORD 77 ---
+ID::77 | CANONICAL::Tricalcium Phosphate | NUTRIENT_TYPE::mineral_salt | REG_CATEGORY::fssai_permitted_additive | SOURCE_TYPE::mineral | FSSAI_MANDATE::NONE | IS_GROUP::false | NOTES::Also known as calcium phosphate tribasic; used as anticaking agent and mineral supplement
+
+--- RECORD 78 ---
+ID::78 | CANONICAL::Chromium Picolinate | NUTRIENT_TYPE::mineral_salt | REG_CATEGORY::fssai_hsnfsdu | SOURCE_TYPE::synthetic | FSSAI_MANDATE::NONE | IS_GROUP::false | NOTES::Chromium salt with picolinic acid
+

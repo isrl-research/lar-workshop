@@ -1,0 +1,21 @@
+variant,source,e_explicit,m_explicit,f_explicit,e_could_be,m_could_be,f_could_be,e_score,m_score,f_score,e_max,m_max,f_max,d_min,d_max,zone,uncertain,question_tags,ins_number,compound_name,nutrient_class,dairy_product_subtype,milling_grade,oil_fraction,protein_fraction,sugar_form,language_tag,f_revised
+vit. d2,yeast,NULL,powder,NULL,NULL,NULL,NULL,0,0.42,0,0,0.42,0,0.126,0.126,1,False,False,,,,,,,,,,fortification_agent
+chloride,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
+molybdenum,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
+phosphorus,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
+pantothenol,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
+sodium selenite,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
+sodium selenate,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
+retinyl acetate,synthetic | fish liver oil,NULL,oil,NULL,NULL,crystalline chemical,NULL,0,0.7,0,0,0.98,0,0.21,0.294,1,False,False,,,,,,,,,,fortification_agent
+copper sulphate,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
+cupric sulphate,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
+choline chloride,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
+pantothenic acid,synthetic | corn,NULL,crystalline chemical,NULL,fermentation,NULL,NULL,0,0.98,0,0.56,0.98,0,0.294,0.462,1,True,False,,,vitamin_water_soluble,,,,,,,fortification_agent
+retinyl palmitate,palm,NULL,NULL,NULL,solvent extraction,oil,NULL,0,0,0,0.82,0.7,0,0,0.456,1,True,False,,,,,,,,,,fortification_agent
+chromium chloride,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
+manganese sulphate,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
+magnesium bisglycinate,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,mineral_nutrient,,,,,,,fortification_agent
+pteroylmonoglutamic acid,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
+magnesium phosphate dibasic,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,mineral_nutrient,,,,,,,fortification_agent
+tri basic calcium phosphate,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
+mineral chromium picolinate,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent

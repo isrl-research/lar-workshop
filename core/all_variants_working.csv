@@ -229,10 +229,10 @@ anistar,star anise,drying,whole/fresh pieces,taste profile / spice,NULL,powder,f
 tapioca,tapioca,NULL,whole/fresh pieces,base ingredient,NULL,starch flour,thickener,0,0.05,0.12,0,0.6,0.615,0.063,0.426,1,True,False,,,,,,,,,,raw_agricultural_material
 taurine,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,amino_acid,,,,,,,fortification_agent
 thiamin,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,vitamin_water_soluble,,,,,,,fortification_agent
-trifala,amla | haritaki | bibhitaki,NULL,powder,NULL,drying,NULL,NULL,0,0.42,0,0.42,0.42,0,0.126,0.252,1,False,False,,,,,,,,,,NULL
+trifala,amla | haritaki | bibhitaki,NULL,powder,NULL,drying,NULL,NULL,0,0.42,0,0.42,0.42,0,0.126,0.252,1,False,False,,,,,,,,,,health_supplement
 vannila,vanilla,extract/oleoresin,extract/oleoresin,flavouring agent,NULL,NULL,taste profile / spice,0,0.86,0.675,0,0.86,0.675,0.528,0.528,2,False,False,,,,,,,,,,flavouring agent
-vit. d2,yeast,NULL,powder,NULL,NULL,NULL,NULL,0,0.42,0,0,0.42,0,0.126,0.126,1,False,False,,,,,,,,,,NULL
-alcohol,sugarcane | molasses,fermentation,juice,NULL,distillation,NULL,NULL,0.56,0.5,0,0.56,0.5,0,0.318,0.318,2,False,False,,,,,,,,,,NULL
+vit. d2,yeast,NULL,powder,NULL,NULL,NULL,NULL,0,0.42,0,0,0.42,0,0.126,0.126,1,False,False,,,,,,,,,,fortification_agent
+alcohol,sugarcane | molasses,fermentation,juice,NULL,distillation,NULL,NULL,0.56,0.5,0,0.56,0.5,0,0.318,0.318,2,False,False,,,,,,,,,,solvent
 ammonia,synthetic,NULL,crystalline chemical,acidity regulator,NULL,NULL,raising agent,0,0.98,0.86,0,0.98,0.86,0.638,0.638,2,False,False,,,,,,,,,,acidity regulator
 lactase,yeast,?enzymatic reaction,powder,flour treatment agent,NULL,NULL,NULL,0,0.42,0.93,0,0.42,0.93,0.498,0.498,2,False,True,,,,,,,,,,flour treatment agent
 leucine,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,amino_acid,,,,,,,fortification_agent
@@ -284,7 +284,7 @@ cardamom,cardamom,NULL,NULL,taste profile / spice,drying,whole/fresh pieces|powd
 moongdal,mung bean,NULL,NULL,base ingredient,NULL,NULL,NULL,0,0,0.12,0,0,0.12,0.048,0.048,1,False,False,,,,,,,,,,raw_agricultural_material
 guar gum,guar,NULL,gum,thickener,NULL,powder,stabiliser,0,0,0.615,0,0.42,0.65,0.246,0.386,1,True,False,,,,,,,,,,thickener
 hibiscus,hibiscus,NULL,flower,colour,drying,whole/fresh pieces|cut/sliced pieces,flavouring agent,0,0,0.8,0.42,0.1,0.8,0.32,0.476,2,False,False,,,,,,,,,,colour|raw_agricultural_material
-inositol,corn,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,NULL
+inositol,corn,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,health_supplement
 lecithin,soybean | sunflower,solvent extraction,emulsifier powder,emulsifier,NULL,NULL,NULL,0.82,0.89,0.825,0.82,0.89,0.825,0.843,0.843,3,False,False,,,,,,,,,,emulsifier
 molasses,sugarcane,NULL,concentrate,sweetener,NULL,syrup,flavouring agent,0,0.4,0.625,0,0.4,0.675,0.37,0.39,2,False,False,,,,,,,,molasses_partial,,sweetener
 navsadar,synthetic,NULL,crystalline chemical,raising agent,NULL,NULL,NULL,0,0.98,0.475,0,0.98,0.475,0.484,0.484,2,False,False,,,,,,,,,,raising agent
@@ -302,8 +302,8 @@ ro water,water,NULL,juice,base ingredient,NULL,NULL,NULL,0,0.5,0.12,0,0.5,0.12,0
 arginine,sugarcane,fermentation,crystalline chemical,NULL,NULL,NULL,NULL,0.56,0.98,0,0.56,0.98,0,0.462,0.462,2,False,False,,,amino_acid,,,,,,,fortification_agent
 betelnut,areca palm,NULL,nut,taste profile / spice,drying,whole/fresh pieces|cut/sliced pieces,flavouring agent,0,0,0.18,0.42,0.1,0.675,0.072,0.426,1,True,False,,,,,,,,,,taste profile / spice
 cherries,cherry,NULL,whole/fresh pieces,base ingredient,NULL,cut/sliced pieces,sweetener,0,0.05,0.12,0,0.1,0.625,0.063,0.28,1,False,False,,,,,,,,,,raw_agricultural_material
-chloride,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,NULL
-digezyme,aspergillus oryzae,fermentation,powder,NULL,NULL,NULL,NULL,0.56,0.42,0,0.56,0.42,0,0.294,0.294,1,False,False,,,,,,,,,,NULL
+chloride,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
+digezyme,aspergillus oryzae,fermentation,powder,NULL,NULL,NULL,NULL,0.56,0.42,0,0.56,0.42,0,0.294,0.294,1,False,False,,,,,,,,,,health_supplement
 protease,aspergillus oryzae | bacillus subtilis,fermentation,powder,flour treatment agent,NULL,NULL,NULL,0.56,0.42,0.93,0.56,0.42,0.93,0.666,0.666,2,False,False,,,,,,,,,,flour treatment agent
 fox nuts,fox nut,NULL,NULL,base ingredient,NULL,whole/fresh pieces,NULL,0,0,0.12,0,0.05,0.12,0.048,0.063,1,False,False,,,,,,,,,,raw_agricultural_material
 gum base,chicle,NULL,gum,base ingredient,NULL,dense block,NULL,0,0,0.12,0,0.38,0.12,0.048,0.162,1,False,False,,,,,,,,,,raw_agricultural_material
@@ -511,7 +511,7 @@ vitamins d,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.
 vitamin d2,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,vitamin_fat_soluble,,,,,,,fortification_agent
 vitamin d3,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,vitamin_fat_soluble,,,,,,,fortification_agent
 watermelon,watermelon,NULL,whole/fresh pieces,base ingredient,NULL,juice,sweetener,0,0.05,0.12,0,0.5,0.625,0.063,0.4,1,True,False,,,,,,,,,,raw_agricultural_material
-aavarampoo,aavarampoo,NULL,whole/fresh pieces,NULL,drying,powder,NULL,0,0.05,0,0.42,0.42,0,0.015,0.252,1,False,False,,,,,,,,,,NULL
+aavarampoo,aavarampoo,NULL,whole/fresh pieces,NULL,drying,powder,NULL,0,0.05,0,0.42,0.42,0,0.015,0.252,1,False,False,,,,,,,,,,health_supplement
 l-arginine,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,amino_acid,,,,,,,fortification_agent
 barramundi,barramundi,NULL,whole/fresh pieces,base ingredient,NULL,cut/sliced pieces,NULL,0,0.05,0.12,0,0.1,0.12,0.063,0.078,1,False,False,,,,,,,,,,raw_agricultural_material
 cloudifier,palm | soybean | sunflower,NULL,emulsifier powder,emulsifier,NULL,NULL,NULL,0,0.89,0.825,0,0.89,0.825,0.597,0.597,2,False,False,,,,,,,,,,emulsifier
@@ -521,11 +521,11 @@ eucalyptol,eucalyptus,solvent extraction,essential oil,flavouring agent,NULL,ext
 gellan gum,synthetic,fermentation,powder,gelling agent|stabiliser|thickener,NULL,NULL,NULL,0.56,0.42,0.675,0.56,0.42,0.675,0.564,0.564,2,False,False,,,,,,,,,,gelling agent|stabiliser|thickener
 goji berry,goji berry,NULL,whole/fresh pieces,antioxidant,drying,powder,NULL,0,0.05,0.875,0.42,0.42,0.875,0.365,0.602,2,False,False,,,,,,,,,,antioxidant
 idly ravva,rice,milling,coarse grits,base ingredient,NULL,NULL,NULL,0.28,0.3,0.12,0.28,0.3,0.12,0.222,0.222,1,False,False,,,,,,,,,,raw_agricultural_material
-l-theanine,tea,NULL,crystalline chemical,NULL,NULL,extract/oleoresin,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,NULL
+l-theanine,tea,NULL,crystalline chemical,NULL,NULL,extract/oleoresin,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,health_supplement
 mayonnaise,soybean | sunflower | egg,NULL,emulsifier powder,emulsifier,NULL,NULL,NULL,0,0.89,0.825,0,0.89,0.825,0.597,0.597,2,False,False,,,,,,,,,,emulsifier
 mct powder,coconut | palm kernel,NULL,powder,lipid base,fractionation,NULL,NULL,0,0.42,0.22,0.76,0.42,0.22,0.214,0.442,1,True,False,,,,,,,,,,lipid base
-molybdenum,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,NULL
-phosphorus,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,NULL
+molybdenum,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
+phosphorus,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
 wheatgrass,wheatgrass,NULL,whole/fresh pieces,base ingredient,NULL,juice|powder,NULL,0,0.05,0.12,0,0.5,0.12,0.063,0.198,1,False,False,,,,,,,,,,raw_agricultural_material
 red salmon,salmon,NULL,whole/fresh pieces,base ingredient,NULL,cut/sliced pieces,NULL,0,0.05,0.12,0,0.1,0.12,0.063,0.078,1,False,False,,,,,,,,,,raw_agricultural_material
 palm kernel,palm,NULL,kernel,lipid base,cold pressing|solvent extraction,NULL,NULL,0,0,0.22,0.82,0,0.22,0.088,0.334,1,True,False,,,,,,,,,,lipid base
@@ -610,7 +610,7 @@ mustard oil,mustard seed,cold pressing|solvent extraction,oil,lipid base,refinin
 nucleotides,yeast,NULL,extract/oleoresin,flavouring agent,?extraction,NULL,NULL,0,0.86,0.675,0,0.86,0.675,0.528,0.528,2,False,True,,,,,,,,,,flavouring agent
 fried onion,onion,roasting,cut/sliced pieces,taste profile / spice,frying,NULL,flavouring agent,0.58,0.1,0.18,0.58,0.1,0.675,0.276,0.474,1,True,False,,,,,,,,,,taste profile / spice
 white onion,onion,NULL,whole/fresh pieces,base ingredient,NULL,cut/sliced pieces,NULL,0,0.05,0.12,0,0.1,0.12,0.063,0.078,1,False,False,,,,,,,,,,raw_agricultural_material
-pantothenol,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,NULL
+pantothenol,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
 papaya pulp,papaya,NULL,pulp/puree,base ingredient,NULL,NULL,sweetener,0,0.25,0.12,0,0.25,0.625,0.123,0.325,1,True,False,,,,,,,,,,raw_agricultural_material
 pea protein,pea,NULL,protein concentrate,base ingredient,?extraction,protein isolate,NULL,0,0.74,0.12,0,0.78,0.12,0.27,0.282,1,False,True,,,,,,,plant_protein,,,processed_ingredient
 peach juice,peach,NULL,juice,flavouring agent,NULL,NULL,sweetener,0,0.5,0.675,0,0.5,0.675,0.42,0.42,2,False,False,,,,,,,,,,flavouring agent
@@ -968,14 +968,14 @@ magnesium oxide,mineral,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL
 vollmilchpulver,milk,drying,powder,base ingredient,NULL,NULL,NULL,0.42,0.42,0.12,0.42,0.42,0.12,0.3,0.3,2,False,False,,,,,,,,,,processed_ingredient
 full cream milk,milk,NULL,NULL,base ingredient,pasteurization,NULL,NULL,0,0,0.12,0.48,0,0.12,0.048,0.192,1,False,False,,,,,,,,,,raw_agricultural_material
 mint flavouring,mint,solvent extraction,extract/oleoresin,flavouring agent,NULL,essential oil,taste profile / spice,0.82,0.86,0.675,0.82,0.9,0.675,0.774,0.786,3,False,False,,,,,,,,,,flavouring agent
-sodium selenite,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,NULL
-sodium selenate,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,NULL
+sodium selenite,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
+sodium selenate,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
 sweetener 960 a,stevia,solvent extraction,powder,sweetener,NULL,extract/oleoresin,NULL,0.82,0.42,0.625,0.82,0.86,0.625,0.622,0.754,2,True,False,,,,,,,,,,sweetener
 strawberry pulp,strawberry,NULL,pulp/puree,base ingredient,NULL,NULL,NULL,0,0.25,0.12,0,0.25,0.12,0.123,0.123,1,False,False,,,,,,,,,,raw_agricultural_material
 sprinkled sugar,sugarcane,NULL,crystalline chemical,sweetener,refining|?granulation,granules,NULL,0,0.98,0.625,0.75,0.98,0.625,0.544,0.769,2,True,True,,,,,,,,refined_sucrose,,sweetener
 sugarcane juice,sugarcane,NULL,juice,sweetener,NULL,NULL,base ingredient,0,0.5,0.625,0,0.5,0.625,0.4,0.4,2,False,False,,,,,,,,refined_sucrose,,sweetener
 fructose powder,sugarcane | corn,NULL,powder,sweetener,refining,crystalline chemical,NULL,0,0.42,0.625,0.75,0.98,0.625,0.376,0.769,2,True,False,,,,,,,,,,sweetener
-retinyl acetate,synthetic | fish liver oil,NULL,oil,NULL,NULL,crystalline chemical,NULL,0,0.7,0,0,0.98,0,0.21,0.294,1,False,False,,,,,,,,,,NULL
+retinyl acetate,synthetic | fish liver oil,NULL,oil,NULL,NULL,crystalline chemical,NULL,0,0.7,0,0,0.98,0,0.21,0.294,1,False,False,,,,,,,,,,fortification_agent
 roasted almonds,almond,roasting,whole/fresh pieces,base ingredient,NULL,cut/sliced pieces,NULL,0.58,0.05,0.12,0.58,0.1,0.12,0.237,0.252,1,False,False,,,,,,,,,,raw_agricultural_material
 fenugreek seeds,fenugreek,NULL,whole/fresh pieces,taste profile / spice,NULL,powder,flavouring agent,0,0.05,0.18,0,0.42,0.675,0.087,0.396,1,True,False,,,,,,,,,,taste profile / spice
 coriander seeds,coriander,NULL,whole/fresh pieces,taste profile / spice,NULL,powder,flavouring agent,0,0.05,0.18,0,0.42,0.675,0.087,0.396,1,True,False,,,,,,,,,,taste profile / spice
@@ -997,8 +997,8 @@ red chilli bits,chilli,drying,cut/sliced pieces,taste profile / spice,cut/sliced
 cholecalciferol,fish liver oil | synthetic,NULL,oil,NULL,NULL,extract/oleoresin,NULL,0,0.7,0,0,0.86,0,0.21,0.258,1,False,False,,,vitamin_fat_soluble,,,,,,,fortification_agent
 cinnamon leaves,cinnamon,NULL,whole/fresh pieces,taste profile / spice,drying,cut/sliced pieces|powder,flavouring agent,0,0.05,0.18,0.42,0.42,0.675,0.087,0.522,1,True,False,,,,,,,,,,taste profile / spice
 cinnamon powder,cinnamon,milling,powder,taste profile / spice,drying,NULL,flavouring agent,0.28,0.42,0.18,0.42,0.42,0.675,0.282,0.522,1,True,False,,,,,,,,,,taste profile / spice
-copper sulphate,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,NULL
-cupric sulphate,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,NULL
+copper sulphate,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
+cupric sulphate,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
 emulsifier pgpr,castor bean,NULL,emulsifier powder,emulsifier,solvent extraction,oil,NULL,0,0.89,0.825,0.82,0.89,0.825,0.597,0.843,2,True,False,,,,,,,,,,emulsifier
 improver enzyme,synthetic,NULL,powder,flour treatment agent,NULL,NULL,enzyme,0,0.42,0.93,0,0.42,0.93,0.498,0.498,2,False,False,,,,,,,,,,flour treatment agent
 cardamom powder,cardamom,milling,powder,taste profile / spice,drying,NULL,flavouring agent,0.28,0.42,0.18,0.42,0.42,0.675,0.282,0.522,1,True,False,,,,,,,,,,taste profile / spice
@@ -1011,7 +1011,7 @@ lime flavouring,lime,NULL,extract/oleoresin,flavouring agent,NULL,NULL,taste pro
 milk components,milk,fractionation,NULL,base ingredient,NULL,concentrate|powder,NULL,0.76,0,0.12,0.76,0.42,0.12,0.276,0.402,1,True,False,,,,,,,,,,raw_agricultural_material
 milk flavouring,milk,NULL,extract/oleoresin,flavouring agent,NULL,NULL,taste profile / spice,0,0.86,0.675,0,0.86,0.675,0.528,0.528,2,False,False,,,,,,,,,,flavouring agent
 micellar casein,milk,NULL,protein isolate,base ingredient,NULL,NULL,NULL,0,0.78,0.12,0,0.78,0.12,0.282,0.282,1,False,False,,,,,,,casein,,,processed_ingredient
-moringa extract,moringa,solvent extraction,extract/oleoresin,NULL,NULL,NULL,NULL,0.82,0.86,0,0.82,0.86,0,0.504,0.504,2,False,False,,,,,,,,,,NULL
+moringa extract,moringa,solvent extraction,extract/oleoresin,NULL,NULL,NULL,NULL,0.82,0.86,0,0.82,0.86,0,0.504,0.504,2,False,False,,,,,,,,,,health_supplement
 moth bean flour,moth bean,milling,flour/fine powder,base ingredient,NULL,NULL,NULL,0.28,0.33,0.12,0.28,0.33,0.12,0.231,0.231,1,False,False,,,,,,,,,,raw_agricultural_material
 dew beans flour,dew bean,milling,flour/fine powder,base ingredient,NULL,NULL,NULL,0.28,0.33,0.12,0.28,0.33,0.12,0.231,0.231,1,False,False,,,,,,,,,,raw_agricultural_material
 husked dew gram,dew bean,de-husking,NULL,base ingredient,NULL,whole/fresh pieces,NULL,0.22,0,0.12,0.22,0.05,0.12,0.114,0.129,1,False,False,,,,,,,,,,raw_agricultural_material
@@ -1029,12 +1029,10 @@ sunflower seeds,sunflower,NULL,whole/fresh pieces,base ingredient,NULL,NULL,NULL
 tamarind powder,tamarind,drying|milling,powder,taste profile / spice,NULL,NULL,flavouring agent,0.42,0.42,0.18,0.42,0.42,0.675,0.324,0.522,2,False,False,,,,,,,,,,taste profile / spice
 triphala powder,amla | bibhitaki | haritaki,milling,powder,taste profile / spice,drying,NULL,NULL,0.28,0.42,0.18,0.42,0.42,0.18,0.282,0.324,1,True,False,,,,,,,,,,taste profile / spice
 vanilla extract,vanilla,solvent extraction,extract/oleoresin,flavouring agent,NULL,NULL,taste profile / spice,0.82,0.86,0.675,0.82,0.86,0.675,0.774,0.774,3,False,False,,,,,,,,,,flavouring agent
-distilled water,water,NULL,juice,NULL,distillation,NULL,NULL,0,0.5,0,0,0.5,0,0.15,0.15,1,False,False,,,,,,,,,,NULL
-sparkling water,water,NULL,juice,NULL,carbonation,NULL,NULL,0,0.5,0,0,0.5,0,0.15,0.15,1,False,False,,,,,,,,,,NULL
 buckwheat flour,buckwheat,milling,flour/fine powder,base ingredient,NULL,NULL,NULL,0.28,0.33,0.12,0.28,0.33,0.12,0.231,0.231,1,False,False,,,,,,,,,,raw_agricultural_material
 protease enzyme,synthetic,NULL,powder,enzyme,NULL,NULL,NULL,0,0.42,0,0,0.42,0,0.126,0.126,1,False,False,,,,,,,,,,enzyme
 psyllium powder,psyllium,milling,powder,thickener,drying,NULL,bulking agent,0.28,0.42,0.615,0.42,0.42,0.615,0.456,0.498,2,False,False,,,,,,,,,,thickener
-guduchi extract,guduchi,solvent extraction,extract/oleoresin,NULL,NULL,NULL,NULL,0.82,0.86,0,0.82,0.86,0,0.504,0.504,2,False,False,,,,,,,,,,NULL
+guduchi extract,guduchi,solvent extraction,extract/oleoresin,NULL,NULL,NULL,NULL,0.82,0.86,0,0.82,0.86,0,0.504,0.504,2,False,False,,,,,,,,,,health_supplement
 phosphoric acid,mineral,NULL,crystalline chemical,acidity regulator,NULL,NULL,sequestrant,0,0.98,0.86,0,0.98,0.91,0.638,0.658,2,False,False,,,,,,,,,,acidity regulator
 precooked pasta,wheat,?pre-cooking,dense block,base ingredient,NULL,NULL,NULL,0,0.38,0.12,0,0.38,0.12,0.162,0.162,1,False,True,,,,,,,,,,processed_ingredient
 salmon fish oil,salmon,NULL,oil,lipid base,solvent extraction,NULL,NULL,0,0.7,0.22,0.82,0.7,0.22,0.298,0.544,1,True,False,,,,,,,,,,lipid base
@@ -1080,7 +1078,7 @@ pasteurized milk,milk,pasteurization,NULL,base ingredient,NULL,NULL,NULL,0.48,0,
 processed cheese,milk,NULL,dense block,base ingredient,NULL,NULL,NULL,0,0.38,0.12,0,0.38,0.12,0.162,0.162,1,False,False,,,,hard_cheese,,,,,,processed_ingredient
 red chili powder,chili,drying,powder,taste profile / spice,NULL,NULL,flavouring agent,0.42,0.42,0.18,0.42,0.42,0.675,0.324,0.522,2,False,False,,,,,,,,,,taste profile / spice
 red chilli whole,chili,drying,whole/fresh pieces,taste profile / spice,NULL,NULL,flavouring agent,0.42,0.05,0.18,0.42,0.05,0.675,0.213,0.411,1,True,False,,,,,,,,,,taste profile / spice
-choline chloride,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,NULL
+choline chloride,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
 egg white powder,egg,drying,powder,base ingredient,NULL,NULL,foaming agent,0.42,0.42,0.12,0.42,0.42,0.725,0.3,0.542,2,False,False,,,,,,,,,,processed_ingredient
 ferrous sulphate,mineral,NULL,crystalline chemical,antioxidant,NULL,NULL,NULL,0,0.98,0.875,0,0.98,0.875,0.644,0.644,2,False,False,,,mineral_nutrient,,,,,,,antioxidant
 clarified butter,milk,clarification|churning,fat fraction,lipid base,NULL,NULL,flavouring agent,0.55,0.72,0.22,0.55,0.72,0.675,0.469,0.651,2,False,False,,,,,,,,,,lipid base
@@ -1090,12 +1088,12 @@ guava flavouring,guava,NULL,extract/oleoresin,flavouring agent,extract/oleoresin
 honey flavouring,honey,NULL,NULL,flavouring agent,NULL,extract/oleoresin,sweetener,0,0,0.675,0,0.86,0.675,0.27,0.528,1,True,False,,,,,,,,,,flavouring agent
 jamun flavouring,jamun,NULL,extract/oleoresin,flavouring agent,extract/oleoresin,NULL,taste profile / spice,0,0.86,0.675,0,0.86,0.675,0.528,0.528,2,False,False,,,,,,,,,,flavouring agent
 kewra flavouring,kewra,NULL,extract/oleoresin,flavouring agent,extract/oleoresin,essential oil,taste profile / spice,0,0.86,0.675,0,0.9,0.675,0.528,0.54,2,False,False,,,,,,,,,,flavouring agent
-lactobilus casei,milk,fermentation,NULL,NULL,NULL,concentrate,?probiotic,0.56,0,0,0.56,0.4,0,0.168,0.288,1,False,True,,,,,,,,,,NULL
+lactobilus casei,milk,fermentation,NULL,NULL,NULL,concentrate,?probiotic,0.56,0,0,0.56,0.4,0,0.168,0.288,1,False,True,,,,,,,,,,health_supplement
 lemon flavouring,lemon,NULL,extract/oleoresin,flavouring agent,extract/oleoresin,essential oil,taste profile / spice,0,0.86,0.675,0,0.9,0.675,0.528,0.54,2,False,False,,,,,,,,,,flavouring agent
 dairy flavouring,milk,NULL,extract/oleoresin,flavouring agent,NULL,NULL,taste profile / spice,0,0.86,0.675,0,0.86,0.675,0.528,0.528,2,False,False,,,,,,,,,,flavouring agent
 onion flavouring,onion,NULL,extract/oleoresin,flavouring agent,extract/oleoresin,NULL,taste profile / spice,0,0.86,0.675,0,0.86,0.675,0.528,0.528,2,False,False,,,,,,,,,,flavouring agent
 dehydrated onion,onion,drying,cut/sliced pieces,flavouring agent,NULL,NULL,taste profile / spice,0.42,0.1,0.675,0.42,0.1,0.675,0.426,0.426,2,False,False,,,,,,,,,,flavouring agent
-pantothenic acid,synthetic | corn,NULL,crystalline chemical,NULL,fermentation,NULL,NULL,0,0.98,0,0.56,0.98,0,0.294,0.462,1,True,False,,,vitamin_water_soluble,,,,,,,NULL
+pantothenic acid,synthetic | corn,NULL,crystalline chemical,NULL,fermentation,NULL,NULL,0,0.98,0,0.56,0.98,0,0.294,0.462,1,True,False,,,vitamin_water_soluble,,,,,,,fortification_agent
 potassium iodate,mineral,NULL,crystalline chemical,antioxidant,NULL,NULL,preservative,0,0.98,0.875,0,0.98,0.885,0.644,0.648,2,False,False,,,mineral_nutrient,,,,,,,antioxidant
 potassium iodide,mineral,NULL,crystalline chemical,antioxidant,NULL,NULL,preservative,0,0.98,0.875,0,0.98,0.885,0.644,0.648,2,False,False,,,,,,,,,,antioxidant
 gulab flavouring,rose,NULL,extract/oleoresin,flavouring agent,extract/oleoresin,essential oil,taste profile / spice,0,0.86,0.675,0,0.9,0.675,0.528,0.54,2,False,False,,,,,,,,,,flavouring agent
@@ -1110,7 +1108,7 @@ cultured glucose,corn | tapioca,fermentation,NULL,sweetener,NULL,powder,NULL,0.5
 gajar flavouring,carrot,NULL,extract/oleoresin,flavouring agent,extract/oleoresin,NULL,taste profile / spice,0,0.86,0.675,0,0.86,0.675,0.528,0.528,2,False,False,,,,,,,,,,flavouring agent
 microbial enzyme,synthetic,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,0,0,0,0,1,False,False,,,,,,,,,,fermentation_agent
 ferrous fumarate,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
-glucuronolactone,synthetic | corn,NULL,crystalline chemical,NULL,fermentation,NULL,NULL,0,0.98,0,0.56,0.98,0,0.294,0.462,1,True,False,,,,,,,,,,NULL
+glucuronolactone,synthetic | corn,NULL,crystalline chemical,NULL,fermentation,NULL,NULL,0,0.98,0,0.56,0.98,0,0.294,0.462,1,True,False,,,,,,,,,,health_supplement
 quillaja extract,quillaja,solvent extraction,extract/oleoresin,foaming agent,NULL,NULL,emulsifier,0.82,0.86,0.725,0.82,0.86,0.825,0.794,0.834,3,False,False,,,,,,,,,,foaming agent
 sourdough powder,wheat,fermentation|milling,powder,base ingredient,NULL,NULL,raising agent,0.56,0.42,0.12,0.56,0.42,0.475,0.342,0.484,2,False,False,,,,,,,,,,processed_ingredient
 sardine fish oil,sardine,NULL,oil,lipid base,solvent extraction,NULL,NULL,0,0.7,0.22,0.82,0.7,0.22,0.298,0.544,1,True,False,,,,,,,,,,lipid base
@@ -1143,7 +1141,7 @@ husked black gram,black gram,de-husking,whole/fresh pieces,base ingredient,NULL,
 distilled vinegar,sugarcane,fermentation|distillation,juice,acidity regulator,NULL,NULL,preservative,0.56,0.5,0.86,0.56,0.5,0.885,0.662,0.672,2,False,False,,,,,,,,,,acidity regulator
 synthetic vinegar,synthetic,fermentation,juice,acidity regulator,NULL,NULL,preservative,0.56,0.5,0.86,0.56,0.5,0.885,0.662,0.672,2,False,False,,,,,,,,,,acidity regulator
 vitamin a acetate,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,vitamin_fat_soluble,,,,,,,fortification_agent
-retinyl palmitate,palm,NULL,NULL,NULL,solvent extraction,oil,NULL,0,0,0,0.82,0.7,0,0,0.456,1,True,False,,,,,,,,,,NULL
+retinyl palmitate,palm,NULL,NULL,NULL,solvent extraction,oil,NULL,0,0,0,0.82,0.7,0,0,0.456,1,True,False,,,,,,,,,,fortification_agent
 flax seed extract,flax,solvent extraction,extract/oleoresin,base ingredient,NULL,NULL,NULL,0.82,0.86,0.12,0.82,0.86,0.12,0.552,0.552,2,False,False,,,,,,,,,,raw_agricultural_material
 almond flavouring,almond,NULL,extract/oleoresin,flavouring agent,solvent extraction,NULL,taste profile / spice,0,0.86,0.675,0.82,0.86,0.675,0.528,0.774,2,True,False,,,,,,,,,,flavouring agent
 acidity regulator,synthetic | mineral,NULL,crystalline chemical,acidity regulator,NULL,NULL,NULL,0,0.98,0.86,0,0.98,0.86,0.638,0.638,2,False,False,,,,,,,,,,acidity regulator
@@ -1171,7 +1169,7 @@ red chilli flakes,red chilli,drying,flakes,taste profile / spice,NULL,cut/sliced
 red chilli powder,red chilli,drying,powder,taste profile / spice,NULL,NULL,flavouring agent|colour,0.42,0.42,0.18,0.42,0.42,0.8,0.324,0.572,2,False,False,,,,,,,,,,taste profile / spice
 red chilly flakes,red chilli,drying,flakes,taste profile / spice,NULL,cut/sliced pieces,flavouring agent|colour,0.42,0.36,0.18,0.42,0.36,0.8,0.306,0.554,2,False,False,,,,,,,,,,taste profile / spice
 red chilly powder,red chilli,drying,powder,taste profile / spice,NULL,NULL,flavouring agent|colour,0.42,0.42,0.18,0.42,0.42,0.8,0.324,0.572,2,False,False,,,,,,,,,,taste profile / spice
-chromium chloride,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,NULL
+chromium chloride,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
 citrus pulp cells,citrus,NULL,pulp/puree,base ingredient,NULL,whole/fresh pieces,thickener,0,0.25,0.12,0,0.25,0.615,0.123,0.321,1,True,False,,,,,,,,,,raw_agricultural_material
 orange pulp cells,orange,NULL,pulp/puree,base ingredient,NULL,whole/fresh pieces,thickener,0,0.25,0.12,0,0.25,0.615,0.123,0.321,1,True,False,,,,,,,,,,raw_agricultural_material
 candied cranberry,cranberry,NULL,whole/fresh pieces,sweetener,NULL,NULL,NULL,0,0.05,0.625,0,0.05,0.625,0.265,0.265,1,False,False,,,,,,,,,,sweetener
@@ -1258,7 +1256,7 @@ disodium inosinate,synthetic,NULL,crystalline chemical,flavouring agent,NULL,NUL
 potassium chloride,mineral,NULL,crystalline chemical,base ingredient,NULL,NULL,NULL,0,0.98,0.12,0,0.98,0.12,0.342,0.342,2,False,False,,,,,,,,,,fortification_agent
 milk fat desi ghee,milk,churning|clarification,fat fraction,lipid base,NULL,NULL,flavouring agent,0.55,0.72,0.22,0.55,0.72,0.675,0.469,0.651,2,False,False,,,,,,,,,,lipid base
 humectant glycerol,palm | soybean | sunflower,NULL,NULL,humectant,NULL,NULL,NULL,0,0,0.425,0,0,0.425,0.17,0.17,1,False,False,,,,,,,,,,humectant
-grape seed extract,grape,solvent extraction,extract/oleoresin,NULL,NULL,NULL,antioxidant,0.82,0.86,0,0.82,0.86,0.875,0.504,0.854,2,True,False,,,,,,,,,,NULL
+grape seed extract,grape,solvent extraction,extract/oleoresin,NULL,NULL,NULL,antioxidant,0.82,0.86,0,0.82,0.86,0.875,0.504,0.854,2,True,False,,,,,,,,,,health_supplement
 elaichi flavouring,cardamom,NULL,NULL,flavouring agent,NULL,powder,taste profile / spice,0,0,0.675,0,0.42,0.675,0.27,0.396,1,True,False,,,,,,,,,,flavouring agent
 green chilka moong,mung bean,NULL,whole/fresh pieces,base ingredient,NULL,NULL,NULL,0,0.05,0.12,0,0.05,0.12,0.063,0.063,1,False,False,,,,,,,,,,raw_agricultural_material
 khar alkaline salt,mineral,NULL,crystalline chemical,base ingredient,NULL,NULL,acidity regulator,0,0.98,0.12,0,0.98,0.86,0.342,0.638,2,False,False,,,,,,,,,hi,raw_agricultural_material
@@ -1267,13 +1265,13 @@ lemon juice powder,lemon,?spray drying,powder,flavouring agent,NULL,juice,acidit
 lemon fruit powder,lemon,?spray drying,powder,flavouring agent,NULL,NULL,acidity regulator,0.42,0.42,0.675,0.42,0.42,0.86,0.522,0.596,2,False,True,,,,,,,,,,flavouring agent
 long pepper powder,long pepper,NULL,powder,taste profile / spice,drying,NULL,flavouring agent,0,0.42,0.18,0.42,0.42,0.675,0.198,0.522,1,True,False,,,,,,,,,,taste profile / spice
 wheat maltodextrin,wheat,?hydrolysis,modified starch powder,bulking agent,NULL,NULL,thickener,0.6,0.96,0.375,0.6,0.96,0.615,0.618,0.714,2,True,True,,,,,,,,,,bulking agent
-manganese sulphate,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,NULL
+manganese sulphate,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
 milk solids casein,milk,NULL,protein concentrate,base ingredient,NULL,powder,NULL,0,0.74,0.12,0,0.74,0.12,0.27,0.27,1,False,False,,,,,,,casein,,,processed_ingredient
 monk fruit extract,monk fruit,solvent extraction,extract/oleoresin,sweetener,NULL,NULL,flavouring agent,0.82,0.86,0.625,0.82,0.86,0.675,0.754,0.774,3,False,False,,,,,,,,,,sweetener
 dehydrated parsley,parsley,drying,NULL,taste profile / spice,NULL,powder,flavouring agent,0.42,0,0.18,0.42,0.42,0.675,0.198,0.522,1,True,False,,,,,,,,,,taste profile / spice
 pomegranate powder,pomegranate,drying,powder,colour,NULL,NULL,antioxidant,0.42,0.42,0.8,0.42,0.42,0.875,0.572,0.602,2,False,False,,,,,,,,,,colour|raw_agricultural_material
 pomegranate flower,pomegranate,NULL,whole/fresh pieces,taste profile / spice,drying,powder,flavouring agent|colour,0,0.05,0.18,0.42,0.42,0.8,0.087,0.572,1,True,False,,,,,,,,,,taste profile / spice
-bacillus coagulans,synthetic,fermentation,spore,NULL,NULL,NULL,?probiotic,0.56,0,0,0.56,0,0,0.168,0.168,1,False,True,,,,,,,,,,NULL
+bacillus coagulans,synthetic,fermentation,spore,NULL,NULL,NULL,?probiotic,0.56,0,0,0.56,0,0,0.168,0.168,1,False,True,,,,,,,,,,health_supplement
 flattened red rice,rice,NULL,flakes,base ingredient,NULL,NULL,NULL,0,0.36,0.12,0,0.36,0.12,0.156,0.156,1,False,False,,,,,,,,,,raw_agricultural_material
 safflower seed oil,safflower,cold pressing|solvent extraction,oil,lipid base,refining,NULL,NULL,0.82,0.7,0.22,0.82,0.7,0.22,0.544,0.544,2,False,False,,,,,,,,,,lipid base
 dehydrated spinach,spinach,drying,NULL,base ingredient,NULL,powder,NULL,0.42,0,0.12,0.42,0.42,0.12,0.174,0.3,1,True,False,,,,,,,,,,raw_agricultural_material
@@ -1477,7 +1475,7 @@ hydrogenated table oil,palm | soybean | groundnut,hydrogenation,oil,lipid base,c
 dehydrated carrot bits,carrot,drying,cut/sliced pieces,base ingredient,NULL,NULL,NULL,0.42,0.1,0.12,0.42,0.1,0.12,0.204,0.204,1,False,False,,,,,,,,,,raw_agricultural_material
 dehydrated garlic bits,garlic,drying,cut/sliced pieces,taste profile / spice,NULL,NULL,flavouring agent,0.42,0.1,0.18,0.42,0.1,0.675,0.228,0.426,1,True,False,,,,,,,,,,taste profile / spice
 organic ginger rhizome,ginger,NULL,whole/fresh pieces,taste profile / spice,NULL,cut/sliced pieces,flavouring agent,0,0.05,0.18,0,0.1,0.675,0.087,0.3,1,True,False,,,,,,,,,,taste profile / spice
-magnesium bisglycinate,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,mineral_nutrient,,,,,,,NULL
+magnesium bisglycinate,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,mineral_nutrient,,,,,,,fortification_agent
 split black gram flour,black gram,milling,flour/fine powder,base ingredient,NULL,NULL,NULL,0.28,0.33,0.12,0.28,0.33,0.12,0.231,0.231,1,False,False,,,,,,,,,,raw_agricultural_material
 filtered flax seed oil,flax,refining,oil,lipid base,cold pressing|solvent extraction,NULL,NULL,0.75,0.7,0.22,0.82,0.7,0.22,0.523,0.544,2,False,False,,,,,,,,,,lipid base
 dried fenugreek leaves,fenugreek,drying,NULL,taste profile / spice,NULL,powder,flavouring agent,0.42,0,0.18,0.42,0.42,0.675,0.198,0.522,1,True,False,,,,,,,,,,taste profile / spice
@@ -1498,7 +1496,7 @@ refined cottonseed oil,cottonseed,refining,oil,lipid base,cold pressing|solvent 
 glazing agent carnauba,carnauba palm,NULL,NULL,glazing agent,NULL,extract/oleoresin,NULL,0,0,0,0,0.86,0,0,0.258,1,False,False,,,,,,,,,,glazing agent
 kiwi juice concentrate,kiwi,NULL,juice|concentrate,flavouring agent,NULL,NULL,NULL,0,0.5,0.675,0,0.5,0.675,0.42,0.42,2,False,False,,,,,,,,,,flavouring agent
 onion flavouring agent,onion,NULL,NULL,flavouring agent,drying,powder,taste profile / spice,0,0,0.675,0.42,0.42,0.675,0.27,0.522,1,True,False,,,,,,,,,,flavouring agent
-proabsor8 blend papain,papaya,NULL,NULL,NULL,NULL,extract/oleoresin,?digestive aid,0,0,0,0,0.86,0,0,0.258,1,False,True,,,,,,,,,,NULL
+proabsor8 blend papain,papaya,NULL,NULL,NULL,NULL,extract/oleoresin,?digestive aid,0,0,0,0,0.86,0,0,0.258,1,False,True,,,,,,,,,,health_supplement
 pomegranate flavouring,pomegranate,NULL,NULL,flavouring agent,NULL,juice|extract/oleoresin,taste profile / spice,0,0,0.675,0,0.86,0.675,0.27,0.528,1,True,False,,,,,,,,,,flavouring agent
 potato flakes potatoes,potato,NULL,flakes,base ingredient,NULL,NULL,NULL,0,0.36,0.12,0,0.36,0.12,0.156,0.156,1,False,False,,,,,,,,,,raw_agricultural_material
 shatavari root extract,shatavari,solvent extraction,extract/oleoresin,base ingredient,NULL,NULL,NULL,0.82,0.86,0.12,0.82,0.86,0.12,0.552,0.552,2,False,False,,,,,,,,,,raw_agricultural_material
@@ -1550,14 +1548,14 @@ uv treated and ozonized,SKIP,?ozonization,NULL,preservative,NULL,NULL,NULL,0,0,0
 black truffle seasoning,truffle,drying,whole/fresh pieces,taste profile / spice,NULL,powder,flavouring agent,0.42,0.05,0.18,0.42,0.42,0.675,0.213,0.522,1,True,False,,,,,,,,,,taste profile / spice
 food grade fish gelatin,fish,NULL,protein isolate,gelling agent,?hydrolysis,NULL,thickener,0,0.78,0.675,0.6,0.78,0.675,0.504,0.684,2,False,True,,,,,,,,,,gelling agent
 edible sodium caseinate,milk,NULL,protein isolate,base ingredient,NULL,powder,emulsifier,0,0.78,0.12,0,0.78,0.825,0.282,0.564,1,True,False,,,,,,,casein,,,processed_ingredient
-hpmc vegetarian capsule,wood,NULL,NULL,NULL,NULL,NULL,thickener|gelling agent,0,0,0,0,0,0.675,0,0.27,1,False,False,,,,,,,,,,NULL
+hpmc vegetarian capsule,wood,NULL,NULL,NULL,NULL,NULL,thickener|gelling agent,0,0,0,0,0,0.675,0,0.27,1,False,False,,,,,,,,,,thickener|gelling agent
 cotton candy flavouring,synthetic,NULL,NULL,flavouring agent,NULL,powder,sweetener,0,0,0.675,0,0.42,0.675,0.27,0.396,1,True,False,,,,,,,,,,flavouring agent
 ferric ammonium citrate,synthetic,NULL,crystalline chemical,anticaking agent,NULL,NULL,colour,0,0.98,0.85,0,0.98,0.85,0.634,0.634,2,False,False,,,,,,,,,,anticaking agent
 fructo-oligosaccharides,sugarcane | beet,NULL,powder,sweetener|bulking agent,NULL,NULL,?prebiotic,0,0.42,0.625,0,0.42,0.625,0.376,0.376,2,False,True,,,,,,,,,,sweetener|bulking agent
 omega concentrate blend,fish,concentration,oil|concentrate,lipid base,solvent extraction,NULL,NULL,0.48,0.7,0.22,0.82,0.7,0.22,0.442,0.544,2,False,False,,,,,,,,,,lipid base
 sodium starch glycolate,potato,NULL,modified starch powder,thickener,NULL,NULL,stabiliser,0,0.96,0.615,0,0.96,0.65,0.534,0.548,2,False,False,,,,,,,,,,thickener
 krishnalavana black salt,mineral,NULL,crystalline chemical,taste profile / spice,NULL,NULL,flavouring agent,0,0.98,0.18,0,0.98,0.675,0.366,0.564,2,False,False,,,,,,,,,,taste profile / spice
-pteroylmonoglutamic acid,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,NULL
+pteroylmonoglutamic acid,synthetic,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
 dehydrated garlic powder,garlic,drying,powder,taste profile / spice,NULL,NULL,flavouring agent,0.42,0.42,0.18,0.42,0.42,0.675,0.324,0.522,2,False,False,,,,,,,,,,taste profile / spice
 spice oleoresin gingerol,ginger,solvent extraction,oleoresin,taste profile / spice,NULL,extract/oleoresin,flavouring agent,0.82,0.88,0.18,0.82,0.88,0.675,0.582,0.78,2,True,False,,,,,,,,,,taste profile / spice
 masala flavouring ginger,ginger,NULL,NULL,flavouring agent,NULL,NULL,taste profile / spice,0,0,0.675,0,0,0.675,0.27,0.27,1,False,False,,,,,,,,,,flavouring agent
@@ -1636,22 +1634,22 @@ hydrogenated vegetable fats,palm | soybean | groundnut,hydrogenation,fat fractio
 fractionated vegetable fats,palm | soybean | groundnut,fractionation,fat fraction,lipid base,cold pressing|refining|solvent extraction,oil,NULL,0.76,0.72,0.22,0.82,0.72,0.22,0.532,0.55,2,False,False,,,,,,fractionated,,,,lipid base
 acetylated distarch adipate,corn | tapioca | potato,acetylation,modified starch powder,thickener,NULL,starch flour,NULL,0.94,0.96,0.615,0.94,0.96,0.615,0.816,0.816,3,False,False,,,,,,,,,,thickener
 roasted spice powder ginger,ginger,roasting,powder,taste profile / spice,drying,NULL,flavouring agent,0.58,0.42,0.18,0.58,0.42,0.675,0.372,0.57,2,False,False,,,,,,,,,,taste profile / spice
-magnesium phosphate dibasic,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,mineral_nutrient,,,,,,,NULL
+magnesium phosphate dibasic,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,mineral_nutrient,,,,,,,fortification_agent
 vitamin a retinyl palmitate,palm,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,0,0,0,0,1,False,False,,,vitamin_fat_soluble,,,,,,,fortification_agent
-tri basic calcium phosphate,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,NULL
+tri basic calcium phosphate,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
 dehydrated fenugreek leaves,fenugreek,drying,flakes,taste profile / spice,NULL,powder,flavouring agent,0.42,0.36,0.18,0.42,0.42,0.675,0.306,0.522,2,False,False,,,,,,,,,,taste profile / spice
 dehydrated coriander leaves,coriander,drying,flakes,taste profile / spice,NULL,powder,flavouring agent,0.42,0.36,0.18,0.42,0.42,0.675,0.306,0.522,2,False,False,,,,,,,,,,taste profile / spice
 l.bacillus delbruecki subsp,milk,fermentation,NULL,preservative,NULL,NULL,NULL,0.56,0,0.885,0.56,0,0.885,0.522,0.522,2,False,False,,,,,,,,,,preservative
 limosilactobacillus reuteri,milk,fermentation,NULL,preservative,NULL,NULL,NULL,0.56,0,0.885,0.56,0,0.885,0.522,0.522,2,False,False,,,,,,,,,,preservative
 green coffee extract powder,coffee,solvent extraction,extract/oleoresin|powder,flavouring agent,NULL,NULL,taste profile / spice,0.82,0.86,0.675,0.82,0.86,0.675,0.774,0.774,3,False,False,,,,,,,,,,flavouring agent
 stalkless kashmiri chillies,chilli,drying,whole/fresh pieces,taste profile / spice,NULL,cut/sliced pieces|powder,flavouring agent,0.42,0.05,0.18,0.42,0.42,0.675,0.213,0.522,1,True,False,,,,,,,,,,taste profile / spice
-mineral chromium picolinate,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,NULL
+mineral chromium picolinate,mineral,NULL,crystalline chemical,NULL,NULL,NULL,NULL,0,0.98,0,0,0.98,0,0.294,0.294,1,False,False,,,,,,,,,,fortification_agent
 cranberry juice concentrate,cranberry,concentration,concentrate|juice,flavouring agent,NULL,NULL,sweetener|acidity regulator,0.48,0.5,0.675,0.48,0.5,0.86,0.564,0.638,2,False,False,,,,,,,,,,flavouring agent
 emulsifier vegetable origin,palm | soybean | sunflower,NULL,emulsifier powder,emulsifier,NULL,NULL,NULL,0,0.89,0.825,0,0.89,0.825,0.597,0.597,2,False,False,,,,,,,,,,emulsifier
 roasted spice powder nutmeg,nutmeg,roasting,powder,taste profile / spice,drying,NULL,flavouring agent,0.58,0.42,0.18,0.58,0.42,0.675,0.372,0.57,2,False,False,,,,,,,,,,taste profile / spice
 pineapple juice concentrate,pineapple,concentration,juice|concentrate,flavouring agent,NULL,NULL,sweetener,0.48,0.5,0.675,0.48,0.5,0.675,0.564,0.564,2,False,False,,,,,,,,,,flavouring agent
 pineapple fruit preparation,pineapple,NULL,pulp/puree,base ingredient,NULL,whole/fresh pieces|cut/sliced pieces,flavouring agent,0,0.25,0.12,0,0.25,0.675,0.123,0.345,1,True,False,,,,,,,,,,raw_agricultural_material
-bacillus coagulans snz 1969,bacillus coagulans,fermentation,powder,NULL,NULL,NULL,probiotic,0.56,0.42,0,0.56,0.42,0,0.294,0.294,1,False,False,,,,,,,,,,NULL
+bacillus coagulans snz 1969,bacillus coagulans,fermentation,powder,NULL,NULL,NULL,probiotic,0.56,0.42,0,0.56,0.42,0,0.294,0.294,1,False,False,,,,,,,,,,health_supplement
 rosemary extract flavouring,rosemary,solvent extraction,extract/oleoresin,flavouring agent,NULL,essential oil,taste profile / spice,0.82,0.86,0.675,0.82,0.9,0.675,0.774,0.786,3,False,False,,,,,,,,,,flavouring agent
 sucrose acetate isobutyrate,synthetic,acetylation,NULL,emulsifier,NULL,NULL,stabiliser,0.94,0,0.825,0.94,0,0.825,0.612,0.612,2,False,False,,,,,,,,refined_sucrose,,emulsifier
 sugar substitute erythritol,corn,NULL,crystalline chemical,sweetener|bulking agent,fermentation,NULL,NULL,0,0.98,0.625,0.56,0.98,0.625,0.544,0.712,2,True,False,,,,,,,,sugar_alcohol,,sweetener|bulking agent
@@ -1672,7 +1670,7 @@ hydrolyzed groundnut protein,groundnut,?hydrolysis,protein concentrate,base ingr
 hydralyzed vegetable protein,soybean | groundnut | corn,?hydrolysis,protein concentrate,base ingredient,NULL,NULL,flavouring agent,0.6,0.74,0.12,0.6,0.74,0.675,0.45,0.672,2,False,True,,,,,,,hydrolysate,,,processed_ingredient
 hydrolized vegetable protein,soybean | groundnut | corn,?hydrolysis,protein concentrate,base ingredient,NULL,NULL,flavouring agent,0.6,0.74,0.12,0.6,0.74,0.675,0.45,0.672,2,False,True,,,,,,,hydrolysate,,,processed_ingredient
 hydrolysed groundnut protein,groundnut,?hydrolysis,protein concentrate,base ingredient,NULL,NULL,NULL,0.6,0.74,0.12,0.6,0.74,0.12,0.45,0.45,2,False,True,,,,,,,hydrolysate,,,processed_ingredient
-neem azadirachta indica leaf,neem azadirachta indica,NULL,whole/fresh pieces,NULL,NULL,cut/sliced pieces|powder,NULL,0,0.05,0,0,0.42,0,0.015,0.126,1,False,False,,,,,,,,,,NULL
+neem azadirachta indica leaf,neem azadirachta indica,NULL,whole/fresh pieces,NULL,NULL,cut/sliced pieces|powder,NULL,0,0.05,0,0,0.42,0,0.015,0.126,1,False,False,,,,,,,,,,health_supplement
 probiotic bacillus coagulans,bacillus coagulans,fermentation,powder,base ingredient,NULL,NULL,?prebiotic,0.56,0.42,0.12,0.56,0.42,0.12,0.342,0.342,2,False,True,,,,,,,,,,processed_ingredient
 preservative sodium benzoate,synthetic,NULL,crystalline chemical,preservative,NULL,NULL,NULL,0,0.98,0.885,0,0.98,0.885,0.648,0.648,2,False,False,,,,,,,,,,preservative
 grapefruit juice concentrate,grapefruit,concentration,juice|concentrate,flavouring agent,NULL,NULL,acidity regulator,0.48,0.5,0.675,0.48,0.5,0.86,0.564,0.638,2,False,False,,,,,,,,,,flavouring agent
