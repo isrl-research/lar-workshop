@@ -1,0 +1,684 @@
+{
+  "fortification_agents": [
+    {
+      "id": "biotin",
+      "canonical_name": "Biotin",
+      "aliases": ["D-Biotin", "Vitamin B7", "Vitamin H"],
+      "nutrient_class": "vitamin_water_soluble",
+      "source_variants": ["synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["biotin", "d-biotin"],
+      "notes": "Also known as Vitamin B7 or Vitamin H"
+    },
+    {
+      "id": "niacin",
+      "canonical_name": "Niacin",
+      "aliases": ["Nicotinic Acid", "Vitamin B3"],
+      "nutrient_class": "vitamin_water_soluble",
+      "source_variants": ["synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["niacin"],
+      "notes": "Also known as nicotinic acid or Vitamin B3; FSSAI mandatory for wheat flour fortification"
+    },
+    {
+      "id": "nicotinamide",
+      "canonical_name": "Nicotinamide",
+      "aliases": ["Niacinamide", "Vitamin B3 (amide form)"],
+      "nutrient_class": "vitamin_water_soluble",
+      "source_variants": ["synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["nicotinamide"],
+      "notes": "Also known as niacinamide; amide form of Vitamin B3; FSSAI mandatory for wheat flour fortification"
+    },
+    {
+      "id": "thiamin",
+      "canonical_name": "Thiamin",
+      "aliases": ["Thiamine", "Vitamin B1"],
+      "nutrient_class": "vitamin_water_soluble",
+      "source_variants": ["synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["thiamin"],
+      "notes": "Also known as Vitamin B1; FSSAI mandatory for wheat flour, rice, edible oil, milk, salt"
+    },
+    {
+      "id": "riboflavin",
+      "canonical_name": "Riboflavin",
+      "aliases": ["Vitamin B2"],
+      "nutrient_class": "vitamin_water_soluble",
+      "source_variants": ["synthetic", "fermentation (corn)"],
+      "is_group_declaration": false,
+      "source_row_variants": ["riboflavin", "vitamin b2", "vitamins vitamin b2"],
+      "notes": "Also known as Vitamin B2; FSSAI mandatory for wheat flour and milk"
+    },
+    {
+      "id": "riboflavin_5_phosphate_sodium",
+      "canonical_name": "Riboflavin 5'-Phosphate Sodium",
+      "aliases": ["FMN Sodium"],
+      "nutrient_class": "vitamin_water_soluble",
+      "source_variants": ["synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["riboflavin 5'-phosphate sodium"],
+      "notes": "Also known as flavin mononucleotide (FMN) sodium salt; more water-soluble form of riboflavin"
+    },
+    {
+      "id": "folic_acid",
+      "canonical_name": "Folic Acid",
+      "aliases": ["Folate", "Vitamin B9", "Pteroylmonoglutamic Acid"],
+      "nutrient_class": "vitamin_water_soluble",
+      "source_variants": ["synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["folic acid", "pteroylmonoglutamic acid"],
+      "notes": "Also known as Vitamin B9 or Folate; FSSAI mandatory for wheat flour, rice, milk, salt"
+    },
+    {
+      "id": "vitamin_b6",
+      "canonical_name": "Vitamin B6",
+      "aliases": [],
+      "nutrient_class": "vitamin_water_soluble",
+      "source_variants": ["synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["vitamin b6"],
+      "notes": "Generic group for pyridoxine, pyridoxal, and pyridoxamine; specify form for accurate classification"
+    },
+    {
+      "id": "pyridoxine_hydrochloride",
+      "canonical_name": "Pyridoxine Hydrochloride",
+      "aliases": [],
+      "nutrient_class": "vitamin_water_soluble",
+      "source_variants": ["synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["pyridoxine hydrochloride", "vitamin b6 pyridox ine hydrochloride"],
+      "notes": "Specific B6 form in hydrochloride salt; source row 'vitamin b6 pyridox ine hydrochloride' is OCR typo (space in middle of word)"
+    },
+    {
+      "id": "pyridoxal_5_phosphate",
+      "canonical_name": "Pyridoxal-5-Phosphate",
+      "aliases": [],
+      "nutrient_class": "vitamin_water_soluble",
+      "source_variants": ["synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["vitamin b6 pyridoxal-5-phosphate"],
+      "notes": "Active coenzyme form of Vitamin B6"
+    },
+    {
+      "id": "vitamin_b12",
+      "canonical_name": "Vitamin B12",
+      "aliases": [],
+      "nutrient_class": "vitamin_water_soluble",
+      "source_variants": ["synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["vitamin b12"],
+      "notes": "Generic B12 group; specify form (e.g. cyanocobalamin, methylcobalamin) for accurate classification"
+    },
+    {
+      "id": "cyanocobalamin",
+      "canonical_name": "Cyanocobalamin",
+      "aliases": [],
+      "nutrient_class": "vitamin_water_soluble",
+      "source_variants": ["synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["cyanocobalamin"],
+      "notes": "Specific B12 form; FSSAI mandatory for wheat flour, rice, milk"
+    },
+    {
+      "id": "vitamin_b_complex",
+      "canonical_name": "Vitamin B Complex",
+      "aliases": [],
+      "nutrient_class": "vitamin_water_soluble",
+      "source_variants": ["synthetic"],
+      "is_group_declaration": true,
+      "source_row_variants": ["vitamin b complex"],
+      "notes": "Generic group declaration covering multiple B vitamins; no single classification applicable"
+    },
+    {
+      "id": "vitamin_a",
+      "canonical_name": "Vitamin A",
+      "aliases": [],
+      "nutrient_class": "vitamin_fat_soluble",
+      "source_variants": ["synthetic", "fish liver oil"],
+      "is_group_declaration": false,
+      "source_row_variants": ["vitamin a", "vitamins a"],
+      "notes": "Generic Vitamin A; can be retinol, retinyl esters, or provitamin A carotenoids; 'vitamins a' folded in as plural typo; FSSAI mandatory for edible oil and milk"
+    },
+    {
+      "id": "retinyl_acetate",
+      "canonical_name": "Retinyl Acetate",
+      "aliases": ["Vitamin A Acetate"],
+      "nutrient_class": "vitamin_fat_soluble",
+      "source_variants": ["synthetic", "fish liver oil"],
+      "is_group_declaration": false,
+      "source_row_variants": ["vitamin a acetate"],
+      "notes": "Vitamin A in acetate ester form; FSSAI mandatory for edible oil and milk"
+    },
+    {
+      "id": "retinyl_palmitate",
+      "canonical_name": "Retinyl Palmitate",
+      "aliases": ["Vitamin A Palmitate"],
+      "nutrient_class": "vitamin_fat_soluble",
+      "source_variants": ["palm"],
+      "is_group_declaration": false,
+      "source_row_variants": ["vitamin a palmitate", "vitamin a retinyl palmitate"],
+      "notes": "Vitamin A in palmitate ester form; source: palm-derived; 'vitamin a retinyl palmitate' folded in as product-descriptor label; FSSAI mandatory for edible oil and milk"
+    },
+    {
+      "id": "vitamin_d",
+      "canonical_name": "Vitamin D",
+      "aliases": [],
+      "nutrient_class": "vitamin_fat_soluble",
+      "source_variants": ["synthetic", "lanolin", "fish liver oil"],
+      "is_group_declaration": false,
+      "source_row_variants": ["vitamin d", "vitamins d"],
+      "notes": "Generic Vitamin D; can be D2 (ergocalciferol) or D3 (cholecalciferol); 'vitamins d' folded in as plural typo; FSSAI mandatory for milk and edible oil"
+    },
+    {
+      "id": "vitamin_d2",
+      "canonical_name": "Vitamin D2 (Ergocalciferol)",
+      "aliases": ["Ergocalciferol"],
+      "nutrient_class": "vitamin_fat_soluble",
+      "source_variants": ["synthetic", "yeast"],
+      "is_group_declaration": false,
+      "source_row_variants": ["vitamin d2", "ergocalciferol", "vitamin d2 ergocalciferol", "vit. d2"],
+      "notes": "Plant/yeast-derived form of Vitamin D; 'vitamin d2 ergocalciferol' folded in as compound-name-appended label; FSSAI mandatory for edible oil and milk"
+    },
+    {
+      "id": "vitamin_d3",
+      "canonical_name": "Vitamin D3 (Cholecalciferol)",
+      "aliases": ["Cholecalciferol"],
+      "nutrient_class": "vitamin_fat_soluble",
+      "source_variants": ["synthetic", "fish liver oil", "lanolin"],
+      "is_group_declaration": false,
+      "source_row_variants": ["vitamin d3", "cholecalciferol"],
+      "notes": "Animal-derived or synthetic form of Vitamin D; can be from lanolin (wool) or fish liver oil; FSSAI mandatory for milk and edible oil"
+    },
+    {
+      "id": "amino_acids",
+      "canonical_name": "Amino Acids",
+      "aliases": [],
+      "nutrient_class": "amino_acid",
+      "source_variants": ["synthetic"],
+      "is_group_declaration": true,
+      "source_row_variants": ["amino acids"],
+      "notes": "Generic group declaration covering multiple amino acids; no single classification applicable"
+    },
+    {
+      "id": "arginine",
+      "canonical_name": "Arginine",
+      "aliases": ["L-Arginine"],
+      "nutrient_class": "amino_acid",
+      "source_variants": ["fermentation (sugarcane)", "synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["arginine", "l-arginine"],
+      "notes": "L-Arginine is the biologically active stereoisomer; also available as Arginine Hydrochloride"
+    },
+    {
+      "id": "l_arginine_hydrochloride",
+      "canonical_name": "L-Arginine Hydrochloride",
+      "aliases": [],
+      "nutrient_class": "amino_acid",
+      "source_variants": ["synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["l-arginine hcl"],
+      "notes": "Arginine in hydrochloride salt form; common in health supplements"
+    },
+    {
+      "id": "glutamine",
+      "canonical_name": "Glutamine",
+      "aliases": ["L-Glutamine"],
+      "nutrient_class": "amino_acid",
+      "source_variants": ["fermentation (sugarcane)", "fermentation (corn)", "synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["glutamine", "l-glutamine"],
+      "notes": "L-Glutamine is the active form; also used as a functional ingredient"
+    },
+    {
+      "id": "leucine",
+      "canonical_name": "Leucine",
+      "aliases": [],
+      "nutrient_class": "amino_acid",
+      "source_variants": ["synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["leucine"],
+      "notes": "Essential amino acid; can be synthetic or microbial depending on production method"
+    },
+    {
+      "id": "lysine",
+      "canonical_name": "Lysine",
+      "aliases": ["L-Lysine"],
+      "nutrient_class": "amino_acid",
+      "source_variants": ["fermentation (sugarcane)", "synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["lysine", "l-lysine"],
+      "notes": "Typically refers to L-Lysine; also available as L-Lysine Hydrochloride"
+    },
+    {
+      "id": "l_lysine_hydrochloride",
+      "canonical_name": "L-Lysine Hydrochloride",
+      "aliases": [],
+      "nutrient_class": "amino_acid",
+      "source_variants": ["synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["l-lysine hcl"],
+      "notes": "Lysine in hydrochloride salt form"
+    },
+    {
+      "id": "methionine",
+      "canonical_name": "Methionine",
+      "aliases": [],
+      "nutrient_class": "amino_acid",
+      "source_variants": ["synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["methionine"],
+      "notes": "Essential amino acid"
+    },
+    {
+      "id": "dl_methionine",
+      "canonical_name": "DL-Methionine",
+      "aliases": [],
+      "nutrient_class": "amino_acid",
+      "source_variants": ["synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["dl methionine", "dl-methionine"],
+      "notes": "Racemic mixture of D- and L-methionine; 'dl methionine' (spacing variant) folded in; DL form is synthetic; permitted in health supplements and nutraceuticals"
+    },
+    {
+      "id": "phenylalanine",
+      "canonical_name": "Phenylalanine",
+      "aliases": [],
+      "nutrient_class": "amino_acid",
+      "source_variants": ["synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["phenylalaline"],
+      "notes": "Essential amino acid; source row 'phenylalaline' is a typo (transposed letters)"
+    },
+    {
+      "id": "taurine",
+      "canonical_name": "Taurine",
+      "aliases": [],
+      "nutrient_class": "amino_acid",
+      "source_variants": ["synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["taurine"],
+      "notes": "Conditionally essential amino acid; often used in energy drinks and supplements"
+    },
+    {
+      "id": "threonine",
+      "canonical_name": "Threonine",
+      "aliases": [],
+      "nutrient_class": "amino_acid",
+      "source_variants": ["synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["threonine"],
+      "notes": "Essential amino acid; L-Threonine is the common isomer"
+    },
+    {
+      "id": "valine",
+      "canonical_name": "Valine",
+      "aliases": [],
+      "nutrient_class": "amino_acid",
+      "source_variants": ["synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["valine"],
+      "notes": "Essential amino acid"
+    },
+    {
+      "id": "iodate",
+      "canonical_name": "Iodate",
+      "aliases": ["Potassium Iodate", "Sodium Iodate"],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": false,
+      "source_row_variants": ["iodate"],
+      "notes": "Generic iodine fortification term; usually as Potassium Iodate or Sodium Iodate; FSSAI mandatory for salt"
+    },
+    {
+      "id": "sodium_iodate",
+      "canonical_name": "Sodium Iodate",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": false,
+      "source_row_variants": ["sodium img"],
+      "notes": "Source row 'sodium img' is confirmed OCR artefact for sodium iodate; FSSAI mandatory for salt fortification"
+    },
+    {
+      "id": "electrolytes",
+      "canonical_name": "Electrolytes",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": true,
+      "source_row_variants": ["electrolytes"],
+      "notes": "Generic group declaration; typically covers sodium, potassium, magnesium, calcium salts; no single canonical form"
+    },
+    {
+      "id": "electrolytic_iron",
+      "canonical_name": "Electrolytic Iron",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": false,
+      "source_row_variants": ["electrolytic iron"],
+      "notes": "Elemental iron powder produced by electrolysis; source row has question_tags flag (production method unconfirmed); FSSAI mandatory for wheat flour, rice, salt"
+    },
+    {
+      "id": "ferrous_salt",
+      "canonical_name": "Ferrous Salt",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": true,
+      "source_row_variants": ["ferrous salt"],
+      "notes": "Generic term; could refer to ferrous sulfate, ferrous fumarate, ferrous gluconate, etc.; specify salt form for accurate classification"
+    },
+    {
+      "id": "ferrous_fumarate",
+      "canonical_name": "Ferrous Fumarate",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": false,
+      "source_row_variants": ["ferrous fumarate"],
+      "notes": "Iron salt with fumarate anion; FSSAI mandatory for wheat flour and rice"
+    },
+    {
+      "id": "ferrous_gluconate",
+      "canonical_name": "Ferrous Gluconate",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": false,
+      "source_row_variants": ["ferrous gluconate"],
+      "notes": "Iron salt with gluconate anion; distinct from ferrous fumarate in bioavailability"
+    },
+    {
+      "id": "zinc_sulphate",
+      "canonical_name": "Zinc Sulphate",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": false,
+      "source_row_variants": ["zinc sulphate"],
+      "notes": "FSSAI mandatory for wheat flour, rice, edible oil, milk, salt"
+    },
+    {
+      "id": "zinc_sulphate_monohydrate",
+      "canonical_name": "Zinc Sulphate Monohydrate",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": false,
+      "source_row_variants": ["zinc sulphate monohydrate"],
+      "notes": "Monohydrate form of zinc sulphate; FSSAI mandatory for wheat flour, rice, edible oil, milk, salt"
+    },
+    {
+      "id": "zinc_gluconate",
+      "canonical_name": "Zinc Gluconate",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["zinc gluconate"],
+      "notes": "Zinc salt of gluconic acid"
+    },
+    {
+      "id": "calcium_salt",
+      "canonical_name": "Calcium Salt",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": true,
+      "source_row_variants": ["calcium salt"],
+      "notes": "Generic term; specify exact salt form (e.g. calcium carbonate, calcium citrate) for precise classification"
+    },
+    {
+      "id": "potassium_chloride",
+      "canonical_name": "Potassium Chloride",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": false,
+      "source_row_variants": ["potassium chloride", "salt substitute potassium chloride"],
+      "notes": "Potassium mineral salt; 'salt substitute potassium chloride' folded in as product-descriptor label"
+    },
+    {
+      "id": "salts_of_magnesium",
+      "canonical_name": "Salts of Magnesium",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": true,
+      "source_row_variants": ["salts of magnesium"],
+      "notes": "Generic term; includes magnesium chloride, magnesium sulfate, magnesium citrate, etc."
+    },
+    {
+      "id": "magnesium_aspartate",
+      "canonical_name": "Magnesium Aspartate",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": false,
+      "source_row_variants": ["magnesium aspartate"],
+      "notes": "Magnesium salt of aspartic acid"
+    },
+    {
+      "id": "magnesium_carbonate",
+      "canonical_name": "Magnesium Carbonate",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": false,
+      "source_row_variants": ["magnesium carbonate"],
+      "notes": "Magnesium salt"
+    },
+    {
+      "id": "magnesium_gluconate",
+      "canonical_name": "Magnesium Gluconate",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": false,
+      "source_row_variants": ["magnesium gluconate"],
+      "notes": "Magnesium salt of gluconic acid"
+    },
+    {
+      "id": "magnesium_hydroxide",
+      "canonical_name": "Magnesium Hydroxide",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": false,
+      "source_row_variants": ["magnesium hydroxide"],
+      "notes": "Also used as a food additive (acidity regulator); dual-function ingredient"
+    },
+    {
+      "id": "magnesium_oxide",
+      "canonical_name": "Magnesium Oxide",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": false,
+      "source_row_variants": ["magnesium oxide"],
+      "notes": "Magnesium salt"
+    },
+    {
+      "id": "magnesium_sulphate",
+      "canonical_name": "Magnesium Sulphate",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": false,
+      "source_row_variants": ["magnesium sulphate"],
+      "notes": "Also used as a food additive (firming agent); dual-function ingredient"
+    },
+    {
+      "id": "magnesium_threonate",
+      "canonical_name": "Magnesium Threonate",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": false,
+      "source_row_variants": ["magnesium threonate"],
+      "notes": "Magnesium salt of threonic acid; bioavailability and nootropic claims common"
+    },
+    {
+      "id": "manganese_citrate",
+      "canonical_name": "Manganese Citrate",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": false,
+      "source_row_variants": ["manganese citrate"],
+      "notes": "Manganese salt of citric acid"
+    },
+    {
+      "id": "chloride",
+      "canonical_name": "Chloride",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": true,
+      "source_row_variants": ["chloride"],
+      "notes": "Generic electrolyte mineral declaration; typically as chloride salts (potassium chloride, sodium chloride, magnesium chloride); specify exact salt for accurate classification"
+    },
+    {
+      "id": "molybdenum",
+      "canonical_name": "Molybdenum",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": false,
+      "source_row_variants": ["molybdenum"],
+      "notes": "Trace mineral; typically declared as sodium molybdate or ammonium molybdate in fortification"
+    },
+    {
+      "id": "phosphorus",
+      "canonical_name": "Phosphorus",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": false,
+      "source_row_variants": ["phosphorus"],
+      "notes": "Macro mineral; typically declared as calcium phosphate, sodium phosphate, or potassium phosphate in fortification"
+    },
+    {
+      "id": "pantothenol",
+      "canonical_name": "Pantothenol",
+      "aliases": ["Panthenol", "D-Panthenol", "Dexpanthenol"],
+      "nutrient_class": "vitamin_water_soluble",
+      "source_variants": ["synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["pantothenol"],
+      "notes": "Alcohol form of Vitamin B5; converts to pantothenic acid in the body; distinct from pantothenic acid"
+    },
+    {
+      "id": "sodium_selenite",
+      "canonical_name": "Sodium Selenite",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": false,
+      "source_row_variants": ["sodium selenite"],
+      "notes": "Inorganic selenium compound used in food fortification; trace mineral"
+    },
+    {
+      "id": "sodium_selenate",
+      "canonical_name": "Sodium Selenate",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": false,
+      "source_row_variants": ["sodium selenate"],
+      "notes": "Inorganic selenium compound; distinct from sodium selenite in oxidation state"
+    },
+    {
+      "id": "copper_sulphate",
+      "canonical_name": "Copper Sulphate",
+      "aliases": ["Cupric Sulphate"],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": false,
+      "source_row_variants": ["copper sulphate", "cupric sulphate"],
+      "notes": "Copper mineral salt; cupric sulphate is the IUPAC synonym (Cu²⁺); trace mineral used in fortification"
+    },
+    {
+      "id": "choline_chloride",
+      "canonical_name": "Choline Chloride",
+      "aliases": [],
+      "nutrient_class": "vitamin_water_soluble",
+      "source_variants": ["synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["choline chloride"],
+      "notes": "Choline salt form; choline is an essential nutrient often grouped with B vitamins; common in infant formula and supplements"
+    },
+    {
+      "id": "pantothenic_acid",
+      "canonical_name": "Pantothenic Acid",
+      "aliases": ["Vitamin B5", "D-Pantothenic Acid"],
+      "nutrient_class": "vitamin_water_soluble",
+      "source_variants": ["synthetic", "fermentation (corn)"],
+      "is_group_declaration": false,
+      "source_row_variants": ["pantothenic acid"],
+      "notes": "Also known as Vitamin B5; uncertain flag in source (may also be microbial-fermented); distinct from pantothenol (alcohol form)"
+    },
+    {
+      "id": "chromium_chloride",
+      "canonical_name": "Chromium Chloride",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": false,
+      "source_row_variants": ["chromium chloride"],
+      "notes": "Inorganic chromium salt; trace mineral used in glucose metabolism support"
+    },
+    {
+      "id": "chromium_picolinate",
+      "canonical_name": "Chromium Picolinate",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": false,
+      "source_row_variants": ["mineral chromium picolinate"],
+      "notes": "Organic chromium compound; 'mineral chromium picolinate' folded in as product-descriptor label; commonly used in weight management and metabolic supplements"
+    },
+    {
+      "id": "manganese_sulphate",
+      "canonical_name": "Manganese Sulphate",
+      "aliases": [],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": false,
+      "source_row_variants": ["manganese sulphate"],
+      "notes": "Manganese salt; trace mineral; distinct from manganese citrate already in taxonomy"
+    },
+    {
+      "id": "magnesium_bisglycinate",
+      "canonical_name": "Magnesium Bisglycinate",
+      "aliases": ["Magnesium Glycinate"],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["synthetic"],
+      "is_group_declaration": false,
+      "source_row_variants": ["magnesium bisglycinate"],
+      "notes": "Amino acid chelate form of magnesium; synthetic; high bioavailability claim common"
+    },
+    {
+      "id": "magnesium_phosphate_dibasic",
+      "canonical_name": "Magnesium Phosphate Dibasic",
+      "aliases": ["Dibasic Magnesium Phosphate"],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": false,
+      "source_row_variants": ["magnesium phosphate dibasic"],
+      "notes": "Magnesium phosphate salt; provides both magnesium and phosphorus"
+    },
+    {
+      "id": "tricalcium_phosphate",
+      "canonical_name": "Tricalcium Phosphate",
+      "aliases": ["Tribasic Calcium Phosphate", "Calcium Phosphate Tribasic"],
+      "nutrient_class": "mineral_nutrient",
+      "source_variants": ["mineral"],
+      "is_group_declaration": false,
+      "source_row_variants": ["tri basic calcium phosphate"],
+      "notes": "Calcium phosphate salt providing both calcium and phosphorus; 'tri basic calcium phosphate' folded in as spacing variant"
+    }
+  ]
+}
