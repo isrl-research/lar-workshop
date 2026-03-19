@@ -1967,6 +1967,59 @@
       "source_type": "mineral",
       "sources": [],
       "codex_category": "Colours"
+    },
+    "297": {
+      "ins_number": "297",
+      "official_name": "Fumaric acid",
+      "functional_classes": [
+        "acidity regulator"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Antioxidants and acidity regulators"
+    },
+    "319": {
+      "ins_number": "319",
+      "official_name": "tert-Butylhydroquinone",
+      "functional_classes": [
+        "antioxidant"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Antioxidants and acidity regulators"
+    },
+    "321": {
+      "ins_number": "321",
+      "official_name": "Butylated hydroxytoluene",
+      "functional_classes": [
+        "antioxidant"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "Antioxidants and acidity regulators"
+    },
+    "527": {
+      "ins_number": "527",
+      "official_name": "Ammonium hydroxide",
+      "functional_classes": [
+        "acidity regulator"
+      ],
+      "source_type": "synthetic",
+      "sources": [],
+      "codex_category": "pH adjusters, anti-caking and anti-foaming agents"
+    },
+    "968": {
+      "ins_number": "968",
+      "official_name": "Erythritol",
+      "functional_classes": [
+        "sweetener",
+        "bulking agent"
+      ],
+      "source_type": "plant",
+      "sources": [
+        "glucose fermentation"
+      ],
+      "codex_category": "Sweeteners"
     }
   },
   "by_category": {
@@ -1995,7 +2048,8 @@
       "955",
       "957",
       "960a",
-      "965"
+      "965",
+      "968"
     ],
     "Thickeners, stabilisers, emulsifiers and gelling agents": [
       "420",
@@ -2056,7 +2110,8 @@
       "525",
       "501",
       "518",
-      "521"
+      "521",
+      "527"
     ],
     "Colours": [
       "102",
@@ -2136,7 +2191,10 @@
       "338",
       "325",
       "334",
-      "350"
+      "350",
+      "297",
+      "319",
+      "321"
     ],
     "Polyols": [
       "1202",
@@ -2190,7 +2248,8 @@
       "955",
       "957",
       "960a",
-      "965"
+      "965",
+      "968"
     ],
     "emulsifier": [
       "420",
@@ -2393,7 +2452,9 @@
       "923",
       "223",
       "300",
-      "334"
+      "334",
+      "319",
+      "321"
     ],
     "carrier": [
       "152",
@@ -2424,7 +2485,9 @@
       "270",
       "325",
       "334",
-      "350"
+      "350",
+      "297",
+      "527"
     ],
     "sequestrant": [
       "575",
@@ -2470,7 +2533,8 @@
       "470"
     ],
     "bulking agent": [
-      "1204"
+      "1204",
+      "968"
     ],
     "clarifying agent": [
       "1202"
@@ -2552,7 +2616,11 @@
       "325",
       "900",
       "350",
-      "521"
+      "521",
+      "297",
+      "319",
+      "321",
+      "527"
     ],
     "plant": [
       "999",
@@ -2599,7 +2667,8 @@
       "1420",
       "300",
       "334",
-      "468"
+      "468",
+      "968"
     ],
     "mineral": [
       "553b",
