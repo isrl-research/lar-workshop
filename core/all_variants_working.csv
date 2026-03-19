@@ -10,7 +10,6 @@ egg,egg,,whole/fresh pieces,base ingredient,,,,0.0,0.05,0.12,0.0,0.05,0.12,0.063
 hvp,soybean,?hydrolysis,protein concentrate,base ingredient,,,flavouring agent,0.6,0.74,0.12,0.6,0.74,0.675,0.45,0.672,2,False,True,,,,,,,hydrolysate,,,processed_ingredient
 tea,tea,,,flavouring agent,fermentation,whole/fresh pieces|powder,taste profile / spice,0.0,0.0,0.675,0.56,0.42,0.675,0.27,0.564,1,True,False,,,,,,,,,,flavouring agent
 fig,fig,,whole/fresh pieces,base ingredient,,,sweetener,0.0,0.05,0.12,0.0,0.05,0.625,0.063,0.265,1,False,False,,,,,,,,,,raw_agricultural_material
-bht,synthetic,,crystalline chemical,antioxidant|preservative,,,,0.0,0.98,0.885,0.0,0.98,0.885,0.648,0.648,2,False,False,,,,,,,,,,antioxidant|preservative
 fos,sugarcane | chicory,,powder,sweetener|bulking agent,,,?prebiotic,0.0,0.42,0.625,0.0,0.42,0.625,0.376,0.376,2,False,True,,,,,,,,,,sweetener|bulking agent
 rye,rye,,,base ingredient,milling,flour/fine powder|coarse grits,,0.0,0.0,0.12,0.28,0.33,0.12,0.048,0.231,1,False,False,,,,,,,,,,raw_agricultural_material
 tvp,soybean,,protein concentrate,base ingredient,?extrusion,,,0.0,0.74,0.12,0.6,0.74,0.12,0.27,0.45,1,True,True,,,,,,,textured_plant_protein,,,processed_ingredient
@@ -48,7 +47,6 @@ poha,rice,,flakes,base ingredient,,,,0.0,0.36,0.12,0.0,0.36,0.12,0.156,0.156,1,F
 sago,sago,,starch flour,base ingredient,,,thickener,0.0,0.6,0.12,0.0,0.6,0.615,0.228,0.426,1,True,False,,,,,,,,,,processed_ingredient
 rava,wheat,milling,coarse grits,base ingredient,,,,0.28,0.3,0.12,0.28,0.3,0.12,0.222,0.222,1,False,False,,,,,semolina,,,,,raw_agricultural_material
 salt,mineral,,crystalline chemical,base ingredient,,,,0.0,0.98,0.12,0.0,0.98,0.12,0.342,0.342,2,False,False,,,,,,,,,,raw_agricultural_material
-tbhq,synthetic,,crystalline chemical,antioxidant|preservative,,,,0.0,0.98,0.885,0.0,0.98,0.885,0.648,0.648,2,False,False,,,,,,,,,,antioxidant|preservative
 atta,wheat,milling,flour/fine powder,base ingredient,,,,0.28,0.33,0.12,0.28,0.33,0.12,0.231,0.231,1,False,False,,,,,whole,,,,,raw_agricultural_material
 figs,fig,,whole/fresh pieces,base ingredient,,,sweetener,0.0,0.05,0.12,0.0,0.05,0.625,0.063,0.265,1,False,False,,,,,,,,,,raw_agricultural_material
 balm,balm,,whole/fresh pieces,taste profile / spice,,cut/sliced pieces,flavouring agent,0.0,0.05,0.18,0.0,0.1,0.675,0.087,0.3,1,True,False,,,,,,,,,,taste profile / spice
@@ -220,7 +218,6 @@ tapioca,tapioca,,whole/fresh pieces,base ingredient,,starch flour,thickener,0.0,
 trifala,amla | haritaki | bibhitaki,,powder,,drying,,,0.0,0.42,0.0,0.42,0.42,0.0,0.126,0.252,1,False,False,,,,,,,,,,health_supplement
 vannila,vanilla,extract/oleoresin,extract/oleoresin,flavouring agent,,,taste profile / spice,0.0,0.86,0.675,0.0,0.86,0.675,0.528,0.528,2,False,False,,,,,,,,,,flavouring agent
 alcohol,sugarcane | molasses,fermentation,juice,,distillation,,,0.56,0.5,0.0,0.56,0.5,0.0,0.318,0.318,2,False,False,,,,,,,,,,solvent
-ammonia,synthetic,,crystalline chemical,acidity regulator,,,raising agent,0.0,0.98,0.86,0.0,0.98,0.86,0.638,0.638,2,False,False,,,,,,,,,,acidity regulator
 lactase,yeast,?enzymatic reaction,powder,flour treatment agent,,,,0.0,0.42,0.93,0.0,0.42,0.93,0.498,0.498,2,False,True,,,,,,,,,,flour treatment agent
 catechu,acacia catechu,,extract/oleoresin,taste profile / spice,extract/oleoresin,,flavouring agent,0.0,0.86,0.18,0.0,0.86,0.675,0.33,0.528,2,False,False,,,,,,,,,,taste profile / spice
 cucumis,cucumber,,whole/fresh pieces,base ingredient,,cut/sliced pieces,,0.0,0.05,0.12,0.0,0.1,0.12,0.063,0.078,1,False,False,,,,,,,,,,raw_agricultural_material
@@ -687,7 +684,6 @@ green chives,chives,,whole/fresh pieces,taste profile / spice,,cut/sliced pieces
 citrus fiber,citrus,,powder,bulking agent,,,thickener,0.0,0.42,0.375,0.0,0.42,0.615,0.276,0.372,1,True,False,,,,,,,,,,bulking agent
 citrus fibre,citrus,,powder,bulking agent,,,thickener,0.0,0.42,0.375,0.0,0.42,0.615,0.276,0.372,1,True,False,,,,,,,,,,bulking agent
 sweet potato,sweet potato,,whole/fresh pieces,base ingredient,,cut/sliced pieces,sweetener,0.0,0.05,0.12,0.0,0.1,0.625,0.063,0.28,1,False,False,,,,,,,,,,raw_agricultural_material
-fumaric acid,synthetic,,crystalline chemical,acidity regulator,,,,0.0,0.98,0.86,0.0,0.98,0.86,0.638,0.638,2,False,False,,,,,,,,,,acidity regulator
 methocel k4m,synthetic,,powder,thickener,,,stabiliser,0.0,0.42,0.615,0.0,0.42,0.65,0.372,0.386,2,False,False,,,,,,,,,,thickener
 nata de coco,coconut,fermentation,dense block,gelling agent,,,base ingredient,0.56,0.38,0.675,0.56,0.38,0.675,0.552,0.552,2,False,False,,,,,,,,,,gelling agent
 palm stearin,palm,fractionation,fat fraction,lipid base,,,,0.76,0.72,0.22,0.76,0.72,0.22,0.532,0.532,2,False,False,,,,,,stearin,,,,lipid base
@@ -1162,7 +1158,6 @@ bacche di vaniglia,vanilla,,whole/fresh pieces,taste profile / spice,,,flavourin
 gousses de vanille,vanilla,,whole/fresh pieces,taste profile / spice,,,flavouring agent,0.0,0.05,0.18,0.0,0.05,0.675,0.087,0.285,1,False,False,,,,,,,,,,taste profile / spice
 vanilla flavouring,vanilla,synthetic flavors,extract/oleoresin,flavouring agent,,,taste profile / spice,0.99,0.86,0.675,0.99,0.86,0.675,0.825,0.825,3,False,False,,,,,,,,,,flavouring agent
 vamilla flavouring,vanilla,synthetic flavors,extract/oleoresin,flavouring agent,,,taste profile / spice,0.99,0.86,0.675,0.99,0.86,0.675,0.825,0.825,3,False,False,,,,,,,,,,flavouring agent
-ammonium hydroxide,synthetic,,crystalline chemical,acidity regulator,,,,0.0,0.98,0.86,0.0,0.98,0.86,0.638,0.638,2,False,False,,,,,,,,,,acidity regulator
 basa pangasius sp.,basa,,whole/fresh pieces,base ingredient,,cut/sliced pieces,,0.0,0.05,0.12,0.0,0.1,0.12,0.063,0.078,1,False,False,,,,,,,,,,raw_agricultural_material
 custard flavouring,synthetic,synthetic flavors,powder,flavouring agent,,,taste profile / spice,0.99,0.42,0.675,0.99,0.42,0.675,0.693,0.693,2,False,False,,,,,,,,,,flavouring agent
 khus roots extract,khus,solvent extraction,extract/oleoresin,flavouring agent,,essential oil,taste profile / spice,0.82,0.86,0.675,0.82,0.9,0.675,0.774,0.786,3,False,False,,,,,,,,,,flavouring agent
@@ -1478,7 +1473,6 @@ pineapple juice concentrate,pineapple,concentration,juice|concentrate,flavouring
 pineapple fruit preparation,pineapple,,pulp/puree,base ingredient,,whole/fresh pieces|cut/sliced pieces,flavouring agent,0.0,0.25,0.12,0.0,0.25,0.675,0.123,0.345,1,True,False,,,,,,,,,,raw_agricultural_material
 bacillus coagulans snz 1969,bacillus coagulans,fermentation,powder,,,,probiotic,0.56,0.42,0.0,0.56,0.42,0.0,0.294,0.294,1,False,False,,,,,,,,,,health_supplement
 rosemary extract flavouring,rosemary,solvent extraction,extract/oleoresin,flavouring agent,,essential oil,taste profile / spice,0.82,0.86,0.675,0.82,0.9,0.675,0.774,0.786,3,False,False,,,,,,,,,,flavouring agent
-sugar substitute erythritol,corn,,crystalline chemical,sweetener|bulking agent,fermentation,,,0.0,0.98,0.625,0.56,0.98,0.625,0.544,0.712,2,True,False,,,,,,,,sugar_alcohol,,sweetener|bulking agent
 evening primrose oil powder,evening primrose,solvent extraction,oil|powder,lipid base,,,,0.82,0.7,0.22,0.82,0.7,0.22,0.544,0.544,2,False,False,,,,,,,,,,lipid base
 tangerine juice concentrate,tangerine,concentration,juice|concentrate,flavouring agent,,,sweetener,0.48,0.5,0.675,0.48,0.5,0.675,0.564,0.564,2,False,False,,,,,,,,,,flavouring agent
 magnesium hydrogen phosphate,mineral,,crystalline chemical,anticaking agent,,,,0.0,0.98,0.85,0.0,0.98,0.85,0.634,0.634,2,False,False,,,mineral_nutrient,,,,,,,anticaking agent
