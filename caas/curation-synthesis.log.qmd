@@ -1,0 +1,432 @@
+---
+title: "What Indian food labels actually say about additives — and what that means for how IFID needs to work"
+date: 2026-03-26
+categories: [ifid, caas, additives, colors, label-conventions, data-analysis, track-a]
+author:
+  - "Lalitha A R"
+  - "Claude (Anthropic)"
+description: "Three closed sessions — additives taxonomy (158 entries), colours (30 INS entries, 7 deferred), CAAS label strings (1,026 products) — supply evidence for one question: when a pipeline encounters an additive declaration on an Indian label, what does the taxonomy need to do, and what does the label text make hard?"
+format:
+  html:
+    toc: true
+---
+
+## The question
+
+When someone in the IFID pipeline encounters an additive declaration on an Indian
+food label, two things need to happen: the declaration text must be normalised to a
+canonical form, and that form must map to a taxonomy entry that carries source type,
+functional class, and dietary-flag data.
+
+Both steps have failure modes. The normalisation fails if the pipeline doesn't
+handle all notation variants found on actual labels. The taxonomy lookup fails if
+the schema cannot represent what the substance actually is.
+
+Three closed sessions supply the evidence: the additives taxonomy session (158 entries,
+closed 2026-03-13), the colours session (30 INS entries, 7 deferred, closed 2026-03-13),
+and the CAAS label-string analysis (1,026 product rows, 2026-03-26). This report
+draws findings from all three, then states what follows for IFID's design.
+
+---
+
+## Findings
+
+### How additives are declared on Indian labels
+
+88 products in the 1,026-row CAAS dataset declare at least one additive using an EU
+E-number. 113 products declare at least one additive using an INS number. The two
+sets overlap: 35 distinct additive numbers appear in both E-number and INS-number
+form across the dataset — the same substance, two naming conventions, different
+products.
+
+E-numbers appear primarily on products from manufacturers who sell into European
+markets or follow European labelling conventions (Amul chocolate lines, Cadbury,
+Haldiram's, Kwality Wall's). INS numbers appear more broadly across all product
+categories. The pattern is not random; it follows the market orientation of the
+manufacturer.
+
+The dataset shows four distinct notation variants:
+
+**Variant 1: `E{n}` — EU E-number, no prefix space**
+
+```
+E322, E476, E631, E551, E330
+```
+
+**Variant 2: `INS {n}` — all-caps prefix, space before number**
+
+```
+INS 330, INS 551, INS 471, INS 102
+```
+
+77 products in the dataset use this variant. The most common INS form.
+
+**Variant 3: `Ins {n}` — mixed-case prefix, space before number**
+
+```
+Ins 330, Ins 296, Ins 551, Ins 300
+```
+
+25 products use this variant. Functionally identical to Variant 2; a case-sensitive
+match treats them as different strings.
+
+**Variant 4: bare number in parentheses, no prefix**
+
+```
+Colour (162), Citric Acid (330), Acidity Regulator (330), Anticaking Agent (551)
+```
+
+The number appears after a functional class or common name. The string gives no
+explicit signal that the number is an INS number — that is recoverable only from
+the adjacent text. Examples found in Doritos, Kurkure, and Lay's ingredient strings.
+
+A grouping pattern also appears: `Acidity Regulators (Ins 296, Ins 330, Ins 334)`.
+This is not a fifth numbering convention; the numbers inside are Variant 2 or 3.
+But a parser that splits on parentheses or commas first will not extract the numbers
+cleanly without handling this structure specifically.
+
+The five products in the table below show the E-to-INS same-substance pattern across
+manufacturers:
+
+| Additive | E-form product | INS-form product |
+|---|---|---|
+| Lecithin (322) | Amul Belgian Milk Chocolate | Tata Soulfull Ragi Bites |
+| Disodium guanylate (631) | Kurkure Zig Zag | Bingo Potato Chips |
+| Polyglycerol polyricinoleate (476) | Amul Belgian Milk Chocolate | Sugar Free D'lite |
+| Silicon dioxide (551) | Ching's Secret Instant Noodles | Bingo Potato Chips |
+| Citric acid (330) | Haldiram's Sabudana Tikki | Bingo Potato Chips |
+
+US FD&C naming was not found in the dataset. "Red 40," "Yellow 6," and similar US
+convention names do not appear. The convention mixing in Indian label data is
+specifically EU E-number vs Indian INS-number.
+
+### What the additives taxonomy holds
+
+The additives taxonomy closed on 2026-03-13 with 148 entries. A subsequent colours
+session on the same date identified 5 INS-numbered colour entries absent from the
+taxonomy and added them: INS 140, 150, 160d, 161b, 174. The taxonomy holds 158
+entries.
+
+Source of truth: `additives/additives_taxonomy.json`
+
+**Source type distribution:**
+
+| source_type | Count | Share |
+|---|---|---|
+| synthetic | 76 | 48.1% |
+| plant | 50 | 31.6% |
+| mineral | 19 | 12.0% |
+| animal | 13 | 8.2% |
+
+**Codex category distribution:**
+
+| Category | Entries |
+|---|---|
+| Thickeners, stabilisers, emulsifiers and gelling agents | 40 |
+| Colours | 30 |
+| pH adjusters, anti-caking and anti-foaming agents | 18 |
+| Antioxidants and acidity regulators | 18 |
+| Preservatives | 11 |
+| Modified starches | 11 |
+| Flavour enhancers | 8 |
+| Sweeteners | 8 |
+| Gases, waxes and propellants | 6 |
+| Enzymes | 4 |
+| Polyols | 2 |
+| Unclassified | 2 |
+
+**Functional class multiplicity:**
+
+73 of 158 entries carry more than one functional class. 297 functional class
+assignments total; 24 unique classes. An additive declared as "emulsifier" on a
+product label may carry 4 other functions in the taxonomy.
+
+**The 13 animal-derived entries:**
+
+| INS | Official name | Functional classes |
+|---|---|---|
+| 322 | Lecithins | antioxidant, emulsifier, stabilizer |
+| 428 | Gelatine | thickener, stabilizer, emulsifier |
+| 429 | Phosphatidic acid | emulsifier |
+| 470 | Fatty acids | emulsifier, stabilizer, anticaking agent, antifoaming agent, glazing agent |
+| 470a | Sodium, potassium and calcium salts of fatty acids | emulsifier, stabilizer, anticaking agent |
+| 471 | Mono- and diglycerides of fatty acids | emulsifier, stabilizer |
+| 472 | Esters of mono- and diglycerides of fatty acids | emulsifier, stabilizer |
+| 472b | Lactic and fatty acid esters of glycerol | emulsifier |
+| 472c | Citric and fatty acid esters of glycerol | emulsifier |
+| 472e | Diacetyltartaric and fatty acid esters of glycerol | emulsifier |
+| 475 | Polyglycerol esters of fatty acids | emulsifier |
+| 901 | Beeswax, white and yellow | glazing agent |
+| 904 | Shellac | glazing agent |
+
+10 of the 13 are emulsifiers or carry emulsifier as one of their functions. INS 471,
+472, 472b, 472c, 472e, 470, and 470a are a cluster of structurally related fatty
+acid ester variants. Gelatine (428) is the only structurally distinct non-emulsifier
+non-glazing entry in the set.
+
+**12 entries where source_type and sources are in tension:**
+
+12 entries have `source_type: synthetic` but carry biological, fermentation-derived,
+or microbial values in the `sources` field. These are documented in
+`cp/README_additives.md` as issue O-2.
+
+Fermentation-derived, biological precursor listed:
+
+| INS | Official name | Sources as recorded |
+|---|---|---|
+| 270 | Lactic acid, L-, D- and DL- | corn |
+| 296 | Malic acid, DL- | apple, pear |
+| 575 | Glucono-delta-lactone | corn |
+| 620 | L-Glutamic acid | molasses, corn, wheat gluten |
+| 621 | Monosodium L-glutamate | molasses, corn, wheat gluten |
+
+Multi-origin (production route determines source):
+
+| INS | Official name | Sources as recorded |
+|---|---|---|
+| 422 | Glycerol | palm, soybean, sunflower, rapeseed, lard, tallow, propylene, sugar fermentation |
+
+Extracted from microbial or biological source:
+
+| INS | Official name | Sources as recorded |
+|---|---|---|
+| 161g | Canthaxanthin | algae |
+| 1100 | alpha-Amylase | barley malt, animal pancreas, *Bacillus subtilis* |
+| 1101 | Protease | papaya latex, papaya |
+| 1102 | Glucose oxidase | *Aspergillus niger*, *Penicillium* |
+| 1104 | Lipases | animal pancreas, fungi |
+| 1204 | Pullulan | starch hydrolysate from *Aureobasidium pullulans* |
+
+The schema cannot represent glycerol (INS 422) accurately with a single source_type:
+the same INS number covers plant-derived, animal-derived, and petrochemical production
+routes. The entries extracted from microbial or biological sources are classified as
+`synthetic` because no `microbial` source_type exists in the schema.
+
+### What colour declarations look like
+
+The colours session started from 25 INS colour entries already in the additives
+taxonomy and 44 non-INS colour variant rows from `core/all_variants_working.csv`.
+
+Of the 44 variant rows: 37 resolved, 5 new INS entries added to the taxonomy, 7
+rows deferred. The taxonomy holds 30 INS colour entries.
+
+**30 INS colour entries by source type:** plant 16, synthetic 11, mineral 3.
+
+**How the 37 rows resolved:**
+
+- Pass 1: 25 variant rows mapped to existing INS entries. These included FD&C-named
+  synthetic dyes (e.g. "FD&C Red 40" → INS 129 Allura Red AC) and botanical extract
+  declarations where the INS already existed.
+- Pass 2: 4 entries added — INS 140 (Chlorophylls), 160d (Lycopene), 161b (Lutein),
+  150 (Caramel).
+- Pass 3: 5 unresolvable group declarations dropped — `artificial color`, `artificial
+  colors`, `synthetic food colors`, `color vegetable juice`, `vegetable juice
+  concentrate for color`. No single INS number is resolvable from any of these.
+- Pass 4: 1 entry added — INS 174 (Silver, mineral) from `silver leaf`.
+
+**The 7 deferred rows:**
+
+| Label text | Source substance | Note |
+|---|---|---|
+| kesar | saffron | Hindi name |
+| safron | saffron | Spelling variant |
+| paprika | paprika | Whole dried spice; distinct from INS 160c |
+| hibiscus | hibiscus | Dried flower |
+| carrot powder | carrot | Dried whole carrot; distinct from INS 160a(i) |
+| carrot flakes | carrot | Dried whole carrot |
+| pomegranate powder | pomegranate | Dried whole fruit powder |
+
+All 7 appear on Indian labels as colour declarations. None has an INS number. The
+deferral is not a classification decision — there is no place in the current taxonomy
+structure for them.
+
+INS 160c is "Paprika extract" — a solvent-extracted oleoresin with a Codex
+classification. The paprika row in the deferred set is the whole dried spice. INS
+160a(i) is "Beta-carotene, vegetable," an extract from carrot. The carrot powder
+and carrot flakes rows are dried whole carrot. The extract has an INS number; the
+whole-food form does not. Both appear on Indian labels as colour declarations.
+
+`kesar` is the Hindi name for saffron. It appears on labels where an international-
+market label would say `saffron`. The two variant rows (`kesar`, `safron`) resolve
+to the same source substance. This is not a substance gap; it is a label normalisation
+gap — a Hindi name for a substance with no INS number.
+
+The 25 Pass 1 resolutions document an alias-mapping problem: variant label text
+(FD&C names, Hindi names, botanical common names) maps to INS numbers but this
+mapping is not currently stored in the taxonomy. The mapping was done during the
+session; it is in `colors/cp/README_colors.md` but not in a structured alias field.
+
+---
+
+## Implications for IFID
+
+### Normalisation before lookup
+
+Any pipeline hitting raw Indian label text must handle four notation variants before
+taxonomy lookup:
+
+1. Strip `E` prefix; match remaining digits to INS key
+2. Strip `INS ` prefix (all-caps, with space) to get digits
+3. Strip `Ins ` prefix (mixed-case, with space) to get digits — case-insensitive
+   match required, or explicit case normalisation before step 2
+4. Recognise bare parenthetical number `(\d{3,4})` as an INS number when the
+   adjacent text contains a functional class or common name
+
+The grouping pattern `Acidity Regulators (Ins 296, Ins 330, Ins 334)` requires
+extracting multiple numbers from within one parenthetical.
+
+Variants 2 and 3 together cover 102 of the 113 products with INS notation. The
+bare-number variant appears across at least 8 products from three major snack
+brands.
+
+### source_type schema
+
+The four-category schema (`synthetic | plant | mineral | animal`) conflates
+production method with biological origin. A fermentation-derived substance is both
+— it is manufactured (process) and derived from a plant feedstock by a microbial
+organism (precursor). The 12 O-2 entries are the entries where the tension becomes
+explicit in the data. Other synthetic entries with empty `sources` fields may carry
+the same tension without it being visible.
+
+A `production_method` sub-field would need to hold, at minimum:
+`petrochemical_synthesis`, `fermentation` (with feedstock in sources),
+`enzymatic_conversion`, `microbial_extraction`, `plant_extraction`,
+`mineral_extraction`. This field cannot be populated without a domain expert
+sourcing pass.
+
+### Dietary flags
+
+INS 322 (Lecithins) is `source_type: animal` in the taxonomy. Plant-derived lecithin
+— from soy or sunflower — is common in vegan-certified products; animal-origin
+lecithin (egg yolk) also exists. The single source_type assignment cannot distinguish
+them. The flag logic should surface the taxonomy classification and require source
+qualification; it should not fire automatically from source_type alone.
+
+The same applies to the fatty acid ester cluster (INS 471, 472 variants, 470, 470a):
+these are common emulsifiers that appear on a wide range of processed food labels.
+FSSAI mandatory labelling does not currently require source disclosure for these
+additives at the ingredient level. The taxonomy carries source_type data; the label
+often does not.
+
+### Functional class display
+
+73 of 158 entries carry more than one functional class. When a product label declares
+"emulsifier (INS 470)," it names one function; the taxonomy holds five for INS 470.
+IFID needs to decide whether to show all taxonomy-recorded functions, the declared-
+on-label function only, or both with the declared class flagged. The taxonomy contains
+the data needed for all three options.
+
+### raw_agricultural_material lane
+
+The 7 deferred colour rows need a category that does not yet exist in IFID. They are
+not additives (no INS number, not in the Codex food additives framework). They are
+not raw ingredients in the conventional IFID sense. They appear on labels as colour
+declarations. The `raw_agricultural_material` designation was identified during the
+colours session as the correct home; building that category is a separate task.
+
+### Label aliases
+
+The 25 Pass 1 colour resolutions show that label text variants — FD&C names, Hindi
+names, botanical common names — map to INS numbers, but this mapping is not currently
+stored in the taxonomy. Any lookup pipeline handling Indian label text requires the
+mapping. It exists in the session README; it needs a structured home.
+
+---
+
+## Open questions
+
+**Hindi ingredient data.** OpenFoodFacts cannot supply it. Of the full 19,748-row OFF
+export used as the CAAS source, 11 rows have Hindi ingredient text
+(`ingredients_text_hi`), 111 have Hindi product names, 2 have Hindi generic names.
+The 1,026-row filtered working dataset inherits this coverage profile. Any IFID work
+requiring Hindi ingredient text needs a different source.
+
+**Generic class-only declarations.** FSSAI allows declaration by class name alone in
+some contexts — "emulsifier" or "acidity regulator" without specifying which one. The
+CAAS dataset contains rows of this type (Bucket C, approximately 25 rows). How IFID
+represents a product that legally declares an additive without identifying it is
+unresolved.
+
+**INS 322 Lecithins source qualification.** Should IFID store source_type at the
+taxonomy level only, or allow a per-product source qualifier? The current architecture
+has no per-product qualifier field.
+
+**INS 141 empty sources.** `source_type: plant`, empty `sources` field. Every other
+plant-type entry carries at least one source value. Whether this is a curation gap
+or a genuine absence of public source data for this substance is unresolved.
+
+**O-3 fixes.** INS 296 (Malic acid, DL-) and INS 1204 (Pullulan) have
+`codex_category: Unclassified`. Both have established Codex GSFA entries.
+INS 296 maps to `Antioxidants and acidity regulators`; INS 1204 maps to `Thickeners,
+stabilisers, emulsifiers and gelling agents`. Both can be corrected without a sourcing
+pass.
+
+---
+
+## Data and session provenance
+
+### Sessions this report draws from
+
+| Session | Closed | Output |
+|---|---|---|
+| Additives taxonomy | 2026-03-13 | `additives/additives_taxonomy.json`, 158 entries |
+| Colours | 2026-03-13 | `colors/colors_ins_clean.csv`, 30 entries; 7 rows deferred |
+| CAAS label-string analysis | 2026-03-26 | 1,026-row search across `caas/core/sampling/unified_ingredients_data-raw_updated.json` |
+
+### Source files
+
+| File | Role |
+|---|---|
+| `additives/additives_taxonomy.json` | 158 canonical entries; source for all additive counts and tables |
+| `additives/additives_clean_2026-03-13.csv` | 153-row CSV export (5 entries added post-export during colours session) |
+| `additives/cp/README_additives.md` | Session close notes; source for O-1, O-2, O-3 |
+| `additives/enrichment_pending.csv` | Entries flagged for sourcing pass; feeds TASK-A1 |
+| `colors/colors_ins_clean.csv` | 30 INS colour entries; reference for downstream colour resolution |
+| `colors/colors_nonins_variants.csv` | 7 deferred whole-food rows; input for raw_agricultural_material session |
+| `colors/cp/README_colors.md` | Full resolution log; source for Pass 1–4 detail and deferred row notes |
+| `caas/core/sampling/unified_ingredients_data-raw_updated.json` | 1,026 product rows; source for notation variant counts and examples |
+| `caas/claims/offdata_claims.md` | 7 verified claims on the full OFF export; Hindi coverage from Claim 05 |
+
+### Superseded reports
+
+Three reports were produced in the same session as this document, covering the same
+material as separate session logs:
+
+- `additives/track-a.log.qmd` — additives taxonomy findings and schema questions
+- `colors/track-a.log.qmd` — colours session findings and deferred rows
+- `caas/label-conventions.log.qmd` — notation variant analysis
+
+Those files are part of the audit trail. This report supersedes them as the primary
+synthesis document.
+
+---
+
+## Note on AI authorship
+
+This document was drafted by Claude (Anthropic, Sonnet 4.6) in a Claude Code session
+on 2026-03-26, from a structured plan written by Lalitha A R.
+
+**What Claude did:**
+
+- Read all three source reports and the fortification track-a report (used as a
+  structural reference)
+- Drew findings from the verified counts in each source report; no new data queries
+  were run for this document
+- Drafted all prose, tables, and section structure
+- Applied iSRL tone constraints throughout — no evaluative framing, no urgency
+  language, flat affect on findings
+
+**Constraints Claude worked under:**
+
+- All counts (88 products, 113 products, 158 entries, 30 INS colour entries, 7
+  deferred rows, 25 Pass 1 resolutions) are from the source reports, which were
+  written against verified data queries. This report does not re-verify them.
+- The synthetic/biological schema tension and the dietary flag design note are
+  interpretations drawn from the source reports; both were developed in those reports
+  and summarised here.
+- No regulatory claims were made about FSSAI source disclosure requirements beyond
+  what is stated: that mandatory source disclosure at the ingredient level for
+  additives does not currently exist in the FSSAI framework. This is an absence of
+  a requirement, not a gap assessment.
+- Hindi coverage figures are from `caas/claims/offdata_claims.md` Claim 05, a
+  verified claim from a prior session.
