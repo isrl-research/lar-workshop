@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Lalitha A R">
+<meta name="author" content="Claude (Anthropic)">
+<meta name="dcterms.date" content="2026-03-26">
+<meta name="description" content="158 canonical entries. Four source types. 13 animal-derived additives, 12 entries where source_type and sources field are in tension. This report documents what the closed additives taxonomy contains and the design questions it raises.">
+
+<title>What 158 additive entries show about source classification — and a schema question the taxonomy cannot answer</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="track-a.log_files/libs/clipboard/clipboard.min.js"></script>
+<script src="track-a.log_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="track-a.log_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="track-a.log_files/libs/quarto-html/popper.min.js"></script>
+<script src="track-a.log_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="track-a.log_files/libs/quarto-html/anchor.min.js"></script>
+<link href="track-a.log_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="track-a.log_files/libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="track-a.log_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="track-a.log_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="track-a.log_files/libs/bootstrap/bootstrap-2daf5a3bceb9e852f3deb6477265f210.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-design-question" id="toc-the-design-question" class="nav-link active" data-scroll-target="#the-design-question">The design question</a></li>
+  <li><a href="#scale-and-session-provenance" id="toc-scale-and-session-provenance" class="nav-link" data-scroll-target="#scale-and-session-provenance">Scale and session provenance</a></li>
+  <li><a href="#distribution" id="toc-distribution" class="nav-link" data-scroll-target="#distribution">Distribution</a>
+  <ul class="collapse">
+  <li><a href="#source-type" id="toc-source-type" class="nav-link" data-scroll-target="#source-type">Source type</a></li>
+  <li><a href="#codex-category" id="toc-codex-category" class="nav-link" data-scroll-target="#codex-category">Codex category</a></li>
+  <li><a href="#functional-class-multiplicity" id="toc-functional-class-multiplicity" class="nav-link" data-scroll-target="#functional-class-multiplicity">Functional class multiplicity</a></li>
+  </ul></li>
+  <li><a href="#the-syntheticbiological-tension" id="toc-the-syntheticbiological-tension" class="nav-link" data-scroll-target="#the-syntheticbiological-tension">The synthetic/biological tension</a>
+  <ul class="collapse">
+  <li><a href="#what-the-schema-does" id="toc-what-the-schema-does" class="nav-link" data-scroll-target="#what-the-schema-does">What the schema does</a></li>
+  <li><a href="#entries-where-the-tension-is-explicit" id="toc-entries-where-the-tension-is-explicit" class="nav-link" data-scroll-target="#entries-where-the-tension-is-explicit">12 entries where the tension is explicit</a></li>
+  <li><a href="#the-schema-gap" id="toc-the-schema-gap" class="nav-link" data-scroll-target="#the-schema-gap">The schema gap</a></li>
+  </ul></li>
+  <li><a href="#animal-derived-entries" id="toc-animal-derived-entries" class="nav-link" data-scroll-target="#animal-derived-entries">Animal-derived entries</a>
+  <ul class="collapse">
+  <li><a href="#what-this-means-for-ifid" id="toc-what-this-means-for-ifid" class="nav-link" data-scroll-target="#what-this-means-for-ifid">What this means for IFID</a></li>
+  </ul></li>
+  <li><a href="#known-issues" id="toc-known-issues" class="nav-link" data-scroll-target="#known-issues">Known issues</a></li>
+  <li><a href="#the-functional-class-multiplicity-question" id="toc-the-functional-class-multiplicity-question" class="nav-link" data-scroll-target="#the-functional-class-multiplicity-question">The functional class multiplicity question</a></li>
+  <li><a href="#data-files" id="toc-data-files" class="nav-link" data-scroll-target="#data-files">Data files</a></li>
+  <li><a href="#note-on-ai-authorship" id="toc-note-on-ai-authorship" class="nav-link" data-scroll-target="#note-on-ai-authorship">Note on AI authorship</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">What 158 additive entries show about source classification — and a schema question the taxonomy cannot answer</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">ifid</div>
+    <div class="quarto-category">additives</div>
+    <div class="quarto-category">data-analysis</div>
+    <div class="quarto-category">track-a</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    158 canonical entries. Four source types. 13 animal-derived additives, 12 entries where source_type and sources field are in tension. This report documents what the closed additives taxonomy contains and the design questions it raises.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lalitha A R </p>
+             <p>Claude (Anthropic) </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 26, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="the-design-question" class="level2">
+<h2 class="anchored" data-anchor-id="the-design-question">The design question</h2>
+<p>IFID assigns a <code>source_type</code> to each additive entry: <code>synthetic</code>, <code>plant</code>, <code>mineral</code>, or <code>animal</code>. That classification drives two downstream decisions — allergen and dietary flag support (halal, vegan, kosher) and origin disclosure.</p>
+<p>The taxonomy is built. The question this report asks is: what does the distribution reveal about the classification system itself, and where does the four-category schema produce entries that can’t be cleanly placed?</p>
+<hr>
+</section>
+<section id="scale-and-session-provenance" class="level2">
+<h2 class="anchored" data-anchor-id="scale-and-session-provenance">Scale and session provenance</h2>
+<p>The additives taxonomy closed on 2026-03-13 with 148 entries. A subsequent colors session on the same date identified 5 INS-numbered colour entries absent from the additives taxonomy and added them: INS 140, 150, 160d, 161b, 174. The current taxonomy holds 158 entries.</p>
+<p>Source of truth: <code>additives/additives_taxonomy.json</code> Export: <code>additives/additives_clean_2026-03-13.csv</code> (153 rows; reflects the state immediately after the colors session addition, before this report was produced)</p>
+<p>All counts in this report are from the current 158-entry JSON.</p>
+<hr>
+</section>
+<section id="distribution" class="level2">
+<h2 class="anchored" data-anchor-id="distribution">Distribution</h2>
+<section id="source-type" class="level3">
+<h3 class="anchored" data-anchor-id="source-type">Source type</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>source_type</th>
+<th>Count</th>
+<th>Share</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>synthetic</td>
+<td>76</td>
+<td>48.1%</td>
+</tr>
+<tr class="even">
+<td>plant</td>
+<td>50</td>
+<td>31.6%</td>
+</tr>
+<tr class="odd">
+<td>mineral</td>
+<td>19</td>
+<td>12.0%</td>
+</tr>
+<tr class="even">
+<td>animal</td>
+<td>13</td>
+<td>8.2%</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="codex-category" class="level3">
+<h3 class="anchored" data-anchor-id="codex-category">Codex category</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Entries</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Thickeners, stabilisers, emulsifiers and gelling agents</td>
+<td>40</td>
+</tr>
+<tr class="even">
+<td>Colours</td>
+<td>30</td>
+</tr>
+<tr class="odd">
+<td>pH adjusters, anti-caking and anti-foaming agents</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Antioxidants and acidity regulators</td>
+<td>18</td>
+</tr>
+<tr class="odd">
+<td>Preservatives</td>
+<td>11</td>
+</tr>
+<tr class="even">
+<td>Modified starches</td>
+<td>11</td>
+</tr>
+<tr class="odd">
+<td>Flavour enhancers</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>Sweeteners</td>
+<td>8</td>
+</tr>
+<tr class="odd">
+<td>Gases, waxes and propellants</td>
+<td>6</td>
+</tr>
+<tr class="even">
+<td>Enzymes</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>Polyols</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>Unclassified</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="functional-class-multiplicity" class="level3">
+<h3 class="anchored" data-anchor-id="functional-class-multiplicity">Functional class multiplicity</h3>
+<p>73 of 158 entries carry more than one functional class. 297 functional class assignments total across 158 entries; 24 unique classes. The average number of functional classes per entry is 1.88 across multi-class entries; the distribution ranges from 1 to 5.</p>
+<hr>
+</section>
+</section>
+<section id="the-syntheticbiological-tension" class="level2">
+<h2 class="anchored" data-anchor-id="the-syntheticbiological-tension">The synthetic/biological tension</h2>
+<section id="what-the-schema-does" class="level3">
+<h3 class="anchored" data-anchor-id="what-the-schema-does">What the schema does</h3>
+<p><code>source_type: synthetic</code> marks entries where the substance is manufactured rather than extracted. It does not distinguish between:</p>
+<ul>
+<li>synthesis from petrochemical precursors</li>
+<li>fermentation by microbial organisms</li>
+<li>enzymatic conversion of plant or animal fats</li>
+<li>extraction from microbial biomass</li>
+</ul>
+<p>All four fall under <code>synthetic</code> in the current schema. The <code>sources</code> field is intended to carry the origin detail. But the field is empty for all synthetic entries by design — <code>cp/README_additives.md</code> notes that “empty sources for synthetic entries is by design; domain expert review is required.”</p>
+</section>
+<section id="entries-where-the-tension-is-explicit" class="level3">
+<h3 class="anchored" data-anchor-id="entries-where-the-tension-is-explicit">12 entries where the tension is explicit</h3>
+<p>12 entries in the taxonomy have <code>source_type: synthetic</code> but have biological, fermentation-derived, or microbial values recorded in the <code>sources</code> field. These were entered during the initial curation and retained as-is; the tension is documented in <code>cp/README_additives.md</code> as issue O-2.</p>
+<p><strong>Fermentation-derived, biological precursor listed:</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>INS</th>
+<th>Official name</th>
+<th>Sources as recorded</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>270</td>
+<td>Lactic acid, L-, D- and DL-</td>
+<td>corn</td>
+</tr>
+<tr class="even">
+<td>296</td>
+<td>Malic acid, DL-</td>
+<td>apple, pear</td>
+</tr>
+<tr class="odd">
+<td>575</td>
+<td>Glucono-delta-lactone</td>
+<td>corn</td>
+</tr>
+<tr class="even">
+<td>620</td>
+<td>L-Glutamic acid</td>
+<td>molasses, corn, wheat gluten</td>
+</tr>
+<tr class="odd">
+<td>621</td>
+<td>Monosodium L-glutamate</td>
+<td>molasses, corn, wheat gluten</td>
+</tr>
+</tbody>
+</table>
+<p>For these entries, the production route is fermentation; the listed sources are the biological substrates. The substance classified as synthetic is produced by a microbial organism from a plant-derived feedstock. The schema cannot express that both statements are true simultaneously.</p>
+<p><strong>Multi-origin (production route determines source):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>INS</th>
+<th>Official name</th>
+<th>Sources as recorded</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>422</td>
+<td>Glycerol</td>
+<td>palm, soybean, sunflower, rapeseed, lard, tallow, propylene, sugar fermentation</td>
+</tr>
+</tbody>
+</table>
+<p>Glycerol’s source depends on how it was manufactured. The same INS number covers plant-derived, animal-derived, and petrochemical routes. A single <code>source_type</code> assignment cannot represent a substance whose origin varies by production lot.</p>
+<p><strong>Extracted from microbial or biological source, no abiotic route listed:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>INS</th>
+<th>Official name</th>
+<th>Sources as recorded</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>161g</td>
+<td>Canthaxanthin</td>
+<td>algae</td>
+</tr>
+<tr class="even">
+<td>1100</td>
+<td>alpha-Amylase</td>
+<td>barley malt, animal pancreas, <em>Bacillus subtilis</em></td>
+</tr>
+<tr class="odd">
+<td>1101</td>
+<td>Protease</td>
+<td>papaya latex, papaya</td>
+</tr>
+<tr class="even">
+<td>1102</td>
+<td>Glucose oxidase</td>
+<td><em>Aspergillus niger</em>, <em>Penicillium</em></td>
+</tr>
+<tr class="odd">
+<td>1104</td>
+<td>Lipases</td>
+<td>animal pancreas, fungi</td>
+</tr>
+<tr class="even">
+<td>1204</td>
+<td>Pullulan</td>
+<td>starch hydrolysate from <em>Aureobasidium pullulans</em></td>
+</tr>
+</tbody>
+</table>
+<p>These entries list only biological or microbial sources. Their classification as <code>synthetic</code> appears to follow the absence of a <code>microbial</code> source_type in the schema.</p>
+</section>
+<section id="the-schema-gap" class="level3">
+<h3 class="anchored" data-anchor-id="the-schema-gap">The schema gap</h3>
+<p>The four-category <code>source_type</code> schema (<code>synthetic | plant | mineral | animal</code>) conflates production method with biological origin. A fermentation-derived substance is both synthetic (process — it is manufactured, not extracted from food) and biological (precursor — it is derived from a plant feedstock by a microbial organism). The schema can capture one dimension; it cannot capture both.</p>
+<p>The 12 flagged entries are the entries where the tension becomes explicit. The others may carry the same tension without it being visible — if a synthetic entry has an empty <code>sources</code> field, there is no record of what its precursor is.</p>
+<p>What a <code>production_method</code> sub-field would need to hold, based on entries already in the taxonomy:</p>
+<ul>
+<li><code>petrochemical_synthesis</code></li>
+<li><code>fermentation</code> (with feedstock in sources)</li>
+<li><code>enzymatic_conversion</code></li>
+<li><code>microbial_extraction</code></li>
+<li><code>plant_extraction</code></li>
+<li><code>mineral_extraction</code></li>
+</ul>
+<p>Whether to add this field, and whether to split it from <code>source_type</code> or replace it, is a taxonomy design decision for domain expert review. The current entries cannot populate it without a sourcing and verification pass.</p>
+<hr>
+</section>
+</section>
+<section id="animal-derived-entries" class="level2">
+<h2 class="anchored" data-anchor-id="animal-derived-entries">Animal-derived entries</h2>
+<p>13 of 158 entries carry <code>source_type: animal</code>. These are the entries that determine halal, kosher, and vegan flags for additive declarations. All 13:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>INS</th>
+<th>Official name</th>
+<th>Functional classes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>322</td>
+<td>Lecithins</td>
+<td>antioxidant, emulsifier, stabilizer</td>
+</tr>
+<tr class="even">
+<td>428</td>
+<td>Gelatine</td>
+<td>thickener, stabilizer, emulsifier</td>
+</tr>
+<tr class="odd">
+<td>429</td>
+<td>Phosphatidic acid</td>
+<td>emulsifier</td>
+</tr>
+<tr class="even">
+<td>470</td>
+<td>Fatty acids</td>
+<td>emulsifier, stabilizer, anticaking agent, antifoaming agent, glazing agent</td>
+</tr>
+<tr class="odd">
+<td>470a</td>
+<td>Sodium, potassium and calcium salts of fatty acids</td>
+<td>emulsifier, stabilizer, anticaking agent</td>
+</tr>
+<tr class="even">
+<td>471</td>
+<td>Mono- and diglycerides of fatty acids</td>
+<td>emulsifier, stabilizer</td>
+</tr>
+<tr class="odd">
+<td>472</td>
+<td>Esters of mono- and diglycerides of fatty acids</td>
+<td>emulsifier, stabilizer</td>
+</tr>
+<tr class="even">
+<td>472b</td>
+<td>Lactic and fatty acid esters of glycerol</td>
+<td>emulsifier</td>
+</tr>
+<tr class="odd">
+<td>472c</td>
+<td>Citric and fatty acid esters of glycerol</td>
+<td>emulsifier</td>
+</tr>
+<tr class="even">
+<td>472e</td>
+<td>Diacetyltartaric and fatty acid esters of glycerol</td>
+<td>emulsifier</td>
+</tr>
+<tr class="odd">
+<td>475</td>
+<td>Polyglycerol esters of fatty acids</td>
+<td>emulsifier</td>
+</tr>
+<tr class="even">
+<td>901</td>
+<td>Beeswax, white and yellow</td>
+<td>glazing agent</td>
+</tr>
+<tr class="odd">
+<td>904</td>
+<td>Shellac</td>
+<td>glazing agent</td>
+</tr>
+</tbody>
+</table>
+<p>10 of the 13 are emulsifiers or carry emulsifier as one of their functions. INS 471, 472, 472b, 472c, 472e, 470, and 470a are all fatty acid ester variants — a cluster of structurally related emulsifiers sharing animal-fat origin. Gelatine (428) is the only structurally distinct non-emulsifier non-glazing entry.</p>
+<section id="what-this-means-for-ifid" class="level3">
+<h3 class="anchored" data-anchor-id="what-this-means-for-ifid">What this means for IFID</h3>
+<p>IFID’s label flag support (halal, vegan, kosher) is driven by <code>source_type: animal</code> entries in the taxonomy. The 13 entries above are the set that triggers those flags when an additive is declared on a label.</p>
+<p>Three notes from the distribution:</p>
+<ol type="1">
+<li><p>INS 322 (Lecithins) is listed as <code>source_type: animal</code>. Lecithin is commonly derived from soy or sunflower for vegan-certified products; animal-origin lecithin (egg yolk) also exists. The single <code>source_type</code> assignment cannot distinguish these. A product declaring “lecithin” without source qualification cannot be flagged definitively without additional information.</p></li>
+<li><p>The fatty acid ester cluster (INS 471, 472 variants, 470, 470a) appears on a wide range of processed food labels. These are common emulsifiers. IFID’s flag logic will activate for all of them unless source qualification is added.</p></li>
+<li><p>No current FSSAI mandatory labeling requirement forces source disclosure for these additives at the ingredient level. The taxonomy carries the source data; the label often does not. The flag can be set in IFID based on the taxonomy entry; confirming it for a specific product requires knowing the production route of the specific ingredient batch.</p></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="known-issues" class="level2">
+<h2 class="anchored" data-anchor-id="known-issues">Known issues</h2>
+<p>Three issues are documented in <code>cp/README_additives.md</code> and remain open:</p>
+<p><strong>O-1 — INS 141: plant source_type, empty sources</strong></p>
+<p>INS 141 (Copper complexes of chlorophylls) has <code>source_type: plant</code> with an empty <code>sources</code> field. Every other plant-type entry carries at least one source value. Whether the empty field reflects a curation gap or a genuine absence of source specificity for this entry is unresolved.</p>
+<p><strong>O-2 — 12 entries: source_type=synthetic with biological sources listed</strong></p>
+<p>Documented in the previous section. Requires a production_method design decision before it can be resolved.</p>
+<p><strong>O-3 — INS 296 and INS 1204: codex_category=Unclassified</strong></p>
+<p>Both have established Codex GSFA entries and should map to existing categories.</p>
+<ul>
+<li>INS 296 (Malic acid, DL-): functional class <code>acidity regulator</code>. The Codex category is <code>Antioxidants and acidity regulators</code>. The DL-form is synthetic; the sources listed (<code>apple, pear</code>) describe the L-form origin and may have been inherited without distinguishing the isomer.</li>
+<li>INS 1204 (Pullulan): functional classes include <code>glazing agent, thickener, stabilizer, bulking agent</code>. The Codex category is <code>Thickeners, stabilisers, emulsifiers and gelling agents</code>.</li>
+</ul>
+<p>Both can be corrected without a sourcing pass.</p>
+<hr>
+</section>
+<section id="the-functional-class-multiplicity-question" class="level2">
+<h2 class="anchored" data-anchor-id="the-functional-class-multiplicity-question">The functional class multiplicity question</h2>
+<p>73 of 158 entries carry more than one functional class. An additive like INS 470 (Fatty acids) carries five: <code>emulsifier, stabilizer, anticaking agent, antifoaming agent, glazing agent</code>.</p>
+<p>When a product label declares “emulsifier (INS 470),” it names one function. The taxonomy holds five. IFID’s design needs to decide: does the entry show all functional classes from the taxonomy, the declared-on-label class only, or both with the declared class flagged?</p>
+<p>This is a display and schema question, not a curation gap. The taxonomy contains the data needed for all three options. The choice affects how labels that declare only one function for a multi-function additive are represented in IFID — and whether that representation is informative (shows all taxonomy-recorded functions) or faithful to the declaration (shows only what the label said).</p>
+<hr>
+</section>
+<section id="data-files" class="level2">
+<h2 class="anchored" data-anchor-id="data-files">Data files</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>File</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>additives/additives_taxonomy.json</code></td>
+<td>158 canonical entries; source for all counts in this report</td>
+</tr>
+<tr class="even">
+<td><code>additives/additives_clean_2026-03-13.csv</code></td>
+<td>153-row CSV export (reflects state after colors session addition; 5 entries added since initial close)</td>
+</tr>
+<tr class="odd">
+<td><code>additives/cp/README_additives.md</code></td>
+<td>Session close notes; source for O-1, O-2, O-3 issue documentation</td>
+</tr>
+<tr class="even">
+<td><code>additives/enrichment_pending.csv</code></td>
+<td>Entries flagged for sourcing and verification pass; feeds TASK-A1</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="note-on-ai-authorship" class="level2">
+<h2 class="anchored" data-anchor-id="note-on-ai-authorship">Note on AI authorship</h2>
+<p>This document was drafted by Claude (Anthropic, Sonnet 4.6) in a Claude Code session on 2026-03-26, from a structured plan written by Lalitha A R.</p>
+<p><strong>What Claude did:</strong></p>
+<ul>
+<li>Queried <code>additives_taxonomy.json</code> directly to produce all counts: source type distribution, functional class totals, multi-class entry count, Codex category distribution, animal entry list</li>
+<li>Verified that the current taxonomy holds 158 entries (not 148, the figure in the README, which was written before the 5 colors additions)</li>
+<li>Extracted the 12 O-2 entries and their sources values from the JSON</li>
+<li>Drafted all prose, tables, and section structure</li>
+</ul>
+<p><strong>Where the README and the current JSON differ:</strong></p>
+<p><code>cp/README_additives.md</code> was written against the 148-entry state: synthetic 72, plant 45, mineral 18, animal 13. The current 158-entry JSON shows: synthetic 76, plant 50, mineral 19, animal 13. The 10-entry difference is the 5 colors additions (all plant or mineral) plus entries added to the synthetic and plant categories during the session. All counts in this report are from the current JSON.</p>
+<p><strong>Constraints Claude worked under:</strong></p>
+<ul>
+<li>The O-2 tension between source_type and sources is documented in the README as a known issue; this report synthesises the design implication. The implication (the four-category schema conflates process and biological origin) is Claude’s interpretation of the structured data, not a finding from the README.</li>
+<li>The animal entries table and the three observations that follow are derived from the taxonomy data, not from the plan.</li>
+<li>No regulatory claims about FSSAI mandatory labeling were made beyond what is directly observable: that the current regulatory framework does not require additive source disclosure at the ingredient level. This is an absence of a requirement, not a gap assessment.</li>
+</ul>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

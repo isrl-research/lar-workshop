@@ -1,0 +1,205 @@
+brand_id,brand_name,company_id
+ifid-b-00001,fortune,1
+ifid-b-00002,fortune atta,1
+ifid-b-00003,fortune oil,1
+ifid-b-00004,fortune rice,1
+ifid-b-00005,fortune soya,1
+ifid-b-00006,king's,1
+ifid-b-00007,kohinoor,1
+ifid-b-00008,raag,1
+ifid-b-00009,act ii,2
+ifid-b-00010,sundrop,2
+ifid-b-00011,amul butter,3
+ifid-b-00012,amul cheese,3
+ifid-b-00013,amul chocolates,3
+ifid-b-00014,amul ice cream,3
+ifid-b-00015,amul kool,3
+ifid-b-00016,amul lassi,3
+ifid-b-00017,amul masti,3
+ifid-b-00018,amul milk,3
+ifid-b-00019,amul mithai mate,3
+ifid-b-00020,amulya,3
+ifid-b-00021,sagar,3
+ifid-b-00022,balaji namkeen,4
+ifid-b-00023,balaji wafers,4
+ifid-b-00024,balaji western snacks,4
+ifid-b-00025,bikaji bhujia,5
+ifid-b-00026,bikaji frozen foods,5
+ifid-b-00027,bikaji papad,5
+ifid-b-00028,bikaji sweets,5
+ifid-b-00029,bikano,6
+ifid-b-00030,50-50,7
+ifid-b-00031,bourbon,7
+ifid-b-00032,britannia cake,7
+ifid-b-00033,britannia cheese,7
+ifid-b-00034,britannia rusk,7
+ifid-b-00035,good day,7
+ifid-b-00036,jim jam,7
+ifid-b-00037,little hearts,7
+ifid-b-00038,marie gold,7
+ifid-b-00039,milk bikis,7
+ifid-b-00040,nutrichoice,7
+ifid-b-00041,tiger,7
+ifid-b-00042,winkin cow,7
+ifid-b-00043,ching's secret,8
+ifid-b-00044,coca-cola,9
+ifid-b-00045,fanta,9
+ifid-b-00046,kinley,9
+ifid-b-00047,limca,9
+ifid-b-00048,maaza,9
+ifid-b-00049,minute maid,9
+ifid-b-00050,schweppes,9
+ifid-b-00051,smartwater,9
+ifid-b-00052,sprite,9
+ifid-b-00053,thums up,9
+ifid-b-00054,country delight,10
+ifid-b-00055,slurrp farm,10
+ifid-b-00056,the whole truth,10
+ifid-b-00057,dabur chyawanprash,11
+ifid-b-00058,dabur glucose,11
+ifid-b-00059,dabur honey,11
+ifid-b-00060,hajmola,11
+ifid-b-00061,hommade,11
+ifid-b-00062,real activ,11
+ifid-b-00063,real fruit power,11
+ifid-b-00064,dodla,12
+ifid-b-00065,catch spices,13
+ifid-b-00066,pass pass,13
+ifid-b-00067,pulse,13
+ifid-b-00068,healthy & tasty,14
+ifid-b-00069,mantra,14
+ifid-b-00070,zandu honey,15
+ifid-b-00071,everest spices,16
+ifid-b-00072,godrej jersey,17
+ifid-b-00073,godrej yummiez,17
+ifid-b-00074,gopal namkeen,18
+ifid-b-00075,amul happy treats,3
+ifid-b-00076,amul taaza,3
+ifid-b-00077,haldiram's bhujia,19
+ifid-b-00078,haldiram's frozen foods,19
+ifid-b-00079,haldiram's minute khana,19
+ifid-b-00080,haldiram's namkeen,19
+ifid-b-00081,haldiram's rasgulla,19
+ifid-b-00082,haldiram's soan papdi,19
+ifid-b-00083,haldiram's syrups,19
+ifid-b-00084,arokya,20
+ifid-b-00085,arun icecreams,20
+ifid-b-00086,hatsun ghee,20
+ifid-b-00087,ibaco,20
+ifid-b-00088,heritage milk,21
+ifid-b-00089,boost,22
+ifid-b-00090,brooke bond red label,22
+ifid-b-00091,bru,22
+ifid-b-00092,cornetto,22
+ifid-b-00093,hellmann's,22
+ifid-b-00094,horlicks,22
+ifid-b-00095,kissan,22
+ifid-b-00096,knorr,22
+ifid-b-00097,kwality wall's,22
+ifid-b-00098,lipton,22
+ifid-b-00099,magnum,22
+ifid-b-00100,taj mahal,22
+ifid-b-00101,aashirvaad,23
+ifid-b-00102,bingo,23
+ifid-b-00103,b natural,23
+ifid-b-00104,candyman,23
+ifid-b-00105,fabelle,23
+ifid-b-00106,kitchens of india,23
+ifid-b-00107,sunfeast,23
+ifid-b-00108,sunfeast dark fantasy,23
+ifid-b-00109,sunfeast mom's magic,23
+ifid-b-00110,sunrise,23
+ifid-b-00111,yippee,23
+ifid-b-00112,yoga bar,23
+ifid-b-00113,india gate,24
+ifid-b-00114,havmor,25
+ifid-b-00115,daawat,26
+ifid-b-00116,mdh spices,27
+ifid-b-00117,plix,28
+ifid-b-00118,saffola,28
+ifid-b-00119,saffola honey,28
+ifid-b-00120,saffola masala oats,28
+ifid-b-00121,saffola oats,28
+ifid-b-00122,saffola soya,28
+ifid-b-00123,true elements,28
+ifid-b-00124,mccain,29
+ifid-b-00125,5 star,30
+ifid-b-00126,bournville,30
+ifid-b-00127,bournvita,30
+ifid-b-00128,cadbury dairy milk,30
+ifid-b-00129,gems,30
+ifid-b-00130,oreo,30
+ifid-b-00131,perk,30
+ifid-b-00132,tang,30
+ifid-b-00133,toblerone,30
+ifid-b-00134,dhara,31
+ifid-b-00135,mother dairy ice cream,31
+ifid-b-00136,mother dairy milk,31
+ifid-b-00137,safal,31
+ifid-b-00138,cerelac,32
+ifid-b-00139,kitkat,32
+ifid-b-00140,maggi,32
+ifid-b-00141,milkmaid,32
+ifid-b-00142,milkybar,32
+ifid-b-00143,munch,32
+ifid-b-00144,nescafé,32
+ifid-b-00145,nestea,32
+ifid-b-00146,nestlé everyday,32
+ifid-b-00147,polo,32
+ifid-b-00148,eastern spices,33
+ifid-b-00149,mtr,33
+ifid-b-00150,rasoi magic,33
+ifid-b-00151,appy,34
+ifid-b-00152,appy fizz,34
+ifid-b-00153,bailley,34
+ifid-b-00154,b-fizz,34
+ifid-b-00155,dhishoom,34
+ifid-b-00156,frooti,34
+ifid-b-00157,smoodh,34
+ifid-b-00158,20-20,35
+ifid-b-00159,cheeslings,35
+ifid-b-00160,fab!,35
+ifid-b-00161,hide and seek,35
+ifid-b-00162,kismi,35
+ifid-b-00163,krackjack,35
+ifid-b-00164,mango bite,35
+ifid-b-00165,melody,35
+ifid-b-00166,monaco,35
+ifid-b-00167,parle-g,35
+ifid-b-00168,parle rusk,35
+ifid-b-00169,mahakosh,36
+ifid-b-00170,nutrela,36
+ifid-b-00171,patanjali atta,36
+ifid-b-00172,patanjali biscuits,36
+ifid-b-00173,patanjali ghee,36
+ifid-b-00174,patanjali honey,36
+ifid-b-00175,ruchi gold,36
+ifid-b-00176,sunrich,36
+ifid-b-00177,7up,37
+ifid-b-00178,doritos,37
+ifid-b-00179,gatorade,37
+ifid-b-00180,kurkure,37
+ifid-b-00181,lay's,37
+ifid-b-00182,mirinda,37
+ifid-b-00183,mountain dew,37
+ifid-b-00184,pepsi,37
+ifid-b-00185,quaker oats,37
+ifid-b-00186,slice,37
+ifid-b-00187,tropicana,37
+ifid-b-00188,yellow diamond,38
+ifid-b-00189,id fresh food,39
+ifid-b-00190,lt foods daawat,39
+ifid-b-00191,himalayan,40
+ifid-b-00192,organic india,40
+ifid-b-00193,smith and jones,40
+ifid-b-00194,tata coffee,40
+ifid-b-00195,tata gluco plus,40
+ifid-b-00196,tata salt,40
+ifid-b-00197,tata sampann,40
+ifid-b-00198,tata soulfull,40
+ifid-b-00199,tata tea,40
+ifid-b-00200,tetley,40
+ifid-b-00201,vadilal,41
+ifid-b-00202,complan,42
+ifid-b-00203,glucon-d,42
+ifid-b-00205,sugar free,42

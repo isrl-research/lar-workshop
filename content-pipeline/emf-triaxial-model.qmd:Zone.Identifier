@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://claude.ai/chat/15a8d9fc-e903-4757-a06e-17faf1fdcf89
+HostUrl=https://claude.ai/api/organizations/ecedd2f4-cbfc-4841-9556-3a8a86ef0b5c/conversations/15a8d9fc-e903-4757-a06e-17faf1fdcf89/wiggle/download-file?path=%2Fmnt%2Fuser-data%2Foutputs%2Femf-triaxial-model.qmd

@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Lalitha A R">
+<meta name="author" content="Claude (Anthropic)">
+<meta name="dcterms.date" content="2026-03-26">
+<meta name="description" content="Three closed sessions document what back-of-pack additive declarations on Indian labels actually contain — and what that signals about what the IFID form’s fields must be capable of holding.">
+
+<title>What Indian food labels actually say about additives — and what that means for how IFID needs to work</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="curation-synthesis.log_files/libs/clipboard/clipboard.min.js"></script>
+<script src="curation-synthesis.log_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="curation-synthesis.log_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="curation-synthesis.log_files/libs/quarto-html/popper.min.js"></script>
+<script src="curation-synthesis.log_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="curation-synthesis.log_files/libs/quarto-html/anchor.min.js"></script>
+<link href="curation-synthesis.log_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="curation-synthesis.log_files/libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="curation-synthesis.log_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="curation-synthesis.log_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="curation-synthesis.log_files/libs/bootstrap/bootstrap-2daf5a3bceb9e852f3deb6477265f210.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-question" id="toc-the-question" class="nav-link active" data-scroll-target="#the-question">The question</a></li>
+  <li><a href="#findings" id="toc-findings" class="nav-link" data-scroll-target="#findings">Findings</a>
+  <ul class="collapse">
+  <li><a href="#how-additives-are-declared-on-indian-labels" id="toc-how-additives-are-declared-on-indian-labels" class="nav-link" data-scroll-target="#how-additives-are-declared-on-indian-labels">How additives are declared on Indian labels</a></li>
+  <li><a href="#what-the-additives-taxonomy-holds" id="toc-what-the-additives-taxonomy-holds" class="nav-link" data-scroll-target="#what-the-additives-taxonomy-holds">What the additives taxonomy holds</a></li>
+  <li><a href="#sec-colour" id="toc-sec-colour" class="nav-link" data-scroll-target="#sec-colour">What colour declarations look like</a></li>
+  </ul></li>
+  <li><a href="#implications-for-ifid" id="toc-implications-for-ifid" class="nav-link" data-scroll-target="#implications-for-ifid">Implications for IFID</a>
+  <ul class="collapse">
+  <li><a href="#additive-lookup-what-the-forms-search-field-must-surface" id="toc-additive-lookup-what-the-forms-search-field-must-surface" class="nav-link" data-scroll-target="#additive-lookup-what-the-forms-search-field-must-surface">1. Additive lookup: what the form’s search field must surface</a></li>
+  <li><a href="#source_type-as-a-form-field" id="toc-source_type-as-a-form-field" class="nav-link" data-scroll-target="#source_type-as-a-form-field">2. source_type as a form field</a></li>
+  <li><a href="#dietary-flags-not-a-checkbox-derivable-from-source_type-alone" id="toc-dietary-flags-not-a-checkbox-derivable-from-source_type-alone" class="nav-link" data-scroll-target="#dietary-flags-not-a-checkbox-derivable-from-source_type-alone">3. Dietary flags: not a checkbox derivable from source_type alone</a></li>
+  <li><a href="#functional-class-field-single-select-or-multi-select" id="toc-functional-class-field-single-select-or-multi-select" class="nav-link" data-scroll-target="#functional-class-field-single-select-or-multi-select">4. Functional class field: single-select or multi-select?</a></li>
+  <li><a href="#a-category-the-form-does-not-yet-have" id="toc-a-category-the-form-does-not-yet-have" class="nav-link" data-scroll-target="#a-category-the-form-does-not-yet-have">5. A category the form does not yet have</a></li>
+  </ul></li>
+  <li><a href="#open-questions" id="toc-open-questions" class="nav-link" data-scroll-target="#open-questions">Open questions</a></li>
+  <li><a href="#data-and-session-provenance" id="toc-data-and-session-provenance" class="nav-link" data-scroll-target="#data-and-session-provenance">Data and session provenance</a>
+  <ul class="collapse">
+  <li><a href="#sessions-this-report-draws-from" id="toc-sessions-this-report-draws-from" class="nav-link" data-scroll-target="#sessions-this-report-draws-from">Sessions this report draws from</a></li>
+  <li><a href="#source-files" id="toc-source-files" class="nav-link" data-scroll-target="#source-files">Source files</a></li>
+  <li><a href="#superseded-reports" id="toc-superseded-reports" class="nav-link" data-scroll-target="#superseded-reports">Superseded reports</a></li>
+  </ul></li>
+  <li><a href="#note-on-ai-authorship" id="toc-note-on-ai-authorship" class="nav-link" data-scroll-target="#note-on-ai-authorship">Note on AI authorship</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">What Indian food labels actually say about additives — and what that means for how IFID needs to work</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">ifid</div>
+    <div class="quarto-category">caas</div>
+    <div class="quarto-category">additives</div>
+    <div class="quarto-category">colors</div>
+    <div class="quarto-category">label-conventions</div>
+    <div class="quarto-category">data-analysis</div>
+    <div class="quarto-category">track-a</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Three closed sessions document what back-of-pack additive declarations on Indian labels actually contain — and what that signals about what the IFID form’s fields must be capable of holding.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lalitha A R </p>
+             <p>Claude (Anthropic) </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 26, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="the-question" class="level2">
+<h2 class="anchored" data-anchor-id="the-question">The question</h2>
+<p>IFID is a structured form. A brand person selects an ingredient, qualifies its source, specifies the process, and answers field-by-field questions — is it fortified? what functional class does it serve on this product? The form draws from a taxonomy of canonical entries; the brand makes selections from it, not freeform text.</p>
+<p>The question this report asks: given what Indian food labels actually declare, what must the form’s fields be capable of holding? Three sessions supply the evidence. The findings document the current state of back-of-pack label declarations. The implications state what each finding signals about field type, field options, and where the current form design cannot represent what labels show.</p>
+<p>Three closed sessions supply the evidence: the additives taxonomy session (158 entries, closed 2026-03-13), the colours session (30 INS entries, 7 deferred, closed 2026-03-13), and the CAAS label-string analysis (1,026 product rows, 2026-03-26). This report draws findings from all three, then states what follows for IFID’s design.</p>
+<hr>
+</section>
+<section id="findings" class="level2">
+<h2 class="anchored" data-anchor-id="findings">Findings</h2>
+<section id="how-additives-are-declared-on-indian-labels" class="level3">
+<h3 class="anchored" data-anchor-id="how-additives-are-declared-on-indian-labels">How additives are declared on Indian labels</h3>
+<p>88 products in the 1,026-row CAAS dataset declare at least one additive using an EU E-number. 113 products declare at least one additive using an INS number. The two sets overlap: 35 distinct additive numbers appear in both E-number and INS-number form across the dataset — the same substance, two naming conventions, different products.</p>
+<p>E-numbers appear primarily on products from manufacturers who sell into European markets or follow European labelling conventions (Amul chocolate lines, Cadbury, Haldiram’s, Kwality Wall’s). INS numbers appear more broadly across all product categories. The pattern is not random; it follows the market orientation of the manufacturer.</p>
+<p>The dataset shows four distinct notation variants:</p>
+<p><strong>Variant 1: <code>E{n}</code> — EU E-number, no prefix space</strong></p>
+<pre><code>E322, E476, E631, E551, E330</code></pre>
+<p><strong>Variant 2: <code>INS {n}</code> — all-caps prefix, space before number</strong></p>
+<pre><code>INS 330, INS 551, INS 471, INS 102</code></pre>
+<p>77 products in the dataset use this variant. The most common INS form.</p>
+<p><strong>Variant 3: <code>Ins {n}</code> — mixed-case prefix, space before number</strong></p>
+<pre><code>Ins 330, Ins 296, Ins 551, Ins 300</code></pre>
+<p>25 products use this variant. Functionally identical to Variant 2; a case-sensitive match treats them as different strings.</p>
+<p><strong>Variant 4: functional class or common name followed by bare number in parentheses</strong></p>
+<pre><code>Colour (162), Citric Acid (330), Acidity Regulator (330), Anticaking Agent (551)</code></pre>
+<p>The number appears after a functional class or common name. Examples found in Doritos, Kurkure, and Lay’s ingredient strings.</p>
+<p>A grouping pattern also appears: <code>Acidity Regulators (Ins 296, Ins 330, Ins 334)</code>. This is not a fifth numbering convention; the numbers inside are Variant 2 or 3. The group declaration names multiple additives within one functional class.</p>
+<p>The five products in the table below show the E-to-INS same-substance pattern across manufacturers:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Additive</th>
+<th>E-form product</th>
+<th>INS-form product</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Lecithin (322)</td>
+<td>Amul Belgian Milk Chocolate</td>
+<td>Tata Soulfull Ragi Bites</td>
+</tr>
+<tr class="even">
+<td>Disodium guanylate (631)</td>
+<td>Kurkure Zig Zag</td>
+<td>Bingo Potato Chips</td>
+</tr>
+<tr class="odd">
+<td>Polyglycerol polyricinoleate (476)</td>
+<td>Amul Belgian Milk Chocolate</td>
+<td>Sugar Free D’lite</td>
+</tr>
+<tr class="even">
+<td>Silicon dioxide (551)</td>
+<td>Ching’s Secret Instant Noodles</td>
+<td>Bingo Potato Chips</td>
+</tr>
+<tr class="odd">
+<td>Citric acid (330)</td>
+<td>Haldiram’s Sabudana Tikki</td>
+<td>Bingo Potato Chips</td>
+</tr>
+</tbody>
+</table>
+<p>FD&amp;C-style names appear in colour declarations — see <a href="#sec-colour">colour declarations</a>.</p>
+</section>
+<section id="what-the-additives-taxonomy-holds" class="level3">
+<h3 class="anchored" data-anchor-id="what-the-additives-taxonomy-holds">What the additives taxonomy holds</h3>
+<p>The additives taxonomy holds 158 entries across 12 Codex categories.</p>
+<p><strong>Source type distribution:</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>source_type</th>
+<th>Count</th>
+<th>Share</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>synthetic</td>
+<td>76</td>
+<td>48.1%</td>
+</tr>
+<tr class="even">
+<td>plant</td>
+<td>50</td>
+<td>31.6%</td>
+</tr>
+<tr class="odd">
+<td>mineral</td>
+<td>19</td>
+<td>12.0%</td>
+</tr>
+<tr class="even">
+<td>animal</td>
+<td>13</td>
+<td>8.2%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Codex category distribution:</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Entries</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Thickeners, stabilisers, emulsifiers and gelling agents</td>
+<td>40</td>
+</tr>
+<tr class="even">
+<td>Colours</td>
+<td>30</td>
+</tr>
+<tr class="odd">
+<td>pH adjusters, anti-caking and anti-foaming agents</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Antioxidants and acidity regulators</td>
+<td>18</td>
+</tr>
+<tr class="odd">
+<td>Preservatives</td>
+<td>11</td>
+</tr>
+<tr class="even">
+<td>Modified starches</td>
+<td>11</td>
+</tr>
+<tr class="odd">
+<td>Flavour enhancers</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>Sweeteners</td>
+<td>8</td>
+</tr>
+<tr class="odd">
+<td>Gases, waxes and propellants</td>
+<td>6</td>
+</tr>
+<tr class="even">
+<td>Enzymes</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>Polyols</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>Unclassified</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Functional class multiplicity:</strong></p>
+<p>73 of 158 entries carry more than one functional class. 297 functional class assignments total; 24 unique classes. An additive declared as “emulsifier” on a product label may carry 4 other functions in the taxonomy.</p>
+<p><strong>The 13 animal-derived entries:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>INS</th>
+<th>Official name</th>
+<th>Functional classes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>322</td>
+<td>Lecithins</td>
+<td>antioxidant, emulsifier, stabilizer</td>
+</tr>
+<tr class="even">
+<td>428</td>
+<td>Gelatine</td>
+<td>thickener, stabilizer, emulsifier</td>
+</tr>
+<tr class="odd">
+<td>429</td>
+<td>Phosphatidic acid</td>
+<td>emulsifier</td>
+</tr>
+<tr class="even">
+<td>470</td>
+<td>Fatty acids</td>
+<td>emulsifier, stabilizer, anticaking agent, antifoaming agent, glazing agent</td>
+</tr>
+<tr class="odd">
+<td>470a</td>
+<td>Sodium, potassium and calcium salts of fatty acids</td>
+<td>emulsifier, stabilizer, anticaking agent</td>
+</tr>
+<tr class="even">
+<td>471</td>
+<td>Mono- and diglycerides of fatty acids</td>
+<td>emulsifier, stabilizer</td>
+</tr>
+<tr class="odd">
+<td>472</td>
+<td>Esters of mono- and diglycerides of fatty acids</td>
+<td>emulsifier, stabilizer</td>
+</tr>
+<tr class="even">
+<td>472b</td>
+<td>Lactic and fatty acid esters of glycerol</td>
+<td>emulsifier</td>
+</tr>
+<tr class="odd">
+<td>472c</td>
+<td>Citric and fatty acid esters of glycerol</td>
+<td>emulsifier</td>
+</tr>
+<tr class="even">
+<td>472e</td>
+<td>Diacetyltartaric and fatty acid esters of glycerol</td>
+<td>emulsifier</td>
+</tr>
+<tr class="odd">
+<td>475</td>
+<td>Polyglycerol esters of fatty acids</td>
+<td>emulsifier</td>
+</tr>
+<tr class="even">
+<td>901</td>
+<td>Beeswax, white and yellow</td>
+<td>glazing agent</td>
+</tr>
+<tr class="odd">
+<td>904</td>
+<td>Shellac</td>
+<td>glazing agent</td>
+</tr>
+</tbody>
+</table>
+<p>10 of the 13 are emulsifiers or carry emulsifier as one of their functions. INS 471, 472, 472b, 472c, 472e, 470, and 470a are a cluster of structurally related fatty acid ester variants. Gelatine (428) is the only structurally distinct non-emulsifier non-glazing entry in the set.</p>
+<p><strong>12 entries where source_type and sources are in tension:</strong></p>
+<p>12 entries have <code>source_type: synthetic</code> but carry biological, fermentation-derived, or microbial values in the <code>sources</code> field.</p>
+<p>Fermentation-derived, biological precursor listed:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>INS</th>
+<th>Official name</th>
+<th>Sources as recorded</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>270</td>
+<td>Lactic acid, L-, D- and DL-</td>
+<td>corn</td>
+</tr>
+<tr class="even">
+<td>296</td>
+<td>Malic acid, DL-</td>
+<td>apple, pear</td>
+</tr>
+<tr class="odd">
+<td>575</td>
+<td>Glucono-delta-lactone</td>
+<td>corn</td>
+</tr>
+<tr class="even">
+<td>620</td>
+<td>L-Glutamic acid</td>
+<td>molasses, corn, wheat gluten</td>
+</tr>
+<tr class="odd">
+<td>621</td>
+<td>Monosodium L-glutamate</td>
+<td>molasses, corn, wheat gluten</td>
+</tr>
+</tbody>
+</table>
+<p>Multi-origin (production route determines source):</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>INS</th>
+<th>Official name</th>
+<th>Sources as recorded</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>422</td>
+<td>Glycerol</td>
+<td>palm, soybean, sunflower, rapeseed, lard, tallow, propylene, sugar fermentation</td>
+</tr>
+</tbody>
+</table>
+<p>Extracted from microbial or biological source:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>INS</th>
+<th>Official name</th>
+<th>Sources as recorded</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>161g</td>
+<td>Canthaxanthin</td>
+<td>algae</td>
+</tr>
+<tr class="even">
+<td>1100</td>
+<td>alpha-Amylase</td>
+<td>barley malt, animal pancreas, <em>Bacillus subtilis</em></td>
+</tr>
+<tr class="odd">
+<td>1101</td>
+<td>Protease</td>
+<td>papaya latex, papaya</td>
+</tr>
+<tr class="even">
+<td>1102</td>
+<td>Glucose oxidase</td>
+<td><em>Aspergillus niger</em>, <em>Penicillium</em></td>
+</tr>
+<tr class="odd">
+<td>1104</td>
+<td>Lipases</td>
+<td>animal pancreas, fungi</td>
+</tr>
+<tr class="even">
+<td>1204</td>
+<td>Pullulan</td>
+<td>starch hydrolysate from <em>Aureobasidium pullulans</em></td>
+</tr>
+</tbody>
+</table>
+<p>The schema cannot represent glycerol (INS 422) accurately with a single source_type: the same INS number covers plant-derived, animal-derived, and petrochemical production routes. The entries extracted from microbial or biological sources are classified as <code>synthetic</code> because no <code>microbial</code> source_type exists in the schema.</p>
+</section>
+<section id="sec-colour" class="level3">
+<h3 class="anchored" data-anchor-id="sec-colour">What colour declarations look like</h3>
+<p>The taxonomy holds 30 INS colour entries: plant 16, synthetic 11, mineral 3.</p>
+<p>Colour declarations on Indian labels draw from two distinct sources: INS-numbered colour additives, and natural whole-food materials that carry no INS number but appear on pack as colour declarations. The taxonomy currently holds only the first type. The second has no home in the current structure.</p>
+<p><strong>INS-numbered colour declarations</strong></p>
+<p>The INS colour set includes synthetic dyes, botanical extracts, and mineral pigments. FD&amp;C names appear in this category: “FD&amp;C Red 40” refers to INS 129 (Allura Red AC). Botanical common names also appear: a declaration for a substance is written as its common name even when an INS number exists. The alias — FD&amp;C name, common name, or botanical name — maps to an INS entry, but this mapping is not stored in the taxonomy.</p>
+<p><strong>Whole-food colour sources with no INS number</strong></p>
+<p>The following appear on Indian labels as colour declarations and have no INS number:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Label text</th>
+<th>Source substance</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>kesar</td>
+<td>saffron</td>
+<td>Hindi/common name</td>
+</tr>
+<tr class="even">
+<td>paprika</td>
+<td>paprika</td>
+<td>Whole dried spice</td>
+</tr>
+<tr class="odd">
+<td>hibiscus</td>
+<td>hibiscus</td>
+<td>Dried flower</td>
+</tr>
+<tr class="even">
+<td>carrot powder</td>
+<td>carrot</td>
+<td>Dried whole carrot</td>
+</tr>
+<tr class="odd">
+<td>carrot flakes</td>
+<td>carrot</td>
+<td>Dried whole carrot</td>
+</tr>
+<tr class="even">
+<td>pomegranate powder</td>
+<td>pomegranate</td>
+<td>Dried whole fruit powder</td>
+</tr>
+</tbody>
+</table>
+<p>The distinction between extract and whole-food form is meaningful. INS 160c is “Paprika extract” — a solvent-extracted oleoresin with a Codex classification. The paprika declaration above is the whole dried spice. INS 160a(i) is “Beta-carotene, vegetable,” an extract from carrot; carrot powder and carrot flakes are dried whole carrot. The extract has an INS number; the whole-food form does not. Both appear on Indian labels as colour declarations.</p>
+<p>The taxonomy must be capable of retrieving both when a brand searches for a colour source. Currently it can return the extract; it has no entry for the whole-food form.</p>
+<hr>
+</section>
+</section>
+<section id="implications-for-ifid" class="level2">
+<h2 class="anchored" data-anchor-id="implications-for-ifid">Implications for IFID</h2>
+<section id="additive-lookup-what-the-forms-search-field-must-surface" class="level3">
+<h3 class="anchored" data-anchor-id="additive-lookup-what-the-forms-search-field-must-surface">1. Additive lookup: what the form’s search field must surface</h3>
+<p>The brand person needs to find a taxonomy entry from whatever name they know the additive by. The 4 notation variants and the 35 same-substance E/INS overlaps show that a brand using Amul’s labelling convention knows INS 322 as “E322”; a brand following FSSAI convention knows it as “INS 322” or “Ins 322”; a brand who looked up their ingredient common name knows it as “Lecithin.” The form’s additive search must return INS 322 from all four entry points. This is not a parsing requirement — the brand is selecting from the taxonomy — but the form’s search index needs to cover E-number, INS-number, common name, and label alias.</p>
+<p>The alias problem is concrete in colour declarations: FD&amp;C Red 40, Red 40, and Allura Red all point to INS 129. The form’s search index needs to cover these aliases; the taxonomy does not currently hold them.</p>
+</section>
+<section id="source_type-as-a-form-field" class="level3">
+<h3 class="anchored" data-anchor-id="source_type-as-a-form-field">2. source_type as a form field</h3>
+<p>The 4-category schema (<code>synthetic | plant | mineral | animal</code>) is the taxonomy’s internal classification. Whether it surfaces as a form field the brand can see or edit, or whether it is read-only and set by taxonomy curation, is a design decision the data makes visible.</p>
+<p>The 12 O-2 entries show where a single source_type cannot represent the substance. Glycerol (INS 422) is produced via plant, animal, and petrochemical routes — the same INS number, different batches. If source_type is read-only, the form shows the taxonomy classification and the brand cannot qualify it further. Whether the form should expose a per-product source qualifier — and what values it should accept — is the design question the data raises.</p>
+<p>Whether to add a <code>production_method</code> sub-field — and what values it should hold — is a design decision that requires domain expert input. The current taxonomy cannot populate it.</p>
+</section>
+<section id="dietary-flags-not-a-checkbox-derivable-from-source_type-alone" class="level3">
+<h3 class="anchored" data-anchor-id="dietary-flags-not-a-checkbox-derivable-from-source_type-alone">3. Dietary flags: not a checkbox derivable from source_type alone</h3>
+<p>INS 322 (Lecithins) is <code>source_type: animal</code> in the taxonomy. Plant-derived lecithin from soy or sunflower is common in vegan-certified products. The taxonomy entry cannot distinguish the two. The dietary flag (halal / vegan / kosher) cannot fire automatically from source_type alone; the form must either surface the taxonomy classification and require the brand to confirm source, or expose a per-product source qualifier field.</p>
+<p>The fatty acid ester cluster (INS 471, 472 variants, 470, 470a) carries the same issue — common emulsifiers, animal source_type in taxonomy, but plant-derived forms exist. FSSAI mandatory labelling does not require source disclosure at the ingredient level for these additives; the back-of-pack declaration does not resolve it.</p>
+</section>
+<section id="functional-class-field-single-select-or-multi-select" class="level3">
+<h3 class="anchored" data-anchor-id="functional-class-field-single-select-or-multi-select">4. Functional class field: single-select or multi-select?</h3>
+<p>73 of 158 entries carry more than one functional class. A brand declaring “emulsifier (INS 470)” on their label names one function; the taxonomy holds five for INS 470.</p>
+<p>The form needs to represent two distinct things: what the taxonomy says this additive <em>can</em> do (all functional classes), and what function the brand is declaring on this product’s label (what is printed on the pack). If the field is single-select, the brand can only record the declared function; the taxonomy’s other classes are not surfaced. If the field is multi-select pre-populated from taxonomy, the brand must choose which apply to their product. The form design should distinguish these two representations — they answer different questions.</p>
+</section>
+<section id="a-category-the-form-does-not-yet-have" class="level3">
+<h3 class="anchored" data-anchor-id="a-category-the-form-does-not-yet-have">5. A category the form does not yet have</h3>
+<p>The 7 deferred colour rows expose a gap in the form’s category structure. Paprika, kesar/saffron, hibiscus, carrot powder — these appear on Indian labels as colour declarations. They are not additives (no INS number, not in the Codex food additives framework). In the current form structure, there is no category for them. A brand entering this product into IFID cannot select these under “additives” and there is no alternative.</p>
+<p>The <code>raw_agricultural_material</code> designation was identified during the colours session as the correct home. What that category must hold, what fields it requires, and how it differs from the additive entry structure — that is a form design decision for a separate session.</p>
+<hr>
+</section>
+</section>
+<section id="open-questions" class="level2">
+<h2 class="anchored" data-anchor-id="open-questions">Open questions</h2>
+<p><strong>Hindi ingredient data.</strong> OpenFoodFacts cannot supply it. Of the full 19,748-row OFF export used as the CAAS source, 11 rows have Hindi ingredient text (<code>ingredients_text_hi</code>), 111 have Hindi product names, 2 have Hindi generic names. The 1,026-row filtered working dataset inherits this coverage profile. Any IFID work requiring Hindi ingredient text needs a different source.</p>
+<p><strong>INS 322 Lecithins source qualification.</strong> Should IFID store source_type at the taxonomy level only, or allow a per-product source qualifier? The current architecture has no per-product qualifier field.</p>
+<p><strong>INS 141 empty sources.</strong> <code>source_type: plant</code>, empty <code>sources</code> field. Every other plant-type entry carries at least one source value. Whether this is a curation gap or a genuine absence of public source data for this substance is unresolved.</p>
+<p><strong>Variant 4 declaration style.</strong> The pattern <code>Functional Class (number)</code> — e.g. <code>Acidity Regulator (330)</code> — appears across at least 8 products from three snack brands. Whether this reflects FSSAI-prescribed notation for certain additive categories, or is manufacturer convention, has not been verified.</p>
+<p><strong>O-3 fixes.</strong> INS 296 (Malic acid, DL-) and INS 1204 (Pullulan) have <code>codex_category: Unclassified</code>. Both have established Codex GSFA entries. INS 296 maps to <code>Antioxidants and acidity regulators</code>; INS 1204 maps to <code>Thickeners, stabilisers, emulsifiers and gelling agents</code>. Both can be corrected without a sourcing pass.</p>
+<hr>
+</section>
+<section id="data-and-session-provenance" class="level2">
+<h2 class="anchored" data-anchor-id="data-and-session-provenance">Data and session provenance</h2>
+<section id="sessions-this-report-draws-from" class="level3">
+<h3 class="anchored" data-anchor-id="sessions-this-report-draws-from">Sessions this report draws from</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Session</th>
+<th>Closed</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Additives taxonomy</td>
+<td>2026-03-13</td>
+<td><code>additives/additives_taxonomy.json</code>, 158 entries</td>
+</tr>
+<tr class="even">
+<td>Colours</td>
+<td>2026-03-13</td>
+<td><code>colors/colors_ins_clean.csv</code>, 30 entries; 7 rows deferred</td>
+</tr>
+<tr class="odd">
+<td>CAAS label-string analysis</td>
+<td>2026-03-26</td>
+<td>1,026-row search across <code>caas/core/sampling/unified_ingredients_data-raw_updated.json</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="source-files" class="level3">
+<h3 class="anchored" data-anchor-id="source-files">Source files</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>File</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>additives/additives_taxonomy.json</code></td>
+<td>158 canonical entries; source for all additive counts and tables</td>
+</tr>
+<tr class="even">
+<td><code>additives/additives_clean_2026-03-13.csv</code></td>
+<td>153-row CSV export (5 entries added post-export during colours session)</td>
+</tr>
+<tr class="odd">
+<td><code>additives/cp/README_additives.md</code></td>
+<td>Session close notes; source for O-1, O-2, O-3</td>
+</tr>
+<tr class="even">
+<td><code>additives/enrichment_pending.csv</code></td>
+<td>Entries flagged for sourcing pass; feeds TASK-A1</td>
+</tr>
+<tr class="odd">
+<td><code>colors/colors_ins_clean.csv</code></td>
+<td>30 INS colour entries; reference for downstream colour resolution</td>
+</tr>
+<tr class="even">
+<td><code>colors/colors_nonins_variants.csv</code></td>
+<td>7 deferred whole-food rows; input for raw_agricultural_material session</td>
+</tr>
+<tr class="odd">
+<td><code>colors/cp/README_colors.md</code></td>
+<td>Full resolution log; source for Pass 1–4 detail and deferred row notes</td>
+</tr>
+<tr class="even">
+<td><code>caas/core/sampling/unified_ingredients_data-raw_updated.json</code></td>
+<td>1,026 product rows; source for notation variant counts and examples</td>
+</tr>
+<tr class="odd">
+<td><code>caas/claims/offdata_claims.md</code></td>
+<td>7 verified claims on the full OFF export; Hindi coverage from Claim 05</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="superseded-reports" class="level3">
+<h3 class="anchored" data-anchor-id="superseded-reports">Superseded reports</h3>
+<p>Three reports were produced in the same session as this document, covering the same material as separate session logs:</p>
+<ul>
+<li><code>additives/track-a.log.qmd</code> — additives taxonomy findings and schema questions</li>
+<li><code>colors/track-a.log.qmd</code> — colours session findings and deferred rows</li>
+<li><code>caas/label-conventions.log.qmd</code> — notation variant analysis</li>
+</ul>
+<p>Those files are part of the audit trail. This report supersedes them as the primary synthesis document.</p>
+<hr>
+</section>
+</section>
+<section id="note-on-ai-authorship" class="level2">
+<h2 class="anchored" data-anchor-id="note-on-ai-authorship">Note on AI authorship</h2>
+<p>This document was drafted by Claude (Anthropic, Sonnet 4.6) in a Claude Code session on 2026-03-26, from a structured plan written by Lalitha A R.</p>
+<p><strong>What Claude did:</strong></p>
+<ul>
+<li>Read all three source reports and the fortification track-a report (used as a structural reference)</li>
+<li>Drew findings from the verified counts in each source report; no new data queries were run for this document</li>
+<li>Drafted all prose, tables, and section structure</li>
+<li>Applied iSRL tone constraints throughout — no evaluative framing, no urgency language, flat affect on findings</li>
+</ul>
+<p><strong>Constraints Claude worked under:</strong></p>
+<ul>
+<li>The original draft framed the implications section as parser/pipeline requirements (“any pipeline hitting raw label text must handle four notation variants”). This was wrong. The revision reframes implications as form field design questions — field type, field options, and edge cases the current form cannot represent. The findings sections are unchanged.</li>
+<li>All counts (88 products, 113 products, 158 entries, 30 INS colour entries, 7 deferred rows, 25 Pass 1 resolutions) are from the source reports, which were written against verified data queries. This report does not re-verify them.</li>
+<li>The synthetic/biological schema tension and the dietary flag design note are interpretations drawn from the source reports; both were developed in those reports and summarised here.</li>
+<li>No regulatory claims were made about FSSAI source disclosure requirements beyond what is stated: that mandatory source disclosure at the ingredient level for additives does not currently exist in the FSSAI framework. This is an absence of a requirement, not a gap assessment.</li>
+<li>Hindi coverage figures are from <code>caas/claims/offdata_claims.md</code> Claim 05, a verified claim from a prior session.</li>
+</ul>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

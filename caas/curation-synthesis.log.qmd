@@ -5,7 +5,7 @@ categories: [ifid, caas, additives, colors, label-conventions, data-analysis, tr
 author:
   - "Lalitha A R"
   - "Claude (Anthropic)"
-description: "Three closed sessions — additives taxonomy (158 entries), colours (30 INS entries, 7 deferred), CAAS label strings (1,026 products) — supply evidence for one question: when a pipeline encounters an additive declaration on an Indian label, what does the taxonomy need to do, and what does the label text make hard?"
+description: "Three closed sessions document what back-of-pack additive declarations on Indian labels actually contain — and what that signals about what the IFID form's fields must be capable of holding."
 format:
   html:
     toc: true
@@ -13,14 +13,16 @@ format:
 
 ## The question
 
-When someone in the IFID pipeline encounters an additive declaration on an Indian
-food label, two things need to happen: the declaration text must be normalised to a
-canonical form, and that form must map to a taxonomy entry that carries source type,
-functional class, and dietary-flag data.
+IFID is a structured form. A brand person selects an ingredient, qualifies its source,
+specifies the process, and answers field-by-field questions — is it fortified? what
+functional class does it serve on this product? The form draws from a taxonomy of
+canonical entries; the brand makes selections from it, not freeform text.
 
-Both steps have failure modes. The normalisation fails if the pipeline doesn't
-handle all notation variants found on actual labels. The taxonomy lookup fails if
-the schema cannot represent what the substance actually is.
+The question this report asks: given what Indian food labels actually declare, what
+must the form's fields be capable of holding? Three sessions supply the evidence.
+The findings document the current state of back-of-pack label declarations. The
+implications state what each finding signals about field type, field options, and
+where the current form design cannot represent what labels show.
 
 Three closed sessions supply the evidence: the additives taxonomy session (158 entries,
 closed 2026-03-13), the colours session (30 INS entries, 7 deferred, closed 2026-03-13),
@@ -70,20 +72,18 @@ Ins 330, Ins 296, Ins 551, Ins 300
 25 products use this variant. Functionally identical to Variant 2; a case-sensitive
 match treats them as different strings.
 
-**Variant 4: bare number in parentheses, no prefix**
+**Variant 4: functional class or common name followed by bare number in parentheses**
 
 ```
 Colour (162), Citric Acid (330), Acidity Regulator (330), Anticaking Agent (551)
 ```
 
-The number appears after a functional class or common name. The string gives no
-explicit signal that the number is an INS number — that is recoverable only from
-the adjacent text. Examples found in Doritos, Kurkure, and Lay's ingredient strings.
+The number appears after a functional class or common name. Examples found in Doritos,
+Kurkure, and Lay's ingredient strings.
 
 A grouping pattern also appears: `Acidity Regulators (Ins 296, Ins 330, Ins 334)`.
 This is not a fifth numbering convention; the numbers inside are Variant 2 or 3.
-But a parser that splits on parentheses or commas first will not extract the numbers
-cleanly without handling this structure specifically.
+The group declaration names multiple additives within one functional class.
 
 The five products in the table below show the E-to-INS same-substance pattern across
 manufacturers:
@@ -96,18 +96,11 @@ manufacturers:
 | Silicon dioxide (551) | Ching's Secret Instant Noodles | Bingo Potato Chips |
 | Citric acid (330) | Haldiram's Sabudana Tikki | Bingo Potato Chips |
 
-US FD&C naming was not found in the dataset. "Red 40," "Yellow 6," and similar US
-convention names do not appear. The convention mixing in Indian label data is
-specifically EU E-number vs Indian INS-number.
+FD&C-style names appear in colour declarations — see [colour declarations](#sec-colour).
 
 ### What the additives taxonomy holds
 
-The additives taxonomy closed on 2026-03-13 with 148 entries. A subsequent colours
-session on the same date identified 5 INS-numbered colour entries absent from the
-taxonomy and added them: INS 140, 150, 160d, 161b, 174. The taxonomy holds 158
-entries.
-
-Source of truth: `additives/additives_taxonomy.json`
+The additives taxonomy holds 158 entries across 12 Codex categories.
 
 **Source type distribution:**
 
@@ -167,8 +160,7 @@ non-glazing entry in the set.
 **12 entries where source_type and sources are in tension:**
 
 12 entries have `source_type: synthetic` but carry biological, fermentation-derived,
-or microbial values in the `sources` field. These are documented in
-`cp/README_additives.md` as issue O-2.
+or microbial values in the `sources` field.
 
 Fermentation-derived, biological precursor listed:
 
@@ -202,134 +194,122 @@ the same INS number covers plant-derived, animal-derived, and petrochemical prod
 routes. The entries extracted from microbial or biological sources are classified as
 `synthetic` because no `microbial` source_type exists in the schema.
 
-### What colour declarations look like
+### What colour declarations look like {#sec-colour}
 
-The colours session started from 25 INS colour entries already in the additives
-taxonomy and 44 non-INS colour variant rows from `core/all_variants_working.csv`.
+The taxonomy holds 30 INS colour entries: plant 16, synthetic 11, mineral 3.
 
-Of the 44 variant rows: 37 resolved, 5 new INS entries added to the taxonomy, 7
-rows deferred. The taxonomy holds 30 INS colour entries.
+Colour declarations on Indian labels draw from two distinct sources: INS-numbered
+colour additives, and natural whole-food materials that carry no INS number but
+appear on pack as colour declarations. The taxonomy currently holds only the first
+type. The second has no home in the current structure.
 
-**30 INS colour entries by source type:** plant 16, synthetic 11, mineral 3.
+**INS-numbered colour declarations**
 
-**How the 37 rows resolved:**
+The INS colour set includes synthetic dyes, botanical extracts, and mineral pigments.
+FD&C names appear in this category: "FD&C Red 40" refers to INS 129 (Allura Red AC).
+Botanical common names also appear: a declaration for a substance is written as its
+common name even when an INS number exists. The alias — FD&C name, common name, or
+botanical name — maps to an INS entry, but this mapping is not stored in the taxonomy.
 
-- Pass 1: 25 variant rows mapped to existing INS entries. These included FD&C-named
-  synthetic dyes (e.g. "FD&C Red 40" → INS 129 Allura Red AC) and botanical extract
-  declarations where the INS already existed.
-- Pass 2: 4 entries added — INS 140 (Chlorophylls), 160d (Lycopene), 161b (Lutein),
-  150 (Caramel).
-- Pass 3: 5 unresolvable group declarations dropped — `artificial color`, `artificial
-  colors`, `synthetic food colors`, `color vegetable juice`, `vegetable juice
-  concentrate for color`. No single INS number is resolvable from any of these.
-- Pass 4: 1 entry added — INS 174 (Silver, mineral) from `silver leaf`.
+**Whole-food colour sources with no INS number**
 
-**The 7 deferred rows:**
+The following appear on Indian labels as colour declarations and have no INS number:
 
 | Label text | Source substance | Note |
 |---|---|---|
-| kesar | saffron | Hindi name |
-| safron | saffron | Spelling variant |
-| paprika | paprika | Whole dried spice; distinct from INS 160c |
+| kesar | saffron | Hindi/common name |
+| paprika | paprika | Whole dried spice |
 | hibiscus | hibiscus | Dried flower |
-| carrot powder | carrot | Dried whole carrot; distinct from INS 160a(i) |
+| carrot powder | carrot | Dried whole carrot |
 | carrot flakes | carrot | Dried whole carrot |
 | pomegranate powder | pomegranate | Dried whole fruit powder |
 
-All 7 appear on Indian labels as colour declarations. None has an INS number. The
-deferral is not a classification decision — there is no place in the current taxonomy
-structure for them.
+The distinction between extract and whole-food form is meaningful. INS 160c is
+"Paprika extract" — a solvent-extracted oleoresin with a Codex classification. The
+paprika declaration above is the whole dried spice. INS 160a(i) is "Beta-carotene,
+vegetable," an extract from carrot; carrot powder and carrot flakes are dried whole
+carrot. The extract has an INS number; the whole-food form does not. Both appear on
+Indian labels as colour declarations.
 
-INS 160c is "Paprika extract" — a solvent-extracted oleoresin with a Codex
-classification. The paprika row in the deferred set is the whole dried spice. INS
-160a(i) is "Beta-carotene, vegetable," an extract from carrot. The carrot powder
-and carrot flakes rows are dried whole carrot. The extract has an INS number; the
-whole-food form does not. Both appear on Indian labels as colour declarations.
-
-`kesar` is the Hindi name for saffron. It appears on labels where an international-
-market label would say `saffron`. The two variant rows (`kesar`, `safron`) resolve
-to the same source substance. This is not a substance gap; it is a label normalisation
-gap — a Hindi name for a substance with no INS number.
-
-The 25 Pass 1 resolutions document an alias-mapping problem: variant label text
-(FD&C names, Hindi names, botanical common names) maps to INS numbers but this
-mapping is not currently stored in the taxonomy. The mapping was done during the
-session; it is in `colors/cp/README_colors.md` but not in a structured alias field.
+The taxonomy must be capable of retrieving both when a brand searches for a colour
+source. Currently it can return the extract; it has no entry for the whole-food form.
 
 ---
 
 ## Implications for IFID
 
-### Normalisation before lookup
+### 1. Additive lookup: what the form's search field must surface
 
-Any pipeline hitting raw Indian label text must handle four notation variants before
-taxonomy lookup:
+The brand person needs to find a taxonomy entry from whatever name they know the
+additive by. The 4 notation variants and the 35 same-substance E/INS overlaps show
+that a brand using Amul's labelling convention knows INS 322 as "E322"; a brand
+following FSSAI convention knows it as "INS 322" or "Ins 322"; a brand who looked
+up their ingredient common name knows it as "Lecithin." The form's additive search
+must return INS 322 from all four entry points. This is not a parsing requirement —
+the brand is selecting from the taxonomy — but the form's search index needs to
+cover E-number, INS-number, common name, and label alias.
 
-1. Strip `E` prefix; match remaining digits to INS key
-2. Strip `INS ` prefix (all-caps, with space) to get digits
-3. Strip `Ins ` prefix (mixed-case, with space) to get digits — case-insensitive
-   match required, or explicit case normalisation before step 2
-4. Recognise bare parenthetical number `(\d{3,4})` as an INS number when the
-   adjacent text contains a functional class or common name
+The alias problem is concrete in colour declarations: FD&C Red 40, Red 40, and
+Allura Red all point to INS 129. The form's search index needs to cover these aliases;
+the taxonomy does not currently hold them.
 
-The grouping pattern `Acidity Regulators (Ins 296, Ins 330, Ins 334)` requires
-extracting multiple numbers from within one parenthetical.
+### 2. source_type as a form field
 
-Variants 2 and 3 together cover 102 of the 113 products with INS notation. The
-bare-number variant appears across at least 8 products from three major snack
-brands.
+The 4-category schema (`synthetic | plant | mineral | animal`) is the taxonomy's
+internal classification. Whether it surfaces as a form field the brand can see or
+edit, or whether it is read-only and set by taxonomy curation, is a design decision
+the data makes visible.
 
-### source_type schema
+The 12 O-2 entries show where a single source_type cannot represent the substance.
+Glycerol (INS 422) is produced via plant, animal, and petrochemical routes — the
+same INS number, different batches. If source_type is read-only, the form shows the taxonomy classification and the
+brand cannot qualify it further. Whether the form should expose a per-product
+source qualifier — and what values it should accept — is the design question
+the data raises.
 
-The four-category schema (`synthetic | plant | mineral | animal`) conflates
-production method with biological origin. A fermentation-derived substance is both
-— it is manufactured (process) and derived from a plant feedstock by a microbial
-organism (precursor). The 12 O-2 entries are the entries where the tension becomes
-explicit in the data. Other synthetic entries with empty `sources` fields may carry
-the same tension without it being visible.
+Whether to add a `production_method` sub-field — and what values it should hold
+— is a design decision that requires domain expert input. The current taxonomy
+cannot populate it.
 
-A `production_method` sub-field would need to hold, at minimum:
-`petrochemical_synthesis`, `fermentation` (with feedstock in sources),
-`enzymatic_conversion`, `microbial_extraction`, `plant_extraction`,
-`mineral_extraction`. This field cannot be populated without a domain expert
-sourcing pass.
+### 3. Dietary flags: not a checkbox derivable from source_type alone
 
-### Dietary flags
+INS 322 (Lecithins) is `source_type: animal` in the taxonomy. Plant-derived
+lecithin from soy or sunflower is common in vegan-certified products. The taxonomy
+entry cannot distinguish the two. The dietary flag (halal / vegan / kosher) cannot
+fire automatically from source_type alone; the form must either surface the taxonomy classification and require the brand
+to confirm source, or expose a per-product source qualifier field.
 
-INS 322 (Lecithins) is `source_type: animal` in the taxonomy. Plant-derived lecithin
-— from soy or sunflower — is common in vegan-certified products; animal-origin
-lecithin (egg yolk) also exists. The single source_type assignment cannot distinguish
-them. The flag logic should surface the taxonomy classification and require source
-qualification; it should not fire automatically from source_type alone.
+The fatty acid ester cluster (INS 471, 472 variants, 470, 470a) carries the same
+issue — common emulsifiers, animal source_type in taxonomy, but plant-derived forms
+exist. FSSAI mandatory labelling does not require source disclosure at the ingredient
+level for these additives; the back-of-pack declaration does not resolve it.
 
-The same applies to the fatty acid ester cluster (INS 471, 472 variants, 470, 470a):
-these are common emulsifiers that appear on a wide range of processed food labels.
-FSSAI mandatory labelling does not currently require source disclosure for these
-additives at the ingredient level. The taxonomy carries source_type data; the label
-often does not.
+### 4. Functional class field: single-select or multi-select?
 
-### Functional class display
+73 of 158 entries carry more than one functional class. A brand declaring "emulsifier
+(INS 470)" on their label names one function; the taxonomy holds five for INS 470.
 
-73 of 158 entries carry more than one functional class. When a product label declares
-"emulsifier (INS 470)," it names one function; the taxonomy holds five for INS 470.
-IFID needs to decide whether to show all taxonomy-recorded functions, the declared-
-on-label function only, or both with the declared class flagged. The taxonomy contains
-the data needed for all three options.
+The form needs to represent two distinct things: what the taxonomy says this additive
+*can* do (all functional classes), and what function the brand is declaring on this
+product's label (what is printed on the pack). If the field is single-select, the
+brand can only record the declared function; the taxonomy's other classes are not
+surfaced. If the field is multi-select pre-populated from taxonomy, the brand must
+choose which apply to their product. The form design should distinguish these two
+representations — they answer different questions.
 
-### raw_agricultural_material lane
+### 5. A category the form does not yet have
 
-The 7 deferred colour rows need a category that does not yet exist in IFID. They are
-not additives (no INS number, not in the Codex food additives framework). They are
-not raw ingredients in the conventional IFID sense. They appear on labels as colour
-declarations. The `raw_agricultural_material` designation was identified during the
-colours session as the correct home; building that category is a separate task.
+The 7 deferred colour rows expose a gap in the form's category structure. Paprika,
+kesar/saffron, hibiscus, carrot powder — these appear on Indian labels as colour
+declarations. They are not additives (no INS number, not in the Codex food additives
+framework). In the current form structure, there is no category for them. A brand
+entering this product into IFID cannot select these under "additives" and there is
+no alternative.
 
-### Label aliases
-
-The 25 Pass 1 colour resolutions show that label text variants — FD&C names, Hindi
-names, botanical common names — map to INS numbers, but this mapping is not currently
-stored in the taxonomy. Any lookup pipeline handling Indian label text requires the
-mapping. It exists in the session README; it needs a structured home.
+The `raw_agricultural_material` designation was identified during the colours session
+as the correct home. What that category must hold, what fields it requires, and how
+it differs from the additive entry structure — that is a form design decision for a
+separate session.
 
 ---
 
@@ -341,12 +321,6 @@ export used as the CAAS source, 11 rows have Hindi ingredient text
 The 1,026-row filtered working dataset inherits this coverage profile. Any IFID work
 requiring Hindi ingredient text needs a different source.
 
-**Generic class-only declarations.** FSSAI allows declaration by class name alone in
-some contexts — "emulsifier" or "acidity regulator" without specifying which one. The
-CAAS dataset contains rows of this type (Bucket C, approximately 25 rows). How IFID
-represents a product that legally declares an additive without identifying it is
-unresolved.
-
 **INS 322 Lecithins source qualification.** Should IFID store source_type at the
 taxonomy level only, or allow a per-product source qualifier? The current architecture
 has no per-product qualifier field.
@@ -354,6 +328,11 @@ has no per-product qualifier field.
 **INS 141 empty sources.** `source_type: plant`, empty `sources` field. Every other
 plant-type entry carries at least one source value. Whether this is a curation gap
 or a genuine absence of public source data for this substance is unresolved.
+
+**Variant 4 declaration style.** The pattern `Functional Class (number)` — e.g.
+`Acidity Regulator (330)` — appears across at least 8 products from three snack
+brands. Whether this reflects FSSAI-prescribed notation for certain additive
+categories, or is manufacturer convention, has not been verified.
 
 **O-3 fixes.** INS 296 (Malic acid, DL-) and INS 1204 (Pullulan) have
 `codex_category: Unclassified`. Both have established Codex GSFA entries.
@@ -418,6 +397,11 @@ on 2026-03-26, from a structured plan written by Lalitha A R.
 
 **Constraints Claude worked under:**
 
+- The original draft framed the implications section as parser/pipeline requirements
+  ("any pipeline hitting raw label text must handle four notation variants"). This was
+  wrong. The revision reframes implications as form field design questions — field type,
+  field options, and edge cases the current form cannot represent. The findings sections
+  are unchanged.
 - All counts (88 products, 113 products, 158 entries, 30 INS colour entries, 7
   deferred rows, 25 Pass 1 resolutions) are from the source reports, which were
   written against verified data queries. This report does not re-verify them.

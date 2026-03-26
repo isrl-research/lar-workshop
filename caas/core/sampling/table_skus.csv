@@ -1,0 +1,1319 @@
+sku_id,sku_name,brand_id,category_id
+1,fortune rice arborio rice,,31
+2,fortune atta whole wheat,ifid-b-00001,27
+3,fortune basmati rice,ifid-b-00004,31
+4,fortune blended oil,ifid-b-00001,28
+5,fortune brown rice,ifid-b-00004,31
+6,fortune chakki fresh atta,ifid-b-00002,27
+7,fortune coconut oil,ifid-b-00003,28
+8,fortune flour maida,ifid-b-00002,27
+9,fortune groundnut oil,ifid-b-00003,28
+10,fortune mini soya chunks,ifid-b-00005,30
+11,fortune multigrain atta,ifid-b-00002,27
+12,fortune mustard oil,ifid-b-00003,28
+13,fortune refined rice bran oil,ifid-b-00001,28
+14,fortune refined soybean oil,ifid-b-00001,28
+15,fortune refined sunflower oil,ifid-b-00001,28
+16,fortune rice biryani,ifid-b-00001,31
+17,fortune rice bran oil,ifid-b-00003,28
+18,fortune rice sella,ifid-b-00001,31
+19,fortune soyabean oil,ifid-b-00003,28
+20,fortune soya chunks,ifid-b-00005,30
+21,fortune soya granules,ifid-b-00005,30
+22,fortune sunflower oil 17% less oil absorption,ifid-b-00003,28
+23,fortune sunflower oil sunlite,ifid-b-00003,28
+24,fortune whole wheat atta,ifid-b-00002,27
+25,king's blended oil,ifid-b-00006,28
+26,king's kachi ghani mustard oil,ifid-b-00006,28
+27,king's refined soyabean oil,ifid-b-00006,28
+28,king's refined soybean oil,ifid-b-00006,28
+29,king's refined sunflower oil,ifid-b-00006,28
+30,kohinoor basmati rice silver,ifid-b-00007,31
+31,kohinoor basmati rice traditional,ifid-b-00007,31
+32,kohinoor brown basmati rice,ifid-b-00007,31
+33,kohinoor classic gold basmati rice,ifid-b-00007,31
+34,kohinoor extra flavor basmati rice,ifid-b-00007,31
+35,kohinoor heritage basmati rice,ifid-b-00007,31
+36,kohinoor mogra basmati rice,ifid-b-00007,31
+37,raag gold vanaspati,ifid-b-00008,29
+38,raag premium vanaspati,ifid-b-00008,29
+39,raag vanaspati ghee,ifid-b-00008,29
+40,act ii microwave popcorn butter,ifid-b-00009,21
+41,act ii ready to eat popcorn,ifid-b-00009,21
+42,sundrop refined rice bran oil,ifid-b-00010,28
+43,sundrop refined soybean oil,ifid-b-00010,28
+44,sundrop refined sunflower oil,ifid-b-00010,28
+45,amul almond bar,ifid-b-00013,34
+46,amul alphonso mango,ifid-b-00014,36
+47,amul belgian milk chocolate,ifid-b-00013,34
+48,amul best wishes emotion pack,ifid-b-00013,34
+49,amul bindaaz wafer chocolate,ifid-b-00013,34
+50,amul buffalo milk,ifid-b-00018,9
+51,amul butterscotch,ifid-b-00014,36
+52,amul butter table butter,ifid-b-00011,8
+53,amul camel milk chocolate,ifid-b-00013,34
+54,amul chai mazza,ifid-b-00018,9
+55,amul cheese sauce,ifid-b-00012,8
+56,amul cheese spread,ifid-b-00012,8
+57,amul choco almond kesar badam,ifid-b-00014,36
+58,amul choco caramel sundae,ifid-b-00014,36
+59,amul choco cracker,ifid-b-00013,34
+60,amul chocolate,ifid-b-00014,36
+61,amul chocolate magic sundae,ifid-b-00014,36
+62,amul chocolate syrup,ifid-b-00013,34
+63,amul chocomini,ifid-b-00013,34
+64,amul chocozoo,ifid-b-00013,34
+65,amul cow milk,ifid-b-00018,9
+66,amul cream cheese,ifid-b-00012,8
+67,amul dark chocolate 55 percent,ifid-b-00013,34
+68,amul dark chocolate 75 percent,ifid-b-00013,34
+69,amul dark chocolate 90 percent,ifid-b-00013,34
+70,amul dark chocolate 99 percent,ifid-b-00013,34
+71,amul diced mozzarella cheese,ifid-b-00012,8
+72,amul energy bar,ifid-b-00013,14
+73,amul fruit n nut,ifid-b-00014,36
+74,amul fruit n nut dark chocolate,ifid-b-00013,34
+75,amul gold,ifid-b-00018,9
+76,amul gouda cheese,ifid-b-00012,8
+77,amul green tea dark chocolate,ifid-b-00013,34
+78,amul happy birthday emotion pack,ifid-b-00013,34
+79,amul hazelnut chocolate,ifid-b-00013,34
+80,amul i love you emotion pack,ifid-b-00013,34
+81,amul kesar pista,ifid-b-00014,36
+82,amul kool cafe,ifid-b-00015,3
+83,amul kool flavoured milk badam,ifid-b-00015,3
+84,amul kool flavoured milk elaichi,ifid-b-00015,3
+85,amul kool flavoured milk kesar,ifid-b-00015,3
+86,amul kool flavoured milk rose,ifid-b-00015,3
+87,amul kool flavoured milk thandai,ifid-b-00015,3
+88,amul kool koko,ifid-b-00015,3
+89,amul kool shakers badam,ifid-b-00015,3
+90,amul kool shakers mango,ifid-b-00015,3
+91,amul kool shakers strawberry,ifid-b-00015,3
+92,amul kool sugar free,ifid-b-00015,3
+93,amul lassi kesar,ifid-b-00016,3
+94,amul lassi mango,ifid-b-00016,3
+95,amul lassi pineapple,ifid-b-00016,3
+96,amul lassi rose,ifid-b-00016,3
+97,amul masti spiced buttermilk,ifid-b-00017,9
+98,amul milk chocolate,ifid-b-00013,34
+99,amul mithai mate 200gm tin,ifid-b-00019,10
+100,amul mithai mate 400gm tin,ifid-b-00019,10
+101,amul mystic mocha dark chocolate,ifid-b-00013,34
+102,amul pizza mozzarella cheese,ifid-b-00012,8
+103,amul processed cheese block,ifid-b-00012,8
+104,amul processed cheese cubes,ifid-b-00012,8
+105,amul processed cheese slices,ifid-b-00012,8
+106,amul protein lassi plain,ifid-b-00016,3
+107,amul raisin n almond,ifid-b-00013,34
+108,amul rajbhog,ifid-b-00014,36
+109,amul salted caramel,ifid-b-00014,36
+110,amul shahi anjir,ifid-b-00014,36
+111,amul shakti,ifid-b-00018,9
+112,amul single origin colombia dark chocolate,ifid-b-00013,34
+113,amul single origin ecuador dark chocolate,ifid-b-00013,34
+114,amul single origin india dark chocolate,ifid-b-00013,34
+115,amul single origin india milk chocolate,ifid-b-00013,34
+116,amul single origin ivory coast dark chocolate,ifid-b-00013,34
+117,amul single origin madagascar dark chocolate,ifid-b-00013,34
+118,amul single origin peru dark chocolate,ifid-b-00013,34
+119,amul single origin tanzania dark chocolate,ifid-b-00013,34
+120,amul single origin venezuela dark chocolate,ifid-b-00013,34
+121,amul slim n trim,ifid-b-00018,9
+122,amul strawberry,ifid-b-00014,36
+123,amul sugar free dark chocolate,ifid-b-00013,34
+124,amul sugar free ice cream,ifid-b-00014,36
+125,amul super fruit white chocolate,ifid-b-00013,34
+126,amul taaza,ifid-b-00018,9
+127,amul tropical orange dark chocolate,ifid-b-00013,34
+128,amul unsalted butter,ifid-b-00011,8
+129,amul vanilla,ifid-b-00014,36
+130,amul white limon chocolate,ifid-b-00013,34
+131,amulya dairy whitener 1kg,ifid-b-00020,10
+132,sagar ghee 1 litre,ifid-b-00021,29
+133,sagar skimmed milk,ifid-b-00018,9
+134,sagar skimmed milk powder 1kg,ifid-b-00021,10
+135,balaji cream wafers,ifid-b-00022,24
+136,balaji namkeen chivda,ifid-b-00022,26
+137,balaji namkeen kashmiri mix,ifid-b-00022,26
+138,balaji namkeen mix farali,ifid-b-00022,26
+139,balaji wafers baked chips,ifid-b-00023,25
+140,balaji wafers banana wafers,ifid-b-00023,25
+141,balaji wafers chilly chatka,ifid-b-00023,25
+142,balaji wafers cream onion,ifid-b-00023,25
+143,balaji wafers masala munch,ifid-b-00023,25
+144,balaji wafers simply salted,ifid-b-00023,25
+145,balaji wafers tandoori tadka,ifid-b-00023,25
+146,balaji western cheese puffs,ifid-b-00024,25
+147,balaji western nacho corn chips,ifid-b-00024,25
+148,bikaji aloo bhujia,ifid-b-00025,26
+149,bikaji atta ladoo,ifid-b-00028,37
+150,bikaji bikaneri bhujia masala,ifid-b-00025,26
+151,bikaji bikaneri bhujia masala namkeen,ifid-b-00025,26
+152,bikaji bikaneri bhujia plain,ifid-b-00025,26
+153,bikaji bikaneri papad chana dal,ifid-b-00027,21
+154,bikaji bikaneri papad moong,ifid-b-00027,21
+155,bikaji bikaneri papad urad,ifid-b-00027,21
+156,bikaji gulab jamun,ifid-b-00028,37
+157,bikaji kaju katli,ifid-b-00028,37
+158,bikaji millet bhel,ifid-b-00025,26
+159,bikaji patisa,ifid-b-00028,37
+160,bikaji rasgulla,ifid-b-00028,37
+161,bikaji soan papdi cashew nut,ifid-b-00028,37
+162,bikaji soan papdi coconut,ifid-b-00028,37
+163,bikaji soan papdi orange,ifid-b-00028,37
+164,bikaji soan papdi sadabahar,ifid-b-00028,37
+165,bikaji vegetarian burger patties,ifid-b-00026,19
+166,bikano bhujia,ifid-b-00029,26
+167,bikano gulab jamun,ifid-b-00029,37
+168,bikano kaju katli,ifid-b-00029,37
+169,bikano rasgulla,ifid-b-00029,37
+170,bikano soan papdi,ifid-b-00029,37
+171,bikano plain papad,,21
+172,bikano kali mirch papad,,21
+173,50-50 gol maal butter garlic,ifid-b-00030,24
+174,50-50 jeera,ifid-b-00030,24
+175,50-50 maska chaska,ifid-b-00030,24
+176,50-50 potazos,ifid-b-00030,24
+177,50-50 sweet and salty,ifid-b-00030,24
+178,bourbon the original creme biscuit,ifid-b-00031,24
+179,britannia cake rusk original,ifid-b-00034,23
+180,britannia chocolate cake,ifid-b-00032,23
+181,britannia eggless cake rusk,ifid-b-00034,23
+182,britannia eggless fruit cake,ifid-b-00032,23
+183,britannia fruit cake,ifid-b-00032,23
+184,britannia milk rusk,ifid-b-00034,23
+185,britannia premium cake rusk original,ifid-b-00034,23
+186,britannia the laughing cow blocks,ifid-b-00033,8
+187,britannia the laughing cow cubes,ifid-b-00033,8
+188,britannia the laughing cow diced cheese,ifid-b-00033,8
+189,britannia the laughing cow round box,ifid-b-00033,8
+190,britannia the laughing cow sachets,ifid-b-00033,8
+191,britannia the laughing cow slices,ifid-b-00033,8
+192,britannia the laughing cow spreadable,ifid-b-00033,8
+193,britannia the laughing cow triangles,ifid-b-00033,8
+194,britannia toastea suji rusk,ifid-b-00034,23
+195,britannia vanilla cake,ifid-b-00032,23
+196,good day butter cookies,ifid-b-00035,24
+197,good day cashew cookies,ifid-b-00035,24
+198,good day choco chip cookies,ifid-b-00035,24
+199,good day choconut cookies,ifid-b-00035,24
+200,good day chunkies coconut,ifid-b-00035,24
+201,good day chunkies divine chocochip,ifid-b-00035,24
+202,good day chunkies double chocochip,ifid-b-00035,24
+203,good day nuts and raisins cookies,ifid-b-00035,24
+204,good day nuts cookies,ifid-b-00035,24
+205,good day pista almond cookies,ifid-b-00035,24
+206,good day pista badam cookies,ifid-b-00035,24
+207,good day rich pista badam cookies,ifid-b-00035,24
+208,good day thin cookies,ifid-b-00035,24
+209,jim jam naughty jam,ifid-b-00036,24
+210,jim jam pops,ifid-b-00036,24
+211,little hearts classic,ifid-b-00037,24
+212,marie gold avani lekhara special edition,ifid-b-00038,24
+213,marie gold classic,ifid-b-00038,24
+214,milk bikis cream biscuits,ifid-b-00039,24
+215,nutrichoice 100 percent millets apple cinnamon,ifid-b-00040,24
+216,nutrichoice digestive biscuits,ifid-b-00040,24
+217,nutrichoice oats almond and milk cookies,ifid-b-00040,24
+218,nutrichoice oats orange cookies,ifid-b-00040,24
+219,nutrichoice seeds high fibre,ifid-b-00040,24
+220,tiger coconut biscuits,ifid-b-00041,24
+221,tiger kreamz orange cream,ifid-b-00041,24
+222,tiger kreamz vanilla cream,ifid-b-00041,24
+223,winkin cow bourbon thick shake,ifid-b-00042,3
+224,winkin cow chocolate thick shake,ifid-b-00042,3
+225,winkin cow mango thick shake,ifid-b-00042,3
+226,winkin cow strawberry thick shake,ifid-b-00042,3
+227,winkin cow vanillicious thick shake,ifid-b-00042,3
+228,ching's secret instant noodles hakka,ifid-b-00043,20
+229,ching's secret instant noodles manchurian,ifid-b-00043,20
+230,ching's secret instant noodles schezwan,ifid-b-00043,20
+231,charged by thums up,ifid-b-00053,1
+232,coca-cola original,ifid-b-00044,1
+233,coca-cola zero sugar,ifid-b-00044,1
+234,diet coke,ifid-b-00044,1
+235,fanta apple delite,ifid-b-00045,1
+236,fanta orange,ifid-b-00045,1
+237,fanta orange zero sugar,ifid-b-00045,1
+238,kinley club soda,ifid-b-00046,1
+239,kinley packaged drinking water,ifid-b-00046,5
+240,kinley soda water,ifid-b-00046,1
+241,kinley strong soda,ifid-b-00046,1
+242,limca glucocharge,ifid-b-00047,1
+243,limca lime lemoni,ifid-b-00047,1
+244,limca sportz,ifid-b-00047,1
+245,limca zero sugar,ifid-b-00047,1
+246,maaza mango,ifid-b-00048,5
+247,maaza mango gold,ifid-b-00048,5
+248,minute maid apple,ifid-b-00049,5
+249,minute maid guava,ifid-b-00049,5
+250,minute maid mixed fruit,ifid-b-00049,5
+251,minute maid mosambi,ifid-b-00049,5
+252,minute maid pulpy orange,ifid-b-00049,5
+253,minute maid vita punch,ifid-b-00049,5
+254,schweppes ginger ale,ifid-b-00050,1
+255,schweppes ginger beer,ifid-b-00050,1
+256,schweppes indian tonic water,ifid-b-00050,1
+257,schweppes indian tonic water zero sugar,ifid-b-00050,1
+258,schweppes soda water,ifid-b-00050,1
+259,smartwater alkaline,ifid-b-00051,5
+260,smartwater pure electrolyte water,ifid-b-00051,5
+261,smartwater vapor distilled,ifid-b-00051,5
+262,sprite original lemon lime,ifid-b-00052,1
+263,sprite zero sugar,ifid-b-00052,1
+264,thums up original,ifid-b-00053,1
+265,thums up xforce no sugar,ifid-b-00053,1
+266,country delight fresh curd,ifid-b-00054,9
+267,country delight fresh full cream milk,ifid-b-00054,9
+268,country delight fresh ghee,ifid-b-00054,29
+269,country delight fresh paneer,ifid-b-00054,8
+270,country delight fresh toned milk,ifid-b-00054,9
+271,country delight high protein cow milk 30g,ifid-b-00054,9
+272,dabur chyawanprash classic,ifid-b-00057,11
+273,dabur chyawanprash gur jaggery,ifid-b-00057,11
+274,dabur chyawanprash kesarprash,ifid-b-00057,11
+275,dabur chyawanprash sugar free,ifid-b-00057,11
+276,dabur glucose powder,ifid-b-00058,14
+277,dabur honey immunity plus ginger,ifid-b-00059,11
+278,dabur honey organic,ifid-b-00059,33
+279,dabur honey premium,ifid-b-00059,33
+280,dabur honey pure,ifid-b-00059,33
+281,dabur honey tulsi,ifid-b-00059,11
+282,hajmola anardana pomegranate,ifid-b-00060,12
+283,hajmola chatcola cola,ifid-b-00060,12
+284,hajmola hing asafoetida,ifid-b-00060,12
+285,hajmola imli regular,ifid-b-00060,12
+286,hajmola lemon,ifid-b-00060,12
+287,hajmola mr aam mango,ifid-b-00060,12
+288,hajmola pudina mint,ifid-b-00060,12
+289,hajmola yoodley drink,ifid-b-00060,12
+290,hommade coconut paste,ifid-b-00061,15
+291,hommade ginger garlic paste,ifid-b-00061,15
+292,hommade green chilli paste,ifid-b-00061,15
+293,hommade tomato paste,ifid-b-00061,15
+294,hommade turmeric paste,ifid-b-00061,15
+295,real activ apple,ifid-b-00062,5
+296,real activ guava,ifid-b-00062,5
+297,real activ mixed fruit,ifid-b-00062,5
+298,real activ orange,ifid-b-00062,5
+299,real bites mixed fruit,ifid-b-00063,5
+300,real cheers green apple mojito tonic,ifid-b-00063,5
+301,real cheers jamuntini cocktail mixer,ifid-b-00063,5
+302,real fruit power aloe vera kiwi,ifid-b-00063,5
+303,real fruit power alphonso mango nectar,ifid-b-00063,5
+304,real fruit power apple,ifid-b-00063,5
+305,real fruit power cranberry,ifid-b-00063,5
+306,real fruit power guava,ifid-b-00063,5
+307,real fruit power lychee,ifid-b-00063,5
+308,real fruit power mango,ifid-b-00063,5
+309,real fruit power mixed fruit,ifid-b-00063,5
+310,real fruit power mosambi,ifid-b-00063,5
+311,real fruit power orange,ifid-b-00063,5
+312,real fruit power pineapple,ifid-b-00063,5
+313,real fruit power plum,ifid-b-00063,5
+314,real fruit power pomegranate,ifid-b-00063,5
+315,dodla fresh curd,ifid-b-00064,9
+316,dodla fresh milk full cream,ifid-b-00064,9
+317,dodla fresh milk toned,ifid-b-00064,9
+318,dodla ghee,ifid-b-00064,29
+319,dodla paneer,ifid-b-00064,8
+320,catch black pepper,ifid-b-00065,32
+321,catch garam masala blend,ifid-b-00065,32
+322,catch hing asafoetida,ifid-b-00065,32
+323,catch pure chilli powder,ifid-b-00065,32
+324,catch pure coriander,ifid-b-00065,32
+325,catch pure cumin,ifid-b-00065,32
+326,catch pure turmeric powder,ifid-b-00065,32
+327,pass pass chewing gum mint,ifid-b-00066,35
+328,pass pass eclairs chocolate,ifid-b-00066,35
+329,pass pass toffee original,ifid-b-00066,35
+330,pulse candy guava,ifid-b-00067,35
+331,pulse candy litchi,ifid-b-00067,35
+332,pulse candy orange,ifid-b-00067,35
+333,pulse candy pineapple,ifid-b-00067,35
+334,pulse candy raw mango,ifid-b-00067,35
+335,pulse natkaare snack,ifid-b-00067,26
+336,emami healthy tasty advans soya chunks,ifid-b-00068,21
+337,emami healthy tasty blended oil,ifid-b-00068,28
+338,emami healthy tasty maida,ifid-b-00068,27
+339,emami healthy tasty refined rice bran oil,ifid-b-00068,28
+340,emami healthy tasty refined soybean oil,ifid-b-00068,28
+341,emami healthy tasty refined sunflower oil,ifid-b-00068,28
+342,emami healthy tasty suji,ifid-b-00068,27
+343,mantra chaat masala,ifid-b-00069,32
+344,mantra chhole masala,ifid-b-00069,32
+345,mantra chicken masala,ifid-b-00069,32
+346,mantra garam masala blend,ifid-b-00069,32
+347,mantra kashmiri lal mirch,ifid-b-00069,32
+348,mantra meat masala,ifid-b-00069,32
+349,mantra pav bhaji masala,ifid-b-00069,32
+350,mantra pure chilli powder,ifid-b-00069,32
+351,mantra pure coriander powder,ifid-b-00069,32
+352,mantra pure cumin powder,ifid-b-00069,32
+353,mantra pure turmeric powder,ifid-b-00069,32
+354,mantra sabji masala,ifid-b-00069,32
+355,mantra sambar masala,ifid-b-00069,32
+356,zandu manuka honey,ifid-b-00070,11
+357,zandu organic honey,ifid-b-00070,33
+358,zandu pure honey,ifid-b-00070,33
+359,everest black pepper powder,ifid-b-00071,32
+360,everest coriander powder,ifid-b-00071,32
+361,everest cumin powder,ifid-b-00071,32
+362,everest garam masala,ifid-b-00071,32
+363,everest pav bhaji masala,ifid-b-00071,32
+364,everest pure chilli powder,ifid-b-00071,32
+365,everest pure turmeric powder,ifid-b-00071,32
+366,everest sambar masala,ifid-b-00071,32
+367,godrej jersey curd creamy,ifid-b-00072,9
+368,godrej jersey full cream milk,ifid-b-00072,9
+369,godrej jersey ghee,ifid-b-00072,29
+370,godrej jersey high protein paneer,ifid-b-00072,8
+371,godrej jersey paneer,ifid-b-00072,8
+372,godrej jersey toned milk,ifid-b-00072,9
+373,godrej yummiez burger patties,ifid-b-00073,19
+374,godrej yummiez chicken nuggets,ifid-b-00073,18
+375,godrej yummiez galouti kabab,ifid-b-00073,18
+376,godrej yummiez mixed vegetable nuggets,ifid-b-00073,19
+377,godrej yummiez paneer tikka,ifid-b-00073,19
+378,godrej yummiez paneer tikka tikki,ifid-b-00073,19
+379,godrej yummiez veg nuggets,ifid-b-00073,19
+380,gopal namkeen chivda,ifid-b-00074,26
+381,gopal namkeen traditional mix,ifid-b-00074,26
+382,gopal popcorn,ifid-b-00074,21
+383,amul happy treats aloo tikki,,19
+384,amul happy treats french fries,,19
+385,amul happy treats hash brown,,19
+386,amul happy treats paneer nuggets,,19
+387,amul happy treats veg burger patty,,19
+388,amul happy treats veggie stix,,19
+389,amul taaza uht milk buffalo,,9
+390,amul taaza uht milk full cream,,9
+391,amul taaza uht milk toned,,9
+392,haldiram's ajwain paratha,ifid-b-00078,19
+393,haldiram's aloo bhujia,ifid-b-00077,26
+394,haldiram's aloo bonda,ifid-b-00078,19
+395,haldiram's aloo gobhi paratha,ifid-b-00078,19
+396,haldiram's aloo lachha,ifid-b-00080,26
+397,haldiram's aloo mutter,ifid-b-00079,22
+398,haldiram's aloo paratha stuffed,ifid-b-00078,19
+399,haldiram's aloo tikki jhatpat bites,ifid-b-00078,19
+400,haldiram's bhel puri,ifid-b-00080,26
+401,haldiram's bhindi masala,ifid-b-00078,19
+402,haldiram's bhujia sev,ifid-b-00077,26
+403,haldiram's bombay mixture,ifid-b-00080,26
+404,haldiram's boondi masala,ifid-b-00080,26
+405,haldiram's boondi plain,ifid-b-00080,26
+406,haldiram's chanachur,ifid-b-00080,26
+407,haldiram's chana jor garam,ifid-b-00080,26
+408,haldiram's chatpata dal,ifid-b-00080,26
+409,haldiram's chatpata matar,ifid-b-00078,19
+410,haldiram's chikhalwali,ifid-b-00080,26
+411,haldiram's choley chawal combo meals,ifid-b-00078,22
+412,haldiram's choley kulcha combo meals,ifid-b-00078,22
+413,haldiram's corn flakes mixture,ifid-b-00080,26
+414,haldiram's dahi kebab,ifid-b-00078,19
+415,haldiram's dakshin express masala idli,ifid-b-00078,19
+416,haldiram's dal biji,ifid-b-00080,26
+417,haldiram's dal kachori with chutnies,ifid-b-00078,19
+418,haldiram's dal makhani,ifid-b-00079,22
+419,haldiram's dal tadka,ifid-b-00079,22
+420,haldiram's desi wraps chilli gobi,ifid-b-00078,19
+421,haldiram's desi wraps classic mix veg,ifid-b-00078,19
+422,haldiram's farali chiwda,ifid-b-00080,26
+423,haldiram's frozen gulab jamun,ifid-b-00078,37
+424,haldiram's frozen kaju katli,ifid-b-00078,37
+425,haldiram's frozen rasmalai,ifid-b-00078,37
+426,haldiram's gobi paratha,ifid-b-00078,19
+427,haldiram's hara bhara kebab,ifid-b-00078,19
+428,haldiram's hyderabadi biryani,ifid-b-00079,22
+429,haldiram's idli sambar,ifid-b-00078,19
+430,haldiram's imli pani concentrate,ifid-b-00083,15
+431,haldiram's kadhai paneer,ifid-b-00078,19
+432,haldiram's kadhi pakoda,ifid-b-00079,22
+433,haldiram's khatta dhokla,ifid-b-00078,19
+434,haldiram's khatta meetha,ifid-b-00080,26
+435,haldiram's lacha paratha,ifid-b-00078,19
+436,haldiram's lemon bhel,ifid-b-00080,26
+437,haldiram's lite chiwda,ifid-b-00080,26
+438,haldiram's long sev,ifid-b-00077,26
+439,haldiram's malai kofta,ifid-b-00078,19
+440,haldiram's masala lachcha paratha,ifid-b-00078,19
+441,haldiram's masala peanuts,ifid-b-00080,26
+442,haldiram's mixed vegetables paratha,ifid-b-00078,19
+443,haldiram's mixture,ifid-b-00080,26
+444,haldiram's moong dal,ifid-b-00080,26
+445,haldiram's muli paratha,ifid-b-00078,19
+446,haldiram's mutter paneer,ifid-b-00079,22
+447,haldiram's nimbu masala,ifid-b-00080,26
+448,haldiram's palak paneer,ifid-b-00079,22
+449,haldiram's paneer makhani,ifid-b-00079,22
+450,haldiram's paneer pakora,ifid-b-00078,19
+451,haldiram's paneer tikka masala,ifid-b-00078,19
+452,haldiram's pani puri concentrate,ifid-b-00083,15
+453,haldiram's pao bhaji,ifid-b-00079,22
+454,haldiram's plain bhujia,ifid-b-00077,26
+455,haldiram's prabhuji soan papdi,ifid-b-00082,37
+456,haldiram's pudina paratha,ifid-b-00078,19
+457,haldiram's punjabi choley,ifid-b-00079,22
+458,haldiram's punjabi samosa,ifid-b-00078,19
+459,haldiram's punjabi tadka,ifid-b-00080,26
+460,haldiram's rajma raseela,ifid-b-00079,22
+461,haldiram's rasgulla,ifid-b-00081,37
+462,haldiram's rasgulla elaichi,ifid-b-00081,37
+463,haldiram's rasgulla rose,ifid-b-00081,37
+464,haldiram's sabudana tikki,ifid-b-00078,19
+465,haldiram's salted peanuts,ifid-b-00080,26
+466,haldiram's samosa with chutnies,ifid-b-00078,19
+467,haldiram's sarson ka saag,ifid-b-00079,22
+468,haldiram's soan papdi chocolate flavour,ifid-b-00082,37
+469,haldiram's soan papdi elaichi,ifid-b-00082,37
+470,haldiram's soan papdi plain,ifid-b-00082,37
+471,haldiram's vegetable pulao,ifid-b-00079,22
+472,haldiram's yellow dal tadka,ifid-b-00079,22
+473,arokya butter,ifid-b-00084,8
+474,arokya curd creamy cup,ifid-b-00084,9
+475,arokya full cream milk,ifid-b-00084,9
+476,arokya ghee,ifid-b-00084,29
+477,arokya paneer,ifid-b-00084,8
+478,arokya toned milk pouch,ifid-b-00084,9
+479,arun ice cream ibar,ifid-b-00085,36
+480,hatsun cow ghee,ifid-b-00086,29
+481,hatsun premium ghee,ifid-b-00086,29
+482,hatsun pure ghee,ifid-b-00086,29
+483,arun icecreams vanilla,,36
+484,arun icecreams chocolate,,36
+485,arun icecreams butterscotch,,36
+486,arun icecreams pista,,36
+487,arun icecreams blackcurrant,,36
+488,arun icecreams kesar pista,,36
+489,arun icecreams kulfi maharaja,,36
+490,arun icecreams jackfruit,,36
+491,arun icecreams coffee,,36
+492,arun icecreams gajar ka halwa,,36
+493,ibaco bean vanilla,,36
+494,ibaco dark chocolate,,36
+495,ibaco strawberry,,36
+496,ibaco pistachio,,36
+497,ibaco alphonso mango,,36
+498,ibaco blackcurrant,,36
+499,ibaco blueberry cheesecake,,36
+500,ibaco belgian chocolate,,36
+501,heritage curd,ifid-b-00088,9
+502,heritage full cream milk,ifid-b-00088,9
+503,heritage ghee,ifid-b-00088,29
+504,heritage paneer,ifid-b-00088,8
+505,heritage super gold milk,ifid-b-00088,9
+506,heritage toned milk,ifid-b-00088,9
+507,boost chocolate,ifid-b-00089,4
+508,brooke bond red label classic black tea,ifid-b-00090,6
+509,brooke bond red label natural care ayurvedic,ifid-b-00090,6
+510,brooke bond red label premix masala chai sachets,ifid-b-00090,6
+511,brooke bond red label tea bags,ifid-b-00090,6
+512,bru cappuccino,ifid-b-00091,2
+513,bru cold coffee,ifid-b-00091,2
+514,bru gold,ifid-b-00091,2
+515,bru instant,ifid-b-00091,2
+516,bru roast and ground,ifid-b-00091,2
+517,bru southern trails single origin arabica,ifid-b-00091,2
+518,cornetto classic vanilla chocolate,ifid-b-00092,36
+519,cornetto nut,ifid-b-00092,36
+520,cornetto strawberry,ifid-b-00092,36
+521,cornetto strawberry vanilla,ifid-b-00092,36
+522,hellmann's real mayonnaise,ifid-b-00093,17
+523,horlicks original,ifid-b-00094,4
+524,horlicks plus with nutrimax,ifid-b-00094,4
+525,horlicks plus zero added sugar,ifid-b-00094,4
+526,horlicks zero added sugar,ifid-b-00094,4
+527,kissan berry blast jam,ifid-b-00095,17
+528,kissan chatpati hari chutney,ifid-b-00095,16
+529,kissan chilli peanut thecha chutney,ifid-b-00095,16
+530,kissan chilli tomato sauce,ifid-b-00095,17
+531,kissan creamy peanut butter,ifid-b-00095,17
+532,kissan crunchy peanut butter,ifid-b-00095,17
+533,kissan fables apricot peach dates jam,ifid-b-00095,17
+534,kissan fables blueberry mulberry dates jam,ifid-b-00095,17
+535,kissan fables strawberry raspberry dates jam,ifid-b-00095,17
+536,kissan fresh tomato ketchup,ifid-b-00095,17
+537,kissan hazelnut choco peanut spread,ifid-b-00095,17
+538,kissan khatti meethi imli khajoor chutney,ifid-b-00095,16
+539,kissan mango jam,ifid-b-00095,17
+540,kissan mixed fruit jam,ifid-b-00095,17
+541,kissan no onion no garlic tomato sauce,ifid-b-00095,17
+542,kissan orange marmalade jam,ifid-b-00095,17
+543,kissan pineapple jam,ifid-b-00095,17
+544,kissan pineapple squash,ifid-b-00095,5
+545,kissan squezo fresh tomato ketchup,ifid-b-00095,17
+546,kissan sweet and spicy ketchup,ifid-b-00095,17
+547,kissan sweet and spicy sauce,ifid-b-00095,17
+548,kissan teekhi lehsun mirch chutney,ifid-b-00095,16
+549,knorr hot and sour veg soup,ifid-b-00096,21
+550,knorr mixed vegetable soup,ifid-b-00096,21
+551,knorr soupy noodles,ifid-b-00096,20
+552,knorr sweet corn chicken soup,ifid-b-00096,21
+553,knorr sweet corn veg soup,ifid-b-00096,21
+554,kwality wall's butterscotch,ifid-b-00097,36
+555,kwality wall's cassata,ifid-b-00097,36
+556,kwality wall's chocolate,ifid-b-00097,36
+557,kwality wall's feast bars,ifid-b-00097,36
+558,kwality wall's kulfi,ifid-b-00097,36
+559,kwality wall's mango,ifid-b-00097,36
+560,kwality wall's strawberry,ifid-b-00097,36
+561,kwality wall's twister,ifid-b-00097,36
+562,kwality wall's vanilla,ifid-b-00097,36
+563,lipton green tea honey ginger,ifid-b-00098,6
+564,lipton green tea lemon,ifid-b-00098,6
+565,lipton green tea signature blend,ifid-b-00098,6
+566,lipton lemon iced tea mix 25 percent less sugar,ifid-b-00098,6
+567,lipton yellow label black tea,ifid-b-00098,6
+568,magnum brownie,ifid-b-00099,36
+569,magnum classic,ifid-b-00099,36
+570,magnum double caramel,ifid-b-00099,36
+571,magnum minis,ifid-b-00099,36
+572,taj mahal adrakh chai,ifid-b-00100,6
+573,taj mahal chai-e-gulzaar,ifid-b-00100,6
+574,taj mahal classic black tea,ifid-b-00100,6
+575,taj mahal cutting chai,ifid-b-00100,6
+576,taj mahal masala chai,ifid-b-00100,6
+577,taj mahal shah-e-darjeeling,ifid-b-00100,6
+578,taj mahal tea bags,ifid-b-00100,6
+579,the dairy factory butterscotch slow churned,ifid-b-00097,36
+580,the dairy factory chocolate slow churned,ifid-b-00097,36
+581,the dairy factory mango slow churned,ifid-b-00097,36
+582,the dairy factory vanilla slow churned,ifid-b-00097,36
+583,aashirvaad atta with high protein,ifid-b-00101,27
+584,aashirvaad atta with multigrains,ifid-b-00101,27
+585,aashirvaad select sharbati atta,ifid-b-00101,27
+586,bingo mad angles triangle corn snacks,ifid-b-00102,25
+587,bingo nachos corn chips,ifid-b-00102,25
+588,bingo popped chips,ifid-b-00102,25
+589,bingo potato chips butter garlic,ifid-b-00102,25
+590,bingo potato chips himalayan pink salt,ifid-b-00102,25
+591,bingo potato chips original style,ifid-b-00102,25
+592,bingo tedhe medhe corn snacks,ifid-b-00102,25
+593,b natural apple juice,ifid-b-00103,5
+594,b natural chatpata jamun with pink salt,ifid-b-00103,5
+595,b natural coconut water with litchi,ifid-b-00103,5
+596,b natural cranberry juice,ifid-b-00103,5
+597,b natural fruits n bits litchi,ifid-b-00103,5
+598,b natural fruits n bits mixed fruit,ifid-b-00103,5
+599,b natural guava juice,ifid-b-00103,5
+600,b natural litchi juice,ifid-b-00103,5
+601,b natural mango juice,ifid-b-00103,5
+602,b natural masala jamun juice,ifid-b-00103,5
+603,b natural mixed fruit juice,ifid-b-00103,5
+604,b natural mixed fruit plus with green coffee extract,ifid-b-00103,5
+605,b natural orange juice,ifid-b-00103,5
+606,b natural orange plus with green coffee extract,ifid-b-00103,5
+607,b natural pineapple juice,ifid-b-00103,5
+608,b natural pomegranate juice,ifid-b-00103,5
+609,b natural pomegranate plus with green coffee extract,ifid-b-00103,5
+610,b natural ratnagiri alphonso mango juice,ifid-b-00103,5
+611,candyman jellies,ifid-b-00104,35
+612,candyman sourzzz sour candies,ifid-b-00104,35
+613,candyman tadka lollipop green mango,ifid-b-00104,35
+614,candyman tadka lollipop tamarind,ifid-b-00104,35
+615,fabelle kunafa pistachio dark chocolate bar,ifid-b-00105,34
+616,fabelle pecan kunafa dark chocolate bar,ifid-b-00105,34
+617,fabelle truffle chocolates,ifid-b-00105,34
+618,kitchens of india dal bukhara,ifid-b-00106,22
+619,kitchens of india dal makhani,ifid-b-00106,22
+620,kitchens of india korma,ifid-b-00106,22
+621,kitchens of india palak paneer,ifid-b-00106,22
+622,kitchens of india paneer curry,ifid-b-00106,22
+623,kitchens of india pav bhaji,ifid-b-00106,22
+624,kitchens of india rajma masala,ifid-b-00106,22
+625,sunfeast all rounder potato biscuit,ifid-b-00107,24
+626,sunfeast bounce chocolate creme biscuits,ifid-b-00107,24
+627,sunfeast bounce elaichi creme biscuits,ifid-b-00107,24
+628,sunfeast bounce orange creme biscuits,ifid-b-00107,24
+629,sunfeast bounce pineapple creme biscuits,ifid-b-00107,24
+630,sunfeast dark fantasy bourbon,ifid-b-00108,24
+631,sunfeast dark fantasy choco chip,ifid-b-00108,24
+632,sunfeast dark fantasy choco fills,ifid-b-00108,24
+633,sunfeast dark fantasy luxuria,ifid-b-00108,24
+634,sunfeast dark fantasy yumfills cake,ifid-b-00108,23
+635,sunfeast double creme choco and vanilla biscuits,ifid-b-00107,24
+636,sunfeast double creme orange and vanilla biscuits,ifid-b-00107,24
+637,sunfeast double creme strawberry and vanilla biscuits,ifid-b-00107,24
+638,sunfeast dream creme butterscotch and vanilla biscuits,ifid-b-00107,24
+639,sunfeast dream creme choco and vanilla biscuits,ifid-b-00107,24
+640,sunfeast dream creme strawberry and vanilla biscuits,ifid-b-00107,24
+641,sunfeast farmlite digestive oats fibre biscuits,ifid-b-00107,24
+642,sunfeast marie biscuits,ifid-b-00107,24
+643,sunfeast mom's magic cashew and almond cookies,ifid-b-00109,24
+644,sunfeast mom's magic rich butter biscuits,ifid-b-00109,24
+645,sunfeast wowzers cheese creme enrobed cracker,ifid-b-00107,24
+646,sunfeast wowzers lemon creme enrobed cracker,ifid-b-00107,24
+647,sunrise aloo dum masala,ifid-b-00110,32
+648,sunrise amchur masala,ifid-b-00110,32
+649,sunrise black pepper whole,ifid-b-00110,32
+650,sunrise chaat masala,ifid-b-00110,32
+651,sunrise chicken curry masala,ifid-b-00110,32
+652,sunrise chow mix masala,ifid-b-00110,32
+653,sunrise jal jeera powder,ifid-b-00110,32
+654,sunrise jeera powder,ifid-b-00110,32
+655,sunrise kashmiri mirch ground,ifid-b-00110,32
+656,sunrise kitchen king masala,ifid-b-00110,32
+657,sunrise macher jhol masala,ifid-b-00110,32
+658,sunrise meat masala,ifid-b-00110,32
+659,sunrise paneer butter masala,ifid-b-00110,32
+660,sunrise pasta masala,ifid-b-00110,32
+661,sunrise pav bhaji masala,ifid-b-00110,32
+662,sunrise rajshahi garam masala,ifid-b-00110,32
+663,sunrise red chilli powder,ifid-b-00110,32
+664,sunrise whole ajwain,ifid-b-00110,32
+665,sunrise whole jeera,ifid-b-00110,32
+666,yippee 2-minute wow masala noodles,ifid-b-00111,20
+667,yippee gochujang noodles,ifid-b-00111,20
+668,yippee magic millet noodles,ifid-b-00111,20
+669,yippee mood masala noodles,ifid-b-00111,20
+670,yippee pan asian noodles,ifid-b-00111,20
+671,yippee power up atta noodles,ifid-b-00111,20
+672,yippee saucy masala noodles,ifid-b-00111,20
+673,yippee tom yum thai noodles,ifid-b-00111,20
+674,yoga bar 100 percent rolled oats,ifid-b-00112,7
+675,yoga bar 20g protein bar chocolate brownie,ifid-b-00112,14
+676,yoga bar 20g protein bar chocolate peanut butter,ifid-b-00112,14
+677,yoga bar 20g protein bar hazelnut,ifid-b-00112,14
+678,yoga bar 20g protein oats choco almond,ifid-b-00112,14
+679,yoga bar 26g high protein oats banana creme,ifid-b-00112,14
+680,yoga bar 26g high protein oats dark chocolate,ifid-b-00112,14
+681,yoga bar 26g high protein oats filter kapphi,ifid-b-00112,14
+682,yoga bar 26g high protein oats fruit and nut,ifid-b-00112,14
+683,yoga bar 26g high protein oats kesar pista kulfi,ifid-b-00112,14
+684,yoga bar 26g high protein oats korean fire,ifid-b-00112,14
+685,yoga bar 26g high protein oats mum's masala,ifid-b-00112,14
+686,yoga bar 26g protein shake cold coffee,ifid-b-00112,4
+687,yoga bar 26g protein shake double chocolate,ifid-b-00112,4
+688,yoga bar 26g protein shake mango rizz,ifid-b-00112,4
+689,yoga bar apricot fig protein bar,ifid-b-00112,14
+690,yoga bar creamy 100 percent unsweetened peanut butter,ifid-b-00112,17
+691,yoga bar dark chocolate and cranberry muesli,ifid-b-00112,7
+692,yoga bar dark chocolate oats,ifid-b-00112,7
+693,yoga bar fruits nuts and seeds muesli,ifid-b-00112,7
+694,yoga bar high protein muesli,ifid-b-00112,7
+695,yoga bar high protein muesli choco almond,ifid-b-00112,7
+696,yoga bar instant oats,ifid-b-00112,7
+697,yoga bar multigrain energy bar chocolate chunk nut,ifid-b-00112,14
+698,yoga bar multigrain energy bar orange cashew,ifid-b-00112,14
+699,yoga bar multigrain energy bar vanilla almond,ifid-b-00112,14
+700,yoga bar no added sugar muesli,ifid-b-00112,7
+701,yoga bar nuts and seeds multigrain energy bar,ifid-b-00112,14
+702,yoga bar nuts and seeds trail mix spicy masala,ifid-b-00112,26
+703,yoga bar proclean plant protein chocolate,ifid-b-00112,14
+704,yoga bar proclean plant protein coffee,ifid-b-00112,14
+705,yoga bar proclean whey protein chocolate,ifid-b-00112,14
+706,india gate dubar basmati rice,ifid-b-00113,31
+707,india gate mini basmati,ifid-b-00113,31
+708,india gate traditional basmati rice,ifid-b-00113,31
+709,india gate white rice,ifid-b-00113,31
+710,havmor ice cream choco brownie,ifid-b-00114,36
+711,havmor ice cream kulfi,ifid-b-00114,36
+712,havmor ice cream mango kesar,ifid-b-00114,36
+713,havmor ice cream vanilla cup,ifid-b-00114,36
+714,daawat biryani rice,ifid-b-00115,31
+715,mdh coriander powder,ifid-b-00116,32
+716,mdh cumin powder,ifid-b-00116,32
+717,mdh garam masala,ifid-b-00116,32
+718,mdh kitchen king masala,ifid-b-00116,32
+719,mdh pav bhaji masala,ifid-b-00116,32
+720,mdh pure chilli,ifid-b-00116,32
+721,mdh pure turmeric,ifid-b-00116,32
+722,mdh sambar masala,ifid-b-00116,32
+723,plix apple cider vinegar effervescent,ifid-b-00117,11
+724,plix biotin gummies,ifid-b-00117,14
+725,plix collagen effervescent,ifid-b-00117,14
+726,plix garcinia cambogia weight loss supplement,ifid-b-00117,14
+727,plix omega 3 plant based,ifid-b-00117,14
+728,plix plant protein powder,ifid-b-00117,14
+729,plix probiotics effervescent,ifid-b-00117,12
+730,plix supertots multivitamin gummies,ifid-b-00117,14
+731,plix vitamin d3 plant based,ifid-b-00117,14
+732,saffola berry crunch muesli,ifid-b-00121,7
+733,saffola cold pressed groundnut and safflower oil,ifid-b-00118,28
+734,saffola cold pressed groundnut and sesame oil,ifid-b-00118,28
+735,saffola cold pressed groundnut oil,ifid-b-00118,28
+736,saffola cold pressed mustard oil,ifid-b-00118,28
+737,saffola cold pressed sesame oil,ifid-b-00118,28
+738,saffola cuppa oats,ifid-b-00121,22
+739,saffola honey active sundarban forest,ifid-b-00119,33
+740,saffola honey organic,ifid-b-00119,33
+741,saffola honey pure multiflora,ifid-b-00119,33
+742,saffola masala oats cheesy italiana,ifid-b-00120,22
+743,saffola masala oats classic masala,ifid-b-00120,22
+744,saffola masala oats masala and coriander,ifid-b-00120,22
+745,saffola masala oats peppy tomato,ifid-b-00120,22
+746,saffola masala oats veggie twist,ifid-b-00120,22
+747,saffola mealmaker mini soya chunks,ifid-b-00122,21
+748,saffola mealmaker soya chunks,ifid-b-00122,21
+749,saffola muesli fruit and nut,ifid-b-00121,7
+750,saffola premium blended oil,ifid-b-00118,28
+751,saffola refined canola oil,ifid-b-00118,28
+752,saffola refined rice bran oil,ifid-b-00118,28
+753,saffola refined soyabean oil,ifid-b-00118,28
+754,saffola refined sunflower oil sunlite,ifid-b-00118,28
+755,saffola rolled oats multigrain,ifid-b-00121,7
+756,saffola rolled oats plain,ifid-b-00121,7
+757,saffola soya granules,ifid-b-00122,21
+758,saffola wild forest organic honey,ifid-b-00119,33
+759,true elements 5pm crunch,ifid-b-00123,26
+760,true elements 7 in 1 seeds mix,ifid-b-00123,26
+761,true elements 9 in 1 snack mix,ifid-b-00123,26
+762,true elements almonds,ifid-b-00123,26
+763,true elements cashews,ifid-b-00123,26
+764,true elements dryfruit chikki,ifid-b-00123,37
+765,true elements panchmeva trail mix,ifid-b-00123,26
+766,true elements protein crunchy minis,ifid-b-00123,26
+767,true elements raw pumpkin seeds,ifid-b-00123,32
+768,true elements raw sunflower seeds,ifid-b-00123,32
+769,true elements roasted chana,ifid-b-00123,26
+770,true elements roasted flax seeds,ifid-b-00123,32
+771,true elements roasted watermelon seeds,ifid-b-00123,32
+772,true elements wholewheat granola,ifid-b-00123,7
+773,mccain aloo tikki,ifid-b-00124,19
+774,mccain cheesy pizza fingers,ifid-b-00124,19
+775,mccain french fries,ifid-b-00124,19
+776,mccain popcorn fries,ifid-b-00124,21
+777,bournvita chocolate,ifid-b-00127,4
+778,bournvita lil champs,ifid-b-00127,4
+779,bournvita original,ifid-b-00127,4
+780,cadbury 5 star chomp,ifid-b-00125,34
+781,cadbury 5 star crunchy,ifid-b-00125,34
+782,cadbury 5 star fruit and nut,ifid-b-00125,34
+783,cadbury 5 star oreo,ifid-b-00125,34
+784,cadbury 5 star original,ifid-b-00125,34
+785,cadbury bournville chopped hazelnut,ifid-b-00126,34
+786,cadbury bournville cranberry,ifid-b-00126,34
+787,cadbury bournville raisin and nut,ifid-b-00126,34
+788,cadbury bournville rich cocoa 50 percent,ifid-b-00126,34
+789,cadbury bournville salted caramel,ifid-b-00126,34
+790,cadbury dairy milk biscoff,ifid-b-00128,34
+791,cadbury dairy milk classic,ifid-b-00128,34
+792,cadbury dairy milk crackle,ifid-b-00128,34
+793,cadbury dairy milk fruit and nut,ifid-b-00128,34
+794,cadbury dairy milk milkinis classic,ifid-b-00128,34
+795,cadbury dairy milk milkinis orange boost,ifid-b-00128,34
+796,cadbury dairy milk roast almond,ifid-b-00128,34
+797,cadbury dairy milk silk,ifid-b-00128,34
+798,cadbury dairy milk silk bubbly,ifid-b-00128,34
+799,cadbury dairy milk silk crackle,ifid-b-00128,34
+800,cadbury dairy milk silk fruit and nut,ifid-b-00128,34
+801,cadbury dairy milk silk hazelnut,ifid-b-00128,34
+802,cadbury dairy milk silk mousse,ifid-b-00128,34
+803,cadbury dairy milk silk oreo,ifid-b-00128,34
+804,cadbury dairy milk silk roast almond,ifid-b-00128,34
+805,cadbury gems minis,ifid-b-00129,34
+806,cadbury gems original,ifid-b-00129,34
+807,cadbury perk double chocolate,ifid-b-00131,34
+808,cadbury perk mint,ifid-b-00131,34
+809,cadbury perk original,ifid-b-00131,34
+810,oreo chocolate,ifid-b-00130,24
+811,oreo double stuf,ifid-b-00130,24
+812,oreo minis,ifid-b-00130,24
+813,oreo strawberry,ifid-b-00130,24
+814,oreo thins,ifid-b-00130,24
+815,oreo toffee crunch,ifid-b-00130,24
+816,oreo vanilla,ifid-b-00130,24
+817,tang energy orange,ifid-b-00132,5
+818,tang lemon,ifid-b-00132,5
+819,tang mango,ifid-b-00132,5
+820,tang orange,ifid-b-00132,5
+821,tang pineapple,ifid-b-00132,5
+822,tang strawberry,ifid-b-00132,5
+823,tang sugar free orange,ifid-b-00132,5
+824,tang tropical cocktail,ifid-b-00132,5
+825,toblerone crispy coconut,ifid-b-00133,34
+826,toblerone crunchy salted almond,ifid-b-00133,34
+827,toblerone dark chocolate,ifid-b-00133,34
+828,toblerone golden caramel,ifid-b-00133,34
+829,toblerone honeycomb crisp,ifid-b-00133,34
+830,toblerone milk chocolate,ifid-b-00133,34
+831,toblerone milk chocolate mint crisp,ifid-b-00133,34
+832,toblerone onebyone individual pieces,ifid-b-00133,34
+833,toblerone white chocolate,ifid-b-00133,34
+834,dhara mustard oil,ifid-b-00134,28
+835,dhara refined groundnut oil,ifid-b-00134,28
+836,dhara refined rice bran oil,ifid-b-00134,28
+837,dhara refined soyabean oil,ifid-b-00134,28
+838,dhara refined soybean oil,ifid-b-00134,28
+839,dhara refined sunflower oil,ifid-b-00134,28
+840,mother dairy butter,ifid-b-00136,8
+841,mother dairy butterscotch combo,ifid-b-00135,36
+842,mother dairy butterscotch cone,ifid-b-00135,36
+843,mother dairy cassatta,ifid-b-00135,36
+844,mother dairy cheese slices,ifid-b-00136,8
+845,mother dairy chocobar,ifid-b-00135,36
+846,mother dairy choco vanilla cone,ifid-b-00135,36
+847,mother dairy full cream milk,ifid-b-00136,9
+848,mother dairy ghee,ifid-b-00136,29
+849,mother dairy ice candy,ifid-b-00135,36
+850,mother dairy kesar pista kulfi,ifid-b-00135,36
+851,mother dairy milkshake chocolate,ifid-b-00136,3
+852,mother dairy milkshake strawberry,ifid-b-00136,3
+853,mother dairy paneer,ifid-b-00136,8
+854,mother dairy pure buffalo milk,ifid-b-00136,9
+855,mother dairy shahi meva malai tub,ifid-b-00135,36
+856,mother dairy strawberry crush tub,ifid-b-00135,36
+857,mother dairy toned milk pouch,ifid-b-00136,9
+858,mother dairy uht milk tetra pack,ifid-b-00136,9
+859,mother dairy vanilla cup,ifid-b-00135,36
+860,safal frozen aloo tikki,ifid-b-00137,19
+861,safal frozen french fries,ifid-b-00137,19
+862,safal frozen mix vegetables,ifid-b-00137,19
+863,safal frozen vegetable nuggets,ifid-b-00137,19
+864,safal mango pulp,ifid-b-00137,5
+865,safal tomato puree,ifid-b-00137,15
+866,cerelac banana,ifid-b-00138,13
+867,cerelac five grains fruits,ifid-b-00138,13
+868,cerelac honey,ifid-b-00138,13
+869,cerelac maize,ifid-b-00138,13
+870,cerelac rice,ifid-b-00138,13
+871,cerelac rice vegetables,ifid-b-00138,13
+872,cerelac three fruits,ifid-b-00138,13
+873,cerelac wheat,ifid-b-00138,13
+874,cerelac wheat apple,ifid-b-00138,13
+875,kitkat chunky milk chocolate,ifid-b-00139,34
+876,kitkat chunky peanut butter,ifid-b-00139,34
+877,kitkat chunky white chocolate,ifid-b-00139,34
+878,kitkat classic milk chocolate,ifid-b-00139,34
+879,kitkat dark chocolate,ifid-b-00139,34
+880,kitkat hazelnut,ifid-b-00139,34
+881,kitkat orange chocolate,ifid-b-00139,34
+882,maggi 2-minute masala noodles,ifid-b-00140,20
+883,maggi 2-minute no onion no garlic noodles,ifid-b-00140,20
+884,maggi amritsari achari masala noodles,ifid-b-00140,20
+885,maggi bengali jhaal masala noodles,ifid-b-00140,20
+886,maggi chicken cuppa,ifid-b-00140,20
+887,maggi chicken noodles,ifid-b-00140,20
+888,maggi chilly chow cuppa,ifid-b-00140,20
+889,maggi cuppa korean spicy cheesy noodles,ifid-b-00140,20
+890,maggi hot heads barbeque pepper noodles,ifid-b-00140,20
+891,maggi hot heads chilli chicken noodles,ifid-b-00140,20
+892,maggi hot heads cuppa barbeque pepper,ifid-b-00140,20
+893,maggi hot heads cuppa peri peri,ifid-b-00140,20
+894,maggi hot heads green chilli noodles,ifid-b-00140,20
+895,maggi hot heads peri peri noodles,ifid-b-00140,20
+896,maggi korean bbq chicken noodles,ifid-b-00140,20
+897,maggi korean bbq veg noodles,ifid-b-00140,20
+898,maggi masala cuppa,ifid-b-00140,20
+899,maggi mumbaiya chatak masala noodles,ifid-b-00140,20
+900,maggi nutri-licious atta masala noodles,ifid-b-00140,20
+901,maggi nutri-licious oats masala noodles,ifid-b-00140,20
+902,maggi special masala noodles,ifid-b-00140,20
+903,maggi super chennai masala noodles,ifid-b-00140,20
+904,maggi vegetable spinach atta noodles,ifid-b-00140,20
+905,maggi veggie masala noodles,ifid-b-00140,20
+906,milkmaid sweetened condensed milk,ifid-b-00141,10
+907,milkybar moosha cocoa crispies,ifid-b-00142,34
+908,milkybar white chocolate,ifid-b-00142,34
+909,munch butterscotch max,ifid-b-00143,34
+910,munch coated wafer chocolate,ifid-b-00143,34
+911,munch max coated wafer chocolate,ifid-b-00143,34
+912,nescafé all in one frappe instant cold coffee premix,ifid-b-00144,2
+913,nescafé blend 37 coffee,ifid-b-00144,2
+914,nescafé cappuccino instant coffee premix,ifid-b-00144,2
+915,nescafé chilled latte cold coffee,ifid-b-00144,2
+916,nescafé choco mocha cold coffee,ifid-b-00144,2
+917,nescafé choco mocha instant coffee premix,ifid-b-00144,2
+918,nescafé classic instant coffee,ifid-b-00144,2
+919,nescafé gold blend instant coffee,ifid-b-00144,2
+920,nescafé gold coffee,ifid-b-00144,2
+921,nescafé hazelnut cold coffee,ifid-b-00144,2
+922,nescafé iced latte cold coffee,ifid-b-00144,2
+923,nescafé ice roast instant coffee powder,ifid-b-00144,2
+924,nescafé intense café cold coffee,ifid-b-00144,2
+925,nescafé intense latte cold coffee,ifid-b-00144,2
+926,nescafé sunrise chicory mix,ifid-b-00144,2
+927,nescafé sunrise extra strong,ifid-b-00144,2
+928,nestea lemon iced tea,ifid-b-00145,6
+929,nestea peach iced tea,ifid-b-00145,6
+930,nestlé everyday dairy whitener,ifid-b-00146,10
+931,polo mint peppermint,ifid-b-00147,35
+932,polo paan flavoured,ifid-b-00147,35
+933,polo spearmint,ifid-b-00147,35
+934,eastern spices black pepper powder,ifid-b-00148,32
+935,eastern spices coriander powder,ifid-b-00148,32
+936,eastern spices garam masala,ifid-b-00148,32
+937,eastern spices pure chilli powder,ifid-b-00148,32
+938,eastern spices sambar powder,ifid-b-00148,32
+939,eastern spices turmeric powder,ifid-b-00148,32
+940,mtr dosa mix,ifid-b-00149,21
+941,mtr instant dosa,ifid-b-00149,21
+942,mtr instant rava idli,ifid-b-00149,21
+943,mtr khichdi mix,ifid-b-00149,21
+944,mtr pulao mix,ifid-b-00149,21
+945,mtr rava idli mix,ifid-b-00149,21
+946,mtr ready-to-eat sweets gulab jamun,ifid-b-00149,37
+947,mtr uttapam mix,ifid-b-00149,21
+948,rasoi magic biryani mix,ifid-b-00150,15
+949,rasoi magic paneer tikka mix,ifid-b-00150,15
+950,rasoi magic rasam mix,ifid-b-00150,15
+951,rasoi magic sambar mix,ifid-b-00150,15
+952,appy apple juice,ifid-b-00151,5
+953,appy apple juice no added sugar,ifid-b-00151,5
+954,appy fizz apple sparkling,ifid-b-00152,1
+955,appy fizz apple zero sugar,ifid-b-00152,1
+956,bailley mineral water,ifid-b-00153,5
+957,bailley soda water,ifid-b-00153,1
+958,b-fizz malt apple sparkling,ifid-b-00154,1
+959,b-fizz malt apple zero sugar,ifid-b-00154,1
+960,dhishoom jeera soda sparkling,ifid-b-00155,1
+961,frooti mango,ifid-b-00156,5
+962,smoodh chocolate hazelnut milk,ifid-b-00157,3
+963,smoodh chocolate milk,ifid-b-00157,3
+964,smoodh coffee frappe milk,ifid-b-00157,3
+965,smoodh kesar badam milk,ifid-b-00157,3
+966,smoodh lassi plain,ifid-b-00157,3
+967,smoodh toffee caramel milk,ifid-b-00157,3
+968,20-20 butter cookies,ifid-b-00158,24
+969,20-20 cashew cookies,ifid-b-00158,24
+970,20-20 coconut cookies,ifid-b-00158,24
+971,20-20 gold cashew,ifid-b-00158,24
+972,hide and seek black bourbon,ifid-b-00161,24
+973,hide and seek bourbon creme,ifid-b-00161,24
+974,hide and seek butter,ifid-b-00161,24
+975,hide and seek butterscotch,ifid-b-00161,24
+976,hide and seek caffe mocha,ifid-b-00161,24
+977,hide and seek cashew badam,ifid-b-00161,24
+978,hide and seek chocolate chip,ifid-b-00161,24
+979,hide and seek fab chocolate,ifid-b-00161,24
+980,hide and seek milano,ifid-b-00161,24
+981,hide and seek milano minis,ifid-b-00161,24
+982,hide and seek orange,ifid-b-00161,24
+983,krackjack butter masala,ifid-b-00163,24
+984,krackjack jeera,ifid-b-00163,24
+985,krackjack original sweet and salty,ifid-b-00163,24
+986,monaco classic salted,ifid-b-00166,24
+987,monaco jeffs zeera,ifid-b-00166,24
+988,monaco piri piri,ifid-b-00166,24
+989,monaco pizza,ifid-b-00166,24
+990,monaco sixer salted,ifid-b-00166,24
+991,parle bigger mango bite,ifid-b-00164,35
+992,parle cheeslings original,ifid-b-00159,24
+993,parle-g dark,ifid-b-00167,24
+994,parle-g gold,ifid-b-00167,24
+995,parle-g multi grain atta,ifid-b-00167,24
+996,parle-g oats and berries,ifid-b-00167,24
+997,parle-g original glucose biscuits,ifid-b-00167,24
+998,parle-g royale,ifid-b-00167,24
+999,parle hide and seek fab chocolate,ifid-b-00160,24
+1000,parle hide and seek fab orange,ifid-b-00160,24
+1001,parle kaccha mango bite,ifid-b-00164,35
+1002,parle kismi milk toffee,ifid-b-00162,35
+1003,parle kismi rose milk toffee,ifid-b-00162,35
+1004,parle kismi toffee,ifid-b-00162,35
+1005,parle mango bite candy,ifid-b-00164,35
+1006,parle melody chocolaty,ifid-b-00165,34
+1007,parle monaco cheeslings classic,ifid-b-00159,24
+1008,parle premium rusk coconut,ifid-b-00168,23
+1009,parle premium rusk elaichi,ifid-b-00168,23
+1010,parle premium rusk original,ifid-b-00168,23
+1011,mahakosh refined mustard oil,ifid-b-00169,28
+1012,mahakosh refined soybean oil,ifid-b-00169,28
+1013,mahakosh refined sunflower oil,ifid-b-00169,28
+1014,nutrela soya chunks regular,ifid-b-00170,21
+1015,nutrela soya granules,ifid-b-00170,21
+1016,patanjali bajra atta,ifid-b-00171,27
+1017,patanjali besan gram flour,ifid-b-00171,27
+1018,patanjali butter cookies,ifid-b-00172,24
+1019,patanjali cow ghee,ifid-b-00173,29
+1020,patanjali doodh biscuits,ifid-b-00172,24
+1021,patanjali extra fibre atta,ifid-b-00171,27
+1022,patanjali glucose biscuits,ifid-b-00172,24
+1023,patanjali gluten free atta,ifid-b-00171,27
+1024,patanjali jau atta barley flour,ifid-b-00171,27
+1025,patanjali jeera biscuits,ifid-b-00172,24
+1026,patanjali jeera cookies,ifid-b-00172,24
+1027,patanjali kuttu atta buckwheat,ifid-b-00171,27
+1028,patanjali maida,ifid-b-00171,27
+1029,patanjali makka atta maize flour,ifid-b-00171,27
+1030,patanjali methi atta fenugreek,ifid-b-00171,27
+1031,patanjali multigrain biscuits,ifid-b-00172,24
+1032,patanjali oat cookies,ifid-b-00172,24
+1033,patanjali organic cow ghee,ifid-b-00173,29
+1034,patanjali organic wild honey,ifid-b-00174,33
+1035,patanjali pure honey,ifid-b-00174,33
+1036,patanjali ragi cookies digestive,ifid-b-00172,24
+1037,patanjali sooji semolina,ifid-b-00171,27
+1038,patanjali sugar free biscuits,ifid-b-00172,24
+1039,patanjali traditional whole wheat atta,ifid-b-00171,27
+1040,patanjali wheatgerm biscuits,ifid-b-00172,24
+1041,ruchi gold mustard oil,ifid-b-00175,28
+1042,ruchi gold refined soybean oil,ifid-b-00175,28
+1043,ruchi gold refined sunflower oil,ifid-b-00175,28
+1044,sunrich refined groundnut oil,ifid-b-00176,28
+1045,sunrich refined rice bran oil,ifid-b-00176,28
+1046,sunrich refined soybean oil,ifid-b-00176,28
+1047,sunrich refined sunflower oil,ifid-b-00176,28
+1048,7up original lemon lime,ifid-b-00177,1
+1049,7up zero sugar,ifid-b-00177,1
+1050,doritos cool ranch,ifid-b-00178,25
+1051,doritos dinamita fiery lime and chilli,ifid-b-00178,25
+1052,doritos dinamita sizzlin hot,ifid-b-00178,25
+1053,doritos nacho cheese,ifid-b-00178,25
+1054,doritos sweet chili,ifid-b-00178,25
+1055,gatorade blue bolt,ifid-b-00179,4
+1056,gatorade lemon,ifid-b-00179,4
+1057,gatorade orange,ifid-b-00179,4
+1058,gatorade zero sugar blue bolt,ifid-b-00179,4
+1059,gatorade zero sugar orange,ifid-b-00179,4
+1060,kurkure chatpata cheese,ifid-b-00180,25
+1061,kurkure chilli chatka,ifid-b-00180,25
+1062,kurkure green chutney rajasthani style,ifid-b-00180,25
+1063,kurkure jowar puffs,ifid-b-00180,25
+1064,kurkure masala munch,ifid-b-00180,25
+1065,kurkure naughty tomato,ifid-b-00180,25
+1066,kurkure pastax,ifid-b-00180,25
+1067,kurkure protein bhujiya,ifid-b-00180,25
+1068,kurkure puffcorn yummy cheese,ifid-b-00180,25
+1069,kurkure schezwan chutney,ifid-b-00180,25
+1070,kurkure solid masti,ifid-b-00180,25
+1071,kurkure zig zag,ifid-b-00180,25
+1072,lay's american style cream and onion,ifid-b-00181,25
+1073,lay's baked,ifid-b-00181,25
+1074,lay's classic salted,ifid-b-00181,25
+1075,lay's flaming hot,ifid-b-00181,25
+1076,lay's honey bbq,ifid-b-00181,25
+1077,lay's kettle cooked,ifid-b-00181,25
+1078,lay's kettle cooked indian tikka masala,ifid-b-00181,25
+1079,lay's lime and masala masti,ifid-b-00181,25
+1080,lay's magic masala,ifid-b-00181,25
+1081,lay's mexican salsa,ifid-b-00181,25
+1082,lay's salt and vinegar,ifid-b-00181,25
+1083,lay's spanish tomato tango,ifid-b-00181,25
+1084,lay's stax masala,ifid-b-00181,25
+1085,lay's stax original,ifid-b-00181,25
+1086,lay's wafer himalayan pink salt,ifid-b-00181,25
+1087,lay's wavy masala,ifid-b-00181,25
+1088,lay's wavy original,ifid-b-00181,25
+1089,mirinda orange,ifid-b-00182,1
+1090,mountain dew original citrus,ifid-b-00183,1
+1091,mountain dew zero sugar,ifid-b-00183,1
+1092,pepsi black,ifid-b-00184,1
+1093,pepsi cola classic,ifid-b-00184,1
+1094,pepsi no sugar,ifid-b-00184,1
+1095,quaker instant oats herby cheese,ifid-b-00185,22
+1096,quaker instant oats masala magic,ifid-b-00185,22
+1097,quaker instant oats mixed berries,ifid-b-00185,22
+1098,quaker oats muesli berries and seeds,ifid-b-00185,7
+1099,quaker oats muesli fruit and nut,ifid-b-00185,7
+1100,quaker oats multigrain,ifid-b-00185,7
+1101,quaker oats rolled,ifid-b-00185,7
+1102,quaker oats whole grain,ifid-b-00185,7
+1103,slice mango,ifid-b-00186,5
+1104,slice mango no sugar,ifid-b-00186,5
+1105,tropicana apple,ifid-b-00187,5
+1106,tropicana coconut water,ifid-b-00187,5
+1107,tropicana guava,ifid-b-00187,5
+1108,tropicana mango,ifid-b-00187,5
+1109,tropicana mixed fruit,ifid-b-00187,5
+1110,tropicana orange delight,ifid-b-00187,5
+1111,tropicana pomegranate,ifid-b-00187,5
+1112,yellow diamond chips masala punch,ifid-b-00188,25
+1113,yellow diamond chips potato simply salted,ifid-b-00188,25
+1114,yellow diamond chips spicy tadka,ifid-b-00188,25
+1115,yellow diamond namkeen mix,ifid-b-00188,26
+1116,yellow diamond puffs,ifid-b-00188,25
+1117,lt foods daawat biryani kit ready-to-cook,,21
+1118,lt foods daawat classic basmati rice,,31
+1119,lt foods daawat cuppa rice,,31
+1120,lt foods daawat jasmine thai rice,,31
+1121,lt foods daawat quick cooking black rice,,31
+1122,lt foods daawat quick cooking brown rice,,31
+1123,lt foods daawat quick cooking red rice,,31
+1124,id fresh classic idli dosa batter,ifid-b-00189,21
+1125,id fresh multigrain idli dosa batter,ifid-b-00189,21
+1126,id fresh pancake batter choco,ifid-b-00189,21
+1127,id fresh pancake batter classic,ifid-b-00189,21
+1128,id fresh protein rich idli dosa batter,ifid-b-00189,21
+1129,id fresh ragi millet idli dosa batter,ifid-b-00189,21
+1130,slurrp farm cereal banana,,13
+1131,slurrp farm cereal mango,,13
+1132,slurrp farm cereal strawberry,,13
+1133,slurrp farm cookies oats raisin,,24
+1134,slurrp farm mixed vegetables noodles,,20
+1135,slurrp farm multigrain millet cereal,,13
+1136,slurrp farm pasta veggie tomato,,21
+1137,slurrp farm puffs ragi,,25
+1138,slurrp farm ragi cereal,,13
+1139,the whole truth dark chocolate 71 percent,,34
+1140,the whole truth energy bar coconut cocoa,,14
+1141,the whole truth energy bar coffee cocoa,,14
+1142,the whole truth energy bar cranberry,,14
+1143,the whole truth energy bar peanut butter,,14
+1144,the whole truth energy bar peanut choco fudge,,14
+1145,the whole truth protein bar double cocoa,,14
+1146,ching's secret all in one sauce,,17
+1147,ching's secret chili vinegar,,17
+1148,ching's secret chowmein hakka noodle masala,,15
+1149,ching's secret green chilli sauce,,17
+1150,ching's secret manchurian instant noodles,,20
+1151,ching's secret original sriracha hot chilli sauce green,,17
+1152,ching's secret paneer chilli masala mix,,15
+1153,ching's secret red chilli sauce,,17
+1154,ching's secret schezwan chutney,,16
+1155,ching's secret schezwan noodles,,20
+1156,ching's secret soy sauce,,17
+1157,ching's secret soy sauce dark,,17
+1158,ching's secret veg hakka noodles,,20
+1159,himalayan pristine natural mineral water,ifid-b-00191,5
+1160,i-shakti solar salt,ifid-b-00196,32
+1161,organic india ashwagandha capsules,ifid-b-00192,11
+1162,organic india bacopa supplement,ifid-b-00192,11
+1163,organic india chia seeds,ifid-b-00192,32
+1164,organic india giloy capsules,ifid-b-00192,11
+1165,organic india moringa powder,ifid-b-00192,11
+1166,organic india organic ghee,ifid-b-00192,29
+1167,organic india organic honey,ifid-b-00192,33
+1168,organic india psyllium husk,ifid-b-00192,11
+1169,organic india purely assam black tea,ifid-b-00192,6
+1170,organic india purely chamomile tea,ifid-b-00192,6
+1171,organic india shilajit resin,ifid-b-00192,11
+1172,organic india triphala capsules,ifid-b-00192,11
+1173,organic india tulsi green tea classic,ifid-b-00192,6
+1174,organic india tulsi green tea honey lemon,ifid-b-00192,6
+1175,organic india tulsi green tea pomegranate,ifid-b-00192,6
+1176,organic india tulsi honey chamomile,ifid-b-00192,6
+1177,organic india tulsi lemon ginger,ifid-b-00192,6
+1178,organic india tulsi licorice,ifid-b-00192,6
+1179,organic india tulsi masala chai,ifid-b-00192,6
+1180,organic india tulsi mulethi,ifid-b-00192,6
+1181,organic india tulsi original,ifid-b-00192,6
+1182,organic india tulsi sweet rose,ifid-b-00192,6
+1183,smith and jones crunchy fried chicken mix,ifid-b-00193,21
+1184,smith and jones ginger garlic paste,ifid-b-00193,15
+1185,smith and jones masala noodles,ifid-b-00193,20
+1186,smith and jones mutter paneer masala,ifid-b-00193,15
+1187,smith and jones pasta masala,ifid-b-00193,15
+1188,smith and jones pasta vegetable masala,ifid-b-00193,15
+1189,smith and jones peri peri masala,ifid-b-00193,15
+1190,smith and jones pink pasta sauce mix,ifid-b-00193,17
+1191,smith and jones pizza and pasta sauce with oregano,ifid-b-00193,17
+1192,smith and jones red pasta sauce mix,ifid-b-00193,17
+1193,smith and jones shahi paneer masala,ifid-b-00193,15
+1194,smith and jones tomato ketchup,ifid-b-00193,17
+1195,smith and jones white pasta sauce mix,ifid-b-00193,17
+1196,tata coffee cold coffee,ifid-b-00194,2
+1197,tata coffee cold coffee belgian chocolate,ifid-b-00194,2
+1198,tata coffee cold coffee french vanilla,ifid-b-00194,2
+1199,tata coffee cold coffee swiss caramel,ifid-b-00194,2
+1200,tata coffee grand,ifid-b-00194,2
+1201,tata coffee grand premium,ifid-b-00194,2
+1202,tata coffee grand roast and ground,ifid-b-00194,2
+1203,tata gluco plus lychee zap,ifid-b-00195,4
+1204,tata gluco plus orangy burst,ifid-b-00195,4
+1205,tata salt crystal,ifid-b-00196,32
+1206,tata salt iron health,ifid-b-00196,32
+1207,tata salt original,ifid-b-00196,32
+1208,tata salt rock salt,ifid-b-00196,32
+1209,tata salt superlite,ifid-b-00196,32
+1210,tata salt vitamin shakti plus,ifid-b-00196,32
+1211,tata sampann besan fine,ifid-b-00197,27
+1212,tata sampann besan gargara,ifid-b-00197,27
+1213,tata sampann biryani masala,ifid-b-00197,32
+1214,tata sampann chana dal,ifid-b-00197,30
+1215,tata sampann chicken curry masala,ifid-b-00197,32
+1216,tata sampann coriander powder,ifid-b-00197,32
+1217,tata sampann fenugreek powder,ifid-b-00197,32
+1218,tata sampann garam masala,ifid-b-00197,32
+1219,tata sampann garlic powder,ifid-b-00197,32
+1220,tata sampann ginger powder,ifid-b-00197,32
+1221,tata sampann hing,ifid-b-00197,32
+1222,tata sampann masoor dal,ifid-b-00197,30
+1223,tata sampann meat masala,ifid-b-00197,32
+1224,tata sampann moong dal,ifid-b-00197,30
+1225,tata sampann paneer masala,ifid-b-00197,32
+1226,tata sampann poha indori style,ifid-b-00197,31
+1227,tata sampann poha red,ifid-b-00197,31
+1228,tata sampann poha white thick,ifid-b-00197,31
+1229,tata sampann poha white thin,ifid-b-00197,31
+1230,tata sampann red chilli powder,ifid-b-00197,32
+1231,tata sampann saffron,ifid-b-00197,32
+1232,tata sampann sambar masala,ifid-b-00197,32
+1233,tata sampann toor dal,ifid-b-00197,30
+1234,tata sampann turmeric powder,ifid-b-00197,32
+1235,tata sampann urad dal,ifid-b-00197,30
+1236,tata sampann whole ajwain,ifid-b-00197,32
+1237,tata sampann whole cassia,ifid-b-00197,32
+1238,tata sampann whole clove,ifid-b-00197,32
+1239,tata sampann whole coriander,ifid-b-00197,32
+1240,tata sampann whole cumin,ifid-b-00197,32
+1241,tata sampann whole fennel seeds,ifid-b-00197,32
+1242,tata sampann whole mustard seeds,ifid-b-00197,32
+1243,tata sampann whole pepper,ifid-b-00197,32
+1244,tata soulfull corn flakes plus,ifid-b-00198,7
+1245,tata soulfull masala oats plus millets,ifid-b-00198,22
+1246,tata soulfull millet granola,ifid-b-00198,7
+1247,tata soulfull millet muesli,ifid-b-00198,7
+1248,tata soulfull no maida rusk,ifid-b-00198,23
+1249,tata soulfull ragi bites cheese variant,ifid-b-00198,25
+1250,tata soulfull ragi bites choco fills,ifid-b-00198,24
+1251,tata soulfull ragi bites cream wafers,ifid-b-00198,24
+1252,tata soulfull ragi bites no maida choco,ifid-b-00198,24
+1253,tata soulfull ragi bites stick format,ifid-b-00198,25
+1254,tata tea gemini ginger,ifid-b-00199,6
+1255,tata tea gemini masala,ifid-b-00199,6
+1256,tata tea gold,ifid-b-00199,6
+1257,tata tea gold care,ifid-b-00199,6
+1258,tata tea gold kanan devan golden leaf,ifid-b-00199,6
+1259,tata tea gold kanan devan strong,ifid-b-00199,6
+1260,tata tea gold kashir noon chai,ifid-b-00199,6
+1261,tata tea gold saffron,ifid-b-00199,6
+1262,tata tea gold second flush darjeeling,ifid-b-00199,6
+1263,tata tea premium delhi rich assam chai,ifid-b-00199,6
+1264,tata tea premium haryana kadak assam chai,ifid-b-00199,6
+1265,tata tea premium odisha kadak assam chai,ifid-b-00199,6
+1266,tata tea premium punjab badi danedaar chai,ifid-b-00199,6
+1267,tata tea premium street chai hyderabadi irani,ifid-b-00199,6
+1268,tata tea premium street chai kolkata,ifid-b-00199,6
+1269,tata tea premium street chai mumbai cutting,ifid-b-00199,6
+1270,tata tea premium street chai purani delli,ifid-b-00199,6
+1271,tata tea premium uttar pradesh dumdaar chai,ifid-b-00199,6
+1272,tata tea premium west bengal swad bhari chai,ifid-b-00199,6
+1273,tata tea teaveda,ifid-b-00199,6
+1274,tata tea tulsi green,ifid-b-00199,6
+1275,tetley black tea,ifid-b-00200,6
+1276,tetley elaichi,ifid-b-00200,6
+1277,tetley ginger zing,ifid-b-00200,6
+1278,tetley green tea beauty care,ifid-b-00200,6
+1279,tetley green tea ginger mint lemon,ifid-b-00200,6
+1280,tetley green tea immune classic,ifid-b-00200,6
+1281,tetley green tea immune ginger mint lemon,ifid-b-00200,6
+1282,tetley green tea immune lemon honey,ifid-b-00200,6
+1283,tetley green tea immune mango,ifid-b-00200,6
+1284,tetley green tea lemon honey,ifid-b-00200,6
+1285,tetley green tea long leaf,ifid-b-00200,6
+1286,tetley green tea slim care,ifid-b-00200,6
+1287,tetley lemon long leaf,ifid-b-00200,6
+1288,tetley lemon twist,ifid-b-00200,6
+1289,tetley masala chai,ifid-b-00200,6
+1290,tetley original long leaf,ifid-b-00200,6
+1291,vadilal ice cream butterscotch,ifid-b-00201,36
+1292,vadilal ice cream chocolate,ifid-b-00201,36
+1293,vadilal ice cream kulfi,ifid-b-00201,36
+1294,vadilal ice cream mango alphonso,ifid-b-00201,36
+1295,vadilal ice cream pistachio almond,ifid-b-00201,36
+1296,vadilal ice cream vanilla,ifid-b-00201,36
+1297,complan chocolate health drink,ifid-b-00202,4
+1298,complan immuno-gro kids nutrition,ifid-b-00202,13
+1299,complan kesar badam health drink,ifid-b-00202,4
+1300,complan regular health drink,ifid-b-00202,4
+1301,complan vanilla health drink,ifid-b-00202,4
+1302,glucon-d activors apple rtd,ifid-b-00203,4
+1303,glucon-d activors mango rtd,ifid-b-00203,4
+1304,glucon-d activors orange rtd,ifid-b-00203,4
+1305,glucon-d immuno fizz orange effervescent,ifid-b-00203,4
+1306,glucon-d immunovolt kaccha mango tablet,ifid-b-00203,14
+1307,glucon-d immunovolt orange tablet,ifid-b-00203,14
+1308,glucon-d immunovolt strawberry tablet,ifid-b-00203,14
+1309,glucon-d mango blast,ifid-b-00203,4
+1310,glucon-d nimbu pani,ifid-b-00203,4
+1311,glucon-d regular glucose powder,ifid-b-00203,14
+1312,glucon-d tangy orange,ifid-b-00203,4
+1313,sugar free d'lite sweetener,ifid-b-00205,33
+1314,sugar free gold+ sweetener chromium,ifid-b-00205,33
+1315,sugar free gold sweetener,ifid-b-00205,33
+1316,sugar free green stevia sweetener,ifid-b-00205,33
+1317,sugar free original sweetener,ifid-b-00205,33
+1318,sugarlite natural sugar blend,ifid-b-00205,33

@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Lalitha A R">
+<meta name="author" content="Claude (Anthropic)">
+<meta name="dcterms.date" content="2026-03-26">
+<meta name="description" content="E-numbers and INS numbers refer to the same additives. On Indian labels, both appear — sometimes in the same product category, sometimes in the same ingredient string. This report documents the notation variants found in 1,026 raw label strings and states what that means for IFID’s ingredient matching design.">
+
+<title>How Indian packaged food labels write additive numbers — and what that means for any parser hitting label text</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="label-conventions.log_files/libs/clipboard/clipboard.min.js"></script>
+<script src="label-conventions.log_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="label-conventions.log_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="label-conventions.log_files/libs/quarto-html/popper.min.js"></script>
+<script src="label-conventions.log_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="label-conventions.log_files/libs/quarto-html/anchor.min.js"></script>
+<link href="label-conventions.log_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="label-conventions.log_files/libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="label-conventions.log_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="label-conventions.log_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="label-conventions.log_files/libs/bootstrap/bootstrap-2daf5a3bceb9e852f3deb6477265f210.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-question" id="toc-the-question" class="nav-link active" data-scroll-target="#the-question">The question</a></li>
+  <li><a href="#source" id="toc-source" class="nav-link" data-scroll-target="#source">Source</a></li>
+  <li><a href="#what-the-data-shows" id="toc-what-the-data-shows" class="nav-link" data-scroll-target="#what-the-data-shows">What the data shows</a>
+  <ul class="collapse">
+  <li><a href="#e-numbers-and-ins-numbers-both-appear" id="toc-e-numbers-and-ins-numbers-both-appear" class="nav-link" data-scroll-target="#e-numbers-and-ins-numbers-both-appear">E-numbers and INS numbers both appear</a></li>
+  <li><a href="#the-same-additive-both-conventions" id="toc-the-same-additive-both-conventions" class="nav-link" data-scroll-target="#the-same-additive-both-conventions">The same additive, both conventions</a></li>
+  <li><a href="#four-distinct-notation-variants" id="toc-four-distinct-notation-variants" class="nav-link" data-scroll-target="#four-distinct-notation-variants">Four distinct notation variants</a></li>
+  <li><a href="#what-was-not-found" id="toc-what-was-not-found" class="nav-link" data-scroll-target="#what-was-not-found">What was not found</a></li>
+  </ul></li>
+  <li><a href="#design-implication-for-ifid" id="toc-design-implication-for-ifid" class="nav-link" data-scroll-target="#design-implication-for-ifid">Design implication for IFID</a></li>
+  <li><a href="#hindi-language-coverage-in-the-source-data" id="toc-hindi-language-coverage-in-the-source-data" class="nav-link" data-scroll-target="#hindi-language-coverage-in-the-source-data">Hindi language coverage in the source data</a></li>
+  <li><a href="#data-files" id="toc-data-files" class="nav-link" data-scroll-target="#data-files">Data files</a></li>
+  <li><a href="#note-on-ai-authorship" id="toc-note-on-ai-authorship" class="nav-link" data-scroll-target="#note-on-ai-authorship">Note on AI authorship</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">How Indian packaged food labels write additive numbers — and what that means for any parser hitting label text</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">ifid</div>
+    <div class="quarto-category">caas</div>
+    <div class="quarto-category">label-conventions</div>
+    <div class="quarto-category">data-analysis</div>
+    <div class="quarto-category">track-a</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    E-numbers and INS numbers refer to the same additives. On Indian labels, both appear — sometimes in the same product category, sometimes in the same ingredient string. This report documents the notation variants found in 1,026 raw label strings and states what that means for IFID’s ingredient matching design.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lalitha A R </p>
+             <p>Claude (Anthropic) </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 26, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="the-question" class="level2">
+<h2 class="anchored" data-anchor-id="the-question">The question</h2>
+<p>IFID’s additives taxonomy is standardised to INS numbers. The CAAS raw label data is whatever Indian manufacturers printed on the pack.</p>
+<p>The question is not whether there is mixing. The question is: what exactly does the mixing look like, and what are the distinct notation variants a parser must handle before it can do taxonomy lookup?</p>
+<hr>
+</section>
+<section id="source" class="level2">
+<h2 class="anchored" data-anchor-id="source">Source</h2>
+<p>All findings in this report are from <code>caas/core/sampling/unified_ingredients_data-raw_updated.json</code>: 1,026 product rows, each carrying <code>sku_name</code> and <code>exact_ingredients</code>. The dataset covers branded Indian packaged food products sourced from OpenFoodFacts; it was filtered and deduplicated prior to this analysis. See <code>caas/claims/offdata_claims.md</code> for the filtering decisions.</p>
+<hr>
+</section>
+<section id="what-the-data-shows" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-data-shows">What the data shows</h2>
+<section id="e-numbers-and-ins-numbers-both-appear" class="level3">
+<h3 class="anchored" data-anchor-id="e-numbers-and-ins-numbers-both-appear">E-numbers and INS numbers both appear</h3>
+<p>88 products in the 1,026-row dataset declare at least one additive using an EU E-number (<code>E{n}</code> format). 113 products declare at least one additive using an INS number (<code>INS {n}</code> or <code>Ins {n}</code> format). The two sets overlap: 35 distinct additive numbers appear in both E-number and INS-number form across the dataset — the same additive, two naming conventions, different products.</p>
+<p>The 46 distinct E-numbers found in the dataset:</p>
+<p><code>E100, E102, E110, E120, E122, E124, E133, E1422, E1442, E200, E202, E211, E260, E282, E296, E319, E322, E330, E331, E339, E341, E407, E410, E412, E415, E417, E418, E435, E440, E442, E446, E452, E4521, E466, E471, E475, E476, E492, E500, E501, E508, E521, E551, E627, E631, E635, E960</code></p>
+<p>E-numbers in this dataset come primarily from chocolate and confectionery products (Amul, Cadbury lines) and from masala snack and noodle products. INS numbers appear more broadly, including in snack foods, dairy, and beverages.</p>
+</section>
+<section id="the-same-additive-both-conventions" class="level3">
+<h3 class="anchored" data-anchor-id="the-same-additive-both-conventions">The same additive, both conventions</h3>
+<p>Selected examples where the same INS/E number appears under both conventions across different products:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Additive</th>
+<th>E-number form</th>
+<th>Products using E-form</th>
+<th>INS-number form</th>
+<th>Products using INS-form</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Lecithin</td>
+<td>E322</td>
+<td>amul belgian milk chocolate, amul camel milk chocolate</td>
+<td>INS 322</td>
+<td>tata soulfull ragi bites, havmor ice cream choco brownie</td>
+</tr>
+<tr class="even">
+<td>Disodium guanylate</td>
+<td>E631</td>
+<td>kurkure zig zag, ching’s secret paneer chilli masala</td>
+<td>INS 631</td>
+<td>bingo potato chips, yippee 2-minute masala noodles</td>
+</tr>
+<tr class="odd">
+<td>Polyglycerol polyricinoleate</td>
+<td>E476</td>
+<td>amul belgian milk chocolate</td>
+<td>INS 476</td>
+<td>sugar free d’lite sweetener</td>
+</tr>
+<tr class="even">
+<td>Silicon dioxide</td>
+<td>E551</td>
+<td>ching’s secret instant noodles manchurian</td>
+<td>INS 551</td>
+<td>bingo potato chips, candyman tadka lollipop</td>
+</tr>
+<tr class="odd">
+<td>Citric acid</td>
+<td>E330</td>
+<td>haldiram’s sabudana tikki, kwality wall’s cassata</td>
+<td>INS 330</td>
+<td>bingo potato chips, doritos sweet chili, kurkure puffcorn</td>
+</tr>
+</tbody>
+</table>
+<p>The pattern is not random. E-numbers appear on products from manufacturers who also sell into European markets or follow European labeling conventions. INS numbers follow FSSAI conventions for the Indian market.</p>
+</section>
+<section id="four-distinct-notation-variants" class="level3">
+<h3 class="anchored" data-anchor-id="four-distinct-notation-variants">Four distinct notation variants</h3>
+<p>The dataset shows four distinct ways additive numbers appear in ingredient strings:</p>
+<p><strong>Variant 1: <code>E{n}</code> — EU E-number, no prefix space</strong></p>
+<pre><code>E322, E476, E631, E551, E330</code></pre>
+<p>Appears in strings from chocolate and snack products following European convention. No space between prefix and number.</p>
+<p><strong>Variant 2: <code>INS {n}</code> — all-caps prefix, space, number</strong></p>
+<pre><code>INS 330, INS 551, INS 471, INS 102</code></pre>
+<p>The most common INS form. 77 products in the dataset use this variant. Appears in all product categories.</p>
+<p><strong>Variant 3: <code>Ins {n}</code> — mixed-case prefix, space, number</strong></p>
+<pre><code>Ins 330, Ins 296, Ins 551, Ins 300</code></pre>
+<p>25 products use this variant. Functionally identical to Variant 2 but the case difference will cause a case-sensitive string match to fail. <code>INS 551</code> and <code>Ins 551</code> are the same substance; no parser should treat them differently.</p>
+<p><strong>Variant 4: Bare number in parentheses — no prefix</strong></p>
+<pre><code>Colour (162), Citric Acid (330), Acidity Regulator (330),
+Anticaking Agent (551), Stabilizer (170)</code></pre>
+<p>The number appears in parentheses after the functional class or common name, with no <code>INS</code> or <code>E</code> prefix. Examples found in Doritos, Kurkure, and Lay’s ingredient strings. The number is unambiguous only if the reader knows it is an INS number — the string gives no explicit signal.</p>
+<p>A fifth structural variant also appears — the number inside a parenthetical that already contains the functional class declaration:</p>
+<pre><code>Acidity Regulators (Ins 296, Ins 330, Ins 334)
+(INS 296), (Ins 551), (INS 508)</code></pre>
+<p>This is a punctuation pattern, not a new numbering convention — the number is still Variant 2 or 3 — but a parser that splits on parentheses or commas first may not extract the numbers cleanly without handling this structure.</p>
+</section>
+<section id="what-was-not-found" class="level3">
+<h3 class="anchored" data-anchor-id="what-was-not-found">What was not found</h3>
+<p>No US FD&amp;C naming was found in this dataset. “Red 40,” “Yellow 6,” “Blue 1” and similar US convention names do not appear. The convention mixing in Indian label data is specifically EU E-number vs Indian INS-number. US naming is not a third variant to handle.</p>
+<hr>
+</section>
+</section>
+<section id="design-implication-for-ifid" class="level2">
+<h2 class="anchored" data-anchor-id="design-implication-for-ifid">Design implication for IFID</h2>
+<p>IFID’s additives taxonomy uses INS numbers as keys. Any pipeline that takes Indian label text and looks up an ingredient against the taxonomy must normalise additive numbers before lookup.</p>
+<p>The normalisation step needs to handle at minimum:</p>
+<ol type="1">
+<li>Strip <code>E</code> prefix, match remaining digits to INS key</li>
+<li>Strip <code>INS</code> prefix (all caps, with space) to get digits</li>
+<li>Strip <code>Ins</code> prefix (mixed case, with space) to get digits</li>
+<li>Recognise bare parenthetical numbers <code>(\d{3,4})</code> as INS numbers when adjacent to a functional class or common name</li>
+</ol>
+<p>Steps 1–3 require a case-insensitive match or explicit case normalisation. Step 4 requires context — the bare number is structurally ambiguous without the adjacent text.</p>
+<p>The functional class parenthetical pattern <code>Acidity Regulators (Ins 296, Ins 330, Ins 334)</code> requires the parser to extract multiple numbers from within a single parenthetical, not one number per parenthetical.</p>
+<p>These are not edge cases. Variants 2 and 3 together cover 102 of the 113 products with INS notation; the bare-number variant appears across at least 8 distinct products from three major snack brands.</p>
+<hr>
+</section>
+<section id="hindi-language-coverage-in-the-source-data" class="level2">
+<h2 class="anchored" data-anchor-id="hindi-language-coverage-in-the-source-data">Hindi language coverage in the source data</h2>
+<p><code>caas/claims/offdata_claims.md</code> Claim 05 documents the following for the full 19,748-row OpenFoodFacts export used as the CAAS source:</p>
+<ul>
+<li><code>product_name_hi</code>: 111 non-null rows (0.56% of 19,748)</li>
+<li><code>ingredients_text_hi</code>: 11 non-null rows (0.056% of 19,748)</li>
+<li><code>generic_name_hi</code>: 2 non-null rows (0.010% of 19,748)</li>
+</ul>
+<p>The 4,104-row filtered working dataset used for the ingredient string analysis above inherits this coverage profile. There are 11 rows at most with Hindi ingredient text in the entire filtered dataset.</p>
+<p>OpenFoodFacts cannot serve as a source of Hindi-language ingredient data for Indian products. The dataset was structured and filtered for English-language coverage; the Hindi fields are populated only incidentally by contributors.</p>
+<p>Any IFID work that requires Hindi ingredient text — for matching against regional product declarations, for labeling analysis of products that carry only Hindi text, or for coverage of products not represented in English — requires a different data source than this OFF export.</p>
+<hr>
+</section>
+<section id="data-files" class="level2">
+<h2 class="anchored" data-anchor-id="data-files">Data files</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>File</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>caas/core/sampling/unified_ingredients_data-raw_updated.json</code></td>
+<td>1,026 product rows; source for all notation counts and examples in this report</td>
+</tr>
+<tr class="even">
+<td><code>caas/claims/offdata_claims.md</code></td>
+<td>7 verified claims on the full 19,748-row OFF export; Hindi coverage figures sourced from Claim 05</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="note-on-ai-authorship" class="level2">
+<h2 class="anchored" data-anchor-id="note-on-ai-authorship">Note on AI authorship</h2>
+<p>This document was drafted by Claude (Anthropic, Sonnet 4.6) in a Claude Code session on 2026-03-26, from a structured plan written by Lalitha A R.</p>
+<p><strong>What Claude did:</strong></p>
+<ul>
+<li>Ran pattern searches across all 1,026 product rows to count E-number and INS-number occurrences, identify notation variants, and find specific product examples for each variant</li>
+<li>Verified the 35-number overlap between E and INS conventions by matching digit sequences across both pattern sets</li>
+<li>Confirmed the four notation variants from the raw data, not from the plan</li>
+<li>Drafted all prose, tables, and section structure</li>
+</ul>
+<p><strong>Constraints Claude worked under:</strong></p>
+<ul>
+<li>No claims were made about what patterns exist without first verifying them in the source file. The plan described what was expected; this report states what was found.</li>
+<li>Counts (88 products, 113 products, 77 products, 25 products, 46 E-numbers) are from the analysis run, not from the plan.</li>
+<li>The US FD&amp;C absence is documented as a negative finding, not an assumption.</li>
+<li>Hindi coverage figures are from <code>caas/claims/offdata_claims.md</code> Claim 05 — a verified claim from a prior session — not from this session’s analysis.</li>
+</ul>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
