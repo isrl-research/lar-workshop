@@ -1,0 +1,253 @@
+---
+title: "What the colors session resolved, deferred, and left open for the schema"
+date: 2026-03-26
+categories: [ifid, colors, data-analysis, track-a]
+author:
+  - "Lalitha A R"
+  - "Claude (Anthropic)"
+description: "44 non-INS color variant rows processed → 30 INS colour entries in the clean taxonomy, 7 whole-food colorants deferred. The 7 deferred entries expose a category gap in IFID: substances that function as colorants on Indian labels but have no INS number and no current home in the schema."
+format:
+  html:
+    toc: true
+---
+
+## What this session did
+
+The colors session started from two inputs:
+
+- 25 INS colour entries already in the additives taxonomy, exported to
+  `colors_ins_clean.csv` as a working reference
+- 44 non-INS colour variant rows from `core/all_variants_working.csv` — declarations
+  found on Indian labels that had not yet been matched to an INS number
+
+Of the 44 variant rows: 37 were resolved and removed from the working file. 5 new
+INS entries were added to the taxonomy. 7 rows were deferred.
+
+Session close: 2026-03-13.
+
+---
+
+## The 30 INS colour entries
+
+`colors_ins_clean.csv` holds 30 INS colour entries. This is the reference file for
+downstream colour resolution work.
+
+Source type distribution across the 30:
+
+| source_type | Count |
+|---|---|
+| plant | 16 |
+| synthetic | 11 |
+| mineral | 3 |
+
+The INS colour range in Codex runs roughly 100–174. All 30 entries fall within
+this range, with the exception of INS 152 (Polyethylene glycol, listed as a colour
+adjunct) and the caramel sub-types (150a, 150c, 150d) which share the 150 base
+number.
+
+Full list by INS number:
+
+| INS | Official name | source_type |
+|---|---|---|
+| 100 | Curcumin | plant |
+| 101(i) | Riboflavin | synthetic |
+| 102 | Tartrazine | synthetic |
+| 110 | Sunset yellow FCF, Orange yellow S | synthetic |
+| 122 | Azorubine, Carmoisine | synthetic |
+| 124 | Ponceau 4R | synthetic |
+| 127 | Erythrosine | synthetic |
+| 129 | Allura Red AC | synthetic |
+| 132 | Indigotine, Indigo carmine | synthetic |
+| 133 | Brilliant Blue FCF | synthetic |
+| 140 | Chlorophylls | plant |
+| 141 | Copper complexes of chlorophylls | plant |
+| 150 | Caramel | plant |
+| 150a | Plain caramel | plant |
+| 150c | Ammonia caramel | plant |
+| 150d | Sulphite ammonia caramel | plant |
+| 152 | Polyethylene glycol | synthetic |
+| 160a | Carotenes, mixed | plant |
+| 160a(i) | Beta-carotene, vegetable | plant |
+| 160b | Annatto extracts | plant |
+| 160c | Paprika extract | plant |
+| 160d | Lycopene | plant |
+| 161b | Lutein | plant |
+| 161g | Canthaxanthin | synthetic |
+| 162 | Beetroot Red | plant |
+| 163 | Anthocyanins | plant |
+| 163c | Grape skin extract | plant |
+| 170 | Calcium carbonate | mineral |
+| 171 | Titanium dioxide | mineral |
+| 174 | Silver | mineral |
+
+---
+
+## How the 37 rows were resolved
+
+### Pass 1 — Match to existing INS (25 rows, no new entries)
+
+25 variant rows mapped to INS entries already in the taxonomy. These included
+FD&C-named synthetic dyes (e.g. "FD&C Red 40" → INS 129 Allura Red AC) and
+botanical extract declarations where the INS already existed. No new taxonomy
+entries were required.
+
+Distribution of resolved variants by INS:
+
+INS 100 (×2), 102 (×2), 110 (×3), 129 (×6), 132 (×2), 133 (×3), 160a(i) (×1),
+160b (×3), 160c (×2), 171 (×1).
+
+### Pass 2 — INS exists in Codex, absent from taxonomy (6 rows, 4 new entries)
+
+Four entries added: INS 140 (Chlorophylls), 160d (Lycopene), 161b (Lutein), and
+150 (Caramel, as a single undifferentiated entry alongside the existing sub-types
+150a, 150c, 150d). All four are plant-source entries.
+
+One taxonomy addition not counted here: INS 174 (Silver, mineral) was added in
+Pass 4 below.
+
+### Pass 3 — Unresolvable group declarations (5 rows dropped)
+
+`artificial color`, `artificial colors`, `synthetic food colors`, `color vegetable
+juice`, `vegetable juice concentrate for color` — no single INS number is resolvable
+from any of these declarations. They were removed from the working file and not added
+to the taxonomy.
+
+### Pass 4 — INS absent from taxonomy, mineral source (1 row, 1 entry added)
+
+`silver leaf` → INS 174 (Silver, mineral). Added to taxonomy.
+
+---
+
+## The 7 deferred rows and the schema gap
+
+7 rows were not resolved to an INS number. They remain in `core/all_variants_working.csv`
+with `f_revised` set to `colour|raw_agricultural_material`. They will be processed
+during a raw agricultural material session that has not yet run.
+
+| Label text | Source | Note |
+|---|---|---|
+| kesar | saffron | Hindi name; variant pair with `safron` |
+| safron | saffron | Spelling variant; variant pair with `kesar` |
+| paprika | paprika | Whole dried spice; distinct from INS 160c (solvent-extracted oleoresin) |
+| hibiscus | hibiscus | Dried flower |
+| carrot powder | carrot | Dried whole carrot; distinct from INS 160a(i) beta-carotene extract |
+| carrot flakes | carrot | Dried whole carrot |
+| pomegranate powder | pomegranate | Dried whole fruit powder |
+
+### Why these were deferred
+
+Each of these appears on Indian labels as a colour declaration — the product label
+uses one of these names in the context of declaring colour. None has an INS number.
+The deferral is not a classification decision; it is an acknowledgement that the
+current taxonomy structure has no place for them.
+
+These substances share a structural property: they are dried, powdered, or extracted
+forms of whole food ingredients used for their colouring effect. They are not
+additives (no INS number, not in the Codex food additives framework). They are not
+raw ingredients in the conventional IFID sense — they are present on the label as
+colour declarations, not as primary ingredients.
+
+The `raw_agricultural_material` lane referenced in their `f_revised` field does not
+exist in IFID. It was identified during this session as the correct home for these
+entries; building that category is a separate task.
+
+### The distinction paprika/carrot illustrate
+
+INS 160c is "Paprika extract" — a solvent-extracted oleoresin from paprika, with an
+INS number, classified as a synthetic colour in Codex terms. The paprika row in the
+deferred set is the whole dried spice ground to a powder.
+
+INS 160a(i) is "Beta-carotene, vegetable" — an extract from carrot. The carrot
+powder and carrot flakes rows are dried whole carrot.
+
+These are distinct substances with distinct regulatory status. The INS extract has
+a Codex classification. The whole-food form has no INS number and no Codex colour
+classification. Both appear on Indian labels as colour declarations. The taxonomy
+resolves the extract; it cannot resolve the whole-food form.
+
+---
+
+## Regional naming: kesar vs saffron
+
+`kesar` is the Hindi name for saffron. It appears on Indian labels where an
+international-market label would say `saffron`. The two variant rows (`kesar`,
+`safron`) resolve to the same source substance.
+
+`safron` is a spelling variant — not the correct English spelling, not the correct
+Hindi spelling, but a form found on labels.
+
+This is a labeling normalisation problem, not a taxonomy gap. The deferred entry
+is not "kesar" as a distinct substance from saffron; it is saffron appearing under
+its Hindi name. Any IFID matching pipeline processing Indian labels needs to handle
+regional-language ingredient names alongside English and INS declarations.
+
+The Hindi naming issue is not specific to colours. It is visible here because the
+colors session processed label text variants directly. The broader implication —
+that Indian labels use Hindi names for ingredients with no INS number — surfaces
+as a design question for IFID's ingredient text matching layer.
+
+---
+
+## Design question: INS number, common name, or both?
+
+The 30 INS colour entries each carry an `official_name`. For plant-source and
+synthetic entries, the official name is the Codex GSFA name — which may not be the
+name on the label.
+
+Examples:
+
+- INS 129: official name is "Allura Red AC." Indian labels may say "Allura Red,"
+  "Red 40," "FD&C Red 40," or in some cases just "E129" or "INS 129."
+- INS 100: official name is "Curcumin." Indian labels commonly say "turmeric colour"
+  or "हल्दी" (haldi).
+- INS 160b: official name is "Annatto extracts." Labels may say "annatto," "bixin,"
+  "norbixin," or "natural colour (annatto)."
+
+The 25 Pass 1 resolutions were precisely this problem — variant label text mapped
+to canonical INS entries. The mapping is in `core/all_variants_working.csv` (resolved
+rows removed) and in the Pass 1 INS distribution above, but it is not currently
+captured as a structured alias list in the taxonomy.
+
+Whether IFID displays INS number, official name, common names, or all three for a
+colour entry is a UI question. Whether IFID stores label text aliases per entry is
+a schema question. The current taxonomy has the INS number and official name;
+it does not have a `label_aliases` or `common_names` field.
+
+---
+
+## Data files
+
+| File | Role |
+|---|---|
+| `colors/colors_ins_clean.csv` | 30 INS colour entries; reference for downstream colour resolution |
+| `colors/colors_nonins_variants.csv` | 7 deferred whole-food rows; input for raw_agricultural_material session |
+| `colors/cp/README_colors.md` | Session close notes; full resolution log, taxonomy additions |
+| `additives/additives_taxonomy.json` | Source of truth for all INS entries; updated with 5 additions during this session |
+
+---
+
+## Note on AI authorship
+
+This document was drafted by Claude (Anthropic, Sonnet 4.6) in a Claude Code session
+on 2026-03-26, from a structured plan written by Lalitha A R.
+
+**What Claude did:**
+
+- Queried `colors_ins_clean.csv` to confirm 30 entries and source type distribution
+- Identified the 5 entries added in the colors session from the README and confirmed
+  them in the CSV
+- Read the full session README to verify the four-pass resolution log and deferred
+  row details
+- Drafted all prose, tables, and section structure
+
+**Constraints Claude worked under:**
+
+- The paprika/carrot INS-versus-whole-food distinction is drawn from the README
+  notes on the deferred rows; it is not an inference.
+- The kesar/saffron Hindi naming observation is from the README; the broader
+  implication for IFID's ingredient text matching is Claude's synthesis.
+- The label aliases design question is raised from the Pass 1 data — 25 variant
+  forms mapped to 10 INS numbers — not from the plan.
+- No claims were made about FSSAI labeling requirements for colour declarations.
+  The absence of a regulatory statement is not an oversight; the session did not
+  produce regulatory data on colour declarations.

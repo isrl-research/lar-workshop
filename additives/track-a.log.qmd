@@ -1,0 +1,318 @@
+---
+title: "What 158 additive entries show about source classification — and a schema question the taxonomy cannot answer"
+date: 2026-03-26
+categories: [ifid, additives, data-analysis, track-a]
+author:
+  - "Lalitha A R"
+  - "Claude (Anthropic)"
+description: "158 canonical entries. Four source types. 13 animal-derived additives, 12 entries where source_type and sources field are in tension. This report documents what the closed additives taxonomy contains and the design questions it raises."
+format:
+  html:
+    toc: true
+---
+
+## The design question
+
+IFID assigns a `source_type` to each additive entry: `synthetic`, `plant`, `mineral`,
+or `animal`. That classification drives two downstream decisions — allergen and dietary
+flag support (halal, vegan, kosher) and origin disclosure.
+
+The taxonomy is built. The question this report asks is: what does the distribution
+reveal about the classification system itself, and where does the four-category schema
+produce entries that can't be cleanly placed?
+
+---
+
+## Scale and session provenance
+
+The additives taxonomy closed on 2026-03-13 with 148 entries. A subsequent colors
+session on the same date identified 5 INS-numbered colour entries absent from the
+additives taxonomy and added them: INS 140, 150, 160d, 161b, 174. The current
+taxonomy holds 158 entries.
+
+Source of truth: `additives/additives_taxonomy.json`
+Export: `additives/additives_clean_2026-03-13.csv` (153 rows; reflects the state
+immediately after the colors session addition, before this report was produced)
+
+All counts in this report are from the current 158-entry JSON.
+
+---
+
+## Distribution
+
+### Source type
+
+| source_type | Count | Share |
+|---|---|---|
+| synthetic | 76 | 48.1% |
+| plant | 50 | 31.6% |
+| mineral | 19 | 12.0% |
+| animal | 13 | 8.2% |
+
+### Codex category
+
+| Category | Entries |
+|---|---|
+| Thickeners, stabilisers, emulsifiers and gelling agents | 40 |
+| Colours | 30 |
+| pH adjusters, anti-caking and anti-foaming agents | 18 |
+| Antioxidants and acidity regulators | 18 |
+| Preservatives | 11 |
+| Modified starches | 11 |
+| Flavour enhancers | 8 |
+| Sweeteners | 8 |
+| Gases, waxes and propellants | 6 |
+| Enzymes | 4 |
+| Polyols | 2 |
+| Unclassified | 2 |
+
+### Functional class multiplicity
+
+73 of 158 entries carry more than one functional class. 297 functional class
+assignments total across 158 entries; 24 unique classes. The average number of
+functional classes per entry is 1.88 across multi-class entries; the distribution
+ranges from 1 to 5.
+
+---
+
+## The synthetic/biological tension
+
+### What the schema does
+
+`source_type: synthetic` marks entries where the substance is manufactured rather
+than extracted. It does not distinguish between:
+
+- synthesis from petrochemical precursors
+- fermentation by microbial organisms
+- enzymatic conversion of plant or animal fats
+- extraction from microbial biomass
+
+All four fall under `synthetic` in the current schema. The `sources` field is
+intended to carry the origin detail. But the field is empty for all synthetic
+entries by design — `cp/README_additives.md` notes that "empty sources for synthetic
+entries is by design; domain expert review is required."
+
+### 12 entries where the tension is explicit
+
+12 entries in the taxonomy have `source_type: synthetic` but have biological,
+fermentation-derived, or microbial values recorded in the `sources` field. These
+were entered during the initial curation and retained as-is; the tension is
+documented in `cp/README_additives.md` as issue O-2.
+
+**Fermentation-derived, biological precursor listed:**
+
+| INS | Official name | Sources as recorded |
+|---|---|---|
+| 270 | Lactic acid, L-, D- and DL- | corn |
+| 296 | Malic acid, DL- | apple, pear |
+| 575 | Glucono-delta-lactone | corn |
+| 620 | L-Glutamic acid | molasses, corn, wheat gluten |
+| 621 | Monosodium L-glutamate | molasses, corn, wheat gluten |
+
+For these entries, the production route is fermentation; the listed sources are
+the biological substrates. The substance classified as synthetic is produced
+by a microbial organism from a plant-derived feedstock. The schema cannot express
+that both statements are true simultaneously.
+
+**Multi-origin (production route determines source):**
+
+| INS | Official name | Sources as recorded |
+|---|---|---|
+| 422 | Glycerol | palm, soybean, sunflower, rapeseed, lard, tallow, propylene, sugar fermentation |
+
+Glycerol's source depends on how it was manufactured. The same INS number covers
+plant-derived, animal-derived, and petrochemical routes. A single `source_type`
+assignment cannot represent a substance whose origin varies by production lot.
+
+**Extracted from microbial or biological source, no abiotic route listed:**
+
+| INS | Official name | Sources as recorded |
+|---|---|---|
+| 161g | Canthaxanthin | algae |
+| 1100 | alpha-Amylase | barley malt, animal pancreas, *Bacillus subtilis* |
+| 1101 | Protease | papaya latex, papaya |
+| 1102 | Glucose oxidase | *Aspergillus niger*, *Penicillium* |
+| 1104 | Lipases | animal pancreas, fungi |
+| 1204 | Pullulan | starch hydrolysate from *Aureobasidium pullulans* |
+
+These entries list only biological or microbial sources. Their classification as
+`synthetic` appears to follow the absence of a `microbial` source_type in the schema.
+
+### The schema gap
+
+The four-category `source_type` schema (`synthetic | plant | mineral | animal`)
+conflates production method with biological origin. A fermentation-derived
+substance is both synthetic (process — it is manufactured, not extracted from food)
+and biological (precursor — it is derived from a plant feedstock by a microbial
+organism). The schema can capture one dimension; it cannot capture both.
+
+The 12 flagged entries are the entries where the tension becomes explicit. The
+others may carry the same tension without it being visible — if a synthetic entry
+has an empty `sources` field, there is no record of what its precursor is.
+
+What a `production_method` sub-field would need to hold, based on entries already
+in the taxonomy:
+
+- `petrochemical_synthesis`
+- `fermentation` (with feedstock in sources)
+- `enzymatic_conversion`
+- `microbial_extraction`
+- `plant_extraction`
+- `mineral_extraction`
+
+Whether to add this field, and whether to split it from `source_type` or replace
+it, is a taxonomy design decision for domain expert review. The current entries
+cannot populate it without a sourcing and verification pass.
+
+---
+
+## Animal-derived entries
+
+13 of 158 entries carry `source_type: animal`. These are the entries that determine
+halal, kosher, and vegan flags for additive declarations. All 13:
+
+| INS | Official name | Functional classes |
+|---|---|---|
+| 322 | Lecithins | antioxidant, emulsifier, stabilizer |
+| 428 | Gelatine | thickener, stabilizer, emulsifier |
+| 429 | Phosphatidic acid | emulsifier |
+| 470 | Fatty acids | emulsifier, stabilizer, anticaking agent, antifoaming agent, glazing agent |
+| 470a | Sodium, potassium and calcium salts of fatty acids | emulsifier, stabilizer, anticaking agent |
+| 471 | Mono- and diglycerides of fatty acids | emulsifier, stabilizer |
+| 472 | Esters of mono- and diglycerides of fatty acids | emulsifier, stabilizer |
+| 472b | Lactic and fatty acid esters of glycerol | emulsifier |
+| 472c | Citric and fatty acid esters of glycerol | emulsifier |
+| 472e | Diacetyltartaric and fatty acid esters of glycerol | emulsifier |
+| 475 | Polyglycerol esters of fatty acids | emulsifier |
+| 901 | Beeswax, white and yellow | glazing agent |
+| 904 | Shellac | glazing agent |
+
+10 of the 13 are emulsifiers or carry emulsifier as one of their functions. INS
+471, 472, 472b, 472c, 472e, 470, and 470a are all fatty acid ester variants — a
+cluster of structurally related emulsifiers sharing animal-fat origin. Gelatine (428)
+is the only structurally distinct non-emulsifier non-glazing entry.
+
+### What this means for IFID
+
+IFID's label flag support (halal, vegan, kosher) is driven by `source_type: animal`
+entries in the taxonomy. The 13 entries above are the set that triggers those flags
+when an additive is declared on a label.
+
+Three notes from the distribution:
+
+1. INS 322 (Lecithins) is listed as `source_type: animal`. Lecithin is commonly
+   derived from soy or sunflower for vegan-certified products; animal-origin lecithin
+   (egg yolk) also exists. The single `source_type` assignment cannot distinguish
+   these. A product declaring "lecithin" without source qualification cannot be
+   flagged definitively without additional information.
+
+2. The fatty acid ester cluster (INS 471, 472 variants, 470, 470a) appears on a
+   wide range of processed food labels. These are common emulsifiers. IFID's flag
+   logic will activate for all of them unless source qualification is added.
+
+3. No current FSSAI mandatory labeling requirement forces source disclosure for
+   these additives at the ingredient level. The taxonomy carries the source data;
+   the label often does not. The flag can be set in IFID based on the taxonomy
+   entry; confirming it for a specific product requires knowing the production
+   route of the specific ingredient batch.
+
+---
+
+## Known issues
+
+Three issues are documented in `cp/README_additives.md` and remain open:
+
+**O-1 — INS 141: plant source_type, empty sources**
+
+INS 141 (Copper complexes of chlorophylls) has `source_type: plant` with an empty
+`sources` field. Every other plant-type entry carries at least one source value.
+Whether the empty field reflects a curation gap or a genuine absence of source
+specificity for this entry is unresolved.
+
+**O-2 — 12 entries: source_type=synthetic with biological sources listed**
+
+Documented in the previous section. Requires a production_method design decision
+before it can be resolved.
+
+**O-3 — INS 296 and INS 1204: codex_category=Unclassified**
+
+Both have established Codex GSFA entries and should map to existing categories.
+
+- INS 296 (Malic acid, DL-): functional class `acidity regulator`. The Codex
+  category is `Antioxidants and acidity regulators`. The DL-form is synthetic; the
+  sources listed (`apple, pear`) describe the L-form origin and may have been
+  inherited without distinguishing the isomer.
+- INS 1204 (Pullulan): functional classes include `glazing agent, thickener,
+  stabilizer, bulking agent`. The Codex category is `Thickeners, stabilisers,
+  emulsifiers and gelling agents`.
+
+Both can be corrected without a sourcing pass.
+
+---
+
+## The functional class multiplicity question
+
+73 of 158 entries carry more than one functional class. An additive like INS 470
+(Fatty acids) carries five: `emulsifier, stabilizer, anticaking agent,
+antifoaming agent, glazing agent`.
+
+When a product label declares "emulsifier (INS 470)," it names one function. The
+taxonomy holds five. IFID's design needs to decide: does the entry show all
+functional classes from the taxonomy, the declared-on-label class only, or both
+with the declared class flagged?
+
+This is a display and schema question, not a curation gap. The taxonomy contains
+the data needed for all three options. The choice affects how labels that declare
+only one function for a multi-function additive are represented in IFID — and
+whether that representation is informative (shows all taxonomy-recorded functions)
+or faithful to the declaration (shows only what the label said).
+
+---
+
+## Data files
+
+| File | Role |
+|---|---|
+| `additives/additives_taxonomy.json` | 158 canonical entries; source for all counts in this report |
+| `additives/additives_clean_2026-03-13.csv` | 153-row CSV export (reflects state after colors session addition; 5 entries added since initial close) |
+| `additives/cp/README_additives.md` | Session close notes; source for O-1, O-2, O-3 issue documentation |
+| `additives/enrichment_pending.csv` | Entries flagged for sourcing and verification pass; feeds TASK-A1 |
+
+---
+
+## Note on AI authorship
+
+This document was drafted by Claude (Anthropic, Sonnet 4.6) in a Claude Code session
+on 2026-03-26, from a structured plan written by Lalitha A R.
+
+**What Claude did:**
+
+- Queried `additives_taxonomy.json` directly to produce all counts: source type
+  distribution, functional class totals, multi-class entry count, Codex category
+  distribution, animal entry list
+- Verified that the current taxonomy holds 158 entries (not 148, the figure in the
+  README, which was written before the 5 colors additions)
+- Extracted the 12 O-2 entries and their sources values from the JSON
+- Drafted all prose, tables, and section structure
+
+**Where the README and the current JSON differ:**
+
+`cp/README_additives.md` was written against the 148-entry state:
+synthetic 72, plant 45, mineral 18, animal 13. The current 158-entry JSON shows:
+synthetic 76, plant 50, mineral 19, animal 13. The 10-entry difference is the 5
+colors additions (all plant or mineral) plus entries added to the synthetic and
+plant categories during the session. All counts in this report are from the current
+JSON.
+
+**Constraints Claude worked under:**
+
+- The O-2 tension between source_type and sources is documented in the README as
+  a known issue; this report synthesises the design implication. The implication
+  (the four-category schema conflates process and biological origin) is Claude's
+  interpretation of the structured data, not a finding from the README.
+- The animal entries table and the three observations that follow are derived from
+  the taxonomy data, not from the plan.
+- No regulatory claims about FSSAI mandatory labeling were made beyond what is
+  directly observable: that the current regulatory framework does not require
+  additive source disclosure at the ingredient level. This is an absence of a
+  requirement, not a gap assessment.

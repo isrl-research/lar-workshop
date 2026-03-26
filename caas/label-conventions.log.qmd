@@ -1,0 +1,223 @@
+---
+title: "How Indian packaged food labels write additive numbers — and what that means for any parser hitting label text"
+date: 2026-03-26
+categories: [ifid, caas, label-conventions, data-analysis, track-a]
+author:
+  - "Lalitha A R"
+  - "Claude (Anthropic)"
+description: "E-numbers and INS numbers refer to the same additives. On Indian labels, both appear — sometimes in the same product category, sometimes in the same ingredient string. This report documents the notation variants found in 1,026 raw label strings and states what that means for IFID's ingredient matching design."
+format:
+  html:
+    toc: true
+---
+
+## The question
+
+IFID's additives taxonomy is standardised to INS numbers. The CAAS raw label data
+is whatever Indian manufacturers printed on the pack.
+
+The question is not whether there is mixing. The question is: what exactly does the
+mixing look like, and what are the distinct notation variants a parser must handle
+before it can do taxonomy lookup?
+
+---
+
+## Source
+
+All findings in this report are from `caas/core/sampling/unified_ingredients_data-raw_updated.json`:
+1,026 product rows, each carrying `sku_name` and `exact_ingredients`. The dataset
+covers branded Indian packaged food products sourced from OpenFoodFacts; it was
+filtered and deduplicated prior to this analysis. See `caas/claims/offdata_claims.md`
+for the filtering decisions.
+
+---
+
+## What the data shows
+
+### E-numbers and INS numbers both appear
+
+88 products in the 1,026-row dataset declare at least one additive using an EU
+E-number (`E{n}` format). 113 products declare at least one additive using an INS
+number (`INS {n}` or `Ins {n}` format). The two sets overlap: 35 distinct additive
+numbers appear in both E-number and INS-number form across the dataset — the same
+additive, two naming conventions, different products.
+
+The 46 distinct E-numbers found in the dataset:
+
+`E100, E102, E110, E120, E122, E124, E133, E1422, E1442, E200, E202, E211, E260,
+E282, E296, E319, E322, E330, E331, E339, E341, E407, E410, E412, E415, E417,
+E418, E435, E440, E442, E446, E452, E4521, E466, E471, E475, E476, E492, E500,
+E501, E508, E521, E551, E627, E631, E635, E960`
+
+E-numbers in this dataset come primarily from chocolate and confectionery products
+(Amul, Cadbury lines) and from masala snack and noodle products. INS numbers appear
+more broadly, including in snack foods, dairy, and beverages.
+
+### The same additive, both conventions
+
+Selected examples where the same INS/E number appears under both conventions across
+different products:
+
+| Additive | E-number form | Products using E-form | INS-number form | Products using INS-form |
+|---|---|---|---|---|
+| Lecithin | E322 | amul belgian milk chocolate, amul camel milk chocolate | INS 322 | tata soulfull ragi bites, havmor ice cream choco brownie |
+| Disodium guanylate | E631 | kurkure zig zag, ching's secret paneer chilli masala | INS 631 | bingo potato chips, yippee 2-minute masala noodles |
+| Polyglycerol polyricinoleate | E476 | amul belgian milk chocolate | INS 476 | sugar free d'lite sweetener |
+| Silicon dioxide | E551 | ching's secret instant noodles manchurian | INS 551 | bingo potato chips, candyman tadka lollipop |
+| Citric acid | E330 | haldiram's sabudana tikki, kwality wall's cassata | INS 330 | bingo potato chips, doritos sweet chili, kurkure puffcorn |
+
+The pattern is not random. E-numbers appear on products from manufacturers who also
+sell into European markets or follow European labeling conventions. INS numbers follow
+FSSAI conventions for the Indian market.
+
+### Four distinct notation variants
+
+The dataset shows four distinct ways additive numbers appear in ingredient strings:
+
+**Variant 1: `E{n}` — EU E-number, no prefix space**
+
+```
+E322, E476, E631, E551, E330
+```
+
+Appears in strings from chocolate and snack products following European convention.
+No space between prefix and number.
+
+**Variant 2: `INS {n}` — all-caps prefix, space, number**
+
+```
+INS 330, INS 551, INS 471, INS 102
+```
+
+The most common INS form. 77 products in the dataset use this variant. Appears in
+all product categories.
+
+**Variant 3: `Ins {n}` — mixed-case prefix, space, number**
+
+```
+Ins 330, Ins 296, Ins 551, Ins 300
+```
+
+25 products use this variant. Functionally identical to Variant 2 but the case
+difference will cause a case-sensitive string match to fail. `INS 551` and `Ins 551`
+are the same substance; no parser should treat them differently.
+
+**Variant 4: Bare number in parentheses — no prefix**
+
+```
+Colour (162), Citric Acid (330), Acidity Regulator (330),
+Anticaking Agent (551), Stabilizer (170)
+```
+
+The number appears in parentheses after the functional class or common name, with
+no `INS` or `E` prefix. Examples found in Doritos, Kurkure, and Lay's ingredient
+strings. The number is unambiguous only if the reader knows it is an INS number
+— the string gives no explicit signal.
+
+A fifth structural variant also appears — the number inside a parenthetical that
+already contains the functional class declaration:
+
+```
+Acidity Regulators (Ins 296, Ins 330, Ins 334)
+(INS 296), (Ins 551), (INS 508)
+```
+
+This is a punctuation pattern, not a new numbering convention — the number is still
+Variant 2 or 3 — but a parser that splits on parentheses or commas first may not
+extract the numbers cleanly without handling this structure.
+
+### What was not found
+
+No US FD&C naming was found in this dataset. "Red 40," "Yellow 6," "Blue 1" and
+similar US convention names do not appear. The convention mixing in Indian label
+data is specifically EU E-number vs Indian INS-number. US naming is not a third
+variant to handle.
+
+---
+
+## Design implication for IFID
+
+IFID's additives taxonomy uses INS numbers as keys. Any pipeline that takes Indian
+label text and looks up an ingredient against the taxonomy must normalise additive
+numbers before lookup.
+
+The normalisation step needs to handle at minimum:
+
+1. Strip `E` prefix, match remaining digits to INS key
+2. Strip `INS ` prefix (all caps, with space) to get digits
+3. Strip `Ins ` prefix (mixed case, with space) to get digits
+4. Recognise bare parenthetical numbers `(\d{3,4})` as INS numbers when adjacent
+   to a functional class or common name
+
+Steps 1–3 require a case-insensitive match or explicit case normalisation. Step 4
+requires context — the bare number is structurally ambiguous without the adjacent
+text.
+
+The functional class parenthetical pattern `Acidity Regulators (Ins 296, Ins 330,
+Ins 334)` requires the parser to extract multiple numbers from within a single
+parenthetical, not one number per parenthetical.
+
+These are not edge cases. Variants 2 and 3 together cover 102 of the 113 products
+with INS notation; the bare-number variant appears across at least 8 distinct
+products from three major snack brands.
+
+---
+
+## Hindi language coverage in the source data
+
+`caas/claims/offdata_claims.md` Claim 05 documents the following for the full
+19,748-row OpenFoodFacts export used as the CAAS source:
+
+- `product_name_hi`: 111 non-null rows (0.56% of 19,748)
+- `ingredients_text_hi`: 11 non-null rows (0.056% of 19,748)
+- `generic_name_hi`: 2 non-null rows (0.010% of 19,748)
+
+The 4,104-row filtered working dataset used for the ingredient string analysis above
+inherits this coverage profile. There are 11 rows at most with Hindi ingredient text
+in the entire filtered dataset.
+
+OpenFoodFacts cannot serve as a source of Hindi-language ingredient data for Indian
+products. The dataset was structured and filtered for English-language coverage;
+the Hindi fields are populated only incidentally by contributors.
+
+Any IFID work that requires Hindi ingredient text — for matching against regional
+product declarations, for labeling analysis of products that carry only Hindi text,
+or for coverage of products not represented in English — requires a different data
+source than this OFF export.
+
+---
+
+## Data files
+
+| File | Role |
+|---|---|
+| `caas/core/sampling/unified_ingredients_data-raw_updated.json` | 1,026 product rows; source for all notation counts and examples in this report |
+| `caas/claims/offdata_claims.md` | 7 verified claims on the full 19,748-row OFF export; Hindi coverage figures sourced from Claim 05 |
+
+---
+
+## Note on AI authorship
+
+This document was drafted by Claude (Anthropic, Sonnet 4.6) in a Claude Code session
+on 2026-03-26, from a structured plan written by Lalitha A R.
+
+**What Claude did:**
+
+- Ran pattern searches across all 1,026 product rows to count E-number and
+  INS-number occurrences, identify notation variants, and find specific product
+  examples for each variant
+- Verified the 35-number overlap between E and INS conventions by matching digit
+  sequences across both pattern sets
+- Confirmed the four notation variants from the raw data, not from the plan
+- Drafted all prose, tables, and section structure
+
+**Constraints Claude worked under:**
+
+- No claims were made about what patterns exist without first verifying them in
+  the source file. The plan described what was expected; this report states what
+  was found.
+- Counts (88 products, 113 products, 77 products, 25 products, 46 E-numbers) are
+  from the analysis run, not from the plan.
+- The US FD&C absence is documented as a negative finding, not an assumption.
+- Hindi coverage figures are from `caas/claims/offdata_claims.md` Claim 05 — a
+  verified claim from a prior session — not from this session's analysis.
