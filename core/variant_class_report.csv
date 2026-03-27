@@ -1,0 +1,1667 @@
+variant,source,variant_signal_class,class_count,noise_or_signal
+oil,palm | soybean | sunflower | groundnut,"canonical_form, form_signal, multi_source",3,signal
+snf,milk,"canonical_form, form_signal, abbreviation_signal",3,signal
+soy,soybean,canonical_form,1,signal
+tvp,soybean,"redundant_variant, out_of_scope, canonical_form, abbreviation_signal",4,mixed
+oat,oat,canonical_form,1,signal
+wpc,milk,"canonical_form, abbreviation_signal",2,signal
+dha,algae | fish,"canonical_form, abbreviation_signal, multi_source",3,signal
+egg,egg,canonical_form,1,signal
+hvp,soybean,"canonical_form, abbreviation_signal",2,signal
+tea,tea,canonical_form,1,signal
+fig,fig,canonical_form,1,signal
+fos,sugarcane | chicory,"canonical_form, abbreviation_signal, multi_source",3,signal
+rye,rye,canonical_form,1,signal
+tvp,soybean,"redundant_variant, out_of_scope, canonical_form, abbreviation_signal",4,mixed
+palm,palm,canonical_form,1,signal
+oils,palm | soybean | sunflower | groundnut,"canonical_form, form_signal, multi_source",3,signal
+salt,mineral,"redundant_variant, canonical_form, form_signal",3,mixed
+sait,mineral,"orthographic_noise, linguistic_signal, canonical_form",3,mixed
+salz,mineral,"orthographic_noise, linguistic_signal, canonical_form",3,mixed
+date,date,canonical_form,1,signal
+milk,milk,"redundant_variant, canonical_form, form_signal",3,mixed
+milk,milk,"redundant_variant, canonical_form, form_signal",3,mixed
+ragi,ragi,"transliteration_signal, canonical_form",2,signal
+mint,mint,canonical_form,1,signal
+soya,soybean,canonical_form,1,signal
+urad,urad,"transliteration_signal, canonical_form",2,signal
+zinc,mineral,"canonical_form, grade_signal, fortification_signal",3,signal
+oats,oats,canonical_form,1,signal
+hing,asafoetida,transliteration_signal,1,signal
+peas,peas,canonical_form,1,signal
+milk,milk,"redundant_variant, canonical_form, form_signal",3,mixed
+whey,milk,"canonical_form, form_signal",2,signal
+amra,hog plum,canonical_form,1,signal
+พริก,chili,linguistic_signal,1,signal
+curd,milk,"canonical_form, form_signal",2,signal
+dahi,milk,"transliteration_signal, form_signal",2,signal
+ghee,milk,"transliteration_signal, form_signal",2,signal
+lime,lime,canonical_form,1,signal
+mace,mace,canonical_form,1,signal
+monk,monk fruit,canonical_form,1,signal
+okra,okra,canonical_form,1,signal
+plum,plum,canonical_form,1,signal
+rice,rice,canonical_form,1,signal
+paua,abalone,transliteration_signal,1,signal
+poha,rice,transliteration_signal,1,signal
+sago,sago,"transliteration_signal, canonical_form",2,signal
+rava,wheat,"transliteration_signal, form_signal",2,signal
+salt,mineral,"redundant_variant, canonical_form, form_signal",3,mixed
+atta,wheat,transliteration_signal,1,signal
+figs,fig,canonical_form,1,signal
+balm,balm,canonical_form,1,signal
+bran,wheat,"canonical_form, form_signal",2,signal
+kale,kale,canonical_form,1,signal
+khoa,milk,transliteration_signal,1,signal
+carot,carrot,"orthographic_noise, canonical_form",2,mixed
+cream,milk,"canonical_form, form_signal",2,signal
+dates,date,"orthographic_noise, canonical_form",2,mixed
+maida,wheat,transliteration_signal,1,signal
+mango,mango,"orthographic_noise, canonical_form",2,mixed
+dairy,milk,"redundant_variant, canonical_form, grade_signal",3,mixed
+khoya,milk,"orthographic_noise, canonical_form",2,mixed
+bajra,pearl millet,transliteration_signal,1,signal
+jowar,sorghum,transliteration_signal,1,signal
+pista,pistachio,transliteration_signal,1,signal
+sugar,sugarcane,"orthographic_noise, canonical_form, form_signal",3,mixed
+sucre,sugarcane,"orthographic_noise, linguistic_signal, canonical_form",3,mixed
+đường,sugarcane,linguistic_signal,1,signal
+kakvi,sugarcane,transliteration_signal,1,signal
+wafer,wheat,"canonical_form, form_signal",2,signal
+wheat,wheat,"redundant_variant, canonical_form",2,mixed
+kesar,saffron,"transliteration_signal, grade_signal",2,signal
+mater,peas,canonical_form,1,signal
+yeast,yeast,"canonical_form, grade_signal",2,signal
+apple,apple,canonical_form,1,signal
+basil,basil,canonical_form,1,signal
+tulsi,tulsi,"transliteration_signal, canonical_form",2,signal
+beans,beans,"canonical_form, form_signal",2,signal
+besan,chickpea,transliteration_signal,1,signal
+chana,chickpea,transliteration_signal,1,signal
+clove,clove,canonical_form,1,signal
+cocoa,cocoa,canonical_form,1,signal
+cumin,cumin,canonical_form,1,signal
+jeera,cumin,transliteration_signal,1,signal
+moong,mung bean,transliteration_signal,1,signal
+guava,guava,canonical_form,1,signal
+honey,honey,"canonical_form, form_signal",2,signal
+leeks,leek,canonical_form,1,signal
+lemon,lemon,canonical_form,1,signal
+dairy,milk,"redundant_variant, canonical_form, grade_signal",3,mixed
+salts,mineral,"orthographic_noise, canonical_form",2,mixed
+onion,onion,"orthographic_noise, canonical_form",2,mixed
+sooji,wheat,transliteration_signal,1,signal
+wheat,wheat,"redundant_variant, canonical_form",2,mixed
+supar,areca nut,canonical_form,1,signal
+thyme,thyme,canonical_form,1,signal
+water,water,"canonical_form, form_signal",2,signal
+brine,mineral,canonical_form,1,signal
+lupin,lupin,canonical_form,1,signal
+musli,safed musli,canonical_form,1,signal
+oxide,mineral,"canonical_form, form_signal",2,signal
+pipal,long pepper,"orthographic_noise, canonical_form",2,mixed
+spelt,spelt,canonical_form,1,signal
+carrot,carrot,"orthographic_noise, canonical_form",2,mixed
+turnip,turnip,canonical_form,1,signal
+cashew,cashew,"orthographic_noise, canonical_form, grade_signal",3,mixed
+garlic,garlic,canonical_form,1,signal
+ginger,ginger,canonical_form,1,signal
+sunthi,ginger,canonical_form,1,signal
+amchur,mango,"orthographic_noise, transliteration_signal",2,mixed
+millet,millet,"orthographic_noise, canonical_form",2,mixed
+quinoa,quinoa,"redundant_variant, canonical_form",2,mixed
+saamai,little millet,canonical_form,1,signal
+nachni,finger millet,transliteration_signal,1,signal
+fudina,mint,canonical_form,1,signal
+raisin,grape,"orthographic_noise, canonical_form",2,mixed
+sesame,sesame,canonical_form,1,signal
+soynut,soybean,"orthographic_noise, canonical_form",2,mixed
+stevia,stevia,canonical_form,1,signal
+sugars,sugarcane,"orthographic_noise, canonical_form",2,mixed
+zucker,sugarcane,"linguistic_signal, canonical_form",2,signal
+mishri,sugarcane,transliteration_signal,1,signal
+waffle,wheat,"out_of_scope, canonical_form",2,mixed
+almond,almond,"orthographic_noise, canonical_form, grade_signal",3,mixed
+dhania,coriander,canonical_form,1,signal
+safron,saffron,"orthographic_noise, canonical_form",2,mixed
+fennel,fennel,canonical_form,1,signal
+ajwain,carom,transliteration_signal,1,signal
+ajowan,ajowan,canonical_form,1,signal
+coffee,coffee,canonical_form,1,signal
+banana,banana,canonical_form,1,signal
+barley,barley,canonical_form,1,signal
+pepper,pepper,"redundant_variant, canonical_form",2,mixed
+brahmi,brahmi,canonical_form,1,signal
+butter,milk,"canonical_form, form_signal",2,signal
+celery,celery,canonical_form,1,signal
+cheese,milk,"redundant_variant, canonical_form, form_signal",3,mixed
+paneer,milk,transliteration_signal,1,signal
+cheese,milk,"redundant_variant, canonical_form, form_signal",3,mixed
+chilli,chilli,"orthographic_noise, redundant_variant, canonical_form",3,mixed
+chilli,chilli,"orthographic_noise, redundant_variant, canonical_form",3,mixed
+cloves,cloves,canonical_form,1,signal
+khobra,coconut,canonical_form,1,signal
+yogurt,milk,"orthographic_noise, redundant_variant, canonical_form",3,mixed
+lentil,lentil,"orthographic_noise, canonical_form",2,mixed
+masoor,lentil,transliteration_signal,1,signal
+casein,milk,"canonical_form, form_signal",2,signal
+nutmeg,nutmeg,canonical_form,1,signal
+onions,onion,"orthographic_noise, canonical_form",2,mixed
+tomate,tomato,"orthographic_noise, canonical_form",2,mixed
+pepper,pepper,"redundant_variant, canonical_form",2,mixed
+potato,potato,"orthographic_noise, canonical_form",2,mixed
+quinoa,quinoa,"redundant_variant, canonical_form",2,mixed
+radish,radish,canonical_form,1,signal
+tomato,tomato,"orthographic_noise, canonical_form",2,mixed
+anjeer,fig,transliteration_signal,1,signal
+chakka,jackfruit,canonical_form,1,signal
+chhena,milk,canonical_form,1,signal
+chikoo,sapodilla,"redundant_variant, canonical_form",2,mixed
+chikoo,sapodilla,"redundant_variant, canonical_form",2,mixed
+chirva,rice,transliteration_signal,1,signal
+chives,chives,"redundant_variant, canonical_form",2,mixed
+chives,chives,"redundant_variant, canonical_form",2,mixed
+citron,citron,canonical_form,1,signal
+gluten,wheat,"canonical_form, form_signal",2,signal
+pecans,pecan,canonical_form,1,signal
+pomelo,pomelo,canonical_form,1,signal
+yogurt,milk,"orthographic_noise, redundant_variant, canonical_form",3,mixed
+alm oil,palm,"orthographic_noise, form_signal",2,mixed
+sal fat,sal,"linguistic_signal, canonical_form, form_signal",3,signal
+carrots,carrot,"orthographic_noise, canonical_form",2,mixed
+cashews,cashew,"orthographic_noise, canonical_form",2,mixed
+com oil,corn,"orthographic_noise, form_signal",2,mixed
+mangoes,mango,"orthographic_noise, canonical_form",2,mixed
+amchoor,mango,"orthographic_noise, canonical_form",2,mixed
+millets,millet,"orthographic_noise, canonical_form",2,mixed
+menthol,mint,"redundant_variant, canonical_form",2,mixed
+paprika,paprika,canonical_form,1,signal
+raisins,grape,"orthographic_noise, canonical_form",2,mixed
+til oil,sesame,form_signal,1,signal
+soynuts,soybean,"orthographic_noise, canonical_form",2,mixed
+sucrose,sugarcane,"orthographic_noise, canonical_form",2,mixed
+jaggery,sugarcane | palm,"canonical_form, multi_source",2,signal
+glucose,corn | tapioca,"orthographic_noise, canonical_form, multi_source",3,mixed
+vinegar,sugarcane,"canonical_form, form_signal",2,signal
+almonds,almond,"orthographic_noise, canonical_form",2,mixed
+mandeln,almond,canonical_form,1,signal
+tumeric,turmeric,"orthographic_noise, canonical_form",2,mixed
+saffron,saffron,"orthographic_noise, canonical_form",2,mixed
+om seed,ajwain,"form_signal, grade_signal",2,signal
+aniseed,anise,canonical_form,1,signal
+apricot,apricot,canonical_form,1,signal
+maricha,pepper,transliteration_signal,1,signal
+milkfat,milk,"orthographic_noise, canonical_form",2,mixed
+cow fat,beef,"redundant_variant, form_signal, grade_signal",3,mixed
+cabbage,cabbage,canonical_form,1,signal
+chicory,chicory,canonical_form,1,signal
+coconut,coconut,canonical_form,1,signal
+cow fat,beef,"redundant_variant, form_signal, grade_signal",3,mixed
+yoghurt,milk,"orthographic_noise, redundant_variant, canonical_form",3,mixed
+kalonji,nigella seed,transliteration_signal,1,signal
+lactose,milk,"canonical_form, form_signal",2,signal
+lentils,lentil,"orthographic_noise, canonical_form",2,mixed
+mulethi,licorice,transliteration_signal,1,signal
+pippali,long pepper,"orthographic_noise, canonical_form",2,mixed
+menthol,mint,"redundant_variant, canonical_form",2,mixed
+moringa,moringa,canonical_form,1,signal
+shitake,mushroom,"orthographic_noise, canonical_form",2,mixed
+shitaki,mushroom,"orthographic_noise, canonical_form",2,mixed
+mustard,mustard,canonical_form,1,signal
+shallot,shallot,canonical_form,1,signal
+oregano,oregano,canonical_form,1,signal
+parsley,parsley,canonical_form,1,signal
+soybean,soybean,"orthographic_noise, canonical_form",2,mixed
+spinach,spinach,canonical_form,1,signal
+anistar,star anise,"orthographic_noise, canonical_form",2,mixed
+tapioca,tapioca,canonical_form,1,signal
+trifala,amla | haritaki | bibhitaki,"canonical_form, multi_source",2,signal
+vannila,vanilla,"orthographic_noise, canonical_form",2,mixed
+alcohol,sugarcane | molasses,"canonical_form, multi_source",2,signal
+lactase,yeast,canonical_form,1,signal
+catechu,acacia catechu,canonical_form,1,signal
+cucumis,cucumber,canonical_form,1,signal
+isabgol,psyllium,transliteration_signal,1,signal
+fox nut,fox nut,"orthographic_noise, canonical_form",2,mixed
+foxnuts,fox nut,"orthographic_noise, canonical_form",2,mixed
+gongura,gongura,canonical_form,1,signal
+isomalt,sugarcane,canonical_form,1,signal
+pumpkin,pumpkin,canonical_form,1,signal
+nannari,sarsaparilla,transliteration_signal,1,signal
+xylitol,birch,canonical_form,1,signal
+yoghurt,milk,"orthographic_noise, redundant_variant, canonical_form",3,mixed
+palm oil,palm,"orthographic_noise, canonical_form, form_signal",3,mixed
+paim oil,palm,"orthographic_noise, form_signal",2,mixed
+palm fat,palm,"canonical_form, form_signal",2,signal
+sea salt,mineral,"form_signal, grade_signal",2,signal
+corn oil,corn,"orthographic_noise, canonical_form, form_signal",3,mixed
+costarch,corn,"orthographic_noise, canonical_form",2,mixed
+hazelnut,hazelnut,"orthographic_noise, canonical_form, grade_signal",3,mixed
+milk snf,milk,"canonical_form, form_signal",2,signal
+soy nuts,soybean,"orthographic_noise, form_signal",2,mixed
+soyabean,soybean,"orthographic_noise, canonical_form",2,mixed
+soybeans,soybean,"orthographic_noise, canonical_form",2,mixed
+sharkara,sugarcane,transliteration_signal,1,signal
+dextrose,corn | tapioca,"canonical_form, form_signal, multi_source",3,signal
+fructose,corn,canonical_form,1,signal
+levulose,corn,canonical_form,1,signal
+urad dal,urad dal,"orthographic_noise, transliteration_signal, canonical_form, form_signal",4,mixed
+turmeric,turmeric,"orthographic_noise, canonical_form",2,mixed
+cow milk,milk,"orthographic_noise, redundant_variant, canonical_form, form_signal, grade_signal",5,mixed
+raw milk,milk,"orthographic_noise, canonical_form, form_signal, grade_signal",4,mixed
+cultures,lactobacillus | streptococcus,"canonical_form, multi_source",2,signal
+allspice,allspice,canonical_form,1,signal
+bay leaf,bay laurel,"form_signal, grade_signal",2,signal
+gram dal,chickpea,"orthographic_noise, form_signal",2,mixed
+thippili,thippili,canonical_form,1,signal
+milk fat,milk,"orthographic_noise, canonical_form, form_signal",3,mixed
+chillies,chilli,"orthographic_noise, canonical_form",2,mixed
+cinnamon,cinnamon,"orthographic_noise, canonical_form",2,mixed
+cinnamom,cinnamon,"orthographic_noise, canonical_form",2,mixed
+cow milk,milk,"orthographic_noise, redundant_variant, canonical_form, form_signal, grade_signal",5,mixed
+cake gel,palm | soybean | sunflower,"form_signal, multi_source",2,signal
+cardamom,cardamom,canonical_form,1,signal
+moongdal,mung bean,"orthographic_noise, canonical_form",2,mixed
+hibiscus,hibiscus,canonical_form,1,signal
+inositol,corn,canonical_form,1,signal
+molasses,sugarcane,"canonical_form, form_signal",2,signal
+navsadar,synthetic,"orthographic_noise, transliteration_signal",2,mixed
+toor dal,pigeon pea,"orthographic_noise, transliteration_signal, form_signal",3,mixed
+potatoes,potato,"orthographic_noise, canonical_form",2,mixed
+rosemary,rosemary,canonical_form,1,signal
+semolina,wheat,"canonical_form, form_signal",2,signal
+sesbania,sesbania,canonical_form,1,signal
+sulphite,mineral,"orthographic_noise, canonical_form",2,mixed
+tamarind,tamarind,canonical_form,1,signal
+tomatoes,tomato,"orthographic_noise, canonical_form",2,mixed
+vanillin,synthetic,canonical_form,1,signal
+ro water,water,"canonical_form, form_signal",2,signal
+betelnut,areca palm,canonical_form,1,signal
+cherries,cherry,canonical_form,1,signal
+digezyme,aspergillus oryzae,canonical_form,1,signal
+fox nuts,fox nut,"orthographic_noise, canonical_form, form_signal",3,mixed
+gum base,chicle,form_signal,1,signal
+haritaki,haritaki,canonical_form,1,signal
+jalapeno,jalapeno,"orthographic_noise, canonical_form",2,mixed
+khorasan,khorasan wheat,canonical_form,1,signal
+mulberry,mulberry,canonical_form,1,signal
+nitrogen,synthetic,canonical_form,1,signal
+vallarai,brahmi,transliteration_signal,1,signal
+xylanase,aspergillus niger,canonical_form,1,signal
+palmolein,palm,"orthographic_noise, canonical_form",2,mixed
+palmolien,palm,"orthographic_noise, canonical_form",2,mixed
+vanaspati,palm | soybean | groundnut,"canonical_form, multi_source",2,signal
+kalanamak,mineral,transliteration_signal,1,signal
+rock salt,mineral,"form_signal, grade_signal",2,signal
+cornflour,corn,canonical_form,1,signal
+hazelnuts,hazelnut,"orthographic_noise, canonical_form",2,mixed
+magnesium,mineral,"canonical_form, grade_signal",2,signal
+dry mango,mango,"canonical_form, process_signal",2,signal
+raw mango,mango,"canonical_form, grade_signal",2,signal
+mint oils,mint,"canonical_form, form_signal",2,signal
+pistachio,pistachio,"orthographic_noise, canonical_form, grade_signal",3,mixed
+soya grit,soybean,form_signal,1,signal
+soyabeans,soybean,"orthographic_noise, canonical_form",2,mixed
+soya four,soybean,orthographic_noise,1,noise
+khandsari,sugarcane,transliteration_signal,1,signal
+sugarcane,sugarcane,canonical_form,1,signal
+d-glucose,corn | tapioca,"orthographic_noise, canonical_form, multi_source",3,mixed
+urid dhal,urad dal,"orthographic_noise, form_signal",2,mixed
+orid dhal,urad dal,"orthographic_noise, form_signal",2,mixed
+flax seed,flax,"orthographic_noise, canonical_form, form_signal, grade_signal",4,mixed
+oat flour,oat,"canonical_form, form_signal",2,signal
+asafetida,asafoetida,"orthographic_noise, canonical_form",2,mixed
+fenugreek,fenugreek,canonical_form,1,signal
+coriander,coriander,canonical_form,1,signal
+green pea,pea,"canonical_form, grade_signal",2,signal
+skim milk,milk,"canonical_form, form_signal, grade_signal",3,signal
+algal oil,algae,form_signal,1,signal
+aspartame,synthetic,canonical_form,1,signal
+bael pulp,bael,"canonical_form, grade_signal",2,signal
+bayleaves,bay laurel,"orthographic_noise, canonical_form",2,mixed
+chana dal,chickpea,"transliteration_signal, form_signal",2,signal
+gram dhal,chickpea,"orthographic_noise, form_signal",2,mixed
+gram meal,chickpea,"orthographic_noise, form_signal",2,mixed
+bhringraj,bhringraj,canonical_form,1,signal
+black tea,tea,"canonical_form, grade_signal",2,signal
+butterfat,milk,"canonical_form, form_signal",2,signal
+chickpeas,chickpea,"orthographic_noise, canonical_form",2,mixed
+red chili,chilli,"orthographic_noise, grade_signal",2,mixed
+clove bud,clove,"canonical_form, grade_signal",2,signal
+cranberry,cranberry,canonical_form,1,signal
+vegan dha,algae,process_signal,1,signal
+egg white,egg,"canonical_form, grade_signal",2,signal
+desi ghee,milk,"transliteration_signal, form_signal",2,signal
+red grape,grape,"canonical_form, grade_signal",2,signal
+moong dal,mung bean,"orthographic_noise, transliteration_signal, form_signal",3,mixed
+green tea,tea,"canonical_form, grade_signal",2,signal
+ice cream,milk,form_signal,1,signal
+dew beans,moth bean,"form_signal, grade_signal",2,signal
+naushadar,synthetic,"orthographic_noise, transliteration_signal",2,mixed
+tree nuts,almond | cashew | walnut | pistachio,"form_signal, multi_source",2,signal
+olive oil,olive,"canonical_form, form_signal",2,signal
+toor dhal,pigeon pea,"orthographic_noise, transliteration_signal, form_signal",3,mixed
+pineapple,pineapple,canonical_form,1,signal
+plum pulp,plum,"canonical_form, grade_signal",2,signal
+potassium,mineral,"canonical_form, grade_signal",2,signal
+rice meal,rice,"canonical_form, form_signal",2,signal
+rice rava,rice,"transliteration_signal, canonical_form, form_signal",3,signal
+rice flex,rice,canonical_form,1,signal
+idli rava,rice,"orthographic_noise, redundant_variant, transliteration_signal, form_signal",4,mixed
+staranise,star anise,"orthographic_noise, canonical_form",2,mixed
+sucralose,synthetic,canonical_form,1,signal
+sulphites,mineral,"orthographic_noise, canonical_form",2,mixed
+dried fig,fig,"canonical_form, process_signal",2,signal
+ash gourd,ash gourd,canonical_form,1,signal
+bibhitaki,bibhitaki,canonical_form,1,signal
+buckwheat,buckwheat,canonical_form,1,signal
+catechins,tea,canonical_form,1,signal
+chlorella,chlorella,canonical_form,1,signal
+dry fruit,grape | date | fig | almond | cashew | pistachio,"process_signal, multi_source",2,signal
+proteases,aspergillus oryzae | bacillus subtilis,"canonical_form, multi_source",2,signal
+goat meat,goat,"canonical_form, grade_signal",2,signal
+horsegram,horsegram,canonical_form,1,signal
+idli rava,rice,"orthographic_noise, redundant_variant, transliteration_signal, form_signal",4,mixed
+jackfruit,jackfruit,canonical_form,1,signal
+jalapenos,jalapeno,"orthographic_noise, canonical_form",2,mixed
+margarine,palm | soybean | sunflower,"canonical_form, multi_source",2,signal
+spirulina,spirulina,canonical_form,1,signal
+palm olein,palm,"orthographic_noise, canonical_form",2,mixed
+edible oil,palm | soybean | sunflower | groundnut,"form_signal, grade_signal, multi_source",3,signal
+black salt,mineral,"form_signal, grade_signal",2,signal
+cashew nut,cashew,"orthographic_noise, canonical_form, grade_signal",3,mixed
+milk cream,milk,"canonical_form, form_signal",2,signal
+sour cream,milk,"form_signal, grade_signal",2,signal
+date paste,date,"canonical_form, form_signal",2,signal
+date syrup,date,"canonical_form, form_signal",2,signal
+dry ginger,ginger,"canonical_form, process_signal",2,signal
+corn syrup,corn,"canonical_form, form_signal",2,signal
+l-camitine,synthetic,"orthographic_noise, canonical_form",2,mixed
+wheatflour,wheat,"orthographic_noise, canonical_form",2,mixed
+mango bits,mango,"canonical_form, grade_signal",2,signal
+mango pulp,mango,"canonical_form, grade_signal",2,signal
+smp powder,milk,form_signal,1,signal
+milk solid,milk,"orthographic_noise, canonical_form, form_signal",3,mixed
+milksolids,milk,"orthographic_noise, canonical_form",2,mixed
+ragi flour,finger millet,"transliteration_signal, form_signal",2,signal
+dried mint,mint,"canonical_form, process_signal",2,signal
+dry pudina,mint,"transliteration_signal, process_signal",2,signal
+mint puree,mint,"linguistic_signal, canonical_form, form_signal",3,signal
+peppermint,peppermint,canonical_form,1,signal
+pistachios,pistachio,"orthographic_noise, canonical_form",2,mixed
+white till,sesame,grade_signal,1,signal
+sesame oil,sesame,"canonical_form, form_signal",2,signal
+soy flakes,soybean,"orthographic_noise, form_signal",2,mixed
+soya seeds,soybean,"form_signal, grade_signal",2,signal
+soya flour,soybean,"orthographic_noise, form_signal",2,mixed
+strawberry,strawberry,canonical_form,1,signal
+cane sugar,sugarcane,"form_signal, grade_signal",2,signal
+palm sugar,palm,"redundant_variant, canonical_form, form_signal",3,mixed
+desi khand,sugarcane,transliteration_signal,1,signal
+black gram,black gram,"canonical_form, grade_signal",2,signal
+wafer cone,wheat,"form_signal, grade_signal",2,signal
+m.p. wheat,wheat,canonical_form,1,signal
+wheat bran,wheat,"canonical_form, form_signal",2,signal
+zinc oxide,mineral,"form_signal, grade_signal, fortification_signal",3,signal
+flax seeds,flax,"orthographic_noise, canonical_form, form_signal, grade_signal",4,mixed
+badam bits,almond,"transliteration_signal, grade_signal",2,signal
+oats flour,oats,"canonical_form, form_signal",2,signal
+curry leaf,curry leaf,"canonical_form, form_signal, grade_signal",3,signal
+asafoetida,asafoetida,"orthographic_noise, canonical_form",2,mixed
+ennel seed,fennel,"orthographic_noise, form_signal, grade_signal",3,mixed
+green peas,green pea,"canonical_form, grade_signal",2,signal
+toned milk,milk,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+sweet whey,milk,"form_signal, grade_signal",2,signal
+a2 protein,milk,"form_signal, grade_signal",2,signal
+rama tulsi,tulsi,"orthographic_noise, transliteration_signal, canonical_form",3,mixed
+vana tulsi,tulsi,"orthographic_noise, transliteration_signal, canonical_form",3,mixed
+bay leaves,bay laurel,"orthographic_noise, form_signal, grade_signal",3,mixed
+gram flour,chickpea,form_signal,1,signal
+split gram,chickpea,"orthographic_noise, grade_signal",2,mixed
+gram grits,chickpea,form_signal,1,signal
+gram pulse,chickpea,orthographic_noise,1,noise
+whole gram,chickpea,grade_signal,1,signal
+black rice,black rice,"redundant_variant, canonical_form, grade_signal",3,mixed
+brown rice,brown rice,"redundant_variant, canonical_form, grade_signal",3,mixed
+chia seeds,chia,"canonical_form, form_signal, grade_signal",3,signal
+chick peas,chickpea,orthographic_noise,1,noise
+red chilli,chilli,"orthographic_noise, canonical_form, grade_signal",3,mixed
+red chilly,chilli,"orthographic_noise, grade_signal",2,mixed
+cocoa mass,cocoa,"canonical_form, form_signal",2,signal
+cocoa nibs,cocoa,"canonical_form, form_signal",2,signal
+cumin seed,cumin,"orthographic_noise, canonical_form, form_signal, grade_signal",4,mixed
+edible gum,acacia,"form_signal, grade_signal",2,signal
+emulsifier,palm | soybean | sunflower,"orthographic_noise, canonical_form, multi_source",3,mixed
+emulsfying,palm | soybean | sunflower,"canonical_form, multi_source",2,signal
+emuslifier,palm | soybean | sunflower,"orthographic_noise, canonical_form, multi_source",3,mixed
+grape pulp,grape,"canonical_form, grade_signal",2,signal
+green gram,mung bean,grade_signal,1,signal
+mung beans,mung bean,"orthographic_noise, canonical_form, form_signal",3,mixed
+moong bean,mung bean,"orthographic_noise, transliteration_signal",2,mixed
+guava pulp,guava,"canonical_form, grade_signal",2,signal
+jamun pulp,java plum,"transliteration_signal, grade_signal",2,signal
+papad khar,synthetic,transliteration_signal,1,signal
+lime juice,lime,"canonical_form, form_signal",2,signal
+monk fruit,monk fruit,canonical_form,1,signal
+moth flour,moth bean,"form_signal, grade_signal",2,signal
+niger seed,niger,"canonical_form, form_signal, grade_signal",3,signal
+nut pieces,almond | cashew | pistachio | walnut,"grade_signal, multi_source",2,signal
+nuts paste,almond | cashew | pistachio | walnut,"form_signal, multi_source",2,signal
+palm sugar,palm,"redundant_variant, canonical_form, form_signal",3,mixed
+peach pulp,peach,"canonical_form, grade_signal",2,signal
+pigeon pea,pigeon pea,canonical_form,1,signal
+poppy seed,poppy,"canonical_form, form_signal, grade_signal",3,signal
+rice flour,rice,"orthographic_noise, canonical_form, form_signal",3,mixed
+rice grits,rice,"canonical_form, form_signal",2,signal
+brown rice,brown rice,"redundant_variant, canonical_form, grade_signal",3,mixed
+black rice,black rice,"redundant_variant, canonical_form, grade_signal",3,mixed
+white poha,rice,"transliteration_signal, grade_signal",2,signal
+rice floor,rice,"orthographic_noise, canonical_form",2,mixed
+nylon poha,rice,"transliteration_signal, process_signal",2,signal
+rose petal,rose,"canonical_form, form_signal",2,signal
+rose water,rose,"canonical_form, form_signal",2,signal
+bansi rawa,wheat,transliteration_signal,1,signal
+idly ravva,rice,"orthographic_noise, redundant_variant",2,noise
+soya sauce,soybean,form_signal,1,signal
+star anise,star anise,"orthographic_noise, canonical_form",2,mixed
+tea leaves,tea,"canonical_form, form_signal, grade_signal",3,signal
+watermelon,watermelon,canonical_form,1,signal
+aavarampoo,aavarampoo,canonical_form,1,signal
+barramundi,barramundi,canonical_form,1,signal
+cloudifier,palm | soybean | sunflower,"canonical_form, multi_source",2,signal
+sandalwood,sandalwood,canonical_form,1,signal
+eucalyptol,eucalyptus,canonical_form,1,signal
+goji berry,goji berry,"canonical_form, grade_signal",2,signal
+idly ravva,rice,"orthographic_noise, redundant_variant",2,noise
+l-theanine,tea,canonical_form,1,signal
+mayonnaise,soybean | sunflower | egg,"canonical_form, multi_source",2,signal
+mct powder,coconut | palm kernel,"form_signal, multi_source",2,signal
+wheatgrass,wheatgrass,canonical_form,1,signal
+red salmon,salmon,"canonical_form, grade_signal",2,signal
+palm kernel,palm,"canonical_form, form_signal, grade_signal",3,signal
+shea butter,shea,"canonical_form, form_signal",2,signal
+refined oil,palm | soybean | sunflower | groundnut,"form_signal, process_signal, multi_source",3,signal
+common salt,mineral,"form_signal, grade_signal",2,signal
+edible salt,mineral,"form_signal, grade_signal",2,signal
+sodium salt,mineral,"form_signal, grade_signal",2,signal
+batter salt,mineral,"form_signal, grade_signal",2,signal
+loaded salt,mineral,"form_signal, grade_signal",2,signal
+smoked salt,mineral,"form_signal, process_signal",2,signal
+carrot bits,carrot,"canonical_form, grade_signal",2,signal
+cashew nuts,cashew,"orthographic_noise, canonical_form, form_signal, grade_signal",4,mixed
+corn starch,corn,"canonical_form, form_signal",2,signal
+date powder,date,"canonical_form, form_signal",2,signal
+l-carnitine,synthetic,"orthographic_noise, canonical_form",2,mixed
+wheat flour,wheat,"orthographic_noise, canonical_form, form_signal",3,mixed
+mango puree,mango,"linguistic_signal, canonical_form, form_signal",3,signal
+dried mango,mango,"canonical_form, process_signal",2,signal
+mango juice,mango,"canonical_form, form_signal",2,signal
+milk powder,milk,"canonical_form, form_signal",2,signal
+milk solids,milk,"orthographic_noise, canonical_form, form_signal",3,mixed
+kodo millet,kodo millet,canonical_form,1,signal
+bajra flour,pearl millet,"transliteration_signal, form_signal",2,signal
+mint leaves,mint,"canonical_form, form_signal, grade_signal",3,signal
+sesame seed,sesame,"orthographic_noise, canonical_form, form_signal, grade_signal",4,mixed
+soya flakes,soybean,"orthographic_noise, form_signal",2,mixed
+soybean oil,soybean,"orthographic_noise, canonical_form, form_signal",3,mixed
+added sugar,sugarcane,"orthographic_noise, form_signal",2,mixed
+brown sugar,sugarcane,"form_signal, grade_signal",2,signal
+sugar syrup,sugarcane,form_signal,1,signal
+white sugar,sugarcane,"form_signal, grade_signal",2,signal
+wheat cream,wheat,"canonical_form, form_signal",2,signal
+rolled oats,oats,"canonical_form, process_signal, grade_signal",3,signal
+orange pulp,orange,"canonical_form, grade_signal",2,signal
+glazed peel,citrus,"form_signal, grade_signal",2,signal
+citrus pulp,citrus,"canonical_form, grade_signal",2,signal
+fennel seed,fennel,"orthographic_noise, canonical_form, form_signal, grade_signal",4,mixed
+dried yeast,yeast,"canonical_form, process_signal, grade_signal",3,signal
+whey powder,milk,form_signal,1,signal
+carom seeds,carom,"orthographic_noise, canonical_form, form_signal, grade_signal",4,mixed
+bishop seed,carom,"form_signal, grade_signal",2,signal
+apple juice,apple,"canonical_form, form_signal",2,signal
+green apple,apple,"redundant_variant, canonical_form, grade_signal",3,mixed
+ashwagandha,ashwagandha,canonical_form,1,signal
+banana pulp,banana,"canonical_form, grade_signal",2,signal
+cassia leaf,cassia,"canonical_form, form_signal, grade_signal",3,signal
+french bean,french bean,"orthographic_noise, canonical_form, grade_signal",3,mixed
+bengal gram,chickpea,grade_signal,1,signal
+split grams,chickpea,"orthographic_noise, grade_signal",2,mixed
+gram pulses,chickpea,orthographic_noise,1,noise
+black cumin,black cumin,"canonical_form, grade_signal",2,signal
+blueberries,blueberry,canonical_form,1,signal
+buffalo fat,buffalo milk,"form_signal, grade_signal",2,signal
+chicken fat,chicken,"orthographic_noise, canonical_form, form_signal",3,mixed
+green chili,chili,"orthographic_noise, canonical_form, grade_signal",3,mixed
+coco powder,cocoa,"orthographic_noise, linguistic_signal, form_signal",3,mixed
+coconut fat,coconut,"canonical_form, form_signal",2,signal
+coconut oil,coconut,"canonical_form, form_signal",2,signal
+cranberries,cranberry,canonical_form,1,signal
+cumin seeds,cumin,"orthographic_noise, canonical_form, form_signal, grade_signal",4,mixed
+cumin whole,cumin,"canonical_form, grade_signal",2,signal
+jeera seeds,cumin,"transliteration_signal, form_signal, grade_signal",3,signal
+emulsifiers,palm | soybean | sunflower,"orthographic_noise, canonical_form, multi_source",3,mixed
+grape juice,grape,"canonical_form, form_signal",2,signal
+green apple,apple,"redundant_variant, canonical_form, grade_signal",3,mixed
+moong beans,mung bean,"orthographic_noise, transliteration_signal, form_signal",3,mixed
+guava juice,guava,"canonical_form, form_signal",2,signal
+guava puree,guava,"linguistic_signal, canonical_form, form_signal",3,signal
+lemon juice,lemon,"canonical_form, form_signal",2,signal
+red lentils,lentil,grade_signal,1,signal
+litchi pulp,litchi,"canonical_form, grade_signal",2,signal
+long pepper,long pepper,canonical_form,1,signal
+lotus seeds,lotus,"transliteration_signal, canonical_form, form_signal, grade_signal",4,signal
+mace powder,mace,"canonical_form, form_signal",2,signal
+mustard oil,mustard seed,form_signal,1,signal
+nucleotides,yeast,canonical_form,1,signal
+fried onion,onion,"canonical_form, process_signal",2,signal
+white onion,onion,"canonical_form, grade_signal",2,signal
+papaya pulp,papaya,"canonical_form, grade_signal",2,signal
+pea protein,pea,"canonical_form, form_signal",2,signal
+peach juice,peach,"canonical_form, form_signal",2,signal
+pomegranate,pomegranate,canonical_form,1,signal
+potato flex,potato,canonical_form,1,signal
+raspberries,raspberry,canonical_form,1,signal
+resveratrol,grape,canonical_form,1,signal
+rice powder,rice,"canonical_form, form_signal",2,signal
+rice flakes,rice,"canonical_form, form_signal",2,signal
+puffed rice,rice,"canonical_form, process_signal, grade_signal",3,signal
+sago powder,sago,"transliteration_signal, canonical_form, form_signal",3,signal
+instant tea,tea,"canonical_form, process_signal",2,signal
+edible bran,rice | wheat | oat,"form_signal, grade_signal, multi_source",3,signal
+citharathai,citharathai,canonical_form,1,signal
+sadhakuppai,sadhakuppai,canonical_form,1,signal
+iodised salt,mineral,"orthographic_noise, form_signal, grade_signal, fortification_signal",4,mixed
+iodized salt,mineral,"orthographic_noise, form_signal, grade_signal, fortification_signal",4,mixed
+lodised salt,mineral,"orthographic_noise, form_signal",2,mixed
+lodized salt,mineral,"orthographic_noise, form_signal",2,mixed
+carrot puree,carrot,"linguistic_signal, canonical_form, form_signal",3,signal
+maize starch,corn,form_signal,1,signal
+dates powder,dates,"canonical_form, form_signal",2,signal
+fresh garlic,garlic,"canonical_form, grade_signal",2,signal
+dried garlic,garlic,"canonical_form, process_signal",2,signal
+garlic paste,garlic,"canonical_form, form_signal",2,signal
+fresh ginger,ginger,"canonical_form, grade_signal",2,signal
+dried ginger,ginger,"canonical_form, process_signal",2,signal
+ginger paste,ginger,"canonical_form, form_signal",2,signal
+ginger whole,ginger,"canonical_form, grade_signal",2,signal
+wheat powder,wheat,"canonical_form, form_signal",2,signal
+mango solids,mango,"canonical_form, form_signal",2,signal
+mango powder,mango,"canonical_form, form_signal",2,signal
+samai flakes,samai,"canonical_form, form_signal",2,signal
+bajra flakes,bajra,"transliteration_signal, canonical_form, form_signal",3,signal
+bajra powder,bajra,"transliteration_signal, canonical_form, form_signal",3,signal
+whole jawari,sorghum,grade_signal,1,signal
+pist extract,pistachio,form_signal,1,signal
+sesame seeds,sesame,"orthographic_noise, canonical_form, form_signal, grade_signal",4,mixed
+defatted soy,soybean,"orthographic_noise, process_signal",2,mixed
+soyabean oil,soybean,"orthographic_noise, form_signal",2,mixed
+soya protein,soybean,form_signal,1,signal
+added sugars,sugarcane,orthographic_noise,1,noise
+sugar powder,sugarcane,form_signal,1,signal
+invert sugar,sugarcane,"redundant_variant, form_signal",2,mixed
+invert sugar,sugarcane,"redundant_variant, form_signal",2,mixed
+invert syrup,sugarcane,form_signal,1,signal
+golden syrup,sugarcane,form_signal,1,signal
+wheat flakes,wheat,"canonical_form, form_signal",2,signal
+malted wheat,wheat,"canonical_form, process_signal",2,signal
+wheat gluten,wheat,"canonical_form, form_signal",2,signal
+vital gluten,wheat,"form_signal, grade_signal",2,signal
+almond flour,almond,"canonical_form, form_signal, grade_signal",3,signal
+almond paste,almond,"canonical_form, form_signal, grade_signal",3,signal
+instant oats,oats,"canonical_form, process_signal",2,signal
+curry leaves,curry leaf,"form_signal, grade_signal",2,signal
+kasuri methi,fenugreek,transliteration_signal,1,signal
+orange juice,orange,"canonical_form, form_signal",2,signal
+orange peels,orange,"canonical_form, form_signal",2,signal
+fennel seeds,fennel,"orthographic_noise, canonical_form, form_signal, grade_signal",4,mixed
+skimmed milk,milk,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+buffalo milk,buffalo milk,"canonical_form, form_signal, grade_signal",3,signal
+torula yeast,yeast,"canonical_form, grade_signal",2,signal
+whey protein,milk,"orthographic_noise, form_signal",2,mixed
+acesulfame k,synthetic,canonical_form,1,signal
+carrom seeds,carom,"orthographic_noise, form_signal, grade_signal",3,mixed
+ajwai powder,carom,form_signal,1,signal
+apricot pulp,apricot,"canonical_form, grade_signal",2,signal
+coffee beans,coffee,"canonical_form, form_signal",2,signal
+aronia berry,aronia,"canonical_form, grade_signal",2,signal
+banana juice,banana,"canonical_form, form_signal",2,signal
+banana puree,banana,"linguistic_signal, canonical_form, form_signal",3,signal
+barley flour,barley,"canonical_form, form_signal",2,signal
+tulsi leaves,tulsi,"transliteration_signal, canonical_form, form_signal, grade_signal",4,signal
+basmati rice,rice,"redundant_variant, canonical_form",2,mixed
+french beans,french bean,"orthographic_noise, canonical_form, form_signal, grade_signal",4,mixed
+cluster bean,cluster bean,canonical_form,1,signal
+roasted gram,chickpea,process_signal,1,signal
+black pepper,black pepper,"canonical_form, grade_signal",2,signal
+buffalo meat,buffalo,"canonical_form, grade_signal",2,signal
+white butter,milk,"form_signal, grade_signal",2,signal
+butter cream,milk,form_signal,1,signal
+beurre fondu,milk,linguistic_signal,1,signal
+malt extract,barley,"redundant_variant, form_signal",2,mixed
+paneer dices,milk,"transliteration_signal, form_signal",2,signal
+chicken bits,chicken,"canonical_form, grade_signal",2,signal
+chicken meat,chicken,"orthographic_noise, canonical_form",2,mixed
+chicory root,chicory,"canonical_form, form_signal",2,signal
+chili powder,chili,"redundant_variant, canonical_form, form_signal",3,mixed
+green chilli,chili,"orthographic_noise, grade_signal",2,mixed
+green chilly,chili,"orthographic_noise, grade_signal",2,mixed
+red chillies,chili,grade_signal,1,signal
+chili powder,chili,"redundant_variant, canonical_form, form_signal",3,mixed
+white chilli,chili,grade_signal,1,signal
+clove powder,clove,"orthographic_noise, canonical_form, form_signal",3,mixed
+cloves whole,clove,grade_signal,1,signal
+whole cloves,clove,grade_signal,1,signal
+cocoa powder,cocoa,"orthographic_noise, canonical_form, form_signal",3,mixed
+cocoa solids,cocoa,"canonical_form, form_signal",2,signal
+cocoa butter,cocoa,"canonical_form, form_signal",2,signal
+cumin powder,cumin,"canonical_form, form_signal",2,signal
+jeera powder,cumin,"transliteration_signal, form_signal",2,signal
+ground cumin,cumin,"canonical_form, process_signal, grade_signal",3,signal
+cuminextract,cumin,"orthographic_noise, canonical_form",2,mixed
+kalonji seed,kalonji,"transliteration_signal, canonical_form, form_signal, grade_signal",4,signal
+lemon powder,lemon,"canonical_form, form_signal",2,signal
+maltodextrin,corn | tapioca,"redundant_variant, canonical_form, multi_source",3,mixed
+milk protein,milk,"canonical_form, form_signal",2,signal
+onion powder,onion,"canonical_form, form_signal",2,signal
+onion flakes,onion,"canonical_form, form_signal",2,signal
+spring onion,spring onion,canonical_form,1,signal
+papaya puree,papaya,"linguistic_signal, canonical_form, form_signal",3,signal
+rapeseed oil,rapeseed,"canonical_form, form_signal",2,signal
+basmati rice,rice,"redundant_variant, canonical_form",2,mixed
+malt extract,barley,"redundant_variant, form_signal",2,mixed
+roasted poha,rice,"transliteration_signal, process_signal",2,signal
+maltodextrin,corn | tapioca,"redundant_variant, canonical_form, multi_source",3,mixed
+stearic acid,palm | soybean,multi_source,1,signal
+tangy tomato,tomato,"canonical_form, grade_signal",2,signal
+tomato paste,tomato,"canonical_form, form_signal",2,signal
+white pepper,pepper,"canonical_form, grade_signal",2,signal
+whole grains,wheat | rice | corn,"form_signal, grade_signal, multi_source",3,signal
+athimathuram,licorice,transliteration_signal,1,signal
+berries pulp,berry,grade_signal,1,signal
+bhut jolokia,bhut jolokia,canonical_form,1,signal
+fish gelatin,fish,"canonical_form, form_signal",2,signal
+green chives,chives,"canonical_form, grade_signal",2,signal
+citrus fiber,citrus,"orthographic_noise, canonical_form, form_signal",3,mixed
+citrus fibre,citrus,"orthographic_noise, canonical_form, form_signal",3,mixed
+sweet potato,sweet potato,"canonical_form, grade_signal",2,signal
+methocel k4m,synthetic,unclassified,1,unclassified
+nata de coco,coconut,linguistic_signal,1,signal
+palm stearin,palm,"canonical_form, form_signal",2,signal
+stone flower,lichen,grade_signal,1,signal
+palmolein oil,palm,"orthographic_noise, form_signal",2,mixed
+palmolien oil,palm,"orthographic_noise, form_signal",2,mixed
+vegetable fat,palm | soybean | groundnut,"orthographic_noise, form_signal, multi_source",3,mixed
+vegetable oil,palm | soybean | sunflower | groundnut,"orthographic_noise, form_signal, multi_source",3,mixed
+sauncharnamak,mineral,transliteration_signal,1,signal
+carrot powder,carrot,"canonical_form, form_signal",2,signal
+carrot flakes,carrot,"canonical_form, form_signal",2,signal
+cashew pieces,cashew,"canonical_form, grade_signal",2,signal
+whole cashews,cashew,grade_signal,1,signal
+garlic powder,garlic,"canonical_form, form_signal",2,signal
+ginger powder,ginger,"canonical_form, form_signal",2,signal
+glucose syrup,corn | tapioca,"form_signal, multi_source",2,signal
+maltose syrup,corn | rice,"form_signal, multi_source",2,signal
+refined flour,wheat,"form_signal, process_signal",2,signal
+amchur powder,mango,"transliteration_signal, form_signal",2,signal
+millet flakes,millet,"canonical_form, form_signal",2,signal
+little millet,millet,"canonical_form, grade_signal",2,signal
+finger millet,millet,"canonical_form, grade_signal",2,signal
+rice bran oil,rice,"canonical_form, form_signal",2,signal
+soya granules,soybean,"out_of_scope, form_signal",2,mixed
+defatted soya,soybean,"orthographic_noise, process_signal",2,mixed
+soya bean oil,soybean,"orthographic_noise, form_signal",2,mixed
+refined sugar,sugarcane,"orthographic_noise, form_signal, process_signal",3,mixed
+coconut sugar,coconut,"canonical_form, form_signal",2,signal
+sunflower oil,sunflower,"canonical_form, form_signal",2,signal
+wafer biscuit,wheat,form_signal,1,signal
+almond pieces,almond,"orthographic_noise, canonical_form, grade_signal",3,mixed
+whole almonds,almond,grade_signal,1,signal
+orange powder,orange,"canonical_form, form_signal",2,signal
+fennel powder,fennel,"canonical_form, form_signal",2,signal
+yeast extract,yeast,"canonical_form, form_signal, grade_signal",3,signal
+whey proteins,milk,"orthographic_noise, form_signal",2,mixed
+whey peptides,milk,form_signal,1,signal
+latic culture,lactobacillus,form_signal,1,signal
+ajwair powder,ajwain,form_signal,1,signal
+bishop's seed,ajwain,"orthographic_noise, form_signal, grade_signal",3,mixed
+bishop's weed,ajwain,orthographic_noise,1,noise
+apricot juice,apricot,"canonical_form, form_signal",2,signal
+arabica beans,coffee,"form_signal, grade_signal",2,signal
+robusta beans,coffee,"form_signal, grade_signal",2,signal
+baking powder,synthetic,form_signal,1,signal
+banana powder,banana,"canonical_form, form_signal",2,signal
+malted barley,barley,"canonical_form, process_signal",2,signal
+tulsi extract,tulsi,"transliteration_signal, canonical_form, form_signal",3,signal
+krishna tulsi,tulsi,"transliteration_signal, canonical_form",2,signal
+cassia leaves,cassia,"canonical_form, form_signal, grade_signal",3,signal
+pepper powder,pepper,"canonical_form, form_signal",2,signal
+paneer cheese,milk,"transliteration_signal, form_signal",2,signal
+cheese powder,milk,form_signal,1,signal
+chilli powder,chilli,"canonical_form, form_signal",2,signal
+chilli flakes,chilli,"canonical_form, form_signal",2,signal
+green chilies,chilli,"orthographic_noise, grade_signal",2,mixed
+mild jalapeño,jalapeño,"linguistic_signal, canonical_form, grade_signal",3,signal
+yellow chilli,chilli,"canonical_form, grade_signal",2,signal
+cinnamon bark,cinnamon,"canonical_form, form_signal",2,signal
+clover powder,clover,"canonical_form, form_signal",2,signal
+cloves powder,clove,"orthographic_noise, form_signal",2,mixed
+cacao en pâte,cocoa,linguistic_signal,1,signal
+shveta jiraka,cumin,transliteration_signal,1,signal
+cumin extract,cumin,"orthographic_noise, canonical_form, form_signal",3,mixed
+yogurt powder,milk,"orthographic_noise, redundant_variant, form_signal",3,mixed
+wheat dextrin,wheat,"canonical_form, form_signal",2,signal
+mineral salts,mineral,"redundant_variant, canonical_form, fortification_signal",3,mixed
+cardamom seed,cardamom,"canonical_form, form_signal, grade_signal",3,signal
+greengram dal,greengram,"canonical_form, form_signal",2,signal
+groundnut oil,groundnut,"canonical_form, form_signal",2,signal
+blossom honey,honey,"canonical_form, form_signal, grade_signal",3,signal
+alkaline salt,mineral,"form_signal, grade_signal",2,signal
+black lentils,lentil,grade_signal,1,signal
+milk products,milk,"canonical_form, form_signal",2,signal
+dairy product,milk,grade_signal,1,signal
+rennet casein,milk,form_signal,1,signal
+mineral salts,mineral,"redundant_variant, canonical_form, fortification_signal",3,mixed
+mustard seeds,mustard,"canonical_form, form_signal, grade_signal",3,signal
+mustard whole,mustard,"canonical_form, grade_signal",2,signal
+nutmeg powder,nutmeg,"canonical_form, form_signal",2,signal
+dried oregano,oregano,"canonical_form, process_signal",2,signal
+passion fruit,passion fruit,canonical_form,1,signal
+potato flakes,potato,"canonical_form, form_signal",2,signal
+potato powder,potato,"canonical_form, form_signal",2,signal
+potato sticks,potato,"canonical_form, form_signal",2,signal
+pumpkin seeds,pumpkin,"canonical_form, form_signal, grade_signal",3,signal
+puffed quinoa,quinoa,"canonical_form, process_signal, grade_signal",3,signal
+rice crispies,rice,"canonical_form, form_signal",2,signal
+spinach paste,spinach,"canonical_form, form_signal",2,signal
+spinach puree,spinach,"linguistic_signal, canonical_form, form_signal",3,signal
+tamarind pulp,tamarind,"canonical_form, grade_signal",2,signal
+tomato powder,tomato,"canonical_form, form_signal",2,signal
+french tomato,tomato,"canonical_form, grade_signal",2,signal
+treated water,water,"canonical_form, form_signal, process_signal",3,signal
+ethyl alcohol,sugarcane | corn,multi_source,1,signal
+psyllium husk,psyllium,"canonical_form, form_signal",2,signal
+hemicellulase,aspergillus niger,canonical_form,1,signal
+yogurt powder,milk,"orthographic_noise, redundant_variant, form_signal",3,mixed
+mackerel fish,mackerel,"canonical_form, grade_signal",2,signal
+cod liver oil,cod,"canonical_form, form_signal",2,signal
+vegetable fats,palm | soybean | groundnut,"orthographic_noise, form_signal, multi_source",3,mixed
+vegetable oils,palm | soybean | sunflower | groundnut,"orthographic_noise, form_signal, multi_source",3,mixed
+grated carrots,carrot,process_signal,1,signal
+caramel powder,sugarcane,form_signal,1,signal
+cultured cream,milk,"form_signal, process_signal",2,signal
+ginger extract,ginger,"canonical_form, form_signal",2,signal
+liquid glucose,corn | tapioca,multi_source,1,signal
+hazelnut paste,hazelnut,"canonical_form, form_signal, grade_signal",3,signal
+haselnusspaste,hazelnut,canonical_form,1,signal
+alphonso mango,mango,"canonical_form, grade_signal",2,signal
+foxtail millet,millet,"canonical_form, grade_signal",2,signal
+barnyard flour,barnyard millet,form_signal,1,signal
+pistachio nuts,pistachio,"canonical_form, form_signal, grade_signal",3,signal
+powdered sugar,sugarcane,"form_signal, process_signal",2,signal
+refined sugars,sugarcane,"orthographic_noise, process_signal",2,mixed
+jaggery powder,sugarcane,form_signal,1,signal
+glucose powder,corn | tapioca,"form_signal, multi_source",2,signal
+urad dal flour,black gram,"orthographic_noise, transliteration_signal, form_signal",3,mixed
+udad dal flour,black gram,"orthographic_noise, form_signal",2,mixed
+black gram dal,black gram,"form_signal, grade_signal",2,signal
+wheat crispies,wheat,"canonical_form, form_signal",2,signal
+almonds pieces,almond,"orthographic_noise, grade_signal",2,mixed
+acid regulator,synthetic | corn,multi_source,1,signal
+coriander seed,coriander,"orthographic_noise, canonical_form, form_signal, grade_signal",4,mixed
+orange extract,orange,"canonical_form, form_signal",2,signal
+tumeric powder,turmeric,"orthographic_noise, form_signal",2,mixed
+turmeric whole,turmeric,"canonical_form, grade_signal",2,signal
+snf toned milk,milk,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+active culture,lactobacillus | streptococcus,"form_signal, multi_source",2,signal
+s thermophilus,streptococcus thermophilus,orthographic_noise,1,noise
+s.thermophilus,streptococcus thermophilus,"orthographic_noise, canonical_form",2,mixed
+aloe vera bits,aloe vera,grade_signal,1,signal
+aniseed powder,anise,form_signal,1,signal
+instant coffee,coffee,"canonical_form, process_signal",2,signal
+soluble coffee,coffee,"canonical_form, process_signal",2,signal
+coffee extract,coffee,"canonical_form, form_signal",2,signal
+chickpea flour,chickpea,"orthographic_noise, canonical_form, form_signal",3,mixed
+split chickpea,chickpea,"orthographic_noise, canonical_form, grade_signal",3,mixed
+black cardamom,cardamom,"canonical_form, grade_signal",2,signal
+brown cardamom,cardamom,"canonical_form, grade_signal",2,signal
+large cardamom,cardamom,"canonical_form, grade_signal",2,signal
+cooking butter,milk,form_signal,1,signal
+cereal extract,wheat | rice | corn,"form_signal, multi_source",2,signal
+cottage cheese,milk,"form_signal, grade_signal",2,signal
+cheddar cheese,milk,form_signal,1,signal
+paneer protein,milk,"transliteration_signal, form_signal",2,signal
+dry red chilli,chilli,"canonical_form, process_signal, grade_signal",3,signal
+green chillies,chilli,"orthographic_noise, grade_signal",2,mixed
+chilli extract,chilli,"canonical_form, form_signal",2,signal
+cinnamon whole,cinnamon,"canonical_form, grade_signal",2,signal
+pasta di cacao,cocoa,linguistic_signal,1,signal
+coconut powder,coconut,"canonical_form, form_signal",2,signal
+grated coconut,coconut,"canonical_form, process_signal",2,signal
+condensed milk,milk,"canonical_form, form_signal, process_signal",3,signal
+cottonseed oil,cottonseed,"canonical_form, form_signal",2,signal
+cranberry pulp,cranberry,"canonical_form, grade_signal",2,signal
+cucumber seeds,cucumber,"canonical_form, form_signal, grade_signal",3,signal
+yoghurt powder,milk,"orthographic_noise, redundant_variant, form_signal",3,mixed
+dairy whitener,milk,"form_signal, grade_signal",2,signal
+flour improver,synthetic,form_signal,1,signal
+green cardamom,cardamom,"canonical_form, grade_signal",2,signal
+cardamom whole,cardamom,"canonical_form, grade_signal",2,signal
+small cardamom,cardamom,"canonical_form, grade_signal",2,signal
+moon dal flour,green gram,form_signal,1,signal
+lentil protein,lentil,"canonical_form, form_signal",2,signal
+moth dal flour,moth bean,"form_signal, grade_signal",2,signal
+mustard leaves,mustard,"canonical_form, form_signal, grade_signal",3,signal
+organic nutmeg,nutmeg,"canonical_form, process_signal",2,signal
+parsley leaves,parsley,"canonical_form, form_signal, grade_signal",3,signal
+sherwan pepper,pepper,canonical_form,1,signal
+split red gram,pigeon pea,grade_signal,1,signal
+red gram split,pigeon pea,"orthographic_noise, grade_signal",2,mixed
+redgram splits,pigeon pea,orthographic_noise,1,noise
+pineapple pulp,pineapple,"canonical_form, grade_signal",2,signal
+wheat semolina,wheat,"canonical_form, form_signal",2,signal
+spinach powder,spinach,"canonical_form, form_signal",2,signal
+tapioca starch,tapioca,"canonical_form, form_signal",2,signal
+vanila extract,vanilla,"orthographic_noise, form_signal",2,mixed
+vanilleschoten,vanilla,"linguistic_signal, canonical_form",2,signal
+filtered water,water,"canonical_form, form_signal, process_signal",3,signal
+resultant atta,wheat,"transliteration_signal, process_signal",2,signal
+basa pangasius,fish,grade_signal,1,signal
+bovine gelatin,beef,"form_signal, grade_signal",2,signal
+dried bok choy,bok choy,process_signal,1,signal
+hadjod extract,hadjod,"canonical_form, form_signal",2,signal
+jackfruit pulp,jackfruit,"canonical_form, grade_signal",2,signal
+yellow pumpkin,pumpkin,"canonical_form, grade_signal",2,signal
+macaroni pasta,wheat,"out_of_scope, linguistic_signal",2,mixed
+walnut inshell,walnut,"canonical_form, grade_signal",2,signal
+water caltrope,water caltrop,"canonical_form, form_signal",2,signal
+yoghurt powder,milk,"orthographic_noise, redundant_variant, form_signal",3,mixed
+palm kernel oil,palm,"canonical_form, form_signal, grade_signal",3,signal
+palm kernel fat,palm,"canonical_form, form_signal, grade_signal",3,signal
+palm superolein,palm,canonical_form,1,signal
+sodium chloride,mineral,"form_signal, grade_signal",2,signal
+modified starch,corn | tapioca | potato,"form_signal, process_signal, multi_source",3,signal
+hazelnut pieces,hazelnut,"canonical_form, grade_signal",2,signal
+vollmilchpulver,milk,canonical_form,1,signal
+full cream milk,milk,"canonical_form, form_signal, grade_signal",3,signal
+mint flavouring,mint,"canonical_form, form_signal",2,signal
+sweetener 960 a,stevia,compound_noise,1,noise
+strawberry pulp,strawberry,"canonical_form, grade_signal",2,signal
+sprinkled sugar,sugarcane,form_signal,1,signal
+sugarcane juice,sugarcane,"canonical_form, form_signal",2,signal
+fructose powder,sugarcane | corn,"form_signal, multi_source",2,signal
+roasted almonds,almond,process_signal,1,signal
+fenugreek seeds,fenugreek,"canonical_form, form_signal, grade_signal",3,signal
+coriander seeds,coriander,"orthographic_noise, canonical_form, form_signal, grade_signal",4,mixed
+coriander whole,coriander,"canonical_form, grade_signal",2,signal
+coriander puree,coriander,"linguistic_signal, canonical_form, form_signal",3,signal
+turmeric powder,turmeric,"orthographic_noise, canonical_form, form_signal",3,mixed
+turmeris powder,turmeric,"orthographic_noise, form_signal",2,mixed
+saffron threads,saffron,canonical_form,1,signal
+dehydrated peas,peas,"canonical_form, process_signal",2,signal
+a2 cow milk fat,milk,"canonical_form, form_signal, grade_signal",3,signal
+aloe vera juice,aloe vera,form_signal,1,signal
+apricot kernels,apricot,"canonical_form, form_signal",2,signal
+bengal gram dal,bengal gram,"form_signal, grade_signal",2,signal
+chickpeas flour,chickpea,"orthographic_noise, form_signal",2,mixed
+assam black tea,tea plant,grade_signal,1,signal
+kashmiri chilli,chilli,"canonical_form, grade_signal",2,signal
+red chilli bits,chilli,"canonical_form, grade_signal",2,signal
+cinnamon leaves,cinnamon,"canonical_form, form_signal, grade_signal",3,signal
+cinnamon powder,cinnamon,"canonical_form, form_signal",2,signal
+improver enzyme,synthetic,form_signal,1,signal
+cardamom powder,cardamom,"canonical_form, form_signal",2,signal
+split moong dal,mung bean,"transliteration_signal, form_signal, grade_signal",3,signal
+split mung bean,mung bean,grade_signal,1,signal
+moong dal flour,mung bean,"transliteration_signal, form_signal",2,signal
+hyaluronic acid,synthetic,unclassified,1,unclassified
+carrier lactose,milk,form_signal,1,signal
+lime flavouring,lime,"canonical_form, form_signal",2,signal
+milk components,milk,"canonical_form, form_signal",2,signal
+milk flavouring,milk,"canonical_form, form_signal",2,signal
+micellar casein,milk,form_signal,1,signal
+moringa extract,moringa,"canonical_form, form_signal",2,signal
+moth bean flour,moth bean,"form_signal, grade_signal",2,signal
+dew beans flour,dew bean,"form_signal, grade_signal",2,signal
+husked dew gram,dew bean,grade_signal,1,signal
+oyster mushroom,mushroom,canonical_form,1,signal
+schezwan pepper,schezwan pepper,canonical_form,1,signal
+pineapple juice,pineapple,"canonical_form, form_signal",2,signal
+anardana powder,pomegranate,"transliteration_signal, form_signal",2,signal
+red rice flakes,red rice,"form_signal, grade_signal",2,signal
+rose flavouring,rose,"canonical_form, form_signal",2,signal
+roasted seaweed,seaweed,"canonical_form, process_signal",2,signal
+stinging nettle,stinging nettle,canonical_form,1,signal
+sunflower seeds,sunflower,"canonical_form, form_signal, grade_signal",3,signal
+tamarind powder,tamarind,"canonical_form, form_signal",2,signal
+triphala powder,amla | bibhitaki | haritaki,"form_signal, multi_source",2,signal
+vanilla extract,vanilla,"orthographic_noise, canonical_form, form_signal",3,mixed
+buckwheat flour,buckwheat,"canonical_form, form_signal",2,signal
+psyllium powder,psyllium,"canonical_form, form_signal",2,signal
+guduchi extract,guduchi,"canonical_form, form_signal",2,signal
+precooked pasta,wheat,linguistic_signal,1,signal
+salmon fish oil,salmon,"canonical_form, form_signal, grade_signal",3,signal
+refined palm oil,palm,"canonical_form, form_signal, process_signal",3,signal
+fractionated fat,palm,"form_signal, process_signal",2,signal
+wet dates zahldi,date,grade_signal,1,signal
+nocciole turchia,hazelnut,linguistic_signal,1,signal
+magnesium malate,synthetic | apple,"grade_signal, multi_source",2,signal
+fine wheat flour,wheat,"canonical_form, form_signal, grade_signal",3,signal
+wheat flour iron,wheat,"canonical_form, form_signal, fortification_signal",3,signal
+dry mango powder,mango,"canonical_form, form_signal, process_signal",3,signal
+mango flavouring,mango,"canonical_form, form_signal",2,signal
+dried whole milk,milk,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+magermilchpulver,milk,linguistic_signal,1,signal
+mint leaf powder,mint,"canonical_form, form_signal, grade_signal",3,signal
+pistachio pieces,pistachio,"canonical_form, grade_signal",2,signal
+pista flavouring,pistachio,"transliteration_signal, form_signal",2,signal
+refined soya oil,soybean,"form_signal, process_signal",2,signal
+strawberry fruit,strawberry,canonical_form,1,signal
+strawberry puree,strawberry,"linguistic_signal, canonical_form, form_signal",3,signal
+strawberry juice,strawberry,"canonical_form, form_signal",2,signal
+granulated sugar,sugarcane,form_signal,1,signal
+split black gram,black gram,grade_signal,1,signal
+sunflower gluten,sunflower,"canonical_form, form_signal",2,signal
+flax seed powder,flax,"canonical_form, form_signal, grade_signal",3,signal
+badam flavouring,almond,"transliteration_signal, form_signal",2,signal
+fenugreek leaves,fenugreek,"canonical_form, form_signal, grade_signal",3,signal
+fenugreek powder,fenugreek,"canonical_form, form_signal",2,signal
+coriander powder,coriander,"orthographic_noise, canonical_form, form_signal",3,mixed
+coriander leaves,coriander,"canonical_form, form_signal, grade_signal",3,signal
+coniander powder,coriander,"orthographic_noise, form_signal",2,mixed
+kesar flavouring,saffron,"transliteration_signal, form_signal, grade_signal",3,signal
+calcium silicate,mineral,"grade_signal, fortification_signal",2,signal
+apple flavouring,apple,"canonical_form, form_signal",2,signal
+arrowroot powder,arrowroot,"canonical_form, form_signal",2,signal
+chick peas flour,chickpea,"orthographic_noise, form_signal",2,mixed
+split chick peas,chickpea,"orthographic_noise, grade_signal",2,mixed
+black tea leaves,tea,"canonical_form, form_signal, grade_signal",3,signal
+assam tea leaves,tea,"canonical_form, form_signal, grade_signal",3,signal
+butter from milk,milk,"canonical_form, form_signal",2,signal
+microbial rennet,synthetic,"form_signal, grade_signal",2,signal
+pasteurized milk,milk,"canonical_form, form_signal, process_signal",3,signal
+processed cheese,milk,"form_signal, process_signal",2,signal
+red chili powder,chili,"canonical_form, form_signal, grade_signal",3,signal
+red chilli whole,chili,grade_signal,1,signal
+egg white powder,egg,"canonical_form, form_signal, grade_signal",3,signal
+ferrous sulphate,mineral,"form_signal, grade_signal",2,signal
+clarified butter,milk,"form_signal, process_signal",2,signal
+split green gram,green gram,grade_signal,1,signal
+green tea leaves,tea,"canonical_form, form_signal, grade_signal",3,signal
+guava flavouring,guava,"canonical_form, form_signal",2,signal
+honey flavouring,honey,"canonical_form, form_signal",2,signal
+jamun flavouring,jamun,"transliteration_signal, canonical_form, form_signal",3,signal
+kewra flavouring,kewra,"canonical_form, form_signal",2,signal
+lactobilus casei,milk,linguistic_signal,1,signal
+lemon flavouring,lemon,"canonical_form, form_signal",2,signal
+dairy flavouring,milk,"form_signal, grade_signal",2,signal
+onion flavouring,onion,"canonical_form, form_signal",2,signal
+dehydrated onion,onion,"canonical_form, process_signal",2,signal
+potassium iodate,mineral,"orthographic_noise, grade_signal",2,mixed
+potassium iodide,mineral,"orthographic_noise, grade_signal",2,mixed
+gulab flavouring,rose,form_signal,1,signal
+rosemary extract,rosemary,"canonical_form, form_signal",2,signal
+sodium molybdate,mineral,grade_signal,1,signal
+soy sauce powder,soybean | wheat,"form_signal, multi_source",2,signal
+star anise seeds,star anise,"form_signal, grade_signal",2,signal
+watermelon seeds,watermelon,"canonical_form, form_signal, grade_signal",3,signal
+blackberry puree,blackberry,"linguistic_signal, canonical_form, form_signal",3,signal
+sodium caseinate,milk,grade_signal,1,signal
+cultured glucose,corn | tapioca,"process_signal, multi_source",2,signal
+gajar flavouring,carrot,form_signal,1,signal
+microbial enzyme,synthetic,"form_signal, grade_signal",2,signal
+glucuronolactone,synthetic | corn,multi_source,1,signal
+sourdough powder,wheat,form_signal,1,signal
+sardine fish oil,sardine,"canonical_form, form_signal",2,signal
+refined palmolein,palm,process_signal,1,signal
+bakery shortening,palm | soybean | groundnut,multi_source,1,signal
+hydrogenated oils,palm | soybean | groundnut,"form_signal, process_signal, multi_source",3,signal
+sauvarchalalavana,mineral,orthographic_noise,1,noise
+dehydrated carrot,carrot,"canonical_form, process_signal",2,signal
+carrot flavouring,carrot,"canonical_form, form_signal",2,signal
+dehydrated garlic,garlic,"canonical_form, process_signal",2,signal
+garlic flavouring,garlic,"canonical_form, form_signal",2,signal
+corn syrup solids,corn,"canonical_form, form_signal",2,signal
+candy sugar syrup,sugarcane,"redundant_variant, form_signal",2,mixed
+pasta di nocciole,hazelnut,linguistic_signal,1,signal
+purée de noisette,hazelnut,linguistic_signal,1,signal
+roasted hazelnuts,hazelnut,process_signal,1,signal
+haselnüsse türkei,hazelnut,linguistic_signal,1,signal
+noisettes turquie,hazelnut,linguistic_signal,1,signal
+magnesium sulfate,mineral,"form_signal, grade_signal",2,signal
+magnesium taurate,mineral,grade_signal,1,signal
+whole milk powder,milk,"canonical_form, form_signal, grade_signal",3,signal
+camel milk powder,camel milk,"form_signal, grade_signal",2,signal
+standardised milk,milk,"orthographic_noise, redundant_variant, canonical_form, form_signal, process_signal",5,mixed
+pudina flavouring,mint,"transliteration_signal, form_signal",2,signal
+soya bean extract,soybean,form_signal,1,signal
+steviol glycoside,stevia,form_signal,1,signal
+strawberry powder,strawberry,"canonical_form, form_signal",2,signal
+candy sugar syrup,sugarcane,"redundant_variant, form_signal",2,mixed
+husked black gram,black gram,grade_signal,1,signal
+distilled vinegar,sugarcane,form_signal,1,signal
+synthetic vinegar,synthetic,"canonical_form, form_signal, process_signal",3,signal
+flax seed extract,flax,"canonical_form, form_signal, grade_signal",3,signal
+almond flavouring,almond,"canonical_form, form_signal, grade_signal",3,signal
+acidity regulator,synthetic | mineral,multi_source,1,signal
+asafoetida powder,asafoetida,"canonical_form, form_signal",2,signal
+stabilizer ns 415,corn,compound_noise,1,noise
+coriander extract,coriander,"canonical_form, form_signal",2,signal
+citrus pulp cells,citrus,"redundant_variant, canonical_form, grade_signal",3,mixed
+orange pulp cells,orange,"redundant_variant, canonical_form, grade_signal",3,mixed
+orange flavouring,orange,"canonical_form, form_signal",2,signal
+double toned milk,milk,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+standardised milk,milk,"orthographic_noise, redundant_variant, canonical_form, form_signal, process_signal",5,mixed
+standardized milk,milk,"orthographic_noise, canonical_form, form_signal, process_signal",4,mixed
+antifoaming agent,synthetic,form_signal,1,signal
+anticaking agents,mineral,form_signal,1,signal
+coffee flavouring,coffee,"canonical_form, form_signal",2,signal
+dry cassia leaves,cassia,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+bengal gram flour,bengal gram,"form_signal, grade_signal",2,signal
+bengal gram grits,bengal gram,"form_signal, grade_signal",2,signal
+split bengal gram,bengal gram,grade_signal,1,signal
+black pepper bits,black pepper,grade_signal,1,signal
+red chilli flakes,red chilli,"orthographic_noise, form_signal, grade_signal",3,mixed
+red chilli powder,red chilli,"orthographic_noise, form_signal, grade_signal",3,mixed
+red chilly flakes,red chilli,"orthographic_noise, form_signal, grade_signal",3,mixed
+red chilly powder,red chilli,"orthographic_noise, form_signal, grade_signal",3,mixed
+citrus pulp cells,citrus,"redundant_variant, canonical_form, grade_signal",3,mixed
+orange pulp cells,orange,"redundant_variant, canonical_form, grade_signal",3,mixed
+candied cranberry,cranberry,canonical_form,1,signal
+green gram flakes,green gram,"form_signal, grade_signal",2,signal
+husked green gram,green gram,grade_signal,1,signal
+whole green moong,green gram,"transliteration_signal, grade_signal",2,signal
+moong dal protein,green gram,"transliteration_signal, form_signal",2,signal
+green tea extract,green tea,"form_signal, grade_signal",2,signal
+dehydrated kachri,kachri,"canonical_form, process_signal",2,signal
+litchi flavouring,litchi,"canonical_form, form_signal",2,signal
+corn maltodextrin,corn,canonical_form,1,signal
+origanum majorana,marjoram,linguistic_signal,1,signal
+pomegranate juice,pomegranate,"canonical_form, form_signal",2,signal
+pomegranate seeds,pomegranate,"canonical_form, form_signal, grade_signal",3,signal
+star anise powder,star anise,form_signal,1,signal
+vegetable protein,soybean | groundnut | pea,"form_signal, multi_source",2,signal
+ro-purified water,water,"canonical_form, form_signal",2,signal
+whole wheat flour,wheat,"redundant_variant, canonical_form, form_signal, grade_signal",4,mixed
+whole wheat flour,wheat,"redundant_variant, canonical_form, form_signal, grade_signal",4,mixed
+black truffle oil,truffle,"canonical_form, form_signal, grade_signal",3,signal
+calcium caseinate,milk,"grade_signal, fortification_signal",2,signal
+cantaloupe powder,cantaloupe,"canonical_form, form_signal",2,signal
+trans fatty acids,palm | soybean | groundnut,multi_source,1,signal
+pueraria tuberosa,pueraria tuberosa,canonical_form,1,signal
+red currant dices,red currant,"form_signal, grade_signal",2,signal
+red currant puree,red currant,"linguistic_signal, form_signal, grade_signal",3,signal
+sunflower creamer,sunflower,canonical_form,1,signal
+wheatgrass powder,wheatgrass,"canonical_form, form_signal",2,signal
+improver xylanase,trichoderma reesei,unclassified,1,unclassified
+sauvarchala lavana,mineral,orthographic_noise,1,noise
+common edible salt,mineral,"form_signal, grade_signal",2,signal
+edible common salt,mineral,"form_signal, grade_signal",2,signal
+edible maze starch,corn,"form_signal, grade_signal",2,signal
+sweet cream powder,milk,"form_signal, grade_signal",2,signal
+high maltose syrup,corn | tapioca,"form_signal, multi_source",2,signal
+magnesium stearate,mineral | palm,"grade_signal, multi_source",2,signal
+dried mango powder,mango,"canonical_form, form_signal, process_signal",3,signal
+mango fruit powder,mango,"canonical_form, form_signal",2,signal
+mango juice powder,mango,"canonical_form, form_signal",2,signal
+dried mango slices,mango,"canonical_form, process_signal, grade_signal",3,signal
+dried skimmed milk,milk,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+whole grain saamai,saamai,"canonical_form, form_signal, grade_signal",3,signal
+dextrose anhydrous,corn | tapioca,"form_signal, multi_source",2,signal
+invert sugar syrup,sugarcane,"orthographic_noise, form_signal",2,mixed
+split black lentil,lentil,"canonical_form, grade_signal",2,signal
+sushi rice vinegar,rice,"canonical_form, form_signal",2,signal
+acidity regulators,synthetic | corn,multi_source,1,signal
+dhaniya distillate,coriander,form_signal,1,signal
+orange peel powder,orange,"canonical_form, form_signal, grade_signal",3,signal
+saffron flavouring,saffron,"canonical_form, form_signal",2,signal
+proteins from whey,milk,form_signal,1,signal
+whole ajwain seeds,ajwain,"transliteration_signal, canonical_form, form_signal, grade_signal",4,signal
+carom seeds powder,ajwain,"form_signal, grade_signal",2,signal
+krishna tulsi leaf,tulsi,"transliteration_signal, canonical_form, form_signal, grade_signal",4,signal
+tulsi leaf extract,tulsi,"redundant_variant, transliteration_signal, canonical_form, form_signal, grade_signal",5,mixed
+sella basmati rice,rice,canonical_form,1,signal
+white basmati rice,rice,"canonical_form, grade_signal",2,signal
+roasted split gram,chickpea,"process_signal, grade_signal",2,signal
+black pepper whole,black pepper,grade_signal,1,signal
+dried blackcurrant,blackcurrant,"canonical_form, process_signal",2,signal
+clarified milk fat,milk,"canonical_form, form_signal, process_signal",3,signal
+green chilli paste,green chilli,"form_signal, grade_signal",2,signal
+green chilli puree,green chilli,"linguistic_signal, form_signal, grade_signal",3,signal
+kashmiri lal mirch,chilli,grade_signal,1,signal
+dried green chilli,green chilli,"process_signal, grade_signal",2,signal
+coconut components,coconut,canonical_form,1,signal
+desiccated coconut,coconut,canonical_form,1,signal
+cumin seeds powder,cumin,"canonical_form, form_signal, grade_signal",3,signal
+disodium guanylate,synthetic,grade_signal,1,signal
+disodium inosinate,synthetic,grade_signal,1,signal
+milk fat desi ghee,milk,"transliteration_signal, canonical_form, form_signal",3,signal
+grape seed extract,grape,"canonical_form, form_signal, grade_signal",3,signal
+elaichi flavouring,cardamom,"transliteration_signal, form_signal",2,signal
+green chilka moong,mung bean,"transliteration_signal, grade_signal",2,signal
+khar alkaline salt,mineral,"transliteration_signal, form_signal, grade_signal",3,signal
+sunflower lecithin,sunflower,canonical_form,1,signal
+lemon juice powder,lemon,"canonical_form, form_signal",2,signal
+lemon fruit powder,lemon,"canonical_form, form_signal",2,signal
+long pepper powder,long pepper,form_signal,1,signal
+wheat maltodextrin,wheat,canonical_form,1,signal
+milk solids casein,milk,"canonical_form, form_signal",2,signal
+monk fruit extract,monk fruit,form_signal,1,signal
+dehydrated parsley,parsley,"canonical_form, process_signal",2,signal
+pomegranate powder,pomegranate,"canonical_form, form_signal",2,signal
+pomegranate flower,pomegranate,canonical_form,1,signal
+bacillus coagulans,synthetic,linguistic_signal,1,signal
+flattened red rice,rice,"canonical_form, process_signal, grade_signal",3,signal
+safflower seed oil,safflower,"canonical_form, form_signal, grade_signal",3,signal
+dehydrated spinach,spinach,"canonical_form, process_signal",2,signal
+vanilla flavouring,vanilla,"orthographic_noise, redundant_variant, canonical_form, form_signal",4,mixed
+bacche di vaniglia,vanilla,linguistic_signal,1,signal
+gousses de vanille,vanilla,linguistic_signal,1,signal
+vanilla flavouring,vanilla,"orthographic_noise, redundant_variant, canonical_form, form_signal",4,mixed
+vamilla flavouring,vanilla,"orthographic_noise, form_signal",2,mixed
+basa pangasius sp.,basa,"canonical_form, grade_signal",2,signal
+custard flavouring,synthetic,form_signal,1,signal
+khus roots extract,khus,"canonical_form, form_signal",2,signal
+distillate of khas,khas,"canonical_form, form_signal",2,signal
+distillate of khus,khus,"canonical_form, form_signal",2,signal
+glutamine peptides,synthetic,form_signal,1,signal
+munakka flavouring,munakka,"canonical_form, form_signal",2,signal
+munakka distillate,munakka,"canonical_form, form_signal",2,signal
+tulsi leaf extract,tulsi,"redundant_variant, transliteration_signal, canonical_form, form_signal, grade_signal",5,mixed
+cod liver fish oil,cod,"canonical_form, form_signal",2,signal
+vegetable fats shea,shea,"canonical_form, form_signal",2,signal
+himalayan pink salt,mineral,"form_signal, grade_signal",2,signal
+tropical flavouring,synthetic,"form_signal, grade_signal",2,signal
+organic ginger root,ginger,"canonical_form, form_signal, process_signal",3,signal
+dried ginger powder,ginger,"canonical_form, form_signal, process_signal",3,signal
+dried glucose syrup,corn | tapioca,"form_signal, process_signal, multi_source",3,signal
+hazelnut flavouring,hazelnut,"canonical_form, form_signal, grade_signal",3,signal
+refined wheat flour,wheat,"canonical_form, form_signal, process_signal",3,signal
+alphonso mango pulp,mango,"canonical_form, grade_signal",2,signal
+skimmed milk powder,milk,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+coconut milk powder,coconut,"canonical_form, form_signal",2,signal
+defatted soya flour,soybean,"form_signal, process_signal",2,signal
+soya flour defatted,soybean,"form_signal, process_signal",2,signal
+soy protein isolate,soybean,"orthographic_noise, form_signal",2,mixed
+rawberry flavouring,synthetic,form_signal,1,signal
+sunflower fruit oil,sunflower,"canonical_form, form_signal",2,signal
+vital wheat protein,wheat,"canonical_form, form_signal, grade_signal",3,signal
+organic fennel seed,fennel,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+partly skimmed milk,milk,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+malted barley flour,barley,"canonical_form, form_signal, process_signal",3,signal
+basmati rice grains,rice,"canonical_form, form_signal",2,signal
+cluster bean powder,cluster bean,form_signal,1,signal
+big cardamom powder,cardamom,"canonical_form, form_signal",2,signal
+black pepper powder,black pepper,"form_signal, grade_signal",2,signal
+butterscotch pieces,milk | sugarcane,"grade_signal, multi_source",2,signal
+cauliflower florets,cauliflower,canonical_form,1,signal
+malt extract solids,barley,form_signal,1,signal
+green chilli flakes,chilli,"canonical_form, form_signal, grade_signal",3,signal
+roasted cumin seeds,cumin,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+emulsifier tween 80,palm | soybean | sunflower,"compound_noise, multi_source",2,mixed
+cardamom flavouring,cardamom,"canonical_form, form_signal",2,signal
+candied lemon peels,lemon,"canonical_form, form_signal",2,signal
+whole dew bean moth,moth bean,grade_signal,1,signal
+parsley leaf powder,parsley,"canonical_form, form_signal, grade_signal",3,signal
+pea protein isolate,pea,"canonical_form, form_signal",2,signal
+sichuan pepper corn,sichuan peppercorn,canonical_form,1,signal
+flattened rice poha,rice,"transliteration_signal, canonical_form, process_signal",3,signal
+rosemary flavouring,rosemary,"canonical_form, form_signal",2,signal
+vanillin flavouring,synthetic,form_signal,1,signal
+white pepper powder,white peppercorn,"form_signal, grade_signal",2,signal
+asparagus recemosus,asparagus recemosus,canonical_form,1,signal
+sweet potato starch,sweet potato,"form_signal, grade_signal",2,signal
+dioscores bulbifera,dioscorea bulbifera,canonical_form,1,signal
+distillate of gajar,carrot,form_signal,1,signal
+distillate of kasni,kasni,"canonical_form, form_signal",2,signal
+vegetable shortening,palm | soybean | groundnut,multi_source,1,signal
+edible vegetable fat,palm | soybean | sunflower | groundnut,"form_signal, grade_signal, multi_source",3,signal
+edible vegetable oil,palm | soybean | sunflower | groundnut,"orthographic_noise, form_signal, grade_signal, multi_source",4,mixed
+edible vegeteble oil,palm | soybean | sunflower | groundnut,"orthographic_noise, form_signal, grade_signal, multi_source",4,mixed
+raw mango flavouring,mango,"canonical_form, form_signal, grade_signal",3,signal
+milkotin milk solids,milk,"canonical_form, form_signal",2,signal
+foxtail millet flour,foxtail millet,"form_signal, grade_signal",2,signal
+sorghum millet flour,sorghum,"canonical_form, form_signal",2,signal
+pistachio flavouring,pistachio,"canonical_form, form_signal, grade_signal",3,signal
+refined ricebran oil,rice,"orthographic_noise, form_signal, process_signal",3,mixed
+refined soyabean oil,soybean,"form_signal, process_signal",2,signal
+soya protein isolate,soybean,"orthographic_noise, form_signal",2,mixed
+inverter sugar syrup,sugarcane,"orthographic_noise, form_signal",2,mixed
+compounded asafetida,asafoetida | wheat,multi_source,1,signal
+yeast extract powder,yeast,"canonical_form, form_signal, grade_signal",3,signal
+petit-lait en poudre,milk,canonical_form,1,signal
+acesulfame potassium,synthetic,grade_signal,1,signal
+dahi starter culture,milk,"transliteration_signal, form_signal",2,signal
+lactic acid ferments,synthetic,unclassified,1,unclassified
+enzyme alpha amylase,aspergillus oryzae | barley,"form_signal, multi_source",2,signal
+coffee beans arabica,coffee,"canonical_form, form_signal, grade_signal",3,signal
+coffee beans robusta,coffee,"canonical_form, form_signal, grade_signal",3,signal
+chickpea flour besan,chickpea,"transliteration_signal, canonical_form, form_signal",3,signal
+large cardamom whole,cardamom,"canonical_form, grade_signal",2,signal
+blueberry flavouring,blueberry,"canonical_form, form_signal",2,signal
+cottage cheese chena,milk,"form_signal, grade_signal",2,signal
+chocolate flavouring,cocoa,form_signal,1,signal
+cranberry flavouring,cranberry,"canonical_form, form_signal",2,signal
+roasted cumin powder,cumin,"canonical_form, form_signal, process_signal",3,signal
+ferric pyrophosphate,mineral,grade_signal,1,signal
+monosodium glutamate,synthetic | sugarcane | corn,"grade_signal, multi_source",2,signal
+pharmaceutical glaze,lac beetle,unclassified,1,unclassified
+split chickpea flour,chickpea,"canonical_form, form_signal, grade_signal",3,signal
+green tea flavouring,green tea,"form_signal, grade_signal",2,signal
+split yellow lentils,lentil,grade_signal,1,signal
+roasted mustard seed,mustard,"orthographic_noise, canonical_form, form_signal, process_signal, grade_signal",5,mixed
+toasted onion flakes,onion,"canonical_form, form_signal, process_signal",3,signal
+toasted onion powder,onion,"canonical_form, form_signal, process_signal",3,signal
+vitamins pantothenol,synthetic,unclassified,1,unclassified
+pineapple flavouring,pineapple,"canonical_form, form_signal",2,signal
+pyridoxine hydroxide,synthetic,unclassified,1,unclassified
+glutinous rice flour,rice,"canonical_form, form_signal",2,signal
+thiamine mononitrate,synthetic,"redundant_variant, fortification_signal",2,mixed
+thiamin hydrohloride,synthetic,unclassified,1,unclassified
+thiamine mononitrate,synthetic,"redundant_variant, fortification_signal",2,mixed
+processed gooseberry,gooseberry,"canonical_form, process_signal",2,signal
+vitamins vitamin b12,synthetic,fortification_signal,1,signal
+bubblegum flavouring,synthetic,form_signal,1,signal
+creatine monohydrate,synthetic,unclassified,1,unclassified
+psyllium husk powder,psyllium,"canonical_form, form_signal",2,signal
+guarana seed extract,guarana,"canonical_form, form_signal, grade_signal",3,signal
+water chestnut flour,water chestnut,form_signal,1,signal
+refined palmolein oil,palm,"form_signal, process_signal",2,signal
+hydrogenated palm oil,palm,"canonical_form, form_signal, process_signal",3,signal
+hydrogenated palm fat,palm,"canonical_form, form_signal, process_signal",3,signal
+edible vegetable fats,palm | soybean | groundnut | sunflower,"form_signal, grade_signal, multi_source",3,signal
+refined vegetable oil,palm | soybean | sunflower | groundnut,"form_signal, process_signal, multi_source",3,signal
+modified maize starch,corn,"form_signal, process_signal",2,signal
+modified starch maize,corn,"form_signal, process_signal",2,signal
+roasted garlic flakes,garlic,"canonical_form, form_signal, process_signal",3,signal
+lait ecreme en poudre,milk,linguistic_signal,1,signal
+lait entier en poudre,milk,linguistic_signal,1,signal
+refined rice bran oil,rice,"orthographic_noise, canonical_form, form_signal, process_signal",4,mixed
+strawberry flavouring,strawberry,"canonical_form, form_signal",2,signal
+refined sunflower oil,sunflower,"canonical_form, form_signal, process_signal",3,signal
+acidity regulator ins,synthetic,orthographic_noise,1,noise
+acidity regulators ns,synthetic,orthographic_noise,1,noise
+dipotassium phosphate,mineral,"form_signal, grade_signal",2,signal
+compounded asafoetida,asafoetida,canonical_form,1,signal
+asafootida flavouring,asafoetida,form_signal,1,signal
+fenugreek leaf powder,fenugreek,"canonical_form, form_signal, grade_signal",3,signal
+coriander seed powder,coriander,"canonical_form, form_signal, grade_signal",3,signal
+haldi turmeric powder,turmeric,"transliteration_signal, canonical_form, form_signal",3,signal
+pasturised toned milk,milk,"orthographic_noise, canonical_form, form_signal, process_signal, grade_signal",5,mixed
+pasteurised amul milk,milk,"canonical_form, form_signal, process_signal",3,signal
+active lactic culture,milk,"orthographic_noise, form_signal",2,mixed
+live bacteria culture,milk,form_signal,1,signal
+soluble coffee powder,coffee,"canonical_form, form_signal, process_signal",3,signal
+artificial flavouring,synthetic,"form_signal, process_signal",2,signal
+black cardamom powder,cardamom,"canonical_form, form_signal, grade_signal",3,signal
+large cardamom powder,cardamom,"canonical_form, form_signal, grade_signal",3,signal
+indian cottage cheese,milk,"form_signal, grade_signal",2,signal
+paneer cottage cheese,milk,"transliteration_signal, form_signal, grade_signal",3,signal
+romano cheese enzymes,milk,form_signal,1,signal
+mono sodium glutamate,synthetic,grade_signal,1,signal
+ghee clarified butter,milk,"transliteration_signal, form_signal, process_signal",3,signal
+green cardamom powder,cardamom,"canonical_form, form_signal, grade_signal",3,signal
+refined groundnut oil,groundnut,"canonical_form, form_signal, process_signal",3,signal
+nimbu pani flavouring,lemon,form_signal,1,signal
+roasted mustard seeds,mustard,"orthographic_noise, canonical_form, form_signal, process_signal, grade_signal",5,mixed
+sichuan pepper powder,sichuan pepper,form_signal,1,signal
+soya sauce flavouring,soybean | wheat,"form_signal, multi_source",2,signal
+antioxidant vitamin d,lanolin | fish liver oil,"fortification_signal, multi_source",2,signal
+vapor distilled water,water,"canonical_form, form_signal",2,signal
+reverse osmosis water,water,"canonical_form, form_signal",2,signal
+acai berry flavouring,acai,"canonical_form, form_signal, grade_signal",3,signal
+black truffle extract,truffle,"canonical_form, form_signal, grade_signal",3,signal
+croscarmellose sodium,wood,grade_signal,1,signal
+cultured sweet potato,sweet potato,"process_signal, grade_signal",2,signal
+enzyme blend digezyme,aspergillus oryzae | rice,"form_signal, grade_signal, multi_source",3,signal
+fructooligosaccharide,sugarcane | chicory,multi_source,1,signal
+saturated fatty acids,palm | coconut | milk,multi_source,1,signal
+shankhapushpi extract,shankhapushpi,"canonical_form, form_signal",2,signal
+hydrogenated table oil,palm | soybean | groundnut,"form_signal, process_signal, grade_signal, multi_source",4,signal
+dehydrated carrot bits,carrot,"canonical_form, process_signal, grade_signal",3,signal
+dehydrated garlic bits,garlic,"canonical_form, process_signal, grade_signal",3,signal
+organic ginger rhizome,ginger,"canonical_form, process_signal, grade_signal",3,signal
+split black gram flour,black gram,"form_signal, grade_signal",2,signal
+filtered flax seed oil,flax,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+dried fenugreek leaves,fenugreek,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+dried coriander leaves,coriander,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+ground coriander seeds,coriander,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+pasteurised toned milk,milk,"orthographic_noise, canonical_form, form_signal, process_signal, grade_signal",5,mixed
+standardized milk curd,milk,"canonical_form, form_signal, process_signal",3,signal
+active lactic cultures,milk,orthographic_noise,1,noise
+bifidobacterium lactis,milk,unclassified,1,unclassified
+marinated paneer dices,milk,"transliteration_signal, form_signal",2,signal
+cacao magro in polvere,cocoa,linguistic_signal,1,signal
+cacao maigre en poudre,cocoa,linguistic_signal,1,signal
+condensed skimmed milk,milk,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+refined cottonseed oil,cottonseed,"orthographic_noise, canonical_form, form_signal, process_signal",4,mixed
+kiwi juice concentrate,kiwi,"canonical_form, form_signal",2,signal
+onion flavouring agent,onion,"canonical_form, form_signal",2,signal
+proabsor8 blend papain,papaya,grade_signal,1,signal
+pomegranate flavouring,pomegranate,"canonical_form, form_signal",2,signal
+potato flakes potatoes,potato,"canonical_form, form_signal",2,signal
+shatavari root extract,shatavari,"canonical_form, form_signal",2,signal
+enzyme b-galactosidase,synthetic,"canonical_form, form_signal",2,signal
+b-galactosidase enzyme,synthetic,"canonical_form, form_signal",2,signal
+ultrasorb tech lactase,synthetic,unclassified,1,unclassified
+cysteine hydrochloride,synthetic,unclassified,1,unclassified
+distillate of gaozaban,gaozaban,"canonical_form, form_signal",2,signal
+fructo-oligosaccharide,sugarcane,"orthographic_noise, redundant_variant, canonical_form",3,mixed
+fructo-oligosaccharide,sugarcane,"orthographic_noise, redundant_variant, canonical_form",3,mixed
+fructo oligosaccharide,sugarcane,orthographic_noise,1,noise
+fructooligosaccharides,sugarcane,orthographic_noise,1,noise
+l-lysine hydrochloride,synthetic,canonical_form,1,signal
+packaging gas nitrogen,synthetic,orthographic_noise,1,noise
+vegetable oil palmolein,palm,form_signal,1,signal
+centre fractionated fat,palm,"form_signal, process_signal",2,signal
+carrot flavouring agent,carrot,"canonical_form, form_signal",2,signal
+modified starch tapioca,tapioca,"canonical_form, form_signal, process_signal",3,signal
+mixed fruits flavouring,apple | mango | guava,"form_signal, grade_signal, multi_source",3,signal
+vegetables garlic paste,garlic,"canonical_form, form_signal",2,signal
+mango puree concentrate,mango,"linguistic_signal, canonical_form, form_signal",3,signal
+concentrated mango pulp,mango,"canonical_form, process_signal, grade_signal",3,signal
+vegetable oil rice bran,rice,"canonical_form, form_signal",2,signal
+steviol glycoside reb-a,stevia,"canonical_form, form_signal",2,signal
+strawberry fruit powder,strawberry,"canonical_form, form_signal",2,signal
+vegetable oil sunflower,sunflower,"canonical_form, form_signal",2,signal
+dehydrated orange juice,orange,"canonical_form, form_signal, process_signal",3,signal
+reconstituted skim milk,milk,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+whey protein hydrolsate,milk,form_signal,1,signal
+apple juice concentrate,apple,"canonical_form, form_signal",2,signal
+organic rama tulsi leaf,tulsi,"orthographic_noise, transliteration_signal, canonical_form, form_signal, process_signal, grade_signal",6,mixed
+organic vana tulsi leaf,tulsi,"orthographic_noise, transliteration_signal, canonical_form, form_signal, process_signal, grade_signal",6,mixed
+bifidobacterium bifidum,synthetic,unclassified,1,unclassified
+black pepper flavouring,black pepper,"form_signal, grade_signal",2,signal
+butterscotch flavouring,synthetic,form_signal,1,signal
+cocoa butter equivalent,palm | shea | sal,"form_signal, multi_source",2,signal
+refined cotton seed oil,cottonseed,"orthographic_noise, form_signal, process_signal, grade_signal",4,mixed
+guava puree concentrate,guava,"linguistic_signal, canonical_form, form_signal",3,signal
+lactobacillus rhamnosus,synthetic,linguistic_signal,1,signal
+lemon juice concentrate,lemon,"canonical_form, form_signal",2,signal
+organic lemongrass leaf,lemongrass,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+onion powder flavouring,onion,"canonical_form, form_signal",2,signal
+pomegranate seed powder,pomegranate,"canonical_form, form_signal, grade_signal",3,signal
+uv treated and ozonized,SKIP,process_signal,1,signal
+black truffle seasoning,truffle,"canonical_form, grade_signal",2,signal
+food grade fish gelatin,fish,"canonical_form, form_signal, grade_signal",3,signal
+edible sodium caseinate,milk,grade_signal,1,signal
+hpmc vegetarian capsule,wood,unclassified,1,unclassified
+cotton candy flavouring,synthetic,form_signal,1,signal
+ferric ammonium citrate,synthetic,"form_signal, grade_signal",2,signal
+fructo-oligosaccharides,sugarcane | beet,"canonical_form, multi_source",2,signal
+omega concentrate blend,fish,"form_signal, grade_signal",2,signal
+sodium starch glycolate,potato,"form_signal, grade_signal",2,signal
+krishnalavana black salt,mineral,"form_signal, grade_signal",2,signal
+dehydrated garlic powder,garlic,"canonical_form, form_signal, process_signal",3,signal
+spice oleoresin gingerol,ginger,unclassified,1,unclassified
+masala flavouring ginger,ginger,"canonical_form, form_signal",2,signal
+high fructose corn syrup,corn,"canonical_form, form_signal",2,signal
+concentrated milk solids,milk,"canonical_form, form_signal, process_signal",3,signal
+soya protein hydrolysate,soybean,form_signal,1,signal
+high oleic sunflower oil,sunflower,"canonical_form, form_signal",2,signal
+orange juice concentrate,orange,"canonical_form, form_signal",2,signal
+skimmed milk concentrate,milk,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+whey protein concentrate,milk,form_signal,1,signal
+concentrated apple juice,apple,"canonical_form, form_signal, process_signal",3,signal
+organic chamomile flower,chamomile,"canonical_form, process_signal",2,signal
+pasteurized skimmed milk,milk,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+dried bark of cinnamomum,cinnamon,"form_signal, process_signal",2,signal
+fat-reduced cocoa powder,cocoa,"canonical_form, form_signal",2,signal
+vegetable oil cottonseed,cottonseed,"canonical_form, form_signal",2,signal
+binding agent gum acacia,acacia,"canonical_form, form_signal",2,signal
+concentrated jamun juice,jamun,"transliteration_signal, canonical_form, form_signal, process_signal",4,signal
+concentrated lemon juice,lemon,"canonical_form, form_signal, process_signal",3,signal
+milk protein concentrate,milk,"canonical_form, form_signal",2,signal
+dehydrated potato flakes,potato,"canonical_form, form_signal, process_signal",3,signal
+ethylvanillin flavouring,synthetic,"orthographic_noise, form_signal",2,mixed
+toasted watermelon seeds,watermelon,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+cherry juice concentrate,cherry,"canonical_form, form_signal",2,signal
+packaging gases nitrogen,synthetic,orthographic_noise,1,noise
+concentrated fruit juices,apple | orange | mango,"process_signal, multi_source",2,signal
+chopped roasted hazelnuts,hazelnut,process_signal,1,signal
+sodium selenite angydrate,mineral,grade_signal,1,signal
+concentrated orange juice,orange,"canonical_form, form_signal, process_signal",3,signal
+roasted and ground coffee,coffee,"canonical_form, process_signal, grade_signal",3,signal
+roasted bengal gram flour,bengal gram,"form_signal, process_signal, grade_signal",3,signal
+desiccated coconut powder,coconut,"canonical_form, form_signal",2,signal
+dehydrated coconut shreds,coconut,"canonical_form, process_signal",2,signal
+coconut water concentrate,coconut,"canonical_form, form_signal",2,signal
+garcinia cambogia extract,garcinia cambogia,form_signal,1,signal
+cardamom seeds flavouring,cardamom,"canonical_form, form_signal, grade_signal",3,signal
+hydrolysed ground protein,groundnut,"form_signal, process_signal, grade_signal",3,signal
+lactobacillus acidophilus,synthetic,linguistic_signal,1,signal
+mosambi juice concentrate,mosambi,"transliteration_signal, canonical_form, form_signal",3,signal
+parsley powder flavouring,parsley,"canonical_form, form_signal",2,signal
+ethyl vanillin flavouring,synthetic,"orthographic_noise, form_signal",2,mixed
+enzyme beta galactosidase,aspergillus niger | kluyveromyces lactis,"orthographic_noise, form_signal, multi_source",3,mixed
+enzyme beta-galactosidase,aspergillus niger | kluyveromyces lactis,"orthographic_noise, canonical_form, form_signal, multi_source",4,mixed
+edible vegetable bran oil,rice,"form_signal, grade_signal",2,signal
+fava bean protein isolate,fava bean,form_signal,1,signal
+hydrogenated vegetable fat,palm | soybean | groundnut,"orthographic_noise, form_signal, process_signal, multi_source",4,mixed
+hydrogenated vegetable oil,palm | soybean | groundnut,"form_signal, process_signal, multi_source",3,signal
+fractionated vegetable fat,palm | soybean | groundnut,"orthographic_noise, form_signal, process_signal, multi_source",4,mixed
+partially hydrogenated oil,palm | soybean | groundnut,"form_signal, process_signal, multi_source",3,signal
+fortified wheat flour iron,wheat,"canonical_form, form_signal, process_signal, fortification_signal",4,signal
+centre filling milk solids,milk,"canonical_form, form_signal",2,signal
+preserved strawberry fruit,strawberry,canonical_form,1,signal
+refined sunflower seed oil,sunflower,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+roasted almonds flavouring,almond,"form_signal, process_signal",2,signal
+tribasic calcium phosphate,mineral,"form_signal, grade_signal, fortification_signal",3,signal
+reconstituted skimmed milk,milk,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+streptococcus thermophilus,milk,linguistic_signal,1,signal
+lacto-bacillus acidophilus,milk,"orthographic_noise, canonical_form",2,mixed
+brown rice protein isolate,rice,"canonical_form, form_signal, grade_signal",3,signal
+kashmiri red chilli powder,chilli,"canonical_form, form_signal, grade_signal",3,signal
+mathania red chilli powder,chilli,"canonical_form, form_signal, grade_signal",3,signal
+husked dew moth bean flour,dew moth bean,"form_signal, grade_signal",2,signal
+panax ginseng root extract,panax ginseng,form_signal,1,signal
+medium chain triglycerides,coconut | palm kernel,"orthographic_noise, multi_source",2,mixed
+medium chain-triglycerides,coconut | palm kernel,"orthographic_noise, canonical_form, multi_source",3,mixed
+phyllanthus niruri extract,phyllanthus niruri,form_signal,1,signal
+hydrogenated vegetable fats,palm | soybean | groundnut,"orthographic_noise, form_signal, process_signal, multi_source",4,mixed
+fractionated vegetable fats,palm | soybean | groundnut,"orthographic_noise, form_signal, process_signal, multi_source",4,mixed
+roasted spice powder ginger,ginger,"canonical_form, form_signal, process_signal",3,signal
+dehydrated fenugreek leaves,fenugreek,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+dehydrated coriander leaves,coriander,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+l.bacillus delbruecki subsp,milk,canonical_form,1,signal
+limosilactobacillus reuteri,milk,unclassified,1,unclassified
+green coffee extract powder,coffee,"canonical_form, form_signal, grade_signal",3,signal
+stalkless kashmiri chillies,chilli,grade_signal,1,signal
+cranberry juice concentrate,cranberry,"canonical_form, form_signal",2,signal
+emulsifier vegetable origin,palm | soybean | sunflower,"compound_noise, multi_source",2,mixed
+roasted spice powder nutmeg,nutmeg,"canonical_form, form_signal, process_signal",3,signal
+pineapple juice concentrate,pineapple,"canonical_form, form_signal",2,signal
+pineapple fruit preparation,pineapple,canonical_form,1,signal
+bacillus coagulans snz 1969,bacillus coagulans,"compound_noise, linguistic_signal",2,mixed
+rosemary extract flavouring,rosemary,"canonical_form, form_signal",2,signal
+evening primrose oil powder,evening primrose,form_signal,1,signal
+tangerine juice concentrate,tangerine,"canonical_form, form_signal",2,signal
+magnesium hydrogen phosphate,mineral,"form_signal, grade_signal",2,signal
+concentrated sugarcane juice,sugarcane,"canonical_form, form_signal, process_signal",3,signal
+lacto - bacillus acidophilus,milk,"orthographic_noise, linguistic_signal",2,mixed
+roasted spice powder aniseed,aniseed,"canonical_form, form_signal, process_signal",3,signal
+krishna tulsi ocimum sanctum,tulsi,"linguistic_signal, transliteration_signal, canonical_form",3,signal
+edible vegetable oil coconut,coconut,"canonical_form, form_signal, grade_signal",3,signal
+hydrolyzed vegetable protein,soybean | groundnut | corn,"orthographic_noise, form_signal, process_signal, multi_source",4,mixed
+hydrolysed vegetable protein,soybean | groundnut | corn,"orthographic_noise, form_signal, multi_source",3,mixed
+hydrolyzed groundnut protein,groundnut,"orthographic_noise, canonical_form, form_signal, process_signal",4,mixed
+hydralyzed vegetable protein,soybean | groundnut | corn,"orthographic_noise, form_signal, process_signal, multi_source",4,mixed
+hydrolized vegetable protein,soybean | groundnut | corn,"orthographic_noise, form_signal, multi_source",3,mixed
+hydrolysed groundnut protein,groundnut,"orthographic_noise, canonical_form, form_signal",3,mixed
+neem azadirachta indica leaf,neem azadirachta indica,"form_signal, grade_signal",2,signal
+probiotic bacillus coagulans,bacillus coagulans,"linguistic_signal, process_signal",2,signal
+grapefruit juice concentrate,grapefruit,"canonical_form, form_signal",2,signal
+edible vegetable oil palm oil,palm,"canonical_form, form_signal, grade_signal",3,signal
+interesterified vegetable fat,palm | soybean | groundnut,"form_signal, process_signal, multi_source",3,signal
+edible vegetable fats sal fat,sal,"linguistic_signal, canonical_form, form_signal, grade_signal",4,signal
+edible vegetable oil corn oil,corn,"canonical_form, form_signal, grade_signal",3,signal
+afgani seedless black raisins,grape,grade_signal,1,signal
+texturised soy protein flakes,soybean,form_signal,1,signal
+citrus fruit from concentrate,citrus,"canonical_form, form_signal",2,signal
+roasted spice powder turmeric,turmeric,"canonical_form, form_signal, process_signal",3,signal
+vana tulsi ocimum gratissimum,tulsi,"linguistic_signal, transliteration_signal, canonical_form",3,signal
+tulsi ocimum tenuiflorum leaf,tulsi,"redundant_variant, linguistic_signal, transliteration_signal, canonical_form, form_signal, grade_signal",6,mixed
+reconstituted buttermilk milk,milk,"canonical_form, form_signal, process_signal",3,signal
+spice oleoresin cuminaldehyde,cumin,unclassified,1,unclassified
+encapsulated ferrous sulphate,mineral,"form_signal, grade_signal",2,signal
+emulsifier sunflower lecithin,sunflower,"compound_noise, canonical_form",2,mixed
+dehydrated white onion powder,onion,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+pomegranate juice concentrate,pomegranate,"canonical_form, form_signal",2,signal
+probiotics bacillus coagulans,synthetic,linguistic_signal,1,signal
+brihati solanum indicum plant,brihati,"canonical_form, grade_signal",2,signal
+gudmar gymnema sylvestre leaf,gudmar,"canonical_form, form_signal, grade_signal",3,signal
+jiwanti leptadenia reticulata,jiwanti,canonical_form,1,signal
+medium chain triglyceride oil,coconut | palm kernel,"orthographic_noise, form_signal, multi_source",3,mixed
+mudgaparni phaseolus trilobus,mudgaparni,canonical_form,1,signal
+vidari pueraria tuberosa root,vidari,"canonical_form, form_signal",2,signal
+tulsi ocimum tenuiflorum leaf,tulsi,"redundant_variant, linguistic_signal, transliteration_signal, canonical_form, form_signal, grade_signal",6,mixed
+edible vegetable oil palmolein,palm,"orthographic_noise, form_signal, grade_signal",3,mixed
+edible vegetable oil palmolien,palm,"orthographic_noise, form_signal, grade_signal",3,mixed
+edible vanaspati oil vanaspati,palm | soybean | groundnut,"form_signal, grade_signal, multi_source",3,signal
+mozzarella cheese lodized salt,milk | mineral,"form_signal, multi_source",2,signal
+soya sauce powder lodized salt,soybean | mineral,"form_signal, multi_source",2,signal
+mango flavouring confectionery,mango,"canonical_form, form_signal",2,signal
+edible vegetable oil rice bran,rice,"canonical_form, form_signal, grade_signal",3,signal
+edible vegetable oil sunflower,sunflower,"canonical_form, form_signal, grade_signal",3,signal
+dehydrated kasuri methi leaves,kasuri methi,"transliteration_signal, form_signal, process_signal, grade_signal",4,signal
+roasted spice powder fenugreek,fenugreek,"canonical_form, form_signal, process_signal",3,signal
+roasted spice powder coriander,coriander,"canonical_form, form_signal, process_signal",3,signal
+yogurt milk bacterial cultures,milk,"orthographic_noise, canonical_form, form_signal, grade_signal",4,mixed
+lactic cultures s thermophilus,milk,unclassified,1,unclassified
+roast and ground filter coffee,coffee,"canonical_form, process_signal, grade_signal",3,signal
+malted barley extracted solids,barley,"canonical_form, form_signal, process_signal",3,signal
+organic tulsi holy basil blend,tulsi,"transliteration_signal, canonical_form, process_signal, grade_signal",4,signal
+marich kalimarich piper nigrum,black pepper,unclassified,1,unclassified
+blackcurrant juice concentrate,blackcurrant,"canonical_form, form_signal",2,signal
+whole grains brown rice flakes,rice,"canonical_form, form_signal, grade_signal",3,signal
+butterfat from milk flavouring,milk,"canonical_form, form_signal",2,signal
+medium chain triglycerides oil,coconut | palm kernel,"orthographic_noise, form_signal, multi_source",3,mixed
+musta cyperus rotundus rhizome,cyperus rotundus,grade_signal,1,signal
+edible vegetable oil palm olien,palm,"orthographic_noise, canonical_form, form_signal, grade_signal",4,mixed
+edible vegetable oil palmnolein,palm,"orthographic_noise, form_signal, grade_signal",3,mixed
+refined vegetable oil sunflower,sunflower,"canonical_form, form_signal, process_signal",3,signal
+yoghurt milk bacterial cultures,milk,"orthographic_noise, canonical_form, form_signal, grade_signal",4,mixed
+edible vegetable oil cottonseed,cottonseed,"orthographic_noise, canonical_form, form_signal, grade_signal",4,mixed
+edible vegetable oil ground nut,groundnut,"form_signal, process_signal, grade_signal",3,signal
+creatine monohydrate micronized,synthetic,process_signal,1,signal
+giloy tinospora cordifolia stem,giloy tinospora cordifolia stem,canonical_form,1,signal
+kakanasika martynia annua fruit,kakanasika martynia annua fruit,canonical_form,1,signal
+prishniparni uraria picta plant,prishniparni uraria picta plant,"canonical_form, grade_signal",2,signal
+utpala nymphaea stellata flower,utpala nymphaea stellata flower,canonical_form,1,signal
+edible vegetable oil palm kernel,palm,"canonical_form, form_signal, grade_signal",3,signal
+condensed milk-solid balls khoya,milk,process_signal,1,signal
+probiotic cultures l acidophilus,synthetic,process_signal,1,signal
+artificial flavouring substances,synthetic,"form_signal, process_signal",2,signal
+sweetened condensed skimmed milk,milk,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+edible vegetable oil cotton seed,cottonseed,"orthographic_noise, form_signal, grade_signal",3,mixed
+capsule shell ingredient gelatin,beef | pork | fish,"form_signal, multi_source",2,signal
+punarnava boerhavia diffusa root,punarnava boerhavia diffusa,form_signal,1,signal
+shati hedychium spicatum rhizome,shati hedychium spicatum,grade_signal,1,signal
+fish oil omega 3 fatty acids epa,fish,"canonical_form, form_signal",2,signal
+edible vegetable oil pamolein oil,palm,"orthographic_noise, form_signal, grade_signal",3,mixed
+hydrogenated edible vegetable fat,palm | soybean | groundnut,"form_signal, process_signal, grade_signal, multi_source",4,signal
+noodle powder refined wheat flour,wheat,"compound_noise, canonical_form, form_signal, process_signal",4,mixed
+fortified wheat flour wheat flour,wheat,"canonical_form, form_signal, process_signal, fortification_signal",4,signal
+edible vegetable oil rice bra oil,rice,"orthographic_noise, canonical_form, form_signal, grade_signal",4,mixed
+strawberry juice from concentrate,strawberry,"canonical_form, form_signal",2,signal
+enzyme beta-galact active culture,synthetic,form_signal,1,signal
+anticaking agent calcium silicate,mineral,"form_signal, grade_signal, fortification_signal",3,signal
+organic rama tulsi ocimum sanctum,tulsi,"linguistic_signal, transliteration_signal, canonical_form, process_signal",4,signal
+roasted spice powder black pepper,black pepper,"form_signal, process_signal, grade_signal",3,signal
+flavour enhancer sodium glutamate,synthetic,"form_signal, grade_signal",2,signal
+grape seed extract vitis vinifera,grape,"canonical_form, form_signal, grade_signal",3,signal
+liquorice glycyrrhiza glabra bark,liquorice glycyrrhiza glabra,form_signal,1,signal
+dadima anar seeds punica granatum,pomegranate,"form_signal, grade_signal",2,signal
+medium chain triglyceride mct oil,coconut | palm kernel,"form_signal, multi_source",2,signal
+tamalaki phyllanthus niruri plant,phyllanthus niruri,grade_signal,1,signal
+edible vegetable oil paimolein oil,palm,"orthographic_noise, form_signal, grade_signal",3,mixed
+edible vegetable oil palmolein oil,palm,"orthographic_noise, form_signal, grade_signal",3,mixed
+edible vegetable oil palmolein oll,palm,"orthographic_noise, form_signal, grade_signal",3,mixed
+edible vegetable oil palmonien oil,palm,"form_signal, grade_signal",2,signal
+dehydrated vegetable powder garlic,garlic,"canonical_form, form_signal, process_signal",3,signal
+ginger zingiber officinale rhizome,ginger,"canonical_form, grade_signal",2,signal
+edible vegetable oil rice bran oil,rice,"orthographic_noise, canonical_form, form_signal, grade_signal",4,mixed
+edible vegetable oil sunflower oil,sunflower,"canonical_form, form_signal, grade_signal",3,signal
+coriander seeds coriandrum sativum,coriander,"canonical_form, form_signal, grade_signal",3,signal
+protein blend whey protein isolate,milk,"form_signal, grade_signal",2,signal
+vana tulsi ocimum gratissimum leaf,ocimum gratissimum,"linguistic_signal, transliteration_signal, form_signal, grade_signal",4,signal
+dried red chillies capsicum annuum,capsicum annuum,"process_signal, grade_signal",2,signal
+edible vegetable oil groundnut oil,groundnut,"canonical_form, form_signal, grade_signal",3,signal
+dehydrated vegetable powder tomato,tomato,"canonical_form, form_signal, process_signal",3,signal
+gokshura tribulus terrestris fruit,tribulus terrestris,unclassified,1,unclassified
+kantakari solanum surattense plant,solanum surattense,grade_signal,1,signal
+karkatshringi pistacia integerrima,pistacia integerrima,unclassified,1,unclassified
+refined vegetable oil palmolein oil,palm,"form_signal, process_signal",2,signal
+edible vegetable oil rice brand oil,rice,"orthographic_noise, canonical_form, form_signal, grade_signal",4,mixed
+kasuri methi dried fenugreek leaves,fenugreek,"transliteration_signal, canonical_form, form_signal, process_signal, grade_signal",5,signal
+fermented nutritional yeast protein,yeast,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+cinnamon cinnamomum zeylanicum bark,cinnamon,"canonical_form, form_signal",2,signal
+edible vegetable oil cottonseed oil,cottonseed,"canonical_form, form_signal, grade_signal",3,signal
+flavour enhancer disodium guanylate,synthetic,"form_signal, grade_signal",2,signal
+flavour enhancer disodium inosinate,synthetic,"form_signal, grade_signal",2,signal
+roasted spice powder green cardamom,cardamom,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+organic green tea camellia sinensis,camellia sinensis,"process_signal, grade_signal",2,signal
+lemongrass cymbopogon citratus leaf,lemongrass,"canonical_form, form_signal, grade_signal",3,signal
+jiwanti leptadenia reticulata plant,leptadenia reticulata,grade_signal,1,signal
+shyonaka oroxylum indicum stem bark,oroxylum indicum,form_signal,1,signal
+vijaysar pterocarpus marsupium stem,pterocarpus marsupium,unclassified,1,unclassified
+huile végétale comestible palmoleine,palm,"orthographic_noise, linguistic_signal",2,mixed
+huile végétale comestible palmoléine,palm,"orthographic_noise, linguistic_signal",2,mixed
+hydrogenated vegetable fat palmolein,palm,"form_signal, process_signal",2,signal
+hydrogenated vegetable oil vanaspati,palm | soybean | groundnut,"form_signal, process_signal, multi_source",3,signal
+edible vegetable fat onteresterified,palm | soybean | sunflower | groundnut,"form_signal, grade_signal, multi_source",3,signal
+active lactic culture s.thermophilus,milk,"orthographic_noise, form_signal",2,mixed
+organic krishna tulsi ocimum sanctum,ocimum sanctum,"linguistic_signal, transliteration_signal, process_signal",3,signal
+butterscotch flavoured confectionery,milk | sugarcane,multi_source,1,signal
+sweet lime mosambi juice concentrate,mosambi,"transliteration_signal, canonical_form, form_signal, grade_signal",4,signal
+chocolate natural vanilla flavouring,cocoa | vanilla,"form_signal, process_signal, multi_source",3,signal
+chocolate substitute refined palm oil,palm,"canonical_form, form_signal, process_signal",3,signal
+edible vegetable oil refined palm oil,palm,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+flavour enhancer yeast extract powder,yeast,"canonical_form, form_signal, grade_signal",3,signal
+active lactic cultures s thermophilus,milk,orthographic_noise,1,noise
+active lactic cultures s.thermophilus,milk,orthographic_noise,1,noise
+organic vana tulsi ocimum gratissimum,ocimum gratissimum,"linguistic_signal, transliteration_signal, process_signal",3,signal
+agaru cinnamomum zeylanicum stem bark,cinnamomum zeylanicum,form_signal,1,signal
+probiotics bacillus coagulans snz1969,synthetic,"compound_noise, linguistic_signal",2,mixed
+arachidonic acid aa from m alpina oil,mortierella alpina,form_signal,1,signal
+kutki picrorhiza kurrooa root rhizome,picrorhiza kurrooa,"form_signal, grade_signal",2,signal
+mct powder medium chain triglycerides,coconut | palm kernel,"form_signal, multi_source",2,signal
+edible vegetable fat bakery shortening,palm | soybean | groundnut,"form_signal, grade_signal, multi_source",3,signal
+interesterified vegetable fat palm oil,palm,"canonical_form, form_signal, process_signal",3,signal
+lbacillus delbrueckii subsp bulgaricus,milk,orthographic_noise,1,noise
+chamomile matricaria chamomilla flower,chamomile,canonical_form,1,signal
+fortified wheat flour calcium carbonate,wheat | mineral,"canonical_form, form_signal, process_signal, grade_signal, fortification_signal, multi_source",6,signal
+sweetened condensed partly skimmed milk,milk,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+flavour enhancer disodium 5'- guanylate,synthetic,"form_signal, grade_signal",2,signal
+stabilizer hydrolysed vegetable protein,soybean | groundnut,"orthographic_noise, compound_noise, form_signal, multi_source",4,mixed
+stabilizer hydrolyzed vegetable protein,soybean | groundnut,"orthographic_noise, compound_noise, form_signal, process_signal, multi_source",5,mixed
+fructo-oligosaccharides prebiotic fibre,sugarcane | chicory,"canonical_form, form_signal, process_signal, multi_source",4,signal
+interesterified vegetable fat sesame oil,palm | soybean | groundnut | sesame,"form_signal, process_signal, multi_source",3,signal
+l.bacillus delbrueckii subsp. bulgaricus,milk,orthographic_noise,1,noise
+amla extract emblica officinalis extract,amla,"linguistic_signal, transliteration_signal, canonical_form, form_signal",4,signal
+shweta chandan santalum album heart wood,sandalwood,unclassified,1,unclassified
+edible vegetable oil refined ricebran oil,rice,"form_signal, process_signal, grade_signal",3,signal
+edible vegetable oil refined palmolein oil,palm,"form_signal, process_signal, grade_signal",3,signal
+active lactic cultures made from toned milk,milk,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+holy basil ocimum sanctum rama variety leaf,ocimum sanctum,"linguistic_signal, form_signal, grade_signal",3,signal
+edible vegetable oil refined cottonseed oil,cottonseed,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+flavour enhancer disodium 5'-ribonucleotide,synthetic | yeast,"form_signal, grade_signal, multi_source",3,signal
+agnimantha clerodendrum phlomidis stem bark,clerodendrum phlomidis,form_signal,1,signal
+arachidonic acid ara mortierella alpina oil,mortierella alpina,form_signal,1,signal
+chocolate substitute refined palm kernel oil,palm,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+2'-fucosyllactose human milk oligosaccharide,synthetic,form_signal,1,signal
+partially hydrogenated refined vegetable oils,palm | soybean | groundnut,"form_signal, process_signal, multi_source",3,signal
+edible vegetable fat interesterified palm oil,palm,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+holy basil ocimum sanctum krishna variety leaf,ocimum sanctum,"linguistic_signal, form_signal, grade_signal",3,signal
+lactose-rich deproteinized whey permeate powder,milk,form_signal,1,signal
+lactic cultures l.delbruelkil subsp. bulgaricus,milk,unclassified,1,unclassified
+arachidonic acid ara from mortierella alpina oil,mortierella alpina,form_signal,1,signal
+edible vegetable fat interesterified palm kernel oil,palm,"canonical_form, form_signal, process_signal, grade_signal",4,signal
+calcium b-hydroxy-b-methylbutyrate monohydrate cahmb,synthetic,"grade_signal, fortification_signal",2,signal
+east india basil ocimum gratissimum vana variety leaf,ocimum gratissimum,"linguistic_signal, form_signal, grade_signal",3,signal
+apple juice reconstituted from apple juice concentrate,apple,"canonical_form, form_signal, process_signal",3,signal
+active lactic cultures including ldelbrueki subsp bulgaricus,milk,unclassified,1,unclassified
+active lactic culture lbacillus delbrueckii subsp. bulgaricus,milk,"orthographic_noise, form_signal",2,mixed
+active lactic cultures lbacillus delbrueckii subsp bulgaricus,milk,orthographic_noise,1,noise
+active lactic cultures l.bacillus delbrueckii subsp bulgaricus,milk,orthographic_noise,1,noise
+probiotic bacterial strains bifidobacterium animalis subsp lactis,milk,"process_signal, grade_signal",2,signal
+active lactic culture with probiotics bacteri animalis subop lactis,milk,form_signal,1,signal

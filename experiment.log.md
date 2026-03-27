@@ -97,3 +97,15 @@ The retrospective also developed the epistemic category framework: each sentence
 Retrospective written up as an experiment log and posted to iSRL sandbox-research Discussions #10: https://github.com/isrl-research/sandbox-research/discussions/10#discussioncomment-16329574
 
 ---
+
+## [27-Mar-2026 18:30 IST] — wheat_form_prototype.py — IFID Wheat Entry CLI
+
+Built `raw_agricultural_material/wheat_form_prototype.py`, a 5-step guided CLI that simulates how a brand would enter a wheat ingredient into IFID via structured choices (source → physical form → malted check → fortification → agent multi-select with zinc disambiguation). The form exposes schema gaps by classifying all 32 rows in wheat_working.csv against seven break types: OUT_OF_SCOPE, COMPOUND_PARSE_FAIL, NO_FORM_PATH, FERMENTATION_PATH, DATA_MODEL_MISMATCH, AGENT_AMBIGUITY, and DUPLICATE_VARIANT. All four verification paths ran cleanly: whole grain closes after step 2, refined flour without fortification closes after step 4, fortified whole flour triggers the zinc disambiguation prompt, and all 32 rows appear in the break report (17 breaks, 15 OK).
+
+---
+
+## [27-Mar-2026 22:15 IST] — variant_class_analysis.py — Signal/Noise Classification of 1,666 Variants
+
+Built `core/variant_class_analysis.py`, a rule-based classifier that tags all 1,666 rows in `core/all_variants_working.csv` with one or more of 13 variant classes across two axes (noise: orthographic_noise, redundant_variant, compound_noise, out_of_scope; signal: linguistic_signal, transliteration_signal, canonical_form, form_signal, process_signal, grade_signal, fortification_signal, abbreviation_signal, multi_source). The main deadblock was unclassified rate: initial run hit 50.4% unclassified because the taxonomy had no class for plain English canonical names and form/grade/process uniqueness constraints were too strict; resolved by adding a `canonical_form` class, relaxing uniqueness to allow overlap with `redundant_variant`, and expanding all three vocabulary sets substantially (form, grade, process words). Final run: 1.5% unclassified (25 rows), all 7 verification criteria pass — đường/zucker/sucre/พริก caught as linguistic_signal, atta/maida/ghee/dahi/sooji as transliteration_signal, sait/palmolien/paim oil/wheatflour as orthographic_noise. Outputs: `variant_signal_class` column written to `all_variants_working.csv`, summary to `core/variant_class_report.csv`.
+
+---
