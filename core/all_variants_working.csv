@@ -10,7 +10,7 @@ egg,egg,,whole/fresh pieces,base ingredient,,,,0.0,0.05,0.12,0.0,0.05,0.12,0.063
 hvp,soybean,?hydrolysis,protein concentrate,base ingredient,,,flavouring agent,0.6,0.74,0.12,0.6,0.74,0.675,0.45,0.672,2,False,True,,,,,,,hydrolysate,,,processed_ingredient
 tea,tea,,,flavouring agent,fermentation,whole/fresh pieces|powder,taste profile / spice,0.0,0.0,0.675,0.56,0.42,0.675,0.27,0.564,1,True,False,,,,,,,,,,flavouring agent
 fig,fig,,whole/fresh pieces,base ingredient,,,sweetener,0.0,0.05,0.12,0.0,0.05,0.625,0.063,0.265,1,False,False,,,,,,,,,,raw_agricultural_material
-fos,sugarcane | chicory,,powder,sweetener|bulking agent,,,?prebiotic,0.0,0.42,0.625,0.0,0.42,0.625,0.376,0.376,2,False,True,,,,,,,,,,sweetener|bulking agent
+fos,sugarcane | chicory,,powder,sweetener|bulking agent,,,?prebiotic,0.0,0.42,0.625,0.0,0.42,0.625,0.376,0.376,2,False,True,,,,,,,,,,health_supplement
 rye,rye,,,base ingredient,milling,flour/fine powder|coarse grits,,0.0,0.0,0.12,0.28,0.33,0.12,0.048,0.231,1,False,False,,,,,,,,,,raw_agricultural_material
 tvp,soybean,,protein concentrate,base ingredient,?extrusion,,,0.0,0.74,0.12,0.6,0.74,0.12,0.27,0.45,1,True,True,,,,,,,textured_plant_protein,,,processed_ingredient
 palm,palm,,whole/fresh pieces,base ingredient,,,,0.0,0.05,0.12,0.0,0.05,0.12,0.063,0.063,1,False,False,,,,,,,,,,raw_agricultural_material
@@ -787,7 +787,7 @@ cod liver oil,cod,solvent extraction,oil,lipid base,,,,0.82,0.7,0.22,0.82,0.7,0.
 vegetable fats,palm | soybean | groundnut,,fat fraction,lipid base,cold pressing|refining|solvent extraction|hydrogenation|interesterification,,,0.0,0.72,0.22,0.92,0.72,0.22,0.304,0.58,2,False,False,,,,,,,,,,lipid base
 vegetable oils,palm | soybean | sunflower | groundnut,,oil,lipid base,cold pressing|refining|solvent extraction,,,0.0,0.7,0.22,0.82,0.7,0.22,0.298,0.544,1,True,False,,,,,,,,,,lipid base
 grated carrots,carrot,,cut/sliced pieces,base ingredient,,,,0.0,0.1,0.12,0.0,0.1,0.12,0.078,0.078,1,False,False,,,,,,,,,,raw_agricultural_material
-caramel powder,sugarcane,,powder,colour|sweetener,refining,,,0.0,0.42,0.8,0.75,0.42,0.8,0.446,0.671,2,False,False,,,,,,,,,,colour|sweetener
+caramel powder,sugarcane,,powder,colour|sweetener,refining,,,0.0,0.42,0.8,0.75,0.42,0.8,0.446,0.671,2,False,False,,,,,,,,,,colour|additives
 cultured cream,milk,fermentation,dense block,base ingredient,,,,0.56,0.38,0.12,0.56,0.38,0.12,0.33,0.33,2,False,False,,,,fermented_cream,,,,,,fermentation_agent
 ginger extract,ginger,solvent extraction,extract/oleoresin,flavouring agent,,essential oil,taste profile / spice,0.82,0.86,0.675,0.82,0.9,0.675,0.774,0.786,3,False,False,,,,,,,,,,flavouring agent
 liquid glucose,corn | tapioca,,juice,sweetener,?hydrolysis,,,0.0,0.5,0.625,0.6,0.5,0.625,0.4,0.58,2,False,True,,,,,,,,,,sweetener
@@ -1020,7 +1020,7 @@ dehydrated carrot,carrot,drying,whole/fresh pieces,base ingredient,,cut/sliced p
 carrot flavouring,carrot,,extract/oleoresin,flavouring agent,solvent extraction,,taste profile / spice,0.0,0.86,0.675,0.82,0.86,0.675,0.528,0.774,2,True,False,,,,,,,,,,flavouring agent
 dehydrated garlic,garlic,drying,whole/fresh pieces,taste profile / spice,,cut/sliced pieces|powder,flavouring agent,0.42,0.05,0.18,0.42,0.42,0.675,0.213,0.522,1,True,False,,,,,,,,,,taste profile / spice
 garlic flavouring,garlic,,extract/oleoresin,flavouring agent,solvent extraction,,taste profile / spice,0.0,0.86,0.675,0.82,0.86,0.675,0.528,0.774,2,True,False,,,,,,,,,,flavouring agent
-corn syrup solids,corn,?enzymatic treatment,syrup,sweetener|bulking agent,,concentrate|powder,,0.0,0.4,0.625,0.0,0.42,0.625,0.37,0.376,2,False,True,,,,,,,,,,sweetener|bulking agent
+corn syrup solids,corn,?enzymatic treatment,syrup,sweetener|bulking agent,,concentrate|powder,,0.0,0.4,0.625,0.0,0.42,0.625,0.37,0.376,2,False,True,,,,,,,,,,sweetener|bulking agent|ins_check_needed
 candy sugar syrup,sugarcane,,syrup,sweetener,refining,juice,,0.0,0.4,0.625,0.75,0.5,0.625,0.37,0.625,2,False,False,,,,,,,,refined_sucrose,,sweetener
 pasta di nocciole,hazelnut,milling,pulp/puree,base ingredient,,,,0.28,0.25,0.12,0.28,0.25,0.12,0.207,0.207,1,False,False,,,,,,,,,,raw_agricultural_material
 purée de noisette,hazelnut,,pulp/puree,base ingredient,,,,0.0,0.25,0.12,0.0,0.25,0.12,0.123,0.123,1,False,False,,,,,,,,,,raw_agricultural_material
@@ -1173,7 +1173,7 @@ himalayan pink salt,mineral,,crystalline chemical,base ingredient,,,,0.0,0.98,0.
 tropical flavouring,synthetic,synthetic flavors,extract/oleoresin,flavouring agent,,,taste profile / spice,0.99,0.86,0.675,0.99,0.86,0.675,0.825,0.825,3,False,False,,,,,,,,,,flavouring agent
 organic ginger root,ginger,,whole/fresh pieces,taste profile / spice,,cut/sliced pieces,flavouring agent,0.0,0.05,0.18,0.0,0.1,0.675,0.087,0.3,1,True,False,,,,,,,,,,taste profile / spice
 dried ginger powder,ginger,drying,powder,taste profile / spice,,,flavouring agent,0.42,0.42,0.18,0.42,0.42,0.675,0.324,0.522,2,False,False,,,,,,,,,,taste profile / spice
-dried glucose syrup,corn | tapioca,drying,syrup,sweetener|bulking agent,?hydrolysis,granules|powder,,0.42,0.4,0.625,0.6,0.8,0.625,0.496,0.67,2,False,True,,,,,,,,,,sweetener|bulking agent
+dried glucose syrup,corn | tapioca,drying,syrup,sweetener|bulking agent,?hydrolysis,granules|powder,,0.42,0.4,0.625,0.6,0.8,0.625,0.496,0.67,2,False,True,,,,,,,,,,sweetener|bulking agent|ins_check_needed
 hazelnut flavouring,hazelnut,,extract/oleoresin,flavouring agent,,,taste profile / spice,0.0,0.86,0.675,0.0,0.86,0.675,0.528,0.528,2,False,False,,,,,,,,,,flavouring agent
 refined wheat flour,wheat,refining|milling,flour/fine powder,base ingredient,,,flour treatment agent,0.75,0.33,0.12,0.75,0.33,0.93,0.372,0.696,2,False,False,,,,,,,,,,raw_agricultural_material
 alphonso mango pulp,mango,,pulp/puree,base ingredient,,,,0.0,0.25,0.12,0.0,0.25,0.12,0.123,0.123,1,False,False,,,,,,,,,,raw_agricultural_material
@@ -1192,7 +1192,7 @@ basmati rice grains,rice,,whole/fresh pieces,base ingredient,,,,0.0,0.05,0.12,0.
 cluster bean powder,cluster bean,,powder,thickener,drying|milling,flour/fine powder,base ingredient,0.0,0.42,0.615,0.42,0.42,0.615,0.372,0.498,2,False,False,,,,,,,,,,thickener
 big cardamom powder,cardamom,,powder,taste profile / spice,drying|milling,,flavouring agent,0.0,0.42,0.18,0.42,0.42,0.675,0.198,0.522,1,True,False,,,,,,,,,,taste profile / spice
 black pepper powder,black pepper,,powder,taste profile / spice,drying|milling,,flavouring agent,0.0,0.42,0.18,0.42,0.42,0.675,0.198,0.522,1,True,False,,,,,,,,,,taste profile / spice
-butterscotch pieces,milk | sugarcane,,dense block,sweetener|flavouring agent,,granules,,0.0,0.38,0.675,0.0,0.8,0.675,0.384,0.51,2,False,False,,,,,,,,,,sweetener|flavouring agent
+butterscotch pieces,milk | sugarcane,,dense block,sweetener|flavouring agent,,granules,,0.0,0.38,0.675,0.0,0.8,0.675,0.384,0.51,2,False,False,,,,,,,,,,flag_compound_product
 cauliflower florets,cauliflower,,whole/fresh pieces,base ingredient,,cut/sliced pieces,,0.0,0.05,0.12,0.0,0.1,0.12,0.063,0.078,1,False,False,,,,,,,,,,raw_agricultural_material
 malt extract solids,barley,solvent extraction,extract/oleoresin,sweetener,,concentrate,flavouring agent,0.82,0.86,0.625,0.82,0.86,0.675,0.754,0.774,3,False,False,,,,,,,,,,sweetener
 green chilli flakes,chilli,drying,flakes,taste profile / spice,,cut/sliced pieces,flavouring agent,0.42,0.36,0.18,0.42,0.36,0.675,0.306,0.504,2,False,False,,,,,,,,,,taste profile / spice
@@ -1313,7 +1313,7 @@ black truffle extract,truffle,,extract/oleoresin,flavouring agent,solvent extrac
 croscarmellose sodium,wood,,powder,bulking agent,,,stabiliser|anticaking agent,0.0,0.42,0.375,0.0,0.42,0.85,0.276,0.466,1,True,False,,,,,,,,,,bulking agent
 cultured sweet potato,sweet potato,fermentation,whole/fresh pieces,base ingredient,,,,0.56,0.05,0.12,0.56,0.05,0.12,0.231,0.231,1,False,False,,,,,,,,,,fermentation_agent
 enzyme blend digezyme,aspergillus oryzae | rice,,powder,,,,,0.0,0.42,0.0,0.0,0.42,0.0,0.126,0.126,1,False,False,,,,,,,,,,fermentation_agent
-fructooligosaccharide,sugarcane | chicory,,powder,sweetener|bulking agent,,,?prebiotic,0.0,0.42,0.625,0.0,0.42,0.625,0.376,0.376,2,False,True,,,,,,,,,,sweetener|bulking agent
+fructooligosaccharide,sugarcane | chicory,,powder,sweetener|bulking agent,,,?prebiotic,0.0,0.42,0.625,0.0,0.42,0.625,0.376,0.376,2,False,True,,,,,,,,,,health_supplement
 saturated fatty acids,palm | coconut | milk,,fat fraction,lipid base,,,,0.0,0.72,0.22,0.0,0.72,0.22,0.304,0.304,2,False,False,,,,,,,,,,lipid base
 shankhapushpi extract,shankhapushpi,solvent extraction,extract/oleoresin,flavouring agent,,,,0.82,0.86,0.675,0.82,0.86,0.675,0.774,0.774,3,False,False,,,,,,,,,,flavouring agent
 hydrogenated table oil,palm | soybean | groundnut,hydrogenation,oil,lipid base,cold pressing|refining|solvent extraction,,,0.92,0.7,0.22,0.92,0.7,0.22,0.574,0.574,2,False,False,,,,,,hydrogenated,,,,lipid base
@@ -1345,10 +1345,10 @@ b-galactosidase enzyme,synthetic,,powder,base ingredient,,,,0.0,0.42,0.12,0.0,0.
 ultrasorb tech lactase,synthetic,,powder,base ingredient,,,,0.0,0.42,0.12,0.0,0.42,0.12,0.174,0.174,1,False,False,,,,,,,,,,fermentation_agent
 cysteine hydrochloride,synthetic,,crystalline chemical,flour treatment agent,,,,0.0,0.98,0.93,0.0,0.98,0.93,0.666,0.666,2,False,False,,,amino_acid,,,,,,,flour treatment agent
 distillate of gaozaban,gaozaban,distillation,extract/oleoresin,flavouring agent,solvent extraction,essential oil,taste profile / spice,0.0,0.86,0.675,0.82,0.9,0.675,0.528,0.786,2,True,False,,,,,,,,,,flavouring agent
-fructo-oligosaccharide,sugarcane,,powder,sweetener|bulking agent,,,?prebiotic,0.0,0.42,0.625,0.0,0.42,0.625,0.376,0.376,2,False,True,,,,,,,,,,sweetener|bulking agent
-fructo-oligosaccharide,sugarcane,,powder,sweetener|bulking agent,,,?prebiotic,0.0,0.42,0.625,0.0,0.42,0.625,0.376,0.376,2,False,True,,,,,,,,,,sweetener|bulking agent
-fructo oligosaccharide,sugarcane,,powder,sweetener|bulking agent,,,?prebiotic,0.0,0.42,0.625,0.0,0.42,0.625,0.376,0.376,2,False,True,,,,,,,,,,sweetener|bulking agent
-fructooligosaccharides,sugarcane,,powder,sweetener|bulking agent,,,?prebiotic,0.0,0.42,0.625,0.0,0.42,0.625,0.376,0.376,2,False,True,,,,,,,,,,sweetener|bulking agent
+fructo-oligosaccharide,sugarcane,,powder,sweetener|bulking agent,,,?prebiotic,0.0,0.42,0.625,0.0,0.42,0.625,0.376,0.376,2,False,True,,,,,,,,,,health_supplement
+fructo-oligosaccharide,sugarcane,,powder,sweetener|bulking agent,,,?prebiotic,0.0,0.42,0.625,0.0,0.42,0.625,0.376,0.376,2,False,True,,,,,,,,,,health_supplement
+fructo oligosaccharide,sugarcane,,powder,sweetener|bulking agent,,,?prebiotic,0.0,0.42,0.625,0.0,0.42,0.625,0.376,0.376,2,False,True,,,,,,,,,,health_supplement
+fructooligosaccharides,sugarcane,,powder,sweetener|bulking agent,,,?prebiotic,0.0,0.42,0.625,0.0,0.42,0.625,0.376,0.376,2,False,True,,,,,,,,,,health_supplement
 l-lysine hydrochloride,synthetic,,crystalline chemical,flour treatment agent,,,,0.0,0.98,0.93,0.0,0.98,0.93,0.666,0.666,2,False,False,,,amino_acid,,,,,,,flour treatment agent
 packaging gas nitrogen,synthetic,,,packaging gas,,,,0.0,0.0,0.95,0.0,0.0,0.95,0.38,0.38,2,False,False,,,,,,,,,,packaging gas
 vegetable oil palmolein,palm,,oil,lipid base,cold pressing|refining|solvent extraction,,,0.0,0.7,0.22,0.82,0.7,0.22,0.298,0.544,1,True,False,,,,,,palmolein,,,,lipid base
@@ -1387,7 +1387,7 @@ edible sodium caseinate,milk,,protein isolate,base ingredient,,powder,emulsifier
 hpmc vegetarian capsule,wood,,,,,,thickener|gelling agent,0.0,0.0,0.0,0.0,0.0,0.675,0.0,0.27,1,False,False,,,,,,,,,,thickener|gelling agent
 cotton candy flavouring,synthetic,,,flavouring agent,,powder,sweetener,0.0,0.0,0.675,0.0,0.42,0.675,0.27,0.396,1,True,False,,,,,,,,,,flavouring agent
 ferric ammonium citrate,synthetic,,crystalline chemical,anticaking agent,,,colour,0.0,0.98,0.85,0.0,0.98,0.85,0.634,0.634,2,False,False,,,,,,,,,,anticaking agent
-fructo-oligosaccharides,sugarcane | beet,,powder,sweetener|bulking agent,,,?prebiotic,0.0,0.42,0.625,0.0,0.42,0.625,0.376,0.376,2,False,True,,,,,,,,,,sweetener|bulking agent
+fructo-oligosaccharides,sugarcane | beet,,powder,sweetener|bulking agent,,,?prebiotic,0.0,0.42,0.625,0.0,0.42,0.625,0.376,0.376,2,False,True,,,,,,,,,,health_supplement
 omega concentrate blend,fish,concentration,oil|concentrate,lipid base,solvent extraction,,,0.48,0.7,0.22,0.82,0.7,0.22,0.442,0.544,2,False,False,,,,,,,,,,lipid base
 sodium starch glycolate,potato,,modified starch powder,thickener,,,stabiliser,0.0,0.96,0.615,0.0,0.96,0.65,0.534,0.548,2,False,False,,,,,,,,,,thickener
 krishnalavana black salt,mineral,,crystalline chemical,taste profile / spice,,,flavouring agent,0.0,0.98,0.18,0.0,0.98,0.675,0.366,0.564,2,False,False,,,,,,,,,,taste profile / spice
@@ -1508,7 +1508,7 @@ dehydrated white onion powder,onion,drying,powder,taste profile / spice,,,flavou
 pomegranate juice concentrate,pomegranate,,concentrate,flavouring agent,,juice,,0.0,0.4,0.675,0.0,0.5,0.675,0.39,0.42,2,False,False,,,,,,,,,,flavouring agent
 probiotics bacillus coagulans,synthetic,,powder,?probiotic,,,,0.0,0.42,0.0,0.0,0.42,0.0,0.126,0.126,1,False,True,,,,,,,,,,?probiotic
 brihati solanum indicum plant,brihati,,whole/fresh pieces,base ingredient,,cut/sliced pieces,,0.0,0.05,0.12,0.0,0.1,0.12,0.063,0.078,1,False,False,,,,,,,,,,raw_agricultural_material
-gudmar gymnema sylvestre leaf,gudmar,,whole/fresh pieces,sweetener,,cut/sliced pieces|powder,taste profile / spice,0.0,0.05,0.625,0.0,0.42,0.625,0.265,0.376,1,True,False,,,,,,,,,,sweetener
+gudmar gymnema sylvestre leaf,gudmar,,whole/fresh pieces,sweetener,,cut/sliced pieces|powder,taste profile / spice,0.0,0.05,0.625,0.0,0.42,0.625,0.265,0.376,1,True,False,,,,,,,,,,health_supplement
 jiwanti leptadenia reticulata,jiwanti,,,base ingredient,,whole/fresh pieces|cut/sliced pieces|powder,,0.0,0.0,0.12,0.0,0.42,0.12,0.048,0.174,1,False,False,,,,,,,,,,raw_agricultural_material
 medium chain triglyceride oil,coconut | palm kernel,fractionation,oil,lipid base,cold pressing|solvent extraction,,,0.76,0.7,0.22,0.82,0.7,0.22,0.526,0.544,2,False,False,,,,,,,,,,lipid base
 mudgaparni phaseolus trilobus,mudgaparni,,,base ingredient,,whole/fresh pieces|cut/sliced pieces|powder,,0.0,0.0,0.12,0.0,0.42,0.12,0.048,0.174,1,False,False,,,,,,,,,,raw_agricultural_material
@@ -1551,7 +1551,7 @@ edible vegetable oil palm kernel,palm,,oil,lipid base,cold pressing|refining|sol
 condensed milk-solid balls khoya,milk,,dense block,base ingredient,concentration,concentrate,,0.0,0.38,0.12,0.48,0.4,0.12,0.162,0.312,1,True,False,,,,heat_concentrated,,,,,,processed_ingredient
 probiotic cultures l acidophilus,synthetic,fermentation,powder,?probiotic,,,,0.56,0.42,0.0,0.56,0.42,0.0,0.294,0.294,1,False,True,,,,,,,,,,?probiotic
 artificial flavouring substances,synthetic,synthetic flavors,,flavouring agent,,extract/oleoresin|powder,taste profile / spice,0.99,0.0,0.675,0.99,0.86,0.675,0.567,0.825,2,True,False,,,,,,,,,,flavouring agent
-sweetened condensed skimmed milk,milk,,concentrate,sweetener|base ingredient,concentration,,,0.0,0.4,0.625,0.48,0.4,0.625,0.37,0.514,2,False,False,,,,,,,,,,sweetener|base ingredient
+sweetened condensed skimmed milk,milk,,concentrate,sweetener|base ingredient,concentration,,,0.0,0.4,0.625,0.48,0.4,0.625,0.37,0.514,2,False,False,,,,,,,,,,flag_compound_product
 edible vegetable oil cotton seed,cottonseed,,oil,lipid base,cold pressing|refining|solvent extraction,,,0.0,0.7,0.22,0.82,0.7,0.22,0.298,0.544,1,True,False,,,,,,,,,,lipid base
 capsule shell ingredient gelatin,beef | pork | fish,,protein isolate,gelling agent,,,,0.0,0.78,0.675,0.0,0.78,0.675,0.504,0.504,2,False,False,,,,,,,,,,gelling agent
 punarnava boerhavia diffusa root,punarnava boerhavia diffusa,,whole/fresh pieces,base ingredient,drying,cut/sliced pieces|powder,,0.0,0.05,0.12,0.42,0.42,0.12,0.063,0.3,1,True,False,,,,,,,,,,raw_agricultural_material
@@ -1630,11 +1630,11 @@ interesterified vegetable fat palm oil,palm,interesterification,fat fraction,lip
 lbacillus delbrueckii subsp bulgaricus,milk,fermentation,,base ingredient,,,,0.56,0.0,0.12,0.56,0.0,0.12,0.216,0.216,1,False,False,,,,,,,,,,fermentation_agent
 chamomile matricaria chamomilla flower,chamomile,,whole/fresh pieces,taste profile / spice,drying,cut/sliced pieces|powder,flavouring agent,0.0,0.05,0.18,0.42,0.42,0.675,0.087,0.522,1,True,False,,,,,,,,,,taste profile / spice
 fortified wheat flour calcium carbonate,wheat | mineral,milling,flour/fine powder,base ingredient,,,,0.28,0.33,0.12,0.28,0.33,0.12,0.231,0.231,1,False,False,,,,,fortified,,,,,raw_agricultural_material
-sweetened condensed partly skimmed milk,milk,,concentrate,base ingredient|sweetener,concentration,,,0.0,0.4,0.625,0.48,0.4,0.625,0.37,0.514,2,False,False,,,,,,,,,,base ingredient|sweetener
+sweetened condensed partly skimmed milk,milk,,concentrate,base ingredient|sweetener,concentration,,,0.0,0.4,0.625,0.48,0.4,0.625,0.37,0.514,2,False,False,,,,,,,,,,flag_compound_product
 flavour enhancer disodium 5'- guanylate,synthetic,,crystalline chemical,flavouring agent,,,,0.0,0.98,0.675,0.0,0.98,0.675,0.564,0.564,2,False,False,,,,,,,,,,flavouring agent
 stabilizer hydrolysed vegetable protein,soybean | groundnut,?hydrolysis,protein concentrate,stabiliser,,,base ingredient|flavouring agent,0.6,0.74,0.65,0.6,0.74,0.675,0.662,0.672,2,False,True,,,,,,,hydrolysate,,,stabiliser
 stabilizer hydrolyzed vegetable protein,soybean | groundnut,?hydrolysis,protein concentrate,stabiliser,,,base ingredient|flavouring agent,0.6,0.74,0.65,0.6,0.74,0.675,0.662,0.672,2,False,True,,,,,,,hydrolysate,,,stabiliser
-fructo-oligosaccharides prebiotic fibre,sugarcane | chicory,,powder,sweetener|bulking agent,,,?prebiotic,0.0,0.42,0.625,0.0,0.42,0.625,0.376,0.376,2,False,True,,,,,,,,,,sweetener|bulking agent
+fructo-oligosaccharides prebiotic fibre,sugarcane | chicory,,powder,sweetener|bulking agent,,,?prebiotic,0.0,0.42,0.625,0.0,0.42,0.625,0.376,0.376,2,False,True,,,,,,,,,,health_supplement
 interesterified vegetable fat sesame oil,palm | soybean | groundnut | sesame,interesterification,fat fraction|oil,lipid base,refining|solvent extraction|cold pressing,,,0.91,0.72,0.22,0.91,0.72,0.22,0.577,0.577,2,False,False,,,,,,,,,,lipid base
 l.bacillus delbrueckii subsp. bulgaricus,milk,fermentation,,,,,?probiotic,0.56,0.0,0.0,0.56,0.0,0.0,0.168,0.168,1,False,True,,,,,,,,,,fermentation_agent
 amla extract emblica officinalis extract,amla,solvent extraction,extract/oleoresin,flavouring agent,,,antioxidant,0.82,0.86,0.675,0.82,0.86,0.875,0.774,0.854,3,False,False,,,,,,,,,,flavouring agent

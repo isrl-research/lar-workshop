@@ -1,2 +1,3 @@
 variant,ins_number,source,m_explicit,notes
-hpmc vegetarian capsule,464,wood,NULL,INS 464 — hydroxypropyl methylcellulose; used as capsule shell in supplements; not in current additives taxonomy; f_could_be thickener|gelling agent in scoring; flagged for separate additives enrichment
+hpmc vegetarian capsule,464,wood,,INS 464 — hydroxypropyl methylcellulose; used as capsule shell in supplements; not in current additives taxonomy; f_could_be thickener|gelling agent in scoring; flagged for separate additives enrichment
+caramel powder,150,sugarcane,powder,"INS 150 — caramel colour; originally scored as colour|sweetener (f_explicit: colour|sweetener, sugarcane source); reclassified to colour|additives during sweetener pre-check 2026-03-27; requires additives enrichment for INS subtype (150a/b/c/d)"
