@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% block title %} — Add Ingredient{% endblock %}
+{% block content %}
+<h1>Add Ingredient — {{ sku.name }}</h1>
+<p class="meta">{{ sku.brand }} &nbsp;|&nbsp; {{ sku_id }}</p>
+
+<hr style="margin: 20px 0;">
+
+<!-- PATH A: Standard single INS -->
+<div class="section">
+  <h2>Path A — Single INS additive</h2>
+  <form method="POST">
+    <div style="margin-bottom: 12px;">
+      <label>Select additive<br>
+      <select name="ins_number" id="ins_select" onchange="updateClasses()">
+        <option value="">— choose —</option>
+        {% for ins, entry in additives %}
+        <option value="{{ ins }}"
+          data-classes="{{ entry.functional_classes | join('||') }}"
+          data-source="{{ entry.source_type }}">
+          INS {{ ins }} — {{ entry.official_name }}
+          {%- if entry.source_type == 'animal' %} ⚠ animal{% endif %}
+        </option>
+        {% endfor %}
+      </select></label>
+    </div>
+    <div style="margin-bottom: 16px;" id="class-section" style="display:none">
+      <label>Declared functional class<br>
+      <select name="declared_class" id="class_select">
+        <option value="">— select additive first —</option>
+      </select></label>
+      <p class="meta" id="class-note"></p>
+    </div>
+    <input type="submit" value="Add →">
+  </form>
+</div>
+
+<hr style="margin: 20px 0;">
+
+<!-- PATH B: Class-only declaration -->
+<div class="section">
+  <h2>Path B — Class-only declaration (no INS)</h2>
+  <p class="meta">Brand declares a functional class without specifying the additive. <span class="break-tag">Triggers CLASS_ONLY_DECLARATION break</span></p>
+  <form method="POST">
+    <div style="margin-bottom: 12px;">
+      <label>Functional class declared on pack<br>
+      <input type="text" name="class_only" placeholder="e.g. Antioxidant, Emulsifier"></label>
+    </div>
+    <input type="submit" value="Add (class-only) →">
+  </form>
+</div>
+
+<hr style="margin: 20px 0;">
+
+<!-- PATH C: Multi-INS under one class -->
+<div class="section">
+  <h2>Path C — Multiple INS under one class declaration</h2>
+  <p class="meta">e.g. "Antioxidants (INS 319, 320)". <span class="break-tag">Triggers MULTI_INS_SINGLE_CLASS break</span></p>
+  <form method="POST">
+    <div style="margin-bottom: 12px;">
+      <label>INS numbers (comma-separated)<br>
+      <input type="text" name="multi_ins" placeholder="e.g. 319, 320"></label>
+    </div>
+    <div style="margin-bottom: 16px;">
+      <label>Declared class<br>
+      <input type="text" name="declared_class" placeholder="e.g. Antioxidants"></label>
+    </div>
+    <input type="submit" value="Add (multi-INS) →">
+  </form>
+</div>
+
+<script>
+  const taxonomy = {{ taxonomy | tojson }};
+
+  function updateClasses() {
+    const sel = document.getElementById('ins_select');
+    const opt = sel.options[sel.selectedIndex];
+    const classSel = document.getElementById('class_select');
+    const note = document.getElementById('class-note');
+
+    classSel.innerHTML = '';
+    if (!opt.value) {
+      classSel.innerHTML = '<option value="">— select additive first —</option>';
+      note.textContent = '';
+      return;
+    }
+
+    const classes = opt.dataset.classes ? opt.dataset.classes.split('||') : [];
+    const source = opt.dataset.source;
+
+    classes.forEach(fc => {
+      const o = document.createElement('option');
+      o.value = fc;
+      o.textContent = fc;
+      classSel.appendChild(o);
+    });
+
+    if (classes.length > 1) {
+      note.textContent = `⚠ ${classes.length} functional classes in taxonomy — which one applies in this product?`;
+    } else {
+      note.textContent = '';
+    }
+
+    if (source === 'animal') {
+      note.textContent += (note.textContent ? ' | ' : '') + '⚠ Animal-derived — dietary flag will break';
+    }
+  }
+</script>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %} — Taxonomy{% endblock %}
+{% block content %}
+<h1>INS Additives Taxonomy</h1>
+<p class="meta">{{ total }} verified entries &nbsp;|&nbsp; grouped by functional class</p>
+
+{% for fc, entries in by_class.items() %}
+<div class="section">
+  <details>
+    <summary>{{ fc | title }} &nbsp; <span class="meta">({{ entries | length }})</span></summary>
+    <table style="margin-top: 8px;">
+      <tr><th>INS</th><th>Official Name</th><th>Source</th><th>All Classes</th></tr>
+      {% for entry in entries | sort(attribute='ins_number') %}
+      <tr>
+        <td>{{ entry.ins_number }}</td>
+        <td>{{ entry.official_name }}</td>
+        <td>{{ entry.source_type }}</td>
+        <td class="meta">{{ entry.functional_classes | join(', ') }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </details>
+</div>
+{% endfor %}
+{% endblock %}

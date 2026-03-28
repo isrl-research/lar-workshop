@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %} — SKUs{% endblock %}
+{% block content %}
+<div class="section">
+  <h1>IFID Ingredient Declaration Prototype</h1>
+  <p class="meta">Scope: INS Additives taxonomy ({{ taxonomy_count }} verified entries) &nbsp;|&nbsp; Branch: ifid-proto</p>
+</div>
+
+<div class="section">
+  <h2>Products</h2>
+  {% if products %}
+  <table>
+    <tr><th>SKU ID</th><th>Product</th><th>Brand</th><th>Ingredients</th><th>Breaks</th><th></th></tr>
+    {% for sku_id, sku in products.items() %}
+    <tr>
+      <td class="meta">{{ sku_id }}</td>
+      <td>{{ sku.name }}</td>
+      <td>{{ sku.brand }}</td>
+      <td>{{ sku.ingredients | length }}</td>
+      <td>
+        {% if sku.breaks %}
+          <span class="break-tag">{{ sku.breaks | length }} break{{ 's' if sku.breaks | length != 1 }}</span>
+        {% else %}
+          <span class="ok-tag">clean</span>
+        {% endif %}
+      </td>
+      <td><a href="/sku/{{ sku_id }}" class="btn btn-sm">View</a></td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% else %}
+  <p class="meta">No products yet.</p>
+  {% endif %}
+</div>
+
+<a href="/sku/new" class="btn">+ New SKU</a>
+{% endblock %}

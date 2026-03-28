@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block title %} — {{ sku.name }}{% endblock %}
+{% block content %}
+<div class="section">
+  <h1>{{ sku.name }}</h1>
+  <p class="meta">{{ sku.brand }} &nbsp;|&nbsp; {{ sku_id }}</p>
+</div>
+
+<div class="section">
+  <h2>Ingredient List ({{ sku.ingredients | length }})</h2>
+  {% if ingredients %}
+  <table>
+    <tr>
+      <th>#</th>
+      <th>INS</th>
+      <th>Official Name</th>
+      <th>Declared Class</th>
+      <th>Source Type</th>
+      <th>Note</th>
+    </tr>
+    {% for ing in ingredients %}
+    <tr>
+      <td>{{ ing.order }}</td>
+      <td>
+        {% if ing.ins_number is iterable and ing.ins_number is not string %}
+          {{ ing.ins_number | join(', ') }}
+        {% else %}
+          {{ ing.ins_number or '—' }}
+        {% endif %}
+      </td>
+      <td>{{ ing.taxonomy.official_name if ing.taxonomy else '[not in taxonomy]' }}</td>
+      <td>{{ ing.declared_functional_class or '—' }}</td>
+      <td>{{ ing.taxonomy.source_type if ing.taxonomy else '—' }}</td>
+      <td class="meta">{{ ing.declaration_note }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% else %}
+  <p class="meta">No ingredients declared yet.</p>
+  {% endif %}
+</div>
+
+{% if sku.breaks %}
+<div class="section">
+  <h2>Breaks ({{ sku.breaks | length }})</h2>
+  <table>
+    <tr><th>#</th><th>Type</th><th>Detail</th></tr>
+    {% for b in sku.breaks %}
+    <tr>
+      <td class="meta">ing {{ b.ingredient_order }}</td>
+      <td><span class="break-tag">{{ b.type }}</span></td>
+      <td class="meta">{{ b.detail }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endif %}
+
+<div style="display: flex; gap: 12px; margin-top: 16px;">
+  <a href="/sku/{{ sku_id }}/add" class="btn">+ Add Ingredient</a>
+  {% if sku.ingredients %}
+  <a href="/sku/{{ sku_id }}/label" class="btn">Generate Label Text →</a>
+  {% endif %}
+</div>
+{% endblock %}

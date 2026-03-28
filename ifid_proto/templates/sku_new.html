@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %} — New SKU{% endblock %}
+{% block content %}
+<h1>New Product SKU</h1>
+<form method="POST" style="margin-top: 16px;">
+  <div style="margin-bottom: 12px;">
+    <label>Product name<br>
+    <input type="text" name="name" required placeholder="e.g. Choco Cream Biscuit 200g"></label>
+  </div>
+  <div style="margin-bottom: 16px;">
+    <label>Brand<br>
+    <input type="text" name="brand" required placeholder="e.g. Brand X"></label>
+  </div>
+  <input type="submit" value="Create SKU →">
+</form>
+{% endblock %}

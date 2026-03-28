@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %} — Breaks{% endblock %}
+{% block content %}
+<h1>All Breaks</h1>
+<p class="meta">Every place the current schema could not hold a declaration.</p>
+
+{% if grouped %}
+{% for break_type, items in grouped.items() %}
+<div class="section">
+  <details open>
+    <summary><span class="break-tag">{{ break_type }}</span> &nbsp; {{ items | length }} occurrence{{ 's' if items | length != 1 }}</summary>
+    <p class="meta" style="margin: 8px 0;">{{ break_types[break_type] }}</p>
+    <table>
+      <tr><th>SKU</th><th>Product</th><th>Ing #</th><th>Detail</th></tr>
+      {% for b in items %}
+      <tr>
+        <td class="meta"><a href="/sku/{{ b.sku_id }}">{{ b.sku_id }}</a></td>
+        <td>{{ b.sku_name }}</td>
+        <td>{{ b.ingredient_order }}</td>
+        <td class="meta">{{ b.detail }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </details>
+</div>
+{% endfor %}
+{% else %}
+<p class="meta">No breaks recorded yet. Add some ingredients to see where the schema breaks.</p>
+{% endif %}
+{% endblock %}
