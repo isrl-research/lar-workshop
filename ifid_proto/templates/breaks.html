@@ -1,30 +1,29 @@
 {% extends "base.html" %}
 {% block title %} — Breaks{% endblock %}
 {% block content %}
-<h1>All Breaks</h1>
-<p class="meta">Every place the current schema could not hold a declaration.</p>
+<div class="mb-6">
+  <h1 class="text-lg font-bold">Breaks</h1>
+  <p class="text-sm text-gray-400 mt-0.5">Declarations the form could not hold.</p>
+</div>
 
 {% if grouped %}
 {% for break_type, items in grouped.items() %}
-<div class="section">
-  <details open>
-    <summary><span class="break-tag">{{ break_type }}</span> &nbsp; {{ items | length }} occurrence{{ 's' if items | length != 1 }}</summary>
-    <p class="meta" style="margin: 8px 0;">{{ break_types[break_type] }}</p>
-    <table>
-      <tr><th>SKU</th><th>Product</th><th>Ing #</th><th>Detail</th></tr>
-      {% for b in items %}
-      <tr>
-        <td class="meta"><a href="/sku/{{ b.sku_id }}">{{ b.sku_id }}</a></td>
-        <td>{{ b.sku_name }}</td>
-        <td>{{ b.ingredient_order }}</td>
-        <td class="meta">{{ b.detail }}</td>
-      </tr>
-      {% endfor %}
-    </table>
-  </details>
+<div class="mb-6">
+  <div class="flex items-center gap-2 mb-2">
+    <span class="bg-red-100 text-red-700 text-xs px-2 py-0.5 rounded">{{ break_type }}</span>
+    <span class="text-xs text-gray-400">{{ items | length }} occurrence{{ 's' if items | length != 1 }}</span>
+  </div>
+  <div class="border border-gray-200 rounded bg-white divide-y divide-gray-100">
+    {% for b in items %}
+    <div class="px-4 py-3 flex items-start justify-between gap-4 text-sm">
+      <span class="text-gray-500">{{ b.detail }}</span>
+      <a href="/sku/{{ b.sku_id }}" class="text-xs text-gray-400 hover:underline shrink-0">{{ b.sku_name }}</a>
+    </div>
+    {% endfor %}
+  </div>
 </div>
 {% endfor %}
 {% else %}
-<p class="meta">No breaks recorded yet. Add some ingredients to see where the schema breaks.</p>
+<p class="text-sm text-gray-400">No breaks yet — add ingredients to see where the schema can't hold a declaration.</p>
 {% endif %}
 {% endblock %}

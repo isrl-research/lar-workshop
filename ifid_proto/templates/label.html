@@ -1,22 +1,22 @@
 {% extends "base.html" %}
-{% block title %} — Label Output{% endblock %}
+{% block title %} — Label{% endblock %}
 {% block content %}
-<h1>Label Text — {{ sku.name }}</h1>
-<p class="meta">{{ sku.brand }} &nbsp;|&nbsp; {{ sku_id }}</p>
+<div class="mb-6">
+  <h1 class="text-lg font-bold">Label Text</h1>
+  <p class="text-sm text-gray-400 mt-0.5">{{ sku.name }} · {{ sku.brand }}</p>
+</div>
 
-<div class="section" style="margin-top: 24px;">
-  <h2>Generated (FSSAI-style)</h2>
-  <div class="label-output">
-    <strong>INGREDIENTS:</strong> {{ label_text }}
+<div class="mb-6">
+  <p class="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-2">FSSAI-style output</p>
+  <div class="border border-gray-300 rounded bg-white px-5 py-4 text-sm leading-relaxed">
+    <span class="font-semibold">INGREDIENTS: </span>{{ label_text }}
   </div>
-  <p class="meta" style="margin-top: 8px;">Generated from structured data. Copy and paste anywhere.</p>
+  <p class="text-xs text-gray-400 mt-2">Generated from structured data. Copy and paste anywhere.</p>
 </div>
 
 {% if sku.breaks %}
-<div class="section">
-  <p class="meta">⚠ {{ sku.breaks | length }} break(s) in this SKU affected what could be generated — see <a href="/sku/{{ sku_id }}">SKU view</a>.</p>
-</div>
+<p class="text-xs text-red-500 mb-6">⚠ {{ sku.breaks | length }} break(s) in this SKU affected what could be generated.</p>
 {% endif %}
 
-<a href="/sku/{{ sku_id }}" class="btn">← Back to SKU</a>
+<a href="/sku/{{ sku_id }}" class="text-sm text-gray-400 hover:underline">← Back to SKU</a>
 {% endblock %}

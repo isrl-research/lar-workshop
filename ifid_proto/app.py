@@ -1,13 +1,21 @@
 import json
 import uuid
 from pathlib import Path
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, jsonify
 
 app = Flask(__name__)
-
 DB = Path(__file__).parent / "db"
 
-# --- data loading ---
+# Sources that trigger flags
+ALLERGEN_SOURCES = {
+    'wheat', 'wheat gluten', 'barley malt',
+    'soybean', 'egg yolk', 'fish',
+}
+ANIMAL_SOURCES = {
+    'lard', 'tallow', 'animal pancreas',
+    'fish', 'egg yolk', 'beeswax', 'lac beetle secretion',
+}
+
 
 def load_taxonomy():
     with open(DB / "additives_taxonomy.json") as f:
@@ -21,42 +29,20 @@ def save_products(products):
     with open(DB / "products.json", "w") as f:
         json.dump(products, f, indent=2)
 
-# --- break detection ---
+def source_flags(sources):
+    """Given a list of source strings, return which flags apply."""
+    allergens = [s for s in sources if s in ALLERGEN_SOURCES]
+    is_animal  = any(s in ANIMAL_SOURCES for s in sources)
+    return {"non_veg": is_animal, "allergens": allergens}
 
-BREAK_TYPES = {
-    "AMBIGUOUS_FUNCTIONAL_CLASS": "Additive has multiple functional classes — brand must pick one but form doesn't enforce it yet",
-    "ANIMAL_DERIVED_NO_FLAG":     "Animal-derived additive — no dietary/allergen flag field in current schema",
-    "CLASS_ONLY_DECLARATION":     "Brand declared a functional class without specifying INS — taxonomy can't anchor this",
-    "NOT_IN_TAXONOMY":            "Ingredient string submitted but no matching INS entry found",
-    "MULTI_INS_SINGLE_CLASS":     "Brand wants to group multiple INS numbers under one functional class declaration",
-}
+def requires_source_declaration(entry):
+    """True when the brand must pick a source — multiple sources and at least one is animal or allergen."""
+    sources = entry.get("sources", [])
+    if len(sources) <= 1:
+        return False
+    flags = source_flags(sources)
+    return flags["non_veg"] or bool(flags["allergens"])
 
-def detect_breaks(ins_number, declared_class, taxonomy):
-    breaks = []
-    entry = taxonomy.get(ins_number)
-
-    if not entry:
-        breaks.append({
-            "type": "NOT_IN_TAXONOMY",
-            "detail": f"INS {ins_number} not found in verified additives taxonomy"
-        })
-        return breaks
-
-    if len(entry["functional_classes"]) > 1 and not declared_class:
-        breaks.append({
-            "type": "AMBIGUOUS_FUNCTIONAL_CLASS",
-            "detail": f"INS {ins_number} has classes: {', '.join(entry['functional_classes'])} — none declared"
-        })
-
-    if entry.get("source_type") == "animal":
-        breaks.append({
-            "type": "ANIMAL_DERIVED_NO_FLAG",
-            "detail": f"INS {ins_number} ({entry['official_name']}) is animal-derived — no dietary flag field exists in schema"
-        })
-
-    return breaks
-
-# --- routes ---
 
 @app.route("/")
 def index():
@@ -88,7 +74,6 @@ def sku_view(sku_id):
     if not sku:
         return "SKU not found", 404
     taxonomy = load_taxonomy()
-    # enrich ingredients with taxonomy data for display
     enriched = []
     for ing in sku["ingredients"]:
         entry = taxonomy.get(ing.get("ins_number", ""), {})
@@ -108,71 +93,42 @@ def ingredient_add(sku_id):
     if request.method == "POST":
         ins_number = request.form.get("ins_number", "").strip()
         declared_class = request.form.get("declared_class", "").strip()
-        class_only = request.form.get("class_only", "")   # brand declares class, no INS
-        multi_ins = request.form.get("multi_ins", "")     # e.g. "319,320"
+        declared_source = request.form.get("declared_source", "").strip() or None
 
-        # class-only declaration path
-        if class_only:
-            ing = {
-                "order": len(sku["ingredients"]) + 1,
-                "type": "additive",
-                "ins_number": None,
-                "declared_functional_class": class_only,
-                "declaration_note": "class-only"
-            }
-            sku["ingredients"].append(ing)
+        entry = taxonomy.get(ins_number)
+
+        # genuine break: not in taxonomy
+        if not entry:
             sku["breaks"].append({
-                "ingredient_order": ing["order"],
-                "type": "CLASS_ONLY_DECLARATION",
-                "detail": f"Declared class '{class_only}' with no INS number — cannot anchor to taxonomy"
+                "ingredient_order": len(sku["ingredients"]) + 1,
+                "type": "NOT_IN_TAXONOMY",
+                "detail": f"'{ins_number}' not found in verified INS additives taxonomy"
             })
             save_products(products)
             return redirect(url_for("sku_view", sku_id=sku_id))
 
-        # multi-INS under one class declaration
-        if multi_ins:
-            ins_list = [x.strip() for x in multi_ins.split(",") if x.strip()]
-            ing = {
-                "order": len(sku["ingredients"]) + 1,
-                "type": "additive",
-                "ins_number": ins_list,
-                "declared_functional_class": declared_class or None,
-                "declaration_note": "multi-ins"
-            }
-            sku["ingredients"].append(ing)
-            sku["breaks"].append({
-                "ingredient_order": ing["order"],
-                "type": "MULTI_INS_SINGLE_CLASS",
-                "detail": f"Group declaration: INS {', '.join(ins_list)} under class '{declared_class}'"
-            })
-            save_products(products)
-            return redirect(url_for("sku_view", sku_id=sku_id))
-
-        # standard single-INS path
-        breaks = detect_breaks(ins_number, declared_class, taxonomy)
-        entry = taxonomy.get(ins_number, {})
+        # resolve flags from declared source if given, else from all sources
+        source_for_flags = [declared_source] if declared_source else entry.get("sources", [])
+        flags = source_flags(source_for_flags)
 
         ing = {
             "order": len(sku["ingredients"]) + 1,
-            "type": "additive",
             "ins_number": ins_number,
-            "declared_functional_class": declared_class or (entry.get("functional_classes", [None])[0]),
-            "declaration_note": "standard"
+            "declared_functional_class": declared_class or entry["functional_classes"][0],
+            "declared_source": declared_source,
+            "flags": flags,
         }
         sku["ingredients"].append(ing)
-        for b in breaks:
-            sku["breaks"].append({"ingredient_order": ing["order"], **b})
-
         save_products(products)
         return redirect(url_for("sku_view", sku_id=sku_id))
 
-    # GET — build sorted additive list for dropdown
-    additives_sorted = sorted(
-        taxonomy.items(),
-        key=lambda x: x[1]["official_name"]
-    )
-    return render_template("ingredient_add.html", sku_id=sku_id, sku=sku,
-                           additives=additives_sorted, taxonomy=taxonomy)
+    # pass taxonomy as JSON for client-side search
+    taxonomy_json = json.dumps(taxonomy)
+    return render_template("ingredient_add.html",
+                           sku_id=sku_id, sku=sku,
+                           taxonomy_json=taxonomy_json,
+                           allergen_sources=json.dumps(list(ALLERGEN_SOURCES)),
+                           animal_sources=json.dumps(list(ANIMAL_SOURCES)))
 
 
 @app.route("/sku/<sku_id>/label")
@@ -186,21 +142,10 @@ def label_generate(sku_id):
     parts = []
     for ing in sorted(sku["ingredients"], key=lambda x: x["order"]):
         ins = ing.get("ins_number")
-        fc = ing.get("declared_functional_class", "")
-        note = ing.get("declaration_note", "")
-
-        if note == "class-only":
-            parts.append(fc.title())
-        elif note == "multi-ins":
-            ins_list = ins if isinstance(ins, list) else [ins]
-            ins_str = ", ".join(f"INS {n}" for n in ins_list)
-            parts.append(f"{fc.title()} ({ins_str})" if fc else f"({ins_str})")
-        elif ins and ins in taxonomy:
-            entry = taxonomy[ins]
-            name = entry["official_name"]
-            parts.append(f"{fc.title()} ({name} - INS {ins})" if fc else f"{name} (INS {ins})")
-        elif ins:
-            parts.append(f"INS {ins} [NOT IN TAXONOMY]")
+        fc  = ing.get("declared_functional_class", "")
+        entry = taxonomy.get(ins, {})
+        name = entry.get("official_name", ins)
+        parts.append(f"{fc.title()} ({name} - INS {ins})" if fc else f"{name} (INS {ins})")
 
     label_text = ", ".join(parts)
     return render_template("label.html", sku_id=sku_id, sku=sku, label_text=label_text)
@@ -213,11 +158,10 @@ def breaks_view():
     for sku_id, sku in products.items():
         for b in sku.get("breaks", []):
             all_breaks.append({"sku_id": sku_id, "sku_name": sku["name"], **b})
-    # group by type
     grouped = {}
     for b in all_breaks:
         grouped.setdefault(b["type"], []).append(b)
-    return render_template("breaks.html", grouped=grouped, break_types=BREAK_TYPES)
+    return render_template("breaks.html", grouped=grouped)
 
 
 @app.route("/taxonomy")

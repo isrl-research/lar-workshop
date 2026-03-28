@@ -1,65 +1,66 @@
 {% extends "base.html" %}
 {% block title %} — {{ sku.name }}{% endblock %}
 {% block content %}
-<div class="section">
-  <h1>{{ sku.name }}</h1>
-  <p class="meta">{{ sku.brand }} &nbsp;|&nbsp; {{ sku_id }}</p>
+<div class="mb-6">
+  <h1 class="text-lg font-bold">{{ sku.name }}</h1>
+  <p class="text-sm text-gray-400 mt-0.5">{{ sku.brand }} · {{ sku_id }}</p>
 </div>
 
-<div class="section">
-  <h2>Ingredient List ({{ sku.ingredients | length }})</h2>
+<div class="mb-8">
+  <h2 class="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-2">Ingredients ({{ sku.ingredients | length }})</h2>
   {% if ingredients %}
-  <table>
-    <tr>
-      <th>#</th>
-      <th>INS</th>
-      <th>Official Name</th>
-      <th>Declared Class</th>
-      <th>Source Type</th>
-      <th>Note</th>
-    </tr>
+  <div class="border border-gray-200 rounded bg-white divide-y divide-gray-100">
     {% for ing in ingredients %}
-    <tr>
-      <td>{{ ing.order }}</td>
-      <td>
-        {% if ing.ins_number is iterable and ing.ins_number is not string %}
-          {{ ing.ins_number | join(', ') }}
-        {% else %}
-          {{ ing.ins_number or '—' }}
+    <div class="px-4 py-3 flex items-start justify-between gap-4">
+      <div class="flex items-start gap-3">
+        <span class="text-gray-300 text-xs pt-0.5 w-4 shrink-0">{{ ing.order }}</span>
+        <div>
+          <div class="text-sm font-medium">
+            {{ ing.taxonomy.official_name if ing.taxonomy else '[not in taxonomy]' }}
+            <span class="text-gray-400 font-normal ml-1">INS {{ ing.ins_number }}</span>
+          </div>
+          <div class="text-xs text-gray-400 mt-0.5">
+            {{ ing.declared_functional_class }}
+            {% if ing.declared_source %}· source: {{ ing.declared_source }}{% endif %}
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-1.5 shrink-0 flex-wrap justify-end">
+        {% if ing.flags and ing.flags.non_veg %}
+          <span class="bg-orange-100 text-orange-700 text-xs px-2 py-0.5 rounded">non-veg</span>
         {% endif %}
-      </td>
-      <td>{{ ing.taxonomy.official_name if ing.taxonomy else '[not in taxonomy]' }}</td>
-      <td>{{ ing.declared_functional_class or '—' }}</td>
-      <td>{{ ing.taxonomy.source_type if ing.taxonomy else '—' }}</td>
-      <td class="meta">{{ ing.declaration_note }}</td>
-    </tr>
+        {% if ing.flags and ing.flags.allergens %}
+          {% for allergen in ing.flags.allergens %}
+            <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-0.5 rounded">allergen: {{ allergen }}</span>
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
     {% endfor %}
-  </table>
+  </div>
   {% else %}
-  <p class="meta">No ingredients declared yet.</p>
+  <p class="text-sm text-gray-400">No ingredients declared yet.</p>
   {% endif %}
 </div>
 
 {% if sku.breaks %}
-<div class="section">
-  <h2>Breaks ({{ sku.breaks | length }})</h2>
-  <table>
-    <tr><th>#</th><th>Type</th><th>Detail</th></tr>
+<div class="mb-8">
+  <h2 class="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-2">Breaks ({{ sku.breaks | length }})</h2>
+  <div class="border border-red-200 rounded bg-red-50 divide-y divide-red-100">
     {% for b in sku.breaks %}
-    <tr>
-      <td class="meta">ing {{ b.ingredient_order }}</td>
-      <td><span class="break-tag">{{ b.type }}</span></td>
-      <td class="meta">{{ b.detail }}</td>
-    </tr>
+    <div class="px-4 py-3 text-sm">
+      <span class="text-xs bg-red-200 text-red-800 px-1.5 py-0.5 rounded mr-2">{{ b.type }}</span>
+      <span class="text-gray-600">{{ b.detail }}</span>
+    </div>
     {% endfor %}
-  </table>
+  </div>
 </div>
 {% endif %}
 
-<div style="display: flex; gap: 12px; margin-top: 16px;">
-  <a href="/sku/{{ sku_id }}/add" class="btn">+ Add Ingredient</a>
+<div class="flex gap-3">
+  <a href="/sku/{{ sku_id }}/add" class="bg-gray-900 text-white text-sm px-4 py-2 rounded hover:bg-gray-700">+ Add Ingredient</a>
   {% if sku.ingredients %}
-  <a href="/sku/{{ sku_id }}/label" class="btn">Generate Label Text →</a>
+  <a href="/sku/{{ sku_id }}/label" class="border border-gray-300 text-sm px-4 py-2 rounded hover:bg-gray-100">Generate Label →</a>
   {% endif %}
 </div>
 {% endblock %}
