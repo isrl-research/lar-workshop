@@ -1,18 +1,27 @@
 {% extends "base.html" %}
-{% block title %} — New SKU{% endblock %}
+{% block title %} — New Product{% endblock %}
 {% block content %}
-<h1 class="text-lg font-bold mb-6">New Product SKU</h1>
-<form method="POST" class="space-y-4 max-w-sm">
-  <div>
-    <label class="block text-sm mb-1">Product name</label>
-    <input type="text" name="name" required placeholder="e.g. Choco Cream Biscuit 200g"
-      class="w-full border border-gray-300 rounded px-3 py-2 text-sm font-mono focus:outline-none focus:border-gray-600">
+<div class="page-header">
+  <h1>New Product SKU</h1>
+  <p>Enter product details to begin declaring ingredients.</p>
+</div>
+
+<div class="card">
+  <div class="card-body" style="max-width: 480px;">
+    <form method="POST">
+      <div class="mb-3">
+        <label class="form-label fw-semibold">Product name</label>
+        <input type="text" name="name" required class="form-control"
+          placeholder="e.g. Choco Cream Biscuit 200g">
+      </div>
+      <div class="mb-4">
+        <label class="form-label fw-semibold">Brand</label>
+        <input type="text" name="brand" required class="form-control"
+          placeholder="e.g. Brand X">
+      </div>
+      <button type="submit" class="btn btn-primary">Create SKU</button>
+      <a href="/" class="btn btn-link text-muted ms-2">Cancel</a>
+    </form>
   </div>
-  <div>
-    <label class="block text-sm mb-1">Brand</label>
-    <input type="text" name="brand" required placeholder="e.g. Brand X"
-      class="w-full border border-gray-300 rounded px-3 py-2 text-sm font-mono focus:outline-none focus:border-gray-600">
-  </div>
-  <button type="submit" class="bg-gray-900 text-white text-sm px-4 py-2 rounded hover:bg-gray-700">Create SKU →</button>
-</form>
+</div>
 {% endblock %}

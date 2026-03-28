@@ -1,22 +1,30 @@
 {% extends "base.html" %}
 {% block title %} — Label{% endblock %}
 {% block content %}
-<div class="mb-6">
-  <h1 class="text-lg font-bold">Label Text</h1>
-  <p class="text-sm text-gray-400 mt-0.5">{{ sku.name }} · {{ sku.brand }}</p>
+<div class="page-header">
+  <h1>Generated Label Text</h1>
+  <p>{{ sku.name }} · {{ sku.brand }}</p>
 </div>
 
-<div class="mb-6">
-  <p class="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-2">FSSAI-style output</p>
-  <div class="border border-gray-300 rounded bg-white px-5 py-4 text-sm leading-relaxed">
-    <span class="font-semibold">INGREDIENTS: </span>{{ label_text }}
+<div class="card mb-3">
+  <div class="card-header bg-light fw-semibold" style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.05em;">
+    FSSAI-style ingredient declaration
   </div>
-  <p class="text-xs text-gray-400 mt-2">Generated from structured data. Copy and paste anywhere.</p>
+  <div class="card-body">
+    <p class="mb-0" style="line-height:1.8;">
+      <strong>INGREDIENTS:</strong> {{ label_text }}
+    </p>
+  </div>
 </div>
+
+<p class="text-muted" style="font-size:0.82rem;">Generated from structured data. Copy and paste to packaging, ecommerce listings, or regulatory submissions.</p>
 
 {% if sku.breaks %}
-<p class="text-xs text-red-500 mb-6">⚠ {{ sku.breaks | length }} break(s) in this SKU affected what could be generated.</p>
+<div class="alert alert-warning" style="font-size:0.85rem;">
+  {{ sku.breaks | length }} break(s) in this product may have affected the completeness of this declaration.
+  <a href="/sku/{{ sku_id }}" class="alert-link ms-1">View breaks</a>
+</div>
 {% endif %}
 
-<a href="/sku/{{ sku_id }}" class="text-sm text-gray-400 hover:underline">← Back to SKU</a>
+<a href="/sku/{{ sku_id }}" class="text-muted" style="font-size:0.85rem;">← Back to product</a>
 {% endblock %}

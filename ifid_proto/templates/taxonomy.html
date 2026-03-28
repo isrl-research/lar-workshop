@@ -1,34 +1,46 @@
 {% extends "base.html" %}
 {% block title %} — Taxonomy{% endblock %}
 {% block content %}
-<div class="mb-6">
-  <h1 class="text-lg font-bold">INS Additives Taxonomy</h1>
-  <p class="text-sm text-gray-400 mt-0.5">{{ total }} verified entries · grouped by functional class</p>
+<div class="page-header">
+  <h1>INS Additives Taxonomy</h1>
+  <p>{{ total }} verified entries · grouped by functional class</p>
 </div>
 
 {% for fc, entries in by_class.items() %}
-<details class="mb-2 border border-gray-200 rounded bg-white">
-  <summary class="px-4 py-2.5 text-sm font-medium cursor-pointer hover:bg-gray-50 flex justify-between">
-    <span>{{ fc | title }}</span>
-    <span class="text-gray-400 font-normal">{{ entries | length }}</span>
-  </summary>
-  <div class="divide-y divide-gray-100">
-    {% for entry in entries | sort(attribute='ins_number') %}
-    <div class="px-4 py-2 text-sm flex items-start justify-between gap-4">
-      <div>
-        <span class="font-medium">{{ entry.official_name }}</span>
-        <span class="text-gray-400 ml-2">INS {{ entry.ins_number }}</span>
-        {% if entry.source_type == 'animal' %}
-          <span class="text-orange-500 text-xs ml-1">non-veg</span>
-        {% endif %}
-      </div>
-      <div class="text-xs text-gray-400 shrink-0 text-right">
-        {{ entry.source_type }}
-        {% if entry.sources %}· {{ entry.sources | join(', ') }}{% endif %}
+<div class="accordion mb-2" id="acc-{{ loop.index }}">
+  <div class="accordion-item border">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed py-2" type="button"
+        data-bs-toggle="collapse" data-bs-target="#col-{{ loop.index }}">
+        {{ fc | title }}
+        <span class="badge bg-secondary ms-2" style="font-size:0.75rem;">{{ entries | length }}</span>
+      </button>
+    </h2>
+    <div id="col-{{ loop.index }}" class="accordion-collapse collapse">
+      <div class="accordion-body p-0">
+        <table class="table table-sm mb-0">
+          <thead class="table-light">
+            <tr><th>INS</th><th>Name</th><th>Source</th><th>Sources</th></tr>
+          </thead>
+          <tbody>
+            {% for entry in entries | sort(attribute='ins_number') %}
+            <tr>
+              <td class="ins-tag">{{ entry.ins_number }}</td>
+              <td>
+                {{ entry.official_name }}
+                {% if entry.source_type == 'animal' %}
+                  <span class="badge badge-nonveg ms-1">Non-Veg</span>
+                {% endif %}
+              </td>
+              <td class="text-muted" style="font-size:0.8rem;">{{ entry.source_type }}</td>
+              <td class="text-muted" style="font-size:0.8rem;">{{ entry.sources | join(', ') if entry.sources else '—' }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
       </div>
     </div>
-    {% endfor %}
   </div>
-</details>
+</div>
 {% endfor %}
 {% endblock %}

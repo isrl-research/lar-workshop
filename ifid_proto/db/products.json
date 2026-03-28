@@ -2,7 +2,50 @@
   "sku_28dbab": {
     "name": "Choco Cream Biscuit 200gm",
     "brand": "Brand X",
-    "ingredients": [],
+    "ingredients": [
+      {
+        "order": 1,
+        "ins_number": "521",
+        "declared_functional_class": "firming agent",
+        "declared_source": null,
+        "flags": {
+          "non_veg": false,
+          "allergens": []
+        }
+      },
+      {
+        "order": 2,
+        "ins_number": "330",
+        "declared_functional_class": "flavour enhancer",
+        "declared_source": null,
+        "flags": {
+          "non_veg": false,
+          "allergens": []
+        }
+      },
+      {
+        "order": 3,
+        "ins_number": "322",
+        "declared_functional_class": "emulsifier",
+        "declared_source": "sunflower",
+        "flags": {
+          "non_veg": false,
+          "allergens": []
+        }
+      },
+      {
+        "order": 4,
+        "ins_number": "322",
+        "declared_functional_class": "antioxidant",
+        "declared_source": "egg yolk",
+        "flags": {
+          "non_veg": true,
+          "allergens": [
+            "egg yolk"
+          ]
+        }
+      }
+    ],
     "breaks": []
   }
 }

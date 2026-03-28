@@ -1,34 +1,52 @@
 {% extends "base.html" %}
-{% block title %} — SKUs{% endblock %}
+{% block title %}{% endblock %}
 {% block content %}
-<div class="mb-8">
-  <h1 class="text-lg font-bold">IFID Ingredient Declaration</h1>
-  <p class="text-sm text-gray-500 mt-1">INS Additives · {{ taxonomy_count }} verified entries</p>
+<div class="page-header">
+  <h1>Ingredient Declaration</h1>
+  <p>INS Additives · {{ taxonomy_count }} verified entries</p>
+</div>
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <span class="text-muted" style="font-size:0.85rem;">{{ products | length }} product(s)</span>
+  <a href="/sku/new" class="btn btn-primary btn-sm">+ New Product</a>
 </div>
 
 {% if products %}
-<div class="divide-y divide-gray-200 border border-gray-200 rounded mb-6 bg-white">
-  {% for sku_id, sku in products.items() %}
-  <a href="/sku/{{ sku_id }}" class="flex items-center justify-between px-4 py-3 hover:bg-gray-50">
-    <div>
-      <span class="font-semibold">{{ sku.name }}</span>
-      <span class="text-gray-400 ml-2 text-sm">{{ sku.brand }}</span>
-    </div>
-    <div class="flex items-center gap-3 text-sm">
-      <span class="text-gray-400">{{ sku.ingredients | length }} ingredients</span>
-      {% if sku.breaks %}
-        <span class="bg-red-100 text-red-700 px-2 py-0.5 rounded text-xs">{{ sku.breaks | length }} break{{ 's' if sku.breaks | length != 1 }}</span>
-      {% else %}
-        <span class="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs">clean</span>
-      {% endif %}
-      <span class="text-gray-400">→</span>
-    </div>
-  </a>
-  {% endfor %}
+<div class="card mb-4">
+  <table class="table table-hover mb-0">
+    <thead class="table-light">
+      <tr>
+        <th>Product</th>
+        <th>Brand</th>
+        <th class="text-center">Ingredients</th>
+        <th class="text-center">Status</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for sku_id, sku in products.items() %}
+      <tr class="ingredient-row">
+        <td class="fw-semibold">{{ sku.name }}</td>
+        <td class="text-muted">{{ sku.brand }}</td>
+        <td class="text-center">{{ sku.ingredients | length }}</td>
+        <td class="text-center">
+          {% if sku.breaks %}
+            <span class="badge badge-break">{{ sku.breaks | length }} break{{ 's' if sku.breaks | length != 1 }}</span>
+          {% else %}
+            <span class="badge badge-clean">Clean</span>
+          {% endif %}
+        </td>
+        <td class="text-end"><a href="/sku/{{ sku_id }}" class="btn btn-outline-secondary btn-sm">View</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 </div>
 {% else %}
-<p class="text-sm text-gray-400 mb-6">No products yet.</p>
+<div class="card">
+  <div class="card-body text-muted text-center py-5">
+    No products yet. Create your first SKU to begin declaring ingredients.
+  </div>
+</div>
 {% endif %}
-
-<a href="/sku/new" class="inline-block bg-gray-900 text-white text-sm px-4 py-2 rounded hover:bg-gray-700">+ New SKU</a>
 {% endblock %}

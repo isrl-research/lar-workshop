@@ -1,237 +1,226 @@
 {% extends "base.html" %}
 {% block title %} — Add Ingredient{% endblock %}
 {% block content %}
-<div class="mb-6">
-  <h1 class="text-lg font-bold">Add Ingredient</h1>
-  <p class="text-sm text-gray-400 mt-0.5">{{ sku.name }} · {{ sku.brand }}</p>
+<div class="page-header">
+  <h1>Add Ingredient</h1>
+  <p>{{ sku.name }} · {{ sku.brand }}</p>
 </div>
 
-<!-- Search -->
-<div class="relative mb-2">
-  <input id="search" type="text" placeholder="Search by name or INS number…" autocomplete="off"
-    class="w-full border border-gray-300 rounded px-3 py-2 text-sm font-mono focus:outline-none focus:border-gray-600">
-</div>
+<div class="card mb-4">
+  <div class="card-body">
 
-<!-- Results list -->
-<div id="results" class="border border-gray-200 rounded bg-white divide-y divide-gray-100 mb-6 hidden max-h-72 overflow-y-auto"></div>
-
-<!-- Selection card -->
-<div id="selection-card" class="hidden border border-gray-300 rounded bg-white mb-6">
-  <div class="px-4 py-3 border-b border-gray-100 flex items-center justify-between">
-    <div>
-      <span id="sel-name" class="font-semibold text-sm"></span>
-      <span id="sel-ins" class="text-gray-400 text-sm ml-2"></span>
+    <!-- Search -->
+    <div class="mb-1">
+      <label class="form-label fw-semibold">Search ingredient</label>
+      <input id="search" type="text" class="form-control" autocomplete="off"
+        placeholder="Type name or INS number — e.g. 'citric acid' or '330'">
+      <div class="form-text">Search the verified INS additives taxonomy.</div>
     </div>
-    <button onclick="clearSelection()" class="text-xs text-gray-400 hover:text-gray-700">✕ clear</button>
+
+    <!-- Results dropdown -->
+    <div id="results-box" class="mb-3">
+      <div id="results-list"></div>
+    </div>
+
+    <!-- Selection card -->
+    <div id="selection-card" class="border rounded p-3 bg-light mt-3" style="display:none;">
+      <div class="d-flex justify-content-between align-items-start mb-3">
+        <div>
+          <div class="fw-semibold" id="sel-name"></div>
+          <div class="ins-tag" id="sel-ins"></div>
+          <div class="text-muted mt-1" style="font-size:0.8rem;" id="sel-codex"></div>
+        </div>
+        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="clearSelection()">Change</button>
+      </div>
+
+      <!-- Functional class -->
+      <div class="mb-3">
+        <label class="form-label fw-semibold">Functional class <span class="text-danger">*</span></label>
+        <select id="fc-select" class="form-select">
+        </select>
+        <div id="fc-note" class="form-text text-warning-emphasis" style="display:none;">
+          This additive has multiple functional classes — select which applies in this product.
+        </div>
+      </div>
+
+      <!-- Source declaration (conditional) -->
+      <div id="source-section" style="display:none;" class="mb-3">
+        <label class="form-label fw-semibold">
+          Source <span class="text-danger">*</span>
+          <span class="text-muted fw-normal ms-1" style="font-size:0.8rem;">— required: this additive has animal or allergen sources</span>
+        </label>
+        <select id="source-select" class="form-select" onchange="updateFlags()">
+          <option value="">— Select source —</option>
+        </select>
+      </div>
+
+      <!-- Flags preview -->
+      <div id="flags-row" class="mb-3 flag-row" style="display:none;">
+        <div class="section-label mb-1">Flags that will be applied</div>
+        <div class="d-flex flex-wrap gap-2">
+          <span id="flag-nonveg" class="badge badge-nonveg" style="display:none;">Non-Veg</span>
+          <div id="flag-allergens" class="d-flex flex-wrap gap-2"></div>
+        </div>
+      </div>
+
+      <button id="add-btn" type="button" class="btn btn-primary" onclick="submitIngredient()" disabled>
+        Add Ingredient
+      </button>
+    </div>
+
   </div>
-  <div class="px-4 py-4 space-y-4">
-
-    <!-- Functional class -->
-    <div id="fc-section">
-      <label class="block text-xs font-semibold uppercase tracking-wide text-gray-500 mb-1">Functional class</label>
-      <select id="fc-select" name="declared_class"
-        class="w-full border border-gray-300 rounded px-3 py-2 text-sm font-mono focus:outline-none focus:border-gray-600">
-      </select>
-      <p id="fc-note" class="text-xs text-gray-400 mt-1 hidden">Multiple classes in taxonomy — select which applies in this product.</p>
-    </div>
-
-    <!-- Source declaration (shown only when required) -->
-    <div id="source-section" class="hidden">
-      <label class="block text-xs font-semibold uppercase tracking-wide text-gray-500 mb-1">
-        Source <span class="text-red-500">*</span>
-        <span class="font-normal normal-case text-gray-400 ml-1">— required: this additive has animal or allergen sources</span>
-      </label>
-      <select id="source-select" name="declared_source"
-        class="w-full border border-gray-300 rounded px-3 py-2 text-sm font-mono focus:outline-none focus:border-gray-600"
-        onchange="updateFlags()">
-        <option value="">— select source —</option>
-      </select>
-    </div>
-
-    <!-- Live flags -->
-    <div id="flags-row" class="hidden flex gap-2 flex-wrap">
-      <span id="flag-nonveg" class="hidden bg-orange-100 text-orange-700 text-xs px-2 py-1 rounded">non-veg</span>
-      <div id="flag-allergens" class="flex gap-2 flex-wrap"></div>
-    </div>
-
-    <!-- Hidden inputs submitted to server -->
-    <input type="hidden" id="hidden-ins" name="ins_number">
-    <input type="hidden" id="hidden-source" name="declared_source">
-
-    <form id="add-form" method="POST" action="">
-      <input type="hidden" id="form-ins" name="ins_number">
-      <input type="hidden" id="form-source" name="declared_source">
-      <input type="hidden" id="form-class" name="declared_class">
-      <button id="add-btn" type="submit"
-        class="bg-gray-900 text-white text-sm px-4 py-2 rounded hover:bg-gray-700 disabled:opacity-40 disabled:cursor-not-allowed"
-        disabled>Add Ingredient →</button>
-    </form>
-  </div>
 </div>
 
-<a href="/sku/{{ sku_id }}" class="text-sm text-gray-400 hover:underline">← Back</a>
+<a href="/sku/{{ sku_id }}" class="text-muted" style="font-size:0.85rem;">← Back to product</a>
 
 <script>
 const taxonomy = {{ taxonomy_json | safe }};
 const ALLERGEN_SOURCES = new Set({{ allergen_sources | safe }});
 const ANIMAL_SOURCES   = new Set({{ animal_sources | safe }});
-
 const skuId = "{{ sku_id }}";
 
 let selected = null;
 
-// --- search ---
 const searchEl  = document.getElementById('search');
-const resultsEl = document.getElementById('results');
+const resultsBox = document.getElementById('results-box');
+const resultsList = document.getElementById('results-list');
 
 searchEl.addEventListener('input', () => {
   const q = searchEl.value.trim().toLowerCase();
-  if (!q) { resultsEl.classList.add('hidden'); resultsEl.innerHTML = ''; return; }
+  if (!q) { resultsBox.style.display = 'none'; resultsList.innerHTML = ''; return; }
 
   const matches = Object.entries(taxonomy).filter(([ins, e]) =>
     ins.toLowerCase().includes(q) ||
     e.official_name.toLowerCase().includes(q) ||
     (e.functional_classes || []).some(fc => fc.toLowerCase().includes(q))
-  ).slice(0, 12);
+  ).slice(0, 10);
 
   if (!matches.length) {
-    resultsEl.innerHTML = '<div class="px-4 py-3 text-sm text-gray-400">No match — this additive is not in the verified taxonomy.</div>';
-    resultsEl.classList.remove('hidden');
+    resultsList.innerHTML = `<div class="search-result-item text-muted">
+      No match in verified taxonomy. This additive cannot be declared using the current IFID schema.
+    </div>`;
+    resultsBox.style.display = 'block';
     return;
   }
 
-  resultsEl.innerHTML = matches.map(([ins, e]) => {
-    const animalTag = e.source_type === 'animal' || (e.sources || []).some(s => ANIMAL_SOURCES.has(s))
-      ? '<span class="text-orange-500 text-xs ml-1">non-veg risk</span>' : '';
-    const allergenTag = (e.sources || []).some(s => ALLERGEN_SOURCES.has(s))
-      ? '<span class="text-yellow-700 text-xs ml-1">allergen risk</span>' : '';
-    return `<button type="button" onclick="selectEntry('${ins}')"
-      class="w-full text-left px-4 py-2.5 hover:bg-gray-50 text-sm">
-      <span class="font-medium">${e.official_name}</span>
-      <span class="text-gray-400 ml-2">INS ${ins}</span>
-      ${animalTag}${allergenTag}
-      <div class="text-xs text-gray-400 mt-0.5">${(e.functional_classes||[]).join(', ')}</div>
-    </button>`;
+  resultsList.innerHTML = matches.map(([ins, e]) => {
+    const sources = e.sources || [];
+    const hasAnimal   = sources.some(s => ANIMAL_SOURCES.has(s));
+    const hasAllergen = sources.some(s => ALLERGEN_SOURCES.has(s));
+    const tags = [
+      hasAnimal   ? `<span class="badge badge-nonveg ms-2">Non-Veg risk</span>` : '',
+      hasAllergen ? `<span class="badge badge-allergen ms-1">Allergen risk</span>` : '',
+    ].join('');
+    return `<div class="search-result-item" onclick="selectEntry('${ins}')">
+      <div>${e.official_name} <span class="ins-tag">INS ${ins}</span>${tags}</div>
+      <div class="text-muted" style="font-size:0.8rem;">${(e.functional_classes||[]).join(', ')}</div>
+    </div>`;
   }).join('');
-  resultsEl.classList.remove('hidden');
+  resultsBox.style.display = 'block';
 });
 
-// --- select entry ---
 function selectEntry(ins) {
   selected = { ins, entry: taxonomy[ins] };
-  resultsEl.classList.add('hidden');
+  resultsBox.style.display = 'none';
   searchEl.value = '';
 
   const e = selected.entry;
-
   document.getElementById('sel-name').textContent = e.official_name;
-  document.getElementById('sel-ins').textContent  = `INS ${ins}`;
+  document.getElementById('sel-ins').textContent  = `INS ${ins} · ${e.source_type}`;
+  document.getElementById('sel-codex').textContent = e.codex_category || '';
 
   // functional class
   const fcSel  = document.getElementById('fc-select');
   const fcNote = document.getElementById('fc-note');
   fcSel.innerHTML = (e.functional_classes || []).map(fc =>
-    `<option value="${fc}">${fc}</option>`
+    `<option value="${fc}">${fc.charAt(0).toUpperCase() + fc.slice(1)}</option>`
   ).join('');
-  if ((e.functional_classes || []).length > 1) {
-    fcNote.classList.remove('hidden');
-  } else {
-    fcNote.classList.add('hidden');
-  }
+  fcNote.style.display = (e.functional_classes || []).length > 1 ? 'block' : 'none';
 
   // source declaration
   const sources = e.sources || [];
   const needsSourceDecl = sources.length > 1 &&
     (sources.some(s => ANIMAL_SOURCES.has(s)) || sources.some(s => ALLERGEN_SOURCES.has(s)));
-
   const sourceSec = document.getElementById('source-section');
   const sourceSel = document.getElementById('source-select');
+
   if (needsSourceDecl) {
-    sourceSel.innerHTML = '<option value="">— select source —</option>' +
+    sourceSel.innerHTML = '<option value="">— Select source —</option>' +
       sources.map(s => `<option value="${s}">${s}</option>`).join('');
-    sourceSec.classList.remove('hidden');
+    sourceSec.style.display = 'block';
   } else {
-    sourceSec.classList.add('hidden');
+    sourceSec.style.display = 'none';
     sourceSel.value = '';
-    // auto-apply flags from all sources if single or all-same-type
-    updateFlagsForSources(sources);
+    autoFlags(sources);
   }
 
-  document.getElementById('selection-card').classList.remove('hidden');
+  document.getElementById('selection-card').style.display = 'block';
   validateForm();
 }
 
 function clearSelection() {
   selected = null;
-  document.getElementById('selection-card').classList.add('hidden');
-  document.getElementById('flags-row').classList.add('hidden');
+  document.getElementById('selection-card').style.display = 'none';
+  document.getElementById('flags-row').style.display = 'none';
   searchEl.value = '';
+  searchEl.focus();
 }
 
-// --- flags ---
 function updateFlags() {
-  const sourceSel = document.getElementById('source-select');
-  const src = sourceSel.value;
+  const src = document.getElementById('source-select').value;
   if (!src) { clearFlags(); validateForm(); return; }
-  updateFlagsForSources([src]);
+  autoFlags([src]);
   validateForm();
 }
 
-function updateFlagsForSources(sources) {
-  const isAnimal    = sources.some(s => ANIMAL_SOURCES.has(s));
-  const allergens   = sources.filter(s => ALLERGEN_SOURCES.has(s));
-  const flagRow     = document.getElementById('flags-row');
-  const nonVegFlag  = document.getElementById('flag-nonveg');
-  const allergenDiv = document.getElementById('flag-allergens');
+function autoFlags(sources) {
+  const isAnimal  = sources.some(s => ANIMAL_SOURCES.has(s));
+  const allergens = sources.filter(s => ALLERGEN_SOURCES.has(s));
+  const flagRow   = document.getElementById('flags-row');
+  const nonVeg    = document.getElementById('flag-nonveg');
+  const algDiv    = document.getElementById('flag-allergens');
 
   if (isAnimal || allergens.length) {
-    flagRow.classList.remove('hidden');
-    nonVegFlag.classList.toggle('hidden', !isAnimal);
-    allergenDiv.innerHTML = allergens.map(a =>
-      `<span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">allergen: ${a}</span>`
+    flagRow.style.display = 'block';
+    nonVeg.style.display = isAnimal ? 'inline-block' : 'none';
+    algDiv.innerHTML = allergens.map(a =>
+      `<span class="badge badge-allergen">${a}</span>`
     ).join('');
   } else {
-    flagRow.classList.add('hidden');
+    flagRow.style.display = 'none';
   }
 }
 
 function clearFlags() {
-  document.getElementById('flags-row').classList.add('hidden');
+  document.getElementById('flags-row').style.display = 'none';
   document.getElementById('flag-allergens').innerHTML = '';
 }
 
-// --- form submit ---
 function validateForm() {
   if (!selected) { document.getElementById('add-btn').disabled = true; return; }
-
   const sourceSec = document.getElementById('source-section');
-  const sourceRequired = !sourceSec.classList.contains('hidden');
+  const sourceRequired = sourceSec.style.display !== 'none';
   const sourceVal = document.getElementById('source-select').value;
-
-  const ready = !sourceRequired || sourceVal !== '';
-  document.getElementById('add-btn').disabled = !ready;
+  document.getElementById('add-btn').disabled = sourceRequired && !sourceVal;
 }
 
-document.getElementById('add-form').addEventListener('submit', function(e) {
-  e.preventDefault();
+function submitIngredient() {
   if (!selected) return;
-
-  const ins       = selected.ins;
-  const fc        = document.getElementById('fc-select').value;
-  const sourceVal = document.getElementById('source-select').value;
-
   const form = document.createElement('form');
   form.method = 'POST';
   form.action = `/sku/${skuId}/add`;
-
-  [['ins_number', ins], ['declared_class', fc], ['declared_source', sourceVal]].forEach(([name, val]) => {
+  const fields = {
+    ins_number:      selected.ins,
+    declared_class:  document.getElementById('fc-select').value,
+    declared_source: document.getElementById('source-select').value,
+  };
+  for (const [name, val] of Object.entries(fields)) {
     const inp = document.createElement('input');
     inp.type = 'hidden'; inp.name = name; inp.value = val;
     form.appendChild(inp);
-  });
-
+  }
   document.body.appendChild(form);
   form.submit();
-});
+}
 </script>
 {% endblock %}
