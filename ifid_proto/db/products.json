@@ -44,6 +44,16 @@
             "egg yolk"
           ]
         }
+      },
+      {
+        "order": 5,
+        "ins_number": "162",
+        "declared_functional_class": "color",
+        "declared_source": null,
+        "flags": {
+          "non_veg": false,
+          "allergens": []
+        }
       }
     ],
     "breaks": []

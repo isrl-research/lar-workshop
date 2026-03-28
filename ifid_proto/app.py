@@ -1,9 +1,10 @@
 import json
 import uuid
 from pathlib import Path
-from flask import Flask, render_template, request, redirect, url_for, jsonify
+from flask import Flask, render_template, request, redirect, url_for, jsonify, flash
 
 app = Flask(__name__)
+app.secret_key = "ifid-proto-secret-key"
 DB = Path(__file__).parent / "db"
 
 # Sources that trigger flags
@@ -120,6 +121,7 @@ def ingredient_add(sku_id):
         }
         sku["ingredients"].append(ing)
         save_products(products)
+        flash("Ingredient added.")
         return redirect(url_for("sku_view", sku_id=sku_id))
 
     # pass taxonomy as JSON for client-side search
@@ -129,6 +131,20 @@ def ingredient_add(sku_id):
                            taxonomy_json=taxonomy_json,
                            allergen_sources=json.dumps(list(ALLERGEN_SOURCES)),
                            animal_sources=json.dumps(list(ANIMAL_SOURCES)))
+
+
+@app.route("/sku/<sku_id>/ingredient/<int:order>/delete", methods=["POST"])
+def ingredient_delete(sku_id, order):
+    products = load_products()
+    sku = products.get(sku_id)
+    if not sku:
+        return "SKU not found", 404
+    sku["ingredients"] = [i for i in sku["ingredients"] if i.get("order") != order]
+    # re-number remaining ingredients in existing order
+    for idx, ing in enumerate(sku["ingredients"], start=1):
+        ing["order"] = idx
+    save_products(products)
+    return redirect(url_for("sku_view", sku_id=sku_id))
 
 
 @app.route("/sku/<sku_id>/label")

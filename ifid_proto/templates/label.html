@@ -8,16 +8,30 @@
 
 <div class="card mb-3">
   <div class="card-header bg-light fw-semibold" style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.05em;">
-    FSSAI-style ingredient declaration
+    Ingredient declaration text — FSSAI format
   </div>
   <div class="card-body">
-    <p class="mb-0" style="line-height:1.8;">
+    <p class="mb-2" style="line-height:1.8;" id="label-text-block">
       <strong>INGREDIENTS:</strong> {{ label_text }}
     </p>
+    <button type="button" class="btn btn-outline-secondary btn-sm" onclick="copyLabel()" style="font-size:0.8rem;">
+      Copy to clipboard
+    </button>
   </div>
 </div>
 
-<p class="text-muted" style="font-size:0.82rem;">Generated from structured data. Copy and paste to packaging, ecommerce listings, or regulatory submissions.</p>
+<p class="text-muted" style="font-size:0.82rem;">Review this text with your regulatory affairs team before use on packaging.</p>
+
+<script>
+function copyLabel() {
+  const text = document.getElementById('label-text-block').textContent.trim();
+  navigator.clipboard.writeText(text).then(function() {
+    const btn = event.target;
+    btn.textContent = 'Copied!';
+    setTimeout(function() { btn.textContent = 'Copy to clipboard'; }, 2000);
+  });
+}
+</script>
 
 {% if sku.breaks %}
 <div class="alert alert-warning" style="font-size:0.85rem;">

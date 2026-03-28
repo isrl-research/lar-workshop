@@ -2,15 +2,15 @@
 {% block title %} — Breaks{% endblock %}
 {% block content %}
 <div class="page-header">
-  <h1>Breaks</h1>
-  <p>Declarations the current schema could not hold.</p>
+  <h1>Unresolved Ingredients</h1>
+  <p>These ingredients could not be matched to a verified additive. Review them before generating your label.</p>
 </div>
 
 {% if grouped %}
 {% for break_type, items in grouped.items() %}
 <div class="mb-4">
   <div class="d-flex align-items-center gap-2 mb-2">
-    <span class="badge badge-break">{{ break_type }}</span>
+    <span class="badge badge-break">{{ "Not found" if break_type == "NOT_IN_TAXONOMY" else break_type }}</span>
     <span class="text-muted" style="font-size:0.82rem;">{{ items | length }} occurrence{{ 's' if items | length != 1 }}</span>
   </div>
   <div class="card">

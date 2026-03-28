@@ -35,7 +35,7 @@
 
       <!-- Functional class -->
       <div class="mb-3">
-        <label class="form-label fw-semibold">Functional class <span class="text-danger">*</span></label>
+        <label class="form-label fw-semibold">Functional class (as it appears on the label) <span class="text-danger">*</span></label>
         <select id="fc-select" class="form-select">
         </select>
         <div id="fc-note" class="form-text text-warning-emphasis" style="display:none;">
@@ -46,8 +46,7 @@
       <!-- Source declaration (conditional) -->
       <div id="source-section" style="display:none;" class="mb-3">
         <label class="form-label fw-semibold">
-          Source <span class="text-danger">*</span>
-          <span class="text-muted fw-normal ms-1" style="font-size:0.8rem;">— required: this additive has animal or allergen sources</span>
+          Which source does your supplier use? This determines allergen and veg/non-veg labelling. <span class="text-danger">*</span>
         </label>
         <select id="source-select" class="form-select" onchange="updateFlags()">
           <option value="">— Select source —</option>
@@ -56,7 +55,7 @@
 
       <!-- Flags preview -->
       <div id="flags-row" class="mb-3 flag-row" style="display:none;">
-        <div class="section-label mb-1">Flags that will be applied</div>
+        <div class="section-label mb-1">Compliance alerts for this ingredient</div>
         <div class="d-flex flex-wrap gap-2">
           <span id="flag-nonveg" class="badge badge-nonveg" style="display:none;">Non-Veg</span>
           <div id="flag-allergens" class="d-flex flex-wrap gap-2"></div>
@@ -97,7 +96,7 @@ searchEl.addEventListener('input', () => {
 
   if (!matches.length) {
     resultsList.innerHTML = `<div class="search-result-item text-muted">
-      No match in verified taxonomy. This additive cannot be declared using the current IFID schema.
+      Not found in the verified additive list. Check the INS number or contact your regulatory team.
     </div>`;
     resultsBox.style.display = 'block';
     return;
