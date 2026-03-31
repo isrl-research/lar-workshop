@@ -1,7 +1,15 @@
 ---
 title: "Food Allergens in India"
 subtitle: "Evidence from the literature, the FSSAI regulatory list, and a proposed list for IFID"
-author: "iSRL"
+author:
+  - name: Lalitha A R
+    affiliation: iSRL
+    orcid: 0009-0001-7466-3531
+    email: lalithaar.research@gmail.com
+    corresponding: true
+  - name: Claude (Anthropic)
+    affiliation: Anthropic
+    note: "AI research assistant. Role described in Appendix A."
 date: "2026-03-31"
 format:
   html:
@@ -300,6 +308,36 @@ These allergens have some Indian relevance but insufficient evidence to include 
 | Betel leaf (*Piper betle*) | Widely used in paan post-meal in Indian food culture; reported as an exposure of concern in community settings | No molecular characterisation or clinical allergy data available |
 
 : IFID Tier 3 — flagged, insufficient evidence {#tbl-tier3}
+
+---
+
+## Appendix A: Author contributions and AI assistance disclosure {#sec-appendix-a}
+
+This paper was produced through a human-directed, AI-assisted research workflow. The account below is a factual log of who did what, written to comply with emerging norms around AI disclosure in academic publishing and to allow readers to assess the epistemic standing of the work.
+
+### Lalitha A R
+
+- Identified the research question: mapping Indian food allergen evidence against the FSSAI mandatory list as a precursor to building the IFID allergen classification
+- Selected the papers: assembled the PDF corpus (7 papers with full text access), located papers by DOI where needed, and determined which papers were in scope for citation
+- Read and verified source material: read each PDF independently and confirmed that data extracted into the manuscript matched the source text
+- Directed the analysis: decided which findings to include, which framing to apply, and what the IFID list tiers should look like
+- Wrote the plan: the detailed manuscript plan (structure, section contents, word counts, citation rules, tone constraints) was written by Lalitha before the manuscript was drafted
+- Reviewed the output: read the full draft and determined it was accurate before committing
+
+### Claude (Anthropic, claude-sonnet-4-6)
+
+- Drafted the manuscript: all prose in §1–§6 and the abstract was written by Claude, following the plan and the extracted paper data
+- Created `references.bib`: all 8 BibTeX entries were generated from paper front-matter provided in the plan
+- Formatted the tables: the regulatory comparison table, the clinic/community studies table, and the IFID tier tables were formatted by Claude from data specified in the plan
+- Ran `quarto render` to verify no citation errors
+
+### Where the line is
+
+The plan Lalitha wrote specified section structure, approximate word counts, which numbers to cite and from which papers, how to frame the FSSAI regulatory position, the contents of all three IFID tiers, and the specific tone constraints (no "significant" without a number; always note the eggplant histamine confound; cite secondary data from [@krishna2020] explicitly as secondary). Claude executed that plan.
+
+Claude did not select papers, read PDFs, make decisions about what the IFID list should contain, or verify numbers against source documents. Where Claude introduced language not in the plan, Lalitha reviewed it.
+
+The analytical judgements in this paper — that the sensitisation-reactivity paradox constrains the case for FSSAI additions, that the evidence for sesame is qualitatively different from other candidates, that the structural constraints on Indian allergy research are the relevant framing for the FSSAI gap — are Lalitha's judgements, documented in the plan before drafting began.
 
 ---
 
