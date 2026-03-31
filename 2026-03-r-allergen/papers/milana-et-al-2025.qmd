@@ -6,52 +6,94 @@ doi: "10.1111/1541-4337.70123"
 journal: "Comprehensive Reviews in Food Science and Food Safety"
 volume: "24:e70123"
 pmid: "DON'T KNOW"
-access: "Paywalled — Wiley Online Library. PDF available at giant-leaps.eu but fetch failed."
-source_quality: "Search result summaries only. Full text not accessed. Specific mung bean allergen proteins (Vig r series) came from a search result that may be mixing this paper with other sources — treat those names with caution until full text is verified."
+access: "Paywalled — Wiley Online Library. PDF accessed via institutional download (Wageningen University and Research, dated 27/01/2025)."
+source_quality: "Full text read from PDF."
 ---
 
 # A review of the toxicological effects and allergenic potential of emerging alternative protein sources
 
-**Authors:** Matilde Milana et al. (full author list: DON'T KNOW)
+**Authors:** Matilde Milana et al. (full author list: DON'T KNOW from PDF header)
 **Year:** 2025 (received Oct 2024, revised Jan 2025, accepted Jan 2025)
 **DOI:** 10.1111/1541-4337.70123
 **Journal:** Comprehensive Reviews in Food Science and Food Safety, 24:e70123
 
 ## Why this paper
 
-Brought in specifically for black gram (*Vigna mungo*) and mung bean (*Vigna radiata*) allergenicity data relevant to India. These two are significant protein sources in Indian diets — present in dal (split lentil soups), idli/dosa batter (fermented rice and lentil preparations), and papad. The paper covers emerging alternative proteins, which overlaps with Indian legumes increasingly entering global food supply chains.
+Brought in specifically for mung bean (*Vigna radiata*) and black gram (*Vigna mungo*) allergenicity data. These two legumes are major protein sources in Indian diets — black gram is used in dal makhani, idli/dosa batter, and papad; mung bean in moong dal, chaat, and sprouts. The paper is a broad review of alternative proteins, but its mung bean and black gram sections provide the most detailed allergen molecular characterisation in our paper set.
 
-## Extracted points
+## Extracted points — mung bean section
 
-> **Source quality note:** All points from search result summaries. Full text not accessed. The mung bean allergen protein names (Vig r series) appeared in a search result — these are real named allergens in the literature but I cannot confirm they were specifically sourced from Milana 2025 vs. other papers the search result was drawing on. Each point needs verification.
+> **Source quality note:** Full text read from PDF. All points below are from the paper. Text in quotation marks is taken directly. Table data for cross-reactivity was garbled in PDF extraction (rotated text); specific cross-reactivity entries are reconstructed from the prose sections. Where a reference number is mentioned, it refers to citations within the paper.
 
-1. Sources covered in the review: faba bean, mung bean, lentil, black gram, cowpea, quinoa, hemp, leaf proteins, microalgae, duckweeds. — [SEARCH SUMMARY]
-   For us: Confirms this paper directly addresses mung bean and black gram — both major in Indian diets.
+### Mung bean IUIS-named allergens
 
-2. All emerging alternative protein sources reviewed "can contribute to some extent to the occurrence of adverse toxicological effects and/or allergic reactions in susceptible individuals." — [SEARCH SUMMARY — likely close to direct quote]
-   For us: General finding; specific to black gram and mung bean requires full text.
+The paper lists 6 IUIS-named mung bean allergens (Vig r series):
 
-3. Mung bean — named allergenic proteins (from search result, source uncertain): Vig r1 (pathogenesis-related protein, 16 kDa) and Vig r2 (vicilin-type seed storage protein, 52 kDa). — [SEARCH SUMMARY — attribution to Milana 2025 is UNCERTAIN]
-   Context: Pathogenesis-related proteins (PR proteins) are a class of plant defence proteins that can act as allergens; vicilin is a seed storage protein in the cupin family, found across legumes.
-   For us: If confirmed in full text, these protein identities are relevant to the mechanism and cross-reactivity sections.
+| IUIS name | Molecular weight | Protein family | Notes |
+|-----------|-----------------|----------------|-------|
+| Vig r1 | 16 kDa | PR-10 / Bet v1-homologous | Identified in seedlings; cross-reacts with birch pollen allergen Bet v1; high sequence homology with PR-10 proteins from yellow lupine |
+| Vig r2 | 52 kDa | Vicilin-type seed storage protein | Cross-reacts with soybean, lentil, pea, peanut, lupine |
+| Vig r3 | 50 kDa | Vicilin | Later renamed Vig r2.0201 — DON'T KNOW if this represents a separate allergen or a reclassification |
+| Vig r4 | 30 kDa | Seed albumin | — |
+| Vig r5 | 18 kDa | Fragment of Vig r2 | — |
+| Vig r6 | 18 kDa | Cytokinin-binding protein / Bet v1-homologous | Cross-reacts with birch pollen allergen Bet v1 |
 
-4. Cross-reactivity for mung bean (from search result, source uncertain): identified by ELISA with peanut, fenugreek, red kidney bean, red gram, green gram, chickpea, and black gram. — [SEARCH SUMMARY — attribution uncertain]
-   Context: This would mean a patient sensitised to one of these foods may react to mung bean without prior exposure.
-   For us: High relevance for the Indian context — this is a cluster of foods that are staples.
+> Note: Vig r2 through Vig r5 share "high sequence similarity with allergens from soybean, lentil, pea, peanut, and lupine, suggesting the potential for cross-reactivity." — [FULL TEXT, direct quote]
 
-5. Processing reduces antinutritional factors and allergenicity in these proteins, but "does not always ensure a complete removal." — [SEARCH SUMMARY]
-   Context: Processing here likely includes soaking, boiling, fermenting, autoclaving. "Complete removal" caveat is important for labelling — a processed product is not automatically safe.
+### Mung bean — additional allergen data
 
-6. Mung bean and alfalfa retained antinutritional factors even in protein extract form post-processing. — [SEARCH SUMMARY]
-   Context: Antinutritional factors here refers to compounds that interfere with nutrient absorption; their co-presence with allergens is relevant to risk profiling.
+1. "Vig r1 (identified in seedlings) and Vig r6 are birch pollen allergen (Bet v1)-homologous and can induce IgE-mediated allergenic cross-reactions in birch pollen allergen-sensitized patients." — [FULL TEXT, direct quote, citing Guhsl et al. 2014; Mittag et al. 2005]
+   For us: Cross-reactions with birch pollen allergen may cause pollen-food allergy syndrome in birch-sensitised patients eating mung bean. DON'T KNOW if birch pollen is a significant sensitiser in India.
 
-## Gaps and challenges the authors document
+2. Lipid transfer proteins (LTPs) are also present in mung bean. Mung bean LTPs "are closely related to allergenic LTPs from peanuts, peach and green beans and share >60% homology with LTPs from lentils, beans, peanuts, strawberries and apples." — [FULL TEXT, direct quote, citing Mishra & Kumar 2021]
+   For us: LTP cross-reactivity creates a cluster of potentially co-reactive foods. LTPs are heat-stable and digestion-resistant, which makes them relevant for labelling.
 
-DON'T KNOW in detail — full text required.
+3. Mung bean proteins "produced positive SPTs and immunological responses in peanut-allergic patients and showed cross-reactivity with soybeans." — [FULL TEXT, paraphrase from Cho et al. 2017; Jensen et al. 2008]
 
-## Questions for full text access
+4. Allergen properties (from general Vig r2–r5 description): "resistance to digestion" and "ability to elicit IgE-mediated allergenic responses in human and experimental animals." — [FULL TEXT, direct quote]
+   For us: Processing-resistant allergens are harder to eliminate through cooking. This is relevant for both consumer guidance and food labelling.
 
-- What India-specific data does the paper cite for black gram and mung bean allergy?
-- What specific processing methods were evaluated, and which reduced allergenicity most effectively?
-- Are there prevalence estimates for black gram or mung bean allergy specifically in Indian populations?
-- What is the full list of named allergens for black gram (*Vigna mungo*)?
+## Extracted points — black gram section
+
+### Black gram IUIS-named allergens
+
+Only **one** IUIS-named allergen for black gram (*Vigna mungo*):
+
+| IUIS name | Molecular weight | Biochemical identity | Notes |
+|-----------|-----------------|---------------------|-------|
+| 28 kDa Vig m | 28 kDa | Sequence homology to rho-specific inhibitor of transcription termination (peanut) | Only characterised allergen with IUIS designation |
+
+Note: The paper uses "28 kDa Vig m" as the IUIS reference but the full IUIS name format would be Vig m 1 — DON'T KNOW if the paper names it Vig m 1 explicitly.
+
+1. "Multiple IgE-binding proteins have been identified; however, to date, the only allergen identified and characterized is the 28 kDa Vig m." — [FULL TEXT, direct quote]
+   Source cited: Verma et al. 2012, 2013.
+
+2. The 28 kDa Vig m "exhibited allergen-like properties (i.e., resistance to digestion) and sequence homology to the rho-specific inhibitor of transcription termination of peanut." — [FULL TEXT, direct quote]
+   For us: Resistance to digestion confirms this allergen persists through normal digestive processing.
+
+### Black gram — cross-reactivity
+
+3. "Black gram can cross-react with legumes (i.e., faba bean, lentil, lima bean, and pea)." — [FULL TEXT, direct quote, citing Arora et al. 2021; Kumar et al. 2014; Verma et al. 2013]
+
+4. Black gram also cross-reacts with the plant *Prosopis juliflora* (a pollen allergen common in India) — described as "Pollen Food Allergy Syndrome." — [FULL TEXT, citing Arora et al. 2021]
+   For us: Pollen-food allergy syndrome means patients sensitised to *Prosopis juliflora* pollen (which is environmentally prevalent in India) may also react to black gram. This is a clinically distinct mechanism from direct food sensitisation.
+
+## Cross-reactivity context from Table in paper
+
+The paper includes a cross-reactivity table for all emerging alternative proteins. From the prose sections confirmed for mung bean:
+- Mung bean cross-reacts with: peanut (SPT and immunological responses confirmed), soybean (cross-reactivity confirmed), lentils, beans, strawberries, apples (LTP homology >60%)
+- Black gram cross-reacts with: faba bean, lentil, lima bean, pea (direct statement); Prosopis juliflora pollen (PFAS mechanism)
+
+Note: The full table in the paper also lists mung bean cross-reactivity symbols for multiple additional foods (the row in the table). The exact entries from the table are DON'T KNOW due to rotated text extraction failure.
+
+## Gaps noted in this paper
+
+- "Few studies were found" for quinoa and hemp seeds — similar data scarcity likely applies to black gram in non-Indian literature
+- India-specific prevalence data for mung bean or black gram allergy is not provided in this paper — molecular characterisation only
+- DON'T KNOW whether the paper discusses processing effects specifically for black gram (the extraction was partial for this section)
+
+## What this paper does not address
+
+- Population prevalence figures for mung bean or black gram allergy in India
+- Clinical case series
+- Regulatory classification of mung bean or black gram under any national allergen list

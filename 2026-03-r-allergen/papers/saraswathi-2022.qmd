@@ -1,69 +1,74 @@
 ---
 title: "A Review of Naturally Occurring Food Allergens and Their Impact on Health"
-author: "Saraswathi HTB, Chittoor R.I."
+author: "Renu Indhikkattu Chittoor, Harikumaran Thampi Balakrishnan Saraswathi"
 year: 2022
-doi: "DON'T KNOW"
+doi: "10.13005/bbra/2965"
 journal: "Biosciences Biotechnology Research Asia"
-volume: "19(1)"
-url: "https://www.biotech-asia.org/vol19no1/a-review-of-naturally-occuring-food-allergens-and-their-impact-on-health/"
+volume: "19(1):13–35"
 pmid: "DON'T KNOW"
-access: "Open access — available at biotech-asia.org. Full text fetched."
-source_quality: "Full text fetched from biotech-asia.org. Points marked [FULL TEXT] are from the paper. Note: fetch returned structured AI summary — exact page numbers not available. Quoted text may be approximate."
+access: "Open access — CC BY 4.0. PDF accessed directly."
+source_quality: "Full text read from PDF."
 ---
 
 # A Review of Naturally Occurring Food Allergens and Their Impact on Health
 
-**Authors:** Saraswathi HTB, Chittoor R.I. (Department of Life Sciences, University of Calicut, Kerala, India)
-**Year:** 2022 (received Dec 2021, accepted Jan 2022, published online Feb 2022)
-**DOI:** DON'T KNOW — journal does not appear to use DOIs, or DOI not indexed in standard databases
-**Journal:** Biosciences Biotechnology Research Asia, 19(1)
-**URL:** https://www.biotech-asia.org/vol19no1/a-review-of-naturally-occuring-food-allergens-and-their-impact-on-health/
+**Authors:** Renu Indhikkattu Chittoor, Harikumaran Thampi Balakrishnan Saraswathi* (Department of Life Sciences, University of Calicut, Kerala, India)
+**Year:** 2022 (received 7 Dec 2021; accepted 27 Jan 2022)
+**DOI:** 10.13005/bbra/2965
+**Journal:** Biosciences Biotechnology Research Asia, 19(1):13–35
 
 ## Why this paper
 
-Brought in for India-specific comparison of hypersensitivity rates vs sensitisation rates in children. Note on journal: Biosciences Biotechnology Research Asia is a low-impact Indian journal not indexed in PubMed. This affects the weight we assign to its findings — data this paper cites likely comes from other primary sources, and those primary sources should be identified and cited directly where possible.
+Brought in for India-specific comparison of hypersensitivity vs sensitisation rates in children. Note on journal: Biosciences Biotechnology Research Asia is a low-impact Indian open-access journal, not indexed in PubMed. The paper is a narrative review drawing on other sources rather than presenting original data. Value: it frames the sensitisation-reactivity paradox explicitly and reviews allergen characterisation methods.
+
+## Assessment of source quality
+
+Reading the full PDF confirms the earlier assessment: this paper does not present independent Indian data. The four key India figures it cites (0.14% food allergy prevalence, 19.1% sensitisation, 0.03% peanut allergy, 6.3% peanut sensitisation) trace to the same underlying EuroPrevall-INCO studies cited in P04 (Krishna 2020) and P02 (Mahesh 2023b). The paper's phrasing is sometimes awkward ("harmful safe reactions to food items", "turn of the events") suggesting translation or non-native English composition.
+
+**This paper should not be cited as an independent data source for any India-specific figures.** Its role in our manuscript is limited to: confirming that the sensitisation-reactivity paradox is recognised in the Indian literature; providing general allergen biology background; and noting that the paradox remains unexplained.
 
 ## Extracted points
 
-> **Source quality note:** Full text was fetched. Points below came through an AI-mediated summary of the fetched content. Quoted text marked with quotation marks may be approximate. Treat all numbers as requiring verification against the paper before manuscript citation.
+> **Source quality note:** Full text read from PDF. All numbers below are from the paper but trace to primary sources that are also available in P04 and P02. Quotations are taken directly from the PDF.
 
-1. Food allergy prevalence in India in children: "0.14 % among youngsters." — [FULL TEXT]
-   Context: DON'T KNOW which study or dataset this figure is drawn from. This number also appears in P01 (Mahesh 2023a) — likely the same underlying source.
-   For us: Consistent with other papers in our set. Need to identify the primary source this figure traces back to.
+### India-specific data (all citing the same underlying EuroPrevall-INCO studies)
 
-2. Food allergen sensitisation rate in Indian children: "around 19.1 %." — [FULL TEXT]
-   Context: Same caveat — DON'T KNOW primary source. Consistent with P01 and P04.
+1. "A food specific sensitization study conducted on children aged 7–10 years indicated that food allergy appears to be less common when compared with developed nations." — [FULL TEXT, direct quote]
+   Note: This refers to the EuroPrevall study, consistent with P02 and P04.
 
-3. Nut allergy prevalence in Indian children: "low (around 0.03%)." — [FULL TEXT]
-   Context: DON'T KNOW primary source. Consistent with P04 (Krishna 2020).
+2. Food allergy prevalence in Indian children: 0.14%. — [FULL TEXT, citing reference 7 — DON'T KNOW which paper reference 7 is]
 
-4. Nut sensitisation rate in Indian children: "high at 6.3%." — [FULL TEXT]
-   Context: DON'T KNOW primary source. Consistent with P04.
+3. Food allergen sensitisation in Indian children: 19.1%. — [FULL TEXT, same reference]
 
-5. Paper highlights this as a paradox requiring investigation: "further examination is expected to explore why predominance of clinically applicable food sensitivity is low in India in spite of high sensitisation rate." — [FULL TEXT — likely a direct quote or close paraphrase]
-   For us: This is the second paper in our set (after P04) to explicitly flag this gap. The fact that multiple papers note it without explaining it is itself a finding.
+4. Peanut allergy in Indian children: 0.03%; peanut sensitisation: 6.3%. — [FULL TEXT]
 
-6. Global food allergy impact: "affects over 200 million people." — [FULL TEXT]
-   Context: DON'T KNOW source year or methodology.
+5. "Further examination is expected to explore why predominance of clinically applicable food sensitivity is low in India in spite of high sensitisation rate." — [FULL TEXT, direct quote — close paraphrase of the EuroPrevall paradox statement]
 
-7. US childhood prevalence increase: "from 3.4% in 1997 to 1999" to "5.1% in 2009 to 2011." — [FULL TEXT]
-   Context: US-specific figure, included for comparison.
+### Allergen biology content (not India-specific — general review)
 
-8. Australia school-age survey: "41% expansion from 2009 to 2014." — [FULL TEXT]
-   Context: DON'T KNOW which specific allergens drove this.
+6. Food allergens are proteins with molecular weight range "from 10 to 70 kDa." — [FULL TEXT]
+   For us: Background characterisation relevant to the mechanism section.
 
-9. Major allergens discussed: peanuts, soy, wheat, fish, eggs, shellfish, tree nuts, milk. — [FULL TEXT]
-   Context: These appear to be the Big 8/9 framing — the paper does not appear to go beyond this list to India-specific allergens based on the fetch summary.
+7. Main protein families: cupins (seed storage proteins), prolamins (cereal storage proteins), tropomyosin (shellfish/crustacea muscle protein). — [FULL TEXT]
+   For us: These families explain cross-reactivity patterns across legumes and across shellfish.
 
-10. Allergen molecular weight range: "from 10 to 70 kDa." — [FULL TEXT]
-    Context: General characterisation of food allergens as proteins in this size range.
+8. Global food allergy burden: affects over 200 million people worldwide. — [FULL TEXT, DON'T KNOW primary source year]
 
-11. Allergen protein families mentioned: cupins (seed storage proteins), prolamins (cereal storage proteins), tropomyosin (muscle protein responsible for seafood allergy). — [FULL TEXT]
-    For us: Useful for the mechanism section — these families explain cross-reactivity patterns.
+9. Western context: US childhood food allergy increased from 3.4% (1997–1999) to 5.1% (2009–2011). — [FULL TEXT]
 
-12. Limitation: "Current comprehension of the turn of the events and utilisation of allergenic capability of certain types of food proteins is restricted" — [FULL TEXT — direct quote, awkward phrasing suggests translation from another language or unusual register]
-    Additional limitation: "no animal models are universally validated for allergen-specific assessment." — [FULL TEXT]
+10. "Current comprehension of the turn of the events and utilization of allergenic capability of certain types of food proteins is restricted." — [FULL TEXT, direct quote]
+    "None of the current models has been approved, is prescient, or generally acknowledged with respect to their allergen explicit inhibitors." — [FULL TEXT, direct quote]
 
-## Assessment
+### Allergens discussed in the paper
 
-This paper is a narrative review drawing on other sources. The India-specific numbers (0.14%, 19.1%, 0.03%, 6.3%) appear to trace back to the same underlying studies cited in P01 and P04 — not independent data. This paper should not be cited as an independent data source for those figures. Its value is in confirming the consensus framing and the sensitisation-reactivity paradox as a recognised theme.
+The paper covers the Big 8 allergen groups (peanuts, tree nuts, milk, egg, wheat, soy, fish, shellfish) as its primary frame. India-specific allergens beyond these are not discussed in detail. The paper does not address legumes specifically in the Indian context, eggplant, or any of the allergens identified in P05 (Bhattacharya 2018) as India-characterised.
+
+## Gaps documented
+
+- Lack of validated animal models for allergen-specific assessment
+- Limited understanding of mechanisms driving sensitisation-reactivity paradox in India
+- General limitation: most allergen characterisation data comes from Western populations
+
+## Weight in manuscript
+
+Low evidential weight for India-specific claims. The paper is useful only as a secondary confirming source for the consensus framing, and should not be cited in isolation for any numerical claim about Indian food allergy prevalence.

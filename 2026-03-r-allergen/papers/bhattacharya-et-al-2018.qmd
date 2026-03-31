@@ -6,8 +6,8 @@ doi: "10.1159/000490805"
 journal: "International Archives of Allergy and Immunology"
 volume: "177(3):219–237"
 pmid: "30056449"
-access: "Paywalled — Karger Publishers (403 error on fetch). Abstract via PubMed."
-source_quality: "Abstract + search result summaries only. Full text not accessed. The paper contains a table of IUIS-approved allergens from India — table was not accessible (ResearchGate 403). Numbers and specific allergens below are from secondary sources and must be verified against the full paper."
+access: "Paywalled — Karger Publishers. PDF accessed directly."
+source_quality: "Full text read from PDF."
 ---
 
 # Spectrum of Allergens and Allergen Biology in India
@@ -20,36 +20,83 @@ source_quality: "Abstract + search result summaries only. Full text not accessed
 
 ## Why this paper
 
-The most molecularly detailed paper in our set. Covers the biochemistry, immunology, and molecular characterisation of allergens specifically reported from India. Contains a table of IUIS (International Union of Immunological Societies — the body that formally names and approves allergens)-approved allergens sourced from India. This is the paper most directly relevant to building a scientifically defensible allergen list.
+The most molecularly detailed paper in our set. Covers the biochemistry and immunology of allergens specifically characterised in India, including protein identification, IgE-binding, cross-reactivity, and processing stability. Contains Table 2 — the IUIS (International Union of Immunological Societies — the body that formally names and standardises allergens globally) allergen table for India. This is the primary source for the "defensible list" section of our manuscript.
 
-## Extracted points
+## Extracted points — food allergens section
 
-> **Source quality note:** Full text paywalled. Points below are from PubMed abstract, Semantic Scholar entry, and search result summaries. The IUIS table mentioned in secondary sources was not accessible. Every point here needs verification against the full paper before manuscript citation.
+> **Source quality note:** Full text read from PDF. All numbers below are from the paper. Text in quotation marks is taken directly from the PDF. The IUIS table (Table 2) was successfully extracted.
 
-1. The paper covers "composition, distribution pattern, and natural sources of predominant allergens in India" and "prevalence of sensitisation to these allergens across the country." — [ABSTRACT, via search summary]
-   Context: Described as a comprehensive review.
-   For us: This is the primary source for the allergen biology and protein family sections of our manuscript.
+### Overview of food allergy in India
 
-2. The paper includes a table of "certain major allergens reported from India and approved by the IUIS." — [Search summary — confirmed via ResearchGate figure listing]
-   Context: IUIS approval means the allergen has been formally characterised and named with a standardised identifier (e.g., "Ara h 1" for peanut allergen 1).
-   For us: This table is the most authoritative available list of formally characterised Indian food allergens. DON'T KNOW the full contents of the table — access was blocked.
+1. "Food allergy prevailing among the Indian population include legume allergy, prawn allergy, eggplant allergy, milk allergy, and egg allergy." — [FULL TEXT, direct quote]
+   Context: This is the paper's summary statement for the main food allergen categories in India. Not a ranked list — order does not indicate prevalence.
 
-3. Allergen repertoire in India is described as "highly diverse due to varied climate, flora, and food habits." — [Search summary — may be paraphrase not direct quote]
-   For us: Supports the argument that a single global allergen list is insufficient for India.
+### Legumes
 
-4. Paper covers allergen-specific immunotherapy (treatment that gradually desensitises a patient to an allergen) trials performed in India. — [Search summary]
-   For us: Immunotherapy data is not directly relevant to the labelling/declaration focus of our manuscript, but may be useful for the mechanism section.
+2. **Kidney bean** (*Phaseolus vulgaris*): "has been found to sensitize 22% of the food-allergic population in Delhi." — [FULL TEXT, direct quote]
+   Context: Delhi, North India. N for this study: DON'T KNOW.
+   Allergen characterisation: two major IgE-binding phytohemagglutinins (lectins) identified; 31-kDa phytohemagglutinin purified and confirmed as glycoprotein with stable IgE epitopes (resistant to pepsin digestion). Total of 6 IgE-binding proteins detected by immunoblotting. Also: alpha-amylase inhibitor precursor and group-3 late embryogenesis abundant protein identified as important allergens.
+   Cross-reactivity: with peanut, black gram, lentil, pea, pigeon pea, chickpea.
+   Processing: heating alone insufficient; combination of heating and gamma irradiation significantly reduces IgE binding. Enzymatic treatment with Flavourzyme® + ALCALASE® also strongly reduces IgE binding; pepsin alone was not effective.
 
-## Specific allergens mentioned in secondary sources
+3. **Black gram** (*Vigna mungo*): "1.7% of nasobronchial allergy patients were found to be sensitized to black gram extracts." — [FULL TEXT, direct quote]
+   Context: Population is nasobronchial allergy patients (airway allergy patients), not general population or food allergy clinic attendees. This figure likely underestimates food allergy specifically.
+   Allergen characterisation: A 28-kDa major glycoprotein allergen isolated and characterised. "Displayed partial sequence homology with a Rho-specific inhibitor of transcription termination." — [FULL TEXT, direct quote]
+   Processing stability: 28-kDa allergen's 16-kDa degradation product (after pepsin/SGF treatment) retained IgE reactivity for up to 15 minutes. After 5 minutes of pancreatin (SIF) treatment, IgE reactivity was lost.
+   Mouse model confirmation: allergy-related clinical symptoms confirmed in lung and gastrointestinal tissues with upregulation of allergy-associated markers.
 
-The following allergens are mentioned in relation to this paper from secondary search results, but their exact treatment in the paper (primary data vs. cited, prevalence figures, protein characterisation level) is DON'T KNOW:
-- Aeroallergens: house dust mite, cockroach, pollen, mold spores
-- Food allergens: specific list DON'T KNOW — need full table
+4. **Red gram / pigeon pea** (*Cajanus cajan*): novel allergens detected through immunoblotting with Indian sera — β-conglycinin, vicilin, proteins similar to Len c 1 (lentil allergen), Len c 2, and Ara h 1 (peanut allergen 1). Some previously unidentified novel red gram allergens also identified through mass spectrometry. — [FULL TEXT]
 
-## Gaps and challenges the authors document
+5. **Chickpea** (*Cicer arietinum*): a 26-kDa plant albumin identified as the major allergen. "Reacted with IgE antibodies of peanut-allergic subjects." — [FULL TEXT, direct quote]
+   For us: This cross-reactivity with peanut means peanut-allergic patients may react to chickpea. Clinically relevant given chickpea's ubiquity in Indian cuisine (dal, hummus, chana masala, besan flour).
 
-DON'T KNOW — full text required.
+6. **Legumes — general finding**: "A comparative study on the stability of SGF-treated allergens from most of the widely consumed legumes revealed that the majority of the allergens remained IgE-reactive after digestion, which was in agreement with the previous findings on the high prevalence of legume allergy within the Indian population." — [FULL TEXT, direct quote]
+   For us: Cooking / gastric processing does not reliably eliminate legume allergenicity — relevant for labelling and for the "cooking is not a safe substitute for avoidance" argument.
 
-## Priority action
+### Rice
 
-This paper needs full text access. It is the most molecularly grounded source in our set and the only one with an IUIS allergen table specifically for India. Options: (1) institutional library access, (2) author request via ResearchGate, (3) interlibrary loan.
+7. **Rice** (*Oryza sativa*): "showed a 12% positive cutaneous test within the food-allergic population." — [FULL TEXT, direct quote]
+   Context: "Food-allergic population" — not general population. N: DON'T KNOW.
+   Allergen characterisation: 4 IgE-reactive components detected in boiled rice by immunoblot. A 24-kDa chitinase (enzyme that breaks down chitin) identified as a major allergen.
+
+### Eggplant
+
+8. **Eggplant** (*Solanum melongena*): A lipid transfer protein (LTP — a class of plant proteins that transport lipids and are often allergens) identified from eggplant and "found to be concentrated in the peel and seeds." — [FULL TEXT]
+   Confounding factor: "harvested fruits of eggplants, after prolonged storage, were found to contain a high content of histamines as a metabolic byproduct." Skin tests with histamine-containing eggplant extracts produced false-positive results. — [FULL TEXT, paraphrase + direct quote]
+   Additional confound: "it is also not clear whether the etching symptoms are caused by the residual pesticides applied to eggplant during farming." — [FULL TEXT, direct quote]
+   For us: Eggplant allergy diagnosis in India is complicated by histamine content and pesticide residue. Prevalence figures from SPT-based studies may overestimate true IgE-mediated allergy.
+
+### Fish
+
+9. **Hilsha** (*Tenualosa ilisha*) and **pomfret** (*Pampus argenteus*): immunoblot analysis detected "a 50-kDa IgE-reactive band commonly present in the muscle extract of these fish." — [FULL TEXT, direct quote]
+   Allergen stability: "the major IgE-reactive bands of these 2 carps were heat labile." — [FULL TEXT, direct quote]
+   For us: Heat-labile allergens are destroyed by thorough cooking. This would mean these fish may be tolerated when fully cooked.
+
+10. **Bhetki** (*Lates calcarifer*) and **mackerel** (*Rastrelliger kanagurta*): "allergens detected in the cooked muscle of bhetki and mackerel fish displayed strong IgE recognition even after boiling." — [FULL TEXT, direct quote]
+    For us: These are heat-stable allergens — cooking does not eliminate the risk. Important for labelling.
+
+## IUIS allergen table — Table 2 (food allergens only)
+
+The paper's Table 2 lists allergens from India with official IUIS designations. From the full text, only **one food allergen** has an IUIS name from India:
+
+| IUIS name | Organism | Route | Biochemical name | Cross-reactivity noted |
+|-----------|----------|-------|------------------|----------------------|
+| Pen i 1 | *Penaeus indicus* (Indian prawn) | Food | Tropomyosin (muscle protein) | Not specified in table |
+
+All other IUIS-named allergens from India in Table 2 are aeroallergens (fungi, cockroach, pollen) or contact allergens — not food allergens.
+
+> Note: The paper states explicitly: "It is noteworthy to state that all the entries in the WHO/IUIS allergen database should not be strictly considered as the genuine sensitizers as some of these proteins are thought to display IgE reactivity simply due to cross-reactivity and therefore are not clinically relevant." — [FULL TEXT, direct quote]
+
+## Gaps and challenges documented
+
+From full text:
+- Only a small number of Indian allergens have been formally characterised to IUIS standard
+- "Unavailability of the advanced multiplexed assay system to evaluate the complexity of the IgE repertoire present in the sera of allergic patients of Indian origin" — [FULL TEXT, direct quote]
+- Allergists "still relying upon outdated, less-characterized, and less-standardized allergen extracts" — [FULL TEXT, direct quote]
+- Pharmaceutical-grade recombinant allergen preparation "relatively expensive"; current focus should be on ensuring availability of high-quality allergen sources and extracts
+
+## What this paper does not address
+
+- Prevalence data: this is a molecular characterisation review, not an epidemiology paper
+- FSSAI regulatory framework: DON'T KNOW — not focused on labelling policy
+- Rural or regional variation in allergen exposure

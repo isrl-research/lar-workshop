@@ -6,13 +6,13 @@ doi: "10.1111/cea.14239"
 journal: "Clinical & Experimental Allergy"
 volume: "53(3):276–294"
 pmid: "36181726"
-access: "Paywalled — Wiley Online Library"
-source_quality: "Abstract + PubMed summary only. Full text not accessed."
+access: "Paywalled — Wiley Online Library. PDF accessed via institutional download (University of Melbourne, dated 08/01/2026)."
+source_quality: "Full text read from PDF."
 ---
 
 # Allergic diseases in India – Prevalence, risk factors and current challenges
 
-**Authors:** Padukudru Anand Mahesh et al. (full author list: DON'T KNOW from abstract)
+**Authors:** Padukudru Anand Mahesh et al.
 **Year:** 2023
 **DOI:** 10.1111/cea.14239
 **Journal:** Clinical & Experimental Allergy, 53(3):276–294
@@ -20,37 +20,71 @@ source_quality: "Abstract + PubMed summary only. Full text not accessed."
 
 ## Why this paper
 
-Brought in for epidemiology narrative and specifically for India-specific allergen discussion (eggplant, legumes). Broader scope than P01 — covers all allergic diseases, not only food allergy. Relevant primarily for sections on risk factors and the Indian-specific allergen landscape.
+Broad epidemiological narrative covering all allergic diseases in India. Relevant to our manuscript primarily for the food allergy section (Section 1.3 in the paper), which has the richest numerical data in our set on EuroPrevall sensitisation rates, probable food allergy prevalence, and DBPCFC-confirmed food allergies. Also useful for contextualising food allergy within India's wider allergy burden.
 
-## Extracted points
+## Extracted points — food allergy section (Section 1.3)
 
-> **Source quality note:** Points from PubMed abstract and search result summary. Full text not accessed.
+> **Source quality note:** Full text read from PDF. All numbers below are from the paper. Where text is in quotation marks, it is taken directly from the PDF. Page numbers are DON'T KNOW (PDF had no visible page numbers in extracted text).
 
-1. Rise in prevalence of allergic diseases in India documented over two decades; however, recent Global Asthma Network data shows a *decrease* in allergic rhinitis, asthma, and atopic dermatitis in children. — [ABSTRACT]
-   Context: DON'T KNOW — which years, which regions of India.
-   For us: The direction of the trend is contested between studies — this paper captures that directly.
+### Children — EuroPrevall study data
 
-2. India has an estimated 37.5 million asthma cases. — [ABSTRACT]
-   Context: DON'T KNOW — year of estimate, data source.
-   For us: Background burden figure for allergic disease generally; not specific to food allergy.
+1. EuroPrevall study design: "5677 children aged 7–10 years were screened using questionnaire, skin prick tests and specific IgE to 25 foods, and 450 participated in the detailed case-control study." — [FULL TEXT]
+   Context: India sites were Mysore and Bengaluru (Karnataka, South India). DON'T KNOW which 25 foods were included in the panel.
 
-3. Disease burden described as occurring "amid an unmet demand for trained allergy specialists and poor health service framework." — [ABSTRACT, quoted directly]
-   For us: Structural limitation relevant to why food allergy data from India is sparse — not enough specialists to generate clinical case data.
+2. Sensitisation to any food using specific IgE (sIgE): 19.1% in India. — [FULL TEXT]
+   Top by sIgE: shrimp (10.5%), sesame (8.0%). — [FULL TEXT]
 
-4. Risk factors identified: genetic factors, environmental variables, diet, tobacco smoke, air pollution, urban residence, cultural/religious/socioeconomic factors. — [ABSTRACT]
-   Context: These are listed as associated factors; causal evidence levels not available from abstract.
-   For us: Urban-rural and dietary variation matters for interpreting India's food allergy prevalence data.
+3. Sensitisation by skin prick test (SPT): 4.48% in India. — [FULL TEXT]
+   Top by SPT: jackfruit (2.46%), milk (1.35%). — [FULL TEXT]
+   Note: The discrepancy between sIgE (19.1%) and SPT (4.48%) sensitisation rates is large. This may reflect differences in test sensitivity, or that sIgE detects biological sensitisation that does not translate to a skin response. The paper does not explain this gap directly — DON'T KNOW if they discuss it.
 
-5. Eggplant and legumes mentioned as specific Indian allergens. — [SEARCH SUMMARY, based on stated key focus of this paper]
-   Context: DON'T KNOW — whether the paper presents primary data or cites other studies for these allergens, what prevalence figures if any are given.
-   For us: Needs full text to extract specific allergen data.
+4. 'Probable food allergy' definition used in EuroPrevall: "a history of clinical symptoms ≤2 hours after consumption of a food with a positive specific IgE or skin prick test to the same food." — [FULL TEXT, direct quote]
 
-## Gaps and challenges the authors document
+5. Probable food allergy prevalence in India (children): 0.14% — [FULL TEXT]
+   Breakdown: cow's milk (0.5%), apple (0.5%), egg (0.05%), eggplant (0.04%). — [FULL TEXT]
+   Note: The 0.5% figures for cow's milk and apple appear higher than the overall 0.14% figure — this is likely because these are % of those with probable food allergy, not % of total population screened. DON'T KNOW — the paper's text is ambiguous and needs careful checking.
 
-From abstract: lack of trained allergy specialists; inadequate health service infrastructure; unclear reasons for geographical variation in prevalence; gaps in understanding of genetic-environmental interactions.
+### Children — open food challenge and DBPCFC data
 
-## Questions for full text access
+6. "Very few studies in India have confirmed food allergy with a challenge procedure." — [FULL TEXT, direct quote]
 
-- What specific data do the authors present on eggplant and legume allergy?
-- Do the authors propose a revised allergen list for India?
-- What do they say about FSSAI or regulatory frameworks?
+7. Kumar et al. open food challenges (N=40, hospital-based): confirmed food allergies to rice (6%), blackgram (5.9%), lentil (5.5%), citrus fruits (5.3%). — [FULL TEXT]
+   Context: DON'T KNOW — this appears to be percentages of patients in the challenge cohort who were confirmed, not general population prevalence.
+
+8. Double-blind placebo-controlled food challenge (DBPCFC — the most rigorous diagnostic test for food allergy) on patients sensitised to rice and blackgram: confirmed true food allergy to rice in 6 of 16 patients (6/16), blackgram in 4 of 14 patients (4/14). — [FULL TEXT]
+   Reference cited in paper: Kumar et al. (reference 35 in the paper) — same group as point 7.
+   For us: These are the only DBPCFC-confirmed food allergy numbers we have for India from this paper set. Rates are substantial (37.5% for rice, 28.6% for blackgram) among those who were already sensitised and underwent challenge.
+
+### Adults — EuroPrevall-INCO data
+
+9. "The EuroPrevall-INCO survey in two South Indian cities revealed self-reported adult food allergy prevalence of 1.2% but 26.5% were sensitised." — [FULL TEXT, direct quote]
+   Context: The two cities are Mysore and Bengaluru, Karnataka. Both are South Indian urban centres — this data does not represent North India, East India, or rural India.
+
+10. Main food allergens in the adult study: legumes, prawn, eggplant, milk, and egg. — [FULL TEXT]
+    Reference: citing reference 37 in the paper — DON'T KNOW which specific study this is.
+
+### Explanatory factors for low clinical food allergy despite high sensitisation
+
+11. "The low prevalence of food allergy in India has been attributed to multiple factors such as relatively longer breast-feeding, vaginal delivery, traditional vegetarian diet, diverse gut microbiota and enteric helminthiasis." — [FULL TEXT, direct quote]
+    For us: These proposed protective factors are not confirmed causal — they are associations. This matters for how we write about the paradox.
+
+12. "The recent shift from the traditional Indian lifestyle to westernisation could potentially alter natural protective factors and lead to enhanced sensitisation rates to food allergens." — [FULL TEXT, direct quote]
+    For us: A trajectory claim. Consistent with the urbanisation-allergy hypothesis in P08. Marked as hypothesis in the paper.
+
+### Other allergen data relevant to this paper
+
+13. In the broader sensitisation section (Section 2), the paper states legumes, prawn, eggplant, milk, and egg are the main food allergens mentioned for India. — [FULL TEXT]
+    Note: The allergen data comes primarily from the EuroPrevall sites (South India). Geographic scope is narrow.
+
+## Gaps and challenges documented in this paper
+
+- Only South India (Karnataka) represented in EuroPrevall data — no systematic nationwide food allergy prevalence data
+- Very few DBPCFC studies; most Indian prevalence data relies on questionnaire or sensitisation testing only
+- "Reasons underpinning relatively low rates of clinical reactivity in sensitised subjects remain uncertain." — [FULL TEXT, direct quote]
+- Health service infrastructure cited as limiting factor: "unmet demand for trained allergy specialists and poor health service framework" — [FULL TEXT, via section 1 intro]
+
+## What this paper does not address
+
+- FSSAI's allergen labelling requirements: DON'T KNOW — paper not focused on regulatory policy
+- North Indian food allergen patterns: not covered (EuroPrevall data from Karnataka only)
+- Rural food allergy: EuroPrevall sites are urban

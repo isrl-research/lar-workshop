@@ -6,13 +6,13 @@ doi: "10.1007/s12098-017-2535-6"
 journal: "Indian Journal of Pediatrics"
 volume: "85:369–374"
 pmid: "29147890"
-access: "Paywalled — Springer Nature. Abstract via PubMed."
-source_quality: "Abstract + search result summaries. Full text not accessed."
+access: "Paywalled — Springer Nature. PDF accessed directly."
+source_quality: "Full text read from PDF."
 ---
 
 # Food Allergy in Children: An Overview
 
-**Authors:** Jaidev M. Devdas (Father Muller Medical College, Mangalore, India), Christopher Mckie, Adam T. Fox, Vinod H. Ratageri
+**Authors:** Jaidev M. Devdas (Father Muller Medical College, Mangalore, India), Christopher Mckie (Sunderland Royal Hospital, UK), Adam T. Fox (Guy's and St Thomas' Hospital, London, UK), Vinod H. Ratageri (Karnataka Institute of Medical Sciences, Hubballi, Karnataka, India)
 **Year:** 2018 (published online Nov 2017)
 **DOI:** 10.1007/s12098-017-2535-6
 **Journal:** Indian Journal of Pediatrics, 85:369–374
@@ -20,39 +20,71 @@ source_quality: "Abstract + search result summaries. Full text not accessed."
 
 ## Why this paper
 
-Brought in for clinical vs probable food allergy assessment in Indian paediatric cohorts. Published in Indian Journal of Pediatrics — primarily an Indian clinical audience. Mixed authorship (Indian and UK-based) which may account for its focus on comparing Western data with Indian context.
+Indian-UK mixed authorship review published in a clinical Indian paediatric journal. Relevant for: (1) India-specific allergen identification (chickpea explicitly named); (2) direct statement linking food labelling policy to patient outcomes; (3) clinical diagnostic framing relevant to measuring food allergy in India. This paper is the source of the most direct policy-relevant quote in our set about labelling.
 
 ## Extracted points
 
-> **Source quality note:** Points from PubMed abstract and search result summaries. Full text not accessed.
+> **Source quality note:** Full text read from PDF. All numbers and quotes below are from the paper. Text in quotation marks is taken directly from the PDF.
 
-1. Prevalence of food allergy in children in the West: "around 6–8%." — [ABSTRACT]
-   Context: This is a general Western figure, not specifically sourced to a single study in the abstract.
-   For us: Used as a comparator against India's 0.14% figure from other papers in our set — the gap is large.
+### Definition of food allergy
 
-2. Paucity of data in the Indian population explicitly stated. — [ABSTRACT]
-   For us: This is the third paper (alongside P09 and P04) to explicitly name the data gap. This is a documented, recurring finding across the literature.
+1. "The term 'food allergy' refers to 'a specific immune response that occurs reproducibly on exposure to a given food'." — [FULL TEXT, direct quote]
 
-3. Diagnosis requires "a reliable thorough clinical history, combined with positive skin prick tests or food-specific IgE." — [ABSTRACT]
-   Context: This is the standard diagnostic approach. Note that oral food challenge (the definitive test) is not mentioned here as part of the standard — may reflect resource constraints in Indian clinical settings.
-   For us: Relevant to the "how it is measured" section. If oral food challenge isn't widely available, clinical food allergy will be underdiagnosed and underreported.
+2. "These immune responses can be IgE mediated (type 1 hypersensitivity), non-IgE mediated (cell mediated reactions) or a combination of both." — [FULL TEXT, direct quote]
 
-4. Management: "strict avoidance, patient education and provision of emergency medication (adrenaline auto-injectors — a device that delivers a measured dose of adrenaline to stop a severe allergic reaction)." — [ABSTRACT]
+3. "Food intolerances are non-immune reactions. These may occur in response to exposure to metabolic substances (lactose intolerance), toxins (microbial contamination or scombroid fish poisoning), pharmacologically active components (caffeine, tyramine in aged cheese triggering migraine) via undefined mechanisms. Non-IgE mediated food allergy is commonly misinterpreted as food intolerance." — [FULL TEXT, direct quote]
+   For us: The distinction between allergy and intolerance is important for the first section of our manuscript. This paper provides a clean definition.
 
-5. **Key policy-relevant finding**: "Lack of food labelling policy and non-availability of adrenaline auto-injectors is a huge limiting factor for effective management of food allergy among children in India." — [SEARCH SUMMARY — likely close to direct quote]
-   For us: This is a direct statement connecting food labelling policy (FSSAI's responsibility) to patient outcomes. Highly relevant to our manuscript's argument for a better Indian allergen list.
+### Prevalence in India / Asia
 
-## Gaps and challenges the authors document
+4. "There is a paucity of data regarding the prevalence of food allergy in the Indian population, particularly in children. Current studies have tended to utilise patient or parent-reported questionnaires and are likely to overestimate prevalence." — [FULL TEXT, direct quote]
 
-From abstract/search summary:
-- Paucity of Indian paediatric prevalence data
+5. "The recent EuroPrevall-INCO study estimated a prevalence of food allergy in adults in southern India of 1.2%; cow's milk accounting for 0.5% and apple 0.5%. Data on the prevalence of food allergies in children from this study is awaited." — [FULL TEXT, direct quote]
+   Note: This paper was published in 2017/2018, so the children's EuroPrevall-INCO data (Li et al. 2019, which confirms 0.14% children's prevalence) had not yet been published at time of writing. The "awaited" note is historically important — it confirms that in 2018, India's children's food allergy data was still unknown.
+
+6. Asia comparison figures: Singapore 4–5%, Korea 10.9%, north-east China 4.98%, Japan 12.6%. — [FULL TEXT]
+   For us: India's 1.2% adult figure is significantly lower than all these Asian comparators.
+
+7. West comparison: "The estimated prevalence of food allergy amongst children in UK, Canada and US is around 6–8%." — [FULL TEXT, direct quote]
+   Australia challenge-proven IgE-mediated food allergy: "up to 10% of 1-year-old children." — [FULL TEXT, direct quote]
+
+8. Expected trajectory: "It is expected that with further increasing urbanisation, development and affluence, the prevalence of food allergy in Asia, including India will increase similar to the observed rise in asthma prevalence, mirroring that of the western world." — [FULL TEXT, direct quote]
+
+### India-specific allergen
+
+9. "In India, chickpea (*Cicer arietinum*) is a common allergen as it is consumed in various forms including boiled, roasted and flour. Anaphylaxis to chickpea has been reported." — [FULL TEXT, direct quote]
+   For us: Chickpea is the only India-specific allergen named in this paper. The paper does not discuss black gram, lentil, eggplant, or prawn specifically — it focuses on the Big 8 allergens as the main clinical framework, with chickpea as the India exception.
+
+### Diagnosis
+
+10. "A reliable thorough clinical history, combined with positive skin prick tests or food-specific IgE, is essential for a more precise diagnosis of food allergy." — [FULL TEXT, direct quote]
+
+11. The paper does not present oral food challenge (OFC) as a standard diagnostic step in the Indian context. OFC is described as "resource-intensive" — DON'T KNOW if those exact words are used, but the paper discusses it as part of "emerging therapies" framing (anticipatory testing and desensitisation), not routine diagnosis.
+
+### Management and the labelling policy gap
+
+12. "Currently there is no cure for food allergy. The management of food allergy usually includes strict avoidance, patient education and provision of emergency medication (adrenaline-autoinjectors)." — [FULL TEXT, direct quote from abstract]
+
+13. **Key policy statement**: "Lack of food labelling policy and non availability of adrenaline auto-injectors is a huge limiting factor for effective management of food allergy among children in India." — [FULL TEXT, direct quote from abstract]
+    For us: This is the clearest direct linkage in our paper set between food labelling policy (FSSAI's responsibility) and patient safety outcomes. Written by authors with Indian clinical experience (Devdas, Ratageri both at Indian institutions).
+
+### Risk factors
+
+14. Risk factors discussed: male sex in childhood; ethnicity (non-white minorities in US have higher sensitisation); Vitamin D insufficiency; omega-3 deficiency; obesity; antacid use; co-existent atopy (atopic dermatitis, asthma); hygiene hypothesis / reduced infection exposure. — [FULL TEXT]
+
+15. Skin barrier dysfunction: "Epithelial barrier dysfunction due to filaggrin (FLG) loss-of-function mutations are associated with peanut allergy where skin exposure may be the sensitising route." — [FULL TEXT, direct quote]
+    For us: Route of sensitisation matters. Cutaneous sensitisation (through a broken skin barrier) is distinct from oral tolerance induction through early food exposure.
+
+## Gaps documented
+
+- Paucity of Indian paediatric data (stated explicitly by authors)
+- No validated Indian challenge protocol or challenge centre data
 - Lack of food labelling policy in India (as of 2018)
-- Non-availability of adrenaline auto-injectors
-- Oral food challenge likely underused in Indian clinical settings (inferred, not explicitly stated in available text — DON'T KNOW if the paper says this directly)
+- Non-availability of adrenaline auto-injectors in India (as of 2018)
+- OFC likely underused due to resource constraints (inferred — paper does not state this explicitly for India)
 
-## Questions for full text access
+## What this paper does not address
 
-- What specific foods are discussed as causing allergy in Indian children?
-- Does the paper present any original clinical data from the Indian setting, or is it primarily reviewing existing literature?
-- What does "probable food allergy" mean in the paper's clinical framing vs "confirmed food allergy"?
-- Does the paper comment on what an adequate labelling framework would look like?
+- Whether FSSAI has acted on the labelling gap since 2018: DON'T KNOW
+- Allergens beyond the Big 8 and chickpea: not discussed
+- North-East India or tribal dietary pattern allergens: not covered
