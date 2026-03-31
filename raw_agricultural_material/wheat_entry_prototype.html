@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IFID Wheat Entry — A/B Prototype</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background: #f5f4f0; font-family: system-ui, sans-serif; }
+    .navbar-brand { font-family: monospace; letter-spacing: 0.04em; font-size: 0.95rem; }
+
+    /* Source lock badge */
+    .source-lock { background: #1e2a5e; color: #fff; font-family: monospace; font-size: 0.8rem; padding: 3px 10px; border-radius: 4px; letter-spacing: 0.05em; }
+
+    /* Tab A — tree */
+    .step-done { border-left: 3px solid #adb5bd; background: #fafaf8; }
+    .step-active { border-left: 3px solid #1e2a5e; background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+    .step-result { border-left: 3px solid #198754; background: #f0faf4; }
+    .step-oos { border-left: 3px solid #ffc107; }
+    .back-btn { font-size: 0.75rem; padding: 2px 8px; }
+    .breadcrumb-trail { font-family: monospace; font-size: 0.82rem; color: #6c757d; word-break: break-word; }
+    .result-name { font-size: 1.25rem; font-weight: 600; color: #1e2a5e; }
+    .result-path-str { font-family: monospace; font-size: 0.78rem; color: #6c757d; }
+
+    /* Tab B — search */
+    .list-group-header { background: #e9ecef; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #495057; padding: 6px 14px; }
+    .entry-item { cursor: pointer; transition: background 0.1s; border-left: 3px solid transparent; }
+    .entry-item:hover { background: #eef0f8; border-left-color: #1e2a5e; }
+    .entry-item.selected { background: #1e2a5e !important; color: #fff; border-left-color: #1e2a5e; }
+    .entry-item.selected .path-str, .entry-item.selected .oos-badge { color: #adb5bd !important; }
+    .entry-item.oos { opacity: 0.65; }
+    .path-str { font-family: monospace; font-size: 0.75rem; color: #6c757d; }
+    .oos-badge { font-size: 0.68rem; background: #fff3cd; color: #664d03; border-radius: 3px; padding: 1px 6px; white-space: nowrap; }
+
+    /* Shared */
+    .canon-name { font-size: 1.15rem; font-weight: 600; color: #1e2a5e; }
+    #search-input:focus { border-color: #1e2a5e; box-shadow: 0 0 0 0.2rem rgba(30,42,94,.15); }
+    .filter-pill.active { background: #1e2a5e; color: #fff; border-color: #1e2a5e; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-light bg-white border-bottom mb-4 px-3 py-2">
+  <span class="navbar-brand mb-0">IFID — Ingredient Entry Prototype</span>
+  <span class="text-muted" style="font-size:0.8rem;">wheat · A/B test</span>
+</nav>
+
+<div class="container pb-5" style="max-width:820px;">
+
+  <ul class="nav nav-tabs mb-4" id="mainTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active fw-semibold" id="tabA-btn" data-bs-toggle="tab" data-bs-target="#tabA" type="button" role="tab">
+        A &nbsp;·&nbsp; Step-by-step
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link fw-semibold" id="tabB-btn" data-bs-toggle="tab" data-bs-target="#tabB" type="button" role="tab">
+        B &nbsp;·&nbsp; Search &amp; pick
+      </button>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+
+    <!-- ================================================================ TAB A -->
+    <div class="tab-pane fade show active" id="tabA" role="tabpanel">
+
+      <div class="d-flex align-items-center gap-2 mb-3">
+        <span class="text-muted" style="font-size:0.82rem;">source</span>
+        <span class="source-lock">wheat</span>
+        <span class="text-muted" style="font-size:0.78rem;">(locked — this form is wheat only)</span>
+      </div>
+
+      <div class="breadcrumb-trail mb-3" id="a-breadcrumb">wheat</div>
+
+      <div id="a-steps"></div>
+
+      <!-- Result panel -->
+      <div id="a-result" class="card step-result p-3 mt-2 d-none">
+        <div class="text-muted mb-1" style="font-size:0.78rem;">canonical IFID name</div>
+        <div class="result-name" id="a-result-name"></div>
+        <div class="result-path-str mt-1" id="a-result-path"></div>
+        <div class="mt-2" id="a-result-oos"></div>
+        <hr class="my-2">
+        <button class="btn btn-outline-secondary btn-sm" onclick="resetTree()">↺ &nbsp;Start over</button>
+      </div>
+
+    </div>
+
+    <!-- ================================================================ TAB B -->
+    <div class="tab-pane fade" id="tabB" role="tabpanel">
+
+      <div class="mb-3">
+        <input type="search" class="form-control" id="search-input"
+          placeholder="Search wheat ingredients…" value="wheat" oninput="renderList()">
+      </div>
+
+      <!-- Filter pills -->
+      <div class="d-flex flex-wrap gap-2 mb-3" id="filter-bar">
+        <button class="btn btn-sm btn-outline-secondary filter-pill active" data-f="all"     onclick="setFilter(this)">All</button>
+        <button class="btn btn-sm btn-outline-secondary filter-pill"        data-f="flour"   onclick="setFilter(this)">Flour</button>
+        <button class="btn btn-sm btn-outline-secondary filter-pill"        data-f="semolina" onclick="setFilter(this)">Semolina</button>
+        <button class="btn btn-sm btn-outline-secondary filter-pill"        data-f="fortified" onclick="setFilter(this)">Fortified</button>
+        <button class="btn btn-sm btn-outline-secondary filter-pill"        data-f="grain"   onclick="setFilter(this)">Grain</button>
+        <button class="btn btn-sm btn-outline-secondary filter-pill"        data-f="processed" onclick="setFilter(this)">Processed</button>
+      </div>
+
+      <div class="list-group mb-3" id="b-list"></div>
+
+      <!-- Selected result -->
+      <div id="b-result" class="card step-result p-3 d-none">
+        <div class="text-muted mb-1" style="font-size:0.78rem;">selected IFID entry</div>
+        <div class="canon-name" id="b-result-name"></div>
+        <div class="result-path-str mt-1" id="b-result-path"></div>
+        <div class="mt-2" id="b-result-oos"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// =============================================================================
+// DECISION TREE
+// =============================================================================
+const TREE = {
+  state: {
+    q: "Physical state",
+    hint: "What is the physical form of this wheat ingredient on the label?",
+    opts: [
+      { v: "grain",     l: "Grain — whole, unprocessed",                 result: "Wheat" },
+      { v: "milled",    l: "Milled product (flour or semolina)",          next: "milled_grade" },
+      { v: "malted",    l: "Malted / germinated",                         result: "Malted Wheat" },
+      { v: "flaked",    l: "Flaked (steamed and rolled)",                 result: "Wheat Flakes" },
+      { v: "fraction",  l: "Fraction (cream or powder)",                  next: "fraction_type" },
+      { v: "processed", l: "Processed food (baked / extruded)",           next: "processed_type" },
+    ]
+  },
+  milled_grade: {
+    q: "Milling grade",
+    hint: "How finely has the wheat been milled?",
+    opts: [
+      { v: "coarse",   l: "Coarse / semolina",                                    next: "semolina_variety" },
+      { v: "whole",    l: "Whole flour — bran and germ retained",                  next: "whole_method" },
+      { v: "refined",  l: "Refined flour — endosperm only (maida)",               next: "refined_grade" },
+    ]
+  },
+  semolina_variety: {
+    q: "Variety",
+    hint: "Is this from a specific named wheat variety?",
+    opts: [
+      { v: "standard",  l: "Standard / generic (rava, sooji, semolina)",           result: "Wheat Semolina" },
+      { v: "bansi",     l: "Bansi variety — hard wheat, durum-adjacent",           result: "Bansi Wheat Semolina" },
+    ]
+  },
+  whole_method: {
+    q: "Milling method",
+    hint: "Standard atta, or resultant (streams separated then recombined)?",
+    opts: [
+      { v: "standard",  l: "Standard whole wheat flour (atta)",                    next: "whole_fortified" },
+      { v: "resultant", l: "Resultant — bran stream recombined post-separation",   result: "Whole Wheat Flour — Resultant" },
+    ]
+  },
+  whole_fortified: {
+    q: "Fortification",
+    hint: "Is this flour fortified under FSSAI standards?",
+    opts: [
+      { v: "no",   l: "No — unfortified",                   result: "Whole Wheat Flour" },
+      { v: "yes",  l: "Yes — FSSAI fortification applied",  next: "whole_agents" },
+    ]
+  },
+  whole_agents: {
+    q: "Declared fortification agent",
+    hint: "Which agent is declared on the label?",
+    opts: [
+      { v: "iron_uns",  l: "Iron — form not declared on label",             result: "Fortified Whole Wheat Flour — Iron (form unspecified)" },
+      { v: "elec",      l: "Electrolytic Iron",                             result: "Fortified Whole Wheat Flour — Electrolytic Iron" },
+      { v: "fumarate",  l: "Ferrous Fumarate",                              result: "Fortified Whole Wheat Flour — Ferrous Fumarate" },
+      { v: "sulphate",  l: "Ferrous Sulphate",                              result: "Fortified Whole Wheat Flour — Ferrous Sulphate" },
+      { v: "multi",     l: "Multiple agents (folic acid, riboflavin, thiamin, zinc…)", result: "Fortified Whole Wheat Flour — Multi-agent" },
+    ]
+  },
+  refined_grade: {
+    q: "Particle size",
+    hint: "Is the grind standard maida, or explicitly declared fine on the label?",
+    opts: [
+      { v: "standard",  l: "Standard refined — maida",                            next: "refined_fortified" },
+      { v: "fine",      l: "Fine grind — explicitly declared on label",            result: "Fine Wheat Flour" },
+    ]
+  },
+  refined_fortified: {
+    q: "Fortification",
+    hint: "Is this flour fortified under FSSAI standards?",
+    opts: [
+      { v: "no",   l: "No — unfortified",                   result: "Refined Wheat Flour" },
+      { v: "yes",  l: "Yes — FSSAI fortification applied",  next: "refined_agents" },
+    ]
+  },
+  refined_agents: {
+    q: "Declared fortification agent",
+    hint: "Which agent is declared on the label?",
+    opts: [
+      { v: "iron_uns",  l: "Iron — form not declared on label",              result: "Fortified Refined Wheat Flour — Iron (form unspecified)" },
+      { v: "elec",      l: "Electrolytic Iron",                              result: "Fortified Refined Wheat Flour — Electrolytic Iron" },
+      { v: "fumarate",  l: "Ferrous Fumarate",                               result: "Fortified Refined Wheat Flour — Ferrous Fumarate" },
+      { v: "zinc_s",    l: "Zinc Sulphate",                                  result: "Fortified Refined Wheat Flour — Zinc Sulphate" },
+      { v: "zinc_m",    l: "Zinc Sulphate Monohydrate",                      result: "Fortified Refined Wheat Flour — Zinc Sulphate Monohydrate" },
+      { v: "multi",     l: "Multiple agents (folic acid, riboflavin, thiamin, zinc…)", result: "Fortified Refined Wheat Flour — Multi-agent" },
+    ]
+  },
+  fraction_type: {
+    q: "Fraction type",
+    opts: [
+      { v: "cream",   l: "Cream (fat / starch fraction)",          result: "Wheat Cream" },
+      { v: "powder",  l: "Powder (dried, possibly instantised)",   result: "Wheat Powder" },
+    ]
+  },
+  processed_type: {
+    q: "Processed food type",
+    hint: "These fall outside the raw agricultural ingredient scope.",
+    oos: true,
+    opts: [
+      { v: "wafer",    l: "Wafer — thin baked sheet",                         result: "Wheat Wafer" },
+      { v: "waffle",   l: "Waffle — leavened, grid-patterned",                result: "Wheat Waffle" },
+      { v: "cone",     l: "Wafer Cone — ice cream application",               result: "Wheat Wafer Cone" },
+      { v: "biscuit",  l: "Wafer Biscuit — thin, layered",                    result: "Wheat Wafer Biscuit" },
+      { v: "crispies", l: "Crispies — puffed or extruded",                    result: "Wheat Crispies" },
+      { v: "pasta",    l: "Pasta — extruded, dried (durum wheat implied)",    result: "Macaroni Pasta — Wheat" },
+      { v: "noodle",   l: "Noodle flour — refined, application-specific",     result: "Wheat Noodle Flour (Refined)" },
+    ]
+  }
+};
+
+// Walk history to find current step or result
+let history = []; // [{stepId, v, l}]
+
+function currentResult() {
+  if (!history.length) return null;
+  const h = history[history.length - 1];
+  const opt = TREE[h.stepId].opts.find(o => o.v === h.v);
+  return opt.result || null;
+}
+
+function nextStepId() {
+  if (!history.length) return "state";
+  const h = history[history.length - 1];
+  const opt = TREE[h.stepId].opts.find(o => o.v === h.v);
+  if (opt.result) return null;
+  return opt.next;
+}
+
+function isOos() {
+  return history.some(h => TREE[h.stepId].oos);
+}
+
+function renderTree() {
+  const container = document.getElementById("a-steps");
+  container.innerHTML = "";
+
+  // Completed steps
+  history.forEach((h, i) => {
+    const step = TREE[h.stepId];
+    const opt  = step.opts.find(o => o.v === h.v);
+    const card = document.createElement("div");
+    card.className = "card step-done p-2 px-3 mb-2 d-flex flex-row justify-content-between align-items-start";
+    card.innerHTML = `
+      <div>
+        <div style="font-size:0.72rem;color:#6c757d;">Step ${i+1} — ${step.q}</div>
+        <div style="font-size:0.9rem;font-weight:500;">${opt.l}</div>
+      </div>`;
+    const btn = document.createElement("button");
+    btn.className = "btn btn-outline-secondary back-btn ms-2 mt-1";
+    btn.textContent = "↩";
+    btn.onclick = () => { history = history.slice(0, i); renderTree(); };
+    card.appendChild(btn);
+    container.appendChild(card);
+  });
+
+  const result = currentResult();
+  const nextId  = nextStepId();
+  const resultEl = document.getElementById("a-result");
+
+  if (result) {
+    // Terminal — show result
+    resultEl.classList.remove("d-none");
+    resultEl.classList.toggle("step-oos", isOos());
+    document.getElementById("a-result-name").textContent = result;
+    document.getElementById("a-result-path").textContent =
+      "wheat → " + history.map(h => h.l).join(" → ");
+    const oosDiv = document.getElementById("a-result-oos");
+    oosDiv.innerHTML = isOos()
+      ? '<span class="badge bg-warning text-dark">Out of scope — not a raw agricultural ingredient</span>'
+      : "";
+  } else {
+    resultEl.classList.add("d-none");
+    if (nextId) {
+      const step = TREE[nextId];
+      const stepNum = history.length + 1;
+      const card = document.createElement("div");
+      card.className = "card step-active p-3 mb-2";
+
+      const label = document.createElement("div");
+      label.style.cssText = "font-size:0.72rem;color:#6c757d;margin-bottom:4px;";
+      label.textContent = `Step ${stepNum} — ${step.q}`;
+      card.appendChild(label);
+
+      if (step.hint) {
+        const hint = document.createElement("div");
+        hint.className = "text-muted mb-2";
+        hint.style.fontSize = "0.82rem";
+        hint.textContent = step.hint;
+        card.appendChild(hint);
+      }
+
+      if (step.oos) {
+        const warn = document.createElement("div");
+        warn.className = "alert alert-warning py-1 px-2 mb-2";
+        warn.style.fontSize = "0.82rem";
+        warn.textContent = "⚠ These fall outside the raw agricultural ingredient scope.";
+        card.appendChild(warn);
+      }
+
+      step.opts.forEach(opt => {
+        const fc = document.createElement("div");
+        fc.className = "form-check mb-1";
+
+        const inp = document.createElement("input");
+        inp.type = "radio";
+        inp.name = "step_" + nextId;
+        inp.id   = "opt_" + nextId + "_" + opt.v;
+        inp.className = "form-check-input";
+        inp.addEventListener("change", () => {
+          history.push({ stepId: nextId, v: opt.v, l: opt.l });
+          renderTree();
+        });
+
+        const lbl = document.createElement("label");
+        lbl.className = "form-check-label";
+        lbl.htmlFor = inp.id;
+        lbl.textContent = opt.l;
+
+        fc.appendChild(inp);
+        fc.appendChild(lbl);
+        card.appendChild(fc);
+      });
+
+      container.appendChild(card);
+    }
+  }
+
+  // Breadcrumb
+  document.getElementById("a-breadcrumb").textContent =
+    history.length
+      ? "wheat → " + history.map(h => h.l).join(" → ")
+      : "wheat";
+}
+
+function resetTree() {
+  history = [];
+  renderTree();
+}
+
+renderTree();
+
+
+// =============================================================================
+// TAB B — COMBINATORIAL LIST
+// =============================================================================
+const ALL = [
+  // Grain
+  { name: "Wheat",                    path: "wheat → grain",                                        tags: ["grain"],                        group: "Grain" },
+  { name: "Malted Wheat",             path: "wheat → malted",                                       tags: ["grain","malted"],               group: "Grain" },
+  { name: "Wheat Flakes",             path: "wheat → flaked",                                       tags: ["grain","flaked"],               group: "Grain" },
+  // Semolina
+  { name: "Wheat Semolina",           path: "wheat → milled → coarse → standard",                   tags: ["semolina","coarse"],            group: "Semolina" },
+  { name: "Bansi Wheat Semolina",     path: "wheat → milled → coarse → Bansi variety",              tags: ["semolina","coarse","variety"],  group: "Semolina" },
+  // Whole flour
+  { name: "Whole Wheat Flour",        path: "wheat → milled → whole → standard → unfortified",      tags: ["flour","whole-grain"],          group: "Flour — Whole" },
+  { name: "Whole Wheat Flour — Resultant", path: "wheat → milled → whole → resultant",             tags: ["flour","whole-grain","recombined"], group: "Flour — Whole" },
+  { name: "Fortified Whole Wheat Flour — Iron (form unspecified)", path: "wheat → milled → whole → standard → fortified → iron (unspecified)", tags: ["flour","whole-grain","fortified","iron"], group: "Flour — Whole" },
+  { name: "Fortified Whole Wheat Flour — Electrolytic Iron",       path: "wheat → milled → whole → standard → fortified → electrolytic iron",  tags: ["flour","whole-grain","fortified","iron"], group: "Flour — Whole" },
+  { name: "Fortified Whole Wheat Flour — Ferrous Fumarate",        path: "wheat → milled → whole → standard → fortified → ferrous fumarate",   tags: ["flour","whole-grain","fortified","iron"], group: "Flour — Whole" },
+  { name: "Fortified Whole Wheat Flour — Ferrous Sulphate",        path: "wheat → milled → whole → standard → fortified → ferrous sulphate",   tags: ["flour","whole-grain","fortified","iron"], group: "Flour — Whole" },
+  { name: "Fortified Whole Wheat Flour — Multi-agent",             path: "wheat → milled → whole → standard → fortified → multiple agents",    tags: ["flour","whole-grain","fortified"],        group: "Flour — Whole" },
+  // Refined flour
+  { name: "Refined Wheat Flour",      path: "wheat → milled → refined → standard → unfortified",   tags: ["flour","refined"],              group: "Flour — Refined" },
+  { name: "Fine Wheat Flour",         path: "wheat → milled → refined → fine grind",               tags: ["flour","refined","fine"],       group: "Flour — Refined" },
+  { name: "Fortified Refined Wheat Flour — Iron (form unspecified)", path: "wheat → milled → refined → standard → fortified → iron (unspecified)", tags: ["flour","refined","fortified","iron"], group: "Flour — Refined" },
+  { name: "Fortified Refined Wheat Flour — Electrolytic Iron",       path: "wheat → milled → refined → standard → fortified → electrolytic iron",  tags: ["flour","refined","fortified","iron"], group: "Flour — Refined" },
+  { name: "Fortified Refined Wheat Flour — Ferrous Fumarate",        path: "wheat → milled → refined → standard → fortified → ferrous fumarate",   tags: ["flour","refined","fortified","iron"], group: "Flour — Refined" },
+  { name: "Fortified Refined Wheat Flour — Zinc Sulphate",           path: "wheat → milled → refined → standard → fortified → zinc sulphate",      tags: ["flour","refined","fortified","zinc"], group: "Flour — Refined" },
+  { name: "Fortified Refined Wheat Flour — Zinc Sulphate Monohydrate", path: "wheat → milled → refined → standard → fortified → zinc sulphate monohydrate", tags: ["flour","refined","fortified","zinc"], group: "Flour — Refined" },
+  { name: "Fortified Refined Wheat Flour — Multi-agent",              path: "wheat → milled → refined → standard → fortified → multiple agents",   tags: ["flour","refined","fortified"],        group: "Flour — Refined" },
+  // Fractions
+  { name: "Wheat Cream",              path: "wheat → fraction → cream",                             tags: ["fraction","cream"],             group: "Fractions" },
+  { name: "Wheat Powder",             path: "wheat → fraction → powder",                            tags: ["fraction","powder"],            group: "Fractions" },
+  // Processed — out of scope
+  { name: "Wheat Wafer",              path: "wheat → processed → wafer",                            tags: ["processed","baked"],  group: "Processed (Out of Scope)", oos: true },
+  { name: "Wheat Waffle",             path: "wheat → processed → waffle",                           tags: ["processed","baked"],  group: "Processed (Out of Scope)", oos: true },
+  { name: "Wheat Wafer Cone",         path: "wheat → processed → cone",                             tags: ["processed","baked"],  group: "Processed (Out of Scope)", oos: true },
+  { name: "Wheat Wafer Biscuit",      path: "wheat → processed → biscuit",                          tags: ["processed","baked"],  group: "Processed (Out of Scope)", oos: true },
+  { name: "Wheat Crispies",           path: "wheat → processed → crispies",                         tags: ["processed","extruded"], group: "Processed (Out of Scope)", oos: true },
+  { name: "Macaroni Pasta — Wheat",   path: "wheat → processed → pasta",                            tags: ["processed","extruded","pasta"], group: "Processed (Out of Scope)", oos: true },
+  { name: "Wheat Noodle Flour (Refined)", path: "wheat → processed → noodle flour",                tags: ["flour","refined","processed"],  group: "Processed (Out of Scope)", oos: true },
+];
+
+let activeFilter = "all";
+let selectedName = null;
+
+function setFilter(btn) {
+  activeFilter = btn.dataset.f;
+  document.querySelectorAll(".filter-pill").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  renderList();
+}
+
+function renderList() {
+  const q  = document.getElementById("search-input").value.toLowerCase().trim();
+  const ul = document.getElementById("b-list");
+  ul.innerHTML = "";
+
+  const filterTag = {
+    all:       () => true,
+    flour:     item => item.tags.includes("flour"),
+    semolina:  item => item.tags.includes("semolina"),
+    fortified: item => item.tags.includes("fortified"),
+    grain:     item => item.group === "Grain",
+    processed: item => !!item.oos,
+  }[activeFilter] || (() => true);
+
+  const groups = {};
+  ALL.forEach(item => {
+    if (!filterTag(item)) return;
+    if (q && !item.name.toLowerCase().includes(q) && !item.path.toLowerCase().includes(q)) return;
+    if (!groups[item.group]) groups[item.group] = [];
+    groups[item.group].push(item);
+  });
+
+  if (!Object.keys(groups).length) {
+    ul.innerHTML = '<div class="list-group-item text-muted">No results.</div>';
+    return;
+  }
+
+  Object.entries(groups).forEach(([grp, items]) => {
+    const hdr = document.createElement("div");
+    hdr.className = "list-group-header";
+    hdr.textContent = grp;
+    ul.appendChild(hdr);
+
+    items.forEach(item => {
+      const el = document.createElement("div");
+      const isSel = selectedName === item.name;
+      el.className = "list-group-item entry-item" + (item.oos ? " oos" : "") + (isSel ? " selected" : "");
+      el.innerHTML = `
+        <div class="d-flex justify-content-between align-items-start">
+          <div>
+            <div style="font-weight:500;font-size:0.92rem;">${item.name}</div>
+            <div class="path-str">${item.path}</div>
+          </div>
+          ${item.oos ? '<span class="oos-badge align-self-center ms-2">out of scope</span>' : ""}
+        </div>`;
+      el.addEventListener("click", () => {
+        selectedName = item.name;
+        renderList(); // re-render to update highlight
+
+        const panel = document.getElementById("b-result");
+        panel.classList.remove("d-none");
+        panel.classList.toggle("step-oos", !!item.oos);
+        document.getElementById("b-result-name").textContent = item.name;
+        document.getElementById("b-result-path").textContent = item.path;
+        document.getElementById("b-result-oos").innerHTML = item.oos
+          ? '<span class="badge bg-warning text-dark">Out of scope — not a raw agricultural ingredient</span>'
+          : "";
+      });
+      ul.appendChild(el);
+    });
+  });
+}
+
+renderList();
+</script>
+</body>
+</html>

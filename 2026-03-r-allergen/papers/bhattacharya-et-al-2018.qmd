@@ -3,7 +3,8 @@ title: "Spectrum of Allergens and Allergen Biology in India"
 author: "Kashinath Bhattacharya, Gaurab Sircar, Angira Dasgupta, Swati Gupta Bhattacharya"
 year: 2018
 doi: "10.1159/000490805"
-journal: "International Archives of Allergy and Immunology"
+journal:
+   name: "International Archives of Allergy and Immunology"
 volume: "177(3):219–237"
 pmid: "30056449"
 access: "Paywalled — Karger Publishers. PDF accessed directly."

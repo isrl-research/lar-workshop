@@ -3,7 +3,8 @@ title: "Food allergy in a changing dietary landscape: A focus on the Asia Pacifi
 author: "Agnes Sze-yin Leung, Punchama Pacharn, Sirinoot Tangvalelerd, Sakura Sato, Elizabeth Pitt, Gary Wong et al."
 year: 2024
 doi: "10.1111/pai.14211"
-journal: "Pediatric Allergy and Immunology"
+journal:
+   name: "Pediatric Allergy and Immunology"
 volume: "35(8):e14211"
 pmid: "DON'T KNOW"
 access: "Open access — CC BY-NC 4.0. PDF accessed via institutional download (Wiley Online Library, dated 31/03/2026)."

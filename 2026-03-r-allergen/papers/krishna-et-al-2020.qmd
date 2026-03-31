@@ -3,7 +3,8 @@ title: "An appraisal of allergic disorders in India and an urgent call for actio
 author: "Mamidipudi Thirumala Krishna, Saibal Moitra, Padukudru Anand Mahesh, Vinay Mehta, Pudupakkam Vedanthan, Devasahayam Jesudas Christopher"
 year: 2020
 doi: "10.1016/j.waojou.2020.100446"
-journal: "World Allergy Organization Journal"
+journal:
+   name: "World Allergy Organization Journal"
 volume: "13(7):100446"
 pmid: "32774662"
 pmcid: "PMC7398972"

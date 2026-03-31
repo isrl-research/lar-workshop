@@ -3,7 +3,8 @@ title: "Prevalence of food allergies in South Asia"
 author: "Shweta R. Arakali, Todd D. Green, Chitra Dinakar"
 year: 2017
 doi: "10.1016/j.anai.2016.09.441"
-journal: "Annals of Allergy, Asthma & Immunology"
+journal:
+   name: "Annals of Allergy, Asthma & Immunology"
 volume: "118:16–20"
 pmid: "27864090"
 access: "Paywalled — ScienceDirect. PDF at annallergy.org failed to fetch."

@@ -3,7 +3,8 @@ title: "A Review of Naturally Occurring Food Allergens and Their Impact on Healt
 author: "Renu Indhikkattu Chittoor, Harikumaran Thampi Balakrishnan Saraswathi"
 year: 2022
 doi: "10.13005/bbra/2965"
-journal: "Biosciences Biotechnology Research Asia"
+journal:
+   name: "Biosciences Biotechnology Research Asia"
 volume: "19(1):13–35"
 pmid: "DON'T KNOW"
 access: "Open access — CC BY 4.0. PDF accessed directly."

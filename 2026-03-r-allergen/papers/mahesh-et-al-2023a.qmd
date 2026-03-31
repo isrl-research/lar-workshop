@@ -3,7 +3,8 @@ title: "Allergic sensitization to foods in India and other Low–Middle-income c
 author: "Padukudru Anand Mahesh, Mohammed Kaleem Ullah, Ashwaghosha Parthasarathi"
 year: 2023
 doi: "10.1111/cea.14300"
-journal: "Clinical & Experimental Allergy"
+journal:
+   name: "Clinical & Experimental Allergy"
 volume: "53(7):739–750"
 pmid: "36825760"
 access: "Paywalled — Wiley Online Library"

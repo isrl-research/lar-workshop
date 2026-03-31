@@ -1,6 +1,6 @@
 ---
-title: "Food Allergens in India"
-subtitle: "Evidence from the literature, the FSSAI regulatory list, and a proposed list for IFID"
+title: "Food Allergens in India: What the Evidence Actually Shows"
+subtitle: "A review of clinical literature, the FSSAI regulatory framework, and an allergen classification for Indian ingredient data"
 author:
   - name: Lalitha A R
     affiliation: iSRL
@@ -22,25 +22,25 @@ bibliography: references.bib
 
 ## Abstract
 
+If you are building an ingredient taxonomy and you want some ingredients to be automatically recognised as allergens, you need to know which foods cause allergic reactions in the population you are serving. For India, that question has a more complicated answer than it first appears.
+
 India has among the lowest documented food allergy prevalence in the Asia-Pacific: 0.14% in children and 1.2% in adults, both figures from the EuroPrevall-INCO study conducted in Karnataka [@mahesh2023b; @leung2024]. Sensitisation — the immune system producing IgE antibodies to a food protein, distinct from clinical allergy — is considerably more common: 19.1% by serum-specific IgE in the same children, a 136-fold gap from the clinical allergy figure.
 
 India's mandatory allergen declaration framework (FSSAI Regulation 5(14), Food Safety and Standards (Labelling and Display) Regulations, 2020, operationalised 1 July 2022) requires declaration of 8 allergen groups, following the pre-2024 Codex Alimentarius standard [@fssai2020; @codex2024]. Several foods with documented sensitisation in Indian populations are absent from this list, including sesame (8.0% serum-specific IgE in children), rice (double-blind placebo-controlled food challenge (DBPCFC) confirmed), black gram (DBPCFC confirmed), chickpea (anaphylaxis documented), and eggplant (community study data available).
 
-Expanding the mandatory list requires more clinical challenge data than currently exists for most candidates — a genuine constraint arising from structural gaps in the Indian allergy research infrastructure, not a failure of regulatory awareness. The Codex 2024 revision has since added sesame as mandatory and reclassified soy as recommended; whether FSSAI will align with these changes is not known at the time of writing [@codex2024].
-
-The Indian Food Ingredient Database (IFID) adopts the FSSAI core 8 as its baseline and adds 9 allergen groups drawn from Indian literature evidence. This paper documents the sources and reasoning behind that extended list.
+The gap between the regulatory list and the clinical literature is not the whole story. Expanding a mandatory list requires confirmed clinical challenge data, which is structurally difficult to generate at scale under the conditions that currently characterise Indian allergy research infrastructure. This paper documents what the literature says, what the regulation requires, and where they converge and diverge — as the basis for an allergen recognition list for the Indian Food Ingredient Database (IFID). The Codex 2024 revision has since added sesame as mandatory and reclassified soy as recommended; whether FSSAI will align with these changes is not known at the time of writing [@codex2024].
 
 ---
 
-## 1. Introduction
+## 1. The question
 
-This paper does three things: it reviews what Indian clinical and epidemiological literature documents as food allergen risk; it maps that evidence against what FSSAI's current mandatory labelling framework requires; and it derives from that mapping an allergen recognition list for IFID, the Indian Food Ingredient Database.
+An ingredient taxonomy that flags allergens needs to know which ingredients to flag. For a general-purpose international system, the answer is usually the major allergen lists maintained by regulatory bodies — the Codex eight, the EU fourteen, the US nine. For a taxonomy built specifically for Indian ingredients and the Indian food system, that answer is not quite sufficient and not quite wrong.
+
+It is not sufficient because some foods with documented clinical relevance in Indian populations are not on those lists. It is not quite wrong because those lists were constructed from the best available international evidence, and the India-specific challenge data that would justify additions is, for most candidate allergens, genuinely limited.
+
+This paper does three things: reviews what Indian clinical and epidemiological literature documents as food allergen risk; maps that evidence against what FSSAI's current mandatory labelling framework requires; and derives from that mapping an allergen recognition list for IFID. The exercise is grounded in a specific question — which ingredients should the taxonomy automatically tag as allergen-relevant for an Indian food system — and every decision below is made in that context.
 
 A food allergen, for the purposes of this paper, is a food that triggers a specific, reproducible immune-mediated response on exposure [@devdas2018]. The clinical focus here is on IgE-mediated (type 1) hypersensitivity: the rapid-onset pathway in which a food protein induces IgE antibody production on first exposure, and symptoms — ranging from urticaria and angioedema to anaphylaxis — on subsequent exposures. Non-IgE-mediated reactions (cell-mediated, delayed onset) are not covered here, because the available Indian data is almost entirely concentrated on IgE-mediated responses, and because current regulatory and diagnostic frameworks for food allergy are built around the IgE-mediated pathway [@devdas2018].
-
-The exercise here is not a verdict on FSSAI's adequacy. India's mandatory allergen list was developed within the international regulatory framework available at the time — the Codex Alimentarius standard that had governed global food labelling since 1985 [@codex2024]. The more useful frame is: where does the Indian literature converge with that framework, where does it diverge, and what does the divergence actually mean given the quality of available evidence?
-
-The answer, as the review below shows, is that divergence exists — but the evidence base for most India-specific additions is limited in ways that researchers working in this area acknowledge explicitly. DBPCFC-confirmed allergy data, the diagnostic gold standard, exists for only three foods in the available Indian literature: rice, black gram, and chickpea, all from single-centre clinic cohorts. The gap between those three and the twenty-plus foods appearing in sensitisation data is not a labelling failure; it is a research infrastructure problem.
 
 ---
 
@@ -146,7 +146,7 @@ Several protective factors have been proposed to explain this pattern in Indian 
 
 The urbanisation signal provides some indirect evidence for the protective factor hypothesis. Children born in Hong Kong to mainland Chinese parents are approximately 4 times more likely to develop food sensitisation than mainland-born children, despite identical genetic background [@leung2024]. In Indian data, urban children consistently show higher sensitisation to prawn, peanut, fish, and milk than rural children in the same regional studies [@krishna2020]. If urban environments reduce exposure to factors that suppress clinical reactivity, rising urbanisation in India may narrow the sensitisation-reactivity gap over time.
 
-This matters directly for the question of which foods should be listed as allergens. A high sensitisation rate, standing alone, is not sufficient justification for a mandatory declaration — the regulatory question is clinical allergy burden, not immune system reactivity. For most of the foods in §3.2 with substantial sensitisation data, the clinical challenge data that would support mandatory listing does not exist in India-specific form.
+This matters directly for the taxonomy question. A high sensitisation rate, standing alone, does not settle whether an ingredient should be tagged as allergen-relevant. The relevant question is clinical allergy burden, not immune system reactivity. For most of the foods in §3.2 with substantial sensitisation data, the clinical challenge data that would establish that burden does not yet exist in India-specific form.
 
 ### 3.5 Why the evidence base is limited
 
@@ -164,7 +164,7 @@ The researchers working on Indian food allergy document the structural constrain
 
 **Emergency treatment access**: As of 2018, adrenaline auto-injectors — the standard emergency treatment for anaphylaxis — were not available in India [@devdas2018]. This affects the ability to safely conduct food challenges in clinical settings, which contributes to the scarcity of DBPCFC data.
 
-These constraints are not a gap in awareness among Indian researchers. They are a set of structural conditions — infrastructure, regulatory framework for allergen extracts, health system capacity, and geographic research coverage — that limit what the evidence can currently support.
+These are not failures of awareness or effort. They are conditions that shape what the evidence can and cannot currently establish — and any analysis that treats the resulting gaps as oversights misreads what was actually possible.
 
 ---
 
@@ -214,25 +214,35 @@ The following table places the FSSAI list in its international context.
 
 : FSSAI allergen list in international context {#tbl-regulatory-comparison}
 
-### 4.3 Where FSSAI and Indian literature converge
+### 4.3 Where FSSAI and the Indian literature converge
 
-**Crustaceans** show the strongest convergence between the regulatory framework and Indian evidence. Prawn tropomyosin (Pen i 1, *Penaeus indicus*) is India's only IUIS-registered food allergen [@bhattacharya2018]. Prawn sensitisation data is available from at least four independent Indian studies, with sensitisation rates ranging from 10.3% to 53.5% depending on study type and population [@krishna2020]. The FSSAI mandatory declaration for crustaceans is supported by the strongest body of India-specific evidence.
+**Crustaceans** show the strongest alignment between regulation and Indian evidence. Prawn tropomyosin (Pen i 1, *Penaeus indicus*) is India's only IUIS-registered food allergen [@bhattacharya2018]. Prawn sensitisation data is available from at least four independent Indian studies, with sensitisation rates ranging from 10.3% to 53.5% depending on study type and population [@krishna2020]. The mandatory declaration for crustaceans is supported by the most consistent body of India-specific evidence of any item on the list.
 
 **Milk, egg, and fish** all appear in FSSAI, and all have Indian sensitisation data. Milk sensitisation is 1.35–20.5% in the reviewed studies; probable food allergy to milk in children was 0.5% in the EuroPrevall India probable food allergy subset [@mahesh2023b]. Egg sensitisation was 6.9–34.9% in clinic-based studies; probable egg allergy 0.05% in children [@mahesh2023b]. Fish allergens characterised in India include heat-stable proteins in bhetki and mackerel [@bhattacharya2018].
 
-**Peanuts** have sIgE sensitisation of 6.3–19.6% in Indian data [@mahesh2023b; @krishna2020], though probable food allergy is approximately 0.03% — the sensitisation-reactivity paradox at its most pronounced.
+**Peanuts** have sIgE sensitisation of 6.3–19.6% in Indian data [@mahesh2023b; @krishna2020], though probable food allergy is approximately 0.03% — the sensitisation-reactivity gap at its most pronounced.
 
-**Wheat (gluten cereals)**: sIgE sensitisation 6.7–11.93%; probable food allergy 0–0.02% in the EuroPrevall India data [@mahesh2023b]. Indian data on wheat supports the FSSAI position, though the clinical allergy rate is low.
+**Wheat (gluten cereals)**: sIgE sensitisation 6.7–11.93%; probable food allergy 0–0.02% in the EuroPrevall India data [@mahesh2023b]. Indian data supports the position, though the clinical allergy rate is low.
 
-### 4.4 Where they diverge — and what that means
+### 4.4 Where the literature and the regulation diverge — and what that means for a taxonomy
 
-Several foods with documented Indian sensitisation data are absent from the FSSAI list. The divergence does not straightforwardly imply that FSSAI is incorrect. The regulatory question is not which foods produce positive sIgE tests, but which foods cause confirmed clinical allergy in the population to be protected.
+Several foods with documented Indian sensitisation data are not on the FSSAI list. For a regulatory body setting mandatory labelling requirements, the question is confirmed clinical allergy burden — and for most of these foods, the DBPCFC data to establish that burden does not exist in India-specific form. That is a straightforward constraint.
 
-For most of the foods listed in §3.2, the answer is: DBPCFC data does not yet exist in India-specific form. The three exceptions — rice, black gram, and chickpea — each have small single-centre challenge data, all from clinic-based cohorts, all published in the Indian literature and summarised in [@mahesh2023b; @krishna2020].
+For a taxonomy, the question is different. A taxonomy is not mandating a label declaration; it is organising information. The relevant question shifts from "what is confirmed enough to mandate?" to "what is documented enough to flag?" And on that question, the literature opens more room.
 
-The one food where the evidence situation has changed since FSSAI 2020 is sesame. Sesame sIgE sensitisation was 8.0% in EuroPrevall India children [@mahesh2023b], higher than peanut (6.3%). Codex 2024 has now added sesame as a mandatory declaration allergen, joining the US (since 2023) and the EU in treating it as a major allergen [@codex2024]. Whether FSSAI will update its Regulation 5(14) to align is not known at the time of writing.
+The foods where that room is most clearly supported:
 
-The FSSAI 2020 regulation adopted the international standard available at the time. The post-2024 evidence situation — primarily the Codex sesame addition and the Indian sIgE data for sesame — does create a case for an update. The case for the other candidate allergens (rice, black gram, chickpea, kidney bean, lentil, pigeon pea, eggplant) requires the kind of challenge data that, as documented in §3.5, remains structurally difficult to generate in the Indian health system.
+**Sesame** sits in the most resolved position. Sensitisation was 8.0% in EuroPrevall India children — higher than peanut (6.3%) [@mahesh2023b]. Codex 2024 has since added sesame as a mandatory declaration allergen, joining the US (since 2023) and the EU [@codex2024]. The evidence situation for sesame has materially changed since the FSSAI 2020 list was written.
+
+**Rice, black gram, and chickpea** each have Indian DBPCFC or OFC data: rice (6 of 16 confirmed), black gram (4 of 14 confirmed), chickpea (31 of 41 OFC confirmed) [@mahesh2023b; @krishna2020]. These are small single-centre cohorts. They are also the only India-specific challenge data that exists for any food not on the FSSAI list.
+
+**The Indian legume complex** — pigeon pea, kidney bean, lentil, green gram — has documented sensitisation, characterised allergen proteins, and pepsin-stable fractions [@bhattacharya2018; @krishna2020]. No OFC data. But legume proteins as a class retain IgE reactivity after gastric digestion [@bhattacharya2018], and the cross-reactive epitopes across this complex mean that primary sensitisation to one legume may carry risk across others.
+
+**Eggplant** is named among the five primary Indian food allergens by [@bhattacharya2018], appears in the adult allergen profile of EuroPrevall [@mahesh2023b], and has a characterised LTP. The SPT-based sensitisation figures carry the histamine confound noted in §3.2; the molecular evidence does not.
+
+**Mustard** is a different case — it has no India-specific clinical allergy data in the reviewed literature, but it is mandatory in the EU, widely used in Indian cooking as both oil and spice, and subject to ongoing FAO/WHO threshold assessment.
+
+The divergence, read this way, is informative rather than troubling. It marks where the regulatory process — which correctly sets a high evidentiary bar for mandatory labelling — has not yet reached, and where a taxonomy operating at a lower threshold of "documented and plausible" can be more inclusive.
 
 ---
 
@@ -258,7 +268,7 @@ The limitations of the analysis in this paper are the limitations of the underly
 
 ## 6. The IFID allergen list
 
-IFID's allergen recognition is a data classification decision: it determines what an ingredient record flags as containing an allergen-relevant food. It is not a regulatory mandate, and it does not override FSSAI requirements. Its purpose is to give food system researchers and product developers a view of allergen risk in Indian ingredients that reflects both the regulatory baseline and the evidence available from Indian clinical research.
+IFID's allergen recognition is a data classification decision: it determines what an ingredient record flags as containing an allergen-relevant food. It is not a regulatory mandate, and it does not override FSSAI requirements. The two are doing different things. FSSAI's labelling regulation is a legal threshold — it specifies what manufacturers must declare. The IFID list is an informational layer for researchers, analysts, and product developers working with Indian ingredient data. A higher bar of certainty is appropriate for a legal mandate than for a taxonomy flag.
 
 The list has three tiers.
 

@@ -3,7 +3,8 @@ title: "A review of the toxicological effects and allergenic potential of emergi
 author: "Matilde Milana et al."
 year: 2025
 doi: "10.1111/1541-4337.70123"
-journal: "Comprehensive Reviews in Food Science and Food Safety"
+journal:
+   name: "Comprehensive Reviews in Food Science and Food Safety"
 volume: "24:e70123"
 pmid: "DON'T KNOW"
 access: "Paywalled — Wiley Online Library. PDF accessed via institutional download (Wageningen University and Research, dated 27/01/2025)."

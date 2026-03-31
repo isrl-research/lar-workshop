@@ -3,7 +3,8 @@ title: "Food Allergy in Children: An Overview"
 author: "Jaidev M. Devdas, Christopher Mckie, Adam T. Fox, Vinod H. Ratageri"
 year: 2018
 doi: "10.1007/s12098-017-2535-6"
-journal: "Indian Journal of Pediatrics"
+journal:
+   name: "Indian Journal of Pediatrics"
 volume: "85:369–374"
 pmid: "29147890"
 access: "Paywalled — Springer Nature. PDF accessed directly."

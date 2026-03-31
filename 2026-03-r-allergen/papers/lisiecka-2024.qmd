@@ -3,7 +3,8 @@ title: "Characteristic features of food allergy to legumes: From epidemiology to
 author: "Maria Zofia Lisiecka"
 year: 2024
 doi: "10.1016/j.humimm.2024.111179"
-journal: "Human Immunology"
+journal:
+   name: "Human Immunology"
 volume: "85(6):111179"
 pmid: "39566437"
 access: "Paywalled — ScienceDirect. Abstract available via PubMed."
