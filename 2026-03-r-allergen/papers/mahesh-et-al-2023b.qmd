@@ -1,0 +1,56 @@
+---
+title: "Allergic diseases in India – Prevalence, risk factors and current challenges"
+author: "Padukudru Anand Mahesh et al."
+year: 2023
+doi: "10.1111/cea.14239"
+journal: "Clinical & Experimental Allergy"
+volume: "53(3):276–294"
+pmid: "36181726"
+access: "Paywalled — Wiley Online Library"
+source_quality: "Abstract + PubMed summary only. Full text not accessed."
+---
+
+# Allergic diseases in India – Prevalence, risk factors and current challenges
+
+**Authors:** Padukudru Anand Mahesh et al. (full author list: DON'T KNOW from abstract)
+**Year:** 2023
+**DOI:** 10.1111/cea.14239
+**Journal:** Clinical & Experimental Allergy, 53(3):276–294
+**PMID:** 36181726
+
+## Why this paper
+
+Brought in for epidemiology narrative and specifically for India-specific allergen discussion (eggplant, legumes). Broader scope than P01 — covers all allergic diseases, not only food allergy. Relevant primarily for sections on risk factors and the Indian-specific allergen landscape.
+
+## Extracted points
+
+> **Source quality note:** Points from PubMed abstract and search result summary. Full text not accessed.
+
+1. Rise in prevalence of allergic diseases in India documented over two decades; however, recent Global Asthma Network data shows a *decrease* in allergic rhinitis, asthma, and atopic dermatitis in children. — [ABSTRACT]
+   Context: DON'T KNOW — which years, which regions of India.
+   For us: The direction of the trend is contested between studies — this paper captures that directly.
+
+2. India has an estimated 37.5 million asthma cases. — [ABSTRACT]
+   Context: DON'T KNOW — year of estimate, data source.
+   For us: Background burden figure for allergic disease generally; not specific to food allergy.
+
+3. Disease burden described as occurring "amid an unmet demand for trained allergy specialists and poor health service framework." — [ABSTRACT, quoted directly]
+   For us: Structural limitation relevant to why food allergy data from India is sparse — not enough specialists to generate clinical case data.
+
+4. Risk factors identified: genetic factors, environmental variables, diet, tobacco smoke, air pollution, urban residence, cultural/religious/socioeconomic factors. — [ABSTRACT]
+   Context: These are listed as associated factors; causal evidence levels not available from abstract.
+   For us: Urban-rural and dietary variation matters for interpreting India's food allergy prevalence data.
+
+5. Eggplant and legumes mentioned as specific Indian allergens. — [SEARCH SUMMARY, based on stated key focus of this paper]
+   Context: DON'T KNOW — whether the paper presents primary data or cites other studies for these allergens, what prevalence figures if any are given.
+   For us: Needs full text to extract specific allergen data.
+
+## Gaps and challenges the authors document
+
+From abstract: lack of trained allergy specialists; inadequate health service infrastructure; unclear reasons for geographical variation in prevalence; gaps in understanding of genetic-environmental interactions.
+
+## Questions for full text access
+
+- What specific data do the authors present on eggplant and legume allergy?
+- Do the authors propose a revised allergen list for India?
+- What do they say about FSSAI or regulatory frameworks?

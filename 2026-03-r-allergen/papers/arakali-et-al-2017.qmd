@@ -1,0 +1,55 @@
+---
+title: "Prevalence of food allergies in South Asia"
+author: "Shweta R. Arakali, Todd D. Green, Chitra Dinakar"
+year: 2017
+doi: "10.1016/j.anai.2016.09.441"
+journal: "Annals of Allergy, Asthma & Immunology"
+volume: "118:16–20"
+pmid: "27864090"
+access: "Paywalled — ScienceDirect. PDF at annallergy.org failed to fetch."
+source_quality: "Abstract + search result summaries. Full text not accessed. PDF fetch failed."
+---
+
+# Prevalence of food allergies in South Asia
+
+**Authors:** Shweta R. Arakali, Todd D. Green, Chitra Dinakar
+**Year:** 2017 (published online Nov 2016)
+**DOI:** 10.1016/j.anai.2016.09.441
+**Journal:** Annals of Allergy, Asthma & Immunology, 118:16–20
+**PMID:** 27864090
+
+## Why this paper
+
+Described as a foundational review identifying knowledge gaps in native Asian Indian populations. Published 2017, meaning it predates most other papers in our set — useful as a baseline for what was known before the more recent synthesis work.
+
+## Extracted points
+
+> **Source quality note:** Points from PubMed abstract and search result summaries. Full text not accessed.
+
+1. Study methodology: PubMed search using "India and food allergy," "Asia and food allergy," "South Asia and food allergy." South Asia defined as India, Pakistan, Bangladesh, Sri Lanka. — [ABSTRACT/SEARCH SUMMARY]
+   Initial pool: 169 articles. Reviewed in detail: 47. Primary focus on: 10 studies (case reports, surveys, prospective and cross-sectional studies).
+   For us: Of 169 articles, only 10 met inclusion criteria — this is the quantitative measure of how sparse the evidence base was as of 2016.
+
+2. Main conclusion: "a variety of unusual and unique allergens and an overall low incidence of food allergy" in South Asia. — [ABSTRACT — likely close to direct quote]
+   For us: "Unusual and unique" from a Western reference point — these allergens are not on the Big 8/9 or Big 14 lists. This is a direct argument for why India needs its own list.
+
+3. Most of India's population consumes "a largely but not solely vegetarian diet" consisting mainly of rice, legumes, grains, and vegetables. Spices that are staples: red chili, coriander, cumin, mustard seed, fenugreek, ginger, turmeric, curry leaves. — [SEARCH SUMMARY]
+   For us: Dietary context is critical. These staples are also potential allergens — mustard is covered by the EU Big 14 (as mustard), but none of the others are on major regulatory lists.
+
+4. Allergens for which sensitisation was confirmed in India (from search summary): chickpea, eggplant, walnut, coconut, prawn, mango, and betel leaf. — [SEARCH SUMMARY — list may be incomplete or partially inaccurate; needs verification against full paper]
+   For us: This is the most specific allergen list we have from the paper. Note: betel leaf (*Piper betle*) is used in paan, a post-meal digestive preparation widely consumed across India — it is not on any major international allergen list.
+
+5. Association between increased food allergy prevalence and individuals living in metropolitan regions or those who have migrated to Westernised communities. — [ABSTRACT/SEARCH SUMMARY]
+   For us: Supports the urbanisation-allergy hypothesis from P08.
+
+## Gaps and challenges the authors document
+
+From abstract/search summary:
+- Knowledge gap in native Asian Indian populations explicitly identified as the study's motivation
+- Only 10 studies out of 169 articles met inclusion criteria — the evidence base as of 2016 was thin
+
+## Questions for full text access
+
+- What were the 10 primary studies? (Knowing which studies formed the evidence base as of 2016 tells us what the subsequent papers in our set built on.)
+- Were the confirmed sensitisation allergens (chickpea, eggplant, etc.) from clinical data, skin prick tests, or serum IgE?
+- Does the paper comment on methodological standardisation issues?

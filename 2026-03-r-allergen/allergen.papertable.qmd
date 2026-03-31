@@ -1,0 +1,33 @@
+---
+title: "Paper Table — Indian Food Allergen Synthesis"
+format: html
+---
+
+# Papers
+
+Last updated: 2026-03-31
+
+| ID | DOI | Authors | Year | Title | Journal | Access | Relevance |
+|----|-----|---------|------|-------|---------|--------|-----------|
+| P01 | 10.1111/cea.14300 | Mahesh PA, Ullah MK, Parthasarathi A | 2023 | Allergic sensitization to foods in India and other Low–Middle-income countries | Clinical & Experimental Allergy 53(7):739–750 | Paywalled | Primary prevalence synthesis — India sensitisation vs clinical reactivity data; LMIC comparisons |
+| P02 | 10.1111/cea.14239 | Mahesh PA et al. | 2023 | Allergic diseases in India – Prevalence, risk factors and current challenges | Clinical & Experimental Allergy 53(3):276–294 | Paywalled | Risk factor epidemiology; eggplant and legume allergens in India |
+| P03 | 10.1016/j.humimm.2024.111179 | Lisiecka MZ | 2024 | Characteristic features of food allergy to legumes: From epidemiology to prevention | Human Immunology 85(6):111179 | Paywalled | Legume allergen biology; chickpea and black gram as Indian risks; cross-reactivity data |
+| P04 | 10.1016/j.waojou.2020.100446 | Krishna MT et al. | 2020 | An appraisal of allergic disorders in India and an urgent call for action | World Allergy Organization Journal 13(7):100446 | Open access (PMC) | Evidence gaps; call for standardised Indian allergen extracts; sensitisation-reactivity paradox |
+| P05 | 10.1159/000490805 | Bhattacharya K, Sircar G, Dasgupta A, Gupta Bhattacharya S | 2018 | Spectrum of Allergens and Allergen Biology in India | Int Archives Allergy & Immunology 177(3):219–237 | Paywalled | IUIS-approved Indian allergen list; molecular characterisation of Indian allergens |
+| P06 | DON'T KNOW | Saraswathi HTB, Chittoor RI | 2022 | A Review of Naturally Occurring Food Allergens and Their Impact on Health | Biosciences Biotechnology Research Asia 19(1) | Open access (biotech-asia.org) | India children hypersensitivity vs sensitisation rates; sensitisation-reactivity paradox framing |
+| P07 | 10.1111/1541-4337.70123 | Milana M et al. | 2025 | A review of the toxicological effects and allergenic potential of emerging alternative protein sources | Comprehensive Reviews in Food Science and Food Safety 24:e70123 | Paywalled | Black gram and mung bean allergenicity; protein characterisation; cross-reactivity; processing effects |
+| P08 | 10.1111/pai.14211 | Leung ASY, Pacharn P, Tangvalelerd S, Sato S, Pitt E, Wong G et al. | 2024 | Food allergy in a changing dietary landscape: A focus on the Asia Pacific region | Pediatric Allergy and Immunology 35(8) | Paywalled | EuroPrevall INCO data from Mysore and Bengaluru; Asia Pacific comparisons; dietary shift hypothesis |
+| P09 | 10.1016/j.anai.2016.09.441 | Arakali SR, Green TD, Dinakar C | 2017 | Prevalence of food allergies in South Asia | Annals of Allergy, Asthma & Immunology 118:16–20 | Paywalled | Foundational knowledge gap review; India-specific unusual allergens (chickpea, eggplant, betel leaf, mustard); evidence base thin as of 2016 |
+| P10 | 10.1007/s12098-017-2535-6 | Devdas JM, Mckie C, Fox AT, Ratageri VH | 2018 | Food Allergy in Children: An Overview | Indian Journal of Pediatrics 85:369–374 | Paywalled | Clinical vs probable food allergy in Indian children; labelling policy gap directly named; adrenaline auto-injector unavailability |
+
+## Access status summary
+
+**Full text accessed:** P04 (PMC), P06 (biotech-asia.org)
+**Abstract + search summary only:** P01, P02, P03, P05, P07, P08, P09, P10
+**DOI missing:** P06
+
+## Priority for full text access
+
+1. **P05 (Bhattacharya 2018)** — contains the only IUIS-approved Indian allergen table. Critical for the defensible list section.
+2. **P01 (Mahesh 2023a)** — primary prevalence synthesis; need exact definitions and allergen panel details.
+3. **P08 (Leung 2024)** — EuroPrevall India site data in detail.

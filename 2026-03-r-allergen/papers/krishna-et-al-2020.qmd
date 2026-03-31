@@ -1,0 +1,80 @@
+---
+title: "An appraisal of allergic disorders in India and an urgent call for action"
+author: "Mamidipudi Thirumala Krishna et al."
+year: 2020
+doi: "10.1016/j.waojou.2020.100446"
+journal: "World Allergy Organization Journal"
+volume: "13(7):100446"
+pmid: "32774662"
+pmcid: "PMC7398972"
+access: "Open access — PMC full text available"
+source_quality: "Full text fetched from PMC. Points marked [FULL TEXT] are from the paper. Note: PMC fetch returned structured summary, not raw paper text — exact page/section locations are DON'T KNOW."
+---
+
+# An appraisal of allergic disorders in India and an urgent call for action
+
+**Authors:** Mamidipudi Thirumala Krishna et al. (full co-author list: DON'T KNOW from fetch)
+**Year:** 2020
+**DOI:** 10.1016/j.waojou.2020.100446
+**Journal:** World Allergy Organization Journal, 13(7):100446
+**PMID:** 32774662 | **PMCID:** PMC7398972
+
+## Why this paper
+
+Open-access paper covering evidence gaps and the need for standardised Indian allergen extracts. Key for the limitations section and the "what the literature doesn't cover" analysis. This paper explicitly documents challenges — which is unusual and valuable.
+
+## Extracted points
+
+> **Source quality note:** Full text was fetched from PMC but the fetch returned a structured AI summary, not the raw paper text. Numbers reported here came through that summary layer. Exact page numbers and section headings are DON'T KNOW. Treat quoted text as approximate unless the full paper is read directly.
+
+1. Asthma in India: "37.5 million cases." — [FULL TEXT, via fetch summary]
+   Context: Source of this estimate not clear from fetch. DON'T KNOW year of underlying data.
+   For us: Background burden figure; consistent with P02.
+
+2. Paediatric asthma: "40–50% of paediatric asthma cases in India are uncontrolled or severe." — [FULL TEXT, via fetch summary — this appears to be a direct quote]
+   Context: DON'T KNOW study source.
+
+3. Asthma prevalence increase: "from 41.9/1000 to 54.9/1000 population between 2004–5 and 2011–12." — [FULL TEXT, via fetch summary — appears to be a direct quote]
+   Context: National-level figures; DON'T KNOW data source.
+
+4. Economic burden: "INR 71 billion (~USD 7 billion) per year." — [FULL TEXT, via fetch summary — appears to be a direct quote]
+   Context: Asthma-specific burden, not food allergy. Per capita GDP at time of estimate given as $2,172 USD. DON'T KNOW year of estimate.
+   For us: Indicates scale of allergic disease burden; helps frame why food allergen policy matters.
+
+5. Allergic rhinitis prevalence: "12.5% and 18.6% of 6–7 year-old and 13–14 year-old children" in earlier studies; later data "12.9% and 23.6%" in older children. — [FULL TEXT, via fetch summary — appears to be direct quotes]
+   Context: DON'T KNOW which studies, which regions.
+
+6. Allergic rhinitis and asthma co-exist in "70–80% of Indian patients." — [FULL TEXT, via fetch summary — appears to be a direct quote]
+   Context: DON'T KNOW study source.
+
+7. **Food allergy paradox** (most important point for our paper): Sensitisation rate of "19.1%" in children, but clinically relevant food allergy prevalence of only "0.14%." — [FULL TEXT, via fetch summary — appears to be a direct quote]
+   Context: DON'T KNOW which population exactly, how clinical food allergy was defined.
+   For us: This is the central empirical tension this paper flags for India. The 136-fold gap between sensitisation and clinical reactivity is unusual compared to Western literature.
+
+8. Peanut allergy in children: "0.03%," despite peanut sensitisation of "6.3%." — [FULL TEXT, via fetch summary — appears to be a direct quote]
+   Context: DON'T KNOW population, how allergy was confirmed.
+   For us: Peanut is a prime example of the sensitisation-reactivity gap in India. In Western populations, a much higher proportion of sensitised individuals have clinical peanut allergy.
+
+9. Air pollution: "77% of the Indian population is exposed to an annual weighted mean PM2.5 levels of >40 mcg/m3." — [FULL TEXT, via fetch summary — appears to be a direct quote]
+   Context: Cited as a factor affecting allergy development and burden.
+
+10. House dust mite (*Dermatophagoides pteronyssinus*): sensitisation at "75.06%" in one study; "96% of patients with naso-bronchial allergy showed sensitisation to house dust mite" in another. — [FULL TEXT, via fetch summary]
+    Context: Aeroallergen (inhaled, not food). Included here because it contextualises the overall sensitisation landscape in India.
+
+11. Evidence generated from high-income Western countries is "not directly applicable to India" due to confounders including ethnicity, air pollution, parasitic infestation, and infections. — [FULL TEXT, via fetch summary — appears to be paraphrase or quote]
+    For us: This is an explicit methodological limitation that applies directly to using Western allergen lists for India.
+
+## Gaps and challenges the authors document
+
+From full text (via fetch):
+- Lack of standardised allergen extracts for India-specific testing
+- Lack of trained allergy specialists
+- Air pollution as a compounding factor not accounted for in most allergen studies
+- Affordability of basic allergy medications ("2 states out of 28 Indian states have introduced free distribution of basic asthma medications")
+- Western evidence not directly applicable due to ethnicity, environmental, and disease context differences
+
+## Questions for full text direct reading
+
+- Do the authors give a specific list of food allergens they consider inadequately studied in India?
+- Do they comment on FSSAI's allergen labelling requirements?
+- What do they mean by "standardised Indian allergen extracts" — who would produce these and what process?

@@ -1,0 +1,63 @@
+---
+title: "Food allergy in a changing dietary landscape: A focus on the Asia Pacific region"
+author: "Leung ASY, Pacharn P, Tangvalelerd S, Sato S, Pitt E, Wong G et al."
+year: 2024
+doi: "10.1111/pai.14211"
+journal: "Pediatric Allergy and Immunology"
+volume: "35(8)"
+pmid: "DON'T KNOW"
+access: "Paywalled — Wiley Online Library (403 on fetch)."
+source_quality: "Search result summaries only. Full text not accessed."
+---
+
+# Food allergy in a changing dietary landscape: A focus on the Asia Pacific region
+
+**Authors:** Leung ASY, Pacharn P, Tangvalelerd S, Sato S, Pitt E, Wong G et al.
+**Year:** 2024
+**DOI:** 10.1111/pai.14211
+**Journal:** Pediatric Allergy and Immunology, 35(8)
+
+## Why this paper
+
+Brought in for EuroPrevall data specific to Indian centres. EuroPrevall (a large multi-country food allergy prevalence study) is one of the few studies that collected systematic data from Indian sites (Mysore and Bengaluru). This paper synthesises Asia-Pacific patterns — useful for situating Indian data regionally.
+
+## Extracted points
+
+> **Source quality note:** All points from search result summaries. Full text not accessed.
+
+1. EuroPrevall INCO study recruited 35,549 children aged 6–11 from China (Hong Kong, Guangzhou, Shaoguan), Russia (Tomsk), and India (Mysore and Bengaluru). — [SEARCH SUMMARY]
+   Context: This is a cross-sectional survey on food allergy prevalence.
+   For us: The two Indian sites are Mysore (Karnataka) and Bengaluru — both in southern India. Findings may not represent northern or north-eastern India.
+
+2. Food allergy prevalence from EuroPrevall INCO (from search summary, comparing sites):
+   - Hong Kong: 1.50%
+   - Guangzhou: 0.21%
+   - Rural Shaoguan: 0.69%
+   - India (combined): 0.14%
+   — [SEARCH SUMMARY]
+   Context: DON'T KNOW how food allergy was defined/confirmed in this study. DON'T KNOW whether the 0.14% for India is the same figure cited in P01 and P04 or a separately derived number.
+   For us: India has the lowest prevalence figure across all EuroPrevall INCO sites. Urban-rural comparison within China suggests environment matters.
+
+3. Most prevalent allergen in China: shrimp. — [SEARCH SUMMARY]
+   Most prevalent allergen in Russia: fish. — [SEARCH SUMMARY]
+   Eggs: consistently reported as common in young children across Asia Pacific. — [SEARCH SUMMARY]
+   Shellfish: prevails among older children across the region. — [SEARCH SUMMARY]
+   For us: The dominant allergens differ by country. India's dominant allergens from this study are DON'T KNOW.
+
+4. Rise of wheat and tree nut allergies observed in Asia, in contrast to peanut allergy rise in the West. — [SEARCH SUMMARY]
+   Context: Attributed to changes in dietary habits (Westernisation), increased urbanisation, economic growth.
+   For us: Relevant for the trajectory argument — India's allergen profile may shift as diet changes.
+
+5. Regional shifts linked to urbanisation and dietary Westernisation. — [SEARCH SUMMARY]
+   For us: This is a stated hypothesis in the paper, not a measured finding — flag appropriately in manuscript.
+
+## Gaps and challenges the authors document
+
+DON'T KNOW — full text required.
+
+## Questions for full text access
+
+- What specific allergens did the EuroPrevall INCO study identify at the Mysore and Bengaluru sites?
+- Were there differences between the two Indian cities?
+- What definition of food allergy was used (oral food challenge vs. self-report + sensitisation)?
+- Do the authors comment on foods not covered by standard allergen panels in the Indian context?

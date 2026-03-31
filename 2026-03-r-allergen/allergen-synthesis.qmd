@@ -1,0 +1,83 @@
+---
+title: "Food Allergens in India: A Synthesis"
+subtitle: "Prevalence, Evidence Base, and a Defensible Allergen List"
+author: "iSRL"
+date: "2026-03-31"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+  pdf:
+    toc: true
+status: "in-progress — structure tentative"
+---
+
+> **Note on structure:** This manuscript is built incrementally as papers are read. Section headings are placeholders; they will be revised or collapsed as evidence shapes the argument. Do not treat the current structure as final.
+
+---
+
+# 1. What is a food allergen?
+
+<!-- PLACEHOLDER — to be written after reading P01, P05, P06 -->
+<!-- Key questions to answer here:
+     - What biological mechanism distinguishes an allergen from a toxic food compound?
+     - What is the difference between sensitisation (the immune system building a response) and clinical reactivity (symptoms when exposed)?
+     - What protein families are involved?
+     - Why do some foods cause more allergic reactions than others? -->
+
+*Section not yet written. Awaiting paper extraction.*
+
+---
+
+# 2. How food allergy is measured and how it is declared
+
+<!-- PLACEHOLDER — to be written after reading P01, P04, P06 -->
+<!-- Key questions:
+     - What are the main ways to test for food allergy? (skin prick test, blood IgE test, oral food challenge — what each measures and where they disagree)
+     - What is the difference between a regulatory declaration requirement and a clinical threshold?
+     - What does FSSAI currently require to be declared and on what legal basis?
+     - What international frameworks exist (Big 8/9 US, Big 14 EU, FSANZ, Codex) and how do they differ structurally? -->
+
+*Section not yet written. Awaiting paper extraction.*
+
+---
+
+# 3. Food allergens in India: what the literature says
+
+<!-- PLACEHOLDER — core synthesis section, built from all 10 papers -->
+<!-- Structure TBD — likely:
+     3.1 Allergens with strong evidence (multiple studies, defined prevalence)
+     3.2 Allergens with weak or single-study evidence
+     3.3 What the literature does not cover — documented gaps
+     3.4 Challenges recorded by authors themselves -->
+
+*Section not yet written. Awaiting paper extraction.*
+
+---
+
+# 4. The FSSAI list of 8 allergens: convergence and divergence with evidence
+
+<!-- PLACEHOLDER — comparative section -->
+<!-- The FSSAI list (to be confirmed from source):
+     Reportedly: cereals with gluten, crustaceans, eggs, fish, peanuts, soybeans, milk, tree nuts
+     — DON'T KNOW: exact current FSSAI list text and legal citation -->
+
+*Section not yet written. FSSAI list to be confirmed from primary regulation.*
+
+---
+
+# 5. A defensible allergen list for India
+
+<!-- PLACEHOLDER — synthesis output -->
+<!-- This section will build the list with explicit criteria:
+     - Why each allergen is included (evidence level, mechanism, population data)
+     - Why some are excluded or flagged as uncertain
+     - What "defensible" means operationally here -->
+
+*Section not yet written. Depends on §3 and §4.*
+
+---
+
+# References
+
+<!-- To be populated from allergen.papertable.qmd as papers are read -->

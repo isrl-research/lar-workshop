@@ -1,0 +1,65 @@
+---
+title: "Allergic sensitization to foods in India and other Low–Middle-income countries"
+author: "Padukudru Anand Mahesh, Mohammed Kaleem Ullah, Ashwaghosha Parthasarathi"
+year: 2023
+doi: "10.1111/cea.14300"
+journal: "Clinical & Experimental Allergy"
+volume: "53(7):739–750"
+pmid: "36825760"
+access: "Paywalled — Wiley Online Library"
+source_quality: "Abstract + PubMed summary only. Full text not accessed."
+---
+
+# Allergic sensitization to foods in India and other Low–Middle-income countries
+
+**Authors:** Padukudru Anand Mahesh, Mohammed Kaleem Ullah, Ashwaghosha Parthasarathi
+**Year:** 2023
+**DOI:** 10.1111/cea.14300
+**Journal:** Clinical & Experimental Allergy, 53(7):739–750
+**PMID:** 36825760
+
+## Why this paper
+
+Brought in as the primary prevalence synthesis paper for Indian food allergy. Covers both sensitisation (immune system building a response to a food protein, detectable by blood or skin test) and clinical reactivity (actual symptoms when the food is eaten) — a distinction critical to this project. Also covers other low-middle-income countries (LMICs) for comparative context.
+
+## Extracted points
+
+> **Source quality note:** The following points are from PubMed abstract and search result summaries. Full text was paywalled and could not be accessed. Points marked [ABSTRACT] came from the abstract. Points marked [SEARCH SUMMARY] came from secondary search engine summaries — these are less reliable and should be verified against the full paper before being cited in the manuscript.
+
+1. Food allergy prevalence in India (Karnataka): 0.14% in children, 1.2% in adults. — [SEARCH SUMMARY]
+   Context: DON'T KNOW — study design, population size, how clinical food allergy was defined and confirmed.
+   For us: This is the most-cited India-specific prevalence figure across multiple papers in our set. Low clinical prevalence despite high sensitisation is a recurring finding.
+
+2. Allergic sensitisation to any food (serum-specific IgE): 26.5% in adults, 19.1% in children. — [SEARCH SUMMARY]
+   Context: DON'T KNOW — population, region, which foods the IgE panel covered.
+   For us: The gap between 19.1% sensitisation and 0.14% clinical prevalence in children is approximately 136-fold. This divergence is a key analytical point for the manuscript.
+
+3. Allergic sensitisation to any food (skin prick test): 4.48% in children. — [SEARCH SUMMARY]
+   Context: DON'T KNOW — population, which allergens were tested.
+   For us: Skin prick test (a small amount of allergen solution placed on skin; a raised bump indicates sensitisation) and serum IgE give different sensitisation rates for the same population. The 4.48% vs 19.1% gap may reflect test sensitivity differences or panel coverage differences — cannot determine which without full text.
+
+4. Serum-specific IgE sensitisation in children across 28 LMIC studies: 0.11%–16.8% range. — [SEARCH SUMMARY]
+   Context: DON'T KNOW — which countries, which foods, what assay thresholds.
+   For us: Wide range suggests methodological heterogeneity, not just genuine epidemiological variation.
+
+5. Skin prick test sensitisation in children across LMICs: 0.14%–9.6% range. — [SEARCH SUMMARY]
+   Context: DON'T KNOW — same caveats as above.
+
+6. Allergens specifically highlighted as Indian: chickpea, eggplant. — [SEARCH SUMMARY]
+   Context: DON'T KNOW — whether these were mentioned as most prevalent, most studied, or most distinctive compared to Western lists.
+   For us: These two appear across multiple papers in our set as India-specific allergens not covered by the Big 8/9 or Big 14.
+
+7. Authors call for international collaboration to standardise assessment approaches. — [ABSTRACT]
+   For us: Relevant to the limitations section and the defensible list argument.
+
+## Gaps and challenges the authors document
+
+DON'T KNOW in detail — full text required to extract the specific evidence gaps the authors catalogue.
+From search summary: methodological variation in questionnaires, skin testing materials, and allergen quantities tested; limited geographic coverage within India (beyond Karnataka).
+
+## Questions for full text access
+
+- What exact definition of "clinical food allergy" was used? (Oral food challenge? Physician diagnosis? Self-report + test confirmation?)
+- What was the allergen panel used for the sensitisation testing?
+- Which specific foods showed highest sensitisation rates in the Indian cohorts?
+- Do the authors comment on the sensitisation–reactivity gap explicitly?

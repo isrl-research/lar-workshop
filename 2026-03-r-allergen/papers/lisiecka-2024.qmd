@@ -1,0 +1,57 @@
+---
+title: "Characteristic features of food allergy to legumes: From epidemiology to prevention"
+author: "Maria Zofia Lisiecka"
+year: 2024
+doi: "10.1016/j.humimm.2024.111179"
+journal: "Human Immunology"
+volume: "85(6):111179"
+pmid: "39566437"
+access: "Paywalled — ScienceDirect. Abstract available via PubMed."
+source_quality: "Abstract + search result summary. Full text not accessed."
+---
+
+# Characteristic features of food allergy to legumes: From epidemiology to prevention
+
+**Authors:** Maria Zofia Lisiecka (single author)
+**Year:** 2024
+**DOI:** 10.1016/j.humimm.2024.111179
+**Journal:** Human Immunology, 85(6):111179
+**PMID:** 39566437
+
+## Why this paper
+
+Brought in for legume-specific allergen data relevant to India. Chickpea and black gram are identified as primary Indian risks. Legumes are a major protein source in Indian diets — this paper covers the allergenicity of legumes from epidemiology to prevention. Search coverage: 2011–2024 across PubMed, Scopus, Google Scholar, ResearchGate, Web of Science.
+
+## Extracted points
+
+> **Source quality note:** Points from PubMed abstract and search result summaries. Full text not accessed. Treat prevalence numbers with caution — they come from a secondary search summary, not the paper itself.
+
+1. Peanut allergy prevalence: 2–5%. — [SEARCH SUMMARY]
+   Context: DON'T KNOW — population (global? specific country?), age group, how measured.
+   For us: Peanut is technically a legume; this range is consistent with Western literature but DON'T KNOW if this paper gives India-specific peanut data.
+
+2. Lentil sensitisation prevalence: 5–7%. — [SEARCH SUMMARY]
+   Context: DON'T KNOW — population, measurement method.
+
+3. Bean sensitisation prevalence: 7.5%. — [SEARCH SUMMARY]
+   Context: DON'T KNOW — which bean species, which population.
+
+4. Lentils, peas, and chickpeas reported as culprit allergens primarily in the Mediterranean area and India. — [SEARCH SUMMARY]
+   For us: This is a key claim for the India-specific allergen argument. Needs page reference and exact wording from full text before being cited.
+
+5. Cross-reactivity identified (by ELISA — a lab test that detects antibody binding to specific proteins) between: blackgram, lentil, lima bean, and pea. — [SEARCH SUMMARY]
+   Context: DON'T KNOW — the specific study this came from, the patient population, the assay conditions.
+   For us: Cross-reactivity within legumes is important for labelling — if a patient reacts to lentil, they may also react to blackgram without ever having been directly exposed.
+
+6. Chickpea and black gram identified as primary Indian risks. — [From researcher's characterisation of paper's key focus]
+   Context: DON'T KNOW — the specific evidence base the paper uses for this claim.
+
+## Gaps and challenges the authors document
+
+DON'T KNOW — full text required.
+
+## Questions for full text access
+
+- What India-specific epidemiological data does the paper draw on for chickpea and black gram?
+- What prevention strategies does the paper discuss — are any applicable to the Indian regulatory context?
+- What does the paper say about cross-reactivity between chickpea/black gram and other common Indian legumes (toor dal, moong dal, urad dal)?

@@ -1,0 +1,55 @@
+---
+title: "Spectrum of Allergens and Allergen Biology in India"
+author: "Kashinath Bhattacharya, Gaurab Sircar, Angira Dasgupta, Swati Gupta Bhattacharya"
+year: 2018
+doi: "10.1159/000490805"
+journal: "International Archives of Allergy and Immunology"
+volume: "177(3):219–237"
+pmid: "30056449"
+access: "Paywalled — Karger Publishers (403 error on fetch). Abstract via PubMed."
+source_quality: "Abstract + search result summaries only. Full text not accessed. The paper contains a table of IUIS-approved allergens from India — table was not accessible (ResearchGate 403). Numbers and specific allergens below are from secondary sources and must be verified against the full paper."
+---
+
+# Spectrum of Allergens and Allergen Biology in India
+
+**Authors:** Kashinath Bhattacharya, Gaurab Sircar, Angira Dasgupta, Swati Gupta Bhattacharya
+**Year:** 2018
+**DOI:** 10.1159/000490805
+**Journal:** International Archives of Allergy and Immunology, 177(3):219–237
+**PMID:** 30056449
+
+## Why this paper
+
+The most molecularly detailed paper in our set. Covers the biochemistry, immunology, and molecular characterisation of allergens specifically reported from India. Contains a table of IUIS (International Union of Immunological Societies — the body that formally names and approves allergens)-approved allergens sourced from India. This is the paper most directly relevant to building a scientifically defensible allergen list.
+
+## Extracted points
+
+> **Source quality note:** Full text paywalled. Points below are from PubMed abstract, Semantic Scholar entry, and search result summaries. The IUIS table mentioned in secondary sources was not accessible. Every point here needs verification against the full paper before manuscript citation.
+
+1. The paper covers "composition, distribution pattern, and natural sources of predominant allergens in India" and "prevalence of sensitisation to these allergens across the country." — [ABSTRACT, via search summary]
+   Context: Described as a comprehensive review.
+   For us: This is the primary source for the allergen biology and protein family sections of our manuscript.
+
+2. The paper includes a table of "certain major allergens reported from India and approved by the IUIS." — [Search summary — confirmed via ResearchGate figure listing]
+   Context: IUIS approval means the allergen has been formally characterised and named with a standardised identifier (e.g., "Ara h 1" for peanut allergen 1).
+   For us: This table is the most authoritative available list of formally characterised Indian food allergens. DON'T KNOW the full contents of the table — access was blocked.
+
+3. Allergen repertoire in India is described as "highly diverse due to varied climate, flora, and food habits." — [Search summary — may be paraphrase not direct quote]
+   For us: Supports the argument that a single global allergen list is insufficient for India.
+
+4. Paper covers allergen-specific immunotherapy (treatment that gradually desensitises a patient to an allergen) trials performed in India. — [Search summary]
+   For us: Immunotherapy data is not directly relevant to the labelling/declaration focus of our manuscript, but may be useful for the mechanism section.
+
+## Specific allergens mentioned in secondary sources
+
+The following allergens are mentioned in relation to this paper from secondary search results, but their exact treatment in the paper (primary data vs. cited, prevalence figures, protein characterisation level) is DON'T KNOW:
+- Aeroallergens: house dust mite, cockroach, pollen, mold spores
+- Food allergens: specific list DON'T KNOW — need full table
+
+## Gaps and challenges the authors document
+
+DON'T KNOW — full text required.
+
+## Priority action
+
+This paper needs full text access. It is the most molecularly grounded source in our set and the only one with an IUIS allergen table specifically for India. Options: (1) institutional library access, (2) author request via ResearchGate, (3) interlibrary loan.

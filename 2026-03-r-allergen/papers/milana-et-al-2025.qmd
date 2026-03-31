@@ -1,0 +1,57 @@
+---
+title: "A review of the toxicological effects and allergenic potential of emerging alternative protein sources"
+author: "Matilde Milana et al."
+year: 2025
+doi: "10.1111/1541-4337.70123"
+journal: "Comprehensive Reviews in Food Science and Food Safety"
+volume: "24:e70123"
+pmid: "DON'T KNOW"
+access: "Paywalled — Wiley Online Library. PDF available at giant-leaps.eu but fetch failed."
+source_quality: "Search result summaries only. Full text not accessed. Specific mung bean allergen proteins (Vig r series) came from a search result that may be mixing this paper with other sources — treat those names with caution until full text is verified."
+---
+
+# A review of the toxicological effects and allergenic potential of emerging alternative protein sources
+
+**Authors:** Matilde Milana et al. (full author list: DON'T KNOW)
+**Year:** 2025 (received Oct 2024, revised Jan 2025, accepted Jan 2025)
+**DOI:** 10.1111/1541-4337.70123
+**Journal:** Comprehensive Reviews in Food Science and Food Safety, 24:e70123
+
+## Why this paper
+
+Brought in specifically for black gram (*Vigna mungo*) and mung bean (*Vigna radiata*) allergenicity data relevant to India. These two are significant protein sources in Indian diets — present in dal (split lentil soups), idli/dosa batter (fermented rice and lentil preparations), and papad. The paper covers emerging alternative proteins, which overlaps with Indian legumes increasingly entering global food supply chains.
+
+## Extracted points
+
+> **Source quality note:** All points from search result summaries. Full text not accessed. The mung bean allergen protein names (Vig r series) appeared in a search result — these are real named allergens in the literature but I cannot confirm they were specifically sourced from Milana 2025 vs. other papers the search result was drawing on. Each point needs verification.
+
+1. Sources covered in the review: faba bean, mung bean, lentil, black gram, cowpea, quinoa, hemp, leaf proteins, microalgae, duckweeds. — [SEARCH SUMMARY]
+   For us: Confirms this paper directly addresses mung bean and black gram — both major in Indian diets.
+
+2. All emerging alternative protein sources reviewed "can contribute to some extent to the occurrence of adverse toxicological effects and/or allergic reactions in susceptible individuals." — [SEARCH SUMMARY — likely close to direct quote]
+   For us: General finding; specific to black gram and mung bean requires full text.
+
+3. Mung bean — named allergenic proteins (from search result, source uncertain): Vig r1 (pathogenesis-related protein, 16 kDa) and Vig r2 (vicilin-type seed storage protein, 52 kDa). — [SEARCH SUMMARY — attribution to Milana 2025 is UNCERTAIN]
+   Context: Pathogenesis-related proteins (PR proteins) are a class of plant defence proteins that can act as allergens; vicilin is a seed storage protein in the cupin family, found across legumes.
+   For us: If confirmed in full text, these protein identities are relevant to the mechanism and cross-reactivity sections.
+
+4. Cross-reactivity for mung bean (from search result, source uncertain): identified by ELISA with peanut, fenugreek, red kidney bean, red gram, green gram, chickpea, and black gram. — [SEARCH SUMMARY — attribution uncertain]
+   Context: This would mean a patient sensitised to one of these foods may react to mung bean without prior exposure.
+   For us: High relevance for the Indian context — this is a cluster of foods that are staples.
+
+5. Processing reduces antinutritional factors and allergenicity in these proteins, but "does not always ensure a complete removal." — [SEARCH SUMMARY]
+   Context: Processing here likely includes soaking, boiling, fermenting, autoclaving. "Complete removal" caveat is important for labelling — a processed product is not automatically safe.
+
+6. Mung bean and alfalfa retained antinutritional factors even in protein extract form post-processing. — [SEARCH SUMMARY]
+   Context: Antinutritional factors here refers to compounds that interfere with nutrient absorption; their co-presence with allergens is relevant to risk profiling.
+
+## Gaps and challenges the authors document
+
+DON'T KNOW in detail — full text required.
+
+## Questions for full text access
+
+- What India-specific data does the paper cite for black gram and mung bean allergy?
+- What specific processing methods were evaluated, and which reduced allergenicity most effectively?
+- Are there prevalence estimates for black gram or mung bean allergy specifically in Indian populations?
+- What is the full list of named allergens for black gram (*Vigna mungo*)?
