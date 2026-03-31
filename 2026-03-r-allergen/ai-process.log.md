@@ -16,6 +16,22 @@ This file records what happened in each working session: what was guided by the 
 
 ---
 
+## [2026-03-31, continued] — FSSAI regulatory text extraction and comparative analysis
+
+**Initiated by:** Researcher ("fetch this URL and read allergen specific data... create a .qmd covering exactly what FSSAI recognises as mandatory allergens... whether it correlates more with Indian literature or Codex / international standards, perform a deep literature review if necessary")
+**What happened:** Downloaded FSSAI Compendium PDF (30 June 2022, 1.2MB). Extracted Regulation 5(14) — the complete allergen declaration provision — using pdfminer. Searched web for Codex 2024 revisions, FARRP international regulatory chart, FAO/WHO risk assessment reports. Created `fssai-allergen-regulation.qmd` with: (1) exact regulatory text, (2) comparison against Codex/EU/US/Canada/FSANZ, (3) comparison against Indian literature from the 10-paper set, (4) gap analysis. Committed PDF and .qmd file.
+**Why:** Explicit researcher instruction.
+**Revised or changed:** Nothing in approach.
+**Files touched:** `source-pdfs/FSSAI_Compendium_Labelling_2022.pdf`, `fssai-allergen-regulation.qmd`, `ai-process.log.md`
+
+**AI-initiated decisions:**
+- Identified that FSSAI 2020 is almost verbatim from pre-2024 Codex CXS 1-1985 — researcher did not ask this directly, but it is the core comparative finding.
+- Flagged the raw agricultural commodity exemption as a structural gap — even if legumes were added to the FSSAI list, bulk dal sold loose would remain outside scope.
+- Flagged that the "May Contains" precautionary provision is permissive ("may"), not mandatory — weaker than EU best practice. This distinction matters for cross-contamination risk in Indian manufacturing.
+- Noted Codex 2024 already moved: sesame now mandatory (FSSAI behind), soy demoted (FSSAI now stricter than current Codex on soy). Both flagged as policy-relevant open questions for FSSAI.
+
+---
+
 ## [2026-03-31, continued into next session] — PDF reading: 7 source PDFs read, all paper files rewritten
 
 **Initiated by:** Researcher ("i have added source pdfs for those that i could find, go through in them in detail and refine the documents as necessary")
