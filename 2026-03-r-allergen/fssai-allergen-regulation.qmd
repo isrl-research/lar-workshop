@@ -1,0 +1,274 @@
+---
+title: "FSSAI Mandatory Allergen Declaration — Regulatory Text, Basis, and Comparative Analysis"
+date: 2026-03-31
+source_quality: "Regulatory text from PDF — full text read directly. FSSAI Compendium of Food Safety and Standards (Labelling and Display) Regulations, 2020, Version III dated 30 June 2022. Comparative analysis from literature review and Codex/international standard documents."
+---
+
+# FSSAI Mandatory Allergen Declaration — Regulatory Text, Basis, and Comparative Analysis
+
+## 1. What the regulation says — exact text
+
+The allergen declaration requirement is in **Regulation 5(14)** of the Food Safety and Standards (Labelling and Display) Regulations, 2020, operationalised w.e.f. 1st July 2022.
+
+Source: *Food Safety and Standards (Labelling and Display) Regulations, 2020*, Version III (30.06.2022). PDF: `FSSAI_Compendium_Labelling_2022.pdf`.
+
+### 1.1 Mandatory declaration — the 8 groups
+
+"The following foods and ingredients which are known to cause allergy shall be declared separately as Contains…… (Name of allergy causing ingredients):"
+
+| # | FSSAI text (exact) | Declaration label required |
+|---|-------------------|---------------------------|
+| 1 | Cereals containing gluten; i.e., wheat, rye, barley, oats, spelt or their hybridized strains and products of these | Name of the cereal (e.g., "Contains wheat") |
+| 2 | Crustacean and their products | "Crustacean" |
+| 3 | Milk & Milk products | "Milk" |
+| 4 | Eggs and egg products | "Egg" |
+| 5 | Fish and fish products | "Fish" |
+| 6 | Peanuts, tree nuts (e.g. almonds, walnuts, pistachio, cashew nuts) and their products | "Nut" |
+| 7 | Soybeans and their products | "Soy" |
+| 8 | Sulphite in concentrations of 10mg/kg or more | "Sulphite" |
+
+### 1.2 Exemptions from mandatory declaration — exact text
+
+"This declaration is not required in case of oils and distilled alcoholic beverages derived from these ingredients and where the product itself is a food allergen." [Version III, updated provision]
+
+Specific exemptions for cereals:
+- wheat-based glucose syrups including dextrose (provided gluten ≤20 mg/kg)
+- wheat-based maltodextrins (same gluten condition)
+- glucose syrups based on barley
+- cereals used for making alcoholic distillates including ethyl alcohol of agricultural origin
+
+### 1.3 Cross-contamination — permissive, not mandatory
+
+"In case presence of ingredients due to cross contamination which are known to cause allergy may be declared separately as May Contains…… (Name of allergy causing ingredients)."
+
+The word "may" is significant: "May Contains" declarations are permitted but not required. This is weaker than the EU approach, where the Food Information to Consumers (FIC) Regulation makes the precautionary allergen labelling expectation more strongly held in practice.
+
+### 1.4 Scope limitations
+
+"Raw agricultural commodities are exempted from the allergen labelling requirements."
+
+This means: a bulk bag of black gram sold in its raw form does not require allergen labelling, even though black gram is a documented food allergen in India. Only pre-packaged processed food products are covered.
+
+### 1.5 Non-prepackaged food (catering / restaurants)
+
+A separate provision (Regulation 5(14) applied via Chapter on food service display) requires restaurants, canteens, schools, hospitals, QSRs, and similar establishments to display allergen information "on boards or boards" — specifically the 8 allergens defined above, and "allergens may be depicted by easy to understand symbols."
+
+---
+
+## 2. What the FSSAI list is based on
+
+### 2.1 Direct derivation from pre-2024 Codex Alimentarius
+
+The FSSAI 2020 list maps almost exactly to the **Codex Alimentarius General Standard for the Labelling of Pre-packaged Foods (CXS 1-1985)**, in the form it held before the 2024 revision. The Codex historical list (pre-2024) was:
+
+| Codex (pre-2024) group | FSSAI equivalent | Match? |
+|----------------------|------------------|--------|
+| Cereals containing gluten | Group 1 | ✓ exact |
+| Crustaceans and their products | Group 2 | ✓ exact |
+| Eggs and egg products | Group 4 | ✓ exact |
+| Fish and fish products | Group 5 | ✓ exact |
+| Milk including lactose | Group 3 | ✓ exact |
+| Peanuts and products | Part of Group 6 | ✓ |
+| Tree nuts and products | Part of Group 6 | ✓ |
+| Soybeans and products | Group 7 | ✓ exact |
+| Sulphites ≥10 mg/kg | Group 8 | ✓ exact |
+
+**The FSSAI 2020 list is effectively a direct adoption of the pre-2024 Codex list.** India follows Codex as the baseline for food safety standards under its international commitments (WTO SPS Agreement), and the allergen regulation appears to follow this path without modification.
+
+### 2.2 What the 2024 Codex revision changed — and how FSSAI is now misaligned
+
+In 2024, the Codex Alimentarius Commission adopted revisions to CXS 1-1985. These changes represent the first full revision of the allergen provisions since 1985. Key changes:
+
+| Change | Direction | Basis |
+|--------|-----------|-------|
+| **Sesame added** as mandatory | Addition | FAO/WHO risk assessment (2022); sesame is a potent allergen with evidence of severe reactions globally |
+| **Soy reclassified** from mandatory to recommended | Demotion | FAO/WHO expert panel (2022) found soy allergy evidence insufficient to maintain global priority status |
+| Allergens must be **visually distinguished** (bold, colour, or other format) | New requirement | Consumer accessibility |
+| Individual cereal naming within gluten group | Clarification | More specific declaration |
+
+**FSSAI as of July 2022 does not yet include sesame.** Whether FSSAI has amended or plans to amend the allergen regulation to align with the Codex 2024 revision is DON'T KNOW — no amendment notification found as of this writing (2026-03-31).
+
+Sesame is widely used in Indian cuisine — in til (sesame seed), tahini-adjacent preparations, sesame oil, and in the *til-gur* (sesame and jaggery) preparations common in winter. Its exclusion from FSSAI's mandatory list is a concrete current gap even by international standards, independent of India-specific literature.
+
+---
+
+## 3. Comparison with major international allergen lists
+
+| Allergen group | FSSAI (2020) | Codex (2024) | EU Big 14 | US (Big 9) | Canada | FSANZ (Aus/NZ) |
+|---------------|-------------|-------------|----------|-----------|--------|---------------|
+| Cereals/gluten | ✓ | ✓ | ✓ | Wheat only | Wheat only | ✓ (wheat, rye, barley, oats) |
+| Crustaceans | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Milk | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Egg | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Fish | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Peanuts | ✓ (part of Group 6) | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Tree nuts | ✓ (part of Group 6) | ✓ | ✓ (specific nuts named) | ✓ | ✓ | ✓ |
+| Soy | ✓ | Recommended | ✓ | ✓ | ✓ | ✓ |
+| Sulphites | ✓ | ✓ | ✓ | — | ✓ | ✓ |
+| Sesame | ✗ | ✓ (added 2024) | ✓ | ✓ (2023) | ✓ | ✓ |
+| Mustard | ✗ | — | ✓ | — | — | — |
+| Celery | ✗ | — | ✓ | — | — | — |
+| Lupin | ✗ | — | ✓ | — | — | — |
+| Molluscs | ✗ | — | ✓ | — | — | ✓ |
+
+**Key gap relative to Codex 2024:** Sesame — FSSAI is behind the current international baseline.
+
+**Key gaps relative to EU:** Mustard, celery, lupin, molluscs, sesame. Mustard is the most India-relevant of these: mustard (*Brassica juncea*, brown mustard — the Indian variety) is a ubiquitous cooking fat and spice in India. It is on the EU Big 14 but absent from FSSAI.
+
+---
+
+## 4. Comparison with Indian literature — the core analytical question
+
+### 4.1 What the 8 groups cover from an Indian clinical perspective
+
+Of the 8 FSSAI-mandated allergens:
+
+| FSSAI group | Indian literature evidence | Assessment |
+|-------------|--------------------------|-----------|
+| Gluten cereals (wheat, rye, barley, oats) | Wheat sensitisation in EuroPrevall Mysore/Bengaluru adults: 11.93%; probable allergy 0.02%. Children: 6.7% sensitisation, 0.0% probable allergy. | Included — but wheat allergy appears extremely low in India despite high sensitisation. Gluten cereals requirement is appropriate but may be over-represented relative to actual Indian FA burden. |
+| Crustaceans | Prawn: Pen i 1 is India's only IUIS-registered food allergen (P05). Prawn sensitisation 53.5% in Kolkata study (P04 Table 2); 15.53% + 10.3% in EuroPrevall adult and children data. | Included and well-justified by Indian data. This is appropriate. |
+| Milk | EuroPrevall adults: probable allergy 0.50%. Children: 0.0% probable allergy despite 2.1% sensitisation. | Included — sensitisation data exists. Clinical allergy in adults at 0.50%; very low in children. |
+| Egg | EuroPrevall adults: 0.05% probable allergy. Children: 0.05% probable allergy. Sensitisation: 34.9% in Kolkata study. | Included — appropriate, though evidence of clinical reactivity in India is low. |
+| Fish | Bhetki, mackerel: heat-stable allergens documented in India (P05). Hilsha, pomfret: heat-labile. EuroPrevall: 0.4% sensitisation, 0.0% probable allergy in children. | Included — appropriate given heat-stable fish allergens identified from Indian fish species. |
+| Peanuts + tree nuts (combined as "Nut") | Peanut sensitisation: 6.3–8.73%; peanut allergy: 0.03%. Tree nut consumption primarily walnuts, almonds, cashews (dry fruits) in Indian diet — sensitisation data DON'T KNOW from our paper set. | Partially justified — peanut data confirms India has sensitisation; clinical allergy very low. Tree nut data thin in India specifically. |
+| Soy | Soy sensitisation data for India: DON'T KNOW from our paper set (not among the top allergens studied). Soy is consumed but not a traditional primary protein source in most Indian diets. | Included per Codex — but this is the allergen with weakest Indian-specific justification in the FSSAI list, and notably the one Codex 2024 has now demoted. |
+| Sulphites | Used as food preservative (in dried fruits, wine, processed foods). Not a protein allergen but a chemical sensitivity. Sulphite sensitivity data in India: DON'T KNOW from our paper set. | Included per Codex convention — not India-specific. |
+
+### 4.2 What is documented in Indian literature but absent from FSSAI
+
+This is the critical gap table:
+
+| Allergen | Evidence in Indian literature | Not in FSSAI |
+|----------|------------------------------|-------------|
+| **Black gram** (*Vigna mungo*) | 1.7% sensitisation in nasobronchial allergy patients (P05); DBPCFC confirmed 4/14 (P02/P04); 28-kDa IUIS allergen Vig m; cross-reacts with lentil, faba bean, lima bean, pea (P07); Pollen Food Allergy Syndrome with *Prosopis juliflora* (P07) | ✗ Not declared |
+| **Kidney bean** (*Phaseolus vulgaris*) | 22% of food-allergic population in Delhi sensitised (P05); 31-kDa phytohemagglutinin stable to pepsin; cross-reactive with peanut, black gram, lentil, pea, pigeon pea, chickpea (P05) | ✗ Not declared |
+| **Chickpea** (*Cicer arietinum*) | Named as "a common allergen" in India in P10; anaphylaxis reported; 26-kDa plant albumin cross-reacts with peanut IgE (P05); 59/1400 self-reported, 41 SPT-confirmed, 31 DBPCFC-confirmed in Bombay clinic (P04 Table 2) | ✗ Not declared |
+| **Lentil** (*Lens culinaris*) | 9.7% sensitisation (Kumar 2006, Delhi, N=216); 5.5% sensitisation (Kumar 2010, Delhi, N=1860); DBPCFC-confirmed in P04 Table 2; cross-reacts with black gram, kidney bean (P05, P07) | ✗ Not declared |
+| **Red gram / pigeon pea** (*Cajanus cajan*) | Novel allergens identified via Indian sera immunoblotting (P05); 12.6% sensitisation in Karnataka study (Chogtu 2017, P04 Table 2) | ✗ Not declared |
+| **Green gram** (*Vigna radiata* / mung bean) | Vig r1–r6 IUIS allergens; cross-reactive with peanut, soybean, lentil (P07); 12.5% sensitisation in Karnataka study (Chogtu 2017, P04 Table 2) | ✗ Not declared |
+| **Rice** (*Oryza sativa*) | 12% SPT positive in food-allergic population (P05); DBPCFC-confirmed 6/16 (P02/P04); 6.2% sensitisation in Delhi study (P04 Table 2); 24-kDa chitinase characterised as major allergen (P05) | ✗ Not declared |
+| **Eggplant / brinjal** (*Solanum melongena*) | EuroPrevall probable FA: 0.04% children; 9.2% self-reported, 4.3% SPT-confirmed in Mysore community study (P04 Table 2); LTP allergen in peel/seeds (P05); named as one of 5 main Indian food allergens (P05) | ✗ Not declared |
+| **Sesame** (*Sesamum indicum*) | EuroPrevall: 8.0% sIgE sensitisation in Indian children (P02) — the second highest sensitisation rate after shrimp; now mandatory in Codex 2024, US 2023, EU | ✗ Not declared |
+| **Mustard** (*Brassica juncea*) | Mentioned as India-specific unusual allergen in P09 (Arakali 2017); widely used in Indian cooking; mandatory in EU Big 14; FAO/WHO threshold assessment underway | ✗ Not declared |
+| **Banana** | 3.6% sensitisation Delhi (P04 Table 2); 32.4% sensitisation Kolkata (Dey 2014, P04 Table 2); 40.6% sensitisation in Kolkata hospital study | ✗ Not declared |
+| **Betel leaf** (*Piper betle*) | Named as India-specific unusual allergen in P09; used in paan (post-meal digestive); not on any international list | ✗ Not declared |
+
+### 4.3 The fundamental mismatch: what FSSAI protects against vs. what India's data shows
+
+The FSSAI list protects primarily against the globally widespread IgE-mediated reactions that define the Western Big 8/9 framework — milk, egg, fish, shellfish, peanuts, tree nuts, wheat, soy, sulphites. These were established as mandatory largely on the basis of:
+- US and European clinical case series
+- Historical severity data from Western allergy clinics
+- Codex committee consensus without systematic regional representation
+
+What India's literature documents as the primary clinical and sensitisation burden is substantially different:
+- **Legumes dominate**: black gram, kidney bean, chickpea, lentil, pigeon pea, green gram — all staple Indian protein sources, all documented as sensitisers, most also DBPCFC-confirmed
+- **Rice**: the primary carbohydrate in South and East India; DBPCFC-confirmed
+- **Eggplant**: named as one of the 5 main food allergens in India in the most molecularly detailed paper in this set (P05)
+- **Sesame**: 8% sIgE sensitisation in Indian children — this is data from India's own study sites
+
+The one clear overlap: **prawn/crustaceans** — India's only IUIS-registered food allergen (Pen i 1) is a prawn tropomyosin, and prawn sensitisation data from multiple Indian studies is high (up to 53.5% in Kolkata).
+
+### 4.4 Where FSSAI aligns with Indian literature
+
+| Overlap point | Evidence |
+|--------------|---------|
+| Crustaceans (prawn) | Strong alignment — Pen i 1, high sensitisation, multiple studies |
+| Milk | Moderate — 0.5% probable allergy in adults, low but present |
+| Egg | Moderate — high sensitisation (34.9% in one study) but low confirmed allergy |
+| Fish | Moderate — heat-stable allergens documented for bhetki and mackerel |
+
+### 4.5 Quantitative signal: which allergens appear most in Indian studies
+
+From P04 (Krishna 2020) Table 2 — allergens with sensitisation data across ≥2 Indian studies:
+
+| Allergen | Studies reporting it | Range of sensitisation rates | In FSSAI? |
+|----------|---------------------|------------------------------|-----------|
+| Blackgram | ≥4 studies | 5.9–10.1% (general; 12.1% among sensitised-tested) | ✗ |
+| Rice | ≥3 studies | 6.2–11.1% (general); 12% SPT in food-allergic | ✗ |
+| Lentil | ≥3 studies | 5.5–9.7% | ✗ |
+| Prawn/crustacean | ≥3 studies | 10.3–53.5% | ✓ |
+| Egg | ≥2 studies | 6.9–34.9% | ✓ |
+| Banana | ≥3 studies | 3.6–40.6% | ✗ |
+| Brinjal/eggplant | ≥2 studies | 4.3–45.6% | ✗ |
+| Wheat | ≥2 studies | 6.7–11.93% | ✓ |
+| Milk | ≥2 studies | 1.35–20.5% | ✓ |
+| Sesame | 1 study (EuroPrevall children) | 8.0% sIgE | ✗ |
+| Peanut | ≥2 studies | 6.3–19.6% | ✓ |
+
+---
+
+## 5. Summary finding
+
+The FSSAI's 8-allergen mandatory declaration list (operationalised July 2022) is **derived from the pre-2024 Codex Alimentarius standard** without modification to reflect India-specific evidence. It is aligned with the international consensus as it stood in 1985 and held until 2024, but it:
+
+1. **Does not include sesame** — now mandatory in Codex 2024, US (since 2023), and EU, and documented at 8% sIgE sensitisation in the India-based EuroPrevall study.
+
+2. **Does not include any legume beyond peanut and soy** — despite black gram, chickpea, kidney bean, lentil, pigeon pea, and green gram each having documented Indian sensitisation data, some with DBPCFC confirmation, and some with IUIS-named allergens.
+
+3. **Does not include rice** — despite DBPCFC confirmation from two Indian studies and a 12% positive skin test rate in the food-allergic population.
+
+4. **Does not include eggplant** — despite it being named as one of the 5 primary food allergens in India in the most molecularly detailed allergen characterisation paper available for India.
+
+5. **Does not include mustard** — present in EU Big 14 and widely used in Indian cooking.
+
+6. **Is already behind Codex 2024** — which added sesame and demoted soy.
+
+**The FSSAI list correlates substantially more with the old Codex/international standard than with Indian epidemiological and clinical literature.** The evidence base that Indian researchers have built over two decades — across Delhi, Kolkata, Mumbai, Mysore, and Bengaluru — identifies a distinctly different allergen risk profile from what FSSAI currently mandates be declared.
+
+---
+
+## 6. Regulatory and policy notes
+
+### What FSSAI requires that has no Indian-specific justification (from current evidence)
+
+- Soy — minimal India-specific data; now demoted by Codex 2024
+- Celery, lupin — not in FSSAI (EU-only) and no Indian evidence; correct to exclude
+
+### What is missing that has both international and Indian-specific justification
+
+- Sesame — strongest case: international consensus + Indian sIgE data
+
+### What is missing that has India-specific justification not yet reflected internationally
+
+- Black gram, kidney bean, chickpea, lentil, pigeon pea, green gram
+- Rice
+- Eggplant
+- Mustard (semi-international, but more relevant for India than average)
+
+### Exemption gap
+
+The exemption for "raw agricultural commodities" means that bulk dal (black gram, lentils, etc.) sold in loose or minimally packaged form — the majority of how these foods reach Indian consumers — falls outside the labelling requirement entirely. Even if FSSAI added legumes to the allergen list, raw commodity exemption would significantly limit its reach.
+
+### Precautionary labelling gap
+
+The "May Contains" declaration is permissive, not mandatory. This is weaker than best practice and means that cross-contamination risks — particularly relevant in Indian food manufacturing where legume-containing products and legume-free products may share processing lines — are systematically underdeclared.
+
+---
+
+## 7. DON'T KNOW — open questions
+
+- Whether FSSAI has issued or is planning an amendment to align with Codex 2024 (sesame addition). No public notification found as of 2026-03-31.
+- What the regulatory impact assessment process was (if any) when FSSAI drafted the 2020 regulation — specifically whether India-specific allergen prevalence data was reviewed.
+- Whether any FSSAI consultation documents exist that discuss inclusion/exclusion criteria for the 8-allergen list.
+- The exact regulatory text of FSSAI FSS (Agricultural Produce and Raw Materials) Regulations — which may contain separate provisions relevant to raw commodity handling.
+- Whether state-level FSSAI enforcement of the July 2022 compliance date has been assessed.
+
+---
+
+## Sources consulted
+
+**Primary regulatory text:**
+- FSSAI Food Safety and Standards (Labelling and Display) Regulations, 2020, Version III (30 June 2022). PDF at: `source-pdfs/FSSAI_Compendium_Labelling_2022.pdf`
+
+**International comparators:**
+- Codex Alimentarius CXS 1-1985 (2024 revision) — sesame added, soy demoted. Source: Food Compliance International (2024) and Codex CCFL47/48 proceedings.
+- FARRP International Regulatory Chart — country-by-country allergen lists. [https://farrp.unl.edu/IRChart/](https://farrp.unl.edu/IRChart/)
+- FAO/WHO Joint Expert Consultation reports on risk assessment of food allergens (Parts 1–5, 2020–2023). WHO Publications.
+
+**Indian literature (all from this project's paper set):**
+- P02: Mahesh PA et al. 2023 (DOI: 10.1111/cea.14239)
+- P04: Krishna MT et al. 2020 (DOI: 10.1016/j.waojou.2020.100446)
+- P05: Bhattacharya K et al. 2018 (DOI: 10.1159/000490805)
+- P07: Milana M et al. 2025 (DOI: 10.1111/1541-4337.70123)
+- P09: Arakali SR et al. 2017 (DOI: 10.1016/j.anai.2016.09.441)
+- P10: Devdas JM et al. 2018 (DOI: 10.1007/s12098-017-2535-6)
