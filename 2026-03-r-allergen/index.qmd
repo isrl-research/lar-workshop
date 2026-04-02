@@ -10,11 +10,19 @@ author:
   - name: Claude (Anthropic)
     affiliation: Anthropic
     note: "AI research assistant. Role described in Appendix A."
+doc-id: iSRL-26-04-R-ALG
+description: "Reviews the clinical and epidemiological evidence on food allergens in India, maps it against the FSSAI mandatory allergen declaration framework (Labelling and Display Regulations 2020, operationalised July 2022), and derives a three-tier allergen recognition list for the Indian Food Ingredient Database (IFID)."
 date: "2026-03-31"
+license: "CC BY 4.0"
+citation:
+  type: report
+  publisher: iSRL
+  number: iSRL-26-04-R-ALG
 format:
   html:
     toc: true
     toc-depth: 3
+    number-sections: true
   pdf:
     toc: true
 bibliography: references.bib
@@ -234,7 +242,7 @@ The foods where that room is most clearly supported:
 
 **Sesame** sits in the most resolved position. Sensitisation was 8.0% in EuroPrevall India children — higher than peanut (6.3%) [@mahesh2023b]. Codex 2024 has since added sesame as a mandatory declaration allergen, joining the US (since 2023) and the EU [@codex2024]. The evidence situation for sesame has materially changed since the FSSAI 2020 list was written.
 
-**Rice, black gram, and chickpea** each have Indian DBPCFC or OFC data: rice (6 of 16 confirmed), black gram (4 of 14 confirmed), chickpea (31 of 41 OFC confirmed) [@mahesh2023b; @krishna2020]. These are small single-centre cohorts. They are also the only India-specific challenge data that exists for any food not on the FSSAI list.
+**Rice, black gram, and chickpea** each have Indian DBPCFC data: rice (6 of 16 confirmed), black gram (4 of 14 confirmed), chickpea (31 of 41 DBPCFC confirmed) [@mahesh2023b; @krishna2020]. These are small single-centre cohorts. They are also the only India-specific challenge data that exists for any food not on the FSSAI list.
 
 **The Indian legume complex** — pigeon pea, kidney bean, lentil, green gram — has documented sensitisation, characterised allergen proteins, and pepsin-stable fractions [@bhattacharya2018; @krishna2020]. No OFC data. But legume proteins as a class retain IgE reactivity after gastric digestion [@bhattacharya2018], and the cross-reactive epitopes across this complex mean that primary sensitisation to one legume may carry risk across others.
 
