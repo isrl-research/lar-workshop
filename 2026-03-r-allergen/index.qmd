@@ -64,7 +64,7 @@ A single population, tested by different methods, will produce different sensiti
 
 The "probable food allergy" figure — 0.14% for Indian children in EuroPrevall — uses a specific definition: reported symptoms within two hours of eating a food, combined with a positive sIgE or SPT to that food [@mahesh2023b; @leung2024]. This is not OFC-confirmed. It is a structured symptom-report combined with immunological evidence, which is a reasonable operational definition for a large epidemiological study, but will consistently overestimate confirmed allergy relative to DBPCFC.
 
-DBPCFC-confirmed allergy exists for only two foods in the India-specific data available here: rice (6 of 16 patients tested confirmed, from a Delhi tertiary referral centre) and black gram (4 of 14 confirmed, same centre) [@mahesh2023b]. Chickpea OFC data (unblinded) from a Bombay allergy clinic found 31 of 41 SPT-positive patients confirmed on challenge (as reported in [@krishna2020]).
+DBPCFC-confirmed allergy exists for only two foods in the India-specific data available here: rice (6 of 16 patients tested confirmed, from a Delhi tertiary referral centre) and black gram (4 of 14 confirmed, same centre) [@mahesh2023b]. Chickpea DBPCFC data from a Bombay allergy clinic found 31 of 41 SPT-positive patients confirmed on challenge (as reported in [@krishna2020]).
 
 ### 2.3 What this means for interpreting prevalence numbers
 
@@ -78,7 +78,7 @@ The numbers that appear most frequently in Indian food allergy literature — an
 
 The EuroPrevall-INCO study is the largest systematic dataset on food allergy in India available in the reviewed literature. It enrolled 5,677 children aged 7–10 years across schools in Mysore and Bengaluru (Karnataka) and tested each child against a 25-food panel [@mahesh2023b].
 
-Sensitisation rates (serum-specific IgE) in children were: shrimp 10.3%, sesame 8.0%, wheat 6.7%, peanut 6.3% [@mahesh2023b]. SPT sensitisation was lower overall (4.48% aggregate versus 19.1% by sIgE) and the leading SPT-positive foods were jackfruit (2.46%) and cow's milk (1.35%) [@mahesh2023b].
+Sensitisation rates (serum-specific IgE) in children were: shrimp 10.5%, sesame 8.0%, wheat 6.7%, peanut 6.3% [@mahesh2023b]. SPT sensitisation was lower overall (4.48% aggregate versus 19.1% by sIgE) and the leading SPT-positive foods were jackfruit (2.46%) and cow's milk (1.35%) [@mahesh2023b].
 
 Probable food allergy in children (EuroPrevall definition: symptoms ≤2 hours after eating + positive sIgE or SPT) was 0.14% overall. The leading foods were cow's milk (0.5% of children in the probable food allergy subset) and apple (0.5%), with egg at 0.05% and eggplant at 0.04% [@mahesh2023b].
 
@@ -94,7 +94,7 @@ The table below summarises the key findings from those studies, as reported in [
 
 | Allergen | Sensitisation range | Method | DBPCFC/OFC data | In FSSAI 2020? |
 |---|---|---|---|---|
-| Black gram (*Vigna mungo*) | 5.9–12.1% | SPT, sIgE | 4/14 DBPCFC confirmed | No |
+| Black gram (*Vigna mungo*) | 5.9–10.1% | SPT, sIgE | 4/14 DBPCFC confirmed | No |
 | Rice (*Oryza sativa*) | 6.2–12.1% | SPT, sIgE | 6/16 DBPCFC confirmed | No |
 | Lentil (*Lens culinaris*) | 5.5–9.7% | SPT (N=216–1,860) | None available | No |
 | Prawn | 10.3–53.5% | SPT, sIgE | — | Yes (crustaceans) |
@@ -102,7 +102,7 @@ The table below summarises the key findings from those studies, as reported in [
 | Egg | 6.9–34.9% | SPT, sIgE | — | Yes |
 | Banana | 3.6–40.6% | SPT | None available | No |
 | Wheat | 6.7–11.93% | SPT, sIgE | — | Yes (gluten cereals) |
-| Chickpea (*Cicer arietinum*) | SPT positive 41/1,400 | SPT (N=1,400 clinic) | 31/41 OFC confirmed | No |
+| Chickpea (*Cicer arietinum*) | SPT positive 41/1,400 | SPT (N=1,400 clinic) | 31/41 DBPCFC confirmed | No |
 | Red gram / pigeon pea (*Cajanus cajan*) | 12.6% | sIgE (Karnataka N=2,219) | None available | No |
 | Green gram (*Vigna radiata*) | 12.5% | sIgE (Karnataka N=2,219) | None available | No |
 
@@ -132,7 +132,7 @@ India's only IUIS (International Union of Immunological Societies) registered fo
 
 **Legumes in general**: allergen proteins from legumes "retain IgE reactivity after gastric digestion" as a class [@bhattacharya2018], which is part of why legume sensitisation data in India may translate to clinical relevance more readily than, say, fruit sensitisation.
 
-[@milana2025] provides additional cross-reactivity data relevant to the Indian legume complex. Mung bean (IUIS allergens Vig r1–r6) LTPs share greater than 60% sequence homology with LTPs from peanut, peach, lentil, strawberry, and apple. Black gram (Vig m) cross-reacts with faba bean, lentil, lima bean, and pea. Black gram is also linked to Pollen Food Allergy Syndrome (PFAS) with *Prosopis juliflora*, a tree species prevalent across urban India [@milana2025]. Patients sensitised to *Prosopis* pollen may develop oral allergy symptoms to black gram through this cross-reactive pathway rather than through primary sensitisation to the legume itself.
+[@milana2025] provides additional cross-reactivity data relevant to the Indian legume complex. Mung bean (IUIS allergens Vig r1–r6) LTPs are closely related to allergenic LTPs from peanuts, peach, and green beans, and share greater than 60% sequence homology with LTPs from lentil, bean, peanut, strawberry, and apple. Black gram (Vig m) cross-reacts with faba bean, lentil, lima bean, and pea. Black gram is also linked to Pollen Food Allergy Syndrome (PFAS) with *Prosopis juliflora*, a tree species prevalent across urban India [@milana2025]. Patients sensitised to *Prosopis* pollen may develop oral allergy symptoms to black gram through this cross-reactive pathway rather than through primary sensitisation to the legume itself.
 
 **Red gram / pigeon pea (*Cajanus cajan*)**: Novel allergens including β-conglycinin and vicilin homologues have been identified via Indian patient sera [@bhattacharya2018]. Sensitisation data from a Karnataka population study (N=2,219) reported 12.6% sIgE positive [@krishna2020].
 
@@ -254,7 +254,7 @@ The limitations of the analysis in this paper are the limitations of the underly
 
 **Study design**: Most sensitisation data comes from allergy clinic patients, not general population cohorts. Patients attending allergy clinics are a selected population — higher pre-test probability of sensitisation than the background population. Rates from these studies are expected to exceed true population prevalence. The EuroPrevall-INCO school-based cohort is the exception, and its data is limited to urban Karnataka.
 
-**Diagnostic method**: The 0.14% (children) and 1.2% (adults) food allergy figures use the EuroPrevall "probable food allergy" definition — reported symptoms within two hours of eating, combined with positive sIgE or SPT. This is not OFC-confirmed diagnosis. DBPCFC-confirmed data exists only for rice (6/16), black gram (4/14), and chickpea (31/41 OFC, not DBPCFC), each from single-centre clinic cohorts.
+**Diagnostic method**: The 0.14% (children) and 1.2% (adults) food allergy figures use the EuroPrevall "probable food allergy" definition — reported symptoms within two hours of eating, combined with positive sIgE or SPT. This is not OFC-confirmed diagnosis. DBPCFC-confirmed data exists only for rice (6/16), black gram (4/14), and chickpea (31/41 DBPCFC confirmed), each from single-centre clinic cohorts.
 
 **Eggplant confound**: Stored eggplant accumulates histamine at levels that can cause false-positive SPT results. Eggplant sensitisation rates derived from SPT-based studies should be interpreted with this confound in mind [@bhattacharya2018]. The LTP characterisation from [@bhattacharya2018] provides molecular evidence independent of SPT, but the population-level sensitisation figures retain this uncertainty.
 
@@ -297,7 +297,7 @@ These nine allergen groups are absent from FSSAI 2020 but have supporting eviden
 |---|---|---|---|
 | 9 | Sesame | 8.0% sIgE in EuroPrevall India children; Codex 2024 added as mandatory; US Big 9 (since 2023) and EU Big 14 both include sesame | [@mahesh2023b; @codex2024] |
 | 10 | Black gram (*Vigna mungo*) | DBPCFC 4 of 14 confirmed (as reported in [@krishna2020]); 28-kDa Vig m IUIS allergen; resistant to pepsin digestion; cross-reacts with lentil, faba bean, lima bean, and pea | [@krishna2020; @bhattacharya2018; @milana2025] |
-| 11 | Chickpea (*Cicer arietinum*) | OFC 31 of 41 SPT-confirmed cases (Bombay clinic, N=1,400, as reported in [@krishna2020]); anaphylaxis documented; 26-kDa albumin cross-reacts with peanut IgE | [@devdas2018; @krishna2020; @bhattacharya2018] |
+| 11 | Chickpea (*Cicer arietinum*) | DBPCFC 31 of 41 SPT-confirmed cases (Bombay clinic, N=1,400, as reported in [@krishna2020]); anaphylaxis documented; 26-kDa albumin cross-reacts with peanut IgE | [@devdas2018; @krishna2020; @bhattacharya2018] |
 | 12 | Kidney bean (*Phaseolus vulgaris*) | 22% sensitisation in Delhi food-allergic population; 31-kDa allergen stable to pepsin; cross-reacts with peanut, black gram, lentil, and pea | [@bhattacharya2018] |
 | 13 | Lentil (*Lens culinaris*) | 5.5–9.7% sensitisation (Delhi, N=216–1,860, as reported in [@krishna2020]); cross-reacts with black gram, kidney bean, and pea | [@krishna2020; @milana2025] |
 | 14 | Rice (*Oryza sativa*) | DBPCFC 6 of 16 confirmed [@mahesh2023b]; 12% SPT positive in food-allergic population; 24-kDa chitinase as major allergen | [@bhattacharya2018; @mahesh2023b] |
