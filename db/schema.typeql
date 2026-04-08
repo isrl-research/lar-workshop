@@ -1,0 +1,38 @@
+define
+
+attribute source-name,
+ value string;
+attribute source-type,
+ value string;
+attribute is-allergen,
+ value boolean;
+attribute canonical-name,
+ value string;
+attribute milling-grade,
+ value string;
+attribute matter-state,
+ value string;
+attribute processing-method,
+ value string;
+entity source,
+  owns is-allergen,
+  owns source-name @key,
+  owns source-type,
+  plays derived-from:base,
+  plays variety-of:base-variety,
+  plays variety-of:variant;
+entity ingredient-form,
+  owns canonical-name @key,
+  owns matter-state,
+  plays derived-from:base,
+  plays derived-from:form;
+entity flour-form,
+  sub ingredient-form,
+  owns milling-grade;
+relation derived-from,
+  relates base,
+  relates form,
+  owns processing-method @card(0..);
+relation variety-of,
+  relates base-variety,
+  relates variant;

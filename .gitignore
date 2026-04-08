@@ -1,0 +1,13 @@
+# TypeDB binary exports
+*.typedb
+
+# Windows metadata (WSL artefacts)
+*.Zone.Identifier
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# Editor
+.vscode/

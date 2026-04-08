@@ -1,0 +1,25 @@
+tag,score
+whole/fresh pieces,0.05
+cut/sliced pieces,0.10
+pulp/puree,0.25
+coarse grits,0.30
+flour/fine powder,0.33
+flakes,0.36
+dense block,0.38
+concentrate,0.40
+powder,0.42
+juice,0.50
+whey powder,0.52
+skim/defatted meal,0.55
+starch flour,0.60
+oil,0.70
+fat fraction,0.72
+protein concentrate,0.74
+protein isolate,0.78
+granules,0.80
+extract/oleoresin,0.86
+oleoresin,0.88
+emulsifier powder,0.89
+essential oil,0.90
+modified starch powder,0.96
+crystalline chemical,0.98

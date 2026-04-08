@@ -1,0 +1,20 @@
+tag,score
+sorting,0.12
+washing,0.15
+chilling,0.18
+de-husking,0.22
+milling,0.28
+cold pressing,0.32
+churning,0.45
+pasteurization,0.48
+clarification,0.55
+fermentation,0.56
+roasting,0.58
+refining,0.76
+fractionation,0.76
+solvent extraction,0.82
+interesterification,0.91
+hydrogenation,0.92
+acetylation,0.94
+synthetic vanillin,0.98
+synthetic flavors,0.99

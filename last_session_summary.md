@@ -1,98 +1,104 @@
-# Last Session Summary — 2026-03-19
+# Last Session Summary — 2026-04-08
 
-## What was done this session
+## What this session was about
 
-- Removed 92 `fortification_agent` rows from `core/all_variants_working.csv` (1,894 → 1,802)
-- Analysed all 262 additive-lane residual rows against `additives/additives_taxonomy.json`
-- Phase 1: removed 130 confirmed taxonomy matches (synonyms, label-prefix formats, typo corrections)
-- Phase 2: manually added 5 missing INS entries to taxonomy (153 → 158 entries)
-  - INS 297 Fumaric acid, INS 319 TBHQ, INS 321 BHT, INS 527 Ammonium hydroxide, INS 968 Erythritol
-- Phase 3: removed 6 rows matching those new entries
-- **Working CSV now at 1,666 rows. 3 commits on main.**
-
----
-
-## What remains — 126 residual rows needing decision calls
-
-### Bucket A — Misclassified (wrong lane, clearest wins)
-
-**antioxidant (17 rows)** — all nutrients, not food antioxidants. Reclassify to:
-- `fortification_agent`: ferrous sulphate, encapsulated ferrous sulphate, ferric pyrophosphate, potassium iodate, potassium iodide, sodium molybdate, thiamine mononitrate (×2), thiamin hydrohloride, pyridoxine hydroxide, vitamins pantothenol, vitamins vitamin b12, antioxidant vitamin d
-- `health_supplement`: creatine monohydrate, catechins, goji berry, resveratrol
-
-**preservative (8 rows)** — mixed bag:
-- → `health_supplement`: lactobacillus acidophilus, l.bacillus delbruecki subsp, limosilactobacillus reuteri, lactic acid ferments, latic culture (typo)
-- → `fortification_agent`: sodium selenite angydrate (anhydrate)
-- → process descriptor (drop or flag): uv treated and ozonized
-- → keep / review: sulphites (generic multi-INS, too vague to resolve)
-
-**sweetener|bulking agent (10 rows)** — prebiotics, not additives:
-- → `health_supplement`: fos, fructooligosaccharide, fructo-oligosaccharide (×3), fructo oligosaccharide, fructooligosaccharides, fructo-oligosaccharides, fructo-oligosaccharides prebiotic fibre, corn syrup solids (check — may be INS 1702 or similar)
-
-**flour treatment agent (1 row)**:
-- → `fortification_agent`: l-lysine hydrochloride (amino acid)
-
-**antioxidant|preservative (1 row)**:
-- → `health_supplement` or flag: latic culture (probiotic, typo of lactic culture)
+Began the TypeDB schema design for IFID. The core problem driving this: the `source`
+field across all category taxonomies (additives, fortification, etc.) is an unstructured
+string list. Until there's a proper `source` entity type, converting any category to
+TypeDB creates structural debt. This session built the source and ingredient-form schema
+using wheat as the first working case, and established the design principles that will
+govern all future categories.
 
 ---
 
-### Bucket B — Non-INS substances (legitimate ingredients, no INS number)
+## What was built
 
-**thickener (12 rows)**: isabgol, psyllium husk, psyllium powder, cluster bean powder (guar raw form), methocel k4m (HPMC), edible gum (generic), modified starch (generic), modified starch maize, modified starch tapioca, costarch, sodium starch glycolate, modified maize starch
+### TypeDB schema (live in DB — ground truth is `db/schema.typeql` + `db/data.typedb`)
 
-**bulking agent (9 rows)**: maltodextrin (×2), corn maltodextrin, wheat maltodextrin, wheat dextrin, citrus fiber, citrus fibre, croscarmellose sodium, 2'-fucosyllactose human milk oligosaccharide
+- `source` entity: `source-name @key`, `source-type`, `is-allergen`
+- `ingredient-form` entity (concrete, not abstract): `canonical-name @key`, `matter-state`
+- `flour-form sub ingredient-form`: owns `milling-grade`
+- `derived-from` relation: `base` ↔ `form`, owns `processing-method @card(0..)`
+- `variety-of` relation: `base-variety` ↔ `variant` (both played by `source`)
 
-**raising agent (6 rows)**: yeast, dried yeast, navsadar, naushadar, papad khar (traditional Indian alkalis — no INS), baking powder (compound mixture — no single INS)
+### Data inserted (wheat)
 
-**gelling agent (5 rows)**: fish gelatin, bovine gelatin, food grade fish gelatin, capsule shell ingredient gelatin, nata de coco
+| Node | Type | Key attributes |
+|---|---|---|
+| wheat | source | source-type: natural, is-allergen: true |
+| whole wheat flour | flour-form | milling-grade: whole, matter-state: flour |
+| refined wheat flour | flour-form | milling-grade: refined, matter-state: flour |
+| semolina | ingredient-form | matter-state: coarse grits |
+| wheat flakes | ingredient-form | matter-state: flakes |
+| malted wheat | ingredient-form | matter-state: grain |
+| bansi wheat | source | source-type: natural, is-allergen: true |
+| bansi semolina | ingredient-form | matter-state: coarse grits |
 
-**humectant (2 rows)**: aloe vera juice, hyaluronic acid
+`bansi wheat` connected to `wheat` via `variety-of`.
+All ingredient-forms connected to their source via `derived-from` with `processing-method`.
 
-**firming agent (3 rows)**: magnesium sulfate, magnesium taurate, dipotassium phosphate (check INS 340 — may be resolvable)
+### Supporting files
 
-**anticaking agent (8 rows)**: calcium silicate (INS 552 — missing from taxonomy, could add), zinc oxide (INS 1504?), magnesium stearate (INS 572?), ferric ammonium citrate (INS 381?), tribasic calcium phosphate, magnesium hydrogen phosphate, anticaking agents (generic), magnesium stearate
-
-**solvent (2 rows)**: alcohol, ethyl alcohol — ethanol, not an INS additive
-
-**packaging gas (2 rows)**: packaging gas nitrogen, packaging gases nitrogen — INS 941 (taxonomy error: 941 listed as Dimethylpolysiloxane, should be Nitrogen). Taxonomy data quality issue to note.
-
-**emulsifier|stabiliser (1 row)**: cake gel — composite product
-
-**thickener|bulking agent (1 row)**: psyllium husk powder
-
-**thickener|gelling agent (1 row)**: hpmc vegetarian capsule
-
-**binding agent|thickener|stabiliser (1 row)**: binding agent gum acacia — should have matched INS 414; check why it didn't
-
-**carrier (1 row)**: carrier lactose — lactose has no food additive INS
-
-**propellant (1 row)**: nitrogen — same taxonomy error issue as packaging gas
-
-**antifoaming agent (1 row)**: antifoaming agent — generic class label only
-
-**coating agent (1 row)**: pharmaceutical glaze — pharmaceutical grade, not food INS
+- `raw_agricultural_material/tql/DESIGN.md` — design decision log (6 entries)
+- `raw_agricultural_material/tql/CHECKLIST.md` — pre-insert validation protocol
+- `.claude/CLAUDE.md` — project memory loaded at session start
+- TypeDB skill created at `~/.claude/skills/typedb-expert/` (v3.8.0, with reference files)
 
 ---
 
-### Bucket C — Generic class labels only (no substance, probably drop)
+## Key design decisions made (see DESIGN.md for full rationale)
 
-**emulsifier (12 rows)**: emulsifier, emulsifiers, emulsfying, emuslifier (typos), cloudifier, mayonnaise, emulsifier vegetable origin, sunflower creamer — no specific INS substance identifiable
-
-**acidity regulator (9 rows)**: acidity regulator, acidity regulators, acid regulator, acidity regulator ins, acidity regulators ns, alkaline salt, distilled vinegar, synthetic vinegar, magnesium malate
-
-**stabiliser (3 rows)**: stabilizer ns 415, stabilizer hydrolysed vegetable protein, stabilizer hydrolyzed vegetable protein — hydrolysed vegetable protein has no INS
+1. **Nodes only for declared forms** — no phantom intermediate processing nodes
+2. **Processing decisions on the relation, not the node** — `derived-from` carries `processing-method`
+3. **Subtype rule: depth must be real, not invented to fit** — semolina was wrongly placed in `flour-form` (caught and corrected); a subtype is only justified if it has genuine internal categorical depth
+4. **matter-state on entity, processing-method on relation** — E-axis and M-axis are separate
+5. **variety-of at source level** — bansi wheat is a variety of wheat at source; bansi semolina's variety relationship to semolina is derivable by traversal, not duplicated
+6. **Fortification agents are independent entities** — they are not purely relational; they exist standalone in health supplements, appear as additives, AND participate in `fortified-with` relations. The `fortified-with` relation schema is NOT yet built (blocked until `nutrient-agent` entity type is defined)
 
 ---
 
-## Recommended next steps (in order)
+## Where we stopped
 
-1. **Bulk reclassify the 17 antioxidant rows** — split to `fortification_agent` / `health_supplement` (clear list above, no taxonomy work needed)
-2. **Bulk reclassify preservative misclassified rows** — probiotics → `health_supplement`, selenite → `fortification_agent`
-3. **Bulk reclassify FOS/prebiotic rows** from `sweetener|bulking agent` → `health_supplement`
-4. **Decide on non-INS policy** — do these get a `non-INS` flag section in taxonomy, or a separate non-INS file?
-5. **Check INS 552, 381 etc.** for anticaking — 3–4 more entries may be addable to taxonomy
-6. **Flag or drop generic class labels** — rows with no substance are label noise
+**Wheat working CSV has 1 remaining unencoded row:**
+
+```
+fortified wheat flour iron — flour-form, milling-grade: whole or refined (TBD),
+                             derives from: whole wheat flour or refined wheat flour
+                             fortified-with: iron (specific salt form TBD)
+```
+
+This row is **blocked** on two decisions:
+1. Which base flour it derives from (whole or refined — label doesn't specify)
+2. The `fortified-with` relation requires `nutrient-agent` entity type to be defined first
+
+**The `fortified-with` relation design is clear but not yet implemented:**
+```
+relation fortified-with
+  relates fortified-form   ← flour-form (the carrier)
+  relates agent            ← nutrient-agent (ferrous fumarate / zinc sulphate / etc.)
+```
+
+**`nutrient-agent` entity needs:**
+- `canonical-name @key`
+- `nutrient-type` (vitamin_fat_soluble | vitamin_b_group | mineral_salt | amino_acid | functional_ingredient)
+- `regulatory-category` (fssai_mandatory_fortification | fssai_hsnfsdu | fssai_permitted_additive | unregulated)
+
+---
+
+## Next session: start with rice
+
+**Why rice next (not soy, not corn):**
+
+Rice is the cleanest next source after wheat:
+- Same FSSAI mandatory fortification pattern (thiamin, zinc sulphate, folic acid, cyanocobalamin) — will stress-test the `fortified-with` schema once it's built
+- Similar derived form variety: white rice, brown rice, parboiled rice, rice flour, rice bran, puffed rice (murmura), flattened rice (poha) — exercises matter-state + processing-method without introducing new schema questions
+- Manageable complexity — soybean is higher priority for allergen/additive reasons but has more edge cases (protein isolate, lecithin cross-category dependency)
+- No is-allergen complexity (rice is generally hypoallergenic — useful contrast to wheat)
+
+**Recommended session order:**
+1. Define `nutrient-agent` entity + `fortified-with` relation in schema
+2. Close the `fortified wheat flour iron` row in wheat
+3. Begin rice source + derived forms
 
 ---
 
@@ -100,8 +106,8 @@
 
 | File | State |
 |---|---|
-| `core/all_variants_working.csv` | 1,666 rows — active working file |
-| `core/all_variants.csv` | 2,292 rows — Tier 1, never touch |
-| `additives/additives_taxonomy.json` | 158 entries (was 153) |
-| `health_supplement/pending_enrichment.csv` | 14 rows — stub open, not yet sessioned |
-| `fortification_agent/experiment.log.md` | Up to date |
+| `db/schema.typeql` | Ground truth schema |
+| `db/data.typedb` | Ground truth data (binary export) |
+| `raw_agricultural_material/wheat_working.csv` | 1 row remaining (fortified wheat flour iron) |
+| `raw_agricultural_material/tql/DESIGN.md` | Design decision log |
+| `raw_agricultural_material/tql/CHECKLIST.md` | Pre-insert validation protocol |
