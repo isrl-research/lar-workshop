@@ -1,104 +1,109 @@
-# Last Session Summary — 2026-04-08
+# Last Session Summary — 2026-04-09
 
 ## What this session was about
 
-Began the TypeDB schema design for IFID. The core problem driving this: the `source`
-field across all category taxonomies (additives, fortification, etc.) is an unstructured
-string list. Until there's a proper `source` entity type, converting any category to
-TypeDB creates structural debt. This session built the source and ingredient-form schema
-using wheat as the first working case, and established the design principles that will
-govern all future categories.
+A design session — no TypeDB inserts. The session resolved two open questions from the
+wheat build (source-type vocabulary, fortification deferral) and then produced a fundamental
+schema redesign driven by the dairy category challenge. The new architecture (ingredient-declaration
+relation + lookup layer) is agreed in design but not yet implemented in TypeDB.
 
 ---
 
-## What was built
+## What was done
 
-### TypeDB schema (live in DB — ground truth is `db/schema.typeql` + `db/data.typedb`)
+### File changes
+- `core/all_variants_working.csv`: 1,666 → 1,660 rows — deleted 6 encoded wheat forms
+  (semolina, wheat flakes, malted wheat, whole wheat flour ×2, refined wheat flour)
+- `dairy/dairy_working.csv`: created, 122 rows extracted from core (see stats below)
+- `raw_agricultural_material/tql/DESIGN.md`: added decisions 008, 009, 010
 
-- `source` entity: `source-name @key`, `source-type`, `is-allergen`
-- `ingredient-form` entity (concrete, not abstract): `canonical-name @key`, `matter-state`
-- `flour-form sub ingredient-form`: owns `milling-grade`
-- `derived-from` relation: `base` ↔ `form`, owns `processing-method @card(0..)`
-- `variety-of` relation: `base-variety` ↔ `variant` (both played by `source`)
+### TypeQL written but NOT yet run in TypeDB
+Source-type update for wheat and bansi wheat (still needs to be executed):
+```typeql
+match $s isa source, has source-name "wheat", has source-type $st;
+update $s has source-type = "plant";
 
-### Data inserted (wheat)
-
-| Node | Type | Key attributes |
-|---|---|---|
-| wheat | source | source-type: natural, is-allergen: true |
-| whole wheat flour | flour-form | milling-grade: whole, matter-state: flour |
-| refined wheat flour | flour-form | milling-grade: refined, matter-state: flour |
-| semolina | ingredient-form | matter-state: coarse grits |
-| wheat flakes | ingredient-form | matter-state: flakes |
-| malted wheat | ingredient-form | matter-state: grain |
-| bansi wheat | source | source-type: natural, is-allergen: true |
-| bansi semolina | ingredient-form | matter-state: coarse grits |
-
-`bansi wheat` connected to `wheat` via `variety-of`.
-All ingredient-forms connected to their source via `derived-from` with `processing-method`.
-
-### Supporting files
-
-- `raw_agricultural_material/tql/DESIGN.md` — design decision log (6 entries)
-- `raw_agricultural_material/tql/CHECKLIST.md` — pre-insert validation protocol
-- `.claude/CLAUDE.md` — project memory loaded at session start
-- TypeDB skill created at `~/.claude/skills/typedb-expert/` (v3.8.0, with reference files)
+match $s isa source, has source-name "bansi wheat", has source-type $st;
+update $s has source-type = "plant";
+```
 
 ---
 
-## Key design decisions made (see DESIGN.md for full rationale)
+## dairy_working.csv stats (122 rows)
 
-1. **Nodes only for declared forms** — no phantom intermediate processing nodes
-2. **Processing decisions on the relation, not the node** — `derived-from` carries `processing-method`
-3. **Subtype rule: depth must be real, not invented to fit** — semolina was wrongly placed in `flour-form` (caught and corrected); a subtype is only justified if it has genuine internal categorical depth
-4. **matter-state on entity, processing-method on relation** — E-axis and M-axis are separate
-5. **variety-of at source level** — bansi wheat is a variety of wheat at source; bansi semolina's variety relationship to semolina is derivable by traversal, not duplicated
-6. **Fortification agents are independent entities** — they are not purely relational; they exist standalone in health supplements, appear as additives, AND participate in `fortified-with` relations. The `fortified-with` relation schema is NOT yet built (blocked until `nutrient-agent` entity type is defined)
+| f_revised | rows |
+|---|---|
+| processed_ingredient | 67 |
+| raw_agricultural_material | 25 |
+| lipid base | 17 |
+| fermentation_agent | 7 |
+| flag_compound_product | 2 |
+| sweetener / health_supplement / carrier / flavouring | 4 |
 
----
-
-## Where we stopped
-
-**Wheat working CSV has 1 remaining unencoded row:**
-
-```
-fortified wheat flour iron — flour-form, milling-grade: whole or refined (TBD),
-                             derives from: whole wheat flour or refined wheat flour
-                             fortified-with: iron (specific salt form TBD)
-```
-
-This row is **blocked** on two decisions:
-1. Which base flour it derives from (whole or refined — label doesn't specify)
-2. The `fortified-with` relation requires `nutrient-agent` entity type to be defined first
-
-**The `fortified-with` relation design is clear but not yet implemented:**
-```
-relation fortified-with
-  relates fortified-form   ← flour-form (the carrier)
-  relates agent            ← nutrient-agent (ferrous fumarate / zinc sulphate / etc.)
-```
-
-**`nutrient-agent` entity needs:**
-- `canonical-name @key`
-- `nutrient-type` (vitamin_fat_soluble | vitamin_b_group | mineral_salt | amino_acid | functional_ingredient)
-- `regulatory-category` (fssai_mandatory_fortification | fssai_hsnfsdu | fssai_permitted_additive | unregulated)
+dairy_product_subtype already tagged on 32 rows: hard_cheese (6), paneer (6), yogurt (6),
+fresh_curd (4), soft_cheese (3), heat_concentrated (3), fermented_cream (2), others.
+119/122 rows have source=milk. buffalo milk and camel milk have 1 row each.
 
 ---
 
-## Next session: start with rice
+## Key design decisions made (see DESIGN.md 008–010 for full rationale)
 
-**Why rice next (not soy, not corn):**
+### 008 — source-type vocabulary
+`natural` is gone. Valid values: `plant`, `dairy`, `animal`, `marine`, `fungal`,
+`microbial`, `synthetic`. Dietary classification is now derivable from source-type.
 
-Rice is the cleanest next source after wheat:
-- Same FSSAI mandatory fortification pattern (thiamin, zinc sulphate, folic acid, cyanocobalamin) — will stress-test the `fortified-with` schema once it's built
-- Similar derived form variety: white rice, brown rice, parboiled rice, rice flour, rice bran, puffed rice (murmura), flattened rice (poha) — exercises matter-state + processing-method without introducing new schema questions
-- Manageable complexity — soybean is higher priority for allergen/additive reasons but has more edge cases (protein isolate, lecithin cross-category dependency)
-- No is-allergen complexity (rice is generally hypoallergenic — useful contrast to wheat)
+### 009 — ingredient-declaration replaces derived-from
+`derived-from` is removed. Replaced by `ingredient-declaration` relation:
+- relates `source` (source entity)
+- relates `form` (ingredient-form entity — source-agnostic)
+- owns `processing-method @card(0..)`
 
-**Recommended session order:**
-1. Define `nutrient-agent` entity + `fortified-with` relation in schema
-2. Close the `fortified wheat flour iron` row in wheat
-3. Begin rice source + derived forms
+`ingredient-form` nodes are now truly source-agnostic. `bansi semolina` as a node is
+gone — it becomes `ingredient-declaration(source: bansi wheat, form: semolina)`.
+`variety-of` stays untouched — biological variety between sources, unchanged.
+
+### 010 — lookup layer (separate from TypeDB)
+Label strings, multilingual names, and brand-specific variant names live in a separate
+lookup layer, not in the TypeDB model. The lookup layer maps strings → (source, form)
+pairs. TypeDB never sees "bansi semolina" as a name — it only sees the structured
+(bansi wheat, semolina) declaration. This means translation and variant resolution
+never require schema changes.
+
+---
+
+## What the heuristic settled on (source variety nodes)
+
+> A source variety gets its own source node when it appears as a declared ingredient
+> on a label. Derived-form nodes for that variety are created lazily — only when a
+> label actually declares that specific (source, form) combination.
+
+Cow milk, buffalo milk, camel milk are independent source nodes (variety-of milk)
+because they appear on labels as raw ingredient declarations. Their derived forms
+(toned, standardised, ghee, paneer) all hang off the canonical source via
+ingredient-declaration. Variety-specific derived forms (camel milk powder) get nodes
+only when a label explicitly declares them.
+
+---
+
+## Next session: dairy
+
+**Start with:**
+1. Run the two source-type update queries for wheat and bansi wheat
+2. Implement the schema redesign in TypeDB:
+   - Remove `derived-from` relation
+   - Add `ingredient-declaration` relation (source + form + processing-method)
+   - Remove `ingredient-form` plays derived-from roles
+   - Migrate existing wheat data: convert derived-from instances → ingredient-declaration instances
+   - Delete `bansi semolina` node, replace with ingredient-declaration(bansi wheat, semolina)
+3. Begin dairy source nodes: `milk` (canonical), `cow milk`, `buffalo milk`, `camel milk`
+4. Begin dairy ingredient-form nodes: the 25 raw_agricultural_material rows in dairy_working.csv
+   are the first target
+
+**Open question before dairy forms:**
+Does `is-allergen` on the `source` entity still work, or does it need to move to
+`ingredient-declaration`? Wheat starch (allergen) vs corn starch (not allergen) — the
+allergen flag belongs to the (source, form) combination, not the source alone.
+Resolve this before inserting dairy forms.
 
 ---
 
@@ -106,8 +111,8 @@ Rice is the cleanest next source after wheat:
 
 | File | State |
 |---|---|
-| `db/schema.typeql` | Ground truth schema |
-| `db/data.typedb` | Ground truth data (binary export) |
-| `raw_agricultural_material/wheat_working.csv` | 1 row remaining (fortified wheat flour iron) |
-| `raw_agricultural_material/tql/DESIGN.md` | Design decision log |
-| `raw_agricultural_material/tql/CHECKLIST.md` | Pre-insert validation protocol |
+| `db/schema.typeql` | Stale — reflects old derived-from model. Needs full rewrite next session. |
+| `db/data.typedb` | Stale — wheat data uses derived-from. Migration required. |
+| `raw_agricultural_material/wheat_working.csv` | 1 row remaining (fortified wheat flour iron, still blocked on nutrient-agent) |
+| `dairy/dairy_working.csv` | 122 rows, ready for analysis |
+| `raw_agricultural_material/tql/DESIGN.md` | Up to date — decisions 001–010 |

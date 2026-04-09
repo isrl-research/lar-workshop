@@ -104,6 +104,32 @@ Built `raw_agricultural_material/wheat_form_prototype.py`, a 5-step guided CLI t
 
 ---
 
+## [09-Apr-2026] — Schema redesign session: ingredient-declaration + dairy bootstrap
+
+Design-only session — no TypeDB inserts. Three outcomes:
+
+**1. source-type vocabulary fixed (design decision 008)**
+`natural` replaced with typed vocabulary: `plant`, `dairy`, `animal`, `marine`, `fungal`,
+`microbial`, `synthetic`. TypeQL update queries written for wheat and bansi wheat
+(natural → plant) but not yet executed — flagged for next session start.
+
+**2. Core schema redesign agreed (design decisions 009, 010)**
+`derived-from` relation is replaced by `ingredient-declaration` (source + form +
+processing-method). `ingredient-form` nodes are now source-agnostic — `bansi semolina`
+as a node is gone, replaced by ingredient-declaration(bansi wheat, semolina). A lookup
+layer (separate from TypeDB) owns all label strings and multilingual names, resolving
+them to (source, form) pairs. This unblocks translation without schema changes and
+removes variant noise from the core model. `db/schema.typeql` and `db/data.typedb` are
+now stale — migration required next session before any new inserts.
+
+**3. Dairy category bootstrapped**
+`core/all_variants_working.csv`: 6 encoded wheat rows deleted (1,666 → 1,660).
+`dairy/dairy_working.csv`: created, 122 rows. f_revised breakdown: processed_ingredient
+(67), raw_agricultural_material (25), lipid base (17), fermentation_agent (7), others (6).
+dairy_product_subtype tagged on 32 rows. Dairy is the next active category.
+
+---
+
 ## [27-Mar-2026 22:15 IST] — variant_class_analysis.py — Signal/Noise Classification of 1,666 Variants
 
 Built `core/variant_class_analysis.py`, a rule-based classifier that tags all 1,666 rows in `core/all_variants_working.csv` with one or more of 13 variant classes across two axes (noise: orthographic_noise, redundant_variant, compound_noise, out_of_scope; signal: linguistic_signal, transliteration_signal, canonical_form, form_signal, process_signal, grade_signal, fortification_signal, abbreviation_signal, multi_source). The main deadblock was unclassified rate: initial run hit 50.4% unclassified because the taxonomy had no class for plain English canonical names and form/grade/process uniqueness constraints were too strict; resolved by adding a `canonical_form` class, relaxing uniqueness to allow overlap with `redundant_variant`, and expanding all three vocabulary sets substantially (form, grade, process words). Final run: 1.5% unclassified (25 rows), all 7 verification criteria pass — đường/zucker/sucre/พริก caught as linguistic_signal, atta/maida/ghee/dahi/sooji as transliteration_signal, sait/palmolien/paim oil/wheatflour as orthographic_noise. Outputs: `variant_signal_class` column written to `all_variants_working.csv`, summary to `core/variant_class_report.csv`.

@@ -269,7 +269,6 @@ navsadar,synthetic,,crystalline chemical,raising agent,,,,0.0,0.98,0.475,0.0,0.9
 toor dal,pigeon pea,,,base ingredient,,,,0.0,0.0,0.12,0.0,0.0,0.12,0.048,0.048,1,False,False,,,,,,,,,,raw_agricultural_material,"orthographic_noise, transliteration_signal, form_signal"
 potatoes,potato,,whole/fresh pieces,base ingredient,,cut/sliced pieces,,0.0,0.05,0.12,0.0,0.1,0.12,0.063,0.078,1,False,False,,,,,,,,,,raw_agricultural_material,"orthographic_noise, canonical_form"
 rosemary,rosemary,,leaf,taste profile / spice,drying,whole/fresh pieces|cut/sliced pieces,flavouring agent,0.0,0.0,0.18,0.42,0.1,0.675,0.072,0.426,1,True,False,,,,,,,,,,taste profile / spice,canonical_form
-semolina,wheat,milling,coarse grits,base ingredient,,,,0.28,0.3,0.12,0.28,0.3,0.12,0.222,0.222,1,False,False,,,,,semolina,,,,,raw_agricultural_material,"canonical_form, form_signal"
 sesbania,sesbania,,,base ingredient,,,,0.0,0.0,0.12,0.0,0.0,0.12,0.048,0.048,1,False,False,,,,,,,,,,raw_agricultural_material,canonical_form
 sulphite,mineral,,crystalline chemical,preservative,,,antioxidant,0.0,0.98,0.885,0.0,0.98,0.885,0.648,0.648,2,False,False,,,,,,,,,,preservative,"orthographic_noise, canonical_form"
 tamarind,tamarind,,pulp/puree,flavouring agent,,,acidity regulator,0.0,0.25,0.675,0.0,0.25,0.86,0.345,0.419,2,False,False,,,,,,,,,,flavouring agent,canonical_form
@@ -602,8 +601,6 @@ invert sugar,sugarcane,?inversion,crystalline chemical,sweetener,refining,syrup,
 invert sugar,sugarcane,?inversion,crystalline chemical,sweetener,refining,syrup,humectant,0.0,0.98,0.625,0.75,0.98,0.625,0.544,0.769,2,True,True,,,,,,,,invert_sugar,,sweetener,"redundant_variant, form_signal"
 invert syrup,sugarcane,?inversion,syrup,sweetener,refining,concentrate,humectant,0.0,0.4,0.625,0.75,0.4,0.625,0.37,0.595,2,False,True,,,,,,,,,,sweetener,form_signal
 golden syrup,sugarcane,refining,syrup,sweetener,,concentrate,humectant,0.75,0.4,0.625,0.75,0.4,0.625,0.595,0.595,2,False,False,,,,,,,,,,sweetener,form_signal
-wheat flakes,wheat,,flakes,base ingredient,,,,0.0,0.36,0.12,0.0,0.36,0.12,0.156,0.156,1,False,False,,,,,,,,,,raw_agricultural_material,"canonical_form, form_signal"
-malted wheat,wheat,fermentation,,base ingredient,milling,flour/fine powder|coarse grits,,0.56,0.0,0.12,0.56,0.33,0.12,0.216,0.315,1,True,False,,,,,,,,,,raw_agricultural_material,"canonical_form, process_signal"
 wheat gluten,wheat,,protein concentrate,base ingredient,,protein isolate,,0.0,0.74,0.12,0.0,0.78,0.12,0.27,0.282,1,False,False,,,,,gluten_extract,,plant_protein,,,processed_ingredient,"canonical_form, form_signal"
 vital gluten,wheat,,protein concentrate,base ingredient,,protein isolate,,0.0,0.74,0.12,0.0,0.78,0.12,0.27,0.282,1,False,False,,,,,gluten_extract,,plant_protein,,,processed_ingredient,"form_signal, grade_signal"
 almond flour,almond,milling,flour/fine powder,base ingredient,,,,0.28,0.33,0.12,0.28,0.33,0.12,0.231,0.231,1,False,False,,,,,,,,,,raw_agricultural_material,"canonical_form, form_signal, grade_signal"
@@ -1081,8 +1078,6 @@ pomegranate seeds,pomegranate,,whole/fresh pieces,base ingredient,,,,0.0,0.05,0.
 star anise powder,star anise,,powder,taste profile / spice,drying,,flavouring agent,0.0,0.42,0.18,0.42,0.42,0.675,0.198,0.522,1,True,False,,,,,,,,,,taste profile / spice,form_signal
 vegetable protein,soybean | groundnut | pea,,protein concentrate,base ingredient,,protein isolate,,0.0,0.74,0.12,0.0,0.78,0.12,0.27,0.282,1,False,False,,,,,,,plant_protein,,,processed_ingredient,"form_signal, multi_source"
 ro-purified water,water,refining,juice,base ingredient,,,,0.75,0.5,0.12,0.75,0.5,0.12,0.423,0.423,2,False,False,,,,,,,,,,raw_agricultural_material,"canonical_form, form_signal"
-whole wheat flour,wheat,milling,flour/fine powder,base ingredient,,,,0.28,0.33,0.12,0.28,0.33,0.12,0.231,0.231,1,False,False,,,,,whole,,,,,raw_agricultural_material,"redundant_variant, canonical_form, form_signal, grade_signal"
-whole wheat flour,wheat,milling,flour/fine powder,base ingredient,,,,0.28,0.33,0.12,0.28,0.33,0.12,0.231,0.231,1,False,False,,,,,whole,,,,,raw_agricultural_material,"redundant_variant, canonical_form, form_signal, grade_signal"
 black truffle oil,truffle,solvent extraction,oil,lipid base,,extract/oleoresin,flavouring agent,0.82,0.7,0.22,0.82,0.86,0.675,0.544,0.774,2,True,False,,,,,,,,,,lipid base,"canonical_form, form_signal, grade_signal"
 calcium caseinate,milk,,protein concentrate,base ingredient,,,,0.0,0.74,0.12,0.0,0.74,0.12,0.27,0.27,1,False,False,,,,,,,casein,,,processed_ingredient,"grade_signal, fortification_signal"
 cantaloupe powder,cantaloupe,drying,powder,flavouring agent,,,taste profile / spice,0.42,0.42,0.675,0.42,0.42,0.675,0.522,0.522,2,False,False,,,,,,,,,,flavouring agent,"canonical_form, form_signal"
@@ -1175,7 +1170,6 @@ organic ginger root,ginger,,whole/fresh pieces,taste profile / spice,,cut/sliced
 dried ginger powder,ginger,drying,powder,taste profile / spice,,,flavouring agent,0.42,0.42,0.18,0.42,0.42,0.675,0.324,0.522,2,False,False,,,,,,,,,,taste profile / spice,"canonical_form, form_signal, process_signal"
 dried glucose syrup,corn | tapioca,drying,syrup,sweetener|bulking agent,?hydrolysis,granules|powder,,0.42,0.4,0.625,0.6,0.8,0.625,0.496,0.67,2,False,True,,,,,,,,,,sweetener|bulking agent|ins_check_needed,"form_signal, process_signal, multi_source"
 hazelnut flavouring,hazelnut,,extract/oleoresin,flavouring agent,,,taste profile / spice,0.0,0.86,0.675,0.0,0.86,0.675,0.528,0.528,2,False,False,,,,,,,,,,flavouring agent,"canonical_form, form_signal, grade_signal"
-refined wheat flour,wheat,refining|milling,flour/fine powder,base ingredient,,,flour treatment agent,0.75,0.33,0.12,0.75,0.33,0.93,0.372,0.696,2,False,False,,,,,,,,,,raw_agricultural_material,"canonical_form, form_signal, process_signal"
 alphonso mango pulp,mango,,pulp/puree,base ingredient,,,,0.0,0.25,0.12,0.0,0.25,0.12,0.123,0.123,1,False,False,,,,,,,,,,raw_agricultural_material,"canonical_form, grade_signal"
 skimmed milk powder,milk,skim/defatted meal,powder,base ingredient,,,,0.0,0.42,0.12,0.0,0.42,0.12,0.174,0.174,1,False,False,,,,,,,,,,processed_ingredient,"canonical_form, form_signal, process_signal, grade_signal"
 coconut milk powder,coconut,,powder,base ingredient,,,,0.0,0.42,0.12,0.0,0.42,0.12,0.174,0.174,1,False,False,,,,,,,,,,processed_ingredient,"canonical_form, form_signal"
