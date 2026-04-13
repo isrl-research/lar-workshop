@@ -16,92 +16,94 @@ is an example of exactly the kind of thing that would have been confidently wron
 ## What IFID is
 
 A structured form-based database of food ingredients. Brands fill in ingredient
-declarations; the system resolves unstructured strings to canonical structured entries.
-The core problem is that the same ingredient appears hundreds of ways on labels
-(atta / whole wheat flour / gehun ka atta / fortified wheat flour) and the DB needs
-to handle all of them without duplication or lookup failure.
+declarations via a structured form — not free text. The form enforces the right level
+of specificity at input, so underdeclared ingredients (e.g. "vegetable oil") cannot
+be submitted. The downstream parsing mess that plagues other food databases does not
+happen here because the input was never unstructured to begin with.
+
+IFID is a substrate — it defines what a correct ingredient declaration looks like.
+Other services resolve up to it. It does not accommodate label noise; it replaces
+the conditions that produce label noise.
 
 ---
 
-## Category pipeline — current status
+## TypeDB graph — active build
 
-Each category follows: raw data → working CSV → taxonomy JSON → track-a report → TypeDB schema.
+**Use the `ifid-graph-critic` skill at the start of any session involving schema
+decisions, data modelling, or ingredient taxonomy structure. This is the default
+posture for graph work: discuss and stress-test before implementing.**
 
-| Category | Status |
-|---|---|
-| `additives/` | Track A done. 158-entry taxonomy JSON. 126 residual rows in `enrichment_pending.csv` (bucket A reclassifications + non-INS + generic labels). Source field in taxonomy is still an unstructured string — **this is the known tech debt blocking TypeDB conversion**. |
-| `colors/` | Track A done. Clean INS CSV + non-INS variants CSV. No pending enrichment. |
-| `fortification_agent/` | Track A done. 68 canonical agents. Pending: variant resolution (Step 5) + 5 SME flags. |
-| `health_supplement/` | `pending_enrichment.csv` open (14 rows). No taxonomy yet. |
-| `raw_agricultural_material/` | `wheat_working.csv` present (30 rows). No taxonomy. **Active focus.** |
-| `solvent/` | README only. One entry (ethanol). No taxonomy. |
-| `core/` | `all_variants_working.csv` — 1,666 rows, active working file. `all_variants.csv` — 2,292 rows, Tier 1, never touch. |
+**Also use `typedb-expert` for all TypeQL syntax, queries, and driver usage.**
+Version pinned to TypeDB 3.8.0.
 
----
+The design reasoning for every structural decision lives in **`db/graph.md`**.
+Read it before any graph session. The schema (`db/schema.typeql`) and data
+(`db/data.typedb`) are consequences of the reasoning there — not the source of truth.
 
-## Why raw_agricultural_material is the current priority
+### What is built
 
-The `source` field across all categories (additives taxonomy, fortification, etc.)
-is an unstructured string list (e.g. `["corn", "wheat", "soybean"]`). Until there
-is a proper `Source` entity type with structured properties, converting any category
-to TypeDB creates tech debt — every category would need to be remodelled when sources
-get structured. Building the source taxonomy via `raw_agricultural_material` first
-unblocks everything else.
+Schema: `source`, `ingredient-form`, `form-of` (with `processing-method`), `variety-of`.
+No subtypes of `ingredient-form` currently exist.
+
+Data inserted: wheat, bansi wheat, milk (taxonomy root, not declarable), cow milk,
+buffalo milk, camel milk. Forms: flour, semolina, malted-wheat, wheat-flakes.
+Relations: 6× form-of, 1× variety-of (bansi wheat sub wheat).
+
+### Core model decisions (reasoning in graph.md)
+
+- `ingredient-form` is source-agnostic. Source-specific names live in the lookup layer only.
+- Processing differences between forms (whole vs refined flour) belong on the `form-of`
+  relation as `processing-method`, not on the node.
+- `is-declarable` on `source` separates taxonomy roots (`milk`) from valid form-of origins
+  (`cow milk`). The input form enforces this — underdeclared sources cannot be submitted.
+- `is-allergen` on `source`, not on `ingredient-form`. Allergenicity is source-determined.
+- `variety-of` is a separate relation from `form-of` — taxonomic vs processual edges.
+- EMF scores never enter TypeDB. Only conclusions (relations or standalone nodes) do.
+- Subtypes require genuine internal categorical depth. Do not create subtypes speculatively.
+
+### What is not in TypeDB (by design)
+
+- EMF scores — analysis artefacts, live in CSVs
+- Label strings, multilingual names, brand aliases — live in the lookup layer (not yet built)
+- Intermediate processing steps that are never declared on a label
 
 ---
 
 ## EMF framework
 
-**Read `/home/lalithakanha/isrl-research/workshop/emf-info.md` for exact scores and axis values.**
+**Read `emf-info.md` for exact scores and axis values.**
 
-EMF is a tri-axial scoring system that measures how far an ingredient has drifted
-from its original biological source. It was built to answer one specific question
-deterministically: **is X a variant of ingredient Y, or a standalone ingredient?**
+Tri-axial scoring: E (Anthropogenic Energy), M (Matter), F (Functional).
+Used to answer one question deterministically: is X a variant of Y, or a standalone?
+Close EMF vectors → variant. Drifted vectors → standalone (possibly `derived-from`).
 
-- **E** (Anthropogenic Energy): what kind of process was applied — low = physical, high = chemical synthesis
-- **M** (Matter): how different is the physical/chemical form from the source
-- **F** (Functional): is the ingredient's identity source-anchored (F low) or function-anchored (F high)
-
-**The decision rule:** if two ingredient-forms have close EMF vectors → one is a variant
-of the other. If EMF vectors have drifted significantly on any axis → they are standalone
-ingredients (possibly connected by a `derived-from` relation, but not variants).
-
-Examples:
-- milk → milk powder: small EMF drift → variant
-- milk → butter: M and F shift substantially → standalone ingredient
-- acai berry → acai berry flavouring (nature identical): E and F blow out → standalone, connected by `derived-from`
-
-EMF scores are **analysis artefacts** — they live in the CSVs as evidence for decisions,
-not in the TypeDB schema. What goes into TypeDB is the *conclusion*: variant relationship
-or standalone node + `derived-from` relation.
+EMF scores are analysis artefacts. They live in CSVs. They never enter TypeDB.
+What enters TypeDB is the conclusion: a relation or a standalone node.
 
 ---
 
-## TypeDB data model — current thinking (not yet built)
+## Category pipeline — current status
 
-**Version: TypeDB 3.8.0. Use the `typedb-expert` skill for all TypeQL work.**
+Each category follows: raw data → working CSV → taxonomy JSON → TypeDB schema.
 
-Core insight: a raw agricultural material (e.g. wheat) simultaneously:
-- is a `source` for additives (lecithin comes from soy)
-- is an `ingredient` when declared bare on a label ("contains: wheat")
-- is the upstream node from which processed forms (atta, maida, sooji) are `derived-from`
+| Category | Status |
+|---|---|
+| `raw_agricultural_material/` | TypeDB schema live. Wheat + dairy sources inserted. **Active focus.** |
+| `additives/` | Track A done. 158-entry taxonomy JSON. Source field still unstructured string — blocked on RAM taxonomy completing first. |
+| `colors/` | Track A done. Clean INS CSV + non-INS variants CSV. |
+| `fortification_agent/` | Track A done. 68 canonical agents. Pending: variant resolution + 5 SME flags. |
+| `health_supplement/` | `pending_enrichment.csv` open (14 rows). No taxonomy. |
+| `solvent/` | README only. One entry (ethanol). No taxonomy. |
+| `core/` | `all_variants_working.csv` — 1,666 rows. `all_variants.csv` — 2,292 rows, Tier 1, never touch. |
 
-This means wheat should be **one entity node playing multiple roles**, not separate
-entity types. "Variant vs standalone" is expressed as a **relation** (`derived-from`),
-not as subtyping. Subtyping (`milk-powder sub milk`) would be semantically wrong —
-milk powder IS-NOT-A milk in the type system.
+---
 
-The `derived-from` relation carries the processing information (milling grade, process
-method) as relation-owned attributes, not as entity attributes. Process steps are the
-*evidence for* the derived-from conclusion, not first-class entities themselves.
+## Why raw_agricultural_material is the current priority
 
-**Open design questions (not yet resolved):**
-1. Single entity type with roles vs distinct types with shared supertype
-2. Where EMF decomposition lives (probably only in CSV, not TypeDB)
-3. How to handle manufactured sub-ingredients (wafer, pasta) vs raw materials — subtype or flag
-
-**Search strategy:** graph traversal at query time is acceptable for now.
-A lookup index over all variant combinations can be built later as a separate layer.
+The `source` field across all categories is an unstructured string list
+(`["corn", "wheat", "soybean"]`). Until there are proper `source` nodes in the graph,
+converting any other category to TypeDB creates tech debt — every category would need
+remodelling when sources get structured. RAM builds the foundation that unblocks everything.
 
 ---
 
@@ -109,12 +111,13 @@ A lookup index over all variant combinations can be built later as a separate la
 
 | File | What it is |
 |---|---|
-| `emf-info.md` | EMF axis definitions, process/matter/function score values |
+| `db/graph.md` | **Primary reference.** Full reasoning behind every schema decision. Read before any graph session. |
+| `db/schema.typeql` | Current TypeDB schema (consequence of graph.md) |
+| `db/data.typedb` | Current TypeDB data (binary) |
+| `emf-info.md` | EMF axis definitions and score values |
 | `core/all_variants_working.csv` | 1,666 rows — master working file, all categories |
 | `additives/additives_taxonomy.json` | 158-entry additive taxonomy |
 | `raw_agricultural_material/wheat_working.csv` | 30 wheat variant rows with EMF scores |
-| `experiment.log.md` | Session log — always update after completing a task |
-| `last_session_summary.md` | Last session handoff notes |
 
 ---
 
@@ -123,5 +126,6 @@ A lookup index over all variant combinations can be built later as a separate la
 - Working files stay in category folder until session closes, then snapshot to `cp/`
 - Never touch `core/all_variants.csv` (Tier 1 — raw source of truth)
 - Commit after each meaningful session with descriptive message
-- Log every completed task to `experiment.log.md`
 - The `isrl-file-lifecycle` skill manages session open/close protocol
+- Use `ifid-graph-critic` for all graph/schema design sessions
+- Use `typedb-expert` for all TypeQL syntax and query work

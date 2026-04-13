@@ -6,33 +6,31 @@ attribute source-type,
  value string;
 attribute is-allergen,
  value boolean;
-attribute canonical-name,
- value string;
-attribute milling-grade,
+attribute form-id,
  value string;
 attribute matter-state,
  value string;
 attribute processing-method,
  value string;
+attribute is-declarable,
+ value boolean;
 entity source,
   owns is-allergen,
+  owns is-declarable,
   owns source-name @key,
   owns source-type,
-  plays derived-from:base,
-  plays variety-of:base-variety,
-  plays variety-of:variant;
+  plays form-of:origin,
+  plays variety-of:base,
+  plays variety-of:variety;
 entity ingredient-form,
-  owns canonical-name @key,
+  owns form-id @key,
   owns matter-state,
-  plays derived-from:base,
-  plays derived-from:form;
-entity flour-form,
-  sub ingredient-form,
-  owns milling-grade;
-relation derived-from,
-  relates base,
+  plays form-of:form,
+  plays form-of:origin;
+relation form-of,
   relates form,
+  relates origin,
   owns processing-method @card(0..);
 relation variety-of,
-  relates base-variety,
-  relates variant;
+  relates base,
+  relates variety;

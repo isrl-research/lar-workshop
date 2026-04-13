@@ -1,0 +1,35 @@
+value,explanation,emf_e_tag,notes
+de-husking,Mechanical removal of outer husk or hull from grain or seed.,de-husking,
+milling,Generic milling — use only when milling grade is unknown or not relevant. Prefer the specific variant below where known.,milling,
+whole-milling,Milling that retains all bran and germ fractions. Produces whole grain flour (atta).,milling (split),Split from generic milling because whole vs refined produces legally distinct products with different labelling obligations.
+refined-milling,Milling with bran and germ removed. Produces refined flour (maida).,milling (split),
+coarse-milling,Milling to coarse particle size retaining endosperm structure. Produces semolina / sooji / rava.,milling (split),
+malting,Controlled steeping followed by germination then kiln-drying of grain. Activates amylase enzymes.,—,Added; not in EMF E-axis. Key process for malted wheat and malted barley forms.
+flaking,Steaming of grain followed by rolling into flat flakes under pressure.,—,Added; not in EMF. Produces oat flakes, wheat flakes. Distinct from milling.
+cold pressing,Mechanical extraction of oil without applied heat. Preserves flavour and micronutrient profile.,cold pressing,
+roasting,Application of dry heat to grain, seed, nut, or bean. Alters flavour and reduces moisture.,roasting,
+churning,Mechanical agitation of cream to aggregate fat globules and separate buttermilk. Produces butter.,churning,
+pasteurisation,Controlled heat treatment below 100°C to reduce pathogen load without full sterilisation.,pasteurization,Spelling standardised to British English for IFID consistency.
+sterilisation,Heat treatment sufficient to eliminate all viable microbial activity. Covers UHT processing.,—,Added; not in EMF. Required for UHT milk and shelf-stable dairy forms.
+homogenisation,Mechanical disruption of fat globules to produce uniform stable dispersion in liquid.,—,Added; not in EMF. Standard dairy step for liquid milk and cream products.
+skimming,Separation of fat layer from liquid by centrifuge or gravity. Produces cream and skimmed liquid fractions.,—,Added; not in EMF. Needed for skimmed milk, cream, and defatted dairy forms.
+evaporation,Water removal from liquid by controlled heat application. Produces concentrate or condensed forms.,—,Added; not in EMF. Distinct from spray drying — product remains liquid or semi-liquid.
+spray drying,Atomisation of liquid feed into a hot air chamber to produce fine powder.,—,Added; not in EMF. Standard method for milk powder, whey powder, protein powder production.
+freeze drying,Water removal by sublimation under vacuum at low temperature. Preserves structure and bioactives.,—,Added; not in EMF. Used for some extracts and premium ingredients.
+clarification,Removal of suspended impurities from liquid by heating and straining. Key step in ghee production.,clarification,
+fermentation,Microbial transformation of substrate by bacteria, yeast, or fungi. Covers lactic acid fermentation and others.,fermentation,Use this value for all fermentation types. Specific culture or organism is not captured here.
+coagulation,Protein aggregation induced by acid, rennet, heat, or salt. Produces curd, paneer, chhena, and cheese base.,—,Added; not in EMF. Distinct from fermentation — coagulation is physical/chemical protein change, not microbial.
+pressing,Mechanical compression of coagulated mass to expel whey and form a cohesive block.,—,Added; not in EMF. Distinguishes paneer (pressed) from chhena (unpressed) and hard cheese from soft.
+ageing,Controlled maturation of cheese or other fermented form over time. Microbial and enzymatic activity continues post-production.,—,Added; not in EMF. Required to distinguish aged cheese subtypes from fresh cheese.
+defatting,Removal of fat fraction from solid or semi-solid material. Produces defatted meal or defatted flour.,—,Added; not in EMF. Covers solvent and mechanical defatting for seed meals.
+refining,Chemical neutralisation and deodorisation of crude oil to remove free fatty acids and off-flavours.,refining,
+fractionation,Separation of a mixture into distinct fractions by controlled cooling or membrane separation.,fractionation,Covers both fat fractionation (stearin/olein) and milk fraction separation.
+ultrafiltration,Membrane-based separation retaining large molecules (proteins) and passing small molecules (lactose, water).,—,Added; not in EMF. Required for WPC, WPI, MPC production.
+isoelectric precipitation,Precipitation of protein by adjusting pH to the protein's isoelectric point. Used for casein isolation.,—,Added; not in EMF.
+solvent extraction,Use of organic solvent to extract oil or specific compound from solid material.,solvent extraction,
+bleaching,Treatment with peroxide or chlorine compounds to whiten flour or oil.,—,Added; not in EMF as a standalone step. Used for treated flour products.
+crystallisation,Controlled cooling or concentration to produce crystalline solid form from solution or melt.,—,Added; not in EMF as standalone. Covers sugar crystallisation, fat crystallisation.
+interesterification,Enzymatic or chemical rearrangement of fatty acid positions on triglyceride molecule.,interesterification,
+hydrogenation,Addition of hydrogen across double bonds in unsaturated fatty acids under catalyst.,hydrogenation,
+acetylation,Chemical modification by reaction with acetic anhydride. Used for modified starches.,acetylation,
+extrusion,Forcing material through a die under heat and mechanical pressure. Produces pasta, extruded snacks.,—,Added; not in EMF. Relevant when extruded forms appear as declared ingredients.

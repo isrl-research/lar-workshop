@@ -1,0 +1,106 @@
+# Design Decisions — 2026-04-13
+## Session: Dairy category — structural design before insertion
+
+---
+
+### Decision 1: Lookup layer separation of concerns (confirmed, hard constraint)
+
+The lookup layer does ONE thing: receives an ingredient vector (source, form) and returns
+the display name in the required language. That is all. It does not hold categories,
+taxonomies, variety-of hierarchies, or any structural information about how ingredients
+relate to each other. All of that lives in TypeDB. This is not a soft preference — it is
+a separation of concerns that must not be blurred. Any structural relationship between
+ingredients belongs in the graph.
+
+---
+
+### Decision 2: Cheese is declarable bare — unlike milk
+
+FSSAI allows "cheese" as a valid ingredient declaration. Declaring "mozzarella" instead
+is a voluntary specificity upgrade, not a correction of an underdeclaration. This is
+fundamentally different from milk, where specifying cow vs buffalo is REQUIRED because
+the source difference has tax, dietary classification, and allergen implications at the
+source level itself.
+
+This means:
+- `cheese` gets an `ingredient-form` node in IFID (it is declarable)
+- `mozzarella`, `cheddar`, `paneer`, `cottage-cheese` also get `ingredient-form` nodes
+- The relationship between them is: mozzarella is a recognized sub-type of cheese, both
+  independently declarable, specificity is the brand's choice
+
+---
+
+### Decision 3: Form-level variety-of — pattern identified, schema change required
+
+The cheese → mozzarella/cheddar/paneer relationship is structurally isomorphic to
+mango → Alphonso mango at the source level:
+- Both are declarable at both levels
+- More specific = voluntary upgrade, not a required correction
+- The specific type IS the general type (mozzarella IS a cheese, Alphonso IS a mango)
+
+`variety-of` currently only connects `source → source` in the schema. It needs to be
+extended to also connect `ingredient-form → ingredient-form` for this pattern.
+
+OPEN: Does this pattern appear outside dairy? (spices, fermentation products, marine?)
+Must be tested before finalizing. Do not implement in isolation for dairy only.
+
+---
+
+### Decision 4: Sugars are NOT isomorphic to cheese subtypes — do not create form variety-of
+
+Brown sugar vs white sugar is a processual distinction (degree of molasses retention).
+The form is crystalline sucrose in both cases. The difference belongs on `processing-method`
+on the `form-of` relation — same logic as whole wheat flour vs refined wheat flour sharing
+a single `flour` form-id. You can refine brown sugar into white sugar. The distinction
+is a processing path, not a categorical identity.
+
+Mozzarella and cheddar cannot be converted into each other. They are legally defined,
+categorically distinct product types. This is why cheese subtypes are form-level variety-of
+while sugar variants are processing-method on form-of.
+
+---
+
+### Decision 5: Lecithin, vegetable oil specificity is SOURCE-level, not form-level
+
+Sunflower lecithin vs soy lecithin = same form (lecithin), different sources. This is
+handled by two form-of paths pointing to the same `lecithin` ingredient-form node from
+different source nodes (sunflower, soy). No form-level variety-of needed or appropriate.
+
+"Vegetable oil" does not get an IFID node — it is underdeclared by IFID's standard.
+Palm oil, sunflower oil, etc. each derive from their own source nodes.
+
+---
+
+### Decision 6: WPC and WPI are separate form-id nodes
+
+Whey protein concentrate and whey protein isolate are distinctly declared, have different
+regulatory status, different protein content thresholds, different functional properties.
+They are closer to semolina vs flour (different forms from the same source) than to
+whole vs refined wheat flour (same form, different processing path).
+
+Both get separate form-id nodes. The processing-method on form-of from whey captures
+HOW they were produced (ultrafiltration-concentration vs ion-exchange-isolation).
+The form-id captures WHAT they are (declared identity).
+
+---
+
+### Decision 7: Multi-hop derivation chains already work in current schema
+
+`ingredient-form` already plays `form-of:origin` in the current schema. This means:
+
+    cow milk (source) ← form-of ← whey (ingredient-form) ← form-of ← WPC (ingredient-form)
+
+is structurally valid today without any schema change. Chains of derivation across
+declared forms are handled. "All things ultimately derived from cow milk" = multi-hop
+traversal.
+
+---
+
+### Open questions not yet resolved
+
+1. Is "whey" declared bare on Indian product labels, or only as "whey powder", "WPC",
+   "WPI" etc.? If never bare-declared, whey may not need its own form-id node — WPC/WPI
+   could go directly form-of source. Needs verification before inserting.
+
+2. Does form-level variety-of appear in other categories? Must test against spices,
+   marine-derived, fermentation products before finalizing the schema extension.

@@ -1,0 +1,27 @@
+value,explanation,emf_m_tag,notes
+whole/fresh,Whole intact biological form with minimal processing — whole fruit, whole nut, whole spice.,whole/fresh pieces,
+cut pieces,Sliced, diced, or chopped pieces. Shape altered but physical form not transformed.,cut/sliced pieces,
+grain,Whole cereal or pulse grain. Distinct from fresh pieces — grain implies dry harvested seed.,—,Added; EMF puts grain in N-axis not M-axis but needed here for raw agricultural materials.
+pulp,Fibrous plant mass retaining cell structure. Not fully smooth — press residue or coarse mash.,pulp/puree (split),EMF combined pulp and puree; split here because they are legally distinct in India.
+puree,Smooth pourable plant-origin liquid. Cell structure fully broken. No discernible pieces.,pulp/puree (split),Legal and GST distinction from paste (paste is not pourable).
+paste,Smooth non-pourable spreadable form. Higher solids content than puree. Does not flow freely.,—,Added; not in EMF. Distinct tax and legal treatment from puree in India.
+juice,Pressed or expressed aqueous liquid from plant material. Distinct from liquid — source is mechanical extraction.,juice,
+liquid,General aqueous liquid not produced by pressing. Covers liquid milk, broths, solutions.,—,Added; EMF does not have a generic liquid state. Juice is pressing-specific; liquid covers the rest.
+concentrate,Liquid with water significantly reduced by evaporation or membrane separation. Still pourable.,concentrate,
+emulsion,Stable liquid-in-liquid dispersion. One phase dispersed in another (e.g. butter, cream, margarine).,—,Added; not in EMF. Important for dairy fat forms and some additive forms.
+gel,Set water-continuous matrix that holds shape at rest. Deforms under significant force.,—,Added; hydrocolloid-set products, set yogurt variants.
+semi-solid,Deforms readily under light pressure but is not liquid. Not gel-set. Covers fresh curd and soft unset forms.,—,Added; covers fresh curd, labne-style products that EMF does not distinguish.
+granules,Formed discrete particles larger than powder, smaller than grits. Has defined shape per particle.,granules,
+powder,Fine dry particulate. Non-grain origin or where grain origin is not the relevant characteristic.,powder,EMF has source-embedded variants (whey powder, emulsifier powder) — those are not matter-states; source lives in the graph.
+flour,Fine dry particulate specifically from milled grain. Use this only for grain-origin fine powder.,flour/fine powder,Narrowed from EMF's combined tag. Starch flour and whole wheat flour both map here; source differentiates in the graph.
+coarse grits,Coarse dry particulate. Larger than flour, smaller than granules. Sooji/rava territory.,coarse grits,
+flakes,Thin flat solid sheets produced by rolling. Oat flakes, wheat flakes.,flakes,
+meal,Pressed or defatted coarse solid remaining after oil or fat extraction from seed.,skim/defatted meal,Dropped the skim/defatted qualifier — that is process context, not a distinct state. Meal = the residual solid mass.
+dense block,Rigid pressed solid that holds shape without refrigeration. Paneer, cheddar, firm tofu.,dense block,
+oil,Fixed lipid liquid at room temperature. Groundnut oil, coconut oil, refined vegetable oil.,oil,
+fat fraction,Solid or semi-solid lipid at room temperature. Butter, ghee, cocoa butter, vanaspati.,fat fraction,Distinct from oil — physical state at room temp differs.
+essential oil,Volatile aromatic oil fraction obtained by steam distillation or cold expression from plant material.,essential oil,Legally and functionally distinct from fixed oil.
+extract,Soluble fraction separated from source in liquid form. Covers aqueous and ethanolic extracts.,extract/oleoresin (split),EMF combined extract and oleoresin; split here because they are physically and legally distinct.
+oleoresin,Viscous resinous extract containing both fixed oil and volatile aromatic compounds.,oleoresin + extract/oleoresin (split),
+crystalline,Crystalline solid form. Covers sugars, salts, and crystalline synthetic compounds.,crystalline chemical,Renamed — 'chemical' was EMF scoring language; not needed in declaration context.
+suspension,Particulate material dispersed in liquid but not emulsified. Settles on standing.,—,Added; some spice preparations, some fortification premixes.
