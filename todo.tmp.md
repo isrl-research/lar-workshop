@@ -1,101 +1,100 @@
 # IFID Dairy Session — Todo
+## Updated: 2026-04-14
 
 Start next session by reading handoff.tmp.md, then tick off items here as you go.
 
 ---
 
-## Schema changes (must happen before any dairy data insertion)
+## Immediate: before any new insertions
 
-- [ ] Extend `variety-of` to connect `ingredient-form → ingredient-form`
-      Currently: only `source → source`. Needed for: cheese → mozzarella/cheddar/paneer/cottage-cheese.
-      Before implementing: verify pattern appears in at least one other category (spices, marine, fermentation).
-      See decision-2026-04-13.tmp Decision 3.
-
----
-
-## Open questions to resolve before inserting
-
-- [ ] Is "whey" declared bare on Indian labels?
-      If yes: `whey` gets its own ingredient-form node, WPC/WPI are form-of whey.
-      If no: WPC/WPI go directly form-of source (cow milk etc.), no whey node needed.
-      Ask Lalitha or check FSSAI label corpus.
-
-- [ ] Does form-level variety-of appear outside dairy?
-      Test candidates: spice types (cinnamon varieties?), vinegar types, fermentation products.
-      If pattern recurs → extend variety-of cleanly as a general mechanism.
-      If dairy-only → examine whether a simpler approach suffices.
+- [ ] **Back-migrate source names to `{family} {specific}` format**
+      Rename in TypeDB: `cow milk` → `milk cow`, `buffalo milk` → `milk buffalo`,
+      `camel milk` → `milk camel`. Schema unchanged; only source-name attribute values.
+      Do this before any new form-of relations reference these sources.
 
 ---
 
-## Dairy forms to confirm and insert
+## Open questions — resolve before inserting dependent forms
 
-Distinct ingredient-form nodes identified from dairy_working.csv (source-agnostic):
+- [ ] **Is "whey" declared bare on Indian labels?**
+      If yes: `whey` gets its own form-id node; WPC and WPI are form-of(whey).
+      If no: WPC and WPI go directly form-of source (milk cow, milk buffalo).
+      This gates the entire protein fraction insertion path.
 
-### Raw / minimally processed
-- [ ] `whey` (if confirmed bare-declarable — see open question above)
-- [ ] `skim-milk` (skimmed/partly skimmed milk — grade of liquid milk)
-- [ ] `toned-milk` (fat-adjusted liquid milk)
-- [ ] `condensed-milk`
-- [ ] `milk-powder` (whole milk powder)
-- [ ] `skim-milk-powder`
-- [ ] `milk-snf` (solids-not-fat — verify if this is its own declared form or always paired)
+- [ ] **Does form-level variety-of appear outside dairy?**
+      Test candidates: spice varieties (e.g. cinnamon types), vinegar types, fermented
+      products. If the pattern recurs in at least one other category → general mechanism,
+      keep. If dairy-only → may still be valid but note the limited precedent.
 
-### Fat-fraction forms
-- [ ] `cream`
-- [ ] `butter`
-- [ ] `ghee`
+- [ ] **Is paneer a cheese subtype or a standalone form?**
+      FSSAI defines paneer under a separate standard from cheese. It is produced by
+      coagulation + pressing without rennet or ageing. `variety-of(paneer, cheese)`
+      may be wrong — paneer is arguably not a sub-type of cheese but a distinct
+      coagulated milk product. Confirm before inserting.
 
-### Fermented / coagulated forms
-- [ ] `curd` (dahi — fermented milk solid, fresh)
-- [ ] `yogurt` (fermented, distinct from curd? needs confirmation — see note below)
-- [ ] `cheese` (declarable bare — parent node for cheese subtypes)
-- [ ] `paneer`
-- [ ] `sour-cream`
-- [ ] `ice-cream`
+---
 
-### Protein fractions
-- [ ] `casein`
-- [ ] `whey-protein-concentrate` (WPC — separate form-id from WPI)
+## Done this session ✓
+
+- [x] Insert 6 dairy form-id nodes: butter, ghee, cream, curd, yogurt, milk-powder
+- [x] Insert 12 form-of relations (6 forms × milk cow + milk buffalo)
+- [x] Schema change: variety-of extended to ingredient-form → ingredient-form
+- [x] Establish source naming convention: `{family} {specific}`
+- [x] Establish processing-method hyphenation convention
+
+---
+
+## Next insertion batch — cheese family
+
+Requires variety-of for ingredient-form (schema done). Confirm paneer status first.
+
+- [ ] `cheese` form-id node (declarable bare, is-declarable: true at form level)
+- [ ] form-of relations: cheese ← milk cow, milk buffalo (processing-method: coagulation)
+- [ ] `mozzarella` form-id node + variety-of(base: cheese, variety: mozzarella)
+- [ ] `cheddar` form-id node + variety-of(base: cheese, variety: cheddar)
+- [ ] `cottage-cheese` form-id node + variety-of(base: cheese, variety: cottage-cheese)
+- [ ] `paneer` form-id node + form-of relations (coagulation + pressing)
+      (variety-of cheese only if paneer-as-cheese-subtype is confirmed)
+
+---
+
+## Next insertion batch — remaining dairy forms
+
+- [ ] `skim-milk` — liquid, skimming process, cow + buffalo milk
+- [ ] `toned-milk` — liquid, fat standardisation (check processing-method vocabulary)
+- [ ] `condensed-milk` — concentrate, evaporation
+- [ ] `skim-milk-powder` — powder, skim + spray-drying
+- [ ] `sour-cream` — semi-solid, fermentation (confirm FSSAI status vs plain cream)
+- [ ] `ice-cream` — gel? confirm matter-state; composition is multi-ingredient question
+
+---
+
+## Protein fraction batch — blocked on whey question
+
+- [ ] `whey` form-id (only if bare-declarable — see open question)
+- [ ] `whey-protein-concentrate` (WPC)
 - [ ] `whey-protein-isolate` (WPI)
 - [ ] `milk-protein-concentrate` (MPC)
+- [ ] `casein`
 - [ ] `lactose`
 
-### Cheese subtypes (form-level variety-of cheese — requires schema change first)
-- [ ] `mozzarella`
-- [ ] `cheddar`
-- [ ] `cottage-cheese`
-- [ ] `paneer-cheese` (or is paneer already the right node? confirm with Lalitha)
+Processing-method for protein fractions:
+- WPC: `ultrafiltration`
+- WPI: `ultrafiltration` + `ion-exchange` or `diafiltration` (confirm exact value)
+- Casein: `isoelectric-precipitation` or `rennet-coagulation` (two routes — confirm)
+- Lactose: `crystallisation` (from whey permeate)
 
 ---
 
-## Note on curd vs yogurt
-The CSV has both with identical EMF scores and fermentation process. In India:
-- Dahi (curd) = traditional fermented milk, specific bacterial cultures, FSSAI Standard
-- Yogurt = distinct FSSAI Standard, often with added cultures, thicker set
-Are these ONE form-id or TWO? Confirm before inserting. If two: both are form-of source
-via fermentation. If one: dahi/yogurt are lookup-layer aliases for the same form-id.
+## Rows to skip / flag permanently
 
----
+These will never become graph nodes — note here so they are not re-evaluated:
 
-## Rows to skip / flag (do not insert)
-
-- [ ] `whey-peptides` — classified health_supplement, not RAM. Out of scope.
-- [ ] `milk-flavouring` — classified flavouring agent. Out of scope for dairy/RAM.
-- [ ] `sweetened-condensed-milk` variants — flagged flag_compound_product. Multi-ingredient.
-- [ ] `mozzarella cheese lodized salt` — multi-source row. Not a clean form.
-- [ ] `rennet-casein`, `romano-cheese-enzymes`, `dahi-starter-culture` — fermentation agents.
-      Scope question: do fermentation agents belong in RAM graph or separate?
-- [ ] `milk-products`, `milk-components` — generic/underdeclared. Not IFID-valid forms.
-- [ ] Brand-specific rows: `pasteurised amul milk` — brand name, not a form. Lookup layer only.
-
----
-
-## form-of relations to write (after form-id nodes confirmed)
-
-For each form-id: which sources does it connect to, and what processing-method?
-Example:
-- ghee ← form-of(churning|clarification) ← cow milk
-- ghee ← form-of(churning|clarification) ← buffalo milk
-- whey-protein-concentrate ← form-of(ultrafiltration-concentration) ← whey (or ← cow milk)
-
-Full relation list: to be drafted once open questions resolved.
+- `whey-peptides` — classified health_supplement, out of RAM scope
+- `milk-flavouring` — classified flavouring agent, out of RAM scope
+- `sweetened-condensed-milk` variants — flag_compound_product, multi-ingredient
+- `mozzarella cheese lodized salt` — multi-source row, not a clean form
+- `rennet-casein`, `romano-cheese-enzymes`, `dahi-starter-culture` — fermentation agents;
+  scope question: do these belong in RAM or a separate fermentation-agent category?
+- `milk-products`, `milk-components` — generic/underdeclared, not IFID-valid
+- Brand-specific rows (e.g. `pasteurised amul milk`) — lookup layer only, not graph nodes

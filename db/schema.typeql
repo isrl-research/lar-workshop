@@ -14,11 +14,14 @@ attribute processing-method,
  value string;
 attribute is-declarable,
  value boolean;
+attribute category-name,
+ value string;
 entity source,
   owns is-allergen,
   owns is-declarable,
   owns source-name @key,
   owns source-type,
+  plays belongs-to:member,
   plays form-of:origin,
   plays variety-of:base,
   plays variety-of:variety;
@@ -26,7 +29,12 @@ entity ingredient-form,
   owns form-id @key,
   owns matter-state,
   plays form-of:form,
-  plays form-of:origin;
+  plays form-of:origin,
+  plays variety-of:base,
+  plays variety-of:variety;
+entity category,
+  owns category-name @key,
+  plays belongs-to:category;
 relation form-of,
   relates form,
   relates origin,
@@ -34,3 +42,6 @@ relation form-of,
 relation variety-of,
   relates base,
   relates variety;
+relation belongs-to,
+  relates category,
+  relates member;

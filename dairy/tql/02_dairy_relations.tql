@@ -1,0 +1,63 @@
+# Dairy form-of relations — cow milk and buffalo milk
+# Run after 01_dairy_forms.tql
+
+# --- cow milk ---
+
+match
+  $cow isa source, has source-name "cow milk";
+  $butter isa ingredient-form, has form-id "butter";
+  $ghee isa ingredient-form, has form-id "ghee";
+  $cream isa ingredient-form, has form-id "cream";
+  $curd isa ingredient-form, has form-id "curd";
+  $yogurt isa ingredient-form, has form-id "yogurt";
+  $milk_powder isa ingredient-form, has form-id "milk-powder";
+insert
+  (origin: $cow, form: $butter) isa form-of,
+    has processing-method "churning";
+
+  (origin: $cow, form: $ghee) isa form-of,
+    has processing-method "churning",
+    has processing-method "clarification";
+
+  (origin: $cow, form: $cream) isa form-of,
+    has processing-method "skimming";
+
+  (origin: $cow, form: $curd) isa form-of,
+    has processing-method "fermentation";
+
+  (origin: $cow, form: $yogurt) isa form-of,
+    has processing-method "fermentation";
+
+  (origin: $cow, form: $milk_powder) isa form-of,
+    has processing-method "spray drying";
+
+
+# --- buffalo milk ---
+
+match
+  $buffalo isa source, has source-name "buffalo milk";
+  $butter isa ingredient-form, has form-id "butter";
+  $ghee isa ingredient-form, has form-id "ghee";
+  $cream isa ingredient-form, has form-id "cream";
+  $curd isa ingredient-form, has form-id "curd";
+  $yogurt isa ingredient-form, has form-id "yogurt";
+  $milk_powder isa ingredient-form, has form-id "milk-powder";
+insert
+  (origin: $buffalo, form: $butter) isa form-of,
+    has processing-method "churning";
+
+  (origin: $buffalo, form: $ghee) isa form-of,
+    has processing-method "churning",
+    has processing-method "clarification";
+
+  (origin: $buffalo, form: $cream) isa form-of,
+    has processing-method "skimming";
+
+  (origin: $buffalo, form: $curd) isa form-of,
+    has processing-method "fermentation";
+
+  (origin: $buffalo, form: $yogurt) isa form-of,
+    has processing-method "fermentation";
+
+  (origin: $buffalo, form: $milk_powder) isa form-of,
+    has processing-method "spray drying";

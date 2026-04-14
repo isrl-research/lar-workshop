@@ -1,0 +1,161 @@
+# Design Decisions — 2026-04-14
+## Session: Dairy — first insertion batch + two naming conventions resolved
+
+---
+
+### Decision 8: Source naming follows `{family} {specific}` format
+
+Naming convention: the family or genus name comes first, the specific qualifier second.
+`milk cow` not `cow milk`. `milk buffalo` not `buffalo milk`.
+
+**Why:** A taxonomy-first convention. All milk sources group together alphabetically and
+in any sorted output. All wheat sources group together. The structure of the name mirrors
+the structure of the graph — hierarchy flows left to right: the broader thing first,
+the specific thing second. This is consistent with how scientific nomenclature works
+(Bos taurus, not taurus Bos) and with how lookups will behave: a query for all members
+of the milk family returns `milk cow`, `milk buffalo`, `milk camel` without needing
+any join on source-type.
+
+This applies to ALL sources going forward. Sources already in the DB before this session
+(`cow milk`, `buffalo milk`, `camel milk`) need renaming to match.
+
+**Scope:** source-name attribute values only. form-id values are not affected — forms
+are not taxonomically qualified the same way.
+
+---
+
+### Decision 9: Multi-word processing-method values use hyphens, not spaces
+
+`spray-drying` not `spray drying`. Same rule applies to any multi-word processing-method
+value going forward.
+
+**Why:** Consistency and downstream safety. Hyphenated values are unambiguous as single
+tokens in queries, exports, and any pipeline that splits on whitespace. A space inside
+an attribute value is legal in TypeDB but creates fragility everywhere else — CSV columns,
+JSON serialisation, CLI tools, and future lookup-layer logic all handle hyphens more
+cleanly than embedded spaces. The ref list (`ref/processing-method_list.csv`) used spaces
+in the `value` column — that file should be updated to reflect the hyphenated standard.
+
+Existing processing-method values in the DB: `churning`, `clarification`, `fermentation`,
+`skimming`, `whole-milling`, `refined-milling`, `coarse-milling`, `malting`, `flaking`
+— none of these were multi-word, so no back-migration needed. `spray-drying` is the
+first multi-word value inserted; it sets the precedent.
+
+---
+
+### Decision 10: Ghee is form-of(source) directly — not form-of(butter)
+
+Ghee could be modelled as `butter → [clarification] → ghee`, which is technically
+accurate as a production chain. This was considered and rejected.
+
+**Why:** The same reasoning that prevents whole wheat flour and refined wheat flour from
+being modelled as one being form-of the other. Both butter and ghee are independently
+declarable forms. When a brand declares "ghee", the source they select on the IFID input
+form is `milk cow` or `milk buffalo` — not `butter`. The intermediate step (churning
+cream to get butter) is part of the production process but not a declared ingredient
+in that product.
+
+Modelling ghee as form-of(butter) would:
+1. Make "all forms of cow milk" a two-hop query (you'd have to traverse through butter)
+2. Imply butter is always a necessary declared intermediate — it isn't (direct ghee
+   production from cream without separate butter production is common)
+3. Mix processual steps with declared ingredient relationships, which is exactly what
+   `processing-method` on `form-of` is designed to avoid
+
+The correct model: ghee is `form-of(milk cow, [churning, clarification])`. Two
+processing-method attributes on the relation. The multi-step production chain is
+readable from the attribute set; no chain of nodes is needed.
+
+---
+
+### Decision 11: Taxonomy root (`milk`) never appears as form-of origin
+
+All form-of relations for dairy forms connect to `milk cow` and `milk buffalo` directly —
+not to `milk` (the taxonomy root, `is-declarable: false`).
+
+**Why:** A form-of relation encodes what a brand actually declares: "this product
+contains [form] derived from [source]". `milk` cannot be declared — the IFID input
+form requires source specificity. Anchoring form-of to `milk` would create relations
+that have no valid instantiation in the real world. If a brand could declare "milk",
+IFID's core value proposition (enforcing source specificity at input) would be
+undermined structurally in the graph itself.
+
+The `milk` node remains useful: it is the traversal target for "all dairy sources"
+queries via `variety-of`. `milk cow variety-of milk`, `milk buffalo variety-of milk`.
+That query is clean and correct. But `milk` sits at the top of the taxonomy; it does
+not sit at the base of any form-of edge.
+
+This principle generalises: no `is-declarable: false` source should ever appear as
+`form-of:origin`. The two attributes (`is-declarable` and the form-of role) enforce
+the same constraint from different angles.
+
+---
+
+### Decision 12: Yogurt and curd are separate form-id nodes
+
+Both are fermented milk, both semi-solid, both use `fermentation` as processing-method.
+They are still two form-ids.
+
+**Why:** FSSAI has distinct product standards for each. Yogurt requires specific starter
+cultures (Streptococcus thermophilus + Lactobacillus bulgaricus); dahi/curd uses
+traditional starter without that constraint. They appear as separate declared items on
+labels — a product labelled "dahi" is not interchangeable with one labelled "yogurt"
+from a regulatory standpoint. The distinction is declaration-level, which is exactly
+the level IFID operates at.
+
+The fact that they share the same processing-method value and matter-state is not a
+reason to collapse them. Two paths to the same node would mean any query for "products
+containing curd" would also return "products containing yogurt". That is wrong.
+Form-id is the declared identity. Declared identity differs. Two nodes.
+
+---
+
+### Decision 13: Camel milk excluded from this insertion batch
+
+`milk camel` is in the DB as a source. The 6 forms inserted this session (butter, ghee,
+cream, curd, yogurt, milk-powder) were connected to `milk cow` and `milk buffalo` only.
+
+**Why:** Camel milk is commercially marginal in the Indian market relative to cow and
+buffalo milk. For the forms in this batch, camel milk-derived versions are not common
+declared ingredients in Indian packaged food. Including form-of relations for camel milk
+before there is evidence of those forms appearing on Indian labels would be adding
+structure without a corresponding real-world signal.
+
+This is not a principled exclusion — camel milk CAN produce all these forms. It is a
+priority decision. When camel milk dairy products appear in the IFID label corpus, the
+form-of relations can be added then. The node exists; the edges can be added at any time.
+
+---
+
+### What was inserted this session
+
+**ingredient-form nodes (6 new):**
+- `butter` (fat fraction)
+- `ghee` (fat fraction)
+- `cream` (emulsion)
+- `curd` (semi-solid)
+- `yogurt` (semi-solid)
+- `milk-powder` (powder)
+
+**form-of relations (12 new):**
+- Each of the 6 forms × 2 sources (milk cow, milk buffalo)
+- Processing methods per form: butter→churning, ghee→churning+clarification,
+  cream→skimming, curd→fermentation, yogurt→fermentation, milk-powder→spray-drying
+
+**Schema change (done before this session by Lalitha):**
+- `variety-of` extended to `ingredient-form → ingredient-form`
+- Unblocks cheese subtype insertion
+
+---
+
+### Open questions carried forward
+
+1. Is "whey" declared bare on Indian labels? (Determines whether whey gets a form-id
+   node, or whether WPC/WPI connect directly to source.)
+
+2. Does form-level variety-of appear outside dairy? (Must confirm before treating it as
+   a general mechanism rather than a dairy-specific pattern.)
+
+3. `milk` source-names need back-migration to `{family} {specific}` format
+   (`milk cow`, `milk buffalo`, `milk camel`). Schema is unchanged; only attribute
+   values need updating.

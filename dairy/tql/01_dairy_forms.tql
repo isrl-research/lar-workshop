@@ -1,0 +1,28 @@
+# Dairy ingredient-form nodes — 6 core forms
+# Run before 02_dairy_relations.tql
+# Sources (cow milk, buffalo milk) already in DB.
+
+insert
+  $butter isa ingredient-form,
+    has form-id "butter",
+    has matter-state "fat fraction";
+
+  $ghee isa ingredient-form,
+    has form-id "ghee",
+    has matter-state "fat fraction";
+
+  $cream isa ingredient-form,
+    has form-id "cream",
+    has matter-state "emulsion";
+
+  $curd isa ingredient-form,
+    has form-id "curd",
+    has matter-state "semi-solid";
+
+  $yogurt isa ingredient-form,
+    has form-id "yogurt",
+    has matter-state "semi-solid";
+
+  $milk_powder isa ingredient-form,
+    has form-id "milk-powder",
+    has matter-state "powder";
