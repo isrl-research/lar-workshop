@@ -5,15 +5,6 @@ Start next session by reading handoff.tmp.md, then tick off items here as you go
 
 ---
 
-## Immediate: before any new insertions
-
-- [ ] **Back-migrate source names to `{family} {specific}` format**
-      Rename in TypeDB: `cow milk` → `milk cow`, `buffalo milk` → `milk buffalo`,
-      `camel milk` → `milk camel`. Schema unchanged; only source-name attribute values.
-      Do this before any new form-of relations reference these sources.
-
----
-
 ## Open questions — resolve before inserting dependent forms
 
 - [ ] **Is "whey" declared bare on Indian labels?**

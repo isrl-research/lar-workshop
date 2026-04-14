@@ -36,9 +36,7 @@ reference them. Do this first.
 
 **Sources in DB:**
 - `milk` (is-declarable: false — taxonomy root)
-- `cow milk` → needs rename to `milk cow`
-- `buffalo milk` → needs rename to `milk buffalo`
-- `camel milk` → needs rename to `milk camel`
+- `milk cow`, `milk buffalo`, `milk camel`
 - `wheat`, `bansi wheat`
 
 **Ingredient forms in DB:**
@@ -70,10 +68,7 @@ processing path. The string "malai" lives in the lookup layer only.
 
 ## What to do next (priority order)
 
-1. **Back-migrate source names** — rename cow milk → milk cow, buffalo milk → milk buffalo,
-   camel milk → milk camel in TypeDB before any new insertions reference these sources.
-
-2. **Resolve open question: is whey bare-declared?** — This gates the entire WPC/WPI
+1. **Resolve open question: is whey bare-declared?** — This gates the entire WPC/WPI
    insertion path. Check FSSAI label corpus or ask Lalitha. If whey IS bare-declared:
    whey gets its own form-id node, and WPC/WPI are form-of(whey). If NOT: WPC/WPI go
    directly form-of source.
