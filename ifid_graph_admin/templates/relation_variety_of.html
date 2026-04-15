@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% block title_suffix %} — Add variety-of{% endblock %}
+{% block content %}
+<h1>Add variety-of relation</h1>
+<p style="color:#666; font-size:0.9rem; margin-top:-0.5rem;">
+  Taxonomic edge: <em>variety</em> is a sub-type of <em>base</em>. Works for source→source or form→form.
+</p>
+
+{% if load_error %}
+  <div class="error-box">Could not load dropdowns: {{ load_error }}</div>
+{% endif %}
+
+<div class="card">
+  <form method="POST" id="variety-form">
+    <label>Relation kind</label>
+    <div class="radio-group">
+      <label>
+        <input type="radio" name="rel_kind" value="source" id="kind-source"
+          {% if not form or form.get('rel_kind','source') == 'source' %}checked{% endif %}
+          onchange="toggleKind()">
+        source → source
+      </label>
+      <label>
+        <input type="radio" name="rel_kind" value="form" id="kind-form"
+          {% if form and form.get('rel_kind') == 'form' %}checked{% endif %}
+          onchange="toggleKind()">
+        form → form
+      </label>
+    </div>
+
+    <!-- SOURCE pickers -->
+    <div id="source-pickers">
+      <label for="source_base">base (source)</label>
+      <select id="source_base" name="source_base">
+        <option value="">— select base source —</option>
+        {% for s in source_names %}
+          <option value="{{ s }}"
+            {% if form and form.get('source_base') == s %}selected{% endif %}>
+            {{ s }}
+          </option>
+        {% endfor %}
+      </select>
+
+      <label for="source_variety">variety (source)</label>
+      <select id="source_variety" name="source_variety">
+        <option value="">— select variety source —</option>
+        {% for s in source_names %}
+          <option value="{{ s }}"
+            {% if form and form.get('source_variety') == s %}selected{% endif %}>
+            {{ s }}
+          </option>
+        {% endfor %}
+      </select>
+      <p class="hint">e.g. base = <code>wheat</code>, variety = <code>bansi wheat</code></p>
+    </div>
+
+    <!-- FORM pickers (hidden by default) -->
+    <div id="form-pickers" style="display:none;">
+      <label for="form_base">base (form)</label>
+      <select id="form_base" name="form_base">
+        <option value="">— select base form —</option>
+        {% for fid in form_ids %}
+          <option value="{{ fid }}"
+            {% if form and form.get('form_base') == fid %}selected{% endif %}>
+            {{ fid }}
+          </option>
+        {% endfor %}
+      </select>
+
+      <label for="form_variety">variety (form)</label>
+      <select id="form_variety" name="form_variety">
+        <option value="">— select variety form —</option>
+        {% for fid in form_ids %}
+          <option value="{{ fid }}"
+            {% if form and form.get('form_variety') == fid %}selected{% endif %}>
+            {{ fid }}
+          </option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <button type="submit" class="btn" style="margin-top:1rem;">Insert variety-of</button>
+  </form>
+</div>
+
+<div class="card">
+  <p style="margin:0; font-size:0.85rem; color:#888;">
+    <strong>What this inserts:</strong><br>
+    <code>(base: &lt;base&gt;, variety: &lt;variety&gt;) isa variety-of</code>
+  </p>
+</div>
+
+<script>
+function toggleKind() {
+  const isForm = document.getElementById('kind-form').checked;
+  document.getElementById('source-pickers').style.display = isForm ? 'none' : '';
+  document.getElementById('form-pickers').style.display = isForm ? '' : 'none';
+}
+// Init on load in case of re-render with POST data
+document.addEventListener('DOMContentLoaded', toggleKind);
+</script>
+{% endblock %}

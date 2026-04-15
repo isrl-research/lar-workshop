@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title_suffix %} — Add form-of{% endblock %}
+{% block content %}
+<h1>Add form-of relation</h1>
+<p style="color:#666; font-size:0.9rem; margin-top:-0.5rem;">
+  Links a source (origin) to an ingredient-form. Only declarable sources shown in the origin picker.
+</p>
+
+{% if load_error %}
+  <div class="error-box">Could not load dropdowns: {{ load_error }}</div>
+{% endif %}
+
+<div class="card">
+  <form method="POST">
+    <label for="origin">origin (source)</label>
+    <select id="origin" name="origin">
+      <option value="">— select declarable source —</option>
+      {% for s in declarable_sources %}
+        <option value="{{ s }}"
+          {% if form and form.get('origin') == s %}selected{% endif %}>
+          {{ s }}
+        </option>
+      {% endfor %}
+    </select>
+    <p class="hint">Only sources with is-declarable = true are listed. Taxonomy roots (milk, wheat) are excluded.</p>
+
+    <label for="form_id">form</label>
+    <select id="form_id" name="form_id">
+      <option value="">— select ingredient-form —</option>
+      {% for fid in form_ids %}
+        <option value="{{ fid }}"
+          {% if form and form.get('form_id') == fid %}selected{% endif %}>
+          {{ fid }}
+        </option>
+      {% endfor %}
+    </select>
+
+    <label for="processing_method">processing-method <span style="font-weight:normal;color:#888;">(optional)</span></label>
+    <input type="text" id="processing_method" name="processing_method"
+           value="{{ form.processing_method if form else '' }}"
+           placeholder="e.g. spray-drying, coagulation"
+           autocomplete="off">
+    <p class="hint">Spaces auto-replaced with hyphens before insert. Use only when the processing step is meaningful for declaration.</p>
+
+    <button type="submit" class="btn">Insert form-of</button>
+  </form>
+</div>
+
+<div class="card">
+  <p style="margin:0; font-size:0.85rem; color:#888;">
+    <strong>What this inserts:</strong><br>
+    <code>(origin: &lt;source&gt;, form: &lt;form&gt;) isa form-of [, has processing-method "..."]</code>
+  </p>
+</div>
+{% endblock %}

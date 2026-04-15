@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title_suffix %} — Add Source{% endblock %}
+{% block content %}
+<h1>Add source</h1>
+
+{% if warnings %}
+  <ul class="flash-list">
+    {% for w in warnings %}
+      <li class="flash-warning">{{ w }}</li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+<div class="card">
+  <form method="POST">
+    <label for="name">source-name</label>
+    <input type="text" id="name" name="name"
+           value="{{ form.name if form else '' }}"
+           placeholder="e.g. milk goat"
+           autocomplete="off">
+    <p class="hint">Two words, {family} {specific} — e.g. <code>milk goat</code>, <code>wheat durum</code>. Auto-lowercased.</p>
+
+    <label for="source_type">source-type</label>
+    <select id="source_type" name="source_type">
+      <option value="">— select —</option>
+      {% for t in source_types %}
+        <option value="{{ t }}"
+          {% if form and form.source_type == t %}selected{% endif %}>
+          {{ t }}
+        </option>
+      {% endfor %}
+    </select>
+
+    <label>is-allergen</label>
+    <div class="radio-group">
+      <label>
+        <input type="radio" name="is_allergen" value="false"
+          {% if not form or form.get('is_allergen') != 'true' %}checked{% endif %}>
+        No
+      </label>
+      <label>
+        <input type="radio" name="is_allergen" value="true"
+          {% if form and form.get('is_allergen') == 'true' %}checked{% endif %}>
+        Yes
+      </label>
+    </div>
+
+    <label>is-declarable</label>
+    <div class="radio-group">
+      <label>
+        <input type="radio" name="is_declarable" value="true"
+          {% if not form or form.get('is_declarable') != 'false' %}checked{% endif %}>
+        Yes (declarable — can be form-of origin)
+      </label>
+      <label>
+        <input type="radio" name="is_declarable" value="false"
+          {% if form and form.get('is_declarable') == 'false' %}checked{% endif %}>
+        No (taxonomy root — not directly declarable)
+      </label>
+    </div>
+    <p class="hint">Set to <strong>No</strong> only for taxonomy root nodes like <code>milk</code> or <code>wheat</code> that group sub-sources.</p>
+
+    <button type="submit" class="btn">Insert source</button>
+    <a href="/sources" class="btn btn-secondary" style="margin-left:0.5rem;">Cancel</a>
+  </form>
+</div>
+
+<div class="card">
+  <p style="margin:0; font-size:0.85rem; color:#888;">
+    <strong>Naming convention:</strong> <code>{family} {specific}</code> &mdash;
+    <code>milk cow</code>, not <code>cow milk</code>.
+    Taxonomy roots (<code>milk</code>, <code>wheat</code>) use a single word and set is-declarable = No.
+  </p>
+</div>
+{% endblock %}

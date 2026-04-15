@@ -1,0 +1,46 @@
+# Session notes — 2026-04-15
+# Topic: Additives taxonomy — natural sources for RAM graph
+
+## What the data actually shows — three functional clusters
+
+**Cluster 1 — starch substrates** (INS 1400–1450 + caramel 150): corn, wheat, potato, tapioca, rice all appear for the *exact same* INS set. Interchangeable substrates for starch production. "Wheat" here unambiguously means the grain as a raw material — same node you already have. Not whole vs refined — that distinction lives on the form (starch), not the source.
+
+**Cluster 2 — fat/oil substrates** (INS 322, 471, 472-series, 475): soybean, sunflower, rapeseed, palm — plus lard and tallow, which I'll come back to.
+
+**Cluster 3 — fermentation substrates** (citric acid 330, xanthan 415, MSG 620/621, lactic acid 270, sorbitol 420): corn dominant, sugarcane for the caramel group.
+
+---
+
+## Your specific questions
+
+**"wheat — whole or refined or the grain?"** The grain. The starch INS entries treat corn/wheat/potato/tapioca/rice as equivalent substrate options. The processing into starch is what creates the form. Source = grain. No ambiguity.
+
+**"soybean is a form of soy or soybean is the original?"** Soybean is the source. Glycine max, the crop, the bean. "Soy" is informal shorthand — it belongs in the lookup layer as an alias, not as a node. The taxonomy already says `soybean` and it's correct.
+
+---
+
+## What to confidently add — and one naming flag
+
+| source | confidence | Indian FMCG reality |
+|---|---|---|
+| `soybean` | high | dominant lecithin source, biscuits/chocolate everywhere |
+| `potato` | high | major starch substrate, confirmed FSSAI-permitted |
+| `tapioca` | high | very common modified starch substrate in India |
+| `sunflower` | high | growing lecithin source, allergen-free positioning |
+| `palm` | high | dominant fat source for 471/472 in Indian bakery |
+| `sugarcane` | high | primary caramel substrate in India |
+| `rice` | medium | used, but much less than corn/potato/tapioca |
+
+**Corn naming: DECIDED — use `maize`.** FSSAI documentation and Indian industry say *maize*, not corn. Zea mays is corn and maize — same crop, two names, different regulatory registers. Source node = `maize`. `corn` goes in lookup layer as alias. Load-bearing decision, settled.
+
+**Rapeseed: HOLD.** In Indian FMCG, the dominant brassica oil is mustard, not rapeseed or canola. Rapeseed lecithin (INS 322 from rapeseed) exists globally but is rare in Indian products. Canola is low-erucic rapeseed — technically distinct. Needs confirmation of whether INS 322 or 471 is declared as rapeseed-origin on actual Indian products. Park until additives hits TypeDB.
+
+**Lard and tallow: NOT sources — forms.** Confirmed by the data — they appear in the same cluster as soybean/palm/sunflower. They are the fat *form* derived from an animal source (pig, cattle/sheep). Pending structural question: when a brand declares INS 471 from animal fat, what level of specificity does IFID require — the animal, or the rendered fat? `is-declarable` floor question. Not yet resolved.
+
+---
+
+## Open questions carrying forward
+
+1. Lard/tallow origin question — animal source vs rendered fat as the origin node for fat-derived emulsifiers. Resolve before additives enters TypeDB.
+2. Rapeseed vs mustard vs canola — brassica family needs a proper variety-of treatment before any of these go in.
+3. Rice — confirm frequency of rice starch in Indian FMCG before adding.

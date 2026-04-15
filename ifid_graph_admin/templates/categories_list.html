@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title_suffix %} — Categories{% endblock %}
+{% block content %}
+<div class="section-actions">
+  <h1 style="margin:0;">Categories</h1>
+  <a class="btn" href="/categories/add">+ Add category</a>
+</div>
+
+{% if error %}
+  <div class="error-box">{{ error }}</div>
+{% elif categories %}
+  <div class="card" style="padding:0; overflow:hidden;">
+    <table>
+      <thead>
+        <tr>
+          <th>category-name</th>
+          <th>sources</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for c in categories %}
+        <tr>
+          <td><code>{{ c.name }}</code></td>
+          <td>
+            {% for m in c.members %}
+              <span class="badge">{{ m }}</span>
+            {% else %}
+              <span style="color:#aaa;">—</span>
+            {% endfor %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% else %}
+  <div class="card">No categories in database yet.</div>
+{% endif %}
+{% endblock %}

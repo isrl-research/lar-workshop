@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title_suffix %} — Add Form{% endblock %}
+{% block content %}
+<h1>Add ingredient-form</h1>
+
+{% if warnings %}
+  <ul class="flash-list">
+    {% for w in warnings %}
+      <li class="flash-warning">{{ w }}</li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+<div class="card">
+  <form method="POST">
+    <label for="form_id">form-id</label>
+    <input type="text" id="form_id" name="form_id"
+           value="{{ form.form_id if form else '' }}"
+           placeholder="e.g. skim-milk-powder"
+           autocomplete="off">
+    <p class="hint">Hyphenated, no spaces. Spaces are auto-replaced with hyphens. Auto-lowercased.</p>
+
+    <label for="matter_state">matter-state <span style="font-weight:normal;color:#888;">(optional)</span></label>
+    <input type="text" id="matter_state" name="matter_state"
+           value="{{ form.matter_state if form else '' }}"
+           placeholder="e.g. solid, liquid, powder"
+           autocomplete="off">
+    <p class="hint">Only fill if the state is a meaningful constraint on this form. Leave blank otherwise.</p>
+
+    <button type="submit" class="btn">Insert form</button>
+    <a href="/forms" class="btn btn-secondary" style="margin-left:0.5rem;">Cancel</a>
+  </form>
+</div>
+{% endblock %}

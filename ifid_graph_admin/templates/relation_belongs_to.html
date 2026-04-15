@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title_suffix %} — Add belongs-to{% endblock %}
+{% block content %}
+<h1>Add belongs-to relation</h1>
+<p style="color:#666; font-size:0.9rem; margin-top:-0.5rem;">
+  Assigns a source as a member of a category.
+</p>
+
+{% if load_error %}
+  <div class="error-box">Could not load dropdowns: {{ load_error }}</div>
+{% endif %}
+
+<div class="card">
+  <form method="POST">
+    <label for="member">source (member)</label>
+    <select id="member" name="member">
+      <option value="">— select source —</option>
+      {% for s in source_names %}
+        <option value="{{ s }}"
+          {% if form and form.get('member') == s %}selected{% endif %}>
+          {{ s }}
+        </option>
+      {% endfor %}
+    </select>
+
+    <label for="category">category</label>
+    <select id="category" name="category">
+      <option value="">— select category —</option>
+      {% for c in category_names %}
+        <option value="{{ c }}"
+          {% if form and form.get('category') == c %}selected{% endif %}>
+          {{ c }}
+        </option>
+      {% endfor %}
+    </select>
+
+    <button type="submit" class="btn">Insert belongs-to</button>
+  </form>
+</div>
+
+<div class="card">
+  <p style="margin:0; font-size:0.85rem; color:#888;">
+    <strong>What this inserts:</strong><br>
+    <code>(member: &lt;source&gt;, category: &lt;category&gt;) isa belongs-to</code>
+  </p>
+</div>
+{% endblock %}

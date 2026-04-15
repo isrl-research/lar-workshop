@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IFID Graph Admin{% block title_suffix %}{% endblock %}</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+      color: #1a1a1a;
+    }
+    nav {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    nav .brand {
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.03em;
+      color: #e0e0ff;
+      text-decoration: none;
+      margin-right: 1rem;
+    }
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    nav a:hover { color: #fff; }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h1 { font-size: 1.4rem; margin-top: 0; }
+    h2 { font-size: 1.1rem; }
+    .card {
+      background: #fff;
+      border-radius: 6px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.25rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,.08);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    th {
+      text-align: left;
+      background: #f0f0f0;
+      padding: 0.5rem 0.75rem;
+      border-bottom: 2px solid #ddd;
+    }
+    td {
+      padding: 0.45rem 0.75rem;
+      border-bottom: 1px solid #eee;
+    }
+    tr:last-child td { border-bottom: none; }
+    label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+      margin-top: 0.75rem;
+    }
+    input[type=text], select {
+      width: 100%;
+      padding: 0.45rem 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 0.95rem;
+    }
+    input[type=text]:focus, select:focus {
+      outline: none;
+      border-color: #4a4af0;
+    }
+    .radio-group {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 0.25rem;
+    }
+    .radio-group label {
+      font-weight: normal;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      cursor: pointer;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1.25rem;
+      background: #1a1a2e;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      text-decoration: none;
+    }
+    .btn:hover { background: #2d2d5e; }
+    .btn-secondary {
+      background: #e0e0e0;
+      color: #333;
+    }
+    .btn-secondary:hover { background: #ccc; }
+    .flash-list { list-style: none; padding: 0; margin: 0 0 1rem 0; }
+    .flash-list li {
+      padding: 0.6rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+    }
+    .flash-success { background: #e6f4ea; color: #1e7e34; border-left: 3px solid #1e7e34; }
+    .flash-error   { background: #fdecea; color: #b71c1c; border-left: 3px solid #b71c1c; }
+    .flash-warning { background: #fff8e1; color: #e65100; border-left: 3px solid #e65100; }
+    .hint { font-size: 0.78rem; color: #888; margin-top: 0.2rem; }
+    .badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      padding: 0.1rem 0.45rem;
+      border-radius: 3px;
+      background: #e8e8ff;
+      color: #3333aa;
+      font-weight: 600;
+    }
+    .badge-red { background: #fdecea; color: #b71c1c; }
+    .badge-green { background: #e6f4ea; color: #1e7e34; }
+    .badge-grey { background: #efefef; color: #666; }
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+    .stat-box {
+      background: #fff;
+      border-radius: 6px;
+      padding: 1rem 1.25rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,.08);
+      text-align: center;
+    }
+    .stat-box .num {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1a1a2e;
+    }
+    .stat-box .label {
+      font-size: 0.8rem;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .error-box {
+      background: #fdecea;
+      color: #b71c1c;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      border-left: 3px solid #b71c1c;
+      font-size: 0.9rem;
+      font-family: monospace;
+    }
+    .section-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a class="brand" href="/">IFID Graph Admin</a>
+  <a href="/">Dashboard</a>
+  <a href="/sources">Sources</a>
+  <a href="/forms">Forms</a>
+  <a href="/categories">Categories</a>
+  <a href="/relations/form-of">form-of</a>
+  <a href="/relations/variety-of">variety-of</a>
+  <a href="/relations/belongs-to">belongs-to</a>
+</nav>
+<div class="container">
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <ul class="flash-list">
+        {% for cat, msg in messages %}
+          <li class="flash-{{ cat if cat in ('success','error','warning') else 'success' }}">{{ msg }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
+  {% block content %}{% endblock %}
+</div>
+</body>
+</html>

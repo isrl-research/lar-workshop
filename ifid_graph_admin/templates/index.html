@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title_suffix %} — Dashboard{% endblock %}
+{% block content %}
+<h1>Dashboard</h1>
+
+{% if error %}
+  <div class="error-box">TypeDB connection error: {{ error }}</div>
+{% elif counts %}
+  <div class="stat-grid">
+    <div class="stat-box">
+      <div class="num">{{ counts.sources }}</div>
+      <div class="label">Sources</div>
+    </div>
+    <div class="stat-box">
+      <div class="num">{{ counts.forms }}</div>
+      <div class="label">Ingredient Forms</div>
+    </div>
+    <div class="stat-box">
+      <div class="num">{{ counts.form_of }}</div>
+      <div class="label">form-of relations</div>
+    </div>
+    <div class="stat-box">
+      <div class="num">{{ counts.variety_of }}</div>
+      <div class="label">variety-of relations</div>
+    </div>
+    <div class="stat-box">
+      <div class="num">{{ counts.categories }}</div>
+      <div class="label">Categories</div>
+    </div>
+    <div class="stat-box">
+      <div class="num">{{ counts.belongs_to }}</div>
+      <div class="label">belongs-to relations</div>
+    </div>
+  </div>
+{% endif %}
+
+<div class="card" style="margin-top:1.5rem;">
+  <h2 style="margin-top:0;">Quick actions</h2>
+  <a class="btn" href="/sources/add">Add source</a>
+  <a class="btn" href="/forms/add" style="margin-left:0.5rem;">Add form</a>
+  <a class="btn" href="/relations/form-of" style="margin-left:0.5rem;">Add form-of</a>
+  <a class="btn" href="/relations/variety-of" style="margin-left:0.5rem;">Add variety-of</a>
+</div>
+
+<div class="card">
+  <p style="margin:0; font-size:0.85rem; color:#888;">
+    Database: <code>{{ db_name }}</code> &nbsp;·&nbsp;
+    Read + insert only &nbsp;·&nbsp; No delete, no edit
+  </p>
+</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title_suffix %} — Forms{% endblock %}
+{% block content %}
+<div class="section-actions">
+  <h1 style="margin:0;">Ingredient Forms</h1>
+  <a class="btn" href="/forms/add">+ Add form</a>
+</div>
+
+{% if error %}
+  <div class="error-box">{{ error }}</div>
+{% elif forms %}
+  <div class="card" style="padding:0; overflow:hidden;">
+    <table>
+      <thead>
+        <tr>
+          <th>form-id</th>
+          <th>matter-state</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for f in forms %}
+        <tr>
+          <td><code>{{ f.form_id }}</code></td>
+          <td>{{ f.matter_state or '—' }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% else %}
+  <div class="card">No ingredient-forms in database yet.</div>
+{% endif %}
+{% endblock %}
